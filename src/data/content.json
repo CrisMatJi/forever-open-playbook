@@ -694,9 +694,9 @@
     "Crea un personaje <b>nuevo</b>: Orco Chamán, <b>Horda</b>, ruleset <b>PvP</b>. Tiene que estar creado después de las 20:00 del 27 de septiembre (hora de España); los anteriores no valen.",
     "Ponle el apellido <b>Foreverpvp</b>. Es obligatorio.",
     "Inscríbelo en <a href=\"https://rio.gg/foreveropen\" target=\"_blank\" rel=\"noopener\">rio.gg/foreveropen</a> con los datos del personaje.",
-    "Entra con él y pide invitación a la hermandad &lt;The Forever Open&gt; a Admin Foreverpvp, Bog Foreverpvp, Prestige One, Admin Musashi o Magetea Foreverpvp.",
+    "Entra con él y pide invitación a la hermandad <b>&lt;The Forever Open II&gt;</b> a <b>Admin Foreverduel</b> o <b>Thebog Foreverpvp</b>.",
     "Únete al <a href=\"https://discord.gg/YdvQnxADwP\" target=\"_blank\" rel=\"noopener\">Discord Forever PvP</a>: allí publican el formato de la clasificatoria, como mínimo una semana antes.",
-    "Comprueba que tu inscripción aparece antes del <b>4 de octubre a las 20:00</b>, cuando se cierra."
+    "Comprueba que tu inscripción aparece antes del <b>4 de octubre a las 20:00</b>, cuando se cierra. Con cada personaje nuevo, inscripción aparte."
    ]
   },
   {
@@ -799,7 +799,8 @@
     "Piedra de peso para tu arma de dos manos contundente (Herrería del relleno o subasta).",
     "Lleva los objetos de tótem en la bolsa si Forever los sigue pidiendo (en Classic sí) (<span class=\"verify\">verificar</span>).",
     "Nada prohibido en las bolsas: Polvo mágico, pociones de protección y consumibles de eventos festivos.",
-    "Repara antes de ir: no puedes salir de la zona de duelo."
+    "Repara antes de ir: no puedes salir de la zona de duelo.",
+    "Pide a un brujo <b>Piedras de salud</b>: son consumible permitido aunque no seas Brujo (una de cada rango en la bolsa)."
    ],
    "extra": "bis"
   },
@@ -810,10 +811,12 @@
    "items": [
     "<b>16 oct</b>: envía tu build (Mejora 0/26/0). Es 24 h antes de la fase y no se cambia después.",
     "Practica duelos contra Brujo, Sacerdote, Pícaro y Mago con los planes de la tabla de abajo.",
-    "<b>17 oct por la mañana</b>: check-in en Raider.IO, 15 g de entrada y personaje a nivel 30.",
+    "<b>17 oct por la mañana</b>: check-in en Raider.IO (sin check-in pierdes la plaza), 15 g de entrada y personaje a nivel 30. Conéctate con margen: quien no está a su hora es sustituido.",
     "Pide buffs de 2 min o más: Entereza, Intelecto Arcano, Marca de lo Salvaje y una Bendición.",
     "Stream encendido antes de la primera inspección.",
-    "En cada duelo: sobre la bandera, 10 yd atrás, quieto hasta que empiece. No huyas del área y no fuerces huidas."
+    "En cada duelo: sobre la bandera, 10 yd atrás, quieto hasta que empiece. No huyas del área y no fuerces huidas.",
+    "Conexión estable: como máximo <b>3 minutos desconectado</b> en total. No salgas de la zona de duelo ni para reparar.",
+    "Si pasas a la final, envía la build de la final (si la cambias) como tarde el 17: son 24 h antes del 18."
    ],
    "extra": "matchups"
   }

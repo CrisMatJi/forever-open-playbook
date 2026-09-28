@@ -1,0 +1,99 @@
+{
+  "updated": "28 sep 2026",
+  "sections": [
+    {
+      "id": "fechas", "title": "Fechas y premios", "icon": "inv_misc_pocketwatch_01",
+      "rules": [
+        ["Calendario", "Inscripción abierta del 27 sep al 4 oct (20:00 hora de España). Check-in y clasificatoria el 17 oct. Final el 18 oct.", "Apunta el 4 oct a las 20:00: después no se admite a nadie."],
+        ["Bolsa de $100.000", "El campeón absoluto se lleva $50.000. Los otros $50.000 se reparten a partes iguales entre el mejor de cada clase: $5.555 por clase. Si hay empate en una clase, se divide.", "Ser el mejor Chamán ya son $5.555, aunque no ganes el torneo."],
+        ["Título", "El ganador de la final recibe el título de \"Death's Duelist\".", null],
+        ["Factura para cobrar", "Quien gane premio tiene que enviar una factura antes de que se procese el pago.", "Si cobras, tendrás que emitir factura: tenlo previsto."],
+        ["Emisión oficial", "Los canales principales son twitch.tv/esfandtv y twitch.tv/xaryu. Se permite co-streaming respetando las normas de Blizzard, de la plataforma y del torneo.", null]
+      ]
+    },
+    {
+      "id": "inscripcion", "title": "Personaje e inscripción", "icon": "inv_misc_note_01",
+      "rules": [
+        ["Personaje nuevo, Horda, PvP", "Personaje nuevo de Horda en ruleset PvP de la beta de WoW: Forever. Los creados antes del 27 sep a las 20:00 (hora de España) no valen.", "Solo razas de Horda: Orco, No-muerto, Tauren, Trol y Skyborne."],
+        ["Apellido Foreverpvp", "El personaje tiene que llevar el apellido \"Foreverpvp\". Es obligatorio.", null],
+        ["Pasos de inscripción", "1) Crear el personaje. 2) Registrarlo en rio.gg/foreveropen. 3) Pedir invitación a la hermandad a Admin Foreverduel o Thebog Foreverpvp. 4) Entrar en <The Forever Open II>. 5) Subirlo a 30.", "Ojo: la hermandad es <The Forever Open II> y los que invitan son Admin Foreverduel o Thebog Foreverpvp."],
+        ["Un solo personaje", "Puedes registrar más de uno (cada uno por separado y solo durante la inscripción), pero en el torneo solo juegas con uno.", "Tus alters de Legacy no hace falta registrarlos."],
+        ["Nivel 30 obligatorio", "Hay que llegar a nivel 30 antes de competir.", null],
+        ["Dudas", "En el Discord Forever PvP; para problemas de inscripción, el rol de RaiderIO.", null]
+      ]
+    },
+    {
+      "id": "formato", "title": "Formato del torneo", "icon": "achievement_arena_2v2_7",
+      "rules": [
+        ["Fase 1 · Subida (27 sep - 17 oct)", "Cada uno sube su personaje. La mañana del 17 oct hay check-in online en Raider.IO; sin check-in pierdes la plaza.", "Pon una alarma para el check-in del 17 por la mañana."],
+        ["Fase 2 · Clasificatoria (17 oct)", "Juegan los inscritos con check-in, a nivel 30 y que paguen 15 g de entrada. El formato se publica al menos una semana antes.", "Lleva 15 g de sobra en el personaje."],
+        ["Fase 3 · Final (18 oct)", "Pasan los 4 mejores de cada clase. Series al mejor de 5 duelos.", "Compites contra los de tu clase por la plaza: una clase menos jugada es más fácil."],
+        ["Puntualidad", "Quien no esté a su hora es sustituido de inmediato, queda descalificado y pierde el premio.", "Conéctate con margen, ya bufado y reparado."]
+      ]
+    },
+    {
+      "id": "build", "title": "Talentos, Legacy y personaje", "icon": "ability_marksmanship",
+      "rules": [
+        ["Build enviada con 24 h", "Tienes que enviar tu build al menos 24 h antes de cada fase. Si no la envías, quedas fuera de esa fase.", "Clasificatoria el 17 → envíala como tarde el 16. Final el 18 → como tarde el 17."],
+        ["Una build por fase", "Una build para la clasificatoria y otra (puede ser distinta) para la final. Una vez empieza la fase, no se cambia.", "Tu build tiene que aguantar a todo el cuadro, no solo a un rival."],
+        ["Legacy permitido", "Los puntos de Legacy están permitidos.", "Talented 5/5 = 26 puntos de talento."],
+        ["Habilidades", "Todas las habilidades y buffs base de clase están permitidos.", null],
+        ["Sin restricciones de equipo", "El reglamento no limita equipo, profesiones ni addons.", "El equipo BiS fabricado y las bombas de Ingeniería valen."]
+      ]
+    },
+    {
+      "id": "consumibles", "title": "Buffs y consumibles", "icon": "inv_potion_54",
+      "rules": [
+        ["Buffs de otros jugadores", "Solo los buffs de clase de otros jugadores que duren 2 minutos o más. Por ejemplo, nada de Escudo de un Sacerdote que no seas tú.", "Pide antes del cruce Entereza, Intelecto Arcano, Marca de lo Salvaje y una Bendición."],
+        ["Consumibles permitidos", "Todos los consumibles están permitidos salvo los prohibidos expresamente.", "Pociones, vendas, comida, elixires, bombas, piedras de afilar... y Piedras de salud que te dé un brujo."],
+        ["Prohibidos", "Polvo mágico y las pociones de protección de Fuego, Naturaleza, Escarcha, Arcano, Sagrado y Sombras. También los buffs y consumibles de eventos festivos (buff del Wickerman, maíz dulce...).", "Vacía la bolsa de todo eso antes de ir. El addon te avisa si llevas algo."],
+        ["Castigo por prohibidos", "Llevar un objeto prohibido equipado o en la bolsa en una inspección es descalificación inmediata, pérdida del premio y veto permanente.", "Es la regla más dura de todas: revisa la bolsa dos veces."],
+        ["La lista puede cambiar", "Como Forever aún está sin resolver, pueden añadir o quitar prohibiciones en cualquier momento.", "Mira el Discord la semana del torneo."]
+      ]
+    },
+    {
+      "id": "duelo", "title": "Cómo empieza cada duelo", "icon": "ability_dualwield",
+      "rules": [
+        ["Sin montura", "No puedes estar montado antes de empezar el duelo.", null],
+        ["Salida a 20 yd", "Los dos os ponéis sobre la bandera del duelo y os alejáis 10 yd en direcciones opuestas. Con los 20 yd, nadie se mueve hasta que empiece.", "Los lanzadores empiezan a su alcance; tú como melé tienes que cerrar distancia."],
+        ["Excepción: sigilo", "Los personajes en sigilo sí pueden moverse antes de empezar.", "Pícaros y Druidas eligen desde dónde abrir: ten el Tótem de temblor y la Purga preparados."],
+        ["Cuenta atrás", "Los admins dan una cuenta atrás de 10 s y luego os indican aceptar y empezar. No hacerlo es descalificación.", null],
+        ["Aperturas no garantizadas", "Ninguna clase tiene garantizada su apertura.", null],
+        ["Zona de duelo", "Os colocan los árbitros en la zona que decidan, y pueden cambiarla en cualquier momento.", null]
+      ]
+    },
+    {
+      "id": "durante", "title": "Durante y entre duelos", "icon": "spell_nature_timestop",
+      "rules": [
+        ["1-2 minutos entre duelos", "Entre duelos hay 1-2 minutos para curarse, bufarse y recuperar maná.", "Come y bebe en cuanto termine cada duelo."],
+        ["No salir de la zona", "No puedes salir de la zona de duelo por nada, ni siquiera para reparar con la piedra de hogar.", "Llega reparado al 100%."],
+        ["Máximo 3 minutos desconectado", "Si te desconectas, tienes en total 3 minutos. Pasado eso, descalificación y pérdida del premio.", "Conexión estable y el PC sin actualizaciones pendientes."],
+        ["Brujos y fragmentos", "El Brujo puede salir una sola vez a por fragmentos, avisando antes a un admin, y sin hablar con nadie ni usar banco o vendedor.", "Si eres Brujo, llega con la bolsa de fragmentos llena."],
+        ["Tiempo muerto", "Si el duelo se agota, nadie gana: se repite, y el resto de ese cruce tiene un tope de 3 de comida y 3 de agua por jugador.", "En duelos largos pesa más el maná."],
+        ["Retrasar el duelo", "Nada de retrasos intencionados. Retrasar sin motivo estratégico = pierdes ese duelo. 60 s inactivo en un duelo es penalización y posible descalificación.", null],
+        ["Huir o hacer huir", "Huir a propósito del duelo es descalificación y pérdida del premio. Forzar la huida del rival (encadenar miedos en el borde) también.", "Cuidado con Miedo y Grito psíquico cerca de la línea."],
+        ["Interferencias", "Si alguien de fuera interfiere y afecta al resultado, el duelo se repite más tarde. Si la interferencia es cosa tuya, descalificación.", null]
+      ]
+    },
+    {
+      "id": "stream", "title": "Streaming e inspecciones", "icon": "inv_misc_eye_01",
+      "rules": [
+        ["Stream obligatorio", "Tienes que emitir tu pantalla en la clasificatoria y la final, con los duelos y las inspecciones. Solo Twitch, YouTube o Kick.", "Prueba OBS antes del 17."],
+        ["VOD guardado", "Hay que conservar el VOD para que los admins puedan revisarlo. Sin stream o sin VOD pierdes el cruce y el premio.", "Activa el guardado de emisiones en tu plataforma."],
+        ["Inspecciones en directo", "Te pueden pedir en cualquier momento abrir bolsas, talentos y personaje en el stream. Los talentos deben coincidir con la build enviada.", "Negarte a una inspección es descalificación."],
+        ["Uso de tus imágenes", "Esfand, Xaryu, Raider.IO y los socios del torneo pueden reemitir y usar clips de tu stream.", null]
+      ]
+    },
+    {
+      "id": "conducta", "title": "Conducta y sanciones", "icon": "inv_scroll_03",
+      "rules": [
+        ["Respeto", "Deportividad con rivales, público, prensa y organización, también en el chat del juego y del stream.", null],
+        ["Expulsión inmediata", "Amenazas, doxxing, DDoS, acoso, discriminación: expulsión, pérdida del premio y veto de por vida. El discurso de odio es descalificación inmediata.", null],
+        ["Trampas", "Compartir cuenta, amaños, stream-sniping, sabotear duelos, ayuda externa, exploits o aprovechar vacíos del reglamento a propósito: desde perder el cruce hasta veto permanente.", null],
+        ["Los árbitros mandan", "Hay árbitros voluntarios y sus decisiones son vinculantes.", null],
+        ["Las reglas pueden cambiar", "La organización puede modificar el reglamento cuando quiera y es responsabilidad tuya estar al día.", "Revisa el Discord y el documento oficial antes de cada fase."],
+        ["Aviso de la organización", "Los duelos no están soportados oficialmente por Blizzard: un bug o una decisión administrativa te pueden costar el premio.", null]
+      ]
+    }
+  ]
+}

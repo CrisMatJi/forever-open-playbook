@@ -151,3 +151,7 @@ h1,h2{overflow-wrap:anywhere}
 .syncrow input{min-width:0}
 main.wrap [style*="display:grid"]:not(.countdown){grid-template-columns:minmax(0,1fr)}
 .gsec,.rsec,.gextra{min-width:0}
+.rsection{display:grid;gap:12px;scroll-margin-top:84px}
+.rsection h2{font-size:24px}
+.dq li::marker{color:var(--bad)}
+.dq li{color:var(--ink)}

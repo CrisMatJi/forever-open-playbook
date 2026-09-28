@@ -1,29 +1,67 @@
 ---
 import Base from "../layouts/Base.astro";
-import { DATA } from "../lib/wow.js";
-const { RULES } = DATA;
+import Icon from "../components/Icon.astro";
+import R from "../data/rules.json";
+const DQ = [
+  "Objeto prohibido equipado o en la bolsa en una inspección (además, veto permanente)",
+  "Más de 3 minutos desconectado en total",
+  "Salir de la zona de duelo, huir o forzar la huida del rival",
+  "No enviar la build 24 h antes de la fase, o que tus talentos no coincidan",
+  "No emitir, no guardar el VOD o negarte a una inspección",
+  "No aceptar el duelo tras la cuenta atrás, o no presentarte a tu hora",
+  "Interferir o pedir ayuda externa en un duelo",
+];
 ---
-<Base title="Reglas" active="reglas" description="Las reglas de The Forever Open que cambian cómo te preparas y cómo peleas.">
+<Base title="Reglas" active="reglas" description="Todas las reglas de The Forever Open explicadas: fechas, premios, inscripción, build, consumibles, salida del duelo, streaming y sanciones.">
   <div class="pagehead">
-    <div class="eyebrow">Del documento oficial</div>
-    <h1>Reglas que cambian tu preparación</h1>
-    <p class="lede">Del documento oficial de The Forever Open. Solo lo que afecta a cómo te preparas o cómo peleas. Ante cualquier duda, manda el reglamento oficial.</p>
+    <div class="eyebrow">Reglamento oficial · revisado el {R.updated}</div>
+    <h1>Reglas del torneo</h1>
+    <p class="lede">Todo el reglamento de The Forever Open ordenado por temas. Cada regla lleva debajo, en dorado, qué significa para ti. Si algo cambia, manda el <a href="https://docs.google.com/document/d/1sFMwpVUerc35lMAEaJpnopfTyzoldJfFhpBWJQI8UmM/edit?tab=t.0" target="_blank" rel="noopener">documento oficial</a> y los avisos del Discord.</p>
   </div>
-  <div class="rules">
-    {RULES.map(([h, p, so]) => <div class="rule"><h3>{h}</h3><p>{p}</p><p class="so">→ {so}</p></div>)}
+
+  <div class="split">
+    <div class="box">
+      <div class="eyebrow">Lo que te puede descalificar</div>
+      <ul class="bul dq" style="margin-top:8px">{DQ.map((d) => <li>{d}</li>)}</ul>
+    </div>
+    <div class="box">
+      <div class="eyebrow">Tu calendario</div>
+      <ol class="timeline" style="margin-top:8px">
+        <li><span class="when">4 oct · 20:00</span><span class="what">Cierre de inscripción (personaje, Raider.IO, hermandad &lt;The Forever Open II&gt;).</span></li>
+        <li><span class="when">16 oct</span><span class="what">Último día para enviar la build de la clasificatoria (24 h antes).</span></li>
+        <li><span class="when">17 oct · mañana</span><span class="what">Check-in en Raider.IO. Nivel 30, 15 g, stream y VOD listos.</span></li>
+        <li><span class="when">17 oct</span><span class="what">Clasificatoria. Envía la build de la final (24 h antes del 18) si vas a cambiarla.</span></li>
+        <li><span class="when">18 oct</span><span class="what">Final: top 4 por clase, al mejor de 5.</span></li>
+      </ol>
+    </div>
   </div>
+
+  <nav class="toc" aria-label="Temas del reglamento">
+    {R.sections.map((s, i) => <a class="tocitem" href={`#r-${s.id}`}><span class="tocn">{i + 1}</span>{s.title}</a>)}
+  </nav>
+
+  {R.sections.map((s) => (
+    <section class="rsection" id={`r-${s.id}`}>
+      <h2 class="racecell"><Icon name={s.icon} size={34} label={s.title} class="gold" /> {s.title}</h2>
+      <div class="rules">
+        {s.rules.map(([h, p, so]) => (
+          <div class="rule"><h3>{h}</h3><p>{p}</p>{so && <p class="so">→ {so}</p>}</div>
+        ))}
+      </div>
+    </section>
+  ))}
+
+  <div class="goodline"><b>Lo que el reglamento no limita:</b> profesiones, addons, calidad o nivel del equipo, ni mecánicas concretas de cada clase. Las Piedras de salud son un consumible permitido aunque no seas Brujo; lo único que no aclara es si alguien te las puede reponer entre duelos, así que pregúntalo en el Discord.</div>
+
   <div class="sources">
     <b>Fuentes:</b>
     <ul>
-      <li>The Forever Open: Tournament Guidelines and Info (reglamento oficial)</li>
+      <li><a href="https://docs.google.com/document/d/1sFMwpVUerc35lMAEaJpnopfTyzoldJfFhpBWJQI8UmM/edit?tab=t.0" target="_blank" rel="noopener">The Forever Open: Tournament Guidelines and Info (reglamento oficial)</a></li>
+      <li><a href="https://rio.gg/foreveropen" target="_blank" rel="noopener">Inscripción en Raider.IO</a></li>
       <li><a href="https://talentsforever.com/" target="_blank" rel="noopener">Talents Forever: árboles del cliente 1.60.1.70009 (CC BY 4.0)</a></li>
       <li><a href="https://www.icy-veins.com/wow-forever/race-guide" target="_blank" rel="noopener">Icy Veins: raciales de Forever</a></li>
-      <li><a href="https://www.zockify.com/forever/races/" target="_blank" rel="noopener">Zockify: raciales, combos y cambios del 24 sep</a></li>
       <li><a href="https://www.zockify.com/forever/legacy-system/" target="_blank" rel="noopener">Zockify: Legacy y retos</a></li>
-      <li><a href="https://wowforevertalent.com/legacy/" target="_blank" rel="noopener">WoW Forever Talent: coste de Talented</a></li>
-      <li><a href="https://gamer-guides.com/warcraft-forever/tier-list-beta/" target="_blank" rel="noopener">Gamer Guides: tier list PvP y nivelación</a></li>
       <li><a href="https://foreverchanges.pro/bis/shaman#horde" target="_blank" rel="noopener">ForeverChanges: listas BiS</a></li>
-      <li><a href="https://www.icy-veins.com/wow-forever/news/50000-dueling-tournament-announced-wow-forever-beta/" target="_blank" rel="noopener">Icy Veins: anuncio del torneo</a></li>
       <li><a href="https://www.wowhead.com/" target="_blank" rel="noopener">Wowhead: iconos</a></li>
     </ul>
   </div>
