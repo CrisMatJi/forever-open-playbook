@@ -1,0 +1,10 @@
+---
+import { iconUrl, abbr } from "../lib/wow.js";
+interface Props { name: string | null; size?: number; label?: string; fallback?: string; ring?: string; big?: boolean; class?: string }
+const { name, size = 36, label = "", fallback, ring, big = false, class: cls = "" } = Astro.props;
+const fb = fallback ?? abbr(label || name || "?");
+---
+<span class={`wicon ${cls}`} style={`--s:${size}px;${ring ? `--ring:${ring};` : ""}`} title={label || undefined}>
+  <span class="wicon-fb" aria-hidden="true">{fb}</span>
+  {name && <img src={iconUrl(name, big || size > 40 ? "large" : "medium")} alt={label} width={size} height={size} loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()" />}
+</span>

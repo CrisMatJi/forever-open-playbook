@@ -1,0 +1,30 @@
+---
+import Base from "../layouts/Base.astro";
+import { DATA } from "../lib/wow.js";
+const { RULES } = DATA;
+---
+<Base title="Reglas" active="reglas" description="Las reglas de The Forever Open que cambian cómo te preparas y cómo peleas.">
+  <div class="pagehead">
+    <div class="eyebrow">Del documento oficial</div>
+    <h1>Reglas que cambian tu preparación</h1>
+    <p class="lede">Del documento oficial de The Forever Open. Solo lo que afecta a cómo te preparas o cómo peleas. Ante cualquier duda, manda el reglamento oficial.</p>
+  </div>
+  <div class="rules">
+    {RULES.map(([h, p, so]) => <div class="rule"><h3>{h}</h3><p>{p}</p><p class="so">→ {so}</p></div>)}
+  </div>
+  <div class="sources">
+    <b>Fuentes:</b>
+    <ul>
+      <li>The Forever Open: Tournament Guidelines and Info (reglamento oficial)</li>
+      <li><a href="https://talentsforever.com/" target="_blank" rel="noopener">Talents Forever: árboles del cliente 1.60.1.70009 (CC BY 4.0)</a></li>
+      <li><a href="https://www.icy-veins.com/wow-forever/race-guide" target="_blank" rel="noopener">Icy Veins: raciales de Forever</a></li>
+      <li><a href="https://www.zockify.com/forever/races/" target="_blank" rel="noopener">Zockify: raciales, combos y cambios del 24 sep</a></li>
+      <li><a href="https://www.zockify.com/forever/legacy-system/" target="_blank" rel="noopener">Zockify: Legacy y retos</a></li>
+      <li><a href="https://wowforevertalent.com/legacy/" target="_blank" rel="noopener">WoW Forever Talent: coste de Talented</a></li>
+      <li><a href="https://gamer-guides.com/warcraft-forever/tier-list-beta/" target="_blank" rel="noopener">Gamer Guides: tier list PvP y nivelación</a></li>
+      <li><a href="https://foreverchanges.pro/bis/shaman#horde" target="_blank" rel="noopener">ForeverChanges: listas BiS</a></li>
+      <li><a href="https://www.icy-veins.com/wow-forever/news/50000-dueling-tournament-announced-wow-forever-beta/" target="_blank" rel="noopener">Icy Veins: anuncio del torneo</a></li>
+      <li><a href="https://www.wowhead.com/" target="_blank" rel="noopener">Wowhead: iconos</a></li>
+    </ul>
+  </div>
+</Base>

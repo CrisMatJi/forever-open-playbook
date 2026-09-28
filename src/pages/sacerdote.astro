@@ -1,0 +1,102 @@
+---
+import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
+import { DATA, CLASS_ICON, RACE_ICON, url } from "../lib/wow.js";
+const { CLASSES } = DATA;
+const CORDER = ["warlock", "shaman", "mage", "priest", "rogue", "warrior", "paladin", "druid", "hunter"];
+const MARK = ["none", "half", "full"];
+const COLS = [["shield", "Quitar escudo", "spell_holy_powerwordshield"], ["interrupt", "Cortar cura", "spell_nature_earthshock"], ["scream", "Anular Grito", "spell_shadow_psychicscream"], ["mana", "Presión de maná", "spell_shadow_manaburn"]];
+---
+<Base title="Contra el Sacerdote" active="sacerdote" description="Qué clases tienen respuesta al Sacerdote en The Forever Open y el plan de duelo de cada una.">
+  <div class="pagehead">
+    <div class="eyebrow">La clase que más vas a ver</div>
+    <h1>Cómo ganarle al Sacerdote</h1>
+    <p class="lede">Escudo, Renovar, Penance, Grito psíquico y Quemadura de maná. Qué trae a nivel 30, qué hace falta para ganarle y qué clase lo tiene.</p>
+  </div>
+
+  <div class="split">
+    <div class="box">
+      <div class="eyebrow">Lo que trae un Sacerdote a nivel 30</div>
+      <ul class="kit">
+        <li><span class="lvl">base</span><span><b>Palabra de poder: escudo</b>, <b>Renovar</b>, <b>Fuego interno</b> y <b>Sanación relámpago</b> sostienen la pelea.</span></li>
+        <li><span class="lvl">base</span><span><b>Grito psíquico</b>: miedo en 8 yd. <b>Disipar magia</b> le quita tus raíces, ralentizaciones y DoTs mágicos.</span></li>
+        <li><span class="lvl">base</span><span><b>Quemadura de maná</b>: gana la guerra de maná. <b>Plaga devoradora</b> es hechizo base en Forever.</span></li>
+        <li><span class="lvl">talento</span><span><b>Penance</b> está en la fila 5 de Disciplina: llega con 21 puntos. <b>Silent Resolve</b> acorta un 15% tus miedos y aturdimientos.</span></li>
+        <li><span class="lvl">raza</span><span>No-muerto: <b>Voluntad de los Renegados</b> rompe tu miedo y <b>Sacrificio oscuro</b> le da maná. Trol: <b>Regeneración rápida</b> le devuelve la mitad de la vida.</span></li>
+      </ul>
+    </div>
+    <div class="box">
+      <div class="eyebrow">Qué hay que tener para ganarle</div>
+      <ol class="principles">
+        <li><span><b>Quitarle el escudo.</b> Purgar (Chamán), Devorar magia del manáfago (Brujo) o Disipar magia (otro Sacerdote).</span></li>
+        <li><span><b>Cortar la cura, no el daño.</b> Contrahechizo, Bloqueo de hechizo, Choque de tierra o Patada sobre Sanación relámpago o Penance.</span></li>
+        <li><span><b>Anular el Grito.</b> Tótem de temblor, Voluntad de los Renegados o no estar a menos de 8 yd.</span></li>
+        <li><span><b>Ganar el maná.</b> Drenar maná o Quemadura de maná; sin eso, cierra el duelo pronto.</span></li>
+      </ol>
+    </div>
+  </div>
+
+  <section>
+    <div class="titlerow"><h2>Quién tiene respuesta</h2><span class="note">Toca una fila para ver el plan</span></div>
+    <div class="tablewrap" style="margin-top:10px">
+      <table id="matrix" class="wide">
+        <thead><tr><th>Clase</th><th>Contra Sacerdote</th>{COLS.map(([, l, ic]) => <th><span class="racecell"><Icon name={ic} size={20} label={l} /> {l}</span></th>)}</tr></thead>
+        <tbody>
+          {CORDER.map((id) => {
+            const c = CLASSES[id];
+            return (
+              <tr data-id={id} tabindex="0">
+                <td><span class="racecell"><Icon name={CLASS_ICON[id]} size={28} label={c.name} /> <b>{c.name}</b></span></td>
+                <td><span class={`pill r${c.rating}`}>{c.label}</span></td>
+                {COLS.map(([k]) => (
+                  <td><span class="cellmark"><i class={`dot ${MARK[c.marks[k]]}`} aria-hidden="true"></i><span class="sr">{c.marks[k] ? c.notes[k] : "—"}</span></span></td>
+                ))}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span><i class="dot full"></i> Herramienta propia y fiable</span>
+      <span><i class="dot half"></i> Parcial o depende de raza o talento</span>
+      <span><i class="dot none"></i> No tiene a nivel 30</span>
+    </div>
+  </section>
+
+  <div>
+    {CORDER.map((id) => {
+      const c = CLASSES[id];
+      return (
+        <section class="detailpanel" id={`c-${id}`} data-panel={id} hidden style="display:grid;gap:12px">
+          <div class="titlerow"><h2 class="racecell"><Icon name={CLASS_ICON[id]} size={40} label={c.name} /> {c.name} contra Sacerdote</h2><span class={`pill r${c.rating}`}>{c.label}</span></div>
+          <div class="detail">
+            <div class="box"><h3>Por qué</h3><ul class="bul">{c.why.map((w) => <li set:html={w} />)}</ul>
+              <dl class="kv"><dt>Raza</dt><dd><span class="racecell"><Icon name={RACE_ICON[c.race]} size={22} label={c.race} /> <b>{c.race}</b> <span class="note">(alternativa: {c.raceAlt})</span></span><p style="margin-top:4px" set:html={c.raceWhy} /></dd></dl>
+              <div class="warnline"><b>Riesgo:</b> <span set:html={c.risk} /></div></div>
+            <div class="box"><h3>Plan de duelo</h3><ol class="steps">{c.plan.map((p) => <li set:html={p} />)}</ol>
+              <p style="margin-top:14px"><a class="chip" href={url(`builds/${id}`)}>Ver build</a></p></div>
+          </div>
+        </section>
+      );
+    })}
+  </div>
+
+  <script>
+    const rows = document.querySelectorAll<HTMLTableRowElement>("#matrix tr[data-id]");
+    const panels = document.querySelectorAll<HTMLElement>("[data-panel]");
+    function show(id: string, scroll = false) {
+      panels.forEach((p) => (p.hidden = p.dataset.panel !== id));
+      rows.forEach((r) => r.classList.toggle("sel", r.dataset.id === id));
+      history.replaceState(null, "", `#c-${id}`);
+      if (scroll) document.getElementById(`c-${id}`)?.scrollIntoView({ block: "start" });
+    }
+    rows.forEach((r) => {
+      r.addEventListener("click", () => show(r.dataset.id!, true));
+      r.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); show(r.dataset.id!, true); } });
+    });
+    const h = location.hash.replace("#c-", "");
+    const has = document.querySelector(`[data-panel="${h}"]`);
+    show(has ? h : "warlock", !!has);
+  </script>
+</Base>

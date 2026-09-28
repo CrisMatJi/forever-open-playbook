@@ -1,0 +1,75 @@
+---
+import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
+import { url, MISC_ICON } from "../lib/wow.js";
+const CMDS = [
+  ["/tfo", "Muestra u oculta (vuelve a la última vista)"],
+  ["/tfo mini", "Tracker compacto"], ["/tfo lista", "Lista completa"],
+  ["/tfo export", "Código para pegar en Mi guía"], ["/tfo main", "Marca el personaje actual como main"],
+  ["/tfo alts", "Personajes que ha visto el addon"], ["/tfo debug", "Qué profesiones, tótems y herramientas detecta"],
+  ["/tfo legacy N", "Suma N puntos de Legacy que el addon no ve"], ["/tfo reset", "Borra las casillas manuales (pide confirmación)"],
+];
+---
+<Base title="Addon ForeverPvPTournament" active="addon" description="Addon para WoW Forever: tracker de la ruta de speedrun por nivel, Legacy, talentos y bolsas para The Forever Open.">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Addon para el cliente de WoW Forever · v0.6.1</div>
+      <h1>ForeverPvPTournament</h1>
+      <p class="lede">Un tracker en pantalla que se marca solo: te dice qué toca <b>según tu nivel</b> (subir Desuello a 100, 45 Vendas de lino gruesas, cambiar a Peletería al 28...), cuenta tus puntos de Legacy entre personajes, comprueba tu build y avisa si llevas algo prohibido en la bolsa.</p>
+      <div class="cta">
+        <a class="chip gold" href={url("addon/ForeverPvPTournament.zip")} download><Icon name={MISC_ICON.addon} size={22} label="" fallback="" /> Descargar .zip</a>
+        <a class="chip" href={url("guia")}>Ir a Mi guía</a>
+      </div>
+    </div>
+    <div class="minidemo" aria-label="Ejemplo del tracker compacto a nivel 12">
+      <div class="mt">Forever PvP <span><i>+</i><i>x</i></span></div>
+      <div class="mb">
+        <div class="bar"><i style="width:17%"></i><span>20 / 117</span></div>
+        <div class="st">Nv 12 · <span style="color:#b760ff">Legacy 0/10</span> · Talentos 3/26</div>
+        <div class="h red">Atrasado (de niveles anteriores)</div>
+        <div class="it auto">Minería 50: todas las vetas de cobre <em>35/50</em></div>
+        <div class="h">Ahora · Nv 10-15 · Los Baldíos (I)</div>
+        <div class="it">Oficial en los 4 instructores: tope 150</div>
+        <div class="it auto">Desuello 100: zhevras, kodos, raptores <em>87/100</em></div>
+        <div class="it auto">Primeros auxilios 80: ~45 Vendas de lino gruesas <em>60/80</em></div>
+        <div class="it">Pawani: empieza con Merchant's Favor</div>
+        <div class="h grey">Siguiente · Nv 15-20 · Baldíos (II)</div>
+        <div class="it dim auto">Desuello 150 (tope de Oficial)</div>
+        <div class="it dim auto">Minería 125: estaño y plata</div>
+        <div class="h">[+] Checklist general (49)</div>
+        <span class="grip" aria-hidden="true"></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="split">
+    <div class="box">
+      <h2>Instalar</h2>
+      <ol class="steps">
+        <li>Descomprime el .zip y copia la carpeta <code>ForeverPvPTournament</code> en <code>&lt;carpeta de WoW&gt;/_forever_beta_/Interface/AddOns/</code> (o la carpeta de la beta de Forever que tengas).</li>
+        <li>En la pantalla de personajes, botón <b>AddOns</b>: activa "Forever PvP Tournament". Si sale "desactualizado", marca "Cargar addons desactualizados".</li>
+        <li>Entra con tu Chamán Orco. Si no lo detecta como main: <code>/tfo main</code> y <code>/reload</code>.</li>
+        <li>Entra una vez con cada alter (Cazador y relleno) para que sume sus niveles y profesiones al Legacy.</li>
+      </ol>
+    </div>
+    <div class="box">
+      <h2>Qué hace</h2>
+      <ul class="bul">
+        <li><b>Ruta por nivel</b> en el tracker: Atrasado, Ahora y Siguiente. De cada profesión enseña solo el próximo objetivo con tu progreso (87/100).</li>
+        <li>Ruta distinta según el personaje: Chamán, Cazador (Sastrería + Encantamiento) o relleno (Alquimia + Herrería).</li>
+        <li><b>Se marca solo</b>: profesiones, niveles, tótems conocidos, pico y cuchillo, talentos de la build, Recombobulator, oro y bolsas.</li>
+        <li>Funciona con el cliente en <b>español</b>: todo se detecta por ID, no por nombre.</li>
+        <li>Tracker <b>redimensionable</b> desde la esquina inferior derecha, con scroll. Clic derecho en la esquina: tamaño automático.</li>
+        <li>Botón en el minimapa. Clic derecho: código para la web.</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="box">
+    <h2>Comandos</h2>
+    <dl class="cmds" style="margin-top:12px">
+      {CMDS.map(([c, d]) => <><dt>{c}</dt><dd>{d}</dd></>)}
+    </dl>
+    <p class="note" style="margin-top:12px">¿Algo no se marca? Activa los errores de Lua (<code>/console scriptErrors 1</code>), haz <code>/tfo debug</code> y copia lo que salga. Si el cliente no carga el addon, mira la versión con <code>/dump select(4, GetBuildInfo())</code> y cambia la línea <code>## Interface:</code> del .toc por ese número.</p>
+  </section>
+</Base>

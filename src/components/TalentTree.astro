@@ -1,0 +1,36 @@
+---
+import { getClass, allocate, stateOf, arrows, S, W, H, cx, cy } from "../lib/talents.js";
+import { iconUrl, abbr } from "../lib/wow.js";
+interface Props { id: string; tree: number; n: number; tint: string }
+const { id, tree, n, tint } = Astro.props;
+const c = getClass(id);
+const { ranks, per } = allocate(id, n);
+const list = c.list.filter((t) => t.tree === tree);
+const pct = (v: number, total: number) => `${(v / total) * 100}%`;
+---
+<div class="tree" style={`--tint:${tint}`} data-tree={tree}>
+  <header><b>{c.trees[tree]}</b><span class="num" data-per={tree}>{per[tree]}</span></header>
+  <div class="tgrid" style={`aspect-ratio:${W}/${H}`}>
+    <svg class="tarrows" viewBox={`0 0 ${W} ${H}`} aria-hidden="true">
+      {arrows(c, tree).map((a) => (
+        <g data-arrow-to={a.to}>
+          <path class="arrow" d={a.d} />
+          {a.head && <path class="arrowhead" d={a.head} />}
+        </g>
+      ))}
+    </svg>
+    {list.map((t) => {
+      const r = ranks[t.name] || 0;
+      const st = stateOf(c, t, ranks, per);
+      return (
+        <button type="button" class={`tslot ${st}`} data-name={t.name}
+          style={`left:${pct(cx(t.col), W)};top:${pct(cy(t.row), H)};width:${pct(S, W)};height:${pct(S, H)}`}
+          aria-label={`${t.name} ${r} de ${t.max}`}>
+          <span class="tfb" aria-hidden="true">{abbr(t.name)}</span>
+          {t.icon && <img src={iconUrl(t.icon)} alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()" />}
+          <span class="trank"><span data-rank>{r}</span>/{t.max}</span>
+        </button>
+      );
+    })}
+  </div>
+</div>

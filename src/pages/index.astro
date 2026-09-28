@@ -1,0 +1,80 @@
+---
+import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
+import { url, MISC_ICON, CLASS_ICON, PROF_ICON } from "../lib/wow.js";
+const cards = [
+  ["guia", "Mi guía", "guide", "Ruta de speedrun por nivel y checklist del Chamán Orco, sincronizable con el addon."],
+  ["tier", "Tier list", "tier", "Qué clases rinden en duelo 1v1 a nivel 30 con las raciales de Forever."],
+  ["sacerdote", "Contra el Sacerdote", "priest", "Quién tiene respuesta al escudo, las curas, el Grito y la Quemadura de maná."],
+  ["builds", "Builds a 30", "builds", "Árboles de talentos reales con iconos, de 21 a 26 puntos con Talented."],
+  ["legacy", "Plan Legacy", "legacy", "Cómo sacar 10 puntos de Legacy con dos alters y 26 talentos a nivel 30."],
+  ["addon", "Addon ForeverPvPTournament", "addon", "Tracker en el juego que se marca solo y te dice qué toca según tu nivel."],
+];
+---
+<Base title="Forever Open Playbook" active="">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">The Forever Open · duelos 1v1 · WoW Forever beta · solo Horda</div>
+      <h1>Forever Open Playbook</h1>
+      <p class="lede">Tier list del torneo, cómo ganarle al Sacerdote, árboles de talentos a nivel 30 y el plan exacto para sacar 26 puntos de talento con Legacy. Con las raciales de Forever, no las de Classic.</p>
+      <div class="cta">
+        <a class="chip gold" href={url("guia")}><Icon name={CLASS_ICON.shaman} size={22} label="Chamán" /> Empezar mi guía</a>
+        <a class="chip" href={url("addon")}><Icon name={MISC_ICON.addon} size={22} label="Addon" /> Descargar el addon</a>
+      </div>
+    </div>
+    <div class="box" style="display:grid;gap:12px">
+      <div class="eyebrow">Clasificatoria · 17 de octubre</div>
+      <div class="countdown" id="cd" data-target="2026-10-17T18:00:00+02:00">
+        <div><b data-u="d">–</b><span>DÍAS</span></div>
+        <div><b data-u="h">–</b><span>HORAS</span></div>
+        <div><b data-u="m">–</b><span>MIN</span></div>
+        <div><b data-u="s">–</b><span>SEG</span></div>
+      </div>
+      <p class="note">Hora orientativa: la organización publica el horario en el Discord Forever PvP.</p>
+    </div>
+  </section>
+
+  <div class="facts">
+    <div class="fact"><b class="num">4 OCT</b><span>Cierre de inscripción</span></div>
+    <div class="fact"><b class="num">16 OCT</b><span>Envío de la build</span></div>
+    <div class="fact"><b class="num">17 OCT</b><span>Clasificatoria, 15 g de entrada</span></div>
+    <div class="fact"><b class="num">18 OCT</b><span>Final, BO5 por cruce</span></div>
+    <div class="fact"><b>TOP 4</b><span>de cada clase pasan a la final</span></div>
+    <div class="fact"><b class="num">$2.777</b><span>al mejor de cada clase</span></div>
+  </div>
+
+  <section class="cards" aria-label="Secciones">
+    {cards.map(([p, t, ic, d]) => (
+      <a class="card" href={url(p)}>
+        <Icon name={MISC_ICON[ic]} size={44} label={t} class="gold" />
+        <div><b>{t}</b><span>{d}</span></div>
+      </a>
+    ))}
+  </section>
+
+  <section class="box">
+    <div class="titlerow"><h2>El plan en una línea</h2></div>
+    <div class="summary" style="margin-top:12px">
+      <div><span>Clase y raza</span><b><Icon name={CLASS_ICON.shaman} size={22} label="Chamán" /> Chamán Orco</b><em>Mejora · tier A</em></div>
+      <div><span>Recolección 1-28</span><b><Icon name={PROF_ICON["Desuello"]} size={22} label="Desuello" /> <Icon name={PROF_ICON["Minería"]} size={22} label="Minería" /> Desuello + Minería</b><em>todo al banco</em></div>
+      <div><span>Al 28</span><b><Icon name={PROF_ICON["Peletería"]} size={22} label="Peletería" /> <Icon name={PROF_ICON["Ingeniería"]} size={22} label="Ingeniería" /> Peletería + Ingeniería</b><em>a 225 de golpe</em></div>
+      <div><span>Legacy</span><b><Icon name={MISC_ICON.legacy} size={22} label="Legacy" /> 10 puntos</b><em>Talented 5/5 → 26 talentos</em></div>
+      <div><span>Alters</span><b><Icon name={CLASS_ICON.hunter} size={22} label="Cazador" /> Cazador + relleno</b><em>solo para Legacy</em></div>
+    </div>
+  </section>
+
+  <script>
+    const el = document.getElementById("cd");
+    if (el) {
+      const target = new Date(el.dataset.target!).getTime();
+      const set = (u: string, v: number) => { const b = el.querySelector(`[data-u="${u}"]`); if (b) b.textContent = String(v).padStart(2, "0"); };
+      const tick = () => {
+        let s = Math.max(0, Math.floor((target - Date.now()) / 1000));
+        set("d", Math.floor(s / 86400)); s %= 86400;
+        set("h", Math.floor(s / 3600)); s %= 3600;
+        set("m", Math.floor(s / 60)); set("s", s % 60);
+      };
+      tick(); setInterval(tick, 1000);
+    }
+  </script>
+</Base>

@@ -1,0 +1,1690 @@
+{
+ "CLASSES": {
+  "warlock": {
+   "name": "Brujo",
+   "tier": "S",
+   "crowd": 3,
+   "spec": "Aflicción",
+   "race": "No-muerto",
+   "raceAlt": "Trol u Orco",
+   "raceWhy": "Voluntad de los Renegados rompe el Grito del Sacerdote y el Miedo de otros Brujos, las dos clases más fuertes del cuadro. Trol si prefieres Regeneración rápida (50% de vida). Orco en el espejo de Brujos: Quebrar maldición te hace inmune a sus Banes 8 s.",
+   "tierWhy": [
+    "Los DoTs de Brujo pueden hacer crítico en Forever: presión que sigue mientras huyes.",
+    "Miedo para reiniciar la pelea, Drenar vida para sostenerla y mascota que controla.",
+    "Corrupción instantánea con 5 puntos y Maldición de agotamiento a 30: los melés no te alcanzan."
+   ],
+   "tierWeak": "Razas que rompen el Miedo (No-muerto) y Pícaros que abren bien. Será una de las clases más jugadas.",
+   "rating": 5,
+   "label": "Favorable",
+   "marks": {
+    "shield": 2,
+    "interrupt": 2,
+    "scream": 1,
+    "mana": 2
+   },
+   "notes": {
+    "shield": "Devorar magia",
+    "interrupt": "Bloqueo de hechizo",
+    "scream": "No-muerto",
+    "mana": "Drenar maná"
+   },
+   "why": [
+    "El manáfago (nivel 30) devora Palabra de poder: escudo, Fuego interno y Renovar, y su Bloqueo de hechizo corta una cura.",
+    "Drenar maná le gana la guerra de maná sin acercarte.",
+    "Tus DoTs pueden hacer crítico: un Disipar magia no los quita todos a tiempo."
+   ],
+   "plan": [
+    "Antes: manáfago fuera, Armadura demoníaca, Piedra de salud.",
+    "Desde 20 yd: Corrupción instantánea, Bane of Agony y Maldición de agotamiento si te persigue.",
+    "Que el manáfago se coma el escudo; no lances Descarga de las Sombras contra un escudo.",
+    "Bloqueo de hechizo solo sobre Sanación relámpago o Penance.",
+    "Si te grita: Voluntad de los Renegados y vuelve a más de 8 yd.",
+    "Por debajo de la mitad de su maná: Drenar maná mientras los DoTs trabajan."
+   ],
+   "risk": "Un Sacerdote No-muerto rompe tu Miedo. Uno Trol se cura la mitad de la vida con Regeneración rápida: no remates hasta que la gaste.",
+   "keys": [
+    "<b>Improved Corruption 5/5</b>: Corrupción instantánea.",
+    "<b>Curse of Exhaustion</b>: −30% de velocidad para mantener a los melés lejos.",
+    "<b>Fel Concentration 3/3</b>: tus Drenar no se cortan al recibir golpes.",
+    "<b>Demonic Embrace 5/5</b>: +15% de aguante.",
+    "Solo con Legacy: <b>Nightfall</b>, <b>Malevolence</b> y <b>Siphon Life</b> (fila 5)."
+   ],
+   "option": "Si esperas muchísimos Sacerdotes, compara bajar por Demonología hasta Improved Felhunter (fila 5: necesitas 20 puntos ahí y pierdes Aflicción).",
+   "stats": "Aguante > Poder con hechizos de Sombras > Intelecto",
+   "gear": "Tela con aguante e intelecto. Las varitas ya no escalan con poder con hechizos."
+  },
+  "priest": {
+   "name": "Sacerdote",
+   "tier": "S",
+   "crowd": 3,
+   "spec": "Disciplina",
+   "race": "No-muerto",
+   "raceAlt": "Trol",
+   "raceWhy": "Voluntad de los Renegados contra Brujos y Sacerdotes, y Sacrificio oscuro para el maná. Trol si temes más al daño que al miedo: Regeneración rápida.",
+   "tierWhy": [
+    "La clase más difícil de matar: escudo, Renovar y curas.",
+    "Penance llega con 21 puntos (fila 5 de Disciplina).",
+    "Grito psíquico y Quemadura de maná le ganan a casi todos los melés y a cualquier clase con maná."
+   ],
+   "tierWeak": "Brujo y Chamán le aguantan la rotación de escudos. Va a ser muy jugada: clasificar como top 4 de Sacerdote será caro.",
+   "rating": 3,
+   "label": "Espejo",
+   "marks": {
+    "shield": 2,
+    "interrupt": 0,
+    "scream": 1,
+    "mana": 2
+   },
+   "notes": {
+    "shield": "Disipar magia",
+    "interrupt": "",
+    "scream": "No-muerto",
+    "mana": "Quemadura de maná"
+   },
+   "why": [
+    "El espejo se decide por maná: Quemadura de maná y quién gasta menos.",
+    "Disipar magia le quita el escudo y el Fuego interno.",
+    "Silent Resolve 3/3 acorta su Grito un 15%."
+   ],
+   "plan": [
+    "Abre con Palabra de las Sombras: dolor y Plaga devoradora desde 20 yd.",
+    "Disipa su escudo antes de tu Explosión mental.",
+    "Quemadura de maná cuando esté escudado y no pueda castigarte.",
+    "Guarda tu Grito para cuando lance una cura cerca.",
+    "Si hay tiempo muerto, la revancha es con 3 de comida y agua: el maná pesa más."
+   ],
+   "risk": "Duelos largos. La Voluntad de Forever ya no da inmunidad: te puede volver a gritar justo después.",
+   "keys": [
+    "<b>Penance</b> (fila 5): daño o cura con 12 s de reutilización. Llega con 21 puntos.",
+    "<b>Soul Warding</b>: escudo 4 s antes y un 15% más barato.",
+    "<b>Improved Mana Burn 2/2</b>: Quemadura 1 s más rápida para el espejo.",
+    "<b>Silent Resolve 3/3</b> (el tercer punto con Legacy): −15% a miedos, aturdimientos y silencios.",
+    "Solo con Legacy: <b>Martyrdom</b> y <b>Renewed Hope</b>."
+   ],
+   "option": "Silence está en la fila 5 de Sombras: no llegas sin sacrificar Penance.",
+   "stats": "Aguante > Intelecto > Poder con hechizos",
+   "gear": "Tela con aguante e intelecto."
+  },
+  "shaman": {
+   "name": "Chamán",
+   "tier": "A",
+   "crowd": 2,
+   "spec": "Mejora",
+   "race": "Orco",
+   "raceAlt": "Trol; Tauren en tercer lugar",
+   "raceWhy": "Quebrar maldición te hace inmune a los Banes y maldiciones del Brujo 8 s y reduce el daño mágico; Dureza acorta los aturdimientos del Pícaro; Furia sangrienta empuja tu ventana de Stormstrike.",
+   "tierWhy": [
+    "Mejora rinde por encima del tier del Chamán en los datos de beta.",
+    "Purgar, Choque de tierra, Tótem de temblor y Tótem de derribo: responde a Sacerdotes y lanzadores.",
+    "Stormstrike a 21 puntos y Flurry 5/5."
+   ],
+   "tierWeak": "Pocas escapatorias: un Mago o un Cazador que te mantienen lejos te hacen sufrir. El maná te limita si la pelea dura.",
+   "rating": 4,
+   "label": "Favorable",
+   "marks": {
+    "shield": 2,
+    "interrupt": 2,
+    "scream": 2,
+    "mana": 0
+   },
+   "notes": {
+    "shield": "Purgar",
+    "interrupt": "Choque de tierra",
+    "scream": "Tótem de temblor",
+    "mana": ""
+   },
+   "why": [
+    "Purgar le quita escudo y Fuego interno más barato de lo que le cuesta ponerlos.",
+    "Choque de tierra corta con poca reutilización; con Shamanistic Focus los choques cuestan un 45% menos.",
+    "Tótem de temblor anula el Grito; Tótem de derribo se come una Quemadura de maná."
+   ],
+   "plan": [
+    "Antes: Escudo de relámpagos y encantamiento de arma.",
+    "Lobo fantasmal para cubrir los 20 yd.",
+    "Planta Tótem de temblor antes de entrar a melé.",
+    "Purga el escudo y pega; Choque de tierra solo sobre curas.",
+    "Choque de escarcha si se aleja para curarse.",
+    "Tótem de derribo cuando esperes su Quemadura de maná."
+   ],
+   "risk": "El Tótem de temblor tiene poca vida: si lo rompe, vuelve a plantarlo.",
+   "keys": [
+    "<b>Stormstrike</b> (fila 4) con 21 puntos; <b>Improved Stormstrike</b> (fila 5) solo con Legacy.",
+    "<b>Shamanistic Focus</b>: choques y Escudo de relámpagos un 45% más baratos.",
+    "<b>Guardian Totems 2/2</b>: Tótem de derribo con menos reutilización.",
+    "<b>Flurry 5/5</b> y <b>Elemental Weapons 3/3</b> para el daño.",
+    "Solo con Legacy: <b>Toughness 2/5</b>."
+   ],
+   "option": "Todo en Mejora: el árbol Elemental no aporta nada decisivo con 5 puntos.",
+   "stats": "Aguante > Fuerza y poder de ataque > Agilidad > Intelecto",
+   "gear": "Malla o cuero con aguante; arma lenta de dos manos."
+  },
+  "mage": {
+   "name": "Mago",
+   "tier": "A",
+   "crowd": 3,
+   "spec": "Escarcha",
+   "race": "No-muerto",
+   "raceAlt": "Trol u Orco",
+   "raceWhy": "Voluntad de los Renegados para el Grito o el Miedo que se te cuele. Trol por Regeneración rápida; Orco por burst con Furia sangrienta.",
+   "tierWhy": [
+    "Bloque de hielo está en la fila 4 de Escarcha: lo tienes a nivel 30.",
+    "Contrahechizo, Nova de escarcha y Traslación: el mejor control a distancia.",
+    "Con Legacy llegas a Cold Snap y repites Bloque de hielo y Nova."
+   ],
+   "tierWeak": "Frágil ante un Pícaro que abre desde sigilo y ante los DoTs de Brujo, que siguen tras el Bloque.",
+   "rating": 3,
+   "label": "Parejo",
+   "marks": {
+    "shield": 0,
+    "interrupt": 2,
+    "scream": 1,
+    "mana": 0
+   },
+   "notes": {
+    "shield": "",
+    "interrupt": "Contrahechizo",
+    "scream": "Distancia y No-muerto",
+    "mana": ""
+   },
+   "why": [
+    "Contrahechizo sobre una cura bloquea la escuela Sagrada: ni escudo, ni curas, ni Penance.",
+    "Nova de escarcha y Traslación te dejan fuera de los 8 yd del Grito.",
+    "Bloque de hielo te salva de su burst."
+   ],
+   "plan": [
+    "Nunca estés a menos de 8 yd.",
+    "Presiona desde 20 yd para que se cure pronto.",
+    "Contrahechizo solo sobre Sanación relámpago o Penance.",
+    "Durante el bloqueo, todo tu daño.",
+    "Polimorfia solo para reposicionarte o beber: le cura."
+   ],
+   "risk": "Te puede Disipar ralentizaciones y la Nova. Sin quitaescudos, cada escudo es daño perdido.",
+   "keys": [
+    "<b>Ice Block</b> (fila 4): inmune 10 s.",
+    "<b>Cold Snap</b> (fila 5): solo con Legacy; reinicia Bloque de hielo y Nova.",
+    "<b>Frostbite + Shatter + Ice Lance</b>: congelar y reventar.",
+    "<b>Improved Frost Nova 2/2</b>: Nova 4 s antes.",
+    "Solo con Legacy: <b>Ice Shards</b>."
+   ],
+   "option": "Alternativa: Arcano hasta Improved Counterspell (fila 4, 15 puntos) para silenciar 2 s tras cada Contrahechizo, a cambio de Bloque de hielo.",
+   "stats": "Aguante > Poder con hechizos > Intelecto",
+   "gear": "Tela con aguante; Aceite de zahorí menor o inferior (+8/+16)."
+  },
+  "rogue": {
+   "name": "Pícaro",
+   "tier": "A",
+   "crowd": 3,
+   "spec": "Combate de control",
+   "race": "No-muerto",
+   "raceAlt": "Orco",
+   "raceWhy": "Con tantos Sacerdotes y Brujos, Voluntad de los Renegados es obligatoria. Orco solo si te preocupan más los aturdimientos del espejo de Pícaros.",
+   "tierWhy": [
+    "El reglamento deja moverse en sigilo antes de empezar: eliges ángulo y apertura.",
+    "Golpe en los riñones a 30 e Improved Kick en la fila 4 de Combate: la Patada silencia 2 s.",
+    "Mejor asesino en duelo contra clases de tela sin escudo."
+   ],
+   "tierWeak": "Disciplina se come tu apertura con el escudo y te rompe la cadena con el Grito.",
+   "rating": 2,
+   "label": "Difícil",
+   "marks": {
+    "shield": 0,
+    "interrupt": 2,
+    "scream": 1,
+    "mana": 0
+   },
+   "notes": {
+    "shield": "",
+    "interrupt": "Patada + silencio",
+    "scream": "No-muerto",
+    "mana": ""
+   },
+   "why": [
+    "Te mueves en sigilo antes de empezar y eliges el ángulo.",
+    "Patada bloquea la escuela y con Improved Kick silencia 2 s.",
+    "Pero el escudo se come tu apertura."
+   ],
+   "plan": [
+    "Acércate en sigilo durante la cuenta atrás.",
+    "Golpe bajo y fuerza el escudo con daño rápido.",
+    "Voluntad de los Renegados al primer Grito.",
+    "Patada solo sobre curas; Riñones cuando haya gastado el escudo."
+   ],
+   "risk": "Si gasta el Grito después de tu Voluntad, pierdes la ventana. Guarda Desvanecerse para reiniciar.",
+   "keys": [
+    "<b>Improved Kick 2/2</b> (fila 4 de Combate): Patada silencia 2 s.",
+    "<b>Improved Sprint 2/2</b>: Sprint quita ralentizaciones (Mago, Chamán, Cazador).",
+    "<b>Endurance 2/2</b>: Sprint y Evasión antes.",
+    "<b>Malice 5/5</b> y <b>Ruthlessness 3/3</b>: crítico y combos (con Legacy).",
+    "Solo con Legacy: <b>Restless Blades</b>."
+   ],
+   "option": "Sutileza pura (Premeditation, Cutthroat) pierde la Patada con silencio; contra un cuadro de lanzadores, Combate de control rinde más.",
+   "stats": "Aguante > Agilidad > Poder de ataque",
+   "gear": "Cuero con agilidad; arma rápida en la mano izquierda."
+  },
+  "paladin": {
+   "name": "Paladín",
+   "tier": "B",
+   "crowd": 1,
+   "spec": "Protección",
+   "race": "No-muerto",
+   "raceAlt": "única opción en Horda",
+   "raceWhy": "El Paladín No-muerto es combo nuevo de Forever y la única opción de Horda.",
+   "tierWhy": [
+    "Templar's Bulwark (fila 5): escudo igual a tu vida máxima durante 8 s.",
+    "Improved Hammer of Justice: Martillo 15 s antes.",
+    "Pocos lo jugarán en Horda: más fácil ser top 4 de la clase."
+   ],
+   "tierWeak": "Poco daño y sin forma de quitar Palabra de las Sombras: dolor ni de ganar la guerra de maná. Riesgo de tiempo muerto.",
+   "rating": 2,
+   "label": "Difícil",
+   "marks": {
+    "shield": 0,
+    "interrupt": 1,
+    "scream": 1,
+    "mana": 0
+   },
+   "notes": {
+    "shield": "",
+    "interrupt": "Martillo de justicia",
+    "scream": "No-muerto",
+    "mana": ""
+   },
+   "why": [
+    "Martillo de justicia corta una cura.",
+    "Purificar quita la Plaga devoradora, pero no Palabra de las Sombras: dolor.",
+    "Su Quemadura de maná castiga tu reserva."
+   ],
+   "plan": [
+    "Martillo de justicia para su primera Sanación relámpago.",
+    "Voluntad de los Renegados al Grito y vuelve a pegarte.",
+    "No gastes maná en curas pequeñas."
+   ],
+   "risk": "Duelo largo que tiende a perderse por maná.",
+   "keys": [
+    "<b>Templar's Bulwark</b> (fila 5): absorbe tanto como tu vida máxima 8 s.",
+    "<b>Improved Hammer of Justice 3/3</b>: −15 s de reutilización.",
+    "<b>Guardian's Favor 2/2</b>: Protección divina antes y Libertad más larga.",
+    "<b>Sacred Duty 2/2</b>: aguante y defensivos antes.",
+    "Solo con Legacy: <b>Divine Strength 5/5</b>."
+   ],
+   "option": "Los datos de beta ponen a Protección por encima del tier del Paladín.",
+   "stats": "Aguante > Fuerza > Intelecto",
+   "gear": "Placas o malla con aguante y fuerza; arma a una mano y escudo."
+  },
+  "druid": {
+   "name": "Druida",
+   "tier": "B",
+   "crowd": 2,
+   "spec": "Feral",
+   "race": "Tauren",
+   "raceAlt": "Skyborne",
+   "raceWhy": "Pisotón de guerra como segundo corte y +5% de vida. Skyborne de Horda solo aporta velocidad.",
+   "tierWhy": [
+    "Te acercas en sigilo antes del duelo.",
+    "Carga feral en oso corta un lanzamiento; con Legacy, Furor te da 80 de energía al entrar en gato.",
+    "Puede curarse entre formas."
+   ],
+   "tierWeak": "Sin quitaescudos ni respuesta al Grito; Hibernar no funciona contra humanoides. Forma de oso floja en beta.",
+   "rating": 2,
+   "label": "Difícil",
+   "marks": {
+    "shield": 0,
+    "interrupt": 1,
+    "scream": 0,
+    "mana": 0
+   },
+   "notes": {
+    "shield": "",
+    "interrupt": "Carga feral (oso)",
+    "scream": "",
+    "mana": ""
+   },
+   "why": [
+    "Te mueves en sigilo antes de empezar.",
+    "Carga feral en oso corta un lanzamiento.",
+    "Pero Hibernar no funciona y el Grito te pilla siempre a melé."
+   ],
+   "plan": [
+    "Merodear y acércate durante la cuenta atrás.",
+    "Abre en gato y fuérzale a gastar escudo.",
+    "Oso y Carga feral para cortar su primera Sanación relámpago.",
+    "Cúrate lejos de él tras el Grito."
+   ],
+   "risk": "De los cruces más duros para Druida.",
+   "keys": [
+    "<b>Feral Charge</b> (fila 3): corte en oso, aturdimiento en gato.",
+    "<b>Mangle</b> (fila 4).",
+    "<b>Brutal Impact 2/2</b>: Bash más largo y frecuente.",
+    "Solo con Legacy: <b>Furor 5/5</b> (Restauración): 80 de energía al pasar a gato."
+   ],
+   "option": "La forma de oso sigue floja en beta: úsala para cortar y aguantar.",
+   "stats": "Aguante > Agilidad > Fuerza",
+   "gear": "Cuero con agilidad y aguante."
+  },
+  "hunter": {
+   "name": "Cazador",
+   "tier": "B",
+   "crowd": 2,
+   "spec": "Supervivencia",
+   "race": "Orco",
+   "raceAlt": "Trol",
+   "raceWhy": "Dureza y Furia sangrienta; Trol por Regeneración rápida y Rabiar.",
+   "tierWhy": [
+    "La salida a 20 yd le da espacio para empezar disparando.",
+    "Deterrence y Counterattack castigan a los melés.",
+    "Supervivencia destaca en los datos de beta."
+   ],
+   "tierWeak": "Picadura de víbora no llega hasta el 32: sin presión de maná. Sin corte de hechizos real. Sufre contra Sacerdote y Brujo.",
+   "rating": 1,
+   "label": "Muy difícil",
+   "marks": {
+    "shield": 0,
+    "interrupt": 0,
+    "scream": 1,
+    "mana": 0
+   },
+   "notes": {
+    "shield": "",
+    "interrupt": "",
+    "scream": "Distancia",
+    "mana": ""
+   },
+   "why": [
+    "A distancia no te llega el Grito.",
+    "A 30 no tienes Picadura de víbora.",
+    "Sin corte ni quitaescudos, se cura contra tu daño sostenido."
+   ],
+   "plan": [
+    "Mantén 8+ yd siempre.",
+    "Mascota encima para romperle lanzamientos.",
+    "Guarda el burst para después del escudo."
+   ],
+   "risk": "Cruce muy cuesta arriba a nivel 30.",
+   "keys": [
+    "<b>Deterrence + Counterattack</b>: +25% esquivar y parar y raíz tras parar.",
+    "<b>Survivalist 5/5</b>: +10% de vida.",
+    "<b>Strider Kick</b> (fila 5): golpe cada 8 s.",
+    "Solo con Legacy: <b>Lethal Attacks 5/5</b> (Puntería)."
+   ],
+   "option": "Scatter Shot está en la fila 5 de Puntería: no llegas sin abandonar Supervivencia.",
+   "stats": "Aguante > Agilidad",
+   "gear": "Cuero o malla con agilidad."
+  },
+  "warrior": {
+   "name": "Guerrero",
+   "tier": "C",
+   "crowd": 1,
+   "spec": "Protección anti-lanzador",
+   "race": "Orco",
+   "raceAlt": "No-muerto",
+   "raceWhy": "Dureza contra aturdimientos; No-muerto si el cuadro va lleno de miedos.",
+   "tierWhy": [
+    "Carga llega desde los 20 yd de salida.",
+    "Protección da Concussion Blow (aturdir 5 s) y, con Legacy, Golpe de escudo con silencio de 3 s.",
+    "Poca gente lo jugará: más fácil ser top 4 de la clase."
+   ],
+   "tierWeak": "Sin Golpe mortal (fila 7) ni sanador. Todo lanzador con kiteo o miedo le gana.",
+   "rating": 2,
+   "label": "Difícil",
+   "marks": {
+    "shield": 0,
+    "interrupt": 2,
+    "scream": 1,
+    "mana": 0
+   },
+   "notes": {
+    "shield": "",
+    "interrupt": "Golpe de escudo (silencio con Legacy)",
+    "scream": "No-muerto",
+    "mana": ""
+   },
+   "why": [
+    "Carga desde la salida; con Vanguard, en actitud defensiva y con escudo.",
+    "Concussion Blow aturde 5 s para cortar una cura.",
+    "Improved Shield Bash silencia 3 s (solo con Legacy)."
+   ],
+   "plan": [
+    "Carga en cuanto empiece el duelo.",
+    "Concussion Blow sobre su primera cura.",
+    "Golpe de escudo sobre la segunda.",
+    "Voluntad de los Renegados al primer Grito si eres No-muerto."
+   ],
+   "risk": "Si no lo cierras en la primera ventana, el Sacerdote se recupera.",
+   "keys": [
+    "<b>Vanguard</b>: Carga en actitud defensiva.",
+    "<b>Concussion Blow</b> (fila 5): aturde 5 s. Llega con 21 puntos.",
+    "<b>Improved Shield Bash 2/2</b> (fila 5): silencio 3 s. Solo con Legacy.",
+    "<b>Last Stand</b>: +30% de vida máxima 20 s.",
+    "Solo con Legacy: <b>Vitality 3/5</b>."
+   ],
+   "option": "Armas no llega a Golpe mortal (fila 7) a nivel 30.",
+   "stats": "Aguante > Fuerza",
+   "gear": "Placas o malla; arma a una mano y escudo."
+  }
+ },
+ "PROFS": {
+  "warlock": [
+   "Sastrería",
+   "Cabeza, hombros, capa, pecho, manos, cintura, piernas y pies (8)",
+   "Tela: cae sola; lleva Minería mientras subes y cámbiala por Ingeniería",
+   true
+  ],
+  "priest": [
+   "Sastrería",
+   "Cabeza, hombros, capa, pecho, manos, cintura, piernas y pies (8)",
+   "Tela: cae sola; lleva Minería mientras subes y cámbiala por Ingeniería",
+   true
+  ],
+  "mage": [
+   "Sastrería",
+   "Mismo set de tela que Brujo y Sacerdote",
+   "Tela: cae sola; lleva Minería mientras subes y cámbiala por Ingeniería",
+   false
+  ],
+  "shaman": [
+   "Peletería",
+   "Cabeza, manos, cintura y pies (4)",
+   "Cuero y mineral: sube con Desuello + Minería y cámbialas por Peletería + Ingeniería hacia el 28",
+   true
+  ],
+  "rogue": [
+   "Peletería",
+   "Cabeza, manos, cintura y pies (4)",
+   "Cuero: Desuello mientras subes, luego Ingeniería",
+   true
+  ],
+  "druid": [
+   "Peletería",
+   "Piezas de cuero, como Pícaro",
+   "Cuero: Desuello mientras subes, luego Ingeniería",
+   false
+  ],
+  "hunter": [
+   "Peletería",
+   "Piezas de cuero y malla ligera",
+   "Cuero: Desuello mientras subes, luego Ingeniería",
+   false
+  ],
+  "warrior": [
+   "Herrería",
+   "Cabeza, hombros, muñecas y pies (4)",
+   "Mineral: Minería mientras subes, luego Ingeniería",
+   true
+  ],
+  "paladin": [
+   "Herrería",
+   "Piezas de malla y placas, como Guerrero",
+   "Mineral: Minería mientras subes, luego Ingeniería",
+   false
+  ]
+ },
+ "TINTS": {
+  "warlock": [
+   "#7b44c9",
+   "#a1327e",
+   "#d0561f"
+  ],
+  "shaman": [
+   "#d0651c",
+   "#2f7fd0",
+   "#2fae9a"
+  ],
+  "mage": [
+   "#9a5ce0",
+   "#d9501d",
+   "#4aa3ee"
+  ],
+  "priest": [
+   "#d8c98a",
+   "#f0d060",
+   "#7b44c9"
+  ],
+  "druid": [
+   "#4a8fd6",
+   "#c8862e",
+   "#46ad54"
+  ],
+  "rogue": [
+   "#5a9e3f",
+   "#c0432f",
+   "#6b6ba8"
+  ],
+  "paladin": [
+   "#f0d060",
+   "#7a9ec4",
+   "#d0651c"
+  ],
+  "hunter": [
+   "#9a6a32",
+   "#46916a",
+   "#6f8f40"
+  ],
+  "warrior": [
+   "#c0432f",
+   "#d0561f",
+   "#7f8fa0"
+  ]
+ },
+ "ORDER": [
+  "warlock",
+  "priest",
+  "shaman",
+  "mage",
+  "rogue",
+  "paladin",
+  "druid",
+  "hunter",
+  "warrior"
+ ],
+ "TIERS": [
+  [
+   "S",
+   "Legendario"
+  ],
+  [
+   "A",
+   "Épico"
+  ],
+  [
+   "B",
+   "Raro"
+  ],
+  [
+   "C",
+   "Poco común"
+  ]
+ ],
+ "STEPS": [
+  [
+   "Hoy - 4 oct",
+   "Crea el Chamán Orco (Horda, PvP, apellido Foreverpvp), inscríbelo en Raider.IO y pide invitación a la hermandad. Cierra el 4 oct a las 20:00."
+  ],
+  [
+   "27 sep - 1 oct",
+   "Cap 20. Chamán a 20 con Desuello + Minería, todo al banco. Cazador Tauren con Sastrería + Encantamiento en paralelo."
+  ],
+  [
+   "~1 - 8 oct",
+   "Cap 30. Chamán a 25 (se abre Legacy) y a 28. Cambia Desuello y Minería por Peletería e Ingeniería y sube las dos a 225 con lo del banco. Nivel 30."
+  ],
+  [
+   "~6 - 12 oct",
+   "Cazador de 20 a 25 con Well Rested gastado en él. Sastrería y Encantamiento a 150."
+  ],
+  [
+   "12 - 14 oct",
+   "Personaje 3 a nivel 10-15 con Alquimia y Herrería a 150."
+  ],
+  [
+   "14 - 15 oct",
+   "En el Chamán: Well Rested 5/5 y Talented 5/5. Comprueba que tienes 26 puntos de talento."
+  ],
+  [
+   "16 oct",
+   "Envía tu build (24 h antes). Bolsa llena de pociones, bombas y comida."
+  ],
+  [
+   "17 oct",
+   "Check-in en Raider.IO, 15 g de entrada y a la clasificatoria."
+  ]
+ ],
+ "RULES": [
+  [
+   "Solo Horda, ruleset PvP",
+   "Personaje nuevo creado tras abrir la inscripción, apellido Foreverpvp, un solo personaje en todo el torneo.",
+   "Razas: Orco, No-muerto, Tauren, Trol y Skyborne."
+  ],
+  [
+   "Top 4 de cada clase a la final",
+   "La final la juegan los 4 mejores de cada clase; cada clase tiene su premio de $2.777.",
+   "Una clase muy jugada es más difícil de clasificar."
+  ],
+  [
+   "Build fija por fase",
+   "Se envía 24 h antes de cada fase y no se cambia una vez empieza. Puedes cambiarla entre clasificatoria y final.",
+   "Tu build tiene que aguantar a todo el cuadro."
+  ],
+  [
+   "Salida a 20 yd",
+   "Los dos parten de la bandera y se alejan 10 yd. Nadie se mueve hasta que empiece el duelo, salvo quien esté en sigilo. No se puede ir montado.",
+   "Pícaros y Druidas eligen ángulo; los lanzadores empiezan en su alcance."
+  ],
+  [
+   "Buffs de otros jugadores",
+   "Solo los de clase que duren 2 min o más. Nada de escudo de otro Sacerdote ni buffs de eventos.",
+   "Pide Entereza, Intelecto Arcano, Marca de lo Salvaje y una Bendición."
+  ],
+  [
+   "Consumibles",
+   "Todo vale salvo Polvo mágico y pociones de protección (Fuego, Naturaleza, Escarcha, Arcano, Sagrado y Sombras).",
+   "Bombas de Ingeniería y pociones legales. Algo prohibido en la bolsa es descalificación."
+  ],
+  [
+   "Legacy permitido",
+   "Los puntos de Legacy están permitidos de forma explícita.",
+   "Talented 5/5 = 26 puntos de talento."
+  ],
+  [
+   "1-2 min entre duelos",
+   "Para curarse, bufar y recuperar maná. No se sale de la zona de duelo.",
+   "Cada duelo empieza casi a tope."
+  ],
+  [
+   "Tiempo muerto",
+   "Si un duelo se agota, se repite con un tope de 3 de comida y 3 de agua para ese cruce.",
+   "En duelos de sanadores el maná pesa más en la revancha."
+  ],
+  [
+   "Retrasos y huidas",
+   "60 s de inactividad es penalización. Salir del área es descalificación; forzar la huida del rival con miedos en el borde, también.",
+   "Cuidado con Miedo y Grito cerca de la línea."
+  ],
+  [
+   "Brujos y fragmentos",
+   "Pueden salir una sola vez a por fragmentos, avisando a un admin.",
+   "Llega con la bolsa de fragmentos llena."
+  ]
+ ],
+ "GUIDE": [
+  {
+   "id": "ins",
+   "when": "Hoy – 4 oct",
+   "title": "Inscripción",
+   "items": [
+    "Crea un personaje <b>nuevo</b>: Orco Chamán, <b>Horda</b>, ruleset <b>PvP</b>. Tiene que estar creado después de las 20:00 del 27 de septiembre (hora de España); los anteriores no valen.",
+    "Ponle el apellido <b>Foreverpvp</b>. Es obligatorio.",
+    "Inscríbelo en <a href=\"https://rio.gg/foreveropen\" target=\"_blank\" rel=\"noopener\">rio.gg/foreveropen</a> con los datos del personaje.",
+    "Entra con él y pide invitación a la hermandad &lt;The Forever Open&gt; a Admin Foreverpvp, Bog Foreverpvp, Prestige One, Admin Musashi o Magetea Foreverpvp.",
+    "Únete al <a href=\"https://discord.gg/YdvQnxADwP\" target=\"_blank\" rel=\"noopener\">Discord Forever PvP</a>: allí publican el formato de la clasificatoria, como mínimo una semana antes.",
+    "Comprueba que tu inscripción aparece antes del <b>4 de octubre a las 20:00</b>, cuando se cierra."
+   ]
+  },
+  {
+   "id": "str",
+   "when": "Antes del 17 oct",
+   "title": "Streaming obligatorio",
+   "items": [
+    "Ten un canal en <b>Twitch, YouTube o Kick</b>. Ninguna otra plataforma vale.",
+    "Configura OBS (o similar) y haz una emisión de prueba con el juego.",
+    "Activa el guardado de emisiones (VOD): los admins pueden pedírtelo para revisar. Sin stream o sin VOD pierdes los duelos y el premio.",
+    "Practica enseñar en directo tus bolsas, talentos y personaje: habrá inspecciones en stream."
+   ]
+  },
+  {
+   "id": "l1",
+   "when": "Nivel 1-10",
+   "title": "Durotar y profesiones",
+   "items": [
+    "Valle de los Retos y Cerrotajo. Todo misiones.",
+    "Aprende <b>Desuello y Minería</b>: Minería con Krunn en Cerrotajo y Desuello con Thuwd (63.2, 45.2) en El Arrastradero de Orgrimmar. Si una misión inicial te ofrece un manual de recolección (Pelt Collecting for Beginners o Mining for Dummies), da +2 hasta 15.",
+    "Aprende también <b>Primeros auxilios</b> (Rawrk, Cerrotajo; con el lino y la lana) y <b>Cocina</b> (Orgrimmar; con la carne).",
+    "Despelleja y mina <b>todo</b>. Guarda cuero y mineral en el banco y compra bolsas: vas a acumular mucho.",
+    "Misiones de tótem: Tierra al principio y Fuego hacia el 10 (niveles de Classic, <span class=\"verify\">verificar</span>).",
+    "Nivel 10: primer punto de talento en <b>Thundering Strikes</b>. Sigue el orden de la tabla de abajo."
+   ],
+   "extra": "talents"
+  },
+  {
+   "id": "l2",
+   "when": "Nivel 10-20 · cap 20 hasta ~1 oct",
+   "title": "Los Baldíos",
+   "items": [
+    "Base en <b>El Cruce</b>. Fuera de El Cruce está <b>Pawani</b> (Durotar Supply and Logistics): vende los patrones de Peletería de Merchant's Favor (30 de Favor cada uno).",
+    "Junta Merchant's Favor entregando cajas de suministros (Waylaid Supplies) desde ya: los patrones de nivel 30 también se pagan con Favor.",
+    "Equipo para subir: verdes de misiones y mazmorras. No fabricas nada todavía; tu equipo bueno llega a nivel 30.",
+    "Haz cada mazmorra de tu rango <b>una vez</b> por la experiencia de misión de primera vez: Sima Ígnea, Cuevas de los Lamentos (Serpent's Shoulders de Lady Anacondra) y Ruins of Lordaeron (15-20).",
+    "Empieza a juntar <b>libros de la biblioteca</b>: Friend of the Library da el Erudite's Amulet (BiS de cuello) y con 20 libros sale el Philanthropist's Ring. <a href=\"https://www.zockify.com/forever/library-books/\" target=\"_blank\" rel=\"noopener\">Ubicaciones</a>.",
+    "Nivel 20: misión del Tótem de Agua, Lobo fantasmal y Choque de escarcha (niveles de Classic, <span class=\"verify\">verificar</span>).",
+    "Con el cap en 20, <b>no pares</b>: completa misiones y guárdalas sin entregar (el diario es de 40 en la beta). Las entregas todas cuando suba a 30.",
+    "Desuello y Minería a la par que tu nivel (100 o más al llegar a 20), para poder recoger todo lo de las zonas siguientes."
+   ]
+  },
+  {
+   "id": "alt1",
+   "when": "Mientras el cap está en 20",
+   "title": "Empieza el Cazador",
+   "items": [
+    "Crea un <b>Cazador Tauren</b>. Puede ir en ruleset <b>Normal</b> para subir sin ganks: no tiene que mandarte nada.",
+    "Profesiones: <b>Sastrería + Encantamiento</b>. La tela y los verdes que caen al subir las alimentan gratis. No vendas ninguna de las dos cosas.",
+    "Mulgore del 1 al 10, mascota en el 10, Baldíos del 10 al 20. Talentos en Bestias.",
+    "Llévalo a 20 si te da tiempo antes de que se abra el 30."
+   ]
+  },
+  {
+   "id": "l3",
+   "when": "~1 oct · se abre el 30",
+   "title": "Chamán del 20 al 25",
+   "items": [
+    "Entrega todas las misiones que guardaste.",
+    "Zonas de 20-25: Sierra Espolón, Vallefresno, Mil Agujas o Laderas de Trabalomas (orientativo: Forever añade misiones).",
+    "<b>Brazales</b>: Cultist's Armguards con la misión Blackfathom Villainy (Cavernas de Brazanegra). <b>Piernas</b>: Duty Bound Leggings (misión Bloodied Insignia). <b>Capa</b>: Grave Shroud (misión Abominable Creatures).",
+    "Excavation Site (24-29), una vez.",
+    "<b>Nivel 25</b>: se abre Legacy y ganas el punto de clase. Gasta lo que tengas en Well Rested y luego Talented (<span class=\"verify\">verificar</span> que el panel funciona en la beta)."
+   ]
+  },
+  {
+   "id": "l4",
+   "when": "Nivel 28-30",
+   "title": "Cambio a Peletería e Ingeniería",
+   "items": [
+    "Hacia el <b>28</b>: olvida Desuello y Minería y aprende <b>Peletería</b> (Karolek, El Arrastradero; ubicación de Classic, <span class=\"verify\">verificar</span>) e <b>Ingeniería</b> en Orgrimmar.",
+    "Peletería de 1 a <b>225</b> con el cuero del banco (+2 Legacy).",
+    "Ingeniería de 1 a <b>225</b> con el mineral del banco (+2 Legacy). Lo que falte, a la subasta.",
+    "Vende en la subasta el cuero y el mineral que sobren.",
+    "Ingeniería <b>140</b>: fabrícate el abalorio <b>Minor Recombobulator</b> (ligado). Hacia 175, granadas (en Classic la Granada de hierro pedía 175).",
+    "<b>Nivel 30</b>: misión del Tótem de Aire para Tótem de derribo y Arma Viento furioso (niveles de Classic, <span class=\"verify\">verificar</span>).",
+    "Entra una vez en City of Dalaran (28-33)."
+   ]
+  },
+  {
+   "id": "leg",
+   "when": "~6-14 oct",
+   "title": "Cierra los 10 puntos de Legacy",
+   "items": [
+    "Cazador del 20 al 25 (+1). Gasta en él Well Rested 5/5: sube más rápido.",
+    "Sastrería y Encantamiento del Cazador a 150 (+2). Si puedes, una de las dos a 225 (+1 de margen).",
+    "Personaje de relleno en <b>Horda PvP</b> (para recibir oro del Chamán) a nivel 10-15: <b>Alquimia + Herrería</b> a 150 (+2) con materiales de la subasta.",
+    "Cuenta: Chamán 5 + Cazador 3 + relleno 2 = <b>10</b>. Usa la calculadora de la pestaña Plan Legacy.",
+    "En el Chamán: <b>Well Rested 5/5 → Talented 5/5</b>. Si te sobran: High Alert 2/2 y Field Medicine 2/2.",
+    "Comprueba en el juego que tienes <b>26 puntos de talento</b> y reparte la build (Mejora 0/26/0)."
+   ]
+  },
+  {
+   "id": "gear",
+   "when": "Antes del 16 oct",
+   "title": "Equipo y bolsa",
+   "items": [
+    "Revisa la lista BiS de nivel 30 cuando salga (hacia el 3-4 oct), compra los patrones con Merchant's Favor y fabrica tus piezas de Peletería.",
+    "Pociones de sanación y vendas (Primeros auxilios), pociones de maná (Alquimia del relleno), comida con estadísticas (Cocina) y bombas (Ingeniería).",
+    "Piedra de peso para tu arma de dos manos contundente (Herrería del relleno o subasta).",
+    "Lleva los objetos de tótem en la bolsa si Forever los sigue pidiendo (en Classic sí) (<span class=\"verify\">verificar</span>).",
+    "Nada prohibido en las bolsas: Polvo mágico, pociones de protección y consumibles de eventos festivos.",
+    "Repara antes de ir: no puedes salir de la zona de duelo."
+   ],
+   "extra": "bis"
+  },
+  {
+   "id": "fin",
+   "when": "16-17 oct",
+   "title": "Semana del torneo",
+   "items": [
+    "<b>16 oct</b>: envía tu build (Mejora 0/26/0). Es 24 h antes de la fase y no se cambia después.",
+    "Practica duelos contra Brujo, Sacerdote, Pícaro y Mago con los planes de la tabla de abajo.",
+    "<b>17 oct por la mañana</b>: check-in en Raider.IO, 15 g de entrada y personaje a nivel 30.",
+    "Pide buffs de 2 min o más: Entereza, Intelecto Arcano, Marca de lo Salvaje y una Bendición.",
+    "Stream encendido antes de la primera inspección.",
+    "En cada duelo: sobre la bandera, 10 yd atrás, quieto hasta que empiece. No huyas del área y no fuerces huidas."
+   ],
+   "extra": "matchups"
+  }
+ ],
+ "BIS20": [
+  [
+   "Cabeza",
+   "Defender's Leather Hood",
+   "Peletería 100 · ligado"
+  ],
+  [
+   "Cuello",
+   "Erudite's Amulet",
+   "Misión Friend of the Library"
+  ],
+  [
+   "Hombros",
+   "Serpent's Shoulders",
+   "Lady Anacondra, Cuevas de los Lamentos"
+  ],
+  [
+   "Espalda",
+   "Grave Shroud",
+   "Misión Abominable Creatures"
+  ],
+  [
+   "Pecho",
+   "Blackened Defias Armor",
+   "Edwin VanCleef, Minas de la Muerte"
+  ],
+  [
+   "Muñecas",
+   "Cultist's Armguards",
+   "Misión Blackfathom Villainy"
+  ],
+  [
+   "Manos",
+   "Brawler's Leather Gloves",
+   "Peletería 75 · ligado"
+  ],
+  [
+   "Cintura",
+   "Deviate Scale Belt",
+   "Peletería 90 · ligado"
+  ],
+  [
+   "Piernas",
+   "Duty Bound Leggings",
+   "Misión Bloodied Insignia"
+  ],
+  [
+   "Pies",
+   "Brawler's Leather Boots",
+   "Peletería 85 · ligado"
+  ],
+  [
+   "Anillos",
+   "Malignant Root · First Mate Band",
+   "Rare · Minas de la Muerte"
+  ],
+  [
+   "Abalorios",
+   "Minor Recombobulator · Lookie's Spyglass",
+   "Ingeniería 140 · Minas de la Muerte"
+  ],
+  [
+   "Dos manos",
+   "Smite's Mighty Hammer",
+   "Mr. Smite, Minas de la Muerte"
+  ]
+ ],
+ "MATCHUPS": [
+  [
+   "Brujo",
+   "Quebrar maldición en cuanto te ponga Bane of Agony o Maldición de agotamiento. Tótem de temblor contra su Miedo; Choque de tierra sobre el Miedo o Drenar. Lobo fantasmal para cerrar."
+  ],
+  [
+   "Sacerdote",
+   "Tótem de temblor antes de entrar. Purga el escudo y pega; Choque de tierra solo sobre curas. Tótem de derribo para su Quemadura de maná."
+  ],
+  [
+   "Pícaro",
+   "Dureza te acorta sus aturdimientos. Aguanta la apertura, cúrate cuando rompa el combo y remata con Furia sangrienta + Stormstrike. Tótem de nexo terrestre si huye con Sprint."
+  ],
+  [
+   "Mago",
+   "Tótem de derribo se come la Polimorfia o una Descarga de escarcha. Choque de tierra sobre sus lanzamientos largos. Tras su Bloque de hielo, reposiciónate y espera."
+  ],
+  [
+   "Chamán",
+   "Purga su Escudo de relámpagos, Choque de tierra sobre sus curas y guarda Furia sangrienta para tu Stormstrike."
+  ],
+  [
+   "Paladín",
+   "Purga sus Bendiciones (sobre todo Libertad). Choque de tierra sobre sus curas. Dureza contra el Martillo de justicia."
+  ],
+  [
+   "Druida",
+   "Purga Rejuvenecimiento y Recrecimiento. Choque de tierra sobre Toque de sanación. Choque de escarcha si se escapa en gato."
+  ],
+  [
+   "Cazador",
+   "Lobo fantasmal para cerrar. Mira dónde pone las trampas. Durante Deterrence deja de pegar y usa choques."
+  ],
+  [
+   "Guerrero",
+   "Choque de escarcha y distancia. Dureza contra Concussion Blow. Cúrate cuando no pueda cortarte."
+  ]
+ ],
+ "BUILDS": {
+  "warlock": [
+   "Improved Corruption*5",
+   "Malediction*5",
+   "Demonic Embrace*5",
+   "Amplify Curse",
+   "Fel Concentration*3",
+   "Improved Bane of Agony",
+   "Curse of Exhaustion",
+   "Nightfall*2",
+   "Malevolence*2",
+   "Siphon Life"
+  ],
+  "shaman": [
+   "Thundering Strikes*5",
+   "Mental Dexterity*3",
+   "Improved Ghost Wolf*2",
+   "Shamanistic Focus",
+   "Elemental Weapons*3",
+   "Guardian Totems",
+   "Stormstrike",
+   "Flurry*5",
+   "Guardian Totems",
+   "Improved Stormstrike*2",
+   "Toughness*2"
+  ],
+  "mage": [
+   "Improved Frostbolt*5",
+   "Frostbite*3",
+   "Permafrost*2",
+   "Ice Lance",
+   "Piercing Ice*3",
+   "Frost Channeling",
+   "Ice Block",
+   "Shatter*3",
+   "Improved Frost Nova*2",
+   "Cold Snap",
+   "Ice Shards*4"
+  ],
+  "priest": [
+   "Twin Disciplines*5",
+   "Improved Power Word: Shield*3",
+   "Silent Resolve*2",
+   "Mental Agility*3",
+   "Inner Focus",
+   "Meditation",
+   "Soul Warding",
+   "Improved Mana Burn*2",
+   "Improved Inner Fire*2",
+   "Penance",
+   "Martyrdom*2",
+   "Silent Resolve",
+   "Renewed Hope*2"
+  ],
+  "druid": [
+   "Ferocity*5",
+   "Feral Swiftness*2",
+   "Brutal Impact*2",
+   "Thick Hide",
+   "Savage Fury*2",
+   "Feral Charge",
+   "Sharpened Claws*2",
+   "Mangle",
+   "Predatory Strikes*3",
+   "Primal Fury*2",
+   "Furor*5"
+  ],
+  "rogue": [
+   "Improved Eviscerate*3",
+   "Improved Sinister Strike*2",
+   "Precision*3",
+   "Deflection*3",
+   "Endurance*2",
+   "Improved Sprint*2",
+   "Improved Kick*2",
+   "Malice*5",
+   "Ruthlessness*3",
+   "Restless Blades"
+  ],
+  "paladin": [
+   "Toughness*5",
+   "Precision*3",
+   "Guardian's Favor*2",
+   "Sacred Duty*2",
+   "Improved Seal of Fury",
+   "Improved Righteous Fury*2",
+   "Improved Hammer of Justice*3",
+   "One-Handed Weapon Specialization*2",
+   "Templar's Bulwark",
+   "Divine Strength*5"
+  ],
+  "hunter": [
+   "Deflection*5",
+   "Survivalist*5",
+   "Deterrence",
+   "Surefooted*3",
+   "Clever Traps",
+   "Counterattack",
+   "Predator's Edge*4",
+   "Strider Kick",
+   "Lethal Attacks*5"
+  ],
+  "warrior": [
+   "Shield Specialization*5",
+   "Improved Bloodrage*2",
+   "Toughness*3",
+   "Last Stand",
+   "Improved Revenge*3",
+   "Master of Defense",
+   "Vanguard",
+   "Improved Disarm*3",
+   "Improved Sunder Armor",
+   "Concussion Blow",
+   "Improved Shield Bash*2",
+   "Vitality*3"
+  ]
+ },
+ "route": {
+  "main": {
+   "label": "Chamán Orco (main)",
+   "sections": [
+    {
+     "id": "m1",
+     "from": 1,
+     "to": 5,
+     "title": "Nv 1-5 · Valle de los Retos",
+     "items": [
+      {
+       "t": "Misiones del Valle hasta nivel 5",
+       "lvl": 5
+      },
+      {
+       "t": "Misión del Tótem de Tierra (nivel 4, en el Valle)",
+       "totem": "earth",
+       "tip": "Se marca solo en cuanto conoces un tótem de ese elemento."
+      },
+      {
+       "t": "Vende lo gris; no gastes oro en nada más",
+       "tip": "Vas a necesitar ~2-3 oro para instructores, pico y cuchillo."
+      }
+     ]
+    },
+    {
+     "id": "m2",
+     "from": 5,
+     "to": 8,
+     "title": "Nv 5-8 · Aprende las profesiones",
+     "items": [
+      {
+       "t": "Cerrotajo: Minería (Krunn) y Primeros auxilios (Rawrk)",
+       "learn": [
+        "mining",
+        "firstaid"
+       ]
+      },
+      {
+       "t": "Orgrimmar, The Drag: Desuello (Thuwd) y Cocina",
+       "learn": [
+        "skinning",
+        "cooking"
+       ]
+      },
+      {
+       "t": "Pico de minero y Cuchillo de desollar en la bolsa",
+       "tools": [
+        "pick",
+        "knife"
+       ]
+      },
+      {
+       "t": "Desuello 50: jabalíes, escórpidos y raptores de Durotar",
+       "p": [
+        "skinning",
+        50
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m3",
+     "from": 8,
+     "to": 10,
+     "title": "Nv 8-10 · Durotar",
+     "items": [
+      {
+       "t": "Minería 50: todas las vetas de cobre que veas",
+       "p": [
+        "mining",
+        50
+       ]
+      },
+      {
+       "t": "Primeros auxilios 40: ~40 Vendas de lino",
+       "p": [
+        "firstaid",
+        40
+       ],
+       "tip": "1 Tela de lino por venda. Gasta aquí el lino, no lo vendas."
+      },
+      {
+       "t": "Cocina 50: carne que sueltan los bichos de Durotar",
+       "p": [
+        "cooking",
+        50
+       ]
+      },
+      {
+       "t": "Nivel 10",
+       "lvl": 10
+      },
+      {
+       "t": "Misión del Tótem de Fuego (nivel 10)",
+       "totem": "fire",
+       "tip": "Se marca solo en cuanto conoces un tótem de ese elemento."
+      }
+     ]
+    },
+    {
+     "id": "m4",
+     "from": 10,
+     "to": 15,
+     "title": "Nv 10-15 · Los Baldíos (I)",
+     "items": [
+      {
+       "t": "Oficial (Journeyman) en los 4 instructores: tope 150",
+       "tip": "Desde nivel 10. Sin esto te quedas clavado en 75."
+      },
+      {
+       "t": "Desuello 100: zhevras, kodos, raptores y leonas",
+       "p": [
+        "skinning",
+        100
+       ]
+      },
+      {
+       "t": "Minería 75: cobre; desde 65 también estaño",
+       "p": [
+        "mining",
+        75
+       ]
+      },
+      {
+       "t": "Primeros auxilios 80: ~45 Vendas de lino gruesas",
+       "p": [
+        "firstaid",
+        80
+       ],
+       "tip": "2 Telas de lino por venda."
+      },
+      {
+       "t": "Cocina 90",
+       "p": [
+        "cooking",
+        90
+       ]
+      },
+      {
+       "t": "Pawani (fuera de El Cruce): empieza con Merchant's Favor"
+      },
+      {
+       "t": "Nivel 15",
+       "lvl": 15
+      }
+     ]
+    },
+    {
+     "id": "m5",
+     "from": 15,
+     "to": 20,
+     "title": "Nv 15-20 · Baldíos (II) y mazmorras",
+     "items": [
+      {
+       "t": "Desuello 150 (tope de Oficial)",
+       "p": [
+        "skinning",
+        150
+       ]
+      },
+      {
+       "t": "Minería 125: estaño y plata; desde 125 ya puedes hierro",
+       "p": [
+        "mining",
+        125
+       ]
+      },
+      {
+       "t": "Primeros auxilios 150: ~40 Vendas de lana y ~40 de lana gruesas",
+       "p": [
+        "firstaid",
+        150
+       ],
+       "tip": "A 150 necesitas el libro de Experto para seguir; no hace falta para el torneo."
+      },
+      {
+       "t": "Cocina 125",
+       "p": [
+        "cooking",
+        125
+       ]
+      },
+      {
+       "t": "Ragefire y Wailing Caverns hechas una vez"
+      },
+      {
+       "t": "Nivel 20",
+       "lvl": 20
+      },
+      {
+       "t": "Misión del Tótem de Agua (nivel 20)",
+       "totem": "water",
+       "tip": "Se marca solo en cuanto conoces un tótem de ese elemento."
+      }
+     ]
+    },
+    {
+     "id": "m6",
+     "from": 20,
+     "to": 25,
+     "title": "Nv 20-25 · Experto y acopio",
+     "items": [
+      {
+       "t": "Experto (nivel 20) de Desuello y Minería: tope 225"
+      },
+      {
+       "t": "Desuello 175",
+       "p": [
+        "skinning",
+        175
+       ]
+      },
+      {
+       "t": "Minería 150: hierro y oro",
+       "p": [
+        "mining",
+        150
+       ]
+      },
+      {
+       "t": "Todo el cuero y el mineral al banco; nada a subasta"
+      },
+      {
+       "t": "Nivel 25: se abre Legacy",
+       "lvl": 25
+      }
+     ]
+    },
+    {
+     "id": "m7",
+     "from": 25,
+     "to": 28,
+     "title": "Nv 25-28 · Llena el banco",
+     "items": [
+      {
+       "t": "Desuello 200",
+       "p": [
+        "skinning",
+        200
+       ]
+      },
+      {
+       "t": "Minería 175: mitril",
+       "p": [
+        "mining",
+        175
+       ]
+      },
+      {
+       "t": "Banco de cuero: ~300 ligero, ~200 medio, ~150 pesado, ~50 grueso",
+       "tip": "Orientativo para Peletería 1-225. Lo que falte, a la subasta."
+      },
+      {
+       "t": "Banco de minería: piedra rugosa/basta/pesada/sólida y barras de cobre, bronce, hierro y mitril",
+       "tip": "Orientativo: ~60 piedra rugosa, ~40 basta, ~30 pesada, ~30 sólida; ~60 cobre, ~40 bronce, ~60 hierro, ~40 mitril."
+      },
+      {
+       "t": "Nivel 28",
+       "lvl": 28
+      }
+     ]
+    },
+    {
+     "id": "m8",
+     "from": 28,
+     "to": 30,
+     "title": "Nv 28 · Peletería 1 → 225",
+     "items": [
+      {
+       "t": "Olvida Desuello y Minería; aprende Peletería (Karolek) e Ingeniería",
+       "learn": [
+        "leatherworking",
+        "engineering"
+       ]
+      },
+      {
+       "t": "Peletería 45: ~45 Kits de armadura ligera",
+       "p": [
+        "leatherworking",
+        45
+       ]
+      },
+      {
+       "t": "Peletería 55: ~10 Pieles ligeras curadas",
+       "p": [
+        "leatherworking",
+        55
+       ]
+      },
+      {
+       "t": "Peletería 85: ~30 Guantes de cuero repujados",
+       "p": [
+        "leatherworking",
+        85
+       ]
+      },
+      {
+       "t": "Peletería 100: ~15 Cinturones de cuero fino (Oficial a 75)",
+       "p": [
+        "leatherworking",
+        100
+       ]
+      },
+      {
+       "t": "Peletería 120: ~20 Pieles medias curadas",
+       "p": [
+        "leatherworking",
+        120
+       ]
+      },
+      {
+       "t": "Peletería 150: ~25 Cinturones de cuero oscuro",
+       "p": [
+        "leatherworking",
+        150
+       ]
+      },
+      {
+       "t": "Peletería 170: ~20 Kits de armadura pesada (Experto a 150)",
+       "p": [
+        "leatherworking",
+        170
+       ]
+      },
+      {
+       "t": "Peletería 190: Hombreras bárbaras y Guantes de guardián (~20)",
+       "p": [
+        "leatherworking",
+        190
+       ]
+      },
+      {
+       "t": "Peletería 225: piezas de cuero grueso (Nightscape) ~35",
+       "p": [
+        "leatherworking",
+        225
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m9",
+     "from": 28,
+     "to": 30,
+     "title": "Nv 28 · Ingeniería 1 → 225",
+     "items": [
+      {
+       "t": "Ingeniería 40: ~40 Pólvora rugosa",
+       "p": [
+        "engineering",
+        40
+       ]
+      },
+      {
+       "t": "Ingeniería 50: ~30 Puñados de tornillos de cobre",
+       "p": [
+        "engineering",
+        50
+       ]
+      },
+      {
+       "t": "Ingeniería 75: Llave Arclight, Tubos de cobre y Dinamita rugosa",
+       "p": [
+        "engineering",
+        75
+       ]
+      },
+      {
+       "t": "Ingeniería 100: ~25 Pólvora basta y Dinamita basta (Oficial a 75)",
+       "p": [
+        "engineering",
+        100
+       ]
+      },
+      {
+       "t": "Ingeniería 125: Tubos de bronce y Bombas pequeñas de bronce",
+       "p": [
+        "engineering",
+        125
+       ]
+      },
+      {
+       "t": "Ingeniería 140: ~15 Pólvora pesada y Bombas grandes de bronce",
+       "p": [
+        "engineering",
+        140
+       ]
+      },
+      {
+       "t": "Minor Recombobulator fabricado y equipado",
+       "equip": "Minor Recombobulator",
+       "equipId": 4381
+      },
+      {
+       "t": "Ingeniería 175: Pólvora sólida y Granadas de hierro (Experto a 150)",
+       "p": [
+        "engineering",
+        175
+       ]
+      },
+      {
+       "t": "Ingeniería 225: Tubos de mitril, Disparadores inestables, Bombas explosivas",
+       "p": [
+        "engineering",
+        225
+       ]
+      }
+     ]
+    },
+    {
+     "id": "m10",
+     "from": 30,
+     "to": 30,
+     "title": "Nv 30 · Listo para el torneo",
+     "items": [
+      {
+       "t": "Nivel 30",
+       "lvl": 30
+      },
+      {
+       "t": "Misión del Tótem de Aire (nivel 30)",
+       "totem": "air",
+       "tip": "Se marca solo en cuanto conoces un tótem de ese elemento."
+      },
+      {
+       "t": "Piezas BiS de Peletería con patrones de Merchant's Favor"
+      },
+      {
+       "t": "Build Mejora completa (26 puntos)",
+       "build": true
+      }
+     ]
+    }
+   ]
+  },
+  "hunter": {
+   "label": "Cazador Tauren (alter de Legacy)",
+   "sections": [
+    {
+     "id": "h1",
+     "from": 1,
+     "to": 10,
+     "title": "Nv 1-10 · Mulgore",
+     "items": [
+      {
+       "t": "Cima del Trueno: Sastrería y Encantamiento",
+       "learn": [
+        "tailoring",
+        "enchanting"
+       ]
+      },
+      {
+       "t": "Sastrería 50: Rollos de lino y Camisas de lino",
+       "p": [
+        "tailoring",
+        50
+       ]
+      },
+      {
+       "t": "Encantamiento 50: Varilla de cobre rúnica + desencanta los verdes",
+       "p": [
+        "enchanting",
+        50
+       ]
+      },
+      {
+       "t": "Nivel 10",
+       "lvl": 10
+      }
+     ]
+    },
+    {
+     "id": "h2",
+     "from": 10,
+     "to": 20,
+     "title": "Nv 10-20 · Oficial",
+     "items": [
+      {
+       "t": "Oficial (nivel 10) en Sastrería y Encantamiento"
+      },
+      {
+       "t": "Sastrería 75: ~15 Bolsas de lino y Capa de lino reforzada",
+       "p": [
+        "tailoring",
+        75
+       ]
+      },
+      {
+       "t": "Encantamiento 75: Brazal - Salud menor (polvo extraño)",
+       "p": [
+        "enchanting",
+        75
+       ]
+      },
+      {
+       "t": "Sastrería 110: Rollos de lana y Camisas de lana grises",
+       "p": [
+        "tailoring",
+        110
+       ]
+      },
+      {
+       "t": "Encantamiento 110: Brazal - Aguante menor / Desvío menor",
+       "p": [
+        "enchanting",
+        110
+       ]
+      },
+      {
+       "t": "Nivel 20",
+       "lvl": 20
+      }
+     ]
+    },
+    {
+     "id": "h3",
+     "from": 20,
+     "to": 25,
+     "title": "Nv 20-25 · Experto y +1 Legacy",
+     "items": [
+      {
+       "t": "Experto (nivel 20) en las dos profesiones"
+      },
+      {
+       "t": "Sastrería 150: Rollos de seda, Capucha de seda azur, Cintas de seda",
+       "p": [
+        "tailoring",
+        150
+       ]
+      },
+      {
+       "t": "Encantamiento 150: Capa - Aguante menor / Brazal - Aguante inferior",
+       "p": [
+        "enchanting",
+        150
+       ]
+      },
+      {
+       "t": "Nivel 25: +1 Legacy de clase",
+       "lvl": 25
+      }
+     ]
+    },
+    {
+     "id": "h4",
+     "from": 25,
+     "to": 30,
+     "title": "Nv 25+ · Opcional: 225",
+     "items": [
+      {
+       "t": "Sastrería 225: tejido mágico (subasta)",
+       "p": [
+        "tailoring",
+        225
+       ],
+       "tip": "+1 Legacy más. Solo si sobra tiempo u oro."
+      },
+      {
+       "t": "Encantamiento 225: esencias y polvo de alma",
+       "p": [
+        "enchanting",
+        225
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "filler": {
+   "label": "Relleno (Alquimia + Herrería)",
+   "sections": [
+    {
+     "id": "f1",
+     "from": 1,
+     "to": 10,
+     "title": "Nv 1-10 · Aprendiz",
+     "items": [
+      {
+       "t": "Alquimia y Herrería aprendidas",
+       "learn": [
+        "alchemy",
+        "blacksmithing"
+       ]
+      },
+      {
+       "t": "Alquimia 60: ~60 Pociones de sanación menores (Flor de paz + Hojaplata)",
+       "p": [
+        "alchemy",
+        60
+       ]
+      },
+      {
+       "t": "Herrería 75: Piedras de afilar y de moler rugosas, Cinturón de cadena de cobre",
+       "p": [
+        "blacksmithing",
+        75
+       ]
+      },
+      {
+       "t": "Nivel 10",
+       "lvl": 10
+      }
+     ]
+    },
+    {
+     "id": "f2",
+     "from": 10,
+     "to": 15,
+     "title": "Nv 10-15 · Oficial a 150",
+     "items": [
+      {
+       "t": "Oficial (nivel 10) en las dos profesiones"
+      },
+      {
+       "t": "Alquimia 110: ~50 Pociones de sanación inferiores",
+       "p": [
+        "alchemy",
+        110
+       ]
+      },
+      {
+       "t": "Alquimia 150: ~40 Pociones de sanación (Hierba cardenal + Brezospina)",
+       "p": [
+        "alchemy",
+        150
+       ]
+      },
+      {
+       "t": "Herrería 125: Piedras de moler bastas y Cinturones de cobre rúnico",
+       "p": [
+        "blacksmithing",
+        125
+       ]
+      },
+      {
+       "t": "Herrería 150: Piedras de moler pesadas y Brazales de hierro verde",
+       "p": [
+        "blacksmithing",
+        150
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

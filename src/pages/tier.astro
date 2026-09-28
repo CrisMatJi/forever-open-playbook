@@ -1,0 +1,103 @@
+---
+import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
+import { DATA, CLASS_ICON, RACE_ICON, url } from "../lib/wow.js";
+const { CLASSES, ORDER, TIERS } = DATA;
+const Q = { S: "q-leg", A: "q-epic", B: "q-rare", C: "q-unc" };
+const crowdTxt = ["", "baja", "media", "alta"];
+const RACES = [
+  ["Orco", "<b>Furia sangrienta</b>: +10% poder de ataque y con hechizos durante 15 s.<br><b>Quebrar maldición</b>: inmune a maldiciones y Banes y menos daño mágico durante 8 s.", "<b>Dureza</b>: aturdimientos un 20% más cortos.<br><b>Esp. en hachas</b>: +1% crítico con hachas.", "Furia sangrienta ya no reduce la sanación recibida. Quebrar maldición es nueva. Desaparece Mando.", "Guerrero, Cazador, Mago, Pícaro, Brujo, Chamán"],
+  ["No-muerto", "<b>Voluntad de los Renegados</b>: rompe miedo, encantamiento y sueño.<br><b>Canibalizar</b>: 35% de vida y maná fuera de combate.", "<b>Toque de la tumba</b>: a veces drena vida al golpear.<br>Respiración acuática.", "Voluntad ya no da inmunidad después de usarla. Toque de la tumba es nuevo; desde el 24 sep solo salta con daño y no rompe tu propio control. Sin resistencia a las Sombras.", "Guerrero, Mago, Pícaro, Sacerdote, Brujo, Paladín"],
+  ["Tauren", "<b>Pisotón de guerra</b>: aturde 2 s en área.<br><b>Cultivo</b>: hierbas extra.", "<b>Aguante</b>: +5% vida y +1% golpe.<br><b>Correr por las llanuras</b>: hasta +30% de velocidad si sigues corriendo.", "Aguante suma golpe; Correr por las llanuras es nueva. Sin resistencia a la Naturaleza.", "Guerrero, Cazador, Druida, Chamán"],
+  ["Trol", "<b>Rabiar</b>: +10% celeridad.<br><b>Regeneración rápida</b>: recupera el 50% de la vida máxima con el tiempo.", "<b>Regeneración</b>: 10% de la regeneración de vida sigue en combate.<br>Matanza de bestias.", "Rabiar ya no depende de tener poca vida. Regeneración rápida es nueva y es la mejor racial defensiva del juego. Desaparece Esp. en arcos.", "Guerrero, Cazador, Mago, Pícaro, Sacerdote, Brujo, Chamán"],
+  ["Skyborne", "<b>Vista del cielo</b>: +10% velocidad 30 s.<br><b>Caminar sobre el aire</b>: planear.", "<b>Bendecido por el viento</b>: +1% celeridad.<br>Perspicacia elemental.", "Raza nueva. Sin racial defensiva ni ofensiva fuerte para duelo.", "Guerrero, Cazador, Pícaro, Druida, Chamán"],
+];
+---
+<Base title="Tier list" active="tier" description="Tier list de clases para The Forever Open: duelo 1v1 a nivel 30, solo Horda, con las raciales de Forever.">
+  <div class="pagehead">
+    <div class="eyebrow">Duelo 1v1 · nivel 30 · 26 talentos · solo Horda</div>
+    <h1>Tier list del Forever Open</h1>
+    <p class="lede">Ordenada para este torneo concreto: salida a 20 yd, nivel 30 con 26 puntos de talento, solo razas de Horda y consumibles permitidos. Toca una clase para ver por qué está ahí.</p>
+  </div>
+
+  <div class="tiers">
+    {TIERS.map(([t, desc]) => (
+      <div class="tierrow" data-t={t}>
+        <div class="tierletter" aria-label={`Tier ${t}`}>{t}<small>{desc}</small></div>
+        <div class="tiercards">
+          {ORDER.filter((id) => CLASSES[id].tier === t).map((id) => (
+            <button class="tcard" data-id={id} aria-pressed="false" aria-controls={`td-${id}`}>
+              <Icon name={CLASS_ICON[id]} size={40} label={CLASSES[id].name} class={Q[t]} />
+              <b>{CLASSES[id].name}</b>
+              <span>{CLASSES[id].spec} · {CLASSES[id].race}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div id="tierDetail">
+    {ORDER.map((id) => {
+      const c = CLASSES[id];
+      return (
+        <div class="box detailpanel" id={`td-${id}`} data-panel={id} hidden>
+          <div class="tier-detail-grid">
+            <Icon name={CLASS_ICON[id]} size={64} label={c.name} class={Q[c.tier]} big />
+            <div>
+              <div class="titlerow"><h2>{c.name} · tier {c.tier}</h2>
+                <span class="note">Competencia esperada <span class="crowd" aria-label={`Competencia ${crowdTxt[c.crowd]}`}>{[1, 2, 3].map((i) => <i class={i <= c.crowd ? "on" : ""}></i>)}</span></span></div>
+              <div class="detail" style="margin-top:12px">
+                <div><div class="eyebrow">Por qué está aquí</div><ul class="bul">{c.tierWhy.map((x) => <li set:html={x} />)}</ul></div>
+                <div>
+                  <div class="eyebrow">Punto débil</div><p style="margin-top:8px" set:html={c.tierWeak} />
+                  <dl class="kv">
+                    <dt>Raza</dt><dd class="racecell"><Icon name={RACE_ICON[c.race]} size={24} label={c.race} /> <span><b>{c.race}</b> <span class="note">(alternativa: {c.raceAlt})</span></span></dd>
+                    <dt>Spec</dt><dd>{c.spec}</dd>
+                    <dt>vs Sacerdote</dt><dd><span class={`pill r${c.rating}`}>{c.label}</span></dd>
+                  </dl>
+                  <p style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+                    <a class="chip" href={url(`builds/${id}`)}>Ver árbol de talentos</a>
+                    <a class="chip" href={url(`sacerdote#c-${id}`)}>Plan contra Sacerdote</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    })}
+  </div>
+  <p class="note">Valoración propia a partir del kit de cada clase a nivel 30 (árboles del cliente 1.60.1.70009), las raciales de Forever y las tier lists PvP de la beta. Competencia esperada: cuánta gente jugará esa clase; solo los 4 mejores de cada clase pasan a la final.</p>
+
+  <section style="display:grid;gap:12px">
+    <div>
+      <h2>Raciales de Horda en Forever</h2>
+      <p class="lede">Forever rehízo las raciales: cada raza tiene dos activas y dos pasivas, y desaparecen las resistencias raciales de Classic.</p>
+    </div>
+    <div class="tablewrap">
+      <table class="wide">
+        <thead><tr><th>Raza</th><th>Activas</th><th>Pasivas</th><th>Qué cambia respecto a Classic</th><th>Clases</th></tr></thead>
+        <tbody>
+          {RACES.map(([r, a, p, ch, cl]) => (
+            <tr><td><span class="racecell"><Icon name={RACE_ICON[r]} size={32} label={r} /> <b>{r}</b></span></td><td set:html={a} /><td set:html={p} /><td>{ch}</td><td>{cl}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script>
+    const panels = document.querySelectorAll<HTMLElement>("[data-panel]");
+    const cards = document.querySelectorAll<HTMLButtonElement>(".tcard");
+    function show(id: string, scroll = false) {
+      panels.forEach((p) => (p.hidden = p.dataset.panel !== id));
+      cards.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.id === id)));
+      history.replaceState(null, "", `#${id}`);
+      if (scroll) document.getElementById(`td-${id}`)?.scrollIntoView({ block: "nearest" });
+    }
+    cards.forEach((b) => b.addEventListener("click", () => show(b.dataset.id!, true)));
+    const h = location.hash.slice(1);
+    show(document.querySelector(`[data-panel="${h}"]`) ? h : "warlock");
+  </script>
+</Base>

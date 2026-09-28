@@ -1,0 +1,155 @@
+---
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+import TalentTree from "../../components/TalentTree.astro";
+import { DATA, CLASS_ICON, RACE_ICON, PROF_ICON, url } from "../../lib/wow.js";
+import { allocate, expand, BUILDS, getClass } from "../../lib/talents.js";
+
+export function getStaticPaths() {
+  return DATA.ORDER.map((id) => ({ params: { clase: id } }));
+}
+const { clase: id } = Astro.params;
+const { CLASSES, ORDER, PROFS, TINTS } = DATA;
+const c = CLASSES[id];
+const cls = getClass(id);
+const N = 26;
+const { per } = allocate(id, N);
+const seq = expand(BUILDS[id]);
+const Q = { S: "q-leg", A: "q-epic", B: "q-rare", C: "q-unc" };
+const prof = PROFS[id];
+---
+<Base title={`Build ${c.name} ${c.spec}`} active="builds" description={`Build de ${c.name} ${c.spec} a nivel 30 para The Forever Open, con Talented y Legacy.`}>
+  <nav class="classpick" aria-label="Clase">
+    {ORDER.map((o) => (
+      <a href={url(`builds/${o}`)} aria-current={o === id ? "page" : undefined}>
+        <Icon name={CLASS_ICON[o]} size={26} label={CLASSES[o].name} /> {CLASSES[o].name}
+      </a>
+    ))}
+  </nav>
+
+  <section class="box">
+    <div class="buildtop">
+      <div style="display:flex;gap:14px;align-items:center">
+        <Icon name={CLASS_ICON[id]} size={56} label={c.name} class={Q[c.tier]} big />
+        <div>
+          <div class="eyebrow racecell"><Icon name={RACE_ICON[c.race]} size={18} label={c.race} /> {c.name} · {c.race} · tier {c.tier}</div>
+          <h1 style="margin-top:4px;font-size:clamp(28px,4vw,40px)">{c.spec}</h1>
+        </div>
+      </div>
+      <div class="pts num"><span id="perTxt">{per.join("/")}</span><small id="nTxt">{N} puntos</small></div>
+    </div>
+    <div class="slider">
+      <label for="talRank">Talented (Legacy)</label>
+      <input type="range" id="talRank" min="0" max="5" value="5" />
+      <output for="talRank" class="num" id="talOut">5/5 → 26 puntos, el primero a nivel 5</output>
+    </div>
+    <div class="trees" id="trees">
+      {[0, 1, 2].map((ti) => <TalentTree id={id} tree={ti} n={N} tint={TINTS[id][ti]} />)}
+    </div>
+    <div class="tlegend"><span><i style="border-color:var(--gold)"></i>Al máximo</span><span><i style="border-color:var(--green)"></i>Con puntos</span><span><i style="border-color:#7a7a7a"></i>Disponible</span><span><i style="border-color:#3a3a3a;opacity:.5"></i>Bloqueado</span><span>Las flechas marcan requisitos. Cada fila pide 5 puntos más en ese árbol.</span></div>
+    <div class="tdetail" id="tdetail" aria-live="polite"><span></span><span class="tt-ok">Toca un talento para ver su descripción.</span></div>
+
+    <div class="detail" style="margin-top:16px">
+      <div><div class="eyebrow">Claves de la build</div><ul class="bul">{c.keys.map((k) => <li set:html={k} />)}</ul><p style="margin-top:10px" set:html={c.option} /></div>
+      <div><div class="eyebrow">Orden de puntos</div>
+        <ol class="order" id="order">
+          {seq.map((nm, i) => (
+            <li data-i={i}>
+              <span data-lv></span>
+              <span style="display:flex;gap:8px;align-items:center"><Icon name={cls.byName[nm]?.icon} size={20} label={nm} /> {nm}</span>
+            </li>
+          ))}
+        </ol>
+        <p class="note" style="margin-top:8px" id="orderNote"></p>
+      </div>
+    </div>
+
+    <div style="margin-top:18px"><div class="eyebrow">Profesiones</div>
+      <div class="prof">
+        <div><span class="ptag">Principal · armadura</span><span class="pname racecell"><Icon name={PROF_ICON[prof[0]]} size={24} label={prof[0]} /> {prof[0]}</span>BiS fabricado a nivel 20: {prof[1]}. Se liga al recogerlo: solo lo llevas si lo fabricas tú.{!prof[3] && <i> (patrón por tipo de armadura, sin comprobar pieza a pieza)</i>}<span class="leg">+2 Legacy (150 y 225)</span></div>
+        <div><span class="ptag">Principal</span><span class="pname racecell"><Icon name={PROF_ICON["Ingeniería"]} size={24} label="Ingeniería" /> Ingeniería</span>Abalorio Minor Recombobulator (ligado, Ingeniería 140) y bombas legales en el torneo.<span class="leg">+2 Legacy (150 y 225)</span></div>
+        <div><span class="ptag">Secundarias</span><span class="pname racecell"><Icon name={PROF_ICON["Primeros auxilios"]} size={24} label="Primeros auxilios" /><Icon name={PROF_ICON["Cocina"]} size={24} label="Cocina" /> Primeros auxilios + Cocina</span>Pociones de sanación, torniquetes y antiveneno; comida con estadísticas.<span class="leg">Sin Legacy</span></div>
+      </div>
+      <p class="note" style="margin-top:6px">Materiales: {prof[2]}.</p>
+    </div>
+    <div class="gearlist" style="margin-top:16px">
+      <div><b>Estadísticas</b>{c.stats}</div>
+      <div><b>Equipo</b>{c.gear} Sin lista BiS verificada a 30 todavía.</div>
+      <div><b>De dónde sale</b>Excavation Site (24-29) y la entrada de City of Dalaran (28-33), más las mazmorras de ese rango.</div>
+      <div><b>Consumibles</b>Pociones de sanación, maná, elixires y bombas de Ingeniería. Prohibidos: Polvo mágico y pociones de protección.</div>
+    </div>
+  </section>
+
+  {id === "shaman" && (
+    <section class="box">
+      <h2>¿Orco o Tauren para Chamán?</h2>
+      <p class="goodline" style="margin-top:10px"><b>Orco.</b> Contra las dos clases que más vas a encontrar (Brujo y Pícaro) el Orco tiene respuesta directa; el Tauren solo gana algo en el cruce contra Sacerdote.</p>
+      <div class="tablewrap" style="margin-top:12px"><table class="wide">
+        <thead><tr><th></th><th><span class="racecell"><Icon name={RACE_ICON["Orco"]} size={24} label="Orco" /> Orco</span></th><th><span class="racecell"><Icon name={RACE_ICON["Tauren"]} size={24} label="Tauren" /> Tauren</span></th><th><span class="racecell"><Icon name={RACE_ICON["Trol"]} size={24} label="Trol" /> Trol</span></th></tr></thead>
+        <tbody>
+          <tr><td><b>Ofensiva</b></td><td>Furia sangrienta: +10% poder de ataque y con hechizos 15 s, justo para la ventana de Stormstrike</td><td>—</td><td>Rabiar: +10% celeridad</td></tr>
+          <tr><td><b>Control</b></td><td>—</td><td>Pisotón de guerra: 2 s de aturdimiento a melé</td><td>—</td></tr>
+          <tr><td><b>Defensiva</b></td><td>Quebrar maldición: inmune a Banes y maldiciones y menos daño mágico 8 s</td><td>Aguante: +5% vida y +1% golpe</td><td>Regeneración rápida: 50% de la vida</td></tr>
+          <tr><td><b>Pasiva</b></td><td>Dureza: aturdimientos −20%</td><td>Correr por las llanuras: hasta +30% velocidad</td><td>10% de regeneración en combate</td></tr>
+          <tr><td><b>vs Brujo</b></td><td>Quebrar maldición anula Bane of Agony y Maldición de agotamiento 8 s</td><td>Solo +5% de vida</td><td>Curación grande</td></tr>
+          <tr><td><b>vs Pícaro</b></td><td>Dureza acorta Golpe bajo y Riñones</td><td>Pisotón le corta la cadena</td><td>Curación tras la apertura</td></tr>
+          <tr><td><b>vs Sacerdote</b></td><td>Menos daño mágico 8 s</td><td>Pisotón corta una Sanación relámpago</td><td>Curación larga</td></tr>
+        </tbody></table></div>
+    </section>
+  )}
+
+  <script type="application/json" id="bdata" set:html={JSON.stringify({ id, total: seq.length })} />
+  <script>
+    import { getClass, allocate, stateOf } from "../../lib/talents.js";
+    import { iconUrl } from "../../lib/wow.js";
+    const { id, total } = JSON.parse(document.getElementById("bdata")!.textContent!);
+    const c = getClass(id);
+    let n = 26, ranks: Record<string, number> = {}, per = [0, 0, 0];
+    const $ = (s: string) => document.getElementById(s)!;
+    let selected: string | null = null;
+
+    function paint() {
+      ({ ranks, per } = allocate(id, n));
+      const rank = n - 21, first = 10 - rank;
+      $("perTxt").textContent = per.join("/");
+      $("nTxt").textContent = `${n} puntos`;
+      $("talOut").textContent = `${rank}/5 → ${n} puntos, el primero a nivel ${first}`;
+      document.querySelectorAll<HTMLButtonElement>(".tslot").forEach((b) => {
+        const t = c.byName[b.dataset.name!];
+        const st = stateOf(c, t, ranks, per);
+        b.className = `tslot ${st}${selected === t.name ? " sel" : ""}`;
+        b.querySelector("[data-rank]")!.textContent = String(ranks[t.name] || 0);
+        b.setAttribute("aria-label", `${t.name} ${ranks[t.name] || 0} de ${t.max}`);
+      });
+      document.querySelectorAll<SVGGElement>("[data-arrow-to]").forEach((g) => {
+        const t = c.byName[g.dataset.arrowTo!];
+        g.classList.toggle("on", (ranks[t.name] || 0) > 0);
+      });
+      document.querySelectorAll<HTMLElement>("[data-per]").forEach((s) => (s.textContent = String(per[+s.dataset.per!])));
+      document.querySelectorAll<HTMLLIElement>("#order li").forEach((li) => {
+        const i = +li.dataset.i!;
+        li.classList.toggle("legacy", i >= n);
+        li.querySelector("[data-lv]")!.textContent = i >= n ? "Legacy" : `Nv ${i + first}`;
+      });
+      $("orderNote").textContent = n < total ? `Los últimos ${total - n} puntos solo llegan con más rangos de Talented.` : "Build completa a nivel 30.";
+      if (selected) show(selected);
+    }
+    function show(name: string) {
+      selected = name;
+      const t = c.byName[name];
+      const r = ranks[t.name] || 0;
+      const req1 = t.row > 1 ? `<div class="${per[t.tree] >= 5 * (t.row - 1) ? "tt-ok" : "tt-req"}">Requiere ${5 * (t.row - 1)} puntos en ${c.trees[t.tree]}</div>` : "";
+      const req2 = t.pre ? `<div class="${(ranks[t.pre] || 0) >= c.byName[t.pre].max ? "tt-ok" : "tt-req"}">Requiere ${t.pre} al máximo</div>` : "";
+      const ic = t.icon ? `<span class="wicon" style="--s:44px"><img src="${iconUrl(t.icon, "large")}" alt="" referrerpolicy="no-referrer" onerror="this.remove()"></span>` : "<span></span>";
+      $("tdetail").innerHTML = `${ic}<div><div class="tt-name">${t.name}</div><div class="tt-rank">Rango ${r}/${t.max}</div>${req1}${req2}<div class="tt-eff">${t.eff}</div></div>`;
+      document.querySelectorAll(".tslot").forEach((b) => b.classList.toggle("sel", (b as HTMLElement).dataset.name === name));
+    }
+    document.querySelectorAll<HTMLButtonElement>(".tslot").forEach((b) => {
+      b.addEventListener("click", () => show(b.dataset.name!));
+      b.addEventListener("mouseenter", () => show(b.dataset.name!));
+      b.addEventListener("focus", () => show(b.dataset.name!));
+    });
+    $("talRank").addEventListener("input", (e) => { n = 21 + +(e.target as HTMLInputElement).value; paint(); });
+    paint();
+  </script>
+</Base>

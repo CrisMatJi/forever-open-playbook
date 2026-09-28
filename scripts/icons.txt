@@ -1,0 +1,470 @@
+shaman|Convection|spell_nature_wispsplode
+shaman|Concussion|spell_fire_fireball
+shaman|Elemental Warding|spell_nature_spiritarmor
+shaman|Reverberation|spell_frost_frostward
+shaman|Call of Flame|spell_fire_immolation
+shaman|Elemental Devastation|classic_spell_fire_elementaldevastation
+shaman|Elemental Focus|spell_shadow_manaburn
+shaman|Elemental Fury|spell_fire_volcano
+shaman|Improved Fire Nova|spell_fire_sealoffire
+shaman|Eye of the Storm|spell_nature_eyeofthestorm
+shaman|Call of Thunder|spell_nature_callstorm
+shaman|Elemental Reach|spell_nature_stormreach
+shaman|Lightning Overload|spell_nature_lightningoverload
+shaman|Earthbound|spell_nature_strengthofearthtotem02
+shaman|Elemental Alacrity|spell_nature_unrelentingstorm
+shaman|Lava Burst|spell_shaman_lavaburst
+shaman|Earth's Grasp|spell_nature_stoneclawtotem
+shaman|Thundering Strikes|ability_thunderbolt
+shaman|Ancestral Knowledge|spell_shadow_grimward
+shaman|Guardian Totems|spell_nature_stoneskintotem
+shaman|Mental Dexterity|spell_nature_mentalquickness
+shaman|Improved Ghost Wolf|spell_nature_spiritwolf
+shaman|Improved Lightning Shield|spell_nature_lightningshield
+shaman|Elemental Weapons|spell_fire_flametounge
+shaman|Shamanistic Focus|spell_nature_elementalabsorption
+shaman|Anticipation|spell_nature_mirrorimage
+shaman|Toughness|spell_holy_devotion
+shaman|Flurry|ability_ghoulfrenzy
+shaman|Stormstrike|spell_holy_sealofmight
+shaman|Spirit Weapons|ability_parry
+shaman|Mental Quickness|spell_nature_mentalquickness
+shaman|Improved Stormstrike|ability_shaman_stormstrike
+shaman|Maelstrom Weapon|spell_shaman_maelstromweapon
+shaman|Rage of the Farseer|spell_nature_bloodlust
+shaman|Improved Healing Wave|spell_nature_magicimmunity
+shaman|Tidal Mastery|spell_nature_tranquility
+shaman|Mindfulness|spell_nature_sleep
+shaman|Natural Grace|spell_nature_naturetouchgrow
+shaman|Tidal Focus|spell_frost_manarecharge
+shaman|Improved Reincarnation|spell_nature_reincarnation
+shaman|Ancestral Healing|spell_nature_undyingstrength
+shaman|Healing Focus|spell_nature_healingwavelesser
+shaman|Water Shield|ability_shaman_watershield
+shaman|Totemic Focus|spell_nature_moonglow
+shaman|Restorative Totems|spell_nature_manaregentotem
+shaman|Mana Tide Totem|spell_frost_summonwaterelemental
+shaman|Healing Way|classic_spell_nature_healingway
+shaman|Nature's Swiftness|spell_nature_ravenform
+shaman|Purification|spell_frost_wizardmark
+shaman|Riptide|spell_nature_riptide
+warlock|Improved Life Tap|spell_shadow_burningspirit
+warlock|Suppression|spell_shadow_unsummonbuilding
+warlock|Improved Corruption|spell_shadow_abominationexplosion
+warlock|Malediction|spell_shadow_curseofachimonde
+warlock|Soul Harvesting|spell_shadow_soulgem
+warlock|Improved Drains|spell_shadow_lifedrain02
+warlock|Improved Bane of Agony|spell_shadow_curseofsargeras
+warlock|Fel Concentration|spell_shadow_fingerofdeath
+warlock|Amplify Curse|spell_shadow_contagion
+warlock|Pandemic|spell_shadow_unstableaffliction_2
+warlock|Malevolence|spell_shadow_deathpact
+warlock|Nightfall|spell_shadow_twilight
+warlock|Curse of Exhaustion|spell_shadow_grimward
+warlock|Siphon Life|spell_shadow_requiem
+warlock|Soul Siphon|spell_shadow_soulleech_3
+warlock|Shadow Mastery|spell_shadow_shadetruesight
+warlock|Drain Hope|spell_shadow_haunting
+warlock|Improved Health Funnel|spell_shadow_lifedrain
+warlock|Improved Imp|spell_shadow_summonimp
+warlock|Demonic Embrace|spell_shadow_metamorphosis
+warlock|Unholy Power|spell_shadow_shadowworddominate
+warlock|Demonic Aegis|spell_shadow_ragingscream
+warlock|Improved Voidwalker|spell_shadow_summonvoidwalker
+warlock|Fel Vitality|spell_shadow_demonicfortitude
+warlock|Demonic Energies|spell_shadow_demonicempathy
+warlock|Improved Sayaad|ability_warlock_randomizesuccubusincubus
+warlock|Demonic Sacrifice|spell_shadow_psychicscream
+warlock|Master Summoner|spell_shadow_impphaseshift
+warlock|Decimation|spell_fire_fireball02
+warlock|Fel Domination|spell_nature_removecurse
+warlock|Demonic Brand|spell_shadow_demonbreath
+warlock|Improved Felhunter|spell_shadow_summonfelhunter
+warlock|Soul Link|spell_shadow_gathershadows
+warlock|Demonic Knowledge|spell_shadow_improvedvampiricembrace
+warlock|Master Demonologist|spell_shadow_shadowpact
+warlock|Demonic Pact|spell_shadow_demonicpact
+warlock|Destructive Reach|spell_shadow_corpseexplode
+warlock|Improved Shadow Bolt|spell_shadow_shadowbolt
+warlock|Bane|spell_shadow_deathpact
+warlock|Molten Skin|ability_mage_moltenarmor
+warlock|Cataclysm|spell_fire_windsofwoe
+warlock|Aftermath|spell_fire_fire
+warlock|Ruin|spell_shadow_shadowwordpain
+warlock|Shadowburn|spell_shadow_scourgebuild
+warlock|Intensity|spell_fire_lavaspawn
+warlock|Agonizing Flames|spell_fire_immolation
+warlock|Conflagrate|spell_fire_fireball
+warlock|Pyroclasm|spell_fire_volcano
+warlock|Bane of Havoc|ability_warlock_baneofhavoc
+warlock|Fire and Brimstone|ability_warlock_fireandbrimstone
+warlock|Shadow and Flame|spell_shadow_shadowandflame
+warlock|Incinerate|spell_fire_burnout
+mage|Wand Specialization|inv_wand_01
+mage|Arcane Focus|spell_holy_devotion
+mage|Improved Channeling|spell_holy_mindvision
+mage|Arcane Subtlety|spell_holy_dispelmagic
+mage|Magic Absorption|spell_nature_astralrecalgroup
+mage|Arcane Concentration|spell_shadow_manaburn
+mage|Arcane Resilience|spell_arcane_arcaneresilience
+mage|Arcane Geometry|spell_arcane_arcane01
+mage|Arcane Impact|spell_nature_starfall
+mage|Arcane Blast|spell_arcane_blast
+mage|Arcane Shielding|spell_shadow_detectlesserinvisibility
+mage|Improved Counterspell|spell_frost_iceshock
+mage|Arcane Meditation|spell_shadow_siphonmana
+mage|Missile Barrage|ability_mage_missilebarrage
+mage|Presence of Mind|spell_nature_enchantarmor
+mage|Arcane Mind|spell_shadow_charm
+mage|Arcane Instability|spell_shadow_teleport
+mage|Arcane Power|spell_nature_lightning
+mage|Wake of Fire|spell_fire_fireball
+mage|Incineration|spell_fire_flameshock
+mage|Improved Fireball|spell_fire_flamebolt
+mage|Ignite|spell_fire_incinerate
+mage|Flame Throwing|spell_fire_flare
+mage|Impact|spell_fire_meteorstorm
+mage|Burning Soul|spell_fire_fire
+mage|Improved Flamestrike|spell_fire_selfdestruct
+mage|Pyroblast|spell_fire_fireball02
+mage|Improved Scorch|spell_fire_soulburn
+mage|Improved Fire Ward|spell_fire_firearmor
+mage|Hot Streak|ability_mage_hotstreak
+mage|Master of Elements|spell_fire_masterofelements
+mage|Critical Mass|spell_nature_wispheal
+mage|Blast Wave|spell_holy_excorcism_02
+mage|Fire Power|spell_fire_immolation
+mage|Combustion|spell_fire_sealoffire
+mage|Frost Warding|spell_frost_frostward
+mage|Improved Frostbolt|spell_frost_frostbolt02
+mage|Elemental Precision|spell_ice_magicdamage
+mage|Ice Shards|spell_frost_iceshard
+mage|Permafrost|spell_frost_wisp
+mage|Improved Frost Nova|spell_frost_freezingbreath
+mage|Frostbite|spell_frost_frostarmor
+mage|Piercing Ice|spell_frost_frostbolt
+mage|Frost Channeling|spell_frost_stun
+mage|Ice Lance|spell_frost_frostblast
+mage|Improved Blizzard|spell_frost_icestorm
+mage|Arctic Reach|spell_shadow_darkritual
+mage|Ice Block|spell_frost_frost
+mage|Shatter|spell_frost_frostshock
+mage|Improved Cone of Cold|spell_frost_glacier
+mage|Cold Snap|spell_frost_wizardmark
+mage|Fingers of Frost|ability_mage_wintersgrasp
+mage|Winter's Chill|spell_frost_chillingblast
+mage|Ice Barrier|spell_ice_lament
+priest|Power in Light|spell_holy_searinglightpriest
+priest|Wand Specialization|inv_wand_01
+priest|Twin Disciplines|spell_holy_sealofvengeance
+priest|Silent Resolve|spell_nature_manaregentotem
+priest|Holy Precision|spell_holy_surgeoflight
+priest|Improved Power Word: Shield|spell_holy_powerwordshield
+priest|Martyrdom|spell_nature_tranquility
+priest|Mental Agility|ability_hibernation
+priest|Inner Focus|spell_frost_windwalkon
+priest|Meditation|spell_nature_sleep
+priest|Improved Inner Fire|spell_holy_innerfire
+priest|Mental Strength|spell_nature_enchantarmor
+priest|Soul Warding|spell_holy_powerwordshield
+priest|Improved Mana Burn|spell_shadow_manaburn
+priest|Penance|spell_holy_penance
+priest|Renewed Hope|spell_holy_holyprotection
+priest|Divine Aegis|spell_holy_devineaegis
+priest|Power Infusion|spell_holy_powerinfusion
+priest|Twilight Focus|spell_holy_layonhands
+priest|Improved Renew|spell_holy_renew
+priest|Holy Specialization|spell_holy_sealofsalvation
+priest|Spell Warding|spell_holy_spellwarding
+priest|Divine Fury|spell_holy_sealofwrath
+priest|Holy Nova|spell_holy_holynova
+priest|Blessed Recovery|spell_holy_blessedrecovery
+priest|Inspiration|spell_holy_layonhands
+priest|Holy Reach|spell_holy_purify
+priest|Improved Healing|spell_holy_heal02
+priest|Searing Light|spell_holy_searinglightpriest
+priest|Binding Heal|spell_holy_blindingheal
+priest|Litany of Light|spell_holy_holyguidance
+priest|Spirit of Redemption|inv_enchant_essenceeternallarge
+priest|Spiritual Guidance|spell_holy_spiritualguidence
+priest|Spiritual Healing|spell_nature_moonglow
+priest|Prayer of Mending|spell_holy_prayerofmendingtga
+priest|Shadow Focus|spell_shadow_burningspirit
+priest|Blackout|spell_shadow_gathershadows
+priest|Spirit Tap|spell_shadow_requiem
+priest|Shadow Affinity|spell_shadow_shadowward
+priest|Improved Shadow Word: Pain|spell_shadow_shadowwordpain
+priest|Shadow Reach|spell_shadow_chilltouch
+priest|Improved Mind Blast|spell_shadow_unholyfrenzy
+priest|Improved Psychic Scream|spell_shadow_psychicscream
+priest|Mind Flay|spell_shadow_siphonmana
+priest|Improved Mind Flay|spell_shadow_siphonmana
+priest|Improved Fade|spell_magic_lesserinvisibilty
+priest|Vampiric Embrace|spell_shadow_unsummonbuilding
+priest|Shadow Weaving|spell_shadow_blackplague
+priest|Silence|spell_shadow_impphaseshift
+priest|Devouring Contagion|spell_shadow_devouringplague
+priest|Early Demise|spell_shadow_demonicfortitude
+priest|Darkness|spell_shadow_twilight
+priest|Shadowform|spell_shadow_shadowform
+druid|Improved Wrath|spell_nature_abolishmagic
+druid|Genesis|spell_arcane_arcane03
+druid|Moonglow|spell_nature_sentinal
+druid|Improved Moonfire|spell_nature_starfall
+druid|Nature's Majesty|spell_nature_wispsplode
+druid|Nature's Reach|spell_nature_naturetouchgrow
+druid|Improved Entangling Roots|spell_nature_stranglevines
+druid|Nature's Splendor|spell_nature_naturesblessing
+druid|Balance of Nature|ability_druid_balanceofpower
+druid|Vengeance|spell_nature_purge
+druid|Insect Swarm|spell_nature_insectswarm
+druid|Improved Starfire|spell_arcane_starfire
+druid|Overgrowth|ability_druid_flourish
+druid|Nature's Grace|spell_nature_naturesblessing
+druid|Eclipse|ability_druid_eclipse
+druid|Moonfury|spell_nature_moonglow
+druid|Moonkin Form|spell_nature_forceofnature
+druid|Ferocity|ability_hunter_pet_hyena
+druid|Heart of the Wild|spell_holy_blessingofagility
+druid|Feral Swiftness|ability_druid_dash
+druid|Feral Instinct|ability_ambush
+druid|Brutal Impact|ability_druid_bash
+druid|Thick Hide|inv_misc_pelt_bear_03
+druid|Savage Fury|ability_druid_ravage
+druid|Feral Charge|ability_hunter_pet_bear
+druid|Sharpened Claws|inv_misc_monsterclaw_04
+druid|Shredding Attacks|spell_shadow_vampiricaura
+druid|Mangle|ability_druid_mangle2
+druid|Predatory Strikes|ability_hunter_pet_cat
+druid|Primal Fury|ability_racial_cannibalize
+druid|Predatory Instincts|ability_druid_predatoryinstincts
+druid|Leader of the Pack|spell_nature_unyeildingstamina
+druid|King of the Jungle|ability_druid_kingofthejungle
+druid|Natural Reaction|ability_bullrush
+druid|Rend and Tear|ability_druid_swipe
+druid|Berserk|ability_druid_berserk
+druid|Nature's Focus|spell_nature_healingwavegreater
+druid|Furor|spell_holy_blessingofstamina
+druid|Naturalist|spell_nature_healingtouch
+druid|Subtlety|ability_eyeoftheowl
+druid|Natural Shapeshifter|spell_nature_wispsplode
+druid|Reflection|spell_frost_windwalkon
+druid|Gift of Nature|spell_nature_protectionformnature
+druid|Gift of the Earthmother|ability_druid_manatree
+druid|Tranquil Spirit|spell_holy_elunesgrace
+druid|Improved Rejuvenation|spell_nature_rejuvenation
+druid|Swiftmend|inv_relics_idolofrejuvenation
+druid|Nature's Swiftness|spell_nature_ravenform
+druid|Living Spirit|spell_nature_giftofthewild
+druid|Improved Tranquility|spell_nature_tranquility
+druid|Improved Regrowth|spell_nature_resistnature
+druid|Wild Growth|ability_druid_flourish
+rogue|Improved Gouge|ability_gouge
+rogue|Remorseless Attacks|ability_fiegndead
+rogue|Malice|ability_racial_bloodrage
+rogue|Ruthlessness|ability_druid_disembowel
+rogue|Murder|spell_shadow_deathscream
+rogue|Improved Slice and Dice|ability_rogue_slicedice
+rogue|Relentless Strikes|ability_warrior_decisivestrike
+rogue|Improved Expose Armor|ability_warrior_riposte
+rogue|Lethality|ability_criticalstrike
+rogue|Vile Poisons|ability_rogue_feigndeath
+rogue|Cold Blood|spell_ice_lament
+rogue|Improved Poisons|ability_poisons
+rogue|Vigor|spell_nature_earthbindtotem
+rogue|Mutilate|ability_rogue_shadowstrikes
+rogue|Improved Kidney Shot|ability_rogue_kidneyshot
+rogue|Seal Fate|spell_shadow_chilltouch
+rogue|Venom|ability_rogue_deadlybrew
+rogue|Improved Eviscerate|ability_rogue_eviscerate
+rogue|Improved Sinister Strike|spell_shadow_ritualofsacrifice
+rogue|Lightning Reflexes|spell_nature_invisibilty
+rogue|Puncturing Wounds|ability_backstab
+rogue|Deflection|ability_parry
+rogue|Precision|ability_marksmanship
+rogue|Endurance|spell_shadow_shadowward
+rogue|Riposte|ability_warrior_challange
+rogue|Improved Sprint|ability_rogue_sprint
+rogue|Improved Kick|ability_kick
+rogue|Restless Blades|ability_rogue_restlessblades
+rogue|Dual Wield Specialization|ability_dualwield
+rogue|Blade Flurry|ability_warrior_punishingblow
+rogue|Hack and Slash|inv_sword_27
+rogue|Weapon Expertise|spell_holy_blessingofstrength
+rogue|Aggression|ability_racial_avatar
+rogue|Adrenaline Rush|spell_shadow_shadowworddominate
+rogue|Camouflage|ability_stealth
+rogue|Master of Deception|spell_shadow_charm
+rogue|Opportunity|ability_warrior_warcry
+rogue|Setup|spell_nature_mirrorimage
+rogue|Elusiveness|spell_magic_lesserinvisibilty
+rogue|Dirty Tricks|ability_rogue_dirtydeeds
+rogue|Improved Ambush|ability_rogue_ambush
+rogue|Initiative|spell_shadow_fumble
+rogue|Ghostly Strike|spell_shadow_curse
+rogue|Improved Distract|ability_rogue_distract
+rogue|Heightened Senses|ability_ambush
+rogue|Premeditation|spell_shadow_possession
+rogue|Serrated Blades|inv_sword_17
+rogue|Dirty Deeds|spell_shadow_summonsuccubus
+rogue|Preparation|spell_shadow_antishadow
+rogue|Hemorrhage|spell_shadow_lifedrain
+rogue|Quietus|ability_rogue_quickrecovery
+rogue|Cutthroat|ability_rogue_cuttothechase
+rogue|Thousand Cuts|ability_rogue_shadowstrikes
+paladin|Improved Holy Strike|spell_holy_crusaderstrike
+paladin|Divine Strength|ability_golemthunderclap
+paladin|Divine Intellect|spell_nature_sleep
+paladin|Healing Light|spell_holy_holybolt
+paladin|Spiritual Focus|spell_arcane_blink
+paladin|Improved Seals|spell_holy_healingaura
+paladin|Unyielding Faith|spell_holy_unyieldingfaith
+paladin|Voice of Truth|spell_holy_silence
+paladin|Reverence|spell_holy_mindvision
+paladin|Purifying Power|spell_holy_purifyingpower
+paladin|Infusion of Light|ability_paladin_infusionoflight
+paladin|Illumination|spell_holy_greaterheal
+paladin|Divine Favor|spell_holy_heal
+paladin|Divine Precision|spell_holy_holybolt
+paladin|Holy Shock|spell_holy_searinglight
+paladin|Consecrated Ground|spell_holy_innerfire
+paladin|Holy Power|spell_holy_power
+paladin|Light's Vigil|spell_holy_holyguidance
+paladin|Toughness|spell_holy_devotion
+paladin|Redoubt|ability_defend
+paladin|Precision|ability_rogue_ambush
+paladin|Guardian's Favor|spell_holy_sealofprotection
+paladin|Anticipation|spell_magic_lesserinvisibilty
+paladin|Improved Seal of Fury|spell_holy_sealoffury
+paladin|Improved Righteous Fury|spell_holy_sealoffury
+paladin|Shield Specialization|inv_shield_06
+paladin|Sacred Duty|spell_holy_divineintervention
+paladin|Swift Judgement|spell_holy_righteousfury
+paladin|One-Handed Weapon Specialization|inv_sword_20
+paladin|Improved Hammer of Justice|spell_holy_sealofmight
+paladin|Templar's Bulwark|ability_paladin_shieldofthetemplar
+paladin|Reckoning|spell_holy_blessingofstrength
+paladin|Iron Creed|ability_paladin_shieldofvengeance
+paladin|Holy Shield|classic_spell_holy_blessingofprotection
+paladin|Deflection|ability_parry
+paladin|Benediction|spell_frost_windwalkon
+paladin|Improved Judgement|spell_holy_righteousfury
+paladin|Holy Conduit|spell_holy_divineillumination
+paladin|Conviction|spell_holy_retributionaura
+paladin|Vindication|spell_holy_vindication
+paladin|Sanctified Judgement|spell_holy_righteousfury
+paladin|Seal of Command|ability_warrior_innerrage
+paladin|Pursuit of Justice|spell_holy_persuitofjustice
+paladin|Eye for an Eye|spell_holy_eyeforaneye
+paladin|Sacred Arbiter|spell_holy_righteousfury
+paladin|Crusade|spell_holy_crusade
+paladin|Two-Handed Weapon Specialization|inv_hammer_04
+paladin|Vengeance|ability_racial_avatar
+paladin|Repentance|spell_holy_prayerofhealing
+paladin|Champion of the Light|spell_holy_championsbond
+paladin|Instrument of Law|ability_paladin_hammeroftherighteous
+paladin|Twist of Light|spell_holy_divineintervention
+hunter|Deadly Aspects|ability_hunter_aspectofthemonkey
+hunter|Endurance Training|spell_nature_reincarnation
+hunter|Focused Fire|ability_hunter_focusfire
+hunter|Improved Aspect of the Monkey|ability_hunter_aspectofthemonkey
+hunter|Pathfinding|ability_mount_jungletiger
+hunter|Improved Revive Pet|ability_hunter_beastsoothe
+hunter|Bestial Swiftness|ability_druid_dash
+hunter|Unleashed Fury|ability_bullrush
+hunter|Improved Mend Pet|ability_hunter_mendpet
+hunter|Ferocity|inv_misc_monsterclaw_04
+hunter|Summon Hawk|ability_eyeoftheowl
+hunter|Spirit Bond|classic_ability_druid_demoralizingroar
+hunter|Intimidation|ability_devour
+hunter|Bestial Discipline|spell_nature_abolishmagic
+hunter|Frenzy|inv_misc_monsterclaw_03
+hunter|Bestial Wrath|ability_druid_ferociousbite
+hunter|Hawk Eye|ability_townwatch
+hunter|Improved Concussive Shot|spell_frost_stun
+hunter|Lethal Attacks|ability_hunter_criticalshot
+hunter|Improved Stings|ability_hunter_quickshot
+hunter|Efficiency|spell_frost_wizardmark
+hunter|Careful Aim|ability_hunter_zenarchery
+hunter|Rapid Killing|ability_hunter_rapidkilling
+hunter|Improved Arcane Shot|ability_impalingbolt
+hunter|Lone Wolf|spell_nature_spiritwolf
+hunter|Trueshot Aura|ability_trueshot
+hunter|Mortal Shots|ability_piercedamage
+hunter|Rapid Recuperation|ability_hunter_rapidregeneration
+hunter|Barrage|ability_upgrademoonglaive
+hunter|Scatter Shot|ability_golemstormbolt
+hunter|Ranged Weapon Specialization|inv_weapon_rifle_06
+hunter|Sniper Shot|ability_hunter_snipershot
+hunter|Improved Tracking|ability_hunter_improvedtracking
+hunter|Deflection|ability_parry
+hunter|Entrapment|spell_nature_stranglevines
+hunter|Savage Strikes|ability_racial_bloodrage
+hunter|Survivalist|spell_shadow_twilight
+hunter|Improved Wing Clip|ability_rogue_trip
+hunter|Clever Traps|spell_nature_timestop
+hunter|Surefooted|ability_kick
+hunter|Deterrence|ability_whirlwind
+hunter|Survival Tactics|ability_rogue_feint
+hunter|Predator's Edge|ability_hunter_huntingparty
+hunter|Counterattack|ability_warrior_challange
+hunter|Resourcefulness|ability_hunter_resourcefulness
+hunter|Expose Prey|ability_hunter_markedfordeath
+hunter|Survivalist's Discipline|ability_hunter_survivalinstincts
+hunter|Strider Kick|ability_hunter_pet_tallstrider
+hunter|Lightning Reflexes|spell_nature_invisibilty
+hunter|Lacerating Strikes|ability_druid_lacerate
+warrior|Improved Heroic Strike|ability_rogue_ambush
+warrior|Deflection|ability_parry
+warrior|Improved Rend|ability_gouge
+warrior|Improved Charge|ability_warrior_charge
+warrior|Improved Tactical Mastery|spell_nature_enchantarmor
+warrior|Improved Overpower|inv_sword_05
+warrior|Anger Management|spell_holy_blessingofstamina
+warrior|Deep Wounds|ability_backstab
+warrior|Spearing Strike|ability_warrior_savageblow
+warrior|Two-Handed Weapon Specialization|inv_axe_09
+warrior|Impale|ability_searingarrow
+warrior|Bloodthrill|ability_warrior_bloodfrenzy
+warrior|Sweeping Strikes|ability_rogue_slicedice
+warrior|Weaponmaster|ability_warrior_weaponmastery
+warrior|Improved Slam|ability_warrior_decisivestrike
+warrior|Improved Hamstring|ability_shockwave
+warrior|Mortal Strike|ability_warrior_savageblow
+warrior|Booming Voice|spell_nature_purge
+warrior|Cruelty|ability_rogue_eviscerate
+warrior|Iron Will|spell_magic_magearmor
+warrior|Unbridled Wrath|spell_nature_stoneclawtotem
+warrior|Improved Cleave|ability_warrior_cleave
+warrior|Piercing Howl|spell_shadow_deathscream
+warrior|Blood Craze|spell_shadow_summonimp
+warrior|Boundless Rage|ability_warrior_endlessrage
+warrior|Dual Wield Specialization|ability_dualwield
+warrior|Raging Blows|ability_warrior_rampage
+warrior|Enrage|spell_shadow_unholyfrenzy
+warrior|Improved Execute|inv_sword_48
+warrior|Precision|ability_marksmanship
+warrior|Death Wish|spell_shadow_deathpact
+warrior|Improved Intercept|ability_rogue_sprint
+warrior|Improved Berserker Rage|spell_nature_ancestralguardian
+warrior|Flurry|ability_ghoulfrenzy
+warrior|Bloodthirst|spell_nature_bloodlust
+warrior|Shield Specialization|inv_shield_06
+warrior|Anticipation|spell_nature_mirrorimage
+warrior|Improved Bloodrage|ability_racial_bloodrage
+warrior|Toughness|spell_holy_devotion
+warrior|Improved Thunder Clap|ability_thunderclap
+warrior|Last Stand|spell_holy_ashestoashes
+warrior|Master of Defense|ability_defend
+warrior|Improved Revenge|ability_warrior_revenge
+warrior|Defiance|ability_warrior_innerrage
+warrior|Improved Sunder Armor|ability_warrior_sunder
+warrior|Improved Disarm|ability_warrior_disarm
+warrior|Vanguard|ability_warrior_shieldguard
+warrior|Improved Shield Wall|ability_warrior_shieldwall
+warrior|Concussion Blow|ability_thunderbolt
+warrior|Improved Shield Bash|ability_warrior_shieldbash
+warrior|Vitality|ability_warrior_strengthofarms
+warrior|Focused Rage|ability_warrior_focusedrage
+warrior|Bastion|ability_warrior_shieldmastery
+warrior|Shield Slam|inv_shield_05

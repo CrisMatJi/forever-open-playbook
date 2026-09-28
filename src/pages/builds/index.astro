@@ -1,0 +1,45 @@
+---
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+import { DATA, CLASS_ICON, PROF_ICON, url } from "../../lib/wow.js";
+import { allocate } from "../../lib/talents.js";
+const { CLASSES, ORDER, PROFS } = DATA;
+const Q = { S: "q-leg", A: "q-epic", B: "q-rare", C: "q-unc" };
+---
+<Base title="Builds a 30" active="builds" description="Builds de las 9 clases a nivel 30 para The Forever Open, con árboles de talentos reales de Forever.">
+  <div class="pagehead">
+    <div class="eyebrow">Árboles del cliente 1.60.1 · 21 a 26 puntos</div>
+    <h1>Builds para el torneo</h1>
+    <p class="lede">Árboles reales de Forever con sus filas y requisitos. Dentro de cada clase puedes mover el control de <i>Talented</i> para ver qué cambia entre 21 puntos (sin Legacy) y 26 (Talented 5/5).</p>
+  </div>
+  <div class="cards">
+    {ORDER.map((id) => {
+      const c = CLASSES[id];
+      const { per } = allocate(id, 26);
+      return (
+        <a class="card" href={url(`builds/${id}`)}>
+          <Icon name={CLASS_ICON[id]} size={48} label={c.name} class={Q[c.tier]} big />
+          <div><b>{c.name}</b><span>{c.spec} · {per.join("/")} · tier {c.tier}<br />{c.race} · {PROFS[id][0]} + Ingeniería</span></div>
+        </a>
+      );
+    })}
+  </div>
+
+  <section style="display:grid;gap:12px">
+    <div>
+      <h2>Profesiones por clase</h2>
+      <p class="lede">En Forever gran parte del equipo BiS es fabricado y <b>se liga al recogerlo</b>: solo lo puede llevar quien lo fabrica. Tu main necesita <b>la profesión que fabrica su armadura</b> más <b>Ingeniería</b>. Secundarias para todos: <b>Primeros auxilios</b> y <b>Cocina</b>.</p>
+    </div>
+    <div class="tablewrap"><table class="wide"><thead><tr><th>Clase</th><th>Profesión de armadura</th><th>Piezas BiS fabricadas a nivel 20</th><th>Materiales</th></tr></thead><tbody>
+      {ORDER.map((id) => (
+        <tr>
+          <td><span class="racecell"><Icon name={CLASS_ICON[id]} size={26} label={CLASSES[id].name} /> <b>{CLASSES[id].name}</b></span></td>
+          <td><span class="racecell"><Icon name={PROF_ICON[PROFS[id][0]]} size={22} label={PROFS[id][0]} /> {PROFS[id][0]} <span class="note">+ Ingeniería</span></span></td>
+          <td>{PROFS[id][1]}{!PROFS[id][3] && <span class="note"> (sin comprobar)</span>}</td>
+          <td class="note">{PROFS[id][2]}</td>
+        </tr>
+      ))}
+    </tbody></table></div>
+    <div class="warnline"><b>Cómo pagar los materiales:</b> sube con <b>dos recolecciones</b> (la que alimenta tu armadura + Minería para la Ingeniería) y guárdalo todo en el banco. Hacia el nivel 28 olvidas las dos, aprendes tu profesión de armadura e Ingeniería y las subes a 225 de golpe.</div>
+  </section>
+</Base>
