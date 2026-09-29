@@ -4,6 +4,9 @@ import Icon from "../components/Icon.astro";
 import { DATA, CLASS_ICON, PROF_ICON, PROF_KEY_NAME, MISC_ICON, url } from "../lib/wow.js";
 import { expand, BUILDS, getClass } from "../lib/talents.js";
 const { GUIDE, BIS20, MATCHUPS, route } = DATA;
+import DUNGEONS from "../data/dungeons.json";
+const KIND = { dungeon: ["Mazmorra", "k-dun"], buy: ["Comprar", "k-buy"], gear: ["Equipo", "k-gear"], quest: ["Misión", "k-quest"] };
+const VERDICT = { yes: ["Sí", "good"], maybe: ["Opcional", "warn"], no: ["No", "bad"] };
 const ROLES = [["main", CLASS_ICON.shaman], ["hunter", CLASS_ICON.hunter], ["filler", PROF_ICON["Alquimia"]]];
 const seq = expand(BUILDS.shaman);
 const sham = getClass("shaman");
@@ -85,7 +88,7 @@ const allKeys = [
                     <label>
                       <input type="checkbox" data-k={k} />
                       <span>
-                        {pname && <span class="proftag"><Icon name={PROF_ICON[pname]} size={18} label={pname} /></span>} {it.t}
+                        {pname && <span class="proftag"><Icon name={PROF_ICON[pname]} size={18} label={pname} /></span>} {it.kind && <span class={`ktag ${KIND[it.kind][1]}`}>{KIND[it.kind][0]}</span>} {it.t}
                         {(a || it.tip) && (
                           <span class="meta">
                             {a && <span class="badge auto" title="El addon lo marca solo">auto · {a}</span>}
@@ -102,6 +105,18 @@ const allKeys = [
         ))}
       </div>
     ))}
+  </section>
+
+  <section class="box" id="mazmorras" style="display:grid;gap:10px">
+    <div>
+      <div class="eyebrow">Qué mazmorras rentan subiendo</div>
+      <h2>Mazmorras hasta nivel 30</h2>
+      <p class="note" style="margin-top:4px">Cada mazmorra da mucha experiencia la primera vez por sus misiones; repetirla no compensa. Niveles según ForeverChanges (beta).</p>
+    </div>
+    <div class="tablewrap"><table class="wide">
+      <thead><tr><th>Mazmorra</th><th>Niveles</th><th>Dónde</th><th>¿Renta?</th><th>Por qué</th></tr></thead>
+      <tbody>{DUNGEONS.map(([n, lv, where, v, why]) => <tr><td><b>{n}</b></td><td class="num">{lv}</td><td>{where}</td><td><span class={`pill v-${VERDICT[v][1]}`}>{VERDICT[v][0]}</span></td><td>{why}</td></tr>)}</tbody>
+    </table></div>
   </section>
 
   <div class="summary">

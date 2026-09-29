@@ -2,6 +2,7 @@ import TAL from "../data/talents.json";
 import C from "../data/content.json";
 
 export const BUILDS = C.BUILDS;
+export const BUILDS_LEVEL = C.BUILDS_LEVEL || {};
 export const TALENTS = TAL;
 
 // Geometría del árbol (misma que la versión de una página)
@@ -25,9 +26,9 @@ export function expand(b) {
   return out;
 }
 
-export function allocate(id, n) {
+export function allocate(id, n, build) {
   const c = getClass(id);
-  const seq = expand(BUILDS[id]).slice(0, n);
+  const seq = expand(build || BUILDS[id]).slice(0, n);
   const ranks = {};
   const per = [0, 0, 0];
   for (const name of seq) {

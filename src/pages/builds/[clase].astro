@@ -3,7 +3,7 @@ import Base from "../../layouts/Base.astro";
 import Icon from "../../components/Icon.astro";
 import TalentTree from "../../components/TalentTree.astro";
 import { DATA, CLASS_ICON, RACE_ICON, PROF_ICON, url } from "../../lib/wow.js";
-import { allocate, expand, BUILDS, getClass } from "../../lib/talents.js";
+import { allocate, expand, BUILDS, BUILDS_LEVEL, getClass } from "../../lib/talents.js";
 
 export function getStaticPaths() {
   return DATA.ORDER.map((id) => ({ params: { clase: id } }));
@@ -15,6 +15,9 @@ const cls = getClass(id);
 const N = 26;
 const { per } = allocate(id, N);
 const seq = expand(BUILDS[id]);
+const lvlBuild = BUILDS_LEVEL[id];
+const seqLvl = lvlBuild ? expand(lvlBuild) : null;
+const note = DATA.LEVEL_NOTES?.[id];
 const Q = { S: "q-leg", A: "q-epic", B: "q-rare", C: "q-unc" };
 const prof = PROFS[id];
 ---
@@ -43,6 +46,14 @@ const prof = PROFS[id];
       <input type="range" id="talRank" min="0" max="5" value="5" />
       <output for="talRank" class="num" id="talOut">5/5 → 26 puntos, el primero a nivel 5</output>
     </div>
+    {seqLvl && (
+      <div class="modepick classpick" role="group" aria-label="Uso de la build">
+        <button type="button" data-mode="pvp" aria-pressed="true">PvP · torneo</button>
+        <button type="button" data-mode="level" aria-pressed="false">Subida de nivel</button>
+      </div>
+    )}
+    {note && <p class={note[0] ? "goodline" : "warnline"} style="margin-top:10px"><b>¿Sirve para subir?</b> {note[1]}</p>}
+    {seqLvl && <p class="note" id="modeNote" style="margin-top:6px">Mostrando la build del torneo. Cambia a la de PvP con un reinicio de talentos antes de enviarla el 16.</p>}
     <div class="trees" id="trees">
       {[0, 1, 2].map((ti) => <TalentTree id={id} tree={ti} n={N} tint={TINTS[id][ti]} />)}
     </div>
@@ -52,7 +63,7 @@ const prof = PROFS[id];
     <div class="detail" style="margin-top:16px">
       <div><div class="eyebrow">Claves de la build</div><ul class="bul">{c.keys.map((k) => <li set:html={k} />)}</ul><p style="margin-top:10px" set:html={c.option} /></div>
       <div><div class="eyebrow">Orden de puntos</div>
-        <ol class="order" id="order">
+        <ol class="order" data-order="pvp">
           {seq.map((nm, i) => (
             <li data-i={i}>
               <span data-lv></span>
@@ -60,6 +71,16 @@ const prof = PROFS[id];
             </li>
           ))}
         </ol>
+        {seqLvl && (
+          <ol class="order" data-order="level" hidden>
+            {seqLvl.map((nm, i) => (
+              <li data-i={i} class={seq[i] !== nm ? "diff" : ""}>
+                <span data-lv></span>
+                <span style="display:flex;gap:8px;align-items:center"><Icon name={cls.byName[nm]?.icon} size={20} label={nm} /> {nm}</span>
+              </li>
+            ))}
+          </ol>
+        )}
         <p class="note" style="margin-top:8px" id="orderNote"></p>
       </div>
     </div>
@@ -98,18 +119,19 @@ const prof = PROFS[id];
     </section>
   )}
 
-  <script type="application/json" id="bdata" set:html={JSON.stringify({ id, total: seq.length })} />
+  <script type="application/json" id="bdata" set:html={JSON.stringify({ id, total: seq.length, level: lvlBuild || null })} />
   <script>
     import { getClass, allocate, stateOf } from "../../lib/talents.js";
     import { iconUrl } from "../../lib/wow.js";
-    const { id, total } = JSON.parse(document.getElementById("bdata")!.textContent!);
+    const { id, total, level: LB } = JSON.parse(document.getElementById("bdata")!.textContent!);
+    let mode = "pvp";
     const c = getClass(id);
     let n = 26, ranks: Record<string, number> = {}, per = [0, 0, 0];
     const $ = (s: string) => document.getElementById(s)!;
     let selected: string | null = null;
 
     function paint() {
-      ({ ranks, per } = allocate(id, n));
+      ({ ranks, per } = allocate(id, n, mode === "level" ? LB : undefined));
       const rank = n - 21, first = 10 - rank;
       $("perTxt").textContent = per.join("/");
       $("nTxt").textContent = `${n} puntos`;
@@ -126,7 +148,11 @@ const prof = PROFS[id];
         g.classList.toggle("on", (ranks[t.name] || 0) > 0);
       });
       document.querySelectorAll<HTMLElement>("[data-per]").forEach((s) => (s.textContent = String(per[+s.dataset.per!])));
-      document.querySelectorAll<HTMLLIElement>("#order li").forEach((li) => {
+      document.querySelectorAll<HTMLElement>("[data-order]").forEach((o) => (o.hidden = o.dataset.order !== mode));
+      document.querySelectorAll<HTMLButtonElement>("[data-mode]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mode === mode)));
+      const mn = document.getElementById("modeNote");
+      if (mn) mn.textContent = mode === "level" ? "Build de subida: más daño y maná contra bichos. Las casillas marcadas son las que cambian respecto a la del torneo." : "Build del torneo. Si subes con la otra, reinicia talentos antes de enviarla el 16.";
+      document.querySelectorAll<HTMLLIElement>(`[data-order="${mode}"] li`).forEach((li) => {
         const i = +li.dataset.i!;
         li.classList.toggle("legacy", i >= n);
         li.querySelector("[data-lv]")!.textContent = i >= n ? "Legacy" : `Nv ${i + first}`;
@@ -149,6 +175,7 @@ const prof = PROFS[id];
       b.addEventListener("mouseenter", () => show(b.dataset.name!));
       b.addEventListener("focus", () => show(b.dataset.name!));
     });
+    document.querySelectorAll<HTMLButtonElement>("[data-mode]").forEach((b) => b.addEventListener("click", () => { mode = b.dataset.mode!; paint(); }));
     $("talRank").addEventListener("input", (e) => { n = 21 + +(e.target as HTMLInputElement).value; paint(); });
     paint();
   </script>

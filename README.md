@@ -29,7 +29,8 @@ npm run build     # genera dist/
 - `src/data/talents.json`: árboles de Forever (cliente 1.60.1.70009) con el icono de cada talento.
 - `src/lib/`: cálculo de builds (filas y requisitos) e iconos.
 - `public/addon/ForeverPvPTournament.zip`: el addon descargable.
-- `scripts/build-data.mjs`: regenera los JSON desde la versión de una página (solo si la tienes).
+- `src/data/dungeons.json` y `src/data/rules.json`: tabla de mazmorras y reglamento.
+- Los JSON de `src/data/` son la fuente de verdad; `scripts/build-data.mjs` solo sirvió para la migración inicial.
 
 El progreso de la guía se guarda en el navegador (localStorage) y se sincroniza con el addon pegando el
 código de `/tfo export`.

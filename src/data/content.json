@@ -1140,6 +1140,10 @@
        "t": "Misión del Tótem de Fuego (nivel 10)",
        "totem": "fire",
        "tip": "Se marca solo en cuanto conoces un tótem de ese elemento."
+      },
+      {
+       "t": "Compra una bolsa en cuanto tengas plata: la recolección llena la mochila enseguida",
+       "kind": "buy"
       }
      ]
     },
@@ -1188,6 +1192,24 @@
       {
        "t": "Nivel 15",
        "lvl": 15
+      },
+      {
+       "t": "Orgrimmar: 2-4 bolsas de 10 casillas en la subasta (Bolsa de lino o de lana)",
+       "kind": "buy",
+       "tip": "Con Desuello + Minería vas a llevar mucho cuero y mineral encima."
+      },
+      {
+       "t": "Recoge en Orgrimmar las misiones de Ragefire Chasm antes de entrar",
+       "kind": "quest"
+      },
+      {
+       "t": "Ragefire Chasm (13-18) una vez, a nivel 13-15, con todas sus misiones",
+       "kind": "dungeon",
+       "tip": "Está dentro de Orgrimmar: no pierdes tiempo viajando. La primera vez da mucha experiencia; repetirla no renta."
+      },
+      {
+       "t": "Arma: la de dos manos con más daño que encuentres; la velocidad aún da igual",
+       "kind": "gear"
       }
      ]
     },
@@ -1227,7 +1249,9 @@
        ]
       },
       {
-       "t": "Ragefire y Wailing Caverns hechas una vez"
+       "t": "Wailing Caverns (17-24) a nivel 18-20: Leaders of the Fang y Lady Anacondra",
+       "kind": "dungeon",
+       "tip": "Hammerbone (arma de dos manos) por la misión de los Colmillos y Serpent's Shoulders de Anacondra."
       },
       {
        "t": "Nivel 20",
@@ -1237,6 +1261,26 @@
        "t": "Misión del Tótem de Agua (nivel 20)",
        "totem": "water",
        "tip": "Se marca solo en cuanto conoces un tótem de ese elemento."
+      },
+      {
+       "t": "Zepelín Orgrimmar → Entrañas: coge las misiones de Ruins of Lordaeron",
+       "kind": "quest",
+       "tip": "Aprovecha para coger el vuelo de Entrañas y del Sepulcro."
+      },
+      {
+       "t": "Ruins of Lordaeron (15-20): su misión da Forsaken Greataxe, el mejor arma de nivel 20",
+       "kind": "dungeon",
+       "tip": "Mazmorra nueva de Forever, junto a Entrañas."
+      },
+      {
+       "t": "Opcional: The Deadmines (17-26) en grupo por Smite's Mighty Hammer y Blackened Defias Armor",
+       "kind": "dungeon",
+       "tip": "Está en Páramos de Poniente, territorio de Alianza: en ruleset PvP ve en grupo."
+      },
+      {
+       "t": "Comida para subir: Longjaw Mud Snapper (+10 de poder de ataque y +5% de experiencia)",
+       "kind": "buy",
+       "tip": "Según guías de subida de Forever; confírmalo en el tooltip."
       }
      ]
     },
@@ -1269,6 +1313,19 @@
       {
        "t": "Nivel 25: se abre Legacy",
        "lvl": 25
+      },
+      {
+       "t": "Shadowfang Keep (22-30) una vez, a nivel 22-25, con misiones de Entrañas",
+       "kind": "dungeon",
+       "tip": "Bosque de Argénteos, zona de Horda."
+      },
+      {
+       "t": "Misiones de Duty Bound Leggings (Bloodied Insignia) y Grave Shroud (Abominable Creatures)",
+       "kind": "gear"
+      },
+      {
+       "t": "Con Stormstrike (hacia el 25): pásate al arma de dos manos más lenta que tengas",
+       "kind": "gear"
       }
      ]
     },
@@ -1303,6 +1360,20 @@
       {
        "t": "Nivel 28",
        "lvl": 28
+      },
+      {
+       "t": "Blackfathom Deeps (24-32): misión Blackfathom Villainy → Cultist's Armguards",
+       "kind": "dungeon",
+       "tip": "Vallefresno."
+      },
+      {
+       "t": "Excavation Site: Wetlands (24-29) una vez",
+       "kind": "dungeon",
+       "tip": "Humedales es zona disputada: ve en grupo."
+      },
+      {
+       "t": "Piedra de afilar/peso pesada para el arma (+4 de daño) antes de las mazmorras",
+       "kind": "buy"
       }
      ]
     },
@@ -1474,6 +1545,11 @@
       {
        "t": "Build Mejora completa (26 puntos)",
        "build": true
+      },
+      {
+       "t": "City of Dalaran (28-33): entra a nivel 28-30 por equipo de 30",
+       "kind": "dungeon",
+       "tip": "Mazmorra nueva de Forever en Alterac."
       }
      ]
     }
@@ -1555,6 +1631,10 @@
       {
        "t": "Nivel 20",
        "lvl": 20
+      },
+      {
+       "t": "Ragefire Chasm y Wailing Caverns una vez cada una, con sus misiones",
+       "kind": "dungeon"
       }
      ]
     },
@@ -1584,6 +1664,10 @@
       {
        "t": "Nivel 25: +1 Legacy de clase",
        "lvl": 25
+      },
+      {
+       "t": "Arco o rifle: el mejor que salga de misiones; la mascota hace el resto",
+       "kind": "gear"
       }
      ]
     },
@@ -1689,5 +1773,58 @@
     }
    ]
   }
+ },
+ "BUILDS_LEVEL": {
+  "shaman": [
+   "Thundering Strikes*5",
+   "Mental Dexterity*3",
+   "Improved Ghost Wolf*2",
+   "Shamanistic Focus",
+   "Elemental Weapons*3",
+   "Improved Lightning Shield",
+   "Stormstrike",
+   "Flurry*5",
+   "Improved Stormstrike*2",
+   "Improved Lightning Shield*2",
+   "Ancestral Knowledge"
+  ]
+ },
+ "LEVEL_NOTES": {
+  "warlock": [
+   true,
+   "Sirve para subir: los DoTs y Drenar vida matan sin bajar vida."
+  ],
+  "priest": [
+   false,
+   "Disciplina sube lento. Para subir, Sombras y cambia antes de enviar la build."
+  ],
+  "shaman": [
+   true,
+   "Tienes una variante de subida: los primeros 14 puntos son iguales y solo cambia desde el nivel 24."
+  ],
+  "mage": [
+   true,
+   "Escarcha es también la build clásica de subida: sirve tal cual."
+  ],
+  "rogue": [
+   true,
+   "Combate sirve para subir tal cual."
+  ],
+  "paladin": [
+   false,
+   "Es una build defensiva: sube lento. Para subir, Reprensión y cambia antes de enviar la build."
+  ],
+  "druid": [
+   true,
+   "Feral sirve para subir tal cual."
+  ],
+  "hunter": [
+   false,
+   "Supervivencia sube peor que Bestias. Para subir, Bestias (la mascota tanquea) y cambia antes de enviar la build."
+  ],
+  "warrior": [
+   false,
+   "Protección sube muy lento. Para subir, Armas o Furia y cambia antes de enviar la build."
+  ]
  }
 }

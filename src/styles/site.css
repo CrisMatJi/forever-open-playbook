@@ -169,3 +169,15 @@ main.wrap [style*="display:grid"]:not(.countdown){grid-template-columns:minmax(0
 /* Menú con 9 secciones */
 .mainnav a{padding:6px 8px;font-size:14.5px;gap:6px}
 @media (max-width:1240px){.mainnav a span{display:none}.mainnav a[aria-current="page"] span{display:inline}.mainnav a{padding:6px}}
+.modepick{margin-top:12px}
+.order li.diff{box-shadow:inset 3px 0 0 var(--blue)}
+.order li.diff span:last-child{color:#9fd0ff}
+.ktag{display:inline-block;font-family:var(--label);font-size:11.5px;letter-spacing:.06em;padding:0 6px;border-radius:3px;border:1px solid;margin-right:2px;vertical-align:1px}
+.k-dun{color:#c77dff;border-color:rgba(163,53,238,.6)}
+.k-buy{color:#6fb6ff;border-color:rgba(58,155,255,.5)}
+.k-gear{color:#ffa040;border-color:rgba(255,128,0,.5)}
+.k-quest{color:var(--gold);border-color:var(--gold-dim)}
+.pill.v-good{background:var(--good-soft);color:var(--good);border:1px solid rgba(30,255,0,.35)}
+.pill.v-warn{background:var(--warn-soft);color:var(--warn);border:1px solid rgba(232,179,60,.4)}
+.pill.v-bad{background:var(--bad-soft);color:var(--bad);border:1px solid rgba(255,74,61,.4)}
+code{overflow-wrap:anywhere}
