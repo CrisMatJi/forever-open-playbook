@@ -11,7 +11,8 @@
    "tierWhy": [
     "Los DoTs de Brujo pueden hacer crítico en Forever: presión que sigue mientras huyes.",
     "Miedo para reiniciar la pelea, Drenar vida para sostenerla y mascota que controla.",
-    "Corrupción instantánea con 5 puntos y Maldición de agotamiento a 30: los melés no te alcanzan."
+    "Corrupción instantánea con 5 puntos y Maldición de agotamiento a 30: los melés no te alcanzan.",
+    "Regla nueva: no se puede sacrificar al demonio antes de empezar."
    ],
    "tierWeak": "Razas que rompen el Miedo (No-muerto) y Pícaros que abren bien. Será una de las clases más jugadas.",
    "rating": 5,
@@ -64,7 +65,8 @@
    "tierWhy": [
     "La clase más difícil de matar: escudo, Renovar y curas.",
     "Penance llega con 21 puntos (fila 5 de Disciplina).",
-    "Grito psíquico y Quemadura de maná le ganan a casi todos los melés y a cualquier clase con maná."
+    "Grito psíquico y Quemadura de maná le ganan a casi todos los melés y a cualquier clase con maná.",
+    "Regla nueva: sin curas en el tiempo antes de empezar y sin buffs de otros jugadores."
    ],
    "tierWeak": "Brujo y Chamán le aguantan la rotación de escudos. Va a ser muy jugada: clasificar como top 4 de Sacerdote será caro.",
    "rating": 3,
@@ -116,7 +118,8 @@
    "tierWhy": [
     "Mejora rinde por encima del tier del Chamán en los datos de beta.",
     "Purgar, Choque de tierra, Tótem de temblor y Tótem de derribo: responde a Sacerdotes y lanzadores.",
-    "Stormstrike a 21 puntos y Flurry 5/5."
+    "Stormstrike a 21 puntos y Flurry 5/5.",
+    "Regla nueva: empieza el duelo con hasta 4 tótems puestos (Temblor, Derribo, Corriente de sanación...)."
    ],
    "tierWeak": "Pocas escapatorias: un Mago o un Cazador que te mantienen lejos te hacen sufrir. El maná te limita si la pelea dura.",
    "rating": 4,
@@ -221,7 +224,8 @@
    "tierWhy": [
     "El reglamento deja moverse en sigilo antes de empezar: eliges ángulo y apertura.",
     "Golpe en los riñones a 30 e Improved Kick en la fila 4 de Combate: la Patada silencia 2 s.",
-    "Mejor asesino en duelo contra clases de tela sin escudo."
+    "Mejor asesino en duelo contra clases de tela sin escudo.",
+    "Regla nueva: apertura sin oposición. Tu rival no se mueve ni gira hasta que abres (25 s)."
    ],
    "tierWeak": "Disciplina se come tu apertura con el escudo y te rompe la cadena con el Grito.",
    "rating": 2,
@@ -322,7 +326,8 @@
    "tierWhy": [
     "Te acercas en sigilo antes del duelo.",
     "Carga feral en oso corta un lanzamiento; con Legacy, Furor te da 80 de energía al entrar en gato.",
-    "Puede curarse entre formas."
+    "Puede curarse entre formas.",
+    "Regla nueva: cuenta como clase de sigilo, con apertura sin oposición (25 s)."
    ],
    "tierWeak": "Sin quitaescudos ni respuesta al Grito; Hibernar no funciona contra humanoides. Forma de oso floja en beta.",
    "rating": 2,
@@ -372,7 +377,8 @@
    "tierWhy": [
     "La salida a 20 yd le da espacio para empezar disparando.",
     "Deterrence y Counterattack castigan a los melés.",
-    "Supervivencia destaca en los datos de beta."
+    "Supervivencia destaca en los datos de beta.",
+    "Regla nueva: nada de trampas puestas antes de que el duelo empiece."
    ],
    "tierWeak": "Picadura de víbora no llega hasta el 32: sin presión de maná. Sin corte de hechizos real. Sufre contra Sacerdote y Brujo.",
    "rating": 1,
@@ -421,7 +427,8 @@
    "tierWhy": [
     "Carga llega desde los 20 yd de salida.",
     "Protección da Concussion Blow (aturdir 5 s) y, con Legacy, Golpe de escudo con silencio de 3 s.",
-    "Poca gente lo jugará: más fácil ser top 4 de la clase."
+    "Poca gente lo jugará: más fácil ser top 4 de la clase.",
+    "Regla nueva: apertura sin oposición con Carga, salvo contra clases de sigilo. Le sube bastante."
    ],
    "tierWeak": "Sin Golpe mortal (fila 7) ni sanador. Todo lanzador con kiteo o miedo le gana.",
    "rating": 2,
@@ -628,63 +635,6 @@
    "Check-in en Raider.IO, 15 g de entrada y a la clasificatoria."
   ]
  ],
- "RULES": [
-  [
-   "Solo Horda, ruleset PvP",
-   "Personaje nuevo creado tras abrir la inscripción, apellido Foreverpvp, un solo personaje en todo el torneo.",
-   "Razas: Orco, No-muerto, Tauren, Trol y Skyborne."
-  ],
-  [
-   "Top 4 de cada clase a la final",
-   "La final la juegan los 4 mejores de cada clase; cada clase tiene su premio de $2.777.",
-   "Una clase muy jugada es más difícil de clasificar."
-  ],
-  [
-   "Build fija por fase",
-   "Se envía 24 h antes de cada fase y no se cambia una vez empieza. Puedes cambiarla entre clasificatoria y final.",
-   "Tu build tiene que aguantar a todo el cuadro."
-  ],
-  [
-   "Salida a 20 yd",
-   "Los dos parten de la bandera y se alejan 10 yd. Nadie se mueve hasta que empiece el duelo, salvo quien esté en sigilo. No se puede ir montado.",
-   "Pícaros y Druidas eligen ángulo; los lanzadores empiezan en su alcance."
-  ],
-  [
-   "Buffs de otros jugadores",
-   "Solo los de clase que duren 2 min o más. Nada de escudo de otro Sacerdote ni buffs de eventos.",
-   "Pide Entereza, Intelecto Arcano, Marca de lo Salvaje y una Bendición."
-  ],
-  [
-   "Consumibles",
-   "Todo vale salvo Polvo mágico y pociones de protección (Fuego, Naturaleza, Escarcha, Arcano, Sagrado y Sombras).",
-   "Bombas de Ingeniería y pociones legales. Algo prohibido en la bolsa es descalificación."
-  ],
-  [
-   "Legacy permitido",
-   "Los puntos de Legacy están permitidos de forma explícita.",
-   "Talented 5/5 = 26 puntos de talento."
-  ],
-  [
-   "1-2 min entre duelos",
-   "Para curarse, bufar y recuperar maná. No se sale de la zona de duelo.",
-   "Cada duelo empieza casi a tope."
-  ],
-  [
-   "Tiempo muerto",
-   "Si un duelo se agota, se repite con un tope de 3 de comida y 3 de agua para ese cruce.",
-   "En duelos de sanadores el maná pesa más en la revancha."
-  ],
-  [
-   "Retrasos y huidas",
-   "60 s de inactividad es penalización. Salir del área es descalificación; forzar la huida del rival con miedos en el borde, también.",
-   "Cuidado con Miedo y Grito cerca de la línea."
-  ],
-  [
-   "Brujos y fragmentos",
-   "Pueden salir una sola vez a por fragmentos, avisando a un admin.",
-   "Llega con la bolsa de fragmentos llena."
-  ]
- ],
  "GUIDE": [
   {
    "id": "ins",
@@ -694,7 +644,7 @@
     "Crea un personaje <b>nuevo</b>: Orco Chamán, <b>Horda</b>, ruleset <b>PvP</b>. Tiene que estar creado después de las 20:00 del 27 de septiembre (hora de España); los anteriores no valen.",
     "Ponle el apellido <b>Foreverpvp</b>. Es obligatorio.",
     "Inscríbelo en <a href=\"https://rio.gg/foreveropen\" target=\"_blank\" rel=\"noopener\">rio.gg/foreveropen</a> con los datos del personaje.",
-    "Entra con él y pide invitación a la hermandad <b>&lt;The Forever Open II&gt;</b> a <b>Admin Foreverduel</b> o <b>Thebog Foreverpvp</b>.",
+    "Entra con él y pide invitación a la hermandad <b>&lt;The Forever Open III&gt;</b> a Tips Zug, Theboggy Foreverpvp, Admin Hulatwo, Admin Magetea, Admin Musashii o Prestige Admin.",
     "Únete al <a href=\"https://discord.gg/YdvQnxADwP\" target=\"_blank\" rel=\"noopener\">Discord Forever PvP</a>: allí publican el formato de la clasificatoria, como mínimo una semana antes.",
     "Comprueba que tu inscripción aparece antes del <b>4 de octubre a las 20:00</b>, cuando se cierra. Con cada personaje nuevo, inscripción aparte."
    ]
@@ -772,7 +722,7 @@
     "Ingeniería de 1 a <b>225</b> con el mineral del banco (+2 Legacy). Lo que falte, a la subasta.",
     "Vende en la subasta el cuero y el mineral que sobren.",
     "Ingeniería <b>140</b>: fabrícate el abalorio <b>Minor Recombobulator</b> (ligado). Hacia 175, granadas (en Classic la Granada de hierro pedía 175).",
-    "<b>Nivel 30</b>: misión del Tótem de Aire para Tótem de derribo y Arma Viento furioso (niveles de Classic, <span class=\"verify\">verificar</span>).",
+    "<b>Nivel 30</b>: misión del Tótem de Aire para Tótem de derribo y Arma Viento furioso (niveles de Classic, <span class=\"verify\">verificar</span>). Ojo: el buff que da esa misión está prohibido en el torneo; hazla con días de margen.",
     "Entra una vez en City of Dalaran (28-33)."
    ]
   },
@@ -812,11 +762,14 @@
     "<b>16 oct</b>: envía tu build (Mejora 0/26/0). Es 24 h antes de la fase y no se cambia después.",
     "Practica duelos contra Brujo, Sacerdote, Pícaro y Mago con los planes de la tabla de abajo.",
     "<b>17 oct por la mañana</b>: check-in en Raider.IO (sin check-in pierdes la plaza), 15 g de entrada y personaje a nivel 30. Conéctate con margen: quien no está a su hora es sustituido.",
-    "Pide buffs de 2 min o más: Entereza, Intelecto Arcano, Marca de lo Salvaje y una Bendición.",
+    "<b>Solo tus propios buffs</b>: nada de buffs de otros jugadores, de campamento ni del mundo. Escudo de relámpagos, arma imbuida y comida propia.",
     "Stream encendido antes de la primera inspección.",
     "En cada duelo: sobre la bandera, 10 yd atrás, quieto hasta que empiece. No huyas del área y no fuerces huidas.",
     "Conexión estable: como máximo <b>3 minutos desconectado</b> en total. No salgas de la zona de duelo ni para reparar.",
-    "Si pasas a la final, envía la build de la final (si la cambias) como tarde el 17: son 24 h antes del 18."
+    "Si pasas a la final, envía la build de la final (si la cambias) como tarde el 17: son 24 h antes del 18.",
+    "Coloca tus <b>4 tótems antes de empezar</b> (está permitido para Chamanes) según el rival.",
+    "Entre duelos tienes <b>1 minuto</b> como máximo: come y bebe en cuanto termine cada duelo.",
+    "Contra Pícaro, Druida o Guerrero: tienen apertura libre. Quédate quieto y sin girar hasta que abran."
    ],
    "extra": "matchups"
   }
@@ -1537,7 +1490,7 @@
       {
        "t": "Misión del Tótem de Aire (nivel 30)",
        "totem": "air",
-       "tip": "Se marca solo en cuanto conoces un tótem de ese elemento."
+       "tip": "Se marca solo en cuanto conoces un tótem de aire. El buff de la misión está prohibido en el torneo: hazla con días de margen."
       },
       {
        "t": "Piezas BiS de Peletería con patrones de Merchant's Favor"

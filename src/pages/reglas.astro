@@ -3,6 +3,9 @@ import Base from "../layouts/Base.astro";
 import Icon from "../components/Icon.astro";
 import R from "../data/rules.json";
 const DQ = [
+  "Llevar buffs de otros jugadores, de campamento o del mundo",
+  "Alargar el descanso entre duelos (máximo 1 minuto)",
+  "Comprar oro durante el torneo",
   "Objeto prohibido equipado o en la bolsa en una inspección (además, veto permanente)",
   "Más de 3 minutos desconectado en total",
   "Salir de la zona de duelo, huir o forzar la huida del rival",
@@ -19,6 +22,11 @@ const DQ = [
     <p class="lede">Todo el reglamento de The Forever Open ordenado por temas. Cada regla lleva debajo, en dorado, qué significa para ti. Si algo cambia, manda el <a href="https://docs.google.com/document/d/1sFMwpVUerc35lMAEaJpnopfTyzoldJfFhpBWJQI8UmM/edit?tab=t.0" target="_blank" rel="noopener">documento oficial</a> y los avisos del Discord.</p>
   </div>
 
+  <section class="box news">
+    <div class="eyebrow">Novedades del reglamento · revisado el {R.updated}</div>
+    <ul class="bul" style="margin-top:8px">{R.changes.map((c) => <li>{c}</li>)}</ul>
+  </section>
+
   <div class="split">
     <div class="box">
       <div class="eyebrow">Lo que te puede descalificar</div>
@@ -27,7 +35,7 @@ const DQ = [
     <div class="box">
       <div class="eyebrow">Tu calendario</div>
       <ol class="timeline" style="margin-top:8px">
-        <li><span class="when">4 oct · 20:00</span><span class="what">Cierre de inscripción (personaje, Raider.IO, hermandad &lt;The Forever Open II&gt;).</span></li>
+        <li><span class="when">4 oct · 20:00</span><span class="what">Cierre de inscripción (personaje, Raider.IO, hermandad &lt;The Forever Open III&gt;).</span></li>
         <li><span class="when">16 oct</span><span class="what">Último día para enviar la build de la clasificatoria (24 h antes).</span></li>
         <li><span class="when">17 oct · mañana</span><span class="what">Check-in en Raider.IO. Nivel 30, 15 g, stream y VOD listos.</span></li>
         <li><span class="when">17 oct</span><span class="what">Clasificatoria. Envía la build de la final (24 h antes del 18) si vas a cambiarla.</span></li>

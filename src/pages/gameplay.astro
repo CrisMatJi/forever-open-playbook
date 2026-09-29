@@ -46,7 +46,7 @@ const PHASES = [
     train: ["Practica la ventana: Stormstrike → Choque de tierra en menos de un segundo.", "Duelos contra Brujo: temblor antes del Miedo y Quebrar maldición a su primera maldición.", "Arma Estigma de Escarcha contra Cazadores y Magos que te alejan."] },
   { id: "p4", from: 30, to: 30, title: "Nivel 30 · Torneo",
     imbue: ["wf", "fb"], kit: ["wf", "ss", "fl", "gr", "bf", "bc"],
-    rot: ["Antes del duelo: Escudo de relámpagos, Viento Furioso, buffs de 2 min o más, comida. Tótems según el rival (tabla de abajo).", "Salida a 20 yd: si es lanzador, Lobo fantasmal al empezar y cierra; si es melé, deja que venga y pon el tótem.", "Ventana de daño: Furia sangrienta → Stormstrike → Choque de tierra, con Flurry activo por los críticos.", "Choque de tierra se guarda para cortar curas o Miedos si el rival es lanzador; contra melés, úsalo como daño.", "Defensa: Quebrar maldición contra Brujos, Tótem de derribo contra Polimorfia o Quemadura de maná, cura cuando te den espacio."],
+    rot: ["Antes del duelo: Escudo de relámpagos, Viento Furioso y comida. Solo tus propios buffs: nada de buffs de otros, de campamento ni del mundo.", "Coloca tus 4 tótems ANTES de empezar (está permitido): el de tierra según el rival (tabla de abajo), Derribo en aire, Corriente de sanación en agua y uno de fuego.", "Salida a 20 yd: si es lanzador, Lobo fantasmal al empezar y cierra. Pícaro, Druida y Guerrero tienen apertura libre: quieto y sin girar hasta que abran.", "Ventana de daño: Furia sangrienta → Stormstrike → Choque de tierra, con Flurry activo por los críticos.", "Choque de tierra se guarda para cortar curas o Miedos si el rival es lanzador; contra melés, úsalo como daño.", "Defensa: Quebrar maldición contra Brujos, Tótem de derribo contra Polimorfia o Quemadura de maná, cura cuando te den espacio."],
     train: ["10 duelos contra cada una de las 4 clases top (Brujo, Sacerdote, Pícaro, Mago) antes del 16.", "Graba tus duelos y revisa: ¿cortaste las curas?, ¿el temblor llegó antes del miedo?", "Prueba Viento Furioso contra Estigma de Escarcha contra Cazador y Mago y quédate con lo que más gane."] },
 ];
 const TOTEMS = [
@@ -136,18 +136,18 @@ const S = (k) => SP[k];
       <thead><tr><th>Rival</th><th>Tótem de tierra</th><th>Para qué</th><th>Además</th></tr></thead>
       <tbody>{TOTEMS.map(([c, k, why, extra]) => <tr><td><b>{c}</b></td><td><span class="racecell"><Icon name={S(k)[1]} size={26} label={S(k)[0]} /> {S(k)[0]}</span></td><td>{why}</td><td class="note">{extra}</td></tr>)}</tbody>
     </table></div>
-    <p class="note">Tótem de derribo es de aire y se puede combinar con uno de tierra. Pon el tótem antes de que el rival lance lo que quieres anular, no después.</p>
+    <p class="note">En el torneo puedes empezar con hasta 4 tótems puestos, uno de cada elemento: el de tierra de esta tabla, Derribo (aire), Corriente de sanación (agua) y uno de fuego. Temblor y Derribo duran poco: si el duelo se alarga, vuelve a ponerlos antes de que el rival lance lo que quieres anular.</p>
   </section>
 
   <section class="split">
     <div class="box">
-      <h2>Campamentos</h2>
+      <h2>Campamentos (solo para subir)</h2>
       <ul class="bul" style="margin-top:8px">
         <li><span class="racecell"><Icon name={PROF_ICON["Minería"]} size={24} label="Minería" /> <b>Piedra imán</b> (Minería 20)</span>: de +12 a +90 de poder de ataque según tu nivel. Tu mejor opción subiendo.</li>
         <li><span class="racecell"><Icon name={PROF_ICON["Desuello"]} size={24} label="Desuello" /> <b>Silla de campamento</b> (Desuello 20)</span>: +2% de crítico. Mejor si un Paladín ya te da Bendición de poderío.</li>
         <li><span class="racecell"><Icon name={PROF_ICON["Primeros auxilios"]} size={24} label="Primeros auxilios" /> <b>Botiquín</b> (Primeros auxilios 20)</span>: de +3 a +56 de aguante. Es lo que conservas a nivel 30.</li>
       </ul>
-      <p class="note" style="margin-top:8px">Un objeto por jugador y campamento; el buff dura 1 hora y no se acumula con el buff de clase equivalente. Al 28 pierdes la Silla y la Piedra imán. Que otro te monte el campamento en el torneo es una zona gris: pregúntalo en el Discord.</p>
+      <p class="note" style="margin-top:8px">Un objeto por jugador y campamento; el buff dura 1 hora y no se acumula con el buff de clase equivalente. Al 28 pierdes la Silla y la Piedra imán. <b>En el torneo los buffs de campamento están prohibidos</b>: úsalos solo para subir.</p>
     </div>
     <div class="box">
       <h2>Teclas recomendadas</h2>

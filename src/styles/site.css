@@ -181,3 +181,4 @@ main.wrap [style*="display:grid"]:not(.countdown){grid-template-columns:minmax(0
 .pill.v-warn{background:var(--warn-soft);color:var(--warn);border:1px solid rgba(232,179,60,.4)}
 .pill.v-bad{background:var(--bad-soft);color:var(--bad);border:1px solid rgba(255,74,61,.4)}
 code{overflow-wrap:anywhere}
+.news{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold-dim),0 0 18px rgba(255,209,0,.12)}
