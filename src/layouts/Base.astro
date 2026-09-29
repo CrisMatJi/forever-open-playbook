@@ -6,7 +6,7 @@ import { url, MISC_ICON } from "../lib/wow.js";
 interface Props { title: string; description?: string; active?: string }
 const { title, description = "Guía de fans para The Forever Open: tier list, builds a nivel 30, Legacy y la ruta de speedrun del Chamán Orco.", active = "" } = Astro.props;
 const NAV = [
-  ["", "Inicio", "duel"], ["guia", "Mi guía", "guide"], ["tier", "Tier list", "tier"], ["sacerdote", "Contra Sacerdote", "priest"],
+  ["", "Inicio", "duel"], ["guia", "Mi guía", "guide"], ["gameplay", "Mi gameplay", "gameplay"], ["tier", "Tier list", "tier"], ["sacerdote", "Contra Sacerdote", "priest"],
   ["builds", "Builds a 30", "builds"], ["legacy", "Legacy", "legacy"], ["reglas", "Reglas", "rules"], ["addon", "Addon", "addon"],
 ];
 const full = title === "Forever Open Playbook" ? title : `${title} · Forever Open Playbook`;

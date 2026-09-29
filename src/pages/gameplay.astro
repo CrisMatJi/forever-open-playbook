@@ -1,0 +1,201 @@
+---
+import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
+import { DATA, CLASS_ICON, PROF_ICON, RACE_ICON, url } from "../lib/wow.js";
+const { MATCHUPS } = DATA;
+
+// Hechizos (niveles de aprendizaje de Classic; en Forever alguno puede variar)
+const SP = {
+  ls: ["Escudo de relámpagos", "spell_nature_lightningshield", 8],
+  es: ["Choque de tierra", "spell_nature_earthshock", 4],
+  fs: ["Choque de llamas", "spell_fire_flameshock", 10],
+  frs: ["Choque de escarcha", "spell_frost_frostshock", 20],
+  rb: ["Arma Muerdepiedras", "spell_nature_rockbiter", 1],
+  ft: ["Arma Lengua de Fuego", "spell_fire_flametongue", 10],
+  fb: ["Arma Estigma de Escarcha", "spell_frost_frostbrand", 20],
+  wf: ["Arma Viento Furioso", "spell_nature_cyclone", 30],
+  ss: ["Stormstrike (talento)", "spell_holy_sealofmight", 25],
+  gw: ["Lobo fantasmal", "spell_nature_spiritwolf", 20],
+  pu: ["Purgar", "spell_nature_purge", 12],
+  hw: ["Ola de sanación", "spell_nature_magicimmunity", 1],
+  lhw: ["Ola de sanación inferior", "spell_nature_healingwavelesser", 20],
+  tr: ["Tótem de temblor", "spell_nature_tremortotem", 18],
+  gr: ["Tótem de derribo", "spell_nature_groundingtotem", 30],
+  eb: ["Tótem Nexo terrestre", "spell_nature_strengthofearthtotem02", 6],
+  st: ["Tótem abrasador", "spell_fire_searingtotem", 10],
+  sk: ["Tótem Piel de piedra", "spell_nature_stoneskintotem", 4],
+  soe: ["Tótem Fuerza de la tierra", "spell_nature_earthbindtotem", 10],
+  hs: ["Tótem Corriente de sanación", "inv_spear_04", 20],
+  ms: ["Tótem Fuente de maná", "spell_nature_manaregentotem", 26],
+  bf: ["Furia sangrienta (Orco)", "racial_orc_berserkerstrength", 1],
+  bc: ["Quebrar maldición (Orco)", "spell_shadow_curseofachimonde", 1],
+  fl: ["Flurry (talento)", "ability_ghoulfrenzy", 26],
+};
+const PHASES = [
+  { id: "p1", from: 1, to: 9, title: "Nivel 1-9 · Aprende lo básico",
+    imbue: ["rb"], kit: ["hw", "es", "ls", "sk", "eb"],
+    rot: ["Escudo de relámpagos puesto antes de cada pelea (desde el 8).", "Pega con el arma y usa Choque de tierra cuando el bicho lance un hechizo: acostúmbrate a guardarlo para interrumpir.", "Ola de sanación solo fuera de peligro; mejor comer entre peleas."],
+    train: ["Pon Choque de tierra en una tecla cómoda (p. ej. 2 o F): será tu interrupción en el torneo.", "Mira siempre la barra de lanzamiento del enemigo."] },
+  { id: "p2", from: 10, to: 19, title: "Nivel 10-19 · Choques y tótems",
+    imbue: ["ft"], kit: ["fs", "st", "soe", "pu", "eb"],
+    rot: ["Antes: Escudo de relámpagos + Arma Lengua de Fuego. En el campamento, Piedra imán (Minería 20).", "Abre con Choque de llamas desde lejos y deja el Tótem abrasador si la pelea va a durar.", "Pega con el arma. Choque de tierra: interrupción primero, daño solo si no hay nada que cortar.", "Purgar los buffs del enemigo (escudos, Renovar) desde el 12: es media victoria contra Sacerdotes.", "Cúrate cuando el enemigo no pueda castigarte (huye, está lejos o aturdido)."],
+    train: ["Duelos a nivel 10-19 contra Sacerdotes: practica Purgar el escudo y cortar la cura.", "Tótem Nexo terrestre contra quien te hace kite.", "Mueve la cámara con el ratón y no retrocedas con el teclado."] },
+  { id: "p3", from: 20, to: 29, title: "Nivel 20-29 · Movilidad y control",
+    imbue: ["ft", "fb"], kit: ["gw", "frs", "tr", "hs", "lhw", "ss"],
+    rot: ["Lobo fantasmal (instantáneo con Improved Ghost Wolf) para cerrar distancia; salte justo al llegar.", "Choque de escarcha si se escapa. Los choques comparten tiempo de reutilización: elige entre ralentizar, interrumpir o dañar.", "Tótem de temblor ANTES de que te lance Miedo o Grito (Brujo, Sacerdote).", "Stormstrike (hacia el 25): el siguiente Choque pega más; úsalo justo después.", "Ola de sanación inferior para curas rápidas entre ataques."],
+    train: ["Practica la ventana: Stormstrike → Choque de tierra en menos de un segundo.", "Duelos contra Brujo: temblor antes del Miedo y Quebrar maldición a su primera maldición.", "Arma Estigma de Escarcha contra Cazadores y Magos que te alejan."] },
+  { id: "p4", from: 30, to: 30, title: "Nivel 30 · Torneo",
+    imbue: ["wf", "fb"], kit: ["wf", "ss", "fl", "gr", "bf", "bc"],
+    rot: ["Antes del duelo: Escudo de relámpagos, Viento Furioso, buffs de 2 min o más, comida. Tótems según el rival (tabla de abajo).", "Salida a 20 yd: si es lanzador, Lobo fantasmal al empezar y cierra; si es melé, deja que venga y pon el tótem.", "Ventana de daño: Furia sangrienta → Stormstrike → Choque de tierra, con Flurry activo por los críticos.", "Choque de tierra se guarda para cortar curas o Miedos si el rival es lanzador; contra melés, úsalo como daño.", "Defensa: Quebrar maldición contra Brujos, Tótem de derribo contra Polimorfia o Quemadura de maná, cura cuando te den espacio."],
+    train: ["10 duelos contra cada una de las 4 clases top (Brujo, Sacerdote, Pícaro, Mago) antes del 16.", "Graba tus duelos y revisa: ¿cortaste las curas?, ¿el temblor llegó antes del miedo?", "Prueba Viento Furioso contra Estigma de Escarcha contra Cazador y Mago y quédate con lo que más gane."] },
+];
+const TOTEMS = [
+  ["Brujo", "tr", "Miedo y Aullido de terror", "Quebrar maldición a su primera maldición."],
+  ["Sacerdote", "tr", "Grito psíquico", "Purgar el escudo y Choque de tierra a sus curas."],
+  ["Pícaro", "sk", "Menos daño físico", "Dureza (Orco) acorta sus aturdimientos."],
+  ["Mago", "gr", "Se come Polimorfia o una Descarga", "Choque de tierra a sus lanzamientos largos."],
+  ["Chamán", "gr", "Se come un Choque", "Purga su Escudo de relámpagos."],
+  ["Paladín", "sk", "Menos daño físico", "Purga Bendición de libertad."],
+  ["Druida", "eb", "No se escapa en forma de gato", "Purga Rejuvenecimiento."],
+  ["Cazador", "eb", "Lo frenas para no perder la melé", "Lobo fantasmal para cerrar."],
+  ["Guerrero", "eb", "Mantener distancia", "Choque de escarcha y distancia."],
+];
+const IMBUES = [
+  ["rb", "1-9", "La única que tienes. En Forever está orientada a tanquear: cámbiala en cuanto puedas."],
+  ["ft", "10-29", "Daño de fuego que ignora armadura. Igual que Muerdepiedras subiendo, sin dar tanta amenaza al tanque."],
+  ["fb", "20-30", "Ralentiza. Plan B en el torneo contra Cazadores y Magos que te hacen kite."],
+  ["wf", "30", "Golpes extra en racha con arma lenta de dos manos, Flurry y Stormstrike: la opción de daño en el torneo."],
+];
+const S = (k) => SP[k];
+---
+<Base title="Mi gameplay" active="gameplay" description="Cómo jugar el Chamán Orco Mejora nivel a nivel hasta el torneo: imbuiciones, choques, tótems, ventana de daño y qué entrenar.">
+  <div class="pagehead">
+    <div class="eyebrow racecell"><Icon name={CLASS_ICON.shaman} size={18} label="Chamán" /> Chamán Orco Mejora</div>
+    <h1>Mi gameplay</h1>
+    <p class="lede">Cómo jugar en cada tramo de nivel y qué entrenar para llegar al torneo con los reflejos hechos. Los niveles de los hechizos salen de Classic: en Forever alguno puede cambiar, así que confírmalo con tu instructor.</p>
+  </div>
+
+  <section class="box" style="display:grid;gap:14px">
+    <div class="lvlpick">
+      <label for="lvl">Estoy a nivel</label>
+      <input type="range" id="lvlRange" min="1" max="30" value="1" aria-label="Nivel" />
+      <input type="number" id="lvl" min="1" max="30" value="1" />
+    </div>
+    <div class="phasepick classpick" role="group" aria-label="Tramo">
+      {PHASES.map((p) => <button type="button" data-phase={p.id} aria-pressed="false">{p.title.split(" · ")[0]}</button>)}
+    </div>
+    {PHASES.map((p) => (
+      <div class="phase" data-panel={p.id} data-from={p.from} data-to={p.to} hidden>
+        <h2>{p.title}</h2>
+        <div class="gp-grid">
+          <div>
+            <div class="eyebrow">Imbuición</div>
+            <div class="spells">{p.imbue.map((k) => <span class="spell"><Icon name={S(k)[1]} size={34} label={S(k)[0]} /> <span>{S(k)[0]}</span></span>)}</div>
+            <div class="eyebrow" style="margin-top:12px">Lo nuevo en este tramo</div>
+            <div class="spells">{p.kit.map((k) => <span class="spell"><Icon name={S(k)[1]} size={34} label={S(k)[0]} /> <span>{S(k)[0]}<small>nv {S(k)[2]}</small></span></span>)}</div>
+          </div>
+          <div>
+            <div class="eyebrow">Cómo jugar</div>
+            <ol class="steps">{p.rot.map((r) => <li>{r}</li>)}</ol>
+          </div>
+        </div>
+        <div class="goodline" style="margin-top:12px"><b>Entrena:</b> <ul class="bul" style="margin-top:4px">{p.train.map((t) => <li>{t}</li>)}</ul></div>
+      </div>
+    ))}
+  </section>
+
+  <section class="box">
+    <h2>Ventana de daño a nivel 30</h2>
+    <p class="note" style="margin-top:4px">La secuencia que mata. Practícala hasta que salga sola.</p>
+    <div class="combo">
+      {["bf", "ss", "es"].map((k, i) => (
+        <>
+          {i > 0 && <span class="arrowr" aria-hidden="true">→</span>}
+          <span class="spell big"><Icon name={S(k)[1]} size={48} label={S(k)[0]} big /> <span>{S(k)[0]}</span></span>
+        </>
+      ))}
+    </div>
+    <ul class="bul" style="margin-top:10px">
+      <li>Stormstrike hace que el objetivo reciba más daño de naturaleza con tus siguientes hechizos: el Choque de tierra justo detrás es el golpe fuerte.</li>
+      <li>Si el rival está a punto de curarse, guarda el Choque para cortarle la cura y vuelve a la ventana después.</li>
+      <li>Con Viento Furioso, abre la ventana cuando tengas Flurry activo (tras un crítico).</li>
+    </ul>
+  </section>
+
+  <section style="display:grid;gap:12px">
+    <h2>Imbuiciones de arma</h2>
+    <div class="tablewrap"><table class="wide">
+      <thead><tr><th>Imbuición</th><th>Nivel</th><th>Cuándo</th></tr></thead>
+      <tbody>{IMBUES.map(([k, lv, why]) => <tr><td><span class="racecell"><Icon name={S(k)[1]} size={28} label={S(k)[0]} /> <b>{S(k)[0]}</b></span></td><td>{lv}</td><td>{why}</td></tr>)}</tbody>
+    </table></div>
+  </section>
+
+  <section style="display:grid;gap:12px">
+    <h2>Qué tótem poner contra cada clase</h2>
+    <div class="tablewrap"><table class="wide">
+      <thead><tr><th>Rival</th><th>Tótem de tierra</th><th>Para qué</th><th>Además</th></tr></thead>
+      <tbody>{TOTEMS.map(([c, k, why, extra]) => <tr><td><b>{c}</b></td><td><span class="racecell"><Icon name={S(k)[1]} size={26} label={S(k)[0]} /> {S(k)[0]}</span></td><td>{why}</td><td class="note">{extra}</td></tr>)}</tbody>
+    </table></div>
+    <p class="note">Tótem de derribo es de aire y se puede combinar con uno de tierra. Pon el tótem antes de que el rival lance lo que quieres anular, no después.</p>
+  </section>
+
+  <section class="split">
+    <div class="box">
+      <h2>Campamentos</h2>
+      <ul class="bul" style="margin-top:8px">
+        <li><span class="racecell"><Icon name={PROF_ICON["Minería"]} size={24} label="Minería" /> <b>Piedra imán</b> (Minería 20)</span>: de +12 a +90 de poder de ataque según tu nivel. Tu mejor opción subiendo.</li>
+        <li><span class="racecell"><Icon name={PROF_ICON["Desuello"]} size={24} label="Desuello" /> <b>Silla de campamento</b> (Desuello 20)</span>: +2% de crítico. Mejor si un Paladín ya te da Bendición de poderío.</li>
+        <li><span class="racecell"><Icon name={PROF_ICON["Primeros auxilios"]} size={24} label="Primeros auxilios" /> <b>Botiquín</b> (Primeros auxilios 20)</span>: de +3 a +56 de aguante. Es lo que conservas a nivel 30.</li>
+      </ul>
+      <p class="note" style="margin-top:8px">Un objeto por jugador y campamento; el buff dura 1 hora y no se acumula con el buff de clase equivalente. Al 28 pierdes la Silla y la Piedra imán. Que otro te monte el campamento en el torneo es una zona gris: pregúntalo en el Discord.</p>
+    </div>
+    <div class="box">
+      <h2>Teclas recomendadas</h2>
+      <dl class="cmds" style="margin-top:8px">
+        <dt>1</dt><dd>Stormstrike</dd>
+        <dt>2</dt><dd>Choque de tierra (interrupción)</dd>
+        <dt>3</dt><dd>Choque de escarcha</dd>
+        <dt>4</dt><dd>Choque de llamas</dd>
+        <dt>Q</dt><dd>Purgar</dd>
+        <dt>E</dt><dd>Ola de sanación inferior</dd>
+        <dt>R</dt><dd>Lobo fantasmal</dd>
+        <dt>F</dt><dd>Tótem de temblor</dd>
+        <dt>G</dt><dd>Tótem de derribo</dd>
+        <dt>Mayús+1</dt><dd>Furia sangrienta</dd>
+        <dt>Mayús+2</dt><dd>Quebrar maldición</dd>
+      </dl>
+      <p class="note" style="margin-top:8px">Todo lo que se usa como reacción (interrumpir, temblor, derribo) debe estar a un dedo sin mover la mano del movimiento.</p>
+    </div>
+  </section>
+
+  <section style="display:grid;gap:12px">
+    <h2>Cruce a cruce</h2>
+    <div class="tablewrap"><table class="wide"><thead><tr><th>Rival</th><th>Plan</th></tr></thead><tbody>
+      {MATCHUPS.map((r) => <tr><td><b>{r[0]}</b></td><td>{r[1]}</td></tr>)}
+    </tbody></table></div>
+    <p class="note">El plan completo contra Sacerdote está en <a href={url("sacerdote") + "#c-shaman"}>Contra Sacerdote</a> y la build en <a href={url("builds/shaman")}>Builds</a>.</p>
+  </section>
+
+  <script>
+    const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
+    const panels = [...document.querySelectorAll<HTMLElement>("[data-panel]")];
+    const btns = [...document.querySelectorAll<HTMLButtonElement>("[data-phase]")];
+    let level = 1;
+    try { level = +(localStorage.getItem("tfo-level") || 1) || 1; } catch {}
+    function show(id: string) {
+      panels.forEach((p) => (p.hidden = p.dataset.panel !== id));
+      btns.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.phase === id)));
+    }
+    function setLevel(v: number) {
+      level = Math.min(30, Math.max(1, v || 1));
+      try { localStorage.setItem("tfo-level", String(level)); } catch {}
+      $("lvl").value = String(level); $("lvlRange").value = String(level);
+      const p = panels.find((x) => level >= +x.dataset.from! && level <= +x.dataset.to!);
+      if (p) show(p.dataset.panel!);
+    }
+    btns.forEach((b) => b.addEventListener("click", () => show(b.dataset.phase!)));
+    $("lvl").addEventListener("change", (e) => setLevel(+(e.target as HTMLInputElement).value));
+    $("lvlRange").addEventListener("input", (e) => setLevel(+(e.target as HTMLInputElement).value));
+    setLevel(level);
+  </script>
+</Base>

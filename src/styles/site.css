@@ -155,3 +155,17 @@ main.wrap [style*="display:grid"]:not(.countdown){grid-template-columns:minmax(0
 .rsection h2{font-size:24px}
 .dq li::marker{color:var(--bad)}
 .dq li{color:var(--ink)}
+
+/* Mi gameplay */
+.gp-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:18px;margin-top:10px}
+@media (max-width:760px){.gp-grid{grid-template-columns:1fr}}
+.spells{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.spell{display:inline-flex;gap:8px;align-items:center;background:rgba(0,0,0,.35);border:1px solid var(--edge);border-radius:4px;padding:4px 10px 4px 4px;font-size:14.5px}
+.spell small{display:block;font-size:12px;color:var(--muted)}
+.spell.big{font-family:var(--display);font-size:16px;color:var(--gold);padding:6px 14px 6px 6px}
+.combo{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
+.arrowr{font-size:26px;color:var(--gold)}
+.phase h2{font-size:22px}
+/* Menú con 9 secciones */
+.mainnav a{padding:6px 8px;font-size:14.5px;gap:6px}
+@media (max-width:1240px){.mainnav a span{display:none}.mainnav a[aria-current="page"] span{display:inline}.mainnav a{padding:6px}}

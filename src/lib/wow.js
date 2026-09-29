@@ -33,7 +33,7 @@ export const PROF_KEY_NAME = {
   alchemy: "Alquimia", blacksmithing: "Herrería",
 };
 export const MISC_ICON = {
-  legacy: "inv_misc_book_09", guide: "inv_misc_map_01", tier: "achievement_arena_2v2_7",
+  legacy: "inv_misc_book_09", gameplay: "spell_holy_sealofmight", guide: "inv_misc_map_01", tier: "achievement_arena_2v2_7",
   priest: "spell_holy_powerwordshield", builds: "ability_marksmanship", rules: "inv_scroll_03",
   addon: "inv_gizmo_02", duel: "ability_dualwield", totem: "spell_nature_stoneskintotem",
   gold: "inv_misc_coin_01", stream: "inv_misc_eye_01", calendar: "inv_misc_pocketwatch_01",
