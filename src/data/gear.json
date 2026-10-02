@@ -1,0 +1,406 @@
+{
+ "shaman": [
+  {
+   "slot": "Dos manos",
+   "id": 280604,
+   "name": "Rage of the Storm",
+   "icon": "inv_mace_42",
+   "lvl": 30,
+   "bind": "BoP",
+   "how": "Misión de Chamán a nivel 30 (nombre de la misión aún sin confirmar). Maza 3,60, +16 Fuerza, +15 Aguante y +10% a Stormstrike.",
+   "tag": "quest",
+   "alts": [
+    {
+     "id": 6687,
+     "name": "Corpsemaker",
+     "icon": "inv_weapon_halbard_01",
+     "how": "Razorfen Kraul, Overlord Ramtusk (~34%)"
+    },
+    {
+     "id": 271766,
+     "name": "Heavehammer",
+     "icon": "inv_hammer_09",
+     "how": "Misión «Prehistoric Prism», Excavation Site"
+    },
+    {
+     "id": 13045,
+     "name": "Viscous Hammer",
+     "icon": "inv_mace_13",
+     "how": "Botín del mundo / subasta"
+    }
+   ]
+  },
+  {
+   "slot": "Cabeza",
+   "id": 252455,
+   "name": "Defender's Leather Helm",
+   "icon": "inv_helmet_33",
+   "lvl": 25,
+   "bind": "BoP",
+   "how": "Peletería 130. Patrón aún sin localizar en la beta.",
+   "tag": "craft",
+   "alts": [
+    {
+     "id": 252447,
+     "name": "Defender's Leather Hood",
+     "icon": "inv_helmet_48",
+     "how": "Peletería 100, patrón de Pawani (30 Merchant's Favor)"
+    }
+   ]
+  },
+  {
+   "slot": "Cuello",
+   "id": 274749,
+   "name": "Souvenir Sea Shell",
+   "icon": "inv_jewelry_necklace_10",
+   "lvl": 30,
+   "bind": "BoP",
+   "how": "Gezzy Gunkgear, Bahía del Botín, con reputación Honorable.",
+   "tag": "vendor",
+   "alts": [
+    {
+     "id": 285331,
+     "name": "Mark of the Pack Leader",
+     "icon": "inv_jewelry_necklace_04",
+     "how": "Raro Humar the Pridelord, Los Baldíos"
+    }
+   ]
+  },
+  {
+   "slot": "Hombros",
+   "id": 7727,
+   "name": "Watchman Pauldrons",
+   "icon": "inv_shoulder_23",
+   "lvl": 27,
+   "bind": "BoE",
+   "how": "Muy raro en el Monasterio Escarlata: mejor comprarlo en la subasta.",
+   "tag": "ah",
+   "alts": [
+    {
+     "id": 5964,
+     "name": "Barbaric Shoulders",
+     "icon": "inv_shoulder_08",
+     "how": "Peletería 175 (ligado al equipar: también en subasta)"
+    }
+   ]
+  },
+  {
+   "slot": "Espalda",
+   "id": 271716,
+   "name": "Explorer's League Dustcover",
+   "icon": "inv_misc_cape_21",
+   "lvl": 28,
+   "bind": "BoP",
+   "how": "Misión «Prehistoric Prism», Excavation Site: Wetlands (fuente sin confirmar).",
+   "tag": "quest",
+   "alts": [
+    {
+     "id": 271720,
+     "name": "Crocolisk Skin Gaiter",
+     "icon": "inv_misc_monsterscales_02",
+     "how": "Fuente desconocida"
+    }
+   ]
+  },
+  {
+   "slot": "Pecho",
+   "id": 252450,
+   "name": "Defender's Leather Tunic",
+   "icon": "inv_chest_leather_07",
+   "lvl": 22,
+   "bind": "BoP",
+   "how": "Peletería 110. Patrón de Pawani, fuera de El Cruce (30 Merchant's Favor).",
+   "tag": "craft",
+   "alts": [
+    {
+     "id": 252451,
+     "name": "Totemic Leather Tunic",
+     "icon": "inv_chest_leather_02",
+     "how": "Peletería 110, patrón de Pawani"
+    }
+   ]
+  },
+  {
+   "slot": "Muñecas",
+   "id": 270042,
+   "name": "Technician's Bracers",
+   "icon": "inv_bracer_02",
+   "lvl": 20,
+   "bind": "BoP",
+   "how": "Misión «A Fine Mess» (Gnomeregan).",
+   "tag": "quest",
+   "alts": [
+    {
+     "id": 6902,
+     "name": "Bands of Serra'kis",
+     "icon": "inv_bracer_08",
+     "how": "Blackfathom Deeps, Old Serra'kis (~34%)"
+    }
+   ]
+  },
+  {
+   "slot": "Manos",
+   "id": 720,
+   "name": "Brawler Gloves",
+   "icon": "inv_gauntlets_05",
+   "lvl": 23,
+   "bind": "BoE",
+   "how": "Botín del mundo: cómpralos en la subasta. (Gloves of Kapelan piden nivel 33.)",
+   "tag": "ah",
+   "alts": []
+  },
+  {
+   "slot": "Cintura",
+   "id": 252459,
+   "name": "Prowler's Leather Belt",
+   "icon": "inv_belt_43",
+   "lvl": 30,
+   "bind": "BoP",
+   "how": "Peletería 150. El patrón lo vende Granny Finespindle en Forjaz (Alianza): difícil para Horda.",
+   "tag": "craft",
+   "alts": []
+  },
+  {
+   "slot": "Piernas",
+   "id": 252457,
+   "name": "Defender's Leather Kilt",
+   "icon": "inv_kilt_cloth_04v4",
+   "lvl": 25,
+   "bind": "BoP",
+   "how": "Peletería 125. Patrón de Pawani (30 Merchant's Favor).",
+   "tag": "craft",
+   "alts": [
+    {
+     "id": 252458,
+     "name": "Totemic Leather Leggings",
+     "icon": "inv_pants_01",
+     "how": "Peletería 125, patrón de Pawani"
+    }
+   ]
+  },
+  {
+   "slot": "Pies",
+   "id": 6335,
+   "name": "Grizzled Boots",
+   "icon": "inv_boots_03",
+   "lvl": 16,
+   "bind": "BoP",
+   "how": "Misión de Horda «The Book of Ur» (Entrañas). Llevan velocidad de carrera.",
+   "tag": "quest",
+   "alts": []
+  },
+  {
+   "slot": "Anillo 1",
+   "id": 285190,
+   "name": "Wyvern Heart Band",
+   "icon": "inv_jewelry_ring_25",
+   "lvl": 29,
+   "bind": "BoP",
+   "how": "Raro Heartrazor, Las Mil Agujas. No es único: puedes llevar dos.",
+   "tag": "rare",
+   "alts": []
+  },
+  {
+   "slot": "Anillo 2",
+   "id": 6414,
+   "name": "Seal of Sylvanas",
+   "icon": "inv_jewelry_ring_15",
+   "lvl": 18,
+   "bind": "BoP",
+   "how": "Misión de Horda «Arugal Must Die», Shadowfang Keep.",
+   "tag": "quest",
+   "alts": []
+  },
+  {
+   "slot": "Abalorio 1",
+   "id": 4381,
+   "name": "Minor Recombobulator",
+   "icon": "inv_gizmo_07",
+   "lvl": null,
+   "bind": "",
+   "how": "Ingeniería 140. Esquema de Gagsprocket (Los Baldíos). Quita Polimorfia.",
+   "tag": "craft",
+   "alts": []
+  },
+  {
+   "slot": "Abalorio 2",
+   "id": 10720,
+   "name": "Gnomish Net-o-Matic Projector",
+   "icon": "inv_misc_net_01",
+   "lvl": null,
+   "bind": "BoE",
+   "how": "Ingeniería 210 con especialización Gnómica. Red que inmoviliza.",
+   "tag": "craft",
+   "alts": [
+    {
+     "id": 273643,
+     "name": "Worgenbane Talisman",
+     "icon": "inv_jewelry_talisman_06",
+     "how": "Shadowfang Keep, Commander Springvale"
+    }
+   ]
+  },
+  {
+   "slot": "Reliquia",
+   "id": 249398,
+   "name": "Polished Driftwood Icon",
+   "icon": "spell_shaman_totemrecall",
+   "lvl": 20,
+   "bind": "BoP",
+   "how": "Encantamiento 130 (fórmula por 45 Merchant's Favor). Solo si tienes Encantamiento.",
+   "tag": "craft",
+   "alts": []
+  }
+ ],
+ "warlock": [
+  {
+   "slot": "Arma",
+   "id": 15109,
+   "name": "Staff of Soran'ruk",
+   "icon": "inv_staff_09",
+   "lvl": 20,
+   "bind": "BoP",
+   "how": "Misión de Brujo «The Orb of Soran'ruk» (Blackfathom Deeps). Eliges bastón u orbe.",
+   "tag": "quest",
+   "alts": [
+    {
+     "id": 6898,
+     "name": "Orb of Soran'ruk",
+     "icon": "inv_misc_orb_03",
+     "how": "La otra recompensa de la misma misión"
+    },
+    {
+     "id": 13063,
+     "name": "Starfaller",
+     "icon": "inv_staff_02",
+     "how": "Botín del mundo / subasta"
+    }
+   ]
+  },
+  {
+   "slot": "Cabeza",
+   "id": 253981,
+   "name": "Filigreed Shadow Circlet",
+   "icon": "inv_crown_01",
+   "lvl": 25,
+   "bind": "BoP",
+   "how": "Sastrería 125. Patrón en mazmorras de nivel bajo (sin confirmar).",
+   "tag": "craft",
+   "alts": []
+  },
+  {
+   "slot": "Hombros",
+   "id": 9536,
+   "name": "Fairywing Mantle",
+   "icon": "inv_shoulder_02",
+   "lvl": 24,
+   "bind": "BoP",
+   "how": "Misión «A Fine Mess» (Gnomeregan).",
+   "tag": "quest",
+   "alts": []
+  },
+  {
+   "slot": "Pecho",
+   "id": 253967,
+   "name": "Shadow Gown",
+   "icon": "inv_chest_cloth_48",
+   "lvl": 22,
+   "bind": "BoP",
+   "how": "Sastrería 110. Patrón de Jim'bek (30 Merchant's Favor).",
+   "tag": "craft",
+   "alts": []
+  },
+  {
+   "slot": "Manos",
+   "id": 253919,
+   "name": "Shadow Gloves",
+   "icon": "inv_gauntlets_27",
+   "lvl": 15,
+   "bind": "BoP",
+   "how": "Sastrería 75. Patrón de Jim'bek (30 Merchant's Favor).",
+   "tag": "craft",
+   "alts": []
+  },
+  {
+   "slot": "Cintura",
+   "id": 6908,
+   "name": "Ghamoo-ra's Bind",
+   "icon": "inv_belt_24",
+   "lvl": 22,
+   "bind": "BoP",
+   "how": "Blackfathom Deeps, Ghamoo-ra (~56%).",
+   "tag": "dungeon",
+   "alts": []
+  },
+  {
+   "slot": "Piernas",
+   "id": 253993,
+   "name": "Shadow Leggings",
+   "icon": "inv_pants_11",
+   "lvl": 25,
+   "bind": "BoP",
+   "how": "Sastrería 125. Patrón de Jim'bek (30 Merchant's Favor).",
+   "tag": "craft",
+   "alts": [
+    {
+     "id": 2277,
+     "name": "Necromancer Leggings",
+     "icon": "inv_pants_01",
+     "how": "Botín del mundo / subasta"
+    }
+   ]
+  },
+  {
+   "slot": "Pies",
+   "id": 254007,
+   "name": "Black Slippers",
+   "icon": "inv_boots_cloth_21",
+   "lvl": 30,
+   "bind": "BoP",
+   "how": "Sastrería 140. Patrón aún sin localizar en la beta.",
+   "tag": "craft",
+   "alts": []
+  },
+  {
+   "slot": "Cuello",
+   "id": 274749,
+   "name": "Souvenir Sea Shell",
+   "icon": "inv_jewelry_necklace_10",
+   "lvl": 30,
+   "bind": "BoP",
+   "how": "Gezzy Gunkgear, Bahía del Botín, Honorable.",
+   "tag": "vendor",
+   "alts": []
+  },
+  {
+   "slot": "Anillo",
+   "id": 281635,
+   "name": "Philanthropist's Ring",
+   "icon": "inv_jewelry_ring_14",
+   "lvl": null,
+   "bind": "BoP",
+   "how": "Misión «Greater Friend of the Library»: entrega 20 libros de la biblioteca.",
+   "tag": "quest",
+   "alts": []
+  },
+  {
+   "slot": "Abalorios",
+   "id": 4381,
+   "name": "Minor Recombobulator",
+   "icon": "inv_gizmo_07",
+   "lvl": null,
+   "bind": "",
+   "how": "Ingeniería 140. Esquema de Gagsprocket (Los Baldíos).",
+   "tag": "craft",
+   "alts": [
+    {
+     "id": 10720,
+     "name": "Gnomish Net-o-Matic Projector",
+     "icon": "inv_misc_net_01",
+     "how": "Ingeniería 210, Gnómica"
+    }
+   ]
+  }
+ ],
+ "source": "https://foreverchanges.pro/bis"
+}

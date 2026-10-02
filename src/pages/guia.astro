@@ -3,8 +3,9 @@ import Base from "../layouts/Base.astro";
 import Icon from "../components/Icon.astro";
 import { DATA, CLASS_ICON, PROF_ICON, PROF_KEY_NAME, MISC_ICON, url } from "../lib/wow.js";
 import { expand, BUILDS, getClass } from "../lib/talents.js";
-const { GUIDE, BIS30, MATCHUPS, route } = DATA;
+const { GUIDE, MATCHUPS, route } = DATA;
 import DUNGEONS from "../data/dungeons.json";
+import GearTable from "../components/GearTable.astro";
 const KIND = { dungeon: ["Mazmorra", "k-dun"], buy: ["Comprar", "k-buy"], gear: ["Equipo", "k-gear"], quest: ["Misión", "k-quest"] };
 const VERDICT = { yes: ["Sí", "good"], maybe: ["Opcional", "warn"], no: ["No", "bad"] };
 const ROLES = [["main", CLASS_ICON.shaman], ["hunter", CLASS_ICON.hunter], ["filler", PROF_ICON["Alquimia"]]].filter(([r]) => route[r]);
@@ -150,14 +151,7 @@ const allKeys = [
             ))}</ol>
           </div>
         )}
-        {s.extra === "bis30" && (
-          <div class="gextra"><div class="eyebrow">Equipo de nivel 30 · Mejora PvP</div>
-            <div class="tablewrap" style="margin-top:6px"><table class="wide"><thead><tr><th>Hueco</th><th>Objeto</th><th>De dónde</th><th>Alternativas</th></tr></thead><tbody>
-              {BIS30.map((r) => <tr><td>{r[0]}</td><td><b>{r[1]}</b></td><td class="note">{r[2]}</td><td class="note">{r[3]}</td></tr>)}
-            </tbody></table></div>
-            <p class="note" style="margin-top:6px">Lista de <a href="https://foreverchanges.pro/bis/shaman/enhancement-pvp" target="_blank" rel="noopener">ForeverChanges</a> (beta, revisada el 2 oct). Prioridad: el arma de dos manos más grande, luego Aguante, Fuerza, Intelecto (Mental Dexterity lo convierte en poder de ataque) y Agilidad. Casi toda la Peletería se liga al recogerlo: te la fabricas tú. Algunas fuentes aún están sin confirmar en Forever.</p>
-          </div>
-        )}
+        {s.extra === "gear" && <div class="gextra"><GearTable cls="shaman" title="Equipo de nivel 30 · Mejora PvP" /><p class="note" style="margin-top:6px">Prioridad: el arma de dos manos más grande, luego Aguante, Fuerza, Intelecto (Mental Dexterity lo convierte en poder de ataque) y Agilidad.</p></div>}
         {s.extra === "matchups" && (
           <div class="gextra"><div class="eyebrow">Cómo jugar cada cruce con tu Chamán</div>
             <div class="tablewrap" style="margin-top:6px"><table class="wide"><thead><tr><th>Rival</th><th>Plan</th></tr></thead><tbody>

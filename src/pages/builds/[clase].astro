@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import Icon from "../../components/Icon.astro";
 import TalentTree from "../../components/TalentTree.astro";
+import GearTable from "../../components/GearTable.astro";
 import { DATA, CLASS_ICON, RACE_ICON, PROF_ICON, url } from "../../lib/wow.js";
 import { allocate, expand, BUILDS, BUILDS_LEVEL, getClass } from "../../lib/talents.js";
 
@@ -100,6 +101,8 @@ const prof = PROFS[id];
       <div><b>Consumibles</b>Pociones de sanación, maná, elixires y bombas de Ingeniería. Prohibidos: Polvo mágico y pociones de protección.</div>
     </div>
   </section>
+
+  {(id === "shaman" || id === "warlock") && <GearTable cls={id} />}
 
   {id === "shaman" && (
     <section class="box">

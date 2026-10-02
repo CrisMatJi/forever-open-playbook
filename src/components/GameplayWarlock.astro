@@ -1,5 +1,6 @@
 ---
 import Icon from "./Icon.astro";
+import GearTable from "./GearTable.astro";
 import { CLASS_ICON, RACE_ICON, PROF_ICON, url } from "../lib/wow.js";
 
 // Hechizos de Brujo hasta nivel 30 en Forever (build 1.60.1.70170)
@@ -127,13 +128,7 @@ const GEAR = [
   </section>
 
   <section class="split">
-    <div class="box">
-      <h2>Equipo de nivel 30</h2>
-      <div class="tablewrap" style="margin-top:8px"><table class="wide"><tbody>
-        {GEAR.map(([s, n, src]) => <tr><td>{s}</td><td><b>{n}</b></td><td class="note">{src}</td></tr>)}
-      </tbody></table></div>
-      <p class="note" style="margin-top:8px">Prioridad: Aguante, daño de Sombras / poder con hechizos, Intelecto. Lista orientativa de <a href="https://foreverchanges.pro/bis/warlock/pvp" target="_blank" rel="noopener">ForeverChanges</a>; la Sastrería se liga al recogerlo.</p>
-    </div>
+    <div class="box"><h2>Prioridad de estadísticas</h2><p style="margin-top:8px">Aguante, daño de Sombras y poder con hechizos, Intelecto. La Sastrería se liga al recogerlo: te la fabricas tú. Equipo completo con iconos justo debajo.</p></div>
     <div class="box">
       <h2>Bolsa y teclas</h2>
       <ul class="bul" style="margin-top:8px">
@@ -149,4 +144,6 @@ const GEAR = [
       </dl>
     </div>
   </section>
+
+  <GearTable cls="warlock" title="Equipo de nivel 30 · Brujo" />
 </div>

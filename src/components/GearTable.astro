@@ -1,0 +1,46 @@
+---
+import Icon from "./Icon.astro";
+import GEAR from "../data/gear.json";
+interface Props { cls: "shaman" | "warlock"; title?: string }
+const { cls, title = "Equipo de nivel 30" } = Astro.props;
+const rows = GEAR[cls];
+const wh = (id: number) => `https://www.wowhead.com/forever/item=${id}`;
+const TAG = { craft: "Fabricado", quest: "Misión", vendor: "Vendedor", ah: "Subasta", rare: "Raro", dungeon: "Mazmorra" };
+---
+<section class="gear" style="display:grid;gap:12px">
+  <div class="titlerow">
+    <h2>{title}</h2>
+    <span class="note">Clic en un objeto: ficha en Wowhead · <a href={`${GEAR.source}/${cls}`} target="_blank" rel="noopener">lista completa en ForeverChanges</a></span>
+  </div>
+  <div class="gear-grid">
+    {rows.map((r) => (
+      <article class="gear-card">
+        <a class="gear-main" href={wh(r.id)} target="_blank" rel="noopener" data-wowhead={`item=${r.id}&domain=forever`}>
+          <Icon name={r.icon} size={44} label={r.name} big class="q-rare" />
+          <span>
+            <span class="gear-slot">{r.slot}</span>
+            <b>{r.name}</b>
+            <span class="gear-meta">
+              <span class={`ktag k-${r.tag}`}>{TAG[r.tag] ?? r.tag}</span>
+              {r.lvl && <span>Nv {r.lvl}</span>}
+              {r.bind === "BoP" && <span title="Se liga al recogerlo">Ligado</span>}
+              {r.bind === "BoE" && <span title="Se liga al equipar: se puede comprar">Comprable</span>}
+            </span>
+          </span>
+        </a>
+        <p class="gear-how">{r.how}</p>
+        {r.alts.length > 0 && (
+          <div class="gear-alts">
+            <span class="note">Alternativas:</span>
+            {r.alts.map((a) => (
+              <a href={wh(a.id)} target="_blank" rel="noopener" title={a.how} data-wowhead={`item=${a.id}&domain=forever`}>
+                <Icon name={a.icon} size={24} label={a.name} /> <span>{a.name}</span>
+              </a>
+            ))}
+          </div>
+        )}
+      </article>
+    ))}
+  </div>
+  <p class="note">Datos de la beta según ForeverChanges (2 oct). Lo marcado "sin confirmar" puede cambiar: comprueba la ficha antes de ir a por ello. "Ligado" = se liga al recogerlo (te lo fabricas o lo consigues tú).</p>
+</section>

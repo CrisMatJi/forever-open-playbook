@@ -760,7 +760,7 @@
     "<b>Pociones de acción libre</b> (Free Action Potion): te quitan aturdimientos y raíces. Clave contra Pícaros y Guerreros.",
     "Bombas de Ingeniería: Granada de hierro (175) y Bomba de hierro grande (190). Con Gnómica, Net-o-Matic (210)."
    ],
-   "extra": "bis30"
+   "extra": "gear"
   },
   {
    "id": "fin",
@@ -1282,7 +1282,7 @@
        "tip": "Blizzard la da como 26-31 y otras fuentes como 24-29."
       },
       {
-       "t": "Grizzled Boots: misión de Horda (botas con velocidad)",
+       "t": "Grizzled Boots: misión de Horda «The Book of Ur» (Entrañas)",
        "kind": "gear"
       }
      ]
@@ -1472,8 +1472,8 @@
        "tip": "Fuentes de la comunidad; confírmalo con tu instructor."
       },
       {
-       "t": "Gloves of Kapelan: misión de Horda «Alliance Relations» (nivel 30)",
-       "kind": "gear"
+       "t": "Brawler Gloves: cómpralos en la subasta (Gloves of Kapelan piden nivel 33)",
+       "kind": "buy"
       },
       {
        "t": "Primeros auxilios 210: vendas de tejido mágico y Pociones de sanación mayores (155)",
@@ -1505,12 +1505,24 @@
    "Improved Stormstrike*2",
    "Improved Lightning Shield*2",
    "Ancestral Knowledge"
+  ],
+  "warlock": [
+   "Improved Corruption*5",
+   "Improved Life Tap*2",
+   "Suppression*3",
+   "Improved Drains*3",
+   "Soul Harvest*2",
+   "Improved Bane of Agony*2",
+   "Pandemic*3",
+   "Nightfall*2",
+   "Malevolence*3",
+   "Siphon Life"
   ]
  },
  "LEVEL_NOTES": {
   "warlock": [
    true,
-   "Sirve para subir: los DoTs y Drenar vida matan sin bajar vida."
+   "Tienes una variante de subida con Soul Harvest (maná al matar) y Nightfall. Para el torneo, la de PvP."
   ],
   "priest": [
    false,
@@ -1544,91 +1556,5 @@
    false,
    "Protección sube muy lento. Para subir, Armas o Furia y cambia antes de enviar la build."
   ]
- },
- "BIS30": [
-  [
-   "Dos manos",
-   "Rage of the Storm",
-   "Misión de Chamán, nivel 30 (verificar)",
-   "Corpsemaker (Razorfen Kraul) · Heavehammer (misión «Prehistoric Prism», Excavation Site) · Viscous Hammer (subasta)"
-  ],
-  [
-   "Cabeza",
-   "Defender's Leather Helm",
-   "Peletería",
-   "Defender's Leather Hood (Peletería 100)"
-  ],
-  [
-   "Cuello",
-   "Souvenir Sea Shell",
-   "Bahía del Botín, Honorable",
-   "Mark of the Pack Leader (Humar, Los Baldíos)"
-  ],
-  [
-   "Hombros",
-   "Watchman Pauldrons",
-   "Monasterio Escarlata (botín)",
-   "Barbaric Shoulders (Peletería 145)"
-  ],
-  [
-   "Espalda",
-   "Explorer's League Dustcover",
-   "Misión «Prehistoric Prism», Excavation Site",
-   "Crocolisk Skin Gaiter"
-  ],
-  [
-   "Pecho",
-   "Defender's Leather Tunic",
-   "Peletería 110",
-   "Totemic Leather Tunic (Peletería 110, nivel 22)"
-  ],
-  [
-   "Muñecas",
-   "Technician's Bracers",
-   "Misión «A Fine Mess» (nivel 20+)",
-   "Bands of Serra'kis (Blackfathom Deeps)"
-  ],
-  [
-   "Manos",
-   "Gloves of Kapelan",
-   "Misión de Horda «Alliance Relations» (nivel 30)",
-   "Brawler Gloves (botín del mundo) · guantes de Peletería con Merchant's Favor"
-  ],
-  [
-   "Cintura",
-   "Prowler's Leather Belt",
-   "Peletería 150",
-   "Skirmisher's / Warden's Belt (Peletería 150)"
-  ],
-  [
-   "Piernas",
-   "Defender's Leather Kilt",
-   "Peletería 125",
-   "Totemic Leather Leggings (Peletería 125)"
-  ],
-  [
-   "Pies",
-   "Grizzled Boots",
-   "Misión de Horda (velocidad de carrera)",
-   "Botas de Peletería 85 con Merchant's Favor"
-  ],
-  [
-   "Anillos",
-   "Wyvern Heart Band ×2",
-   "Heartrazor (raro, Las Mil Agujas)",
-   "Seal of Sylvanas (misión «Arugal Must Die», Shadowfang Keep)"
-  ],
-  [
-   "Abalorios",
-   "Minor Recombobulator + Gnomish Net-o-Matic Projector",
-   "Ingeniería 140 y 210 (Gnómica)",
-   "Worgenbane Talisman (Shadowfang Keep)"
-  ],
-  [
-   "Reliquia",
-   "Polished Driftwood Icon",
-   "Encantamiento 130 (ligado al equipar: se compra)",
-   "Totem of Charged Flames (misión «Meddlesome Mages»)"
-  ]
- ]
+ }
 }
