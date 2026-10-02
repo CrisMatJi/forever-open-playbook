@@ -1,0 +1,152 @@
+---
+import Icon from "./Icon.astro";
+import { CLASS_ICON, RACE_ICON, PROF_ICON, url } from "../lib/wow.js";
+
+// Hechizos de Brujo hasta nivel 30 en Forever (build 1.60.1.70170)
+const SPELLS = [
+  [1, "Descarga de las Sombras", "spell_shadow_shadowbolt", ""], [1, "Inmolar", "spell_fire_immolation", ""],
+  [1, "Diablillo", "spell_shadow_summonimp", "Mascota"], [4, "Corrupción", "spell_shadow_abominationexplosion", "Instantánea con Improved Corruption"],
+  [4, "Maldición de debilidad", "spell_shadow_curseofmannoroth", "Contra melés"], [6, "Transfusión de vida", "spell_shadow_burningspirit", "Ahora escala con Espíritu"],
+  [8, "Bane of Agony", "spell_shadow_curseofsargeras", "Ya no compite con las maldiciones"], [8, "Miedo", "spell_shadow_possession", "Tu control principal"],
+  [10, "Abisario", "spell_shadow_summonvoidwalker", "Mascota: escudo con Sacrificio"], [10, "Piedra de salud", "inv_stone_04", "La tuya sí vale"],
+  [12, "Canalizar salud", "spell_shadow_lifedrain", ""], [14, "Drenar vida", "spell_shadow_lifedrain02", ""],
+  [18, "Dolor abrasador", "spell_fire_soulburn", ""], [20, "Armadura demoníaca", "spell_shadow_ragingscream", ""],
+  [20, "Súcubo", "spell_shadow_summonsuccubus", "Mascota"], [24, "Drenar maná", "spell_shadow_siphonmana", "Gana la guerra de maná"],
+  [26, "Maldición de lenguas", "spell_shadow_curseoftounges", "Lanzadores más lentos"], [26, "Seducción (súcubo)", "spell_shadow_mindsteal", "Segundo control"],
+  [28, "Desterrar", "spell_shadow_cripple", ""], [30, "Manáfago", "spell_shadow_summonfelhunter", "Mascota"],
+  [30, "Fuego infernal", "spell_fire_incinerate", "Ahora puede hacer crítico"],
+];
+const TALENTS = [
+  ["Curse of Exhaustion", "spell_shadow_grimward", "−30% de velocidad: los melés no te alcanzan"],
+  ["Siphon Life", "spell_shadow_requiem", "Te cura mientras le quitas vida"],
+  ["Nightfall", "spell_shadow_twilight", "Descargas instantáneas gratis"],
+  ["Fel Concentration", "spell_shadow_fingerofdeath", "Tus Drenar no se cortan al recibir golpes"],
+];
+const DEMONS = [
+  ["Pícaro, Guerrero, Druida", "Abisario", "spell_shadow_summonvoidwalker", "Su escudo aguanta el daño mientras te aturden; contra la apertura libre es tu salvavidas."],
+  ["Mago, Cazador, Chamán, Brujo", "Súcubo", "spell_shadow_summonsuccubus", "Seducción (26) es un segundo control para cortar lanzamientos o separar al Cazador de su mascota."],
+  ["Sacerdote, Paladín", "Súcubo o manáfago", "spell_shadow_summonfelhunter", "El manáfago solo compensa si a 30 ya tiene Devorar magia (sin confirmar). Si no, súcubo."],
+];
+const MATCHUPS = [
+  ["Pícaro", "Apertura libre suya: aguanta con el Abisario y acción libre. Luego Miedo, Corrupción y Maldición de agotamiento para no dejar que vuelva a pegarse."],
+  ["Guerrero", "Abre él con Carga. Maldición de debilidad y de agotamiento, Miedo y Seducción: que no te toque. Drenar vida para sostener."],
+  ["Druida", "Apertura libre suya. Drenar maná para que no pueda curarse ni cambiar de forma, Maldición de debilidad contra el gato y Miedos encadenados."],
+  ["Sacerdote", "El rival más duro. Voluntad de los Renegados contra el Grito, Maldición de lenguas, Drenar maná y DoTs. Cuidado con Control mental."],
+  ["Mago", "El Minor Recombobulator quita Polimorfia (Voluntad no). Gasta su Contrahechizo con un lanzamiento falso y luego Miedo y Seducción. Tiene poca vida: los DoTs lo matan."],
+  ["Chamán", "El Tótem de temblor anula tu Miedo: que la mascota lo rompa. Choque de tierra interrumpe: tira de instantáneos. Purgar puede quitarte la Armadura demoníaca."],
+  ["Cazador", "Cierra distancia con Maldición de agotamiento, asusta a la mascota, seduce al Cazador y drena. No pises la Trampa congelante."],
+  ["Paladín", "No puede quitarte los DoTs con Purificar. Drenar maná hasta dejarlo seco y Miedo o Seducción cuando salga de la burbuja."],
+  ["Brujo", "Lo decide la raza: Voluntad de los Renegados (No-muerto) o Quebrar maldición (Orco). Maldición de lenguas y seduce a su Brujo."],
+];
+const GEAR = [
+  ["Cabeza", "Filigreed Shadow Circlet", "Sastrería 125"], ["Pecho", "Shadow Gown", "Sastrería 110"],
+  ["Manos", "Shadow Gloves", "Sastrería 75"], ["Pies", "Black Slippers", "Sastrería 140"],
+  ["Piernas", "Shadow Leggings / Necromancer Leggings", "Sastrería 125 / botín del mundo"], ["Arma", "Staff of Soran'ruk (u Orb of Soran'ruk)", "Misión"],
+  ["Cintura", "Ghamoo-ra's Bind", "Blackfathom Deeps"], ["Cuello", "Souvenir Sea Shell", "Vendedor de Bahía del Botín"],
+  ["Anillo", "Philanthropist's Ring", "Misión (libros de la biblioteca)"], ["Hombros", "Fairywing Mantle", "Misión"],
+  ["Varita", "Starfaller", "—"],
+];
+---
+<div class="gp-class" data-cls="warlock" hidden>
+  <section class="box">
+    <div class="tier-detail-grid">
+      <Icon name={CLASS_ICON.warlock} size={64} label="Brujo" class="q-leg" big />
+      <div>
+        <div class="eyebrow">Tier S en el torneo · solo Horda</div>
+        <h2 style="margin-top:4px">Brujo Aflicción</h2>
+        <div class="summary" style="margin-top:12px">
+          <div><span>Raza</span><b class="racecell"><Icon name={RACE_ICON["No-muerto"]} size={22} label="No-muerto" /> No-muerto</b><em>Voluntad de los Renegados contra Grito, Miedo y Seducción</em></div>
+          <div><span>Alternativas</span><b class="racecell"><Icon name={RACE_ICON["Trol"]} size={22} label="Trol" /> Trol · <Icon name={RACE_ICON["Orco"]} size={22} label="Orco" /> Orco</b><em>Trol: cura del 50%. Orco: Dureza y Quebrar maldición</em></div>
+          <div><span>Build</span><b>Aflicción 21/5/0</b><em><a href={url("builds/warlock")}>ver árbol</a> · alternativa Soul Link</em></div>
+          <div><span>Profesiones</span><b class="racecell"><Icon name={PROF_ICON["Sastrería"]} size={22} label="Sastrería" /> <Icon name={PROF_ICON["Ingeniería"]} size={22} label="Ingeniería" /> Sastrería + Ingeniería</b><em>tela ligada + Recombobulator y red</em></div>
+        </div>
+        <p class="note" style="margin-top:10px">En Horda el Brujo puede ser Orco, No-muerto o Trol (Tauren y Skyborne no). Valoración propia a partir de los datos de la beta: aún no hay pruebas publicadas de Brujo en duelo a 30.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="warnline"><b>A nivel 30 no tienes:</b> Espiral de muerte (42), Aullido de terror, Custodia de las Sombras ni el Bloqueo de hechizo del manáfago. No hay interrupción: el duelo se gana con DoTs, Miedo, Seducción y Drenar maná. Que el manáfago tenga Devorar magia a 30 está sin confirmar.</div>
+
+  <section style="display:grid;gap:12px">
+    <h2>Tu kit hasta nivel 30</h2>
+    <div class="tablewrap"><table class="wide">
+      <thead><tr><th>Nv</th><th>Hechizo</th><th>Nota</th></tr></thead>
+      <tbody>{SPELLS.map(([lv, n, ic, note]) => <tr><td class="num">{lv}</td><td><span class="racecell"><Icon name={ic} size={26} label={n} /> <b>{n}</b></span></td><td class="note">{note}</td></tr>)}</tbody>
+    </table></div>
+    <div class="spells">{TALENTS.map(([n, ic, why]) => <span class="spell"><Icon name={ic} size={34} label={n} /> <span>{n}<small>{why}</small></span></span>)}</div>
+    <p class="note">Cambios de Forever que te afectan: los DoTs pueden hacer crítico y ya no se congelan al lanzarlos (cuentan tu poder en cada tick), Fuego infernal puede hacer crítico, las mascotas escalan con tu equipo y vuelve el modo agresivo. Soul Harvest solo da maná al matar: en duelo no sirve.</p>
+  </section>
+
+  <section class="box">
+    <h2>Plan de duelo</h2>
+    <div class="gp-grid">
+      <div>
+        <div class="eyebrow">Antes de empezar</div>
+        <ol class="steps">
+          <li>Armadura demoníaca, tu Piedra de salud y maná lleno (Transfusión de vida y bebe).</li>
+          <li>Demonio según el rival (tabla de abajo). Prohibido sacrificarlo antes de empezar.</li>
+          <li>Bolsa de fragmentos llena: el reglamento te deja salir una sola vez a por ellos, avisando a un admin.</li>
+        </ol>
+      </div>
+      <div>
+        <div class="eyebrow">Desde los 20 yd</div>
+        <ol class="steps">
+          <li>Corrupción instantánea y Maldición de agotamiento (melés) o Bane of Agony y Maldición de lenguas (lanzadores).</li>
+          <li>Miedo (20 yd de alcance) y aprovecha para Inmolar y Descarga de las Sombras.</li>
+          <li>Drenar vida cuando bajes; Siphon Life siempre puesta.</li>
+          <li>Seducción o Miedo cuando el rival empiece una cura.</li>
+          <li>Drenar maná contra Sacerdote, Paladín y Druida. Transfusión de vida solo cuando estés a salvo.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="combo">
+      {[["Corrupción", "spell_shadow_abominationexplosion"], ["Maldición de agotamiento", "spell_shadow_grimward"], ["Miedo", "spell_shadow_possession"], ["Drenar vida", "spell_shadow_lifedrain02"]].map(([n, ic], i) => (
+        <>
+          {i > 0 && <span class="arrowr" aria-hidden="true">→</span>}
+          <span class="spell big"><Icon name={ic} size={44} label={n} big /> <span>{n}</span></span>
+        </>
+      ))}
+    </div>
+    <p class="note" style="margin-top:10px">Pregunta en el Discord si usar el Sacrificio del Abisario durante el duelo cuenta como "pre-sacrificar": solo está prohibido antes de empezar, pero conviene confirmarlo.</p>
+  </section>
+
+  <section style="display:grid;gap:12px">
+    <h2>Qué demonio sacar</h2>
+    <div class="tablewrap"><table class="wide">
+      <thead><tr><th>Rival</th><th>Demonio</th><th>Por qué</th></tr></thead>
+      <tbody>{DEMONS.map(([r, n, ic, why]) => <tr><td><b>{r}</b></td><td><span class="racecell"><Icon name={ic} size={26} label={n} /> {n}</span></td><td>{why}</td></tr>)}</tbody>
+    </table></div>
+  </section>
+
+  <section style="display:grid;gap:12px">
+    <h2>Cruce a cruce</h2>
+    <div class="tablewrap"><table class="wide"><thead><tr><th>Rival</th><th>Plan</th></tr></thead><tbody>
+      {MATCHUPS.map(([r, p]) => <tr><td><b>{r}</b></td><td>{p}</td></tr>)}
+    </tbody></table></div>
+    <p class="note">Planes razonados a partir del kit de cada clase a 30; ajústalos cuando pruebes duelos.</p>
+  </section>
+
+  <section class="split">
+    <div class="box">
+      <h2>Equipo de nivel 30</h2>
+      <div class="tablewrap" style="margin-top:8px"><table class="wide"><tbody>
+        {GEAR.map(([s, n, src]) => <tr><td>{s}</td><td><b>{n}</b></td><td class="note">{src}</td></tr>)}
+      </tbody></table></div>
+      <p class="note" style="margin-top:8px">Prioridad: Aguante, daño de Sombras / poder con hechizos, Intelecto. Lista orientativa de <a href="https://foreverchanges.pro/bis/warlock/pvp" target="_blank" rel="noopener">ForeverChanges</a>; la Sastrería se liga al recogerlo.</p>
+    </div>
+    <div class="box">
+      <h2>Bolsa y teclas</h2>
+      <ul class="bul" style="margin-top:8px">
+        <li><b>Pociones de acción libre</b>: contra la apertura de Pícaro y la Carga del Guerrero.</li>
+        <li>Pociones de sanación y de maná, vendas, tu Piedra de salud.</li>
+        <li>Elixir arcano menor, Elixir de entereza menor, comida con Espíritu.</li>
+        <li>Ingeniería: Minor Recombobulator (Polimorfia) y Gnomish Net-o-Matic (red).</li>
+      </ul>
+      <dl class="cmds" style="margin-top:12px">
+        <dt>1</dt><dd>Corrupción</dd><dt>2</dt><dd>Bane of Agony / maldición</dd><dt>3</dt><dd>Miedo</dd>
+        <dt>4</dt><dd>Drenar vida</dd><dt>5</dt><dd>Siphon Life</dd><dt>Q</dt><dd>Seducción (mascota)</dd>
+        <dt>E</dt><dd>Drenar maná</dd><dt>R</dt><dd>Piedra de salud</dd><dt>Mayús+1</dt><dd>Voluntad de los Renegados</dd>
+      </dl>
+    </div>
+  </section>
+</div>

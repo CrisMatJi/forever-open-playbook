@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import Icon from "../components/Icon.astro";
+import GameplayWarlock from "../components/GameplayWarlock.astro";
 import { DATA, CLASS_ICON, PROF_ICON, RACE_ICON, url } from "../lib/wow.js";
 const { MATCHUPS } = DATA;
 
@@ -71,12 +72,20 @@ const IMBUES = [
 ];
 const S = (k) => SP[k];
 ---
-<Base title="Mi gameplay" active="gameplay" description="Cómo jugar el Chamán Orco Mejora nivel a nivel hasta el torneo: imbuiciones, choques, tótems, ventana de daño y qué entrenar.">
+<Base title="Mi gameplay" active="gameplay" description="Cómo jugar el Chamán Mejora y el Brujo Aflicción en el torneo The Forever Open: kit, plan de duelo, cruces, equipo y bolsa.">
   <div class="pagehead">
-    <div class="eyebrow racecell"><Icon name={CLASS_ICON.shaman} size={18} label="Chamán" /> Chamán Orco Mejora</div>
+    <div class="eyebrow">Cómo jugar en el torneo</div>
     <h1>Mi gameplay</h1>
-    <p class="lede">Cómo jugar en cada tramo de nivel y qué entrenar para llegar al torneo con los reflejos hechos. Los niveles de los hechizos salen de Classic: en Forever alguno puede cambiar, así que confírmalo con tu instructor.</p>
+    <p class="lede">Cómo jugar cada clase, qué entrenar y qué llevar para llegar al torneo con los reflejos hechos. Elige la clase:</p>
   </div>
+
+  <nav class="classpick" aria-label="Clase">
+    <button type="button" data-cls-btn="shaman" aria-pressed="true"><Icon name={CLASS_ICON.shaman} size={26} label="Chamán" /> Chamán Mejora</button>
+    <button type="button" data-cls-btn="warlock" aria-pressed="false"><Icon name={CLASS_ICON.warlock} size={26} label="Brujo" /> Brujo Aflicción</button>
+  </nav>
+
+  <div class="gp-class" data-cls="shaman">
+  <p class="lede">Chamán Orco Mejora, tramo a tramo. Los niveles de los hechizos salen de Classic: en Forever alguno puede cambiar, así que confírmalo con tu instructor.</p>
 
   <section class="box" style="display:grid;gap:14px">
     <div class="lvlpick">
@@ -203,6 +212,10 @@ const S = (k) => SP[k];
     <p class="note">El plan completo contra Sacerdote está en <a href={url("sacerdote") + "#c-shaman"}>Contra Sacerdote</a> y la build en <a href={url("builds/shaman")}>Builds</a>.</p>
   </section>
 
+  </div>
+
+  <GameplayWarlock />
+
   <script>
     const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
     const panels = [...document.querySelectorAll<HTMLElement>("[data-panel]")];
@@ -224,5 +237,19 @@ const S = (k) => SP[k];
     $("lvl").addEventListener("change", (e) => setLevel(+(e.target as HTMLInputElement).value));
     $("lvlRange").addEventListener("input", (e) => setLevel(+(e.target as HTMLInputElement).value));
     setLevel(level);
+
+    // Selector de clase (se recuerda y se puede enlazar con #brujo / #chaman)
+    const clsBtns = [...document.querySelectorAll<HTMLButtonElement>("[data-cls-btn]")];
+    const clsPanels = [...document.querySelectorAll<HTMLElement>(".gp-class")];
+    function showCls(c: string) {
+      clsPanels.forEach((p) => (p.hidden = p.dataset.cls !== c));
+      clsBtns.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.clsBtn === c)));
+      try { localStorage.setItem("tfo-gp-class", c); } catch {}
+      history.replaceState(null, "", c === "warlock" ? "#brujo" : "#chaman");
+    }
+    clsBtns.forEach((b) => b.addEventListener("click", () => showCls(b.dataset.clsBtn!)));
+    let startCls = location.hash === "#brujo" ? "warlock" : location.hash === "#chaman" ? "shaman" : "shaman";
+    if (!location.hash) { try { startCls = localStorage.getItem("tfo-gp-class") || "shaman"; } catch {} }
+    showCls(startCls);
   </script>
 </Base>

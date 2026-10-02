@@ -13,33 +13,34 @@
     "Miedo para reiniciar la pelea, Drenar vida para sostenerla y mascota que controla.",
     "Corrupción instantánea con 5 puntos y Maldición de agotamiento a 30: los melés no te alcanzan.",
     "Regla nueva: no se puede sacrificar al demonio antes de empezar.",
-    "Nivel 30: llega el manáfago (Felhunter) y Fuego infernal, que ahora puede hacer crítico."
+    "Nivel 30: manáfago y Fuego infernal (que ahora puede hacer crítico). Ojo: sin Espiral de muerte ni Bloqueo de hechizo hasta más adelante."
    ],
    "tierWeak": "Razas que rompen el Miedo (No-muerto) y Pícaros que abren bien. Será una de las clases más jugadas.",
    "rating": 5,
    "label": "Favorable",
    "marks": {
-    "shield": 2,
-    "interrupt": 2,
+    "shield": 1,
+    "interrupt": 0,
     "scream": 1,
     "mana": 2
    },
    "notes": {
-    "shield": "Devorar magia",
-    "interrupt": "Bloqueo de hechizo",
+    "shield": "Devorar magia (sin confirmar a 30)",
+    "interrupt": "",
     "scream": "No-muerto",
     "mana": "Drenar maná"
    },
    "why": [
-    "El manáfago (nivel 30) devora Palabra de poder: escudo, Fuego interno y Renovar, y su Bloqueo de hechizo corta una cura.",
-    "Drenar maná le gana la guerra de maná sin acercarte.",
-    "Tus DoTs pueden hacer crítico: un Disipar magia no los quita todos a tiempo."
+    "Drenar maná (24) le gana la guerra de maná sin acercarte.",
+    "Tus DoTs pueden hacer crítico y ya no se congelan al lanzarlos: un Disipar magia no los quita todos a tiempo.",
+    "Miedo y Seducción del súcubo (26) te dan dos controles para cortar curas.",
+    "A 30 no hay Espiral de muerte ni Bloqueo de hechizo: no tienes interrupción, así que el duelo se gana por desgaste."
    ],
    "plan": [
-    "Antes: manáfago fuera, Armadura demoníaca, Piedra de salud.",
-    "Desde 20 yd: Corrupción instantánea, Bane of Agony y Maldición de agotamiento si te persigue.",
-    "Que el manáfago se coma el escudo; no lances Descarga de las Sombras contra un escudo.",
-    "Bloqueo de hechizo solo sobre Sanación relámpago o Penance.",
+    "Antes: súcubo o manáfago fuera, Armadura demoníaca, tu propia Piedra de salud y maná lleno.",
+    "Desde 20 yd: Corrupción instantánea, Bane of Agony y Maldición de lenguas.",
+    "No lances Descarga de las Sombras contra un escudo: DoTs y Drenar maná mientras dura.",
+    "Seducción o Miedo cuando empiece una Sanación relámpago o Penance.",
     "Si te grita: Voluntad de los Renegados y vuelve a más de 8 yd.",
     "Por debajo de la mitad de su maná: Drenar maná mientras los DoTs trabajan."
    ],
@@ -51,7 +52,7 @@
     "<b>Demonic Embrace 5/5</b>: +15% de aguante.",
     "Solo con Legacy: <b>Nightfall</b>, <b>Malevolence</b> y <b>Siphon Life</b> (fila 5)."
    ],
-   "option": "Si esperas muchísimos Sacerdotes, compara bajar por Demonología hasta Improved Felhunter (fila 5: necesitas 20 puntos ahí y pierdes Aflicción).",
+   "option": "Alternativa: Demonología con Soul Link (21 puntos) y Corrupción mejorada con Legacy. Aguanta más contra Pícaros y Guerreros a cambio de menos daño.",
    "stats": "Aguante > Poder con hechizos de Sombras > Intelecto",
    "gear": "Tela con aguante e intelecto. Las varitas ya no escalan con poder con hechizos."
   },
