@@ -200,3 +200,11 @@ code{overflow-wrap:anywhere}
 .k-vendor,.k-ah{color:#6fb6ff;border-color:rgba(58,155,255,.5)}
 .k-rare{color:#c77dff;border-color:rgba(163,53,238,.6)}
 .k-dungeon{color:#c77dff;border-color:rgba(163,53,238,.6)}
+
+/* Talentos sin puntos en gris (como en el juego) */
+.tslot.open{border-color:#555;opacity:.7}
+.tslot.open img,.tslot.lock img{filter:grayscale(1) brightness(.55)}
+.tslot.open .tfb,.tslot.lock .tfb{color:#8a8a8a}
+.tslot.open .trank{color:#9a9a9a;border-color:#444}
+.tslot.lock{opacity:.4}
+.tslot.open:hover,.tslot.lock:hover,.tslot.open.sel,.tslot.lock.sel{opacity:1}

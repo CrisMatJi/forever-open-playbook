@@ -58,7 +58,7 @@ const prof = PROFS[id];
     <div class="trees" id="trees">
       {[0, 1, 2].map((ti) => <TalentTree id={id} tree={ti} n={N} tint={TINTS[id][ti]} />)}
     </div>
-    <div class="tlegend"><span><i style="border-color:var(--gold)"></i>Al máximo</span><span><i style="border-color:var(--green)"></i>Con puntos</span><span><i style="border-color:#7a7a7a"></i>Disponible</span><span><i style="border-color:#3a3a3a;opacity:.5"></i>Bloqueado</span><span>Las flechas marcan requisitos. Cada fila pide 5 puntos más en ese árbol.</span></div>
+    <div class="tlegend"><span><i style="border-color:var(--gold)"></i>Al máximo</span><span><i style="border-color:var(--green)"></i>Con puntos</span><span><i style="border-color:#555;opacity:.7"></i>Sin puntos (gris)</span><span><i style="border-color:#3a3a3a;opacity:.4"></i>Bloqueado</span><span>Las flechas marcan requisitos. Cada fila pide 5 puntos más en ese árbol.</span></div>
     <div class="tdetail" id="tdetail" aria-live="polite"><span></span><span class="tt-ok">Toca un talento para ver su descripción.</span></div>
 
     <div class="detail" style="margin-top:16px">
