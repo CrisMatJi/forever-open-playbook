@@ -3,11 +3,11 @@ import Base from "../layouts/Base.astro";
 import Icon from "../components/Icon.astro";
 import { DATA, CLASS_ICON, PROF_ICON, PROF_KEY_NAME, MISC_ICON, url } from "../lib/wow.js";
 import { expand, BUILDS, getClass } from "../lib/talents.js";
-const { GUIDE, BIS20, MATCHUPS, route } = DATA;
+const { GUIDE, BIS30, MATCHUPS, route } = DATA;
 import DUNGEONS from "../data/dungeons.json";
 const KIND = { dungeon: ["Mazmorra", "k-dun"], buy: ["Comprar", "k-buy"], gear: ["Equipo", "k-gear"], quest: ["Misión", "k-quest"] };
 const VERDICT = { yes: ["Sí", "good"], maybe: ["Opcional", "warn"], no: ["No", "bad"] };
-const ROLES = [["main", CLASS_ICON.shaman], ["hunter", CLASS_ICON.hunter], ["filler", PROF_ICON["Alquimia"]]];
+const ROLES = [["main", CLASS_ICON.shaman], ["hunter", CLASS_ICON.hunter], ["filler", PROF_ICON["Alquimia"]]].filter(([r]) => route[r]);
 const seq = expand(BUILDS.shaman);
 const sham = getClass("shaman");
 const autoLabel = (it) =>
@@ -55,7 +55,7 @@ const allKeys = [
         <div class="eyebrow">Speedrun · lo mismo que ves en el tracker del addon</div>
         <h2>Ruta por nivel</h2>
       </div>
-      <div class="rolepick classpick" role="group" aria-label="Personaje">
+      <div class="rolepick classpick" role="group" aria-label="Personaje" hidden={ROLES.length < 2}>
         {ROLES.map(([r, ic]) => (
           <button type="button" data-role={r} aria-pressed={r === "main" ? "true" : "false"}>
             <Icon name={ic} size={26} label={route[r].label} /> {route[r].label}
@@ -124,8 +124,8 @@ const allKeys = [
     <div><span>Profesiones</span><b>Desuello + Minería</b><em>→ Peletería + Ingeniería hacia el 28</em></div>
     <div><span>Secundarias</span><b>Primeros auxilios + Cocina</b><em>desde el nivel 5</em></div>
     <div><span>Talentos</span><b>26 puntos</b><em>con Talented 5/5 (10 de Legacy)</em></div>
-    <div><span>Alters</span><b>Cazador + relleno</b><em>solo para Legacy</em></div>
-    <div><span>Fechas</span><b>4 · 16 · 17 oct</b><em>inscripción · build · torneo</em></div>
+    <div><span>Legacy</span><b>16 puntos regalados</b><em>cuando Blizzard los aplique</em></div>
+    <div><span>Fechas</span><b>16 · 17 · 18 oct</b><em>build · clasificatoria · final</em></div>
   </div>
 
   <nav class="toc" aria-label="Pasos del checklist">
@@ -150,12 +150,12 @@ const allKeys = [
             ))}</ol>
           </div>
         )}
-        {s.extra === "bis" && (
-          <div class="gextra"><div class="eyebrow">BiS de referencia a nivel 20 · Mejora PvP</div>
-            <div class="tablewrap" style="margin-top:6px"><table class="wide"><thead><tr><th>Hueco</th><th>Objeto</th><th>De dónde</th></tr></thead><tbody>
-              {BIS20.map((r) => <tr><td>{r[0]}</td><td><b>{r[1]}</b></td><td class="note">{r[2]}</td></tr>)}
+        {s.extra === "bis30" && (
+          <div class="gextra"><div class="eyebrow">Equipo de nivel 30 · Mejora PvP</div>
+            <div class="tablewrap" style="margin-top:6px"><table class="wide"><thead><tr><th>Hueco</th><th>Objeto</th><th>De dónde</th><th>Alternativas</th></tr></thead><tbody>
+              {BIS30.map((r) => <tr><td>{r[0]}</td><td><b>{r[1]}</b></td><td class="note">{r[2]}</td><td class="note">{r[3]}</td></tr>)}
             </tbody></table></div>
-            <p class="note" style="margin-top:6px">Según <a href="https://foreverchanges.pro/bis/shaman/enhancement-pvp" target="_blank" rel="noopener">ForeverChanges</a> (lista temprana de la beta). Las Minas de la Muerte están en territorio de Alianza: en ruleset PvP ve en grupo.</p>
+            <p class="note" style="margin-top:6px">Lista de <a href="https://foreverchanges.pro/bis/shaman/enhancement-pvp" target="_blank" rel="noopener">ForeverChanges</a> (beta, revisada el 2 oct). Prioridad: el arma de dos manos más grande, luego Aguante, Fuerza, Intelecto (Mental Dexterity lo convierte en poder de ataque) y Agilidad. Casi toda la Peletería se liga al recogerlo: te la fabricas tú. Algunas fuentes aún están sin confirmar en Forever.</p>
           </div>
         )}
         {s.extra === "matchups" && (

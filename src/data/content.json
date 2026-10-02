@@ -12,7 +12,8 @@
     "Los DoTs de Brujo pueden hacer crítico en Forever: presión que sigue mientras huyes.",
     "Miedo para reiniciar la pelea, Drenar vida para sostenerla y mascota que controla.",
     "Corrupción instantánea con 5 puntos y Maldición de agotamiento a 30: los melés no te alcanzan.",
-    "Regla nueva: no se puede sacrificar al demonio antes de empezar."
+    "Regla nueva: no se puede sacrificar al demonio antes de empezar.",
+    "Nivel 30: llega el manáfago (Felhunter) y Fuego infernal, que ahora puede hacer crítico."
    ],
    "tierWeak": "Razas que rompen el Miedo (No-muerto) y Pícaros que abren bien. Será una de las clases más jugadas.",
    "rating": 5,
@@ -66,7 +67,8 @@
     "La clase más difícil de matar: escudo, Renovar y curas.",
     "Penance llega con 21 puntos (fila 5 de Disciplina).",
     "Grito psíquico y Quemadura de maná le ganan a casi todos los melés y a cualquier clase con maná.",
-    "Regla nueva: sin curas en el tiempo antes de empezar y sin buffs de otros jugadores."
+    "Regla nueva: sin curas en el tiempo antes de empezar y sin buffs de otros jugadores.",
+    "Nivel 30: Control mental. Renovar y Plaga devoradora pueden hacer crítico desde los últimos parches."
    ],
    "tierWeak": "Brujo y Chamán le aguantan la rotación de escudos. Va a ser muy jugada: clasificar como top 4 de Sacerdote será caro.",
    "rating": 3,
@@ -119,7 +121,8 @@
     "Mejora rinde por encima del tier del Chamán en los datos de beta.",
     "Purgar, Choque de tierra, Tótem de temblor y Tótem de derribo: responde a Sacerdotes y lanzadores.",
     "Stormstrike a 21 puntos y Flurry 5/5.",
-    "Regla nueva: empieza el duelo con hasta 4 tótems puestos (Temblor, Derribo, Corriente de sanación...)."
+    "Regla nueva: empieza el duelo con hasta 4 tótems puestos (Temblor, Derribo, Corriente de sanación...).",
+    "Nivel 30: Tótem de derribo y Arma Viento Furioso. Stormstrike tiene 8 s de reutilización y Retirada totémica devuelve maná entre duelos."
    ],
    "tierWeak": "Pocas escapatorias: un Mago o un Cazador que te mantienen lejos te hacen sufrir. El maná te limita si la pelea dura.",
    "rating": 4,
@@ -172,7 +175,8 @@
    "tierWhy": [
     "Bloque de hielo está en la fila 4 de Escarcha: lo tienes a nivel 30.",
     "Contrahechizo, Nova de escarcha y Traslación: el mejor control a distancia.",
-    "Con Legacy llegas a Cold Snap y repites Bloque de hielo y Nova."
+    "Con Legacy llegas a Cold Snap y repites Bloque de hielo y Nova.",
+    "Parche del 1 oct: Winter's Chill ya no se puede resistir. A 30 aún no hay Barrera de hielo."
    ],
    "tierWeak": "Frágil ante un Pícaro que abre desde sigilo y ante los DoTs de Brujo, que siguen tras el Bloque.",
    "rating": 3,
@@ -215,7 +219,7 @@
   },
   "rogue": {
    "name": "Pícaro",
-   "tier": "A",
+   "tier": "S",
    "crowd": 3,
    "spec": "Combate de control",
    "race": "No-muerto",
@@ -225,7 +229,8 @@
     "El reglamento deja moverse en sigilo antes de empezar: eliges ángulo y apertura.",
     "Golpe en los riñones a 30 e Improved Kick en la fila 4 de Combate: la Patada silencia 2 s.",
     "Mejor asesino en duelo contra clases de tela sin escudo.",
-    "Regla nueva: apertura sin oposición. Tu rival no se mueve ni gira hasta que abres (25 s)."
+    "Regla nueva: apertura sin oposición. Tu rival no se mueve ni gira hasta que abres (25 s).",
+    "Nivel 30: Golpe en los riñones. Con la apertura libre y 26 puntos encadena aturdimientos casi sin respuesta."
    ],
    "tierWeak": "Disciplina se come tu apertura con el escudo y te rompe la cadena con el Grito.",
    "rating": 2,
@@ -259,7 +264,7 @@
     "<b>Improved Sprint 2/2</b>: Sprint quita ralentizaciones (Mago, Chamán, Cazador).",
     "<b>Endurance 2/2</b>: Sprint y Evasión antes.",
     "<b>Malice 5/5</b> y <b>Ruthlessness 3/3</b>: crítico y combos (con Legacy).",
-    "Solo con Legacy: <b>Restless Blades</b>."
+    "Solo con Legacy: <b>Riposte</b> (golpe tras parar; Restless Blades se quitó a mediados de septiembre)."
    ],
    "option": "Sutileza pura (Premeditation, Cutthroat) pierde la Patada con silencio; contra un cuadro de lanzadores, Combate de control rinde más.",
    "stats": "Aguante > Agilidad > Poder de ataque",
@@ -267,7 +272,7 @@
   },
   "paladin": {
    "name": "Paladín",
-   "tier": "B",
+   "tier": "C",
    "crowd": 1,
    "spec": "Protección",
    "race": "No-muerto",
@@ -276,7 +281,8 @@
    "tierWhy": [
     "Templar's Bulwark (fila 5): escudo igual a tu vida máxima durante 8 s.",
     "Improved Hammer of Justice: Martillo 15 s antes.",
-    "Pocos lo jugarán en Horda: más fácil ser top 4 de la clase."
+    "Pocos lo jugarán en Horda: más fácil ser top 4 de la clase.",
+    "Nivel 30: Choque Sagrado (160 de maná). Aguanta mucho pero mata poco."
    ],
    "tierWeak": "Poco daño y sin forma de quitar Palabra de las Sombras: dolor ni de ganar la guerra de maná. Riesgo de tiempo muerto.",
    "rating": 2,
@@ -317,7 +323,7 @@
   },
   "druid": {
    "name": "Druida",
-   "tier": "B",
+   "tier": "A",
    "crowd": 2,
    "spec": "Feral",
    "race": "Tauren",
@@ -325,9 +331,10 @@
    "raceWhy": "Pisotón de guerra como segundo corte y +5% de vida. Skyborne de Horda solo aporta velocidad.",
    "tierWhy": [
     "Te acercas en sigilo antes del duelo.",
-    "Carga feral en oso corta un lanzamiento; con Legacy, Furor te da 80 de energía al entrar en gato.",
+    "Carga feral en oso corta un lanzamiento; con Legacy, Shifting Power convierte maná en energía.",
     "Puede curarse entre formas.",
-    "Regla nueva: cuenta como clase de sigilo, con apertura sin oposición (25 s)."
+    "Regla nueva: cuenta como clase de sigilo, con apertura sin oposición (25 s).",
+    "Parche del 1 oct: pierde Furia del tigre, pero sus formas son inmunes a Desarmar y gana Shifting Power."
    ],
    "tierWeak": "Sin quitaescudos ni respuesta al Grito; Hibernar no funciona contra humanoides. Forma de oso floja en beta.",
    "rating": 2,
@@ -358,9 +365,9 @@
    "risk": "De los cruces más duros para Druida.",
    "keys": [
     "<b>Feral Charge</b> (fila 3): corte en oso, aturdimiento en gato.",
-    "<b>Mangle</b> (fila 4).",
+    "<b>Primal Bite</b> (fila 4, antes Mangle).",
     "<b>Brutal Impact 2/2</b>: Bash más largo y frecuente.",
-    "Solo con Legacy: <b>Furor 5/5</b> (Restauración): 80 de energía al pasar a gato."
+    "Solo con Legacy: <b>Shredding Attacks 3/3</b>, <b>Shifting Power</b> e <b>Improved Shifting Power</b>: convierte maná en 40 de energía cada 12-16 s (sustituye al antiguo powershifting con Furor)."
    ],
    "option": "La forma de oso sigue floja en beta: úsala para cortar y aguantar.",
    "stats": "Aguante > Agilidad > Fuerza",
@@ -378,7 +385,8 @@
     "La salida a 20 yd le da espacio para empezar disparando.",
     "Deterrence y Counterattack castigan a los melés.",
     "Supervivencia destaca en los datos de beta.",
-    "Regla nueva: nada de trampas puestas antes de que el duelo empiece."
+    "Regla nueva: nada de trampas puestas antes de que el duelo empiece.",
+    "Del 26 al 30: Fuego rápido, Trampa de escarcha y Fingir muerte. El parche rebajó la parada de Deflection."
    ],
    "tierWeak": "Picadura de víbora no llega hasta el 32: sin presión de maná. Sin corte de hechizos real. Sufre contra Sacerdote y Brujo.",
    "rating": 1,
@@ -418,7 +426,7 @@
   },
   "warrior": {
    "name": "Guerrero",
-   "tier": "C",
+   "tier": "B",
    "crowd": 1,
    "spec": "Protección anti-lanzador",
    "race": "Orco",
@@ -428,7 +436,8 @@
     "Carga llega desde los 20 yd de salida.",
     "Protección da Concussion Blow (aturdir 5 s) y, con Legacy, Golpe de escudo con silencio de 3 s.",
     "Poca gente lo jugará: más fácil ser top 4 de la clase.",
-    "Regla nueva: apertura sin oposición con Carga, salvo contra clases de sigilo. Le sube bastante."
+    "Regla nueva: apertura sin oposición con Carga, salvo contra clases de sigilo. Le sube bastante.",
+    "Parche del 1 oct: los críticos dan el doble de ira. Grito intimidatorio (22) e Interceptar (30)."
    ],
    "tierWeak": "Sin Golpe mortal (fila 7) ni sanador. Todo lanzador con kiteo o miedo le gana.",
    "rating": 2,
@@ -460,9 +469,9 @@
    "keys": [
     "<b>Vanguard</b>: Carga en actitud defensiva.",
     "<b>Concussion Blow</b> (fila 5): aturde 5 s. Llega con 21 puntos.",
-    "<b>Improved Shield Bash 2/2</b> (fila 5): silencio 3 s. Solo con Legacy.",
+    "<b>Improved Shield Bash 2/2</b> (fila 4): silencio 3 s. Solo con Legacy.",
     "<b>Last Stand</b>: +30% de vida máxima 20 s.",
-    "Solo con Legacy: <b>Vitality 3/5</b>."
+    "Solo con Legacy: <b>Iron Will 5/5</b> y <b>Master of Defense 2/2</b> (Toughness se quitó el 1 oct y Vitality ya no aparece en el árbol actual)."
    ],
    "option": "Armas no llega a Golpe mortal (fila 7) a nivel 30.",
    "stats": "Aguante > Fuerza",
@@ -603,50 +612,54 @@
  ],
  "STEPS": [
   [
-   "Hoy - 4 oct",
-   "Crea el Chamán Orco (Horda, PvP, apellido Foreverpvp), inscríbelo en Raider.IO y pide invitación a la hermandad. Cierra el 4 oct a las 20:00."
+   "2 oct · 19:00",
+   "Inscripción cerrada (se adelantó). Tu Chamán debe aparecer en Raider.IO y estar en <The Forever Open IV>."
   ],
   [
-   "27 sep - 1 oct",
-   "Cap 20. Chamán a 20 con Desuello + Minería, todo al banco. Cazador Tauren con Sastrería + Encantamiento en paralelo."
+   "1-10 oct",
+   "Nivel máximo en 30. Chamán a 28 con Desuello + Minería, todo al banco."
   ],
   [
-   "~1 - 8 oct",
-   "Cap 30. Chamán a 25 (se abre Legacy) y a 28. Cambia Desuello y Minería por Peletería e Ingeniería y sube las dos a 225 con lo del banco. Nivel 30."
+   "~8-12 oct",
+   "A 28: Peletería + Ingeniería a 225, especialización Gnómica, equipo de nivel 30 y misión del Tótem de Aire con margen."
   ],
   [
-   "~6 - 12 oct",
-   "Cazador de 20 a 25 con Well Rested gastado en él. Sastrería y Encantamiento a 150."
+   "Cuando llegue",
+   "Blizzard aplica los 16 puntos de Legacy: Well Rested 5/5, Talented 5/5, High Alert 2/2."
   ],
   [
-   "12 - 14 oct",
-   "Personaje 3 a nivel 10-15 con Alquimia y Herrería a 150."
+   "~10 oct",
+   "La organización publica el formato de la clasificatoria en el Discord."
   ],
   [
-   "14 - 15 oct",
-   "En el Chamán: Well Rested 5/5 y Talented 5/5. Comprueba que tienes 26 puntos de talento."
+   "12-15 oct",
+   "Duelos de práctica y bolsa del torneo completa: pociones, acción libre, bombas y comida."
   ],
   [
    "16 oct",
-   "Envía tu build (24 h antes). Bolsa llena de pociones, bombas y comida."
+   "Envía tu build (24 h antes)."
   ],
   [
    "17 oct",
-   "Check-in en Raider.IO, 15 g de entrada y a la clasificatoria."
+   "Check-in por la mañana en Raider.IO y 15 g. Clasificatoria desde las 19:00 (hora de España)."
+  ],
+  [
+   "18 oct",
+   "Final, hasta medianoche: top 4 por clase, al mejor de 5."
   ]
  ],
  "GUIDE": [
   {
    "id": "ins",
-   "when": "Hoy – 4 oct",
+   "when": "Cerrada el 2 oct",
    "title": "Inscripción",
    "items": [
     "Crea un personaje <b>nuevo</b>: Orco Chamán, <b>Horda</b>, ruleset <b>PvP</b>. Tiene que estar creado después de las 20:00 del 27 de septiembre (hora de España); los anteriores no valen.",
     "Ponle el apellido <b>Foreverpvp</b>. Es obligatorio.",
     "Inscríbelo en <a href=\"https://rio.gg/foreveropen\" target=\"_blank\" rel=\"noopener\">rio.gg/foreveropen</a> con los datos del personaje.",
-    "Entra con él y pide invitación a la hermandad <b>&lt;The Forever Open III&gt;</b> a Tips Zug, Theboggy Foreverpvp, Admin Hulatwo, Admin Magetea, Admin Musashii o Prestige Admin.",
+    "Entra con él y pide invitación a la hermandad <b>&lt;The Forever Open IV&gt;</b> a Deadmin Foreverpvp, Theboogy Foreverpvp, Admin Prestigex, Admin Hulathree, Musashii Admin, Ashley Heeheehaha o Magenta Admintwo. El número sube cuando una hermandad se llena: mira en el Discord cuál toca.",
     "Únete al <a href=\"https://discord.gg/YdvQnxADwP\" target=\"_blank\" rel=\"noopener\">Discord Forever PvP</a>: allí publican el formato de la clasificatoria, como mínimo una semana antes.",
-    "Comprueba que tu inscripción aparece antes del <b>4 de octubre a las 20:00</b>, cuando se cierra. Con cada personaje nuevo, inscripción aparte."
+    "La inscripción <b>se cerró el 2 de octubre a las 19:00</b> (la adelantaron por la avalancha de gente). Comprueba en Raider.IO que tu Chamán aparece."
    ]
   },
   {
@@ -686,18 +699,8 @@
     "Empieza a juntar <b>libros de la biblioteca</b>: Friend of the Library da el Erudite's Amulet (BiS de cuello) y con 20 libros sale el Philanthropist's Ring. <a href=\"https://www.zockify.com/forever/library-books/\" target=\"_blank\" rel=\"noopener\">Ubicaciones</a>.",
     "Nivel 20: misión del Tótem de Agua, Lobo fantasmal y Choque de escarcha (niveles de Classic, <span class=\"verify\">verificar</span>).",
     "Con el cap en 20, <b>no pares</b>: completa misiones y guárdalas sin entregar (el diario es de 40 en la beta). Las entregas todas cuando suba a 30.",
-    "Desuello y Minería a la par que tu nivel (100 o más al llegar a 20), para poder recoger todo lo de las zonas siguientes."
-   ]
-  },
-  {
-   "id": "alt1",
-   "when": "Mientras el cap está en 20",
-   "title": "Empieza el Cazador",
-   "items": [
-    "Crea un <b>Cazador Tauren</b>. Puede ir en ruleset <b>Normal</b> para subir sin ganks: no tiene que mandarte nada.",
-    "Profesiones: <b>Sastrería + Encantamiento</b>. La tela y los verdes que caen al subir las alimentan gratis. No vendas ninguna de las dos cosas.",
-    "Mulgore del 1 al 10, mascota en el 10, Baldíos del 10 al 20. Talentos en Bestias.",
-    "Llévalo a 20 si te da tiempo antes de que se abra el 30."
+    "Desuello y Minería a la par que tu nivel (100 o más al llegar a 20), para poder recoger todo lo de las zonas siguientes.",
+    "Ojo: desde el 1 oct las misiones de mazmorra dan un 50% menos de experiencia extra. Sigue haciéndolas una vez por el equipo, pero no repitas."
    ]
   },
   {
@@ -723,20 +726,22 @@
     "Vende en la subasta el cuero y el mineral que sobren.",
     "Ingeniería <b>140</b>: fabrícate el abalorio <b>Minor Recombobulator</b> (ligado). Hacia 175, granadas (en Classic la Granada de hierro pedía 175).",
     "<b>Nivel 30</b>: misión del Tótem de Aire para Tótem de derribo y Arma Viento furioso (niveles de Classic, <span class=\"verify\">verificar</span>). Ojo: el buff que da esa misión está prohibido en el torneo; hazla con días de margen.",
-    "Entra una vez en City of Dalaran (28-33)."
+    "Entra una vez en City of Dalaran (28-33).",
+    "Ingeniería 200 y nivel 30: especialízate en <b>Gnómica</b> (Gnomish Net-o-Matic Projector a 210: red que inmoviliza). Goblin da cargas explosivas, pero te hacen daño a ti también.",
+    "Misión de Chamán de nivel 30: <b>Rage of the Storm</b>, maza de dos manos 3,60 con +16 Fuerza y +10% a Stormstrike. <span class=\"verify\">verificar</span>"
    ]
   },
   {
    "id": "leg",
-   "when": "~6-14 oct",
-   "title": "Cierra los 10 puntos de Legacy",
+   "when": "Cuando Blizzard los aplique",
+   "title": "Legacy: 16 puntos regalados",
    "items": [
-    "Cazador del 20 al 25 (+1). Gasta en él Well Rested 5/5: sube más rápido.",
-    "Sastrería y Encantamiento del Cazador a 150 (+2). Si puedes, una de las dos a 225 (+1 de margen).",
-    "Personaje de relleno en <b>Horda PvP</b> (para recibir oro del Chamán) a nivel 10-15: <b>Alquimia + Herrería</b> a 150 (+2) con materiales de la subasta.",
-    "Cuenta: Chamán 5 + Cazador 3 + relleno 2 = <b>10</b>. Usa la calculadora de la pestaña Plan Legacy.",
-    "En el Chamán: <b>Well Rested 5/5 → Talented 5/5</b>. Si te sobran: High Alert 2/2 y Field Medicine 2/2.",
-    "Comprueba en el juego que tienes <b>26 puntos de talento</b> y reparte la build (Mejora 0/26/0)."
+    "Blizzard ha anunciado (1 oct) <b>16 puntos de Legacy para todos los testers</b> \"en una semana próxima de la beta\". Mira en el panel de Legacy si ya los tienes.",
+    "En tu Chamán: <b>Well Rested 5/5</b> (abre el acceso) y <b>Talented 5/5</b>: 26 puntos de talento a nivel 30.",
+    "Con los 6 que sobran: <b>High Alert 2/2</b> (ves antes a Pícaros y Druidas en sigilo), <b>Field Medicine 2/2</b> y <b>Gourmand 2/3</b> (la comida dura más).",
+    "Comprueba en el juego que tienes <b>26 puntos de talento</b> y reparte la build Mejora 0/26/0.",
+    "Atento al Discord: la organización ha dicho que podría <b>recortar algunas ventajas de Legacy</b> (se habla de Talented). Si pasa, la build de 21 puntos es la de la tabla sin los 5 últimos.",
+    "Si los 16 puntos tardan en llegar: tu Chamán a 25 (+1) y Peletería e Ingeniería a 150 y 225 (+4) ya te dan 5 por tu cuenta."
    ]
   },
   {
@@ -744,15 +749,17 @@
    "when": "Antes del 16 oct",
    "title": "Equipo y bolsa",
    "items": [
-    "Revisa la lista BiS de nivel 30 cuando salga (hacia el 3-4 oct), compra los patrones con Merchant's Favor y fabrica tus piezas de Peletería.",
-    "Pociones de sanación y vendas (Primeros auxilios), pociones de maná (Alquimia del relleno), comida con estadísticas (Cocina) y bombas (Ingeniería).",
-    "Piedra de peso para tu arma de dos manos contundente (Herrería del relleno o subasta).",
+    "Equipo de nivel 30: tabla de abajo. Casi todo es Peletería (ligado al recogerlo) más misiones y mazmorras de 24-30.",
+    "Pociones de sanación y vendas (Primeros auxilios), pociones de maná y elixires (subasta), comida con estadísticas (Cocina) y bombas (Ingeniería). Lista completa en Mi gameplay → Bolsa del torneo.",
+    "Piedra de peso pesada o sólida para tu maza de dos manos (Herrería o subasta).",
     "Lleva los objetos de tótem en la bolsa si Forever los sigue pidiendo (en Classic sí) (<span class=\"verify\">verificar</span>).",
-    "Nada prohibido en las bolsas: Polvo mágico, pociones de protección y consumibles de eventos festivos.",
+    "Nada prohibido en las bolsas: Polvo mágico, Slumber Sand, Furbolg Medicine Pouch, pociones de protección y objetos de eventos festivos.",
     "Repara antes de ir: no puedes salir de la zona de duelo.",
-    "Pide a un brujo <b>Piedras de salud</b>: son consumible permitido aunque no seas Brujo (una de cada rango en la bolsa)."
+    "<b>Nada de consumibles de otras clases</b>: el reglamento dice que puedes bufarte con objetos y consumibles \"que no sean de otras clases\". Lo lógico es que las Piedras de salud de un brujo no valgan; si las quieres usar, pregúntalo antes en el Discord.",
+    "<b>Pociones de acción libre</b> (Free Action Potion): te quitan aturdimientos y raíces. Clave contra Pícaros y Guerreros.",
+    "Bombas de Ingeniería: Granada de hierro (175) y Bomba de hierro grande (190). Con Gnómica, Net-o-Matic (210)."
    ],
-   "extra": "bis"
+   "extra": "bis30"
   },
   {
    "id": "fin",
@@ -773,73 +780,6 @@
    ],
    "extra": "matchups"
   }
- ],
- "BIS20": [
-  [
-   "Cabeza",
-   "Defender's Leather Hood",
-   "Peletería 100 · ligado"
-  ],
-  [
-   "Cuello",
-   "Erudite's Amulet",
-   "Misión Friend of the Library"
-  ],
-  [
-   "Hombros",
-   "Serpent's Shoulders",
-   "Lady Anacondra, Cuevas de los Lamentos"
-  ],
-  [
-   "Espalda",
-   "Grave Shroud",
-   "Misión Abominable Creatures"
-  ],
-  [
-   "Pecho",
-   "Blackened Defias Armor",
-   "Edwin VanCleef, Minas de la Muerte"
-  ],
-  [
-   "Muñecas",
-   "Cultist's Armguards",
-   "Misión Blackfathom Villainy"
-  ],
-  [
-   "Manos",
-   "Brawler's Leather Gloves",
-   "Peletería 75 · ligado"
-  ],
-  [
-   "Cintura",
-   "Deviate Scale Belt",
-   "Peletería 90 · ligado"
-  ],
-  [
-   "Piernas",
-   "Duty Bound Leggings",
-   "Misión Bloodied Insignia"
-  ],
-  [
-   "Pies",
-   "Brawler's Leather Boots",
-   "Peletería 85 · ligado"
-  ],
-  [
-   "Anillos",
-   "Malignant Root · First Mate Band",
-   "Rare · Minas de la Muerte"
-  ],
-  [
-   "Abalorios",
-   "Minor Recombobulator · Lookie's Spyglass",
-   "Ingeniería 140 · Minas de la Muerte"
-  ],
-  [
-   "Dos manos",
-   "Smite's Mighty Hammer",
-   "Mr. Smite, Minas de la Muerte"
-  ]
  ],
  "MATCHUPS": [
   [
@@ -941,10 +881,12 @@
    "Savage Fury*2",
    "Feral Charge",
    "Sharpened Claws*2",
-   "Mangle",
+   "Primal Bite",
    "Predatory Strikes*3",
-   "Primal Fury*2",
-   "Furor*5"
+   "Blood Frenzy*2",
+   "Shredding Attacks*3",
+   "Shifting Power",
+   "Improved Shifting Power"
   ],
   "rogue": [
    "Improved Eviscerate*3",
@@ -956,7 +898,7 @@
    "Improved Kick*2",
    "Malice*5",
    "Ruthlessness*3",
-   "Restless Blades"
+   "Riposte"
   ],
   "paladin": [
    "Toughness*5",
@@ -984,7 +926,7 @@
   "warrior": [
    "Shield Specialization*5",
    "Improved Bloodrage*2",
-   "Toughness*3",
+   "Iron Will*3",
    "Last Stand",
    "Improved Revenge*3",
    "Master of Defense",
@@ -993,12 +935,13 @@
    "Improved Sunder Armor",
    "Concussion Blow",
    "Improved Shield Bash*2",
-   "Vitality*3"
+   "Iron Will*2",
+   "Master of Defense"
   ]
  },
  "route": {
   "main": {
-   "label": "Chamán Orco (main)",
+   "label": "Chamán Orco",
    "sections": [
     {
      "id": "m1",
@@ -1279,6 +1222,10 @@
       {
        "t": "Con Stormstrike (hacia el 25): pásate al arma de dos manos más lenta que tengas",
        "kind": "gear"
+      },
+      {
+       "t": "Shadowfang Keep: misión «Arugal Must Die» → Seal of Sylvanas (anillo)",
+       "kind": "gear"
       }
      ]
     },
@@ -1327,6 +1274,15 @@
       {
        "t": "Piedra de afilar/peso pesada para el arma (+4 de daño) antes de las mazmorras",
        "kind": "buy"
+      },
+      {
+       "t": "Excavation Site: misión «Prehistoric Prism» → Explorer's League Dustcover (capa) o Heavehammer",
+       "kind": "gear",
+       "tip": "Blizzard la da como 26-31 y otras fuentes como 24-29."
+      },
+      {
+       "t": "Grizzled Boots: misión de Horda (botas con velocidad)",
+       "kind": "gear"
       }
      ]
     },
@@ -1474,6 +1430,11 @@
         "engineering",
         225
        ]
+      },
+      {
+       "t": "Especialización Gnómica (Ingeniería 200, nivel 30): Net-o-Matic a 210",
+       "kind": "gear",
+       "tip": "Red que inmoviliza al rival. La Goblin da cargas explosivas que también te dañan a ti."
       }
      ]
     },
@@ -1503,224 +1464,27 @@
        "t": "City of Dalaran (28-33): entra a nivel 28-30 por equipo de 30",
        "kind": "dungeon",
        "tip": "Mazmorra nueva de Forever en Alterac."
-      }
-     ]
-    }
-   ]
-  },
-  "hunter": {
-   "label": "Cazador Tauren (alter de Legacy)",
-   "sections": [
-    {
-     "id": "h1",
-     "from": 1,
-     "to": 10,
-     "title": "Nv 1-10 · Mulgore",
-     "items": [
-      {
-       "t": "Cima del Trueno: Sastrería y Encantamiento",
-       "learn": [
-        "tailoring",
-        "enchanting"
-       ]
       },
       {
-       "t": "Sastrería 50: Rollos de lino y Camisas de lino",
-       "p": [
-        "tailoring",
-        50
-       ]
+       "t": "Misión de Chamán: Rage of the Storm (maza 3,60, +10% Stormstrike)",
+       "kind": "quest",
+       "tip": "Fuentes de la comunidad; confírmalo con tu instructor."
       },
       {
-       "t": "Encantamiento 50: Varilla de cobre rúnica + desencanta los verdes",
-       "p": [
-        "enchanting",
-        50
-       ]
-      },
-      {
-       "t": "Nivel 10",
-       "lvl": 10
-      }
-     ]
-    },
-    {
-     "id": "h2",
-     "from": 10,
-     "to": 20,
-     "title": "Nv 10-20 · Oficial",
-     "items": [
-      {
-       "t": "Oficial (nivel 10) en Sastrería y Encantamiento"
-      },
-      {
-       "t": "Sastrería 75: ~15 Bolsas de lino y Capa de lino reforzada",
-       "p": [
-        "tailoring",
-        75
-       ]
-      },
-      {
-       "t": "Encantamiento 75: Brazal - Salud menor (polvo extraño)",
-       "p": [
-        "enchanting",
-        75
-       ]
-      },
-      {
-       "t": "Sastrería 110: Rollos de lana y Camisas de lana grises",
-       "p": [
-        "tailoring",
-        110
-       ]
-      },
-      {
-       "t": "Encantamiento 110: Brazal - Aguante menor / Desvío menor",
-       "p": [
-        "enchanting",
-        110
-       ]
-      },
-      {
-       "t": "Nivel 20",
-       "lvl": 20
-      },
-      {
-       "t": "Ragefire Chasm y Wailing Caverns una vez cada una, con sus misiones",
-       "kind": "dungeon"
-      }
-     ]
-    },
-    {
-     "id": "h3",
-     "from": 20,
-     "to": 25,
-     "title": "Nv 20-25 · Experto y +1 Legacy",
-     "items": [
-      {
-       "t": "Experto (nivel 20) en las dos profesiones"
-      },
-      {
-       "t": "Sastrería 150: Rollos de seda, Capucha de seda azur, Cintas de seda",
-       "p": [
-        "tailoring",
-        150
-       ]
-      },
-      {
-       "t": "Encantamiento 150: Capa - Aguante menor / Brazal - Aguante inferior",
-       "p": [
-        "enchanting",
-        150
-       ]
-      },
-      {
-       "t": "Nivel 25: +1 Legacy de clase",
-       "lvl": 25
-      },
-      {
-       "t": "Arco o rifle: el mejor que salga de misiones; la mascota hace el resto",
+       "t": "Gloves of Kapelan: misión de Horda «Alliance Relations» (nivel 30)",
        "kind": "gear"
-      }
-     ]
-    },
-    {
-     "id": "h4",
-     "from": 25,
-     "to": 30,
-     "title": "Nv 25+ · Opcional: 225",
-     "items": [
+      },
       {
-       "t": "Sastrería 225: tejido mágico (subasta)",
+       "t": "Primeros auxilios 210: vendas de tejido mágico y Pociones de sanación mayores (155)",
        "p": [
-        "tailoring",
-        225
+        "firstaid",
+        210
        ],
-       "tip": "+1 Legacy más. Solo si sobra tiempo u oro."
+       "tip": "Desde 150 necesitas el libro de Experto. Las pociones de sanación ahora salen de Primeros auxilios."
       },
       {
-       "t": "Encantamiento 225: esencias y polvo de alma",
-       "p": [
-        "enchanting",
-        225
-       ]
-      }
-     ]
-    }
-   ]
-  },
-  "filler": {
-   "label": "Relleno (Alquimia + Herrería)",
-   "sections": [
-    {
-     "id": "f1",
-     "from": 1,
-     "to": 10,
-     "title": "Nv 1-10 · Aprendiz",
-     "items": [
-      {
-       "t": "Alquimia y Herrería aprendidas",
-       "learn": [
-        "alchemy",
-        "blacksmithing"
-       ]
-      },
-      {
-       "t": "Alquimia 60: ~60 Pociones de sanación menores (Flor de paz + Hojaplata)",
-       "p": [
-        "alchemy",
-        60
-       ]
-      },
-      {
-       "t": "Herrería 75: Piedras de afilar y de moler rugosas, Cinturón de cadena de cobre",
-       "p": [
-        "blacksmithing",
-        75
-       ]
-      },
-      {
-       "t": "Nivel 10",
-       "lvl": 10
-      }
-     ]
-    },
-    {
-     "id": "f2",
-     "from": 10,
-     "to": 15,
-     "title": "Nv 10-15 · Oficial a 150",
-     "items": [
-      {
-       "t": "Oficial (nivel 10) en las dos profesiones"
-      },
-      {
-       "t": "Alquimia 110: ~50 Pociones de sanación inferiores",
-       "p": [
-        "alchemy",
-        110
-       ]
-      },
-      {
-       "t": "Alquimia 150: ~40 Pociones de sanación (Hierba cardenal + Brezospina)",
-       "p": [
-        "alchemy",
-        150
-       ]
-      },
-      {
-       "t": "Herrería 125: Piedras de moler bastas y Cinturones de cobre rúnico",
-       "p": [
-        "blacksmithing",
-        125
-       ]
-      },
-      {
-       "t": "Herrería 150: Piedras de moler pesadas y Brazales de hierro verde",
-       "p": [
-        "blacksmithing",
-        150
-       ]
+       "t": "Bolsa: Pociones de acción libre, de maná, elixires, piedra de peso y bombas",
+       "kind": "buy"
       }
      ]
     }
@@ -1779,5 +1543,91 @@
    false,
    "Protección sube muy lento. Para subir, Armas o Furia y cambia antes de enviar la build."
   ]
- }
+ },
+ "BIS30": [
+  [
+   "Dos manos",
+   "Rage of the Storm",
+   "Misión de Chamán, nivel 30 (verificar)",
+   "Corpsemaker (Razorfen Kraul) · Heavehammer (misión «Prehistoric Prism», Excavation Site) · Viscous Hammer (subasta)"
+  ],
+  [
+   "Cabeza",
+   "Defender's Leather Helm",
+   "Peletería",
+   "Defender's Leather Hood (Peletería 100)"
+  ],
+  [
+   "Cuello",
+   "Souvenir Sea Shell",
+   "Bahía del Botín, Honorable",
+   "Mark of the Pack Leader (Humar, Los Baldíos)"
+  ],
+  [
+   "Hombros",
+   "Watchman Pauldrons",
+   "Monasterio Escarlata (botín)",
+   "Barbaric Shoulders (Peletería 145)"
+  ],
+  [
+   "Espalda",
+   "Explorer's League Dustcover",
+   "Misión «Prehistoric Prism», Excavation Site",
+   "Crocolisk Skin Gaiter"
+  ],
+  [
+   "Pecho",
+   "Defender's Leather Tunic",
+   "Peletería 110",
+   "Totemic Leather Tunic (Peletería 110, nivel 22)"
+  ],
+  [
+   "Muñecas",
+   "Technician's Bracers",
+   "Misión «A Fine Mess» (nivel 20+)",
+   "Bands of Serra'kis (Blackfathom Deeps)"
+  ],
+  [
+   "Manos",
+   "Gloves of Kapelan",
+   "Misión de Horda «Alliance Relations» (nivel 30)",
+   "Brawler Gloves (botín del mundo) · guantes de Peletería con Merchant's Favor"
+  ],
+  [
+   "Cintura",
+   "Prowler's Leather Belt",
+   "Peletería 150",
+   "Skirmisher's / Warden's Belt (Peletería 150)"
+  ],
+  [
+   "Piernas",
+   "Defender's Leather Kilt",
+   "Peletería 125",
+   "Totemic Leather Leggings (Peletería 125)"
+  ],
+  [
+   "Pies",
+   "Grizzled Boots",
+   "Misión de Horda (velocidad de carrera)",
+   "Botas de Peletería 85 con Merchant's Favor"
+  ],
+  [
+   "Anillos",
+   "Wyvern Heart Band ×2",
+   "Heartrazor (raro, Las Mil Agujas)",
+   "Seal of Sylvanas (misión «Arugal Must Die», Shadowfang Keep)"
+  ],
+  [
+   "Abalorios",
+   "Minor Recombobulator + Gnomish Net-o-Matic Projector",
+   "Ingeniería 140 y 210 (Gnómica)",
+   "Worgenbane Talisman (Shadowfang Keep)"
+  ],
+  [
+   "Reliquia",
+   "Polished Driftwood Icon",
+   "Encantamiento 130 (ligado al equipar: se compra)",
+   "Totem of Charged Flames (misión «Meddlesome Mages»)"
+  ]
+ ]
 }

@@ -3,42 +3,74 @@ import Base from "../layouts/Base.astro";
 import Icon from "../components/Icon.astro";
 import { DATA, CLASS_ICON, PROF_ICON, MISC_ICON, url } from "../lib/wow.js";
 const { STEPS } = DATA;
-const CHARS = [
-  { role: "Personaje 1 · el del torneo", name: "Chamán Orco", icon: CLASS_ICON.shaman, note: "Horda, ruleset PvP, apellido Foreverpvp, inscrito antes del 4 oct.",
-    profs: ["Desuello", "Minería", "Peletería", "Ingeniería"],
-    items: ["Nivel 25 → <b>+1</b>", "Desuello + Minería del 1 al 28: todo el cuero y el mineral al banco.", "Hacia el 28, Peletería a 225 → <b>+2</b> y tu equipo BiS ligado.", "Ingeniería a 225 con el mineral guardado → <b>+2</b>."], pts: "5" },
-  { role: "Personaje 2 · speedrun a 25", name: "Cazador Tauren", icon: CLASS_ICON.hunter, note: "Ruleset Normal para subir sin ganks: no tiene que mandarle nada al main.",
-    profs: ["Sastrería", "Encantamiento"],
-    items: ["Nivel 25 → <b>+1</b>", "Sastrería a 150 → <b>+1</b>, con la tela que cae.", "Encantamiento a 150 → <b>+1</b>, desencantando los verdes.", "Una de las dos a 225 → <b>+1</b> de margen."], pts: "3-4" },
-  { role: "Personaje 3 · solo profesiones", name: "Relleno a nivel 10-15", icon: MISC_ICON.gold, note: "Horda y ruleset PvP, para recibir oro del Chamán por correo.",
-    profs: ["Alquimia", "Herrería"],
-    items: ["Alquimia a 150 → <b>+1</b>. Pociones de maná para el main.", "Herrería a 150 → <b>+1</b>. Piedras de peso para tu arma.", "Materiales de la subasta."], pts: "2" },
+const SPEND = [
+  ["Well Rested", "5/5", 5, "Aventura", "Peaje para abrir Talented. Fuera de combate no hace nada en el duelo, pero sin él no llegas a lo siguiente."],
+  ["Talented", "5/5", 5, "Aventura", "Empiezas a recibir talentos desde el nivel 5: 26 puntos a nivel 30 en vez de 21."],
+  ["High Alert", "2/2", 2, "Utilidad", "Detectas sigilo como si fueras 2 niveles más alto: ves antes a Pícaros y Druidas."],
+  ["Field Medicine", "2/2", 2, "Utilidad", "\"Vendado recientemente\" dura menos: vendas antes entre duelos."],
+  ["Gourmand", "2/3", 2, "Utilidad", "La comida con estadísticas dura más."],
 ];
 ---
-<Base title="Plan Legacy" active="legacy" description="Cómo sacar 10 puntos de Legacy en WoW Forever antes del torneo: Talented 5/5 y 26 puntos de talento a nivel 30.">
+<Base title="Legacy" active="legacy" description="Qué hacer con los 16 puntos de Legacy que Blizzard regala en la beta de WoW Forever, para el torneo The Forever Open.">
   <div class="pagehead">
-    <div class="eyebrow">Well Rested 5/5 + Talented 5/5</div>
-    <h1>Plan Legacy: 10 puntos antes del 17 de octubre</h1>
-    <p class="lede">10 puntos de Legacy te dan <b>26 puntos de talento a nivel 30 en vez de 21</b>. Los puntos son de cuenta: los alters también suman aunque no jueguen el torneo.</p>
+    <div class="eyebrow">Actualizado el 2 oct · Blizzard regala 16 puntos</div>
+    <h1>Legacy: qué hacer con los 16 puntos</h1>
+    <p class="lede">Ya no hace falta subir alters ni profesiones para conseguir Legacy. Blizzard ha anunciado que dará <b>16 puntos a todos los testers de la beta</b>, justo el máximo que se puede gastar por personaje. Esta página te dice en qué gastarlos.</p>
   </div>
-  <div class="goodline">De dónde salen los puntos en la beta: <b>+1 por cada clase distinta que llegue a nivel 25</b> y <b>+1 al llegar a 150 y +1 al llegar a 225 en cada profesión de fabricación</b>. Recolección, Cocina y Primeros auxilios no dan puntos. Cada profesión cuenta una sola vez por cuenta.</div>
 
-  <div class="chars">
-    {CHARS.map((c) => (
-      <div class="charcard">
-        <div class="role">{c.role}</div>
-        <h3 class="racecell"><Icon name={c.icon} size={32} label={c.name} /> {c.name}</h3>
-        <p class="note">{c.note}</p>
-        <div style="display:flex;gap:6px;margin:8px 0">{c.profs.map((p) => <Icon name={PROF_ICON[p]} size={28} label={p} />)}</div>
-        <ul>{c.items.map((i) => <li set:html={i} />)}</ul>
-        <div class="ptsrow"><span>Puntos</span><b>{c.pts}</b></div>
-      </div>
-    ))}
+  <section class="box news">
+    <div class="eyebrow">Lo que se sabe</div>
+    <ul class="bul" style="margin-top:8px">
+      <li><b>Anunciado, aún no aplicado:</b> Kaivax (Blizzard), 1 oct: "En una semana próxima de la beta daremos 16 puntos de Legacy a todos los testers y los mantendremos hasta el final de la beta". Mira tu panel de Legacy cada semana.</li>
+      <li><b>Máximo 16 por personaje.</b> Con los regalados ya llegas al tope: el Cazador y el personaje de relleno del plan anterior ya no hacen falta.</li>
+      <li><b>En el torneo están permitidos</b> ("Legacy points are permitted"). La organización ha comentado que podría recortar el efecto de algunas ventajas, y se habla de Talented. Si pasa, te tocaría la build de 21 puntos.</li>
+      <li><b>Si tardan en aplicarlos:</b> tu propio Chamán ya da 5 puntos (nivel 25 + Peletería e Ingeniería a 150 y 225). Con eso llegas a Well Rested 5/5, pero no a Talented.</li>
+    </ul>
+  </section>
+
+  <div class="split">
+    <div class="box">
+      <h2>Reparto recomendado (16 puntos)</h2>
+      <ul class="alloc" style="margin-top:10px">
+        {SPEND.map(([n, r, , tree, why]) => <li><span class="name">{n}</span><span class="rank num">{r}</span><span class="why">{why} <span class="note">· {tree}</span></span></li>)}
+      </ul>
+      <p class="note" style="margin-top:8px">Total 16. Si el panel te ofrece otras ventajas útiles con los últimos puntos (por ejemplo Thrill of Adventure o Reagent Economy), compáralas: para un duelo pesan más las que actúan en combate o entre duelos.</p>
+    </div>
+    <div class="box">
+      <h3>Calcula tus talentos</h3>
+      <div class="field"><label for="lgPts">Puntos de Legacy que tienes</label><div class="row"><input type="range" id="lgPts" min="0" max="16" value="16" /><output id="oPts" class="num">16</output></div></div>
+      <div class="big"><b class="num" id="lgTalents">26</b><span>puntos de talento a nivel 30<br /><span class="note" id="lgDelta"></span></span></div>
+      <div class="warnline" id="lgWarn" hidden></div>
+      <p class="note" style="margin-top:10px">Talented 1/5 cuesta 6 puntos (5 de Well Rested + 1) y el 5/5 cuesta 10.</p>
+    </div>
   </div>
-  <div class="goodline">Total: 5 + 3 + 2 = <b>10 puntos</b> (11 si una profesión del Cazador llega a 225). Eso es Talented 5/5: <b>26 puntos de talento</b>.</div>
+
+  <section class="box">
+    <h2>Qué cambia en tu plan</h2>
+    <div class="chars" style="margin-top:12px">
+      <div class="charcard">
+        <div class="role">Antes</div>
+        <h3 class="racecell"><Icon name={CLASS_ICON.hunter} size={30} label="Cazador" /> 3 personajes</h3>
+        <ul>
+          <li>Cazador a 25 con Sastrería y Encantamiento.</li>
+          <li>Personaje de relleno con Alquimia y Herrería.</li>
+          <li>Todo para juntar 10 puntos.</li>
+        </ul>
+      </div>
+      <div class="charcard">
+        <div class="role">Ahora</div>
+        <h3 class="racecell"><Icon name={CLASS_ICON.shaman} size={30} label="Chamán" /> Solo tu Chamán</h3>
+        <ul>
+          <li>Todo el tiempo para el Chamán: nivel 30, equipo y práctica de duelos.</li>
+          <li>Peletería + Ingeniería siguen siendo las mejores: equipo ligado y bombas, red y Recombobulator.</li>
+          <li>Primeros auxilios a 210: pociones de sanación y vendas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <div class="box">
-    <div class="titlerow"><h2>Calendario paso a paso</h2><span class="note">Marca lo que vayas cerrando (se guarda en este navegador)</span></div>
+    <div class="titlerow"><h2>Calendario hasta el torneo</h2><span class="note">Marca lo que vayas cerrando (se guarda en este navegador)</span></div>
     <ol class="timeline" id="timeline">
       {STEPS.map(([w, t], i) => (
         <li><span class="when">{w}</span><label><input type="checkbox" data-i={i} /><span class="what">{t}</span></label></li>
@@ -46,66 +78,36 @@ const CHARS = [
     </ol>
   </div>
 
-  <div class="split">
-    <div class="box">
-      <h3>Speedrun del Cazador a 25</h3>
-      <ol class="steps">
-        <li><b>Ruleset.</b> Normal: no tiene que mandarle nada al main, así que súbelo sin ganks.</li>
-        <li><b>1-10 en Mulgore.</b> Correr por las llanuras (hasta +30% de velocidad) y +5% de vida. Todo misiones.</li>
-        <li><b>Nivel 10: mascota.</b> Talentos en Bestias; la mascota aguanta la amenaza sola.</li>
-        <li><b>10-20 en los Baldíos</b> desde El Cruce. Cada mazmorra de tu rango una vez.</li>
-        <li><b>20-25</b> en Vallefresno, Sierra Espolón o Laderas de Trabalomas cuando suba el cap. Guarda misiones hechas a 20 y entrégalas al abrirse el 30.</li>
-        <li><b>Legacy en el alter.</b> Cuando se abra el panel, gasta en el Cazador Well Rested 5/5.</li>
-        <li><b>Profesiones al subir.</b> Sastrería y Encantamiento. No vendas tela ni verdes. La ruta por nivel con cantidades está en <a href={url("guia") + "#ruta"}>Mi guía</a>.</li>
-      </ol>
-    </div>
-    <div class="box">
-      <h3>Calcula tus puntos</h3>
-      <div class="field"><label for="lgClass">Clases distintas a nivel 25</label><div class="row"><input type="range" id="lgClass" min="0" max="9" value="2" /><output id="oClass" class="num">2</output></div></div>
-      <div class="field"><label for="lg150">Profesiones de fabricación a 150</label><div class="row"><input type="range" id="lg150" min="0" max="6" value="6" /><output id="o150" class="num">6</output></div></div>
-      <div class="field"><label for="lg225">De esas, a 225</label><div class="row"><input type="range" id="lg225" min="0" max="6" value="2" /><output id="o225" class="num">2</output></div></div>
-      <div class="total"><span>Puntos de Legacy</span><b class="num" id="lgTotal">10</b></div>
-      <div class="big"><b class="num" id="lgTalents">26</b><span>puntos de talento a nivel 30<br /><span class="note" id="lgDelta"></span></span></div>
-      <ul class="alloc" id="lgAlloc"></ul>
-      <div class="warnline" id="lgWarn" hidden></div>
-    </div>
+  <div class="sources">
+    <b>Fuentes:</b>
+    <ul>
+      <li><a href="https://us.forums.blizzard.com/en/wow/t/legacy-points-for-beta-testing/2368776" target="_blank" rel="noopener">Blizzard (Kaivax): Legacy points for beta testing</a></li>
+      <li><a href="https://www.icy-veins.com/wow-forever/news/players-getting-free-legacy-points-for-testing/" target="_blank" rel="noopener">Icy Veins: free Legacy points for testing</a></li>
+      <li><a href="https://classicwowforever.com/legacy/" target="_blank" rel="noopener">Classic WoW Forever: ventajas y costes de Legacy</a></li>
+      <li><a href="https://foreverchanges.pro/duel-tournament" target="_blank" rel="noopener">ForeverChanges: notas del torneo</a></li>
+    </ul>
   </div>
-  <p class="note">Costes según el cliente de beta: Talented rango 1 cuesta 6 puntos y el 5/5 cuesta 10, contando Well Rested 5/5. El panel de Legacy se abre cuando el primer personaje de la cuenta llega a 25. Se gastan como máximo 16 por personaje. Niveles para aprender profesiones (10 para 150, 20 para 225) tomados de Classic.</p>
 
   <script>
     const $ = (id: string) => document.getElementById(id) as HTMLInputElement;
     function legacy() {
-      const cls = +$("lgClass").value, p150 = +$("lg150").value;
-      if (+$("lg225").value > p150) $("lg225").value = String(p150);
-      const p225 = +$("lg225").value;
-      $("oClass").value = String(cls); $("o150").value = String(p150); $("o225").value = String(p225);
-      const total = cls + p150 + p225; $("lgTotal").textContent = String(total);
-      let r = Math.min(total, 16), wr = 0, tal = 0;
-      if (r >= 6) { wr = 5; r -= 5; tal = Math.min(5, r); r -= tal; }
-      const ha = Math.min(2, r); r -= ha; const fm = Math.min(2, r); r -= fm; const gm = Math.min(3, r);
+      const total = +$("lgPts").value;
+      $("oPts").value = String(total);
+      const tal = total >= 6 ? Math.min(5, total - 5) : 0;
       $("lgTalents").textContent = String(21 + tal);
       $("lgDelta").textContent = tal ? `+${tal} sobre un personaje sin Legacy` : "igual que sin Legacy";
-      const row = (n: string, k: number, m: number, w: string) => `<li class="${k ? "" : "off"}"><span class="name">${n}</span><span class="rank num">${k}/${m}</span><span class="why">${w}</span></li>`;
-      $("lgAlloc").innerHTML = [
-        row("Well Rested", wr, 5, "No sirve en combate; es el peaje para abrir Talented."),
-        row("Talented", tal, 5, "Cada rango es 1 punto de talento más a nivel 30."),
-        row("High Alert", ha, 2, "Detectas sigilo como si fueras 2 niveles más alto."),
-        row("Field Medicine", fm, 2, "Vendado recientemente dura 10 s menos."),
-        row("Gourmand", gm, 3, "La comida con estadísticas dura más entre duelos."),
-      ].join("");
       const w = $("lgWarn");
       if (total < 6) { w.hidden = false; w.innerHTML = `<b>Con menos de 6 puntos no llegas a Talented.</b> Te faltan ${6 - total}.`; }
       else if (total < 10) { w.hidden = false; w.innerHTML = `Te faltan <b>${10 - total}</b> para Talented 5/5.`; }
-      else if (total > 16) { w.hidden = false; w.innerHTML = "Solo se gastan 16 por personaje."; }
       else w.hidden = true;
     }
-    ["lgClass", "lg150", "lg225"].forEach((id) => $(id).addEventListener("input", legacy));
+    $("lgPts").addEventListener("input", legacy);
     legacy();
     let done: Record<string, boolean> = {};
-    try { done = JSON.parse(localStorage.getItem("tfo-steps") || "{}"); } catch {}
+    try { done = JSON.parse(localStorage.getItem("tfo-steps2") || "{}"); } catch {}
     const tl = document.getElementById("timeline")!;
     const paint = () => tl.querySelectorAll<HTMLInputElement>("input").forEach((b) => { b.checked = !!done[b.dataset.i!]; b.closest("li")!.classList.toggle("done", b.checked); });
-    tl.addEventListener("change", (e) => { const t = e.target as HTMLInputElement; done[t.dataset.i!] = t.checked; try { localStorage.setItem("tfo-steps", JSON.stringify(done)); } catch {} paint(); });
+    tl.addEventListener("change", (e) => { const t = e.target as HTMLInputElement; done[t.dataset.i!] = t.checked; try { localStorage.setItem("tfo-steps2", JSON.stringify(done)); } catch {} paint(); });
     paint();
   </script>
 </Base>

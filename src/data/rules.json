@@ -1,5 +1,5 @@
 {
- "updated": "30 sep 2026",
+ "updated": "2 oct 2026",
  "sections": [
   {
    "id": "fechas",
@@ -8,8 +8,8 @@
    "rules": [
     [
      "Calendario",
-     "Inscripción abierta del 27 sep al 4 oct (20:00 hora de España). Check-in y clasificatoria el 17 oct. Final el 18 oct.",
-     "Apunta el 4 oct a las 20:00: después no se admite a nadie."
+     "Inscripción del 27 sep al 2 oct a las 19:00 (hora de España): se adelantó por la cantidad de gente. Check-in la mañana del 17. Torneo del 17 oct a las 19:00 al 18 oct a medianoche (17:00 UTC a 22:00 UTC).",
+     "Si no te inscribiste antes del 2 oct a las 19:00, ya no entras."
     ],
     [
      "Bolsa de $100.000",
@@ -50,8 +50,8 @@
     ],
     [
      "Pasos de inscripción",
-     "1) Crear el personaje. 2) Registrarlo en rio.gg/foreveropen. 3) Pedir invitación a la hermandad <The Forever Open III> a Tips Zug, Theboggy Foreverpvp, Admin Hulatwo, Admin Magetea, Admin Musashii o Prestige Admin. 4) Subirlo a 30.",
-     "La hermandad ahora es <The Forever Open III>. Si estabas en una anterior, confirma en el Discord que te vale o pide invitación a la nueva."
+     "1) Crear el personaje. 2) Registrarlo en rio.gg/foreveropen. 3) Pedir invitación a la hermandad <The Forever Open IV> a Deadmin Foreverpvp, Theboogy Foreverpvp, Admin Prestigex, Admin Hulathree, Musashii Admin, Ashley Heeheehaha o Magenta Admintwo. 4) Subirlo a 30.",
+     "La hermandad cambia de número cuando se llena (ya va por la IV): mira en el Discord cuál toca."
     ],
     [
      "Un solo personaje",
@@ -114,8 +114,8 @@
     ],
     [
      "Legacy permitido",
-     "Los puntos de Legacy están permitidos.",
-     "Talented 5/5 = 26 puntos de talento."
+     "Los puntos de Legacy están permitidos. Blizzard ha anunciado 16 puntos gratis para todos los testers.",
+     "Talented 5/5 = 26 puntos de talento. La organización ha insinuado que podría recortar alguna ventaja (se habla de Talented): atento al Discord."
     ],
     [
      "Habilidades",
@@ -141,8 +141,8 @@
     ],
     [
      "Consumibles permitidos",
-     "Todos los consumibles están permitidos salvo los prohibidos expresamente.",
-     "Pociones, vendas, comida, elixires, bombas, piedras de afilar... y Piedras de salud que te dé un brujo."
+     "Todos los consumibles están permitidos salvo los prohibidos. Puedes bufarte también después de que empiece el duelo con objetos y consumibles, siempre que no sean de otras clases.",
+     "Pociones, vendas, comida, elixires, bombas, piedras de afilar... Por esa frase, lo prudente es no contar con las Piedras de salud de un brujo (pregúntalo en el Discord si te interesa)."
     ],
     [
      "Prohibidos",
@@ -358,14 +358,11 @@
   }
  ],
  "changes": [
-  "Solo se permiten tus propios buffs: nada de buffs de otros jugadores.",
-  "Prohibidos los buffs de campamento y del mundo o de misiones (incluido el de la misión del Tótem de Aire).",
-  "Nuevos prohibidos: Slumber Sand y Furbolg Medicine Pouch.",
-  "Chamán: puedes empezar el duelo con hasta 4 tótems puestos.",
-  "Pícaro, Druida y Guerrero tienen apertura sin oposición (25 s); tú te quedas quieto.",
-  "Prohibido curar en el tiempo, poner trampas o sacrificar demonio antes de empezar.",
-  "Entre duelos, 1 minuto como máximo (antes 1-2).",
-  "Prohibido comprar oro durante el torneo.",
-  "Hermandad <The Forever Open III>, con nuevos admins que invitan."
+  "La inscripción se cerró el 2 oct a las 19:00 (antes era el 4) por la cantidad de gente; se habla de unas 4.000 personas.",
+  "Horario oficial: del 17 oct a las 19:00 al 18 oct a medianoche (hora de España). El formato de la clasificatoria aún no está publicado.",
+  "Hermandad <The Forever Open IV>, con admins nuevos que invitan.",
+  "Blizzard regalará 16 puntos de Legacy a todos los testers; en el torneo están permitidos, aunque podrían recortar alguna ventaja.",
+  "El reglamento dice que te puedes bufar con consumibles que \"no sean de otras clases\": lo prudente es no contar con Piedras de salud de un brujo.",
+  "Del 30 sep: solo buffs propios; sin buffs de campamento ni del mundo; 4 tótems del Chamán al empezar; aperturas libres de Pícaro, Druida y Guerrero; 1 minuto entre duelos; prohibido comprar oro."
  ]
 }

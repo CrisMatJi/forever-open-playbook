@@ -13,9 +13,9 @@ const CMDS = [
 <Base title="Addon ForeverPvPTournament" active="addon" description="Addon para WoW Forever: tracker de la ruta de speedrun por nivel, Legacy, talentos y bolsas para The Forever Open.">
   <section class="hero">
     <div>
-      <div class="eyebrow">Addon para el cliente de WoW Forever · v0.6.4</div>
+      <div class="eyebrow">Addon para el cliente de WoW Forever · v0.7.0</div>
       <h1>ForeverPvPTournament</h1>
-      <p class="lede">Un tracker en pantalla que se marca solo: te dice qué toca <b>según tu nivel</b> (subir Desuello a 100, 45 Vendas de lino gruesas, cambiar a Peletería al 28...), cuenta tus puntos de Legacy entre personajes, comprueba tu build y avisa si llevas algo prohibido en la bolsa.</p>
+      <p class="lede">Un tracker en pantalla que se marca solo: te dice qué toca <b>según tu nivel</b> (subir Desuello a 100, 45 Vendas de lino gruesas, cambiar a Peletería al 28...), comprueba tu build de 26 talentos y avisa si llevas algo prohibido en la bolsa.</p>
       <div class="cta">
         <a class="chip gold" href={url("addon/ForeverPvPTournament.zip")} download><Icon name={MISC_ICON.addon} size={22} label="" fallback="" /> Descargar .zip</a>
         <a class="chip" href={url("guia")}>Ir a Mi guía</a>
@@ -25,7 +25,7 @@ const CMDS = [
       <div class="mt">Forever PvP <span><i>+</i><i>x</i></span></div>
       <div class="mb">
         <div class="bar"><i style="width:17%"></i><span>20 / 117</span></div>
-        <div class="st">Nv 12 · <span style="color:#b760ff">Legacy 0/10</span> · Talentos 3/26</div>
+        <div class="st">Nv 12 · Talentos 3/26</div>
         <div class="h red">Atrasado (de niveles anteriores)</div>
         <div class="it auto">Minería 50: todas las vetas de cobre <em>35/50</em></div>
         <div class="h">Ahora · Nv 10-15 · Los Baldíos (I)</div>
@@ -49,14 +49,13 @@ const CMDS = [
         <li>Descomprime el .zip y copia la carpeta <code>ForeverPvPTournament</code> en <code>&lt;carpeta de WoW&gt;/_forever_beta_/Interface/AddOns/</code> (o la carpeta de la beta de Forever que tengas).</li>
         <li>En la pantalla de personajes, botón <b>AddOns</b>: activa "Forever PvP Tournament". Si sale "desactualizado", marca "Cargar addons desactualizados".</li>
         <li>Entra con tu Chamán Orco. Si no lo detecta como main: <code>/tfo main</code> y <code>/reload</code>.</li>
-        <li>Entra una vez con cada alter (Cazador y relleno) para que sume sus niveles y profesiones al Legacy.</li>
       </ol>
     </div>
     <div class="box">
       <h2>Qué hace</h2>
       <ul class="bul">
         <li><b>Ruta por nivel</b> en el tracker: Atrasado, Ahora y Siguiente. De cada profesión enseña solo el próximo objetivo con tu progreso (87/100).</li>
-        <li>Ruta distinta según el personaje: Chamán, Cazador (Sastrería + Encantamiento) o relleno (Alquimia + Herrería).</li>
+        <li>Ruta del Chamán hasta 30 con mazmorras, compras, equipo y misiones de cada tramo.</li>
         <li><b>Se marca solo</b>: profesiones, niveles, tótems conocidos, pico y cuchillo, talentos de la build, Recombobulator, oro y bolsas.</li>
         <li>Funciona con el cliente en <b>español</b>: todo se detecta por ID, no por nombre.</li>
         <li>Tracker <b>redimensionable</b> desde la esquina inferior derecha, con scroll. Clic derecho en la esquina: tamaño automático.</li>
