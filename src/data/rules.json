@@ -1,5 +1,5 @@
 {
- "updated": "2 oct 2026",
+ "updated": "6 oct 2026",
  "sections": [
   {
    "id": "fechas",
@@ -13,8 +13,8 @@
     ],
     [
      "Bolsa de $100.000",
-     "El campeón absoluto se lleva $50.000. Los otros $50.000 se reparten a partes iguales entre el mejor de cada clase: $5.555 por clase. Si hay empate en una clase, se divide.",
-     "Ser el mejor Chamán ya son $5.555, aunque no ganes el torneo."
+     "El campeón absoluto se lleva $50.000. Los otros $50.000 se reparten a partes iguales entre el mejor de cada clase: $5.555 por clase. Si el campeón es de tu clase, los $5.555 de esa clase pasan al segundo mejor de ella. Si hay empate en una clase, se divide.",
+     "Ser el mejor Chamán ya son $5.555, aunque no ganes. Y si gana un Chamán, el premio de clase te lo llevas tú si eres el siguiente."
     ],
     [
      "Título",
@@ -123,9 +123,14 @@
      null
     ],
     [
-     "Sin restricciones de equipo",
-     "El reglamento no limita equipo, profesiones ni addons.",
-     "El equipo BiS fabricado y las bombas de Ingeniería valen."
+     "Equipo: casi todo vale",
+     "Sin límite de profesiones ni addons. Prohibidos (6 oct): Arco del Buscaverdades (Truthseeker's Bow), Armadura de vástago verde (Green Whelp Armor) y Carga de zapador goblin (Goblin Sapper Charge). Los abalorios y equipables que invocan mascota (Silbato de perro...) sí valen.",
+     "Tu Ingeniería sigue valiendo: Granada de hierro, Bomba de hierro grande, Net-o-Matic y Recombobulator están permitidos."
+    ],
+    [
+     "Transfiguración desactivada",
+     "La transfiguración tiene que estar desactivada durante el torneo.",
+     "Quita los transmog antes del 17: que se vea tu equipo real."
     ]
    ]
   },
@@ -141,13 +146,13 @@
     ],
     [
      "Consumibles permitidos",
-     "Todos los consumibles están permitidos salvo los prohibidos. Puedes bufarte también después de que empiece el duelo con objetos y consumibles, siempre que no sean de otras clases.",
-     "Pociones, vendas, comida, elixires, bombas, piedras de afilar... Por esa frase, lo prudente es no contar con las Piedras de salud de un brujo (pregúntalo en el Discord si te interesa)."
+     "Todos los consumibles están permitidos salvo los prohibidos. Puedes bufarte con objetos y consumibles antes de que empiece el duelo (y durante), siempre que no sean de otras clases y no rompan otra regla.",
+     "Pociones, elixires, pergaminos, comida, piedras de afilar: póntelos antes de aceptar el duelo. Piedras de salud de un brujo: no (son de otra clase)."
     ],
     [
      "Prohibidos",
-     "Polvo mágico, Slumber Sand, Furbolg Medicine Pouch y las pociones de protección de Fuego, Naturaleza, Escarcha, Arcano, Sagrado y Sombras. También los buffs y consumibles de eventos festivos (buff del Wickerman, maíz dulce...).",
-     "Vacía la bolsa de todo eso antes de ir. El addon te avisa si llevas algo."
+     "Polvo mágico, Slumber Sand, Furbolg Medicine Pouch, pociones de protección (Fuego, Naturaleza, Escarcha, Arcano, Sagrado, Sombras) y buffs o consumibles festivos. Desde el 6 oct también: Bomba de destello (Flash Bomb), Student Fodder y todos los objetos no equipables que invocan mascotas (Spider Swarm, Compact Harvester Reaper Kit...).",
+     "Vacía la bolsa de todo eso. El addon (v0.7.2) te avisa, también de lo equipado."
     ],
     [
      "Sin buffs de campamento ni del mundo",
@@ -193,7 +198,7 @@
     ],
     [
      "Aperturas no garantizadas",
-     "Ninguna clase tiene garantizada su apertura.",
+     "Salvo las aperturas libres de la sección de clases, nadie tiene la apertura garantizada.",
      null
     ],
     [
@@ -215,8 +220,8 @@
     ],
     [
      "Pícaro y Druida: apertura libre",
-     "Las clases con sigilo (Pícaro y Druida) tienen apertura sin oposición: su primera acción ofensiva (habilidad o abalorio) va antes. El rival no se mueve ni gira el personaje hasta entonces. Tienen 25 s desde que empieza el duelo; si tardan más, pierden ese derecho.",
-     "Contra ellos: quieto, con tus tótems ya puestos, y reacciona después de su apertura."
+     "Las clases con sigilo siempre tienen la apertura sin oposición: su primera acción ofensiva, sea habilidad (Golpe bajo), racial (Furia sangrienta) o abalorio (Barov's Peasant Caller). Hasta entonces el rival se queda quieto: sin girar el personaje y sin trampas. Se pueden activar antes cosas como Intimidar, sin estorbar la apertura. Tienen 25 s; si tardan más, pierden el derecho.",
+     "Contra ellos: quieto, con tus 4 tótems ya puestos (Piel de piedra en vez de Temblor: el Pícaro no tiene miedos), y reacciona después de su apertura."
     ],
     [
      "Druida cuenta como sigilo",
@@ -234,9 +239,9 @@
      null
     ],
     [
-     "Prohibido antes de empezar",
-     "Sanadores: nada de curas en el tiempo (HoT) antes del duelo. Cazadores: trampas solo cuando la cuenta llega a 0 y el rival es hostil. Brujos: no sacrificar al demonio antes.",
-     "Tú no curas por adelantado: Corriente de sanación es un tótem y sí vale."
+     "Prohibido y permitido antes de empezar",
+     "Sanadores: nada de curas en el tiempo (HoT) antes del duelo, pero el Sacerdote sí puede ponerse Palabra de poder: escudo. Cazadores: trampas solo cuando la cuenta llega a 0 y el rival es hostil. Brujos: no sacrificar al demonio antes.",
+     "El Sacerdote empezará con escudo: abre con Purgar o con Choque de tierra cuando lo quite. Tu Corriente de sanación es un tótem y sí vale."
     ],
     [
      "Aperturas no garantizadas",
@@ -358,6 +363,13 @@
   }
  ],
  "changes": [
+  "6 oct: prohibidos Bomba de destello, Student Fodder, objetos no equipables que invocan mascotas, Arco del Buscaverdades, Armadura de vástago verde y Carga de zapador goblin.",
+  "6 oct: los abalorios y equipables que invocan mascota (Silbato de perro) sí valen.",
+  "6 oct: transfiguración desactivada durante el torneo.",
+  "6 oct: puedes bufarte con objetos y consumibles antes del duelo si no son de otras clases.",
+  "6 oct: el Sacerdote puede empezar con Palabra de poder: escudo (los HoT siguen prohibidos).",
+  "6 oct: la apertura del sigilo incluye raciales y abalorios; el rival quieto y sin girarse.",
+  "6 oct: si el campeón es de tu clase, el premio de esa clase va al segundo mejor de ella.",
   "La inscripción se cerró el 2 oct a las 19:00 (antes era el 4) por la cantidad de gente; se habla de unas 4.000 personas.",
   "Horario oficial: del 17 oct a las 19:00 al 18 oct a medianoche (hora de España). El formato de la clasificatoria aún no está publicado.",
   "Hermandad <The Forever Open IV>, con admins nuevos que invitan.",
