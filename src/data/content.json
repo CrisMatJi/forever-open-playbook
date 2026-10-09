@@ -638,15 +638,15 @@
   ],
   [
    "16 oct",
-   "Envía tu build (24 h antes)."
+   "Deja decidida la build: se envía en el check-in del 17 y no se cambia."
   ],
   [
    "17 oct",
-   "Check-in por la mañana en Raider.IO y 15 g. Clasificatoria desde las 19:00 (hora de España)."
+   "Check-in de 16:00 a 17:00 (hora de España) en el Event Hub de Raider.IO: build + 15 g. Clasificatoria desde las 19:00: suizo de 6 rondas."
   ],
   [
    "18 oct",
-   "Final, hasta medianoche: top 4 por clase, al mejor de 5."
+   "Final hasta medianoche: los 36 (top 4 por clase) en doble eliminación al mejor de 3; gran final al mejor de 5."
   ]
  ],
  "GUIDE": [
@@ -767,15 +767,15 @@
    "when": "16-17 oct",
    "title": "Semana del torneo",
    "items": [
-    "<b>16 oct</b>: envía tu build (Mejora 0/26/0). Es 24 h antes de la fase y no se cambia después.",
+    "<b>Build</b>: la de la clasificatoria se envía en el propio check-in del 17 (Mejora 0/26/0) y no se cambia después.",
     "Practica duelos contra Brujo, Sacerdote, Pícaro y Mago con los planes de la tabla de abajo.",
-    "<b>17 oct por la mañana</b>: check-in en Raider.IO (sin check-in pierdes la plaza), 15 g de entrada y personaje a nivel 30. Conéctate con margen: quien no está a su hora es sustituido.",
+    "<b>17 oct, de 16:00 a 17:00 (hora de España)</b>: check-in en el Event Hub de Raider.IO. Eliges personaje, envías la build, confirmas y pagas 15 g en el juego a un admin. Sin check-in no juegas y no hay check-in tarde.",
     "<b>Solo tus propios buffs</b>: nada de buffs de otros jugadores, de campamento ni del mundo. Escudo de relámpagos, arma imbuida y comida propia.",
     "Stream encendido antes de la primera inspección.",
     "En cada duelo: sobre la bandera, 10 yd atrás, quieto hasta que empiece. No huyas del área y no fuerces huidas.",
     "Conexión estable: como máximo <b>3 minutos desconectado</b> en total. No salgas de la zona de duelo ni para reparar.",
-    "Si pasas a la final, envía la build de la final (si la cambias) como tarde el 17: son 24 h antes del 18.",
-    "Coloca tus <b>4 tótems antes de empezar</b> (está permitido para Chamanes) según el rival.",
+    "Si pasas a la final, envía la build de la final antes de las <b>8:00 del 18 oct</b> (hora de España).",
+    "Coloca tus <b>4 tótems antes de empezar</b> según el rival. <b>Contra Pícaro, Druida o Guerrero</b> no puede haber tótems que estorben su apertura: pon solo los pasivos y el resto después de que abran.",
     "Entre duelos tienes <b>1 minuto</b> como máximo: come y bebe en cuanto termine cada duelo.",
     "Contra Pícaro, Druida o Guerrero: tienen apertura libre. Quédate quieto y sin girar hasta que abran."
    ],

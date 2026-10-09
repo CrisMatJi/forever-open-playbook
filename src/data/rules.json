@@ -1,5 +1,5 @@
 {
- "updated": "6 oct 2026",
+ "updated": "8 oct 2026",
  "sections": [
   {
    "id": "fechas",
@@ -8,12 +8,12 @@
    "rules": [
     [
      "Calendario",
-     "Inscripción del 27 sep al 2 oct a las 19:00 (hora de España): se adelantó por la cantidad de gente. Check-in la mañana del 17. Torneo del 17 oct a las 19:00 al 18 oct a medianoche (17:00 UTC a 22:00 UTC).",
+     "Inscripción cerrada el 2 oct. Check-in el 17 oct de 16:00 a 17:00. Clasificatoria el 17 desde las 19:00 y final el 18 hasta medianoche (todo en hora de España).",
      "Si no te inscribiste antes del 2 oct a las 19:00, ya no entras."
     ],
     [
      "Bolsa de $100.000",
-     "El campeón absoluto se lleva $50.000. Los otros $50.000 se reparten a partes iguales entre el mejor de cada clase: $5.555 por clase. Si el campeón es de tu clase, los $5.555 de esa clase pasan al segundo mejor de ella. Si hay empate en una clase, se divide.",
+     "El campeón se lleva $50.000. Los otros $50.000 se reparten entre el mejor de cada una de las 9 clases ($5.555 por clase). Si el campeón es además el mejor de su clase, el premio de esa clase pasa al siguiente mejor clasificado de ella. Empates en una clase: se divide.",
      "Ser el mejor Chamán ya son $5.555, aunque no ganes. Y si gana un Chamán, el premio de clase te lo llevas tú si eres el siguiente."
     ],
     [
@@ -76,19 +76,29 @@
    "icon": "achievement_arena_2v2_7",
    "rules": [
     [
-     "Fase 1 · Subida (27 sep - 17 oct)",
-     "Cada uno sube su personaje. La mañana del 17 oct hay check-in online en Raider.IO; sin check-in pierdes la plaza.",
-     "Pon una alarma para el check-in del 17 por la mañana."
+     "Check-in · 17 oct, 16:00-17:00",
+     "En el TFO Event Hub con tu cuenta de Raider.IO: 1) eliges un solo personaje inscrito, 2) envías la build de la clasificatoria, 3) confirmas personaje y build, 4) pagas 15 g en el juego a un admin con ese personaje, 5) terminas las confirmaciones. Después no se cambia nada y no hay check-in tarde.",
+     "Es por la tarde en hora de España (7:00-8:00 de la costa oeste de EE. UU.). Pon alarma a las 15:45, con 15 g y la build decidida."
     ],
     [
-     "Fase 2 · Clasificatoria (17 oct)",
-     "Juegan los inscritos con check-in, a nivel 30 y que paguen 15 g de entrada. El formato se publica al menos una semana antes.",
-     "Lleva 15 g de sobra en el personaje."
+     "Clasificatoria · suizo de 6 rondas",
+     "Te asignan a un grupo (pod) equilibrado y juegas 6 rondas de sistema suizo: victoria 3 puntos, empate 1, derrota 0 (máximo 18). Si hace falta, ronda 6.5 de reemplazo y desempates entre jugadores de la misma clase.",
+     "En el suizo te emparejan con gente de tu misma puntuación: perder la primera no te elimina."
     ],
     [
-     "Fase 3 · Final (18 oct)",
-     "Pasan los 4 mejores de cada clase. Series al mejor de 5 duelos.",
-     "Compites contra los de tu clase por la plaza: una clase menos jugada es más fácil."
+     "Quién pasa",
+     "Los 4 mejores de cada clase (36 en total), ordenados por puntos y luego por victorias. Si hay empate: Buchholz (puntos de tus rivales) y, si sigue, duelo espejo entre los empatados. Si más de 4 van 6-0, no se usa Buchholz: van directos al espejo.",
+     "Compites contra los demás Chamanes por la plaza: probablemente haga falta 5-1 o mejor. Prepara el espejo contra Chamán."
+    ],
+    [
+     "Tiempo agotado en la clasificatoria = empate",
+     "Si un duelo de la clasificatoria se agota, es empate (1 punto para cada uno). En la final se repite, con tope de 3 de comida y 3 de agua.",
+     "Un empate vale poco: busca ganar, sobre todo contra sanadores."
+    ],
+    [
+     "Final · 18 oct",
+     "Los 36 se sortean en un cuadro de doble eliminación al mejor de 3. El cuadro de perdedores es al mejor de 1 y la gran final al mejor de 5. El ganador es \"Death's Duelist\".",
+     "En el cuadro de perdedores te juegas todo a un duelo."
     ],
     [
      "Puntualidad",
@@ -103,9 +113,9 @@
    "icon": "ability_marksmanship",
    "rules": [
     [
-     "Build enviada con 24 h",
-     "Tienes que enviar tu build al menos 24 h antes de cada fase. Si no la envías, quedas fuera de esa fase.",
-     "Clasificatoria el 17 → envíala como tarde el 16. Final el 18 → como tarde el 17."
+     "Envío de la build",
+     "La build de la clasificatoria se envía en el propio check-in. La de la final, antes de las 8:00 del 18 oct (1:00 hora central de EE. UU.). Si no la envías a tiempo, puedes quedar descalificado.",
+     "Una sola build por fase, y tus talentos deben coincidir con ella en cualquier inspección."
     ],
     [
      "Una build por fase",
@@ -215,8 +225,8 @@
    "rules": [
     [
      "Chamán: 4 tótems al empezar",
-     "Los Chamanes pueden tener hasta 4 tótems puestos al empezar el duelo.",
-     "Es tu gran ventaja: empieza con Temblor o Piel de piedra, Derribo, Corriente de sanación y uno de fuego ya colocados. Mira Mi gameplay."
+     "Los Chamanes pueden tener hasta 4 tótems puestos al empezar. Pero contra clases con apertura libre (Pícaro, Druida o Guerrero) no se permiten al empezar los tótems que estorbarían su apertura: esos solo se ponen después de que abran.",
+     "Contra Pícaro, Druida o Guerrero empieza solo con los pasivos (Piel de piedra o Fuerza de la Tierra, Corriente de sanación). Nada de Nexo terrestre, Garra de piedra, Derribo ni tótems de fuego que peguen o pulsen: después de su apertura. Si dudas de alguno, pregúntale al admin antes del duelo."
     ],
     [
      "Pícaro y Druida: apertura libre",
@@ -277,7 +287,7 @@
     ],
     [
      "Tiempo muerto",
-     "Si el duelo se agota, nadie gana: se repite, y el resto de ese cruce tiene un tope de 3 de comida y 3 de agua por jugador.",
+     "En la clasificatoria, un duelo agotado es empate. En la final se repite, con tope de 3 de comida y 3 de agua para el resto del cruce.",
      "En duelos largos pesa más el maná."
     ],
     [
@@ -287,7 +297,7 @@
     ],
     [
      "Huir o hacer huir",
-     "Huir a propósito del duelo es descalificación y pérdida del premio. Forzar la huida del rival (encadenar miedos en el borde) también.",
+     "Huir a propósito puede acabar en revancha, victoria o derrota asignada, descalificación o pérdida del premio, a criterio de los admins. Forzar la huida del rival (encadenar miedos en el borde) puede costar derrota asignada, descalificación o premio. Los casos dudosos los revisa la organización.",
      "Cuidado con Miedo y Grito psíquico cerca de la línea."
     ],
     [
@@ -363,6 +373,11 @@
   }
  ],
  "changes": [
+  "8 oct: check-in el 17 de 16:00 a 17:00 (hora de España) en el Event Hub de Raider.IO, con build y 15 g.",
+  "8 oct: clasificatoria con sistema suizo de 6 rondas (3/1/0 puntos); pasan los 4 mejores de cada clase.",
+  "8 oct: final en doble eliminación al mejor de 3; perdedores al mejor de 1; gran final al mejor de 5.",
+  "8 oct: contra Pícaro, Druida o Guerrero, el Chamán no puede empezar con tótems que estorben su apertura.",
+  "8 oct: duelo agotado en la clasificatoria = empate. Build de la final antes de las 8:00 del 18.",
   "6 oct: prohibidos Bomba de destello, Student Fodder, objetos no equipables que invocan mascotas, Arco del Buscaverdades, Armadura de vástago verde y Carga de zapador goblin.",
   "6 oct: los abalorios y equipables que invocan mascota (Silbato de perro) sí valen.",
   "6 oct: transfiguración desactivada durante el torneo.",
