@@ -1,0 +1,2356 @@
+{
+ "build_checked": "Beta 1.60.1.70425 (talentsforever) / 1.60.1.70532 del 22-oct (foreverchanges.pro). El beta tenía tope de nivel 30, así que los datos de mazmorras >30 son en gran parte de Classic Era o salen de datamining. Consultado el 2026-10-25.",
+ "sources": [
+  "https://us.forums.blizzard.com/en/wow/t/2360696/5 (Kaivax, WoW Forever Beta Development Notes, 8 oct, actualizado 15 oct)",
+  "https://www.warcrafttavern.com/forever/news/level-30-content-is-now-available-in-the-wow-forever-beta/ (notas del 1 oct)",
+  "https://www.warcrafttavern.com/forever/news/city-of-dalaran-dungeon-legacy-points-now-live-in-the-wow-forever-beta/",
+  "https://www.warcrafttavern.com/news/nine-new-dungeons-coming-to-world-of-warcraft-forever/",
+  "https://www.warcrafttavern.com/forever/guides/dungeons/",
+  "https://www.wowhead.com/forever/guide/dungeons-overview-locations-details",
+  "https://nether.wowhead.com/forever/tooltip/item/<ID>?dataEnv=27&locale=0 (todos los iconos y estadísticas de objetos con verified=true)",
+  "https://foreverchanges.pro/dungeons (y una página por mazmorra: misiones, recompensas e IDs)",
+  "https://www.method.gg/wow-forever/dungeons (guías de las 10 primeras mazmorras con IDs de Wowhead Forever)",
+  "https://www.icy-veins.com/wow-forever/deadmines-guide",
+  "https://wowtbc.gg/warcraftforever/loot-tables/dungeons/razorfen-kraul/",
+  "https://mobalytics.gg/wow-forever/profile/phaseshifter/dungeons/gnomeregan-bosses-loot-and-quests",
+  "https://www.warcrafttavern.com/forever/guides/gnomeregan/",
+  "https://kami-labs.fr/en/donjons-raids-wow-forever/",
+  "https://kami-labs.fr/en/wow-classic/wow-forever-classic-plus-4-novembre/",
+  "https://kami-labs.fr/en/wow-forever/fin-de-la-beta-wow-forever/",
+  "https://seemeta.com/es/wow-forever/zones (nombres en español de las mazmorras nuevas)",
+  "https://talentsforever.com/ (número de build)",
+  "ForeverHispano: buscado, pero no apareció en los resultados. No se ha usado."
+ ],
+ "cap_note": "El tope es nivel 60 desde el lanzamiento, así que desde la Alianza puedes llegar a las 35 mazmorras de la lista (26 de Classic y 9 nuevas). La beta solo llegó a nivel 30: de las mazmorras nuevas de nivel alto (Drowned City, Krol'dok Stronghold, Alcaz Prison, Blackmaw Hold y Shaper's Terrace) aún no se conocen jefes ni botín, y el botín de Classic por encima de nivel 45 puede cambiar. El buscador de grupo no teletransporta: hay que viajar o usar las piedras de invocación.",
+ "dungeons": [
+  {
+   "name": "The Hall of Thanes",
+   "name_es": "Salón de los Feudales",
+   "levels": "13-18 (Blizzard); method.gg pone 13-20; las misiones se pueden coger desde nivel 9",
+   "classic_levels": null,
+   "zone": "Forjaz (Dun Morogh), Viejo Forjaz bajo la Gran Sede (aprox. 43,51)",
+   "alliance_access": "La más cómoda para la Alianza: la entrada está dentro de Forjaz, subiendo por la Gran Sede, la sala del rey Magni. Los enanos y gnomos la tienen al lado. Los humanos pueden ir en el Tranvía Subterráneo desde Ventormenta. Los elfos de la noche: barco de Darnassus/Auberdine a Ventormenta y luego el Tranvía.",
+   "new_or_changed": "Mazmorra NUEVA de Forever. Unos enanos Hierro Negro saquean las tumbas reales enanas (fantasmas, elementales de fuego y gólems). 4 jefes. El botín es todo nuevo (ilvl 18, nivel requerido 13).",
+   "quests": [
+    {
+     "name": "Old Ironforge Incursion (96393)",
+     "level": 16,
+     "giver": "Earthseer Farsen, Dun Morogh",
+     "reward": "A elegir: Calibrated Blunderbuss (279894, arma de fuego), Ironforge Greathammer (279895) o Deepblaze (279896); 3.200 PX",
+     "worth": "Sí. Es la misión principal (traer la cabeza de Durgen) y da un arma azul."
+    },
+    {
+     "name": "The Restless Dead (96394)",
+     "level": 15,
+     "giver": "Afadra Dunwall, Forjaz",
+     "reward": "Dusty Belt (279897) o Cryptwalker Bracers (280095); 2.300 PX",
+     "worth": "Sí, se hace sola mientras limpias los fantasmas."
+    },
+    {
+     "name": "Important Heirlooms (96403)",
+     "level": 15,
+     "giver": "Thom Filch, Forjaz",
+     "reward": "Dwarven Tome (279898) o Tomb Robber's Gloves (280096); 2.950 PX",
+     "worth": "Sí. Hay que recoger 8 Dwarven Heirloom por la mazmorra."
+    },
+    {
+     "name": "An Ancient Grudge (96395)",
+     "level": 15,
+     "giver": "Ghostly Attendant, dentro de la mazmorra",
+     "reward": "Catacomb Cloak (279899) o Deepgrave Trousers (279900); 2.300 PX",
+     "worth": "Sí: matar a Faldrim, el primer jefe."
+    },
+    {
+     "name": "The Treaty of Understanding (98423)",
+     "level": 16,
+     "giver": "Objeto tras la puerta de la cámara final; se entrega al rey Magni Bronzebeard en Forjaz",
+     "reward": "2.550 PX (sin objeto)",
+     "worth": "Sí, es PX gratis y la entrega está en la misma ciudad."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Durgen's Crescent Axe",
+     "id": 270256,
+     "icon": "inv_axe_18",
+     "slot": "Mano principal, hacha (+4 Fue, 2,40 vel.)",
+     "boss": "Durgen Dirgehammer",
+     "for": "Guerrero, paladín, chamán (mejora)",
+     "verified": true
+    },
+    {
+     "name": "Golemheart Stave",
+     "id": 270228,
+     "icon": "inv_staff_18",
+     "slot": "Bastón 2M (+18 daño/sanación con hechizos)",
+     "boss": "Plunder",
+     "for": "Mago, brujo, sacerdote, druida",
+     "verified": true
+    },
+    {
+     "name": "Robes of the Disgraced Thane",
+     "id": 270261,
+     "icon": "inv_chest_cloth_09",
+     "slot": "Pecho, tela (+8 daño/sanación con hechizos)",
+     "boss": "Durgen Dirgehammer",
+     "for": "Mago, brujo, sacerdote",
+     "verified": true
+    },
+    {
+     "name": "Flamefist Grips",
+     "id": 270231,
+     "icon": "inv_gauntlets_25",
+     "slot": "Manos, cuero (+5 Agi, +5 Esp)",
+     "boss": "Magmatus",
+     "for": "Pícaro, druida feral",
+     "verified": true
+    },
+    {
+     "name": "Spiritwraith Drape",
+     "id": 271097,
+     "icon": "inv_misc_cape_12",
+     "slot": "Espalda (+3 Agi, +4 Esp)",
+     "boss": "Faldrim Anvilmar",
+     "for": "Cualquiera (capa temprana)",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Recorrido lineal: Faldrim Anvilmar (fantasma, Mind Blast y maldición; patrulla entre no-muertos, así que tíralo solo) → Magmatus (mata primero al Dark Iron Summoner mientras el tanque aleja al elemental) → Plunder (Knock Away: tanquéalo de espaldas a una pared para que no te lance a otro grupo) → Durgen (miedo de 8 s y Rend; mata antes a los Looters y deja los gólems para el final).",
+    "Los Dark Iron Summoners lanzan Bolas de fuego muy fuertes e invocan elementales: interrúmpelos o tíralos con línea de visión. Los Engineers tiran bombas al objetivo con más amenaza; sal del área.",
+    "Duración: unos 20-25 min (estimación). Las 5 misiones de Alianza dan unas 13.300 PX en total."
+   ],
+   "priority": "must: es la primera mazmorra de la Alianza, está en la capital, tiene 5 misiones y botín azul nuevo. Ideal entre los niveles 14 y 17."
+  },
+  {
+   "name": "Ruins of Lordaeron",
+   "name_es": "Ruinas de Lordaeron",
+   "levels": "15-20 (Blizzard); method.gg pone 15-22",
+   "classic_levels": null,
+   "zone": "Claros de Tirisfal, sobre Entrañas",
+   "alliance_access": "Está en territorio Horda. Ruta de method.gg: barco de Ventormenta a Auberdine, luego Auberdine–Puerto de Menethil, quedándote en ese barco hasta Costasur (ruta nueva de Forever). De ahí, a pie por el Bosque de Argénteos hasta Tirisfal (esta parte no la detalla la fuente). Hay riesgo de guardias en zona PvP. Lo mejor es que un brujo os invoque a la piedra de encuentro.",
+   "new_or_changed": "Mazmorra NUEVA. Los Renegados recuperan la ciudad. 6 jefes: Witherfang, The Baron, Viktor the Vile, The Abandoned, Bjork y Rath'mael.",
+   "quests": [
+    {
+     "name": "Abominable Creatures (95250)",
+     "level": 21,
+     "giver": "Captain Truman, justo dentro de la entrada",
+     "reward": "Monstrous Cleaver (279864), Grave Shroud (279865) o Slain Baron's Signet (279867); 3.900 PX",
+     "worth": "Sí, se coge dentro."
+    },
+    {
+     "name": "Bloodied Insignia (95195)",
+     "level": 22,
+     "giver": "Empieza con el objeto Bloodied Insignia (de los esqueletos); se entrega al General Marcus Jonathan en Ventormenta",
+     "reward": "Duty Bound Leggings (279868) o Remembrance Armor (279869) + 45 pp; 6.200 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "Crest of Lordaeron (95189)",
+     "level": 22,
+     "giver": "Objeto en el suelo (aparece en varios sitios: torre cerca de Bjork o templete); se entrega a Lady Dena Kennedy en Ventormenta",
+     "reward": "Small Sack of Gems (280567); 6.200 PX",
+     "worth": "Sí, si lo encuentras."
+    },
+    {
+     "name": "Remember That I Love You (92415)",
+     "level": 22,
+     "giver": "Objeto Blood-Stained Letter; se entrega a Orphan Matron Nightingale en Ventormenta",
+     "reward": "Tarnished Locket (279870); 6.200 PX",
+     "worth": "Sí."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Vileblood Scimitar",
+     "id": 271218,
+     "icon": "inv_sword_16",
+     "slot": "Espada 1M",
+     "boss": "Viktor the Vile",
+     "for": "Paladín, guerrero, pícaro",
+     "verified": true
+    },
+    {
+     "name": "Coldspire Staff",
+     "id": 271215,
+     "icon": "inv_staff_07",
+     "slot": "Bastón 2M (+32 daño de Escarcha)",
+     "boss": "Rath'mael",
+     "for": "Mago de Escarcha",
+     "verified": true
+    },
+    {
+     "name": "Bloodied Chestwraps",
+     "id": 271212,
+     "icon": "inv_misc_bandage_14",
+     "slot": "Pecho, cuero (+7 Agi, +9 Esp)",
+     "boss": "Viktor the Vile",
+     "for": "Pícaro, druida",
+     "verified": true
+    },
+    {
+     "name": "Mirror of Rath'mael",
+     "id": 271213,
+     "icon": null,
+     "slot": "Escudo",
+     "boss": "Rath'mael",
+     "for": "Paladín, chamán, guerrero tanque",
+     "verified": false
+    }
+   ],
+   "tips": [
+    "Coge todas las misiones posibles antes de ir: 3 empiezan con objetos que caen dentro y se entregan en Ventormenta.",
+    "Las 4 misiones de Alianza dan unas 22.500 PX, más o menos 1,5 niveles a nivel 15.",
+    "El viaje es largo y peligroso. Para un Alianza merece la pena solo si encuentras grupo cerca o un brujo que invoque."
+   ],
+   "priority": "good: el botín y la PX son buenos, pero el acceso es incómodo. Si vas justo de tiempo, la Mina de la Muerte y el Salón de los Feudales salen más a cuenta."
+  },
+  {
+   "name": "The Deadmines",
+   "name_es": "Las Minas de la Muerte",
+   "levels": "17-26 (Forever, method.gg/icy-veins/foreverchanges); warcrafttavern pone 15-22",
+   "classic_levels": "17-26 (Group Finder de Classic Era); 18-23 en la vanilla original",
+   "zone": "Páramos de Poniente, Arroyoluna",
+   "alliance_access": "Vuela a la Colina del Centinela (Páramos de Poniente) y baja al sur hasta Arroyoluna. La entrada está en la casa/cueva junto a la herrería. Piedra de encuentro en la entrada. Los elfos de la noche cogen el barco de Auberdine a Ventormenta.",
+   "new_or_changed": "Botín renovado: hay objetos nuevos como Ogre Loincloth, Dull Sawblade, Goblin Hammer, First Mate Band (284715) y Lookie's Spyglass (273298), y los bichos normales sueltan piezas nuevas. Hay una misión nueva, 'Destruction in Deadmines' (92753). Varias recompensas de misión tienen opciones nuevas (IDs 270xxx).",
+   "quests": [
+    {
+     "name": "The Defias Brotherhood (166)",
+     "level": 22,
+     "giver": "Gryan Stoutmantle, Colina del Centinela",
+     "reward": "Chausses of Westfall (6087), Tunic of Westfall (2041) o Staff of Westfall (2042); 6.200 PX",
+     "worth": "Imprescindible: es la cadena clásica que acaba con VanCleef."
+    },
+    {
+     "name": "Underground Assault (2040)",
+     "level": 20,
+     "giver": "Shoni the Shilent, Ventormenta (Distrito de los Enanos)",
+     "reward": "Polar Gauntlets (7606), Sable Wand (7607), Bravo's Armbands (270015) o Dreamer's Leggings (270016); 3.700 PX",
+     "worth": "Sí. La varita es muy buena para los que usan tela."
+    },
+    {
+     "name": "Red Silk Bandanas (214)",
+     "level": 17,
+     "giver": "Scout Riell, Colina del Centinela",
+     "reward": "Solid Shortblade (2074), Scrimshaw Dagger (2089), Piercing Axe (6094) o Monastic Hammer (270005); 2.950 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "Destruction in Deadmines (92753 → 92819)",
+     "level": 18,
+     "giver": "Alba Fairmoon, Colina del Centinela (empieza con Testing the Wells)",
+     "reward": "PX (2.700 + 675)",
+     "worth": "Sí, es nueva y no cuesta nada."
+    },
+    {
+     "name": "Collecting Memories (168) / Oh Brother... (167)",
+     "level": 18,
+     "giver": "Wilder Thistlenettle, Ventormenta",
+     "reward": "167: Miner's Revenge (1893), Miner's Workgloves (270012) o Miner's Workboots (270013)",
+     "worth": "Sí. Se hacen en la parte de la cueva que no es instancia."
+    },
+    {
+     "name": "The Unsent Letter (373) → The Stockade Riots (391)",
+     "level": 22,
+     "giver": "Carta que suelta VanCleef; se entrega en Ventormenta y abre la misión de Las Mazmorras",
+     "reward": "PX; desbloquea Las Mazmorras",
+     "worth": "Sí."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Cruel Barb",
+     "id": 5191,
+     "icon": "inv_sword_24",
+     "slot": "Espada 1M (+12 PA)",
+     "boss": "Edwin VanCleef",
+     "for": "Pícaro, guerrero, paladín",
+     "verified": true
+    },
+    {
+     "name": "Emberstone Staff",
+     "id": 5201,
+     "icon": "inv_staff_13",
+     "slot": "Bastón 2M (+24 daño/sanación)",
+     "boss": "Captain Greenskin",
+     "for": "Mago, brujo, sacerdote, druida",
+     "verified": true
+    },
+    {
+     "name": "Blackened Defias Armor",
+     "id": 10399,
+     "icon": "inv_chest_leather_08",
+     "slot": "Pecho, cuero (conjunto Defias)",
+     "boss": "Edwin VanCleef",
+     "for": "Pícaro, druida",
+     "verified": true
+    },
+    {
+     "name": "Rockslicer",
+     "id": 872,
+     "icon": "inv_throwingaxe_01",
+     "slot": "Hacha 2M (+7 Fue)",
+     "boss": "Rhahk'Zor",
+     "for": "Guerrero, paladín",
+     "verified": true
+    },
+    {
+     "name": "Cape of the Brotherhood",
+     "id": 5193,
+     "icon": "inv_misc_cape_08",
+     "slot": "Espalda (+5 Agi)",
+     "boss": "Edwin VanCleef",
+     "for": "Pícaro, cazador, druida",
+     "verified": true
+    },
+    {
+     "name": "Lookie's Spyglass",
+     "id": 273298,
+     "icon": "inv_misc_spyglass_01",
+     "slot": "Abalorio (curiosidad: catalejo)",
+     "boss": "Cookie",
+     "for": "Colección / divertido",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Orden: Rhahk'Zor → (Miner Johnson, raro) → Sneed y su Trituradora → Gilnid → Mr. Smite → Captain Greenskin → VanCleef. Cookie, en el barco, se suele dejar para el final.",
+    "Peligros: los Defias Evokers lanzan Flamestrike (interrumpe o sal del área). Mr. Smite aturde al grupo al 66% y al 33%, así que mata antes a los dos Blackguards. Si aturdes a VanCleef cuando baja del 50%, no invoca adds.",
+    "A Cookie, aléjalo del barco e interrumpe Cookie's Cooking, que lo cura.",
+    "Duración: 20-30 min (method.gg)."
+   ],
+   "priority": "must: es la mazmorra icónica de la Alianza, tiene 6-7 misiones y muy buen botín para su nivel."
+  },
+  {
+   "name": "Wailing Caverns",
+   "name_es": "Cuevas de los Lamentos",
+   "levels": "17-24 (foreverchanges); method.gg pone 15-24",
+   "classic_levels": "17-24",
+   "zone": "Los Baldíos, Oasis Olvidado",
+   "alliance_access": "Lejos. Opción 1: barco de Puerto de Menethil a Theramore y de ahí andando hacia Trinquete. Opción 2: Bahía del Botín y el barco a Trinquete. Luego al oeste por los Baldíos (zona Horda, cuidado con los guardias). La piedra de encuentro está en la loma de encima de la cueva.",
+   "new_or_changed": "Botín parcialmente nuevo: Snake Eye Kaleidoscope (273088), Cloak of Hermitic Bliss (273084), Slither Cord (273089) y Skum's Bucket (273137). Algunas recompensas nuevas en misiones de Horda. Fix del beta: las Serpentbloom Snakes desaparecen a los pocos minutos.",
+   "quests": [
+    {
+     "name": "Deviate Hides (1486)",
+     "level": 17,
+     "giver": "Nalpak, en la cueva de la entrada",
+     "reward": "Deviate Hide Pack (918) o Slick Deviate Leggings (6480); 3.100 PX",
+     "worth": "Sí, aunque puede requerir dos pasadas."
+    },
+    {
+     "name": "Deviate Eradication (1487)",
+     "level": 21,
+     "giver": "Ebru, en la cueva de la entrada",
+     "reward": "Patrón Deviate Scale Belt (6476), Sizzle Stick (8071) o Dagmire Gauntlets (6481); 4.000 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "Smart Drinks (1491)",
+     "level": 18,
+     "giver": "Mebok Mizzyrix, Trinquete (tras Raptor Horns)",
+     "reward": "PX 2.650",
+     "worth": "Solo si ya estás en Trinquete."
+    },
+    {
+     "name": "Trouble at the Docks (959)",
+     "level": 18,
+     "giver": "Crane Operator Bigglefuzz, Trinquete",
+     "reward": "PX 2.650",
+     "worth": "Sí, si pasas por Trinquete."
+    },
+    {
+     "name": "The Glowing Shard (6981) → In Nightmares (3369)",
+     "level": 26,
+     "giver": "Fragmento que suelta Mutanus; se termina con Mathrengyl Bearwalker en Darnassus",
+     "reward": "Talbar Mantle (10657) o Quagmire Galoshes (10658); 5.150 PX",
+     "worth": "Sí."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Living Root",
+     "id": 6631,
+     "icon": "inv_staff_25",
+     "slot": "Bastón 2M (+45 sanación)",
+     "boss": "Verdan the Everliving",
+     "for": "Sacerdote, druida, chamán (sanadores)",
+     "verified": true
+    },
+    {
+     "name": "Mutant Scale Breastplate",
+     "id": 6627,
+     "icon": "inv_chest_plate08",
+     "slot": "Pecho, malla (+10 Fue)",
+     "boss": "Mutanus the Devourer",
+     "for": "Guerrero, paladín, cazador, chamán",
+     "verified": true
+    },
+    {
+     "name": "Armor of the Fang",
+     "id": 6473,
+     "icon": "inv_shirt_16",
+     "slot": "Pecho, cuero (conjunto del Colmillo)",
+     "boss": "Lord Pythas",
+     "for": "Druida, pícaro",
+     "verified": true
+    },
+    {
+     "name": "Venomstrike",
+     "id": 6469,
+     "icon": "inv_weapon_bow_10",
+     "slot": "Arco",
+     "boss": "Lord Serpentis",
+     "for": "Cazador",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "No es lineal: Lady Anacondra → Kresh → Lord Cobrahn → (Deviate Faerie Dragon, raro) → Lord Pythas → Skum → Lord Serpentis → Verdan → escolta de Disciple of Naralex hasta Mutanus.",
+    "Interrumpe el Druid's Slumber de los Druidas del Colmillo (duermen al sanador). Verdan pega muy fuerte al tanque.",
+    "Para la escolta final, limpia antes la mazmorra. Duración: 30-40 min."
+   ],
+   "priority": "good: el botín es bueno, pero para la Alianza el viaje es caro y no hay misiones exclusivas. Vale si te pilla por Theramore o un brujo os invoca."
+  },
+  {
+   "name": "Shadowfang Keep",
+   "name_es": "Castillo de Colmillo Oscuro",
+   "levels": "22-30 (foreverchanges); method.gg pone 20-30",
+   "classic_levels": "22-30",
+   "zone": "Bosque de Argénteos",
+   "alliance_access": "Lejos y en territorio Horda. Hay una ruta nueva de barco: el barco de Auberdine para en Costasur (method.gg). Desde Costasur, al norte por las Laderas de Trabalomas hasta el Bosque de Argénteos. Alternativa clásica: Puerto de Menethil → Laderas → Bosque de Argénteos. Mejor con invocación de brujo.",
+   "new_or_changed": "Botín parcialmente nuevo: Sorcerer Collar, Cell-Keeper's Claws, Blade of Silverlaine, Worgenbane Talisman (273643), Blindwatcher's Sight, Half-Eaten Boots y Worgpelt Leggings. El Black Tome que hay en la sala de Arugal sirve para desbloquear el jefe secreto de Dalaran.",
+   "quests": [
+    {
+     "name": "The Test of Righteousness (1654)",
+     "level": 20,
+     "giver": "Tome of Valor, Catedral de Ventormenta → Jordan Stillwell (Forjaz)",
+     "reward": "Verigan's Fist (cadena del martillo del paladín)",
+     "worth": "Solo paladines: imprescindible."
+    },
+    {
+     "name": "The Orb of Soran'ruk (1740)",
+     "level": 20,
+     "giver": "Doan Karhan, cerca de Campamento Taurajo (Los Baldíos)",
+     "reward": "Orb/Staff of Soran'ruk",
+     "worth": "Solo brujos, y opcional."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Meteor Shard",
+     "id": 6220,
+     "icon": "inv_weapon_shortblade_25",
+     "slot": "Daga 1M (proc de Fuego)",
+     "boss": "Archmage Arugal",
+     "for": "Pícaro",
+     "verified": true
+    },
+    {
+     "name": "Haunting Blade",
+     "id": 6641,
+     "icon": "inv_sword_17",
+     "slot": "Espada 2M (en Forever lleva +33 sanación)",
+     "boss": "Deathsworn Captain (raro)",
+     "for": "Paladín sacro (curioso)",
+     "verified": true
+    },
+    {
+     "name": "Odo's Ley Staff",
+     "id": 6318,
+     "icon": "inv_staff_27",
+     "slot": "Bastón 2M (+52 sanación)",
+     "boss": "Odo the Blindwatcher",
+     "for": "Sacerdote, druida, chamán",
+     "verified": true
+    },
+    {
+     "name": "Worgenbane Talisman",
+     "id": 273643,
+     "icon": "inv_jewelry_talisman_06",
+     "slot": "Abalorio (2 maná/5 s; aturde huargos)",
+     "boss": "Commander Springvale",
+     "for": "Lanzadores",
+     "verified": true
+    },
+    {
+     "name": "Fenrus' Hide",
+     "id": 6340,
+     "icon": "inv_misc_pelt_wolf_02",
+     "slot": "Espalda",
+     "boss": "Fenrus the Devourer",
+     "for": "Físicos",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Orden: Rethilgore → Razorclaw → Baron Silverlaine (Veil of Shadow: -75% de sanación recibida) → Commander Springvale → Odo → (Deathsworn Captain) → Fenrus → Wolf Master Nandos → Arugal.",
+    "Mata primero a los Lupine Horrors (invocan más bichos). Interrumpe a los Wailing Guardsmen (silencian). Contra Arugal, rompe la línea de visión durante Void Bolt.",
+    "No te vayas sin coger el Black Tome de la mesa de Arugal: con él consigues el Tome of Dalaran (para Lyn the Ignored, en Dalaran). Duración: 20-30 min."
+   ],
+   "priority": "skip/good: la Alianza no tiene misiones salvo la de clase del paladín (y la de brujo). Solo merece la pena si buscas un arma concreta o el Black Tome para Dalaran."
+  },
+  {
+   "name": "Blackfathom Deeps",
+   "name_es": "Cavernas de Brazanegra",
+   "levels": "24-32 (foreverchanges/method.gg)",
+   "classic_levels": "24-32",
+   "zone": "Vallefresno, Playa de Zoram (norte)",
+   "alliance_access": "Fácil: Forever añade un barco directo del Puerto de Ventormenta a Auberdine. Desde Auberdine (Costa Oscura) baja al sur hasta la Playa de Zoram. También puedes volar a Astranaar y caminar al oeste. La entrada se nada parcialmente.",
+   "new_or_changed": "Botín parcialmente nuevo: Spiked Shell Band (273839), Cursed Murloc Eye (273840) y Twilight Lord Girdle (273846). Las recompensas de misión tienen opciones nuevas (270021-270032).",
+   "quests": [
+    {
+     "name": "Knowledge in the Deeps (971)",
+     "level": 23,
+     "giver": "Gerrig Bonegrip, Cueva Abandonada (Forjaz)",
+     "reward": "Sustaining Ring (6743); 6.550 PX",
+     "worth": "Sí, mucha PX y un anillo."
+    },
+    {
+     "name": "Blackfathom Villainy (1200)",
+     "level": 27,
+     "giver": "Argent Guard Thaelrid, dentro (tras In Search of Thaelrid, de Dawnwatcher Shaedlass en Darnassus)",
+     "reward": "Gravestone Scepter (7001), Arctic Buckler (7002), Dark Ritual Leggings (270031) o Cultist's Armguards (270032); 7.850 PX",
+     "worth": "Sí, la mejor de la mazmorra."
+    },
+    {
+     "name": "Twilight Falls (1199)",
+     "level": 25,
+     "giver": "Argent Guard Manados, Darnassus",
+     "reward": "Nimbus Boots (6998), Heartwood Girdle (7000) o Silvered Gauntlets (270025); 6.050 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "Researching the Corruption (1275)",
+     "level": 24,
+     "giver": "Gershala Nightwhisper, Auberdine",
+     "reward": "Beetle Clasps (7003), Prelacy Cape (7004) o Staghide Armguards (270021); 2.400 PX",
+     "worth": "Sí, si pasas por Auberdine."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Rod of the Sleepwalker",
+     "id": 1155,
+     "icon": "inv_staff_06",
+     "slot": "Bastón 2M (+32 daño/sanación)",
+     "boss": "Twilight Lord Kelris",
+     "for": "Mago, brujo, sacerdote",
+     "verified": true
+    },
+    {
+     "name": "Strike of the Hydra",
+     "id": 6909,
+     "icon": "inv_sword_42",
+     "slot": "Espada 2M (proc múltiple)",
+     "boss": "Aku'mai",
+     "for": "Guerrero, paladín",
+     "verified": true
+    },
+    {
+     "name": "Darkwater Talwar",
+     "id": 11121,
+     "icon": "inv_sword_36",
+     "slot": "Espada mano principal",
+     "boss": "Lady Sarevess",
+     "for": "Pícaro, guerrero",
+     "verified": true
+    },
+    {
+     "name": "Bite of Serra'kis",
+     "id": 6904,
+     "icon": "inv_misc_monsterfang_01",
+     "slot": "Daga 1M (veneno)",
+     "boss": "Old Serra'kis",
+     "for": "Pícaro",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Orden: Ghamoo-ra → Lady Sarevess → Gelihast → (Lorgus Jett) → Old Serra'kis (bajo el agua: mátalo antes de ahogarte) → Twilight Lord Kelris → Aku'mai.",
+    "Mata primero a los Twilight Shadowmages (Dominar mente) e interrumpe el Mana Burn de los Hellcallers. Con Kelris, rompe la línea de visión junto a la pared de la entrada.",
+    "Enciende los 4 braseros de Aku'mai de uno en uno. Duración: 25-35 min."
+   ],
+   "priority": "must: el acceso es fácil con el barco nuevo, tiene 4 misiones con mucha PX (más de 22.000) y buenas armas."
+  },
+  {
+   "name": "The Stockade",
+   "name_es": "Las Mazmorras",
+   "levels": "24-32 (foreverchanges/method.gg); kami-labs pone entrada a 23",
+   "classic_levels": "24-32",
+   "zone": "Ventormenta, Barrio de los Magos",
+   "alliance_access": "Dentro de Ventormenta. Solo Alianza.",
+   "new_or_changed": "En Forever casi todo el botín de jefes es nuevo (IDs 2738xx): Debt Collector, Concealed Hand Crossbow, Boneslicer, Blackrock Harness, Hamhock's Cleaver, etc. El raro Bruegal Ironknuckle conserva su botín clásico.",
+   "quests": [
+    {
+     "name": "The Stockade Riots (391)",
+     "level": 29,
+     "giver": "Warden Thelwater, Las Mazmorras (requiere The Unsent Letter de VanCleef)",
+     "reward": "25 pp; 4.950 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "Quell The Uprising (387)",
+     "level": 26,
+     "giver": "Warden Thelwater",
+     "reward": "60 pp; 5.550 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "The Color of Blood (388)",
+     "level": 26,
+     "giver": "Nikova Raskol, Casco Antiguo (Ventormenta)",
+     "reward": "60 pp; 5.550 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "What Comes Around... (386)",
+     "level": 25,
+     "giver": "Guard Berton, Villa del Lago (Montañas Crestagrana)",
+     "reward": "Lucine Longsword (3400), Hardened Root Staff (1317) o Ursine Hammer (270027); 4.200 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "Crime and Punishment (377)",
+     "level": 26,
+     "giver": "Councilman Millstipe, Villa Oscura (Bosque del Ocaso)",
+     "reward": "Ambassador's Boots (2033), Darkshire Mail Leggings (2906) o Town Clerk's Mittens (270029); 4.400 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "The Fury Runs Deep (378)",
+     "level": 27,
+     "giver": "Motley Garmason, Dun Modr (Los Humedales; requiere The Dark Iron War)",
+     "reward": "Belt of Vindication (3562), Headbasher (1264) o Magistrate's Pantaloons (270036)",
+     "worth": "Sí, si ya hiciste la cadena de Dun Modr."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Debt Collector",
+     "id": 273827,
+     "icon": "inv_sword_24",
+     "slot": "Espada mano principal (+34 daño/sanación)",
+     "boss": "Bazil Thredd",
+     "for": "Paladín sacro, chamán, lanzadores",
+     "verified": true
+    },
+    {
+     "name": "Concealed Hand Crossbow",
+     "id": 273829,
+     "icon": "inv_weapon_crossbow_02",
+     "slot": "Ballesta (+12 PA a distancia)",
+     "boss": "Bazil Thredd",
+     "for": "Cazador, guerrero, pícaro",
+     "verified": true
+    },
+    {
+     "name": "Boneslicer",
+     "id": 273819,
+     "icon": "inv_spear_05",
+     "slot": "Arma de asta 2M",
+     "boss": "Dextren Ward",
+     "for": "Guerrero, paladín, cazador",
+     "verified": true
+    },
+    {
+     "name": "Blackrock Harness",
+     "id": 273805,
+     "icon": "inv_chest_leather_04",
+     "slot": "Pecho, cuero (+4 Def, +14 PA)",
+     "boss": "Targorr the Dread",
+     "for": "Druida feral (tanque), pícaro",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Es un solo pasillo con celdas: Targorr (aparece en distintas celdas) → Dextren Ward (miedo de área; tíralo donde no te mande a otras celdas) → Kam Deepfury → Hamhock (cadena de relámpagos y Ansia de sangre) → Bazil Thredd (bomba de humo que aturde a todo el grupo). El raro Bruegal suele estar en el pasillo izquierdo.",
+    "Se completa rápido: 15-25 min. Es perfecta para hacerla 1-2 veces y entregar 5-6 misiones (más de 24.000 PX en el beta)."
+   ],
+   "priority": "must: está en Ventormenta, es rápida y tiene 6 misiones y botín nuevo."
+  },
+  {
+   "name": "Razorfen Kraul",
+   "name_es": "Horado Rajacieno",
+   "levels": "29-38 según foreverchanges (rango del Group Finder de Classic, sin confirmar en Forever). Kami-labs da entrada a 24; las notas citadas en la petición hablan de 24-31 (no lo he podido verificar en el texto oficial).",
+   "classic_levels": "29-38 (Classic Era); 25-30 en la vanilla original",
+   "zone": "Los Baldíos (sur), junto a Las Mil Agujas",
+   "alliance_access": "Barco de Menethil a Theramore. Luego al oeste/sur por el Marjal Revolcafango y los Baldíos del sur. También puedes ir por Feralas/Las Mil Agujas. Es territorio Horda: mejor con invocación.",
+   "new_or_changed": "Botín parcialmente nuevo (marcado 'new' en wowtbc.gg/foreverchanges): Death Prophet Spine (274158) y Thorncursed Grips (274159) de Aggem; Thornweaver Drape, Roogug's Severed Head y Geomancer Headdress de Roogug; Quillord Mail Leggings; Quilrager Throwing Axe. Hay un jefe nuevo, Roogug. La recompensa Quilboar Blaster (274084) es nueva.",
+   "quests": [
+    {
+     "name": "Willix the Importer (1144)",
+     "level": 30,
+     "giver": "Willix, dentro (escolta)",
+     "reward": "Monkey Ring (6748), Tiger Band (6749), Snake Hoop (6750) o Boar Signet (274078); 7.250 PX",
+     "worth": "Sí, anillo + PX."
+    },
+    {
+     "name": "Mortality Wanes (1142)",
+     "level": 30,
+     "giver": "Heralath Fallowbrook, dentro",
+     "reward": "Mourning Shawl (6751), Lancer Boots (6752) o Sentinel's Boots (270047)",
+     "worth": "Sí."
+    },
+    {
+     "name": "The Crone of the Kraul (1101)",
+     "level": 34,
+     "giver": "Falfindel Waywarder, Feralas (tras Lonebrow's Journal)",
+     "reward": "Berylline Pads (4197), Stonefist Girdle (6742) o Marbled Buckler (6725) + Quilboar Blaster (274084)",
+     "worth": "Solo si ya vas a Feralas."
+    },
+    {
+     "name": "Blueleaf Tubers (1221)",
+     "level": 26,
+     "giver": "Mebok Mizzyrix, Trinquete",
+     "reward": "A Small Container of Gems (6755); 5.000 PX",
+     "worth": "Sí, si pasas por Trinquete."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Death Prophet Spine",
+     "id": 274158,
+     "icon": "inv_staff_17",
+     "slot": "Bastón 2M (+34 daño/sanación)",
+     "boss": "Aggem Thorncurse",
+     "for": "Lanzadores",
+     "verified": true
+    },
+    {
+     "name": "Thorncursed Grips",
+     "id": 274159,
+     "icon": "inv_gauntlets_05",
+     "slot": "Manos, cuero (+18 PA)",
+     "boss": "Aggem Thorncurse",
+     "for": "Pícaro, druida feral",
+     "verified": true
+    },
+    {
+     "name": "Corpsemaker",
+     "id": 6687,
+     "icon": "inv_weapon_halbard_01",
+     "slot": "Hacha 2M (+15 Fue)",
+     "boss": "Overlord Ramtusk",
+     "for": "Guerrero, paladín",
+     "verified": true
+    },
+    {
+     "name": "Heart of Agamaggan",
+     "id": 6694,
+     "icon": "inv_shield_02",
+     "slot": "Escudo",
+     "boss": "Charlga Razorflank",
+     "for": "Paladín, chamán",
+     "verified": true
+    },
+    {
+     "name": "Quilboar Blaster (recompensa de misión)",
+     "id": 274084,
+     "icon": "inv_weapon_rifle_05",
+     "slot": "Arma de fuego",
+     "boss": "Misión The Crone of the Kraul",
+     "for": "Cazador / ranura a distancia",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Jefes: Roogug (nuevo) / Aggem Thorncurse → Death Speaker Jargba → Overlord Ramtusk → Agathelos the Raging → Charlga Razorflank. Raros: Blind Hunter y Earthcaller Halmgar.",
+    "Los Quilboar geomancers y los totems hacen mucho daño: mata los totems primero. Agathelos pega fuerte y hace Rampage, así que aleja a los cuerpo a cuerpo con poca vida.",
+    "Duración aproximada: 30-40 min (estimación)."
+   ],
+   "priority": "good: botín nuevo interesante (Death Prophet Spine). El viaje es largo para la Alianza; combínalo con misiones de Theramore o Feralas."
+  },
+  {
+   "name": "Gnomeregan",
+   "name_es": "Gnomeregan",
+   "levels": "29-38 (foreverchanges/warcrafttavern); kami-labs da entrada a 25",
+   "classic_levels": "29-38",
+   "zone": "Dun Morogh (noroeste, aprox. 24,40)",
+   "alliance_access": "Desde Forjaz, al oeste por Dun Morogh hasta el ascensor exterior. Piedra de encuentro en la superficie. La Workshop Key (6893), que suelta Electrocutioner 6000, abre la puerta trasera.",
+   "new_or_changed": "Botín y recompensas actualizados (algunas opciones nuevas: Technician's Bracers 270042, Operator's Gloves 270045). Según warcrafttavern, el resto apenas cambia.",
+   "quests": [
+    {
+     "name": "Gyrodrillmatic Excavationators (2928)",
+     "level": 30,
+     "giver": "Shoni the Shilent, Ventormenta",
+     "reward": "Shoni's Disarming Tool (9608), Shilly Mitts (9609) o Operator's Gloves (270045); 4.400 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "The Grand Betrayal (2929)",
+     "level": 35,
+     "giver": "High Tinker Mekkatorque, Forjaz (Ciudad Manitas)",
+     "reward": "Civinad Robes (9623), Triprunner Dungarees (9624) o Dual Reinforced Leggings (9625)",
+     "worth": "Sí, muy buenas piernas/túnica."
+    },
+    {
+     "name": "A Fine Mess (2904)",
+     "level": 30,
+     "giver": "Kernobee, dentro (escolta)",
+     "reward": "Fire-welded Bracers (9535), Fairywing Mantle (9536) o Technician's Bracers (270042); 5.800 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "Save Techbot's Brain! (2922)",
+     "level": 26,
+     "giver": "Tinkmaster Overspark, Forjaz",
+     "reward": "4.750 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "Gnogaine (2926) / The Only Cure is More Green Glow (2962)",
+     "level": 27,
+     "giver": "Ozzie Togglevolt, Kharanos",
+     "reward": "PX (3.950 / 4.400)",
+     "worth": "Sí, se hacen fuera de la instancia."
+    },
+    {
+     "name": "Essential Artificials (2924) / Data Rescue (2930)",
+     "level": 30,
+     "giver": "Klockmort Spannerspan / Master Mechanic Castpipe, Forjaz",
+     "reward": "Data Rescue: Repairman's Cape (9605) o Mechanic's Pipehammer (9604)",
+     "worth": "Sí."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Electromagnetic Gigaflux Reactivator",
+     "id": 9492,
+     "icon": "inv_gizmo_01",
+     "slot": "Cabeza, tela",
+     "boss": "Mekgineer Thermaplugg",
+     "for": "Mago, brujo, sacerdote",
+     "verified": true
+    },
+    {
+     "name": "Manual Crowd Pummeler",
+     "id": 9449,
+     "icon": "inv_mace_14",
+     "slot": "Maza 2M (+16 Fue)",
+     "boss": "Crowd Pummeler 9-60",
+     "for": "Guerrero, paladín, druida feral",
+     "verified": true
+    },
+    {
+     "name": "Thermaplugg's Left Arm",
+     "id": 9459,
+     "icon": "inv_axe_03",
+     "slot": "Hacha 2M",
+     "boss": "Mekgineer Thermaplugg",
+     "for": "Guerrero, paladín",
+     "verified": true
+    },
+    {
+     "name": "Hydrocane",
+     "id": 9452,
+     "icon": "inv_staff_15",
+     "slot": "Bastón 2M (+36 daño/sanación)",
+     "boss": "Viscous Fallout",
+     "for": "Lanzadores",
+     "verified": true
+    },
+    {
+     "name": "Civinad Robes (recompensa)",
+     "id": 9623,
+     "icon": "inv_chest_cloth_18",
+     "slot": "Pecho, tela",
+     "boss": "Misión The Grand Betrayal",
+     "for": "Sacerdote, mago, brujo",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Jefes: Grubbis (evento de Blastmaster Emi Shortfuse con oleadas de troggs) → Viscous Fallout → Electrocutioner 6000 (separaos por la cadena de relámpagos; suelta la Workshop Key) → Crowd Pummeler 9-60 (de espaldas al grupo) → (Dark Iron Ambassador, raro) → Mekgineer Thermaplugg.",
+    "Contra Thermaplugg: tanquea en el centro, que un DPS a distancia pulse los botones de las columnas para frenar las bombas, y vuelve a provocar tras cada Knock Away.",
+    "Ojo con caerse en los pasillos de varios niveles. Es larga: 45-60 min (estimación)."
+   ],
+   "priority": "good: muchas misiones de Alianza (6+), pero larga y algo pesada. Hazla de una vez con grupo hacia el nivel 32."
+  },
+  {
+   "name": "Excavation Site: Wetlands",
+   "name_es": "Excavación: Los Humedales",
+   "levels": "26-31 (notas oficiales del 1 oct y foreverchanges); Blizzard anunció 24-29 al principio y method.gg pone 26-33. Las misiones se cogen desde nivel 24.",
+   "classic_levels": null,
+   "zone": "Los Humedales, encima de la Excavación de Whelgar (cerca de Dun Algaz y Thelgen Rock)",
+   "alliance_access": "Muy fácil: desde el Puerto de Menethil o Thelsamar (Loch Modan). La entrada está al pie de la montaña cerca de Dun Algaz, marcada por la piedra de encuentro.",
+   "new_or_changed": "Mazmorra NUEVA, en exterior. Tiene constructos titánicos, raptores, crocoliscos y orcos Faucedraco. 4 jefes: Saltspine, Shadetooth, Highland Horror (solo para la misión de Alianza, sin botín) y Relic Guardian (nivel 31). Fix del 8 oct: si la pierdes, vuelves a recibir la Titan Relic para la continuación.",
+   "quests": [
+    {
+     "name": "Horrors in the Highland (95646)",
+     "level": 31,
+     "giver": "Rethiel the Greenwarden, Los Humedales (tras su cadena 'Tramping Paws')",
+     "reward": "Ironwood Destroyer (271667), Curl of Life (271670) o Hornbeam Heft (271664); 6.150 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "Lost Relic Carry (95810) → Prehistoric Prism (98824)",
+     "level": 31,
+     "giver": "Titan Relic (del Relic Guardian) → High Explorer Magellas, Forjaz",
+     "reward": "Explorer's League Dustcover (271716), Healer's Staff (271767) o Heavehammer (271766); 1.250 + 6.150 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "Fallen in the Fen (95795)",
+     "level": 31,
+     "giver": "Cuerpo de un enano dentro de la mazmorra",
+     "reward": "Daewyn's Girdle (271769) o Songblade Stabilizer (271768); 6.150 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "Songblade Search (95772)",
+     "level": 31,
+     "giver": "Dorin Songblade, Villa del Lago (Montañas Crestagrana)",
+     "reward": "6.150 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "Lost in the Thicket Things (95647) → Heartwoven (95809)",
+     "level": 31,
+     "giver": "Caitlin Grassman, Puerto de Menethil (breadcrumb: Seeking Caitlin, de Llana en Astranaar)",
+     "reward": "Pociones (Greater Healing 1710 o Mana 3827) + Swiftness Potion y Satchel of Potions (280766); 4.900 + 6.150 PX",
+     "worth": "Sí, por la PX."
+    },
+    {
+     "name": "Highland Hides (98815)",
+     "level": 28,
+     "giver": "James Halloran, Puerto de Menethil (tras Young Crocolisk Skins)",
+     "reward": "12 pp; 1.150 PX",
+     "worth": "Opcional."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Golemsight Long Gun",
+     "id": 273029,
+     "icon": "inv_musket_02",
+     "slot": "Arma de fuego (+6 Agi)",
+     "boss": "Relic Guardian",
+     "for": "Cazador, guerrero, pícaro",
+     "verified": true
+    },
+    {
+     "name": "Ring of Power Regulation",
+     "id": 273030,
+     "icon": "inv_jewelry_ring_28",
+     "slot": "Anillo (3 maná/5 s, +6 daño/sanación)",
+     "boss": "Relic Guardian",
+     "for": "Sanadores y lanzadores",
+     "verified": true
+    },
+    {
+     "name": "Reliquary Mantle",
+     "id": 273028,
+     "icon": "inv_shoulder_27",
+     "slot": "Hombros, malla (+12 Agu, +0,4% golpe)",
+     "boss": "Relic Guardian",
+     "for": "Cazador, chamán, guerrero",
+     "verified": true
+    },
+    {
+     "name": "Garb of Florid Feathers",
+     "id": 273026,
+     "icon": "inv_misc_bandage_14",
+     "slot": "Pecho, cuero (+9 Agi, +15 Int)",
+     "boss": "Shadetooth",
+     "for": "Druida, chamán (aunque es de cuero)",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Saltspine patrulla la orilla del lago y con Dust Storm le baja la amenaza al tanque. Shadetooth patrulla con 2 Thicket Hunters y tiene un miedo (Terrifying Roar) que te puede mandar a grupos ocultos en la hierba alta: lleva Tótem de tremor o Custodia de miedo, o limpia antes la hierba.",
+    "Relic Guardian (nivel 31) se activa en el panel titánico. Hace un golpe frontal (Arcing Smash), un pisotón y un Knock Away que baja la amenaza. Se le puede aturdir y ralentizar.",
+    "Mata uno a uno a los Young Riptooth (Fatal Bite). Contra los Dragonmaw Warders, Bendición de libertad quita la red. Duración: 20-35 min. Las misiones de Alianza suman unas 39.300 PX."
+   ],
+   "priority": "must: es nueva, está en ruta para la Alianza (Humedales) y es la mazmorra con más PX de su tramo. Hazla entre los niveles 26 y 31."
+  },
+  {
+   "name": "City of Dalaran",
+   "name_es": "Ciudad de Dalaran",
+   "levels": "28-33 (Blizzard/foreverchanges); method.gg pone 28-35. Las misiones se cogen desde nivel 24.",
+   "classic_levels": null,
+   "zone": "Montañas de Alterac (entrada por las cloacas, al noroeste de la ciudad)",
+   "alliance_access": "Requiere la Dalaran Sewer Key (277507). Basta con que la lleve un miembro del grupo. Alianza: An Alarming Request (92432), de Emissary Jacques en el Ayuntamiento de Costasur → Archmage Modera → Heart of Disruption (92458), que da la llave. Para llegar a Costasur: barco de Menethil (nueva parada) o a pie desde Los Humedales/Arathi. Después, Friend of the Kirin Tor (92459) con Archmage Celindra (reputación y tabardo del Kirin Tor, solo Alianza).",
+   "new_or_changed": "Mazmorra NUEVA, abierta en el beta el 8 oct. 8 jefes, uno secreto (Lyn the Ignored), con varios caminos y casi todo daño arcano. El Black Tome de Castillo de Colmillo Oscuro, usado en el ayuntamiento de Molino Ámbar, crea el Tome of Dalaran que desbloquea a Lyn.",
+   "quests": [
+    {
+     "name": "Heart of Disruption (92458)",
+     "level": 33,
+     "giver": "Archmage Modera (imagen), junto a Dalaran",
+     "reward": "Spellguard Pauldrons (279839), Renewing Footpads (279840) o Defender of Dalaran (279841); 9.400 PX",
+     "worth": "Imprescindible: da la llave y un objeto."
+    },
+    {
+     "name": "Power Overwhelming (92489)",
+     "level": 33,
+     "giver": "High Sorcerer Andromath, Barrio de los Magos (Ventormenta)",
+     "reward": "Violet Sash (251962) o Runebound Gloves (279849); 9.400 PX",
+     "worth": "Sí: matar a Arcanic Enigma."
+    },
+    {
+     "name": "A Green Sample (92456)",
+     "level": 33,
+     "giver": "Shylamiir, El Parque (Ventormenta)",
+     "reward": "Vine Pruner's Cloak (279835) o Thorn Protecting Girdle (279836); 9.400 PX",
+     "worth": "Sí (Fel Infused Blossom)."
+    },
+    {
+     "name": "Starving Arcane (92457)",
+     "level": 33,
+     "giver": "Archmage Modera, fuera de Dalaran",
+     "reward": "Fallen Guard's Pendant (279837) o Arcane Infused Rod (279838); 9.400 PX",
+     "worth": "Sí."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Spine of the Devourer",
+     "id": 273040,
+     "icon": "inv_staff_07",
+     "slot": "Bastón 2M (+36 daño/sanación)",
+     "boss": "Mana Devourer",
+     "for": "Mago, brujo, sacerdote, druida",
+     "verified": true
+    },
+    {
+     "name": "Violet Sorcerer's Robes",
+     "id": 273044,
+     "icon": "inv_chest_cloth_17",
+     "slot": "Pecho, tela (+15 Int)",
+     "boss": "Arcanic Enigma",
+     "for": "Mago, brujo, sacerdote",
+     "verified": true
+    },
+    {
+     "name": "Wand of Mana Concentration",
+     "id": 273043,
+     "icon": "inv_wand_06",
+     "slot": "Varita arcana (31 DPS)",
+     "boss": "Arcanic Enigma",
+     "for": "Mago, brujo, sacerdote",
+     "verified": true
+    },
+    {
+     "name": "Guardian's Dualblade",
+     "id": 273046,
+     "icon": "inv_throwingaxe_05",
+     "slot": "Hacha 2M (27,9 DPS, proc de armadura)",
+     "boss": "Unstable Sentinel",
+     "for": "Guerrero, paladín",
+     "verified": true
+    },
+    {
+     "name": "Archmagister's Faceted Pendant",
+     "id": 273049,
+     "icon": "inv_misc_necklacea8",
+     "slot": "Cuello (+6 Int, +12 PA)",
+     "boss": "Shade of the Archmage",
+     "for": "Cazador, chamán mejora, paladín",
+     "verified": true
+    },
+    {
+     "name": "Defender of Dalaran (recompensa)",
+     "id": 279841,
+     "icon": "inv_hammer_04",
+     "slot": "Maza 2M",
+     "boss": "Misión Heart of Disruption",
+     "for": "Paladín",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Orden: Atrexis the Grave Knight → (Lyn the Ignored, secreto, con el Tome of Dalaran) → Arcane Anomaly → Arcanic Enigma → Unstable Sentinel → Fel Ancient (habla con Grindle Firespark para quitar las barreras) → Mana Devourer → Shade of the Archmage (habla con Archmage Modera).",
+    "Casi todo el daño es arcano, así que el tanque bloquea poco. Hay mucho Mana Burn: lleva interrupciones y agua. Tira a los Fallen Mages con línea de visión. Los Phantasms reflejan hechizos (Reflection Field). Los Seeking Remnants detectan sigilo.",
+    "Limpia la sala antes de tirar a Mana Devourer: todo lo que quede vivo se une al combate. Duración: 30-40 min. Las 4 misiones de Alianza dan 37.600 PX."
+   ],
+   "priority": "must: es la mejor mazmorra de 28-33 para la Alianza (PX, botín y reputación Kirin Tor). Haz antes Castillo de Colmillo Oscuro si quieres a Lyn."
+  },
+  {
+   "name": "Scarlet Monastery - Graveyard",
+   "name_es": "Monasterio Escarlata: Cementerio",
+   "levels": "30-38 (foreverchanges, rango de Classic sin confirmar en Forever)",
+   "classic_levels": "30-38",
+   "zone": "Claros de Tirisfal (noreste)",
+   "alliance_access": "En territorio Horda. Ruta: Costasur → Bosque de Argénteos → Tirisfal, bordeando Entrañas. También se llega bordeando el Lago Lordamere desde Alterac/Dalaran. La invocación es muy recomendable. Piedra de encuentro en el patio del monasterio.",
+   "new_or_changed": "Botín parcialmente nuevo: Painwalker Buckler (274290) de Interrogator Vishas y cascos de cuero craftables nuevos (252xxx) como botín de jefes. El resto sigue siendo de Classic.",
+   "quests": [],
+   "drops": [
+    {
+     "name": "Bloody Brass Knuckles",
+     "id": 7683,
+     "icon": "inv_gauntlets_11",
+     "slot": "Arma de puño 1M (+12 PA)",
+     "boss": "Interrogator Vishas",
+     "for": "Pícaro, guerrero, chamán mejora",
+     "verified": true
+    },
+    {
+     "name": "Painwalker Buckler",
+     "id": 274290,
+     "icon": "inv_shield_07",
+     "slot": "Escudo (+13 sanación, proc de maná)",
+     "boss": "Interrogator Vishas",
+     "for": "Paladín sacro, chamán",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Jefes: Interrogator Vishas, Bloodmage Thalnos y los raros Azshir the Sleepless, Fallen Champion e Ironspine.",
+    "Muy corta (15-20 min). Va bien para PX rápida de matar bichos ahora que la PX en mazmorras ha subido un 20%. La Alianza no tiene misiones en esta ala."
+   ],
+   "priority": "skip/good: no hay misiones de Alianza y el viaje es largo. Solo de paso si el grupo hace el Monasterio entero."
+  },
+  {
+   "name": "Scarlet Monastery - Library",
+   "name_es": "Monasterio Escarlata: Biblioteca",
+   "levels": "33-41 (foreverchanges, rango de Classic sin confirmar)",
+   "classic_levels": "33-41",
+   "zone": "Claros de Tirisfal",
+   "alliance_access": "Igual que el Cementerio. Al matar a Arcanist Doan se obtiene The Scarlet Key (7146) de su cofre, que abre la Armería y la Catedral.",
+   "new_or_changed": "Nuevo: Houndmaster Boomerang (274292) de Houndmaster Loksey. Misión nueva de Alianza: 'Past Due' (96800), de Magus Olvek en Alterac.",
+   "quests": [
+    {
+     "name": "Mythology of the Titans (1050)",
+     "level": 38,
+     "giver": "Librarian Mae Paledust, Salón de los Exploradores (Forjaz)",
+     "reward": "Explorers' League Commendation (7746)",
+     "worth": "Sí, si ya vas."
+    },
+    {
+     "name": "Past Due (96800)",
+     "level": 38,
+     "giver": "Magus Olvek, Montañas de Alterac",
+     "reward": "Salve and Salvation (276898) o Knucklebound Thimble (276899) + 45 pp; 6.750 PX",
+     "worth": "Sí (es nueva)."
+    },
+    {
+     "name": "In the Name of the Light (1053)",
+     "level": 40,
+     "giver": "Raleigh the Devout, Costasur",
+     "reward": "Sword of Serenity (6829), Bonebiter (6830), Black Menace (6831) u Orb of Lorica (11262)",
+     "worth": "Sí. Se completa en la Catedral, pero se coge antes."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Illusionary Rod",
+     "id": 7713,
+     "icon": "inv_wand_04",
+     "slot": "Bastón 2M (+44 daño/sanación, +1% crít.)",
+     "boss": "Arcanist Doan",
+     "for": "Mago, brujo, sacerdote",
+     "verified": true
+    },
+    {
+     "name": "Hypnotic Blade",
+     "id": 7714,
+     "icon": "inv_weapon_shortblade_07",
+     "slot": "Daga mano principal (+44 daño/sanación)",
+     "boss": "Arcanist Doan",
+     "for": "Mago, brujo, sacerdote",
+     "verified": true
+    },
+    {
+     "name": "Houndmaster Boomerang",
+     "id": 274292,
+     "icon": "inv_weapon_shortblade_10",
+     "slot": "Arrojadiza",
+     "boss": "Houndmaster Loksey",
+     "for": "Guerrero, pícaro",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Pasillos largos con muchos lanzadores escarlata: interrumpe las curas. Arcanist Doan hace Detonación arcana y Polimorfia: aléjate de él cuando lance Arcane Bubble.",
+    "Duración: 25-35 min. Imprescindible para conseguir la Scarlet Key."
+   ],
+   "priority": "good: las armas de Doan son muy buenas para lanzadores, hay una misión nueva de Alianza y da la llave del resto del Monasterio."
+  },
+  {
+   "name": "Scarlet Monastery - Armory",
+   "name_es": "Monasterio Escarlata: Armería",
+   "levels": "36-44 (foreverchanges, rango de Classic sin confirmar)",
+   "classic_levels": "36-44",
+   "zone": "Claros de Tirisfal",
+   "alliance_access": "Requiere The Scarlet Key (Biblioteca) o un pícaro con Ganzúa.",
+   "new_or_changed": "Datos de Classic. Ravager mantiene su proc de Bladestorm.",
+   "quests": [],
+   "drops": [
+    {
+     "name": "Ravager",
+     "id": 7717,
+     "icon": "inv_weapon_halberd_05",
+     "slot": "Hacha 2M (proc Bladestorm)",
+     "boss": "Herod",
+     "for": "Guerrero, paladín",
+     "verified": true
+    },
+    {
+     "name": "Raging Berserker's Helm",
+     "id": 7719,
+     "icon": "inv_helmet_25",
+     "slot": "Cabeza, malla (+13 Fue, +1% crít.)",
+     "boss": "Herod",
+     "for": "Guerrero, paladín, chamán",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Ala corta: limpia hasta Herod. Contra su Whirlwind, que los cuerpo a cuerpo se alejen. Al morir salen oleadas de Scarlet Trainees: haz área.",
+    "Duración: 20 min. Es muy buena para PX de bichos en el nivel 38-40."
+   ],
+   "priority": "good: Ravager y el casco son objetivos clásicos para guerreros y paladines de nivel 37-42."
+  },
+  {
+   "name": "Scarlet Monastery - Cathedral",
+   "name_es": "Monasterio Escarlata: Catedral",
+   "levels": "38-46 (foreverchanges, rango de Classic sin confirmar)",
+   "classic_levels": "38-46",
+   "zone": "Claros de Tirisfal",
+   "alliance_access": "Requiere The Scarlet Key. La misión In the Name of the Light (Raleigh, Costasur) se completa aquí.",
+   "new_or_changed": "Mograine's Might (7723) cambia en Forever: ahora es una maza de lanzador con +16 Int (según el tooltip de Wowhead Forever). El resto de datos son de Classic.",
+   "quests": [
+    {
+     "name": "In the Name of the Light (1053)",
+     "level": 40,
+     "giver": "Raleigh the Devout, Costasur",
+     "reward": "Sword of Serenity (6829), Bonebiter (6830), Black Menace (6831) u Orb of Lorica (11262)",
+     "worth": "Sí, es la gran misión de Alianza del Monasterio."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Whitemane's Chapeau",
+     "id": 7720,
+     "icon": "inv_helmet_12",
+     "slot": "Cabeza, tela (+20 sanación)",
+     "boss": "High Inquisitor Whitemane",
+     "for": "Sacerdote, mago, brujo",
+     "verified": true
+    },
+    {
+     "name": "Mograine's Might",
+     "id": 7723,
+     "icon": "inv_mace_13",
+     "slot": "Maza 2M (+16 Int en Forever)",
+     "boss": "Scarlet Commander Mograine",
+     "for": "Paladín sacro, chamán",
+     "verified": true
+    },
+    {
+     "name": "Sword of Serenity (recompensa)",
+     "id": 6829,
+     "icon": "inv_sword_27",
+     "slot": "Espada 1M",
+     "boss": "Misión In the Name of the Light",
+     "for": "Paladín, guerrero",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "High Inquisitor Fairbanks (nivel 40, a la entrada) → Mograine → Whitemane, que lo resucita. Interrumpe la Resurrección y el Sueño de Whitemane.",
+    "Contra Mograine: Bendición de libertad o Despertar contra su aturdimiento. Duración: 25-30 min."
+   ],
+   "priority": "good: la misión de Raleigh da un arma/orbe azul y hay buen botín de cabeza y arma para el nivel 40."
+  },
+  {
+   "name": "Razorfen Downs",
+   "name_es": "Zahúrda Rajacieno",
+   "levels": "37-46 (foreverchanges, rango de Classic). En el beta se abrió con nivel mínimo 25 (notas del 1 oct). Kami-labs da entrada a 34.",
+   "classic_levels": "37-46",
+   "zone": "Los Baldíos (sur), frontera con Las Mil Agujas",
+   "alliance_access": "Como el Horado Rajacieno: barco a Theramore y viaje al sur, o desde Las Mil Agujas. Mejor con invocación.",
+   "new_or_changed": "Datos de Classic (sin cambios confirmados).",
+   "quests": [
+    {
+     "name": "Bring the Light (3636)",
+     "level": 42,
+     "giver": "Archbishop Benedictus, Catedral de Ventormenta",
+     "reward": "Vanquisher's Sword (10823) o Amberglow Talisman (10824)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Extinguishing the Idol (3525)",
+     "level": 37,
+     "giver": "Belnistrasz, dentro (evento de defensa del gong)",
+     "reward": "Dragonclaw Ring (10710, ID de Classic; no aparece en Wowhead Forever)",
+     "worth": "Sí."
+    },
+    {
+     "name": "A Host of Evil (6626)",
+     "level": 35,
+     "giver": "Myriam Moonsinger, Los Baldíos (entrada)",
+     "reward": "3.450 PX",
+     "worth": "Sí, si estás allí."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Coldrage Dagger",
+     "id": 10761,
+     "icon": "inv_sword_34",
+     "slot": "Daga 1M (29 DPS)",
+     "boss": "Amnennar the Coldbringer",
+     "for": "Pícaro",
+     "verified": true
+    },
+    {
+     "name": "Robes of the Lich",
+     "id": 10762,
+     "icon": "inv_chest_cloth_17",
+     "slot": "Pecho, tela (+14 Escarcha/Sombra)",
+     "boss": "Amnennar the Coldbringer",
+     "for": "Brujo, sacerdote de Sombras, mago de Escarcha",
+     "verified": true
+    },
+    {
+     "name": "Carapace of Tuten'kash",
+     "id": 10775,
+     "icon": "inv_chest_plate08",
+     "slot": "Pecho, placas",
+     "boss": "Tuten'kash",
+     "for": "Guerrero, paladín",
+     "verified": true
+    },
+    {
+     "name": "Vanquisher's Sword (recompensa)",
+     "id": 10823,
+     "icon": "inv_sword_35",
+     "slot": "Espada 1M (+22 PA)",
+     "boss": "Misión Bring the Light",
+     "for": "Guerrero, pícaro, paladín",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Evento de Belnistrasz: defended el gong durante 3 oleadas. Luego vienen Tuten'kash (araña), Mordresh Fire Eye, Glutton, Plaguemaw y Amnennar the Coldbringer (Frost Nova; invoca Frozen Spectres al 50%).",
+    "Muchos no-muertos: el exorcismo del paladín y Ahuyentar no-muertos ayudan. Duración: 35-45 min."
+   ],
+   "priority": "good: Bring the Light y el botín de Amnennar están bien, pero el viaje es largo. Si eres de las Tierras del Este, Uldaman es mejor alternativa."
+  },
+  {
+   "name": "Uldaman",
+   "name_es": "Uldaman",
+   "levels": "41-51 (foreverchanges/method.gg, rango de Classic sin confirmar). En el beta se abrió desde nivel 30 (notas del 1 oct). Kami-labs da entrada a 35.",
+   "classic_levels": "41-51 (Classic Era); 35-45 en la vanilla original",
+   "zone": "Tierras Inhóspitas (norte)",
+   "alliance_access": "Vuela a Thelsamar (Loch Modan) y ve al sur por Tierras Inhóspitas hasta la excavación (la entrada principal está en la excavación de Hammertoe). La entrada trasera va por las cuevas del norte. La piedra de encuentro está fuera.",
+   "new_or_changed": "Hay botín nuevo en Obsidian Sentinel (IDs 274425-274485 y 251400, sin nombres en la fuente) y recompensas de misión nuevas: Doomcaller's Pants (270074), Fists of Impending Doom (270075), Restorer's Fine Gloves (270059), Excavator Gauntlets (270060) y Charged Leather Bracers (270055).",
+   "quests": [
+    {
+     "name": "The Platinum Discs (2279 → 2439)",
+     "level": 47,
+     "giver": "Discs of Norgannon, dentro → Dinita Stonemantle, Forjaz",
+     "reward": "Superior Healing Potion (3928) o Greater Mana Potion (6149) + Thawpelt Sack (9587)",
+     "worth": "Sí (bolsa)."
+    },
+    {
+     "name": "The Lost Tablets of Will (1139)",
+     "level": 45,
+     "giver": "Advisor Belgrum, Forjaz",
+     "reward": "Medal of Courage (6723); 5.850 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "Restoring the Necklace (cadena de Talvash: 2198, 2199, 2201, 2204, 2361)",
+     "level": 44,
+     "giver": "Talvash del Kissel, Forjaz",
+     "reward": "Talvash's Enhancing Necklace (7673, ID de Classic; no aparece en Wowhead Forever)",
+     "worth": "Sí, el collar es muy bueno."
+    },
+    {
+     "name": "Agmond's Fate (704)",
+     "level": 38,
+     "giver": "Prospector Ironband, Loch Modan",
+     "reward": "Restorer's Fine Gloves (270059) o Excavator Gauntlets (270060) + Prospector Gloves (4980)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Solution to Doom (709)",
+     "level": 40,
+     "giver": "Theldurin the Lost, Tierras Inhóspitas",
+     "reward": "Doomcaller's Pants (270074) o Fists of Impending Doom (270075) + Doomsayer's Robe (4746)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Power Stones (2418)",
+     "level": 36,
+     "giver": "Rigglefuzz, Tierras Inhóspitas",
+     "reward": "Energized Stone Circle (9522), Duracin Bracers (10358), Everlast Boots (10359) o Charged Leather Bracers (270055)",
+     "worth": "Sí."
+    },
+    {
+     "name": "The Hidden Chamber (2240)",
+     "level": 40,
+     "giver": "Baelog, dentro",
+     "reward": "Dwarven Charge (9626) o Explorer's League Lodestar (9627)",
+     "worth": "Sí."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Galgann's Firehammer",
+     "id": 9419,
+     "icon": "inv_hammer_17",
+     "slot": "Maza mano principal (+54 daño/sanación)",
+     "boss": "Galgann Firehammer",
+     "for": "Lanzadores, chamán",
+     "verified": true
+    },
+    {
+     "name": "Galgann's Fireblaster",
+     "id": 9412,
+     "icon": "inv_weapon_rifle_07",
+     "slot": "Arma de fuego",
+     "boss": "Galgann Firehammer",
+     "for": "Cazador",
+     "verified": true
+    },
+    {
+     "name": "Archaedic Stone",
+     "id": 11118,
+     "icon": "inv_stone_15",
+     "slot": "Anillo (+50 armadura)",
+     "boss": "Archaedas",
+     "for": "Tanques",
+     "verified": true
+    },
+    {
+     "name": "Doomcaller's Pants (recompensa, nueva)",
+     "id": 270074,
+     "icon": "inv_pants_14",
+     "slot": "Piernas, cuero",
+     "boss": "Misión Solution to Doom",
+     "for": "Druida, chamán",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Jefes: Baelog, Eric y Olaf (los vikingos) → Revelosh → Ironaya → Obsidian Sentinel → Ancient Stone Keeper → Galgann Firehammer → Grimlok → Archaedas (despierta oleadas de enanos y guardianes; aguanta al tanque y haz área).",
+    "Hay muchas misiones de Alianza (10+, casi todas de Forjaz y Loch Modan): llévalas todas antes de entrar. Duración: 60-90 min completa, o divídela en dos pasadas."
+   ],
+   "priority": "must: es la mazmorra de Alianza por excelencia en 40-47, con montones de misiones de Forjaz y Loch Modan."
+  },
+  {
+   "name": "Zul'Farrak",
+   "name_es": "Zul'Farrak",
+   "levels": "44-54 (foreverchanges/method.gg, rango de Classic sin confirmar). Kami-labs da entrada a 42.",
+   "classic_levels": "44-54",
+   "zone": "Tanaris (noroeste)",
+   "alliance_access": "Barco de Menethil a Theramore, vuelo hasta Gadgetzan (Tanaris) y al noroeste a pie o en montura. La piedra de encuentro está fuera de las murallas.",
+   "new_or_changed": "Datos de Classic. foreverchanges no marca ningún objeto como nuevo.",
+   "quests": [
+    {
+     "name": "Gahz'rilla (2770)",
+     "level": 50,
+     "giver": "Wizzle Brassbolts, Las Mil Agujas (Pista de Carreras)",
+     "reward": "Carrot on a Stick (11122; +3% velocidad de montura)",
+     "worth": "Imprescindible si no la tienes."
+    },
+    {
+     "name": "Divino-matic Rod (2768)",
+     "level": 47,
+     "giver": "Chief Engineer Bilgewhizzle, Gadgetzan",
+     "reward": "Masons Fraternity Ring (9533) o Engineer's Guild Headpiece (9534)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Tiara of the Deep (2846)",
+     "level": 46,
+     "giver": "Tabetha, Marjal Revolcafango",
+     "reward": "Spellshifter Rod (9527) o Gemshale Pauldrons (9531)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Nekrum's Medallion (2991)",
+     "level": 47,
+     "giver": "Thadius Grimshade, Las Tierras Devastadas",
+     "reward": "PX (abre la cadena de Tierras Devastadas)",
+     "worth": "Sí."
+    },
+    {
+     "name": "The Prophecy of Mosh'aru (3527)",
+     "level": 47,
+     "giver": "Yeh'kinya, Puerto de Steamwheedle (Tanaris)",
+     "reward": "PX (cadena hacia el Templo Sumergido)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Scarab Shells (2865) / Troll Temper (3042)",
+     "level": 45,
+     "giver": "Tran'rek / Trenton Lighthammer, Gadgetzan",
+     "reward": "PX",
+     "worth": "Sí, se hacen solas."
+    }
+   ],
+   "drops": [
+    {
+     "name": "The Chief's Enforcer",
+     "id": 9477,
+     "icon": "inv_staff_goldfeathered_01",
+     "slot": "Bastón 2M (proc de aturdimiento)",
+     "boss": "Chief Ukorz Sandscalp",
+     "for": "Druida feral, cazador",
+     "verified": true
+    },
+    {
+     "name": "Sang'thraze the Deflector",
+     "id": 9379,
+     "icon": "inv_sword_45",
+     "slot": "Espada 1M",
+     "boss": "Antu'sul",
+     "for": "Guerrero, pícaro",
+     "verified": true
+    },
+    {
+     "name": "Gahz'rilla Fang",
+     "id": 9467,
+     "icon": "inv_misc_monsterfang_01",
+     "slot": "Daga 1M (en Forever, proc de electricidad estática)",
+     "boss": "Gahz'rilla",
+     "for": "Pícaro",
+     "verified": true
+    },
+    {
+     "name": "Jinxed Hoodoo Skin",
+     "id": 9473,
+     "icon": "inv_chest_leather_05",
+     "slot": "Pecho, cuero",
+     "boss": "Shadowpriest Sezz'ziz",
+     "for": "Druida, pícaro",
+     "verified": true
+    },
+    {
+     "name": "Carrot on a Stick (recompensa)",
+     "id": 11122,
+     "icon": "inv_misc_food_54",
+     "slot": "Abalorio (+3% montura)",
+     "boss": "Misión Gahz'rilla",
+     "for": "Todos",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Evento de la pirámide: libera a los prisioneros (Sergeant Bly y compañía) y aguantad las oleadas de trolls en las escaleras. Que los lanzadores se coloquen arriba para hacer área.",
+    "Gahz'rilla se invoca con el Mallet of Zul'Farrak, que se consigue en las Tierras del Interior. Sin él no hay zanahoria.",
+    "Duración: 50-70 min."
+   ],
+   "priority": "must: la Carrot on a Stick y muchas misiones de Tanaris. Además lleva a la cadena del Templo Sumergido."
+  },
+  {
+   "name": "Maraudon",
+   "name_es": "Maraudon",
+   "levels": "46-55 (foreverchanges/method.gg, rango de Classic sin confirmar). Kami-labs da entrada a 42.",
+   "classic_levels": "46-55",
+   "zone": "Desolace (suroeste)",
+   "alliance_access": "Vuela a Punta de Nijel (Desolace) y ve al suroeste hasta el Valle de los Lanzas. La entrada al interior (Orange/Purple) va por la cueva. El Scepter of Celebras abre un portal directo a las Cascadas del Canto de la Tierra.",
+   "new_or_changed": "Datos de Classic (sin objetos nuevos confirmados).",
+   "quests": [
+    {
+     "name": "Corruption of Earth and Seed (7065)",
+     "level": 51,
+     "giver": "Keeper Marandis, Punta de Nijel",
+     "reward": "Thrash Blade (17705), Resurgence Rod (17743) o Verdant Keeper's Aim (17753)",
+     "worth": "Imprescindible: los tres objetos son de lo mejor para el nivel 50."
+    },
+    {
+     "name": "Vyletongue Corruption (7041)",
+     "level": 47,
+     "giver": "Talendria, Punta de Nijel",
+     "reward": "Woodseed Hoop (17768), Sagebrush Girdle (17778) o Branchclaw Gauntlets (17770)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Twisted Evils (7028)",
+     "level": 47,
+     "giver": "Willow, Desolace",
+     "reward": "Acumen Robes (17775), Sprightring Helm (17776), Relentless Chain (17777) o Hulkstone Pauldrons (17779)",
+     "worth": "Sí."
+    },
+    {
+     "name": "The Pariah's Instructions (7067)",
+     "level": 48,
+     "giver": "Centaur Pariah, Desolace",
+     "reward": "Mark of the Chosen (17774)",
+     "worth": "Sí."
+    },
+    {
+     "name": "The Scepter of Celebras (7046)",
+     "level": 49,
+     "giver": "Celebras the Redeemed, dentro",
+     "reward": "Scepter of Celebras (17191; portal al fondo)",
+     "worth": "Sí, ahorra mucho tiempo en las siguientes visitas."
+    },
+    {
+     "name": "Shadowshard Fragments (7070)",
+     "level": 42,
+     "giver": "Archmage Tervosh, Theramore",
+     "reward": "Zealous/Prodigious Shadowshard Pendant (17772/17773)",
+     "worth": "Sí."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Thrash Blade (recompensa)",
+     "id": 17705,
+     "icon": "inv_sword_36",
+     "slot": "Espada 1M (ataque extra)",
+     "boss": "Misión Corruption of Earth and Seed (Princesa Theradras)",
+     "for": "Guerrero, pícaro, paladín",
+     "verified": true
+    },
+    {
+     "name": "Resurgence Rod (recompensa)",
+     "id": 17743,
+     "icon": "inv_staff_goldfeathered_01",
+     "slot": "Bastón 2M (+112 sanación)",
+     "boss": "Misión Corruption of Earth and Seed",
+     "for": "Sacerdote, druida, chamán",
+     "verified": true
+    },
+    {
+     "name": "Verdant Keeper's Aim (recompensa)",
+     "id": 17753,
+     "icon": "inv_weapon_bow_03",
+     "slot": "Arco",
+     "boss": "Misión Corruption of Earth and Seed",
+     "for": "Cazador",
+     "verified": true
+    },
+    {
+     "name": "Scepter of Celebras",
+     "id": 17191,
+     "icon": "inv_staff_16",
+     "slot": "Objeto de uso (portal)",
+     "boss": "Misión de Celebras",
+     "for": "Todos",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Tres alas: Púrpura (Noxxion, Razorlash), Naranja (Lord Vyletongue) e Interior (Celebras, Landslide, Tinkerer Gizlock, Rotgrip, Princesa Theradras).",
+    "Theradras: Knock Away y Dust Field. Tanquéala con la espalda a una pared. Landslide invoca adds.",
+    "Muy larga: 60-90 min la versión interior completa. Divídela por alas."
+   ],
+   "priority": "must: la recompensa de Corruption of Earth and Seed es de las mejores del leveling y la mazmorra tiene muchas misiones de Desolace."
+  },
+  {
+   "name": "The Temple of Atal'Hakkar",
+   "name_es": "El Templo de Atal'Hakkar",
+   "levels": "50-60 (foreverchanges/method.gg, rango de Classic). Kami-labs da entrada a 45.",
+   "classic_levels": "50-60",
+   "zone": "Pantano de las Penas",
+   "alliance_access": "Vuela a Villa Oscura o a Nethergarde y entra en el Pantano de las Penas. El templo está en el lago central: hay que bucear y bajar por las escaleras. La piedra de encuentro está fuera, en el lago.",
+   "new_or_changed": "Datos de Classic (sin cambios confirmados).",
+   "quests": [
+    {
+     "name": "Into The Temple of Atal'Hakkar (1475)",
+     "level": 50,
+     "giver": "Brohann Caskbelly, Ventormenta",
+     "reward": "Guardian Talisman (1490); 7.100 PX",
+     "worth": "Sí."
+    },
+    {
+     "name": "The God Hakkar (3528)",
+     "level": 53,
+     "giver": "Yeh'kinya, Tanaris (final de la cadena de Mosh'aru)",
+     "reward": "Avenguard Helm (10749), Lifeforce Dirk (10750) o Gemburst Circlet (10751) + 2 po 40 pp",
+     "worth": "Sí, muy buenos cascos."
+    },
+    {
+     "name": "Jammal'an the Prophet (1446)",
+     "level": 53,
+     "giver": "Atal'ai Exile, Tierras del Interior",
+     "reward": "Rainstrider Leggings (11123) o Helm of Exile (11124)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Into the Depths (3446) / Secret of the Circle (3447)",
+     "level": 51,
+     "giver": "Marvon Rivetseeker, Tanaris",
+     "reward": "Hakkari Urn (10773)",
+     "worth": "Sí."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Gemburst Circlet (recompensa)",
+     "id": 10751,
+     "icon": "inv_crown_01",
+     "slot": "Cabeza, tela",
+     "boss": "Misión The God Hakkar",
+     "for": "Sacerdote, mago, brujo",
+     "verified": true
+    },
+    {
+     "name": "Avenguard Helm (recompensa)",
+     "id": 10749,
+     "icon": "inv_helmet_22",
+     "slot": "Cabeza, placas",
+     "boss": "Misión The God Hakkar",
+     "for": "Guerrero, paladín",
+     "verified": true
+    },
+    {
+     "name": "Lifeforce Dirk (recompensa)",
+     "id": 10750,
+     "icon": "inv_sword_21",
+     "slot": "Daga 1M",
+     "boss": "Misión The God Hakkar",
+     "for": "Pícaro",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Hay que matar a los 6 trolls del balcón para abrir el paso a Jammal'an. El evento de Avatar of Hakkar requiere el Egg of Hakkar (cadena de Marvon).",
+    "Los dragones verdes (Dreamscythe, Weaver, Hazzas, Morphaz) lanzan aliento y sueño: tanquéalos de lado. Shade of Eranikus es el jefe final.",
+    "Duración: 60-90 min. Es laberíntica, así que lleva a alguien que la conozca."
+   ],
+   "priority": "good: los cascos de la misión The God Hakkar valen mucho, pero la mazmorra es larga. Profundidades de Roca Negra da más por hora en 52-56."
+  },
+  {
+   "name": "Blackrock Depths",
+   "name_es": "Profundidades de Roca Negra",
+   "levels": "52-60 (foreverchanges/method.gg). Kami-labs da entrada a 48.",
+   "classic_levels": "52-60",
+   "zone": "Montaña Roca Negra (entre La Garganta de Fuego y Las Estepas Ardientes)",
+   "alliance_access": "Vuela a Vigilia de Morgan (Las Estepas Ardientes) y entra a la montaña por el norte. También desde Thorium Point (La Garganta de Fuego) si tienes el vuelo. La piedra de encuentro está dentro de la montaña. La Shadowforge Key (11000), de la misión Dark Iron Legacy (3802), abre atajos.",
+   "new_or_changed": "Datos de Classic (sin cambios confirmados en el beta).",
+   "quests": [
+    {
+     "name": "Jail Break! (4322)",
+     "level": 58,
+     "giver": "Marshal Windsor, dentro",
+     "reward": "Blade of Reckoning (12061) o Skilled Fighting Blade (12062) + Ward of the Elements (12065)",
+     "worth": "Imprescindible."
+    },
+    {
+     "name": "The Princess's Surprise (4363)",
+     "level": 59,
+     "giver": "Princess Moira Bronzebeard, dentro (tras The Fate of the Kingdom, del rey Magni)",
+     "reward": "Magni's Will (12548) o Songstone of Ironforge (12543)",
+     "worth": "Sí, anillos BiS de pre-banda."
+    },
+    {
+     "name": "Incendius! (4263)",
+     "level": 56,
+     "giver": "Jalinda Sprig, Vigilia de Morgan",
+     "reward": "Sunborne Cape (12113), Nightfall Gloves (12114), Crypt Demon Bracers (12112) o Stalwart Clutch (12115)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Hurley Blackbreath (4126)",
+     "level": 55,
+     "giver": "Ragnar Thunderbrew, Kharanos",
+     "reward": "Swiftstrike Cudgel (11964) o Limb Cleaver (12000)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Ribbly Screwspigot (4136)",
+     "level": 53,
+     "giver": "Yuka Screwspigot, Las Estepas Ardientes",
+     "reward": "Rancor Boots (11865), Penance Spaulders (11963) o Splintsteel Armor (12049)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Dark Iron Legacy (3802)",
+     "level": 52,
+     "giver": "Franclorn Forgewright, Las Estepas Ardientes",
+     "reward": "Shadowforge Key (11000)",
+     "worth": "Sí, es casi obligatoria."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Blade of Reckoning (recompensa)",
+     "id": 12061,
+     "icon": "inv_sword_26",
+     "slot": "Espada 1M (+20 PA)",
+     "boss": "Misión Jail Break!",
+     "for": "Guerrero, pícaro, paladín",
+     "verified": true
+    },
+    {
+     "name": "Rancor Boots (recompensa)",
+     "id": 11865,
+     "icon": "inv_boots_02",
+     "slot": "Pies, tela",
+     "boss": "Misión Ribbly Screwspigot",
+     "for": "Lanzadores",
+     "verified": true
+    },
+    {
+     "name": "Ironfoe",
+     "id": 11684,
+     "icon": null,
+     "slot": "Maza 1M",
+     "boss": "Emperor Dagran Thaurissan",
+     "for": "Guerrero, paladín (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "verified": false
+    },
+    {
+     "name": "Hand of Justice",
+     "id": 11815,
+     "icon": null,
+     "slot": "Abalorio",
+     "boss": "Emperor Dagran Thaurissan",
+     "for": "Físicos (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "verified": false
+    }
+   ],
+   "tips": [
+    "Es enorme (25 jefes). Lo mejor es hacerla por tramos: 1) Prisión, Lord Roccor, Gerstahn y el Anillo de la Ley; 2) Bar (Rocknot, Phalanx, Plugger) y Fineous; 3) Golem Lord, Angerforge, los Siete, Magmus y el Emperador.",
+    "No pegues a Moira en la sala del Emperador si vas a hacer la misión de Alianza (The Princess's Surprise): mata solo a Thaurissan. Cuidado con no-agrear a los patrulleros del Bar.",
+    "Según el tramo, 45-120 min. Es la mazmorra que más da entre los niveles 52 y 58."
+   ],
+   "priority": "must: es el corazón del leveling 52-58, con muchas misiones de Alianza y recompensas pre-banda."
+  },
+  {
+   "name": "Lower Blackrock Spire",
+   "name_es": "Cumbre de Roca Negra Inferior",
+   "levels": "55-60 (foreverchanges/method.gg); warcrafttavern pone 57-60",
+   "classic_levels": "55-60",
+   "zone": "Montaña Roca Negra",
+   "alliance_access": "Igual que Profundidades de Roca Negra: Vigilia de Morgan y entrada por la cumbre. La Seal of Ascension (cadena de Vaelan) da acceso a la Superior.",
+   "new_or_changed": "Datos de Classic. Algunas piezas del conjunto de mazmorra (D1) ya se vieron en el beta con estadísticas nuevas de Forever (por ejemplo, Boots of Elements: +9 Agi, +17 Esp).",
+   "quests": [
+    {
+     "name": "Maxwell's Mission (5081)",
+     "level": 60,
+     "giver": "Marshal Maxwell, Vigilia de Morgan",
+     "reward": "Wyrmthalak's Shackles (13958), Omokk's Girth Restrainer (13959), Halycon's Muzzle (13961), Vosh'gajin's Strand (13962) o Voone's Vice Grips (13963)",
+     "worth": "Imprescindible."
+    },
+    {
+     "name": "Put Her Down (4701)",
+     "level": 59,
+     "giver": "Helendis Riverhorn, Vigilia de Morgan",
+     "reward": "Astoria Robes (15824), Traphook Jerkin (15825) o Jadescale Breastplate (15827)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Seal of Ascension (4742/4743)",
+     "level": 60,
+     "giver": "Vaelan, dentro",
+     "reward": "Seal of Ascension (12344; acceso a la Superior)",
+     "worth": "Sí, si vas a hacer la Superior."
+    },
+    {
+     "name": "Urok Doomhowl (4867)",
+     "level": 60,
+     "giver": "Warosh, dentro",
+     "reward": "Prismcharm (15867)",
+     "worth": "Sí."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Boots of Elements",
+     "id": 16670,
+     "icon": "inv_boots_wolf",
+     "slot": "Pies, malla (D1 de chamán)",
+     "boss": "Highlord Omokk",
+     "for": "Chamán (y en Forever, cualquier usuario de malla con Espíritu)",
+     "verified": true
+    },
+    {
+     "name": "Venomspitter",
+     "id": 13183,
+     "icon": null,
+     "slot": "Maza 1M",
+     "boss": "Mother Smolderweb",
+     "for": "Guerrero, pícaro (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "verified": false
+    },
+    {
+     "name": "Fang of the Crystal Spider",
+     "id": 13218,
+     "icon": null,
+     "slot": "Daga",
+     "boss": "Crystal Fang (raro)",
+     "for": "Pícaro (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "verified": false
+    }
+   ],
+   "tips": [
+    "Jefes: Highlord Omokk, Shadow Hunter Vosh'gajin, War Master Voone, Mother Smolderweb, Urok Doomhowl, Quartermaster Zigris, Halycon, Gizrul y Overlord Wyrmthalak.",
+    "Grupos grandes de orcos: lleva control de masas (Ovejita, Destierro, Trampa congelante). Voone y Omokk pegan fuerte. Duración: 60-75 min."
+   ],
+   "priority": "good: muy buena PX en el 57-60 con Maxwell's Mission. Empieza a farmear el D1."
+  },
+  {
+   "name": "Upper Blackrock Spire",
+   "name_es": "Cumbre de Roca Negra Superior",
+   "levels": "59-60 (foreverchanges/method.gg). foreverchanges indica que el mínimo de entrada en Forever no está confirmado.",
+   "classic_levels": "60 (en Classic, banda de 10)",
+   "zone": "Montaña Roca Negra",
+   "alliance_access": "Requiere la Seal of Ascension (12344), al menos en Classic (sin confirmar en Forever). foreverchanges no indica el tamaño de grupo: en Classic era de 10 (sin confirmar).",
+   "new_or_changed": "Algunas piezas D1 tienen estadísticas nuevas en Forever (Vest of Elements, Breastplate of Valor y Lightforge Spaulders verificados).",
+   "quests": [
+    {
+     "name": "General Drakkisath's Demise (5102)",
+     "level": 60,
+     "giver": "Marshal Maxwell, Vigilia de Morgan",
+     "reward": "Mark of Tyranny, Eye of the Beast o Blackhand's Breadth",
+     "worth": "Imprescindible a nivel 60."
+    },
+    {
+     "name": "Drakefire Amulet (6502)",
+     "level": 60,
+     "giver": "Haleh, Cuna del Invierno",
+     "reward": "Drakefire Amulet (attunement de Onyxia en Classic; utilidad en Forever sin confirmar)",
+     "worth": "Opcional."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Vest of Elements",
+     "id": 16666,
+     "icon": "inv_chest_chain_11",
+     "slot": "Pecho, malla (D1)",
+     "boss": "General Drakkisath",
+     "for": "Chamán",
+     "verified": true
+    },
+    {
+     "name": "Breastplate of Valor",
+     "id": 16730,
+     "icon": "inv_chest_plate03",
+     "slot": "Pecho, placas (D1)",
+     "boss": "General Drakkisath",
+     "for": "Guerrero",
+     "verified": true
+    },
+    {
+     "name": "Lightforge Spaulders",
+     "id": 16729,
+     "icon": "inv_shoulder_10",
+     "slot": "Hombros, placas (D1)",
+     "boss": "The Beast",
+     "for": "Paladín",
+     "verified": true
+    }
+   ],
+   "tips": [
+    "Pyroguard Emberseer (rompe las 7 jaulas), Solakar (evento de huevos), Rend y Gyth (oleadas), The Beast (miedo y pisotón: tanquéalo contra la pared) y General Drakkisath (con dos Chromatic Elite Guards).",
+    "Contenido de nivel 60, no de leveling. Duración: 90+ min."
+   ],
+   "priority": "skip para subir de nivel. Es contenido de 60 para el equipo pre-banda."
+  },
+  {
+   "name": "Dire Maul - East",
+   "name_es": "La Masacre: Este",
+   "levels": "54-60 (foreverchanges/method.gg); warcrafttavern pone 58-60",
+   "classic_levels": "54-60",
+   "zone": "Feralas (centro)",
+   "alliance_access": "Vuela a Bastión Plumaluna (Feralas, isla de la costa) y ve hacia el centro. La entrada del Este está en el lado este de la ciudad en ruinas, y la piedra de encuentro en el patio. Pusillin suelta la Crescent Key, que abre el Norte y el Oeste. Ojo: Shen'dralas es una zona nueva en Kalimdor y la reputación Shen'dralar podría estar relacionada (sin confirmar).",
+   "new_or_changed": "Datos de Classic (sin confirmar en Forever).",
+   "quests": [
+    {
+     "name": "Pusillin and the Elder Azj'Tordin (7441)",
+     "level": 58,
+     "giver": "Azj'Tordin, Feralas",
+     "reward": "Spry Boots (18411) o Sprinter's Sword (18410)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Lethtendris's Web (7488)",
+     "level": 57,
+     "giver": "Latronicus Moonspear, Bastión Plumaluna",
+     "reward": "Lorespinner (18491)",
+     "worth": "Sí, para lanzadores."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Fiendish Machete",
+     "id": 18310,
+     "icon": null,
+     "slot": "Espada 1M",
+     "boss": "Alzzin the Wildshaper",
+     "for": "Guerrero (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "verified": false
+    },
+    {
+     "name": "Tempest Talisman",
+     "id": 18317,
+     "icon": null,
+     "slot": "Cuello",
+     "boss": "Hydrospawn",
+     "for": "Lanzadores (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "verified": false
+    }
+   ],
+   "tips": [
+    "Persigue a Pusillin por todo el ala hasta que pelee (suelta la Crescent Key). Luego vienen Zevrim Thornhoof, Hydrospawn, Lethtendris y Alzzin the Wildshaper (cambia de forma y lanza Vuelta de tuerca).",
+    "Va bien a partir de 56. Duración: 30-40 min."
+   ],
+   "priority": "good: corta, con 2 misiones de Alianza y la llave del resto de La Masacre. Encaja en el 56-60."
+  },
+  {
+   "name": "Dire Maul - West",
+   "name_es": "La Masacre: Oeste",
+   "levels": "56-60 (foreverchanges/method.gg)",
+   "classic_levels": "56-60",
+   "zone": "Feralas",
+   "alliance_access": "Requiere la Crescent Key (de Pusillin, en el Este) o un pícaro con Ganzúa.",
+   "new_or_changed": "Datos de Classic. Contiene a los Shen'dralar (Athenaeum y Libram). La relación con la nueva zona Shen'dralas está sin confirmar.",
+   "quests": [
+    {
+     "name": "The Madness Within (7461) / The Treasure of the Shen'dralar (7462)",
+     "level": 60,
+     "giver": "Shen'dralar Ancient, dentro",
+     "reward": "Bonecrusher (18420), Backwood Helm (18421) o Sedge Boots (18424)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Dusty Tome (7498-7506)",
+     "level": 60,
+     "giver": "Libros de clase que caen dentro",
+     "reward": "Royal Seal of Eldre'Thalas (abalorio de clase)",
+     "worth": "Sí, si te cae el de tu clase."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Mind Carver",
+     "id": 18396,
+     "icon": null,
+     "slot": "Espada 1M (lanzador)",
+     "boss": "Prince Tortheldrin",
+     "for": "Mago, brujo (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "verified": false
+    },
+    {
+     "name": "Quel'Serrar (cadena de misión)",
+     "id": 18348,
+     "icon": null,
+     "slot": "Espada 1M (tanque)",
+     "boss": "Misión The Forging of Quel'Serrar",
+     "for": "Guerrero o paladín tanque (en Classic requería Onyxia; sin confirmar)",
+     "verified": false
+    }
+   ],
+   "tips": [
+    "Hay que destruir los 5 pilones custodiados para bajar el escudo de Immol'thar. Luego Prince Tortheldrin (Remolino y Contrahechizo).",
+    "Contenido de 60. Duración: 45-60 min."
+   ],
+   "priority": "skip para subir de nivel. Contenido de 60."
+  },
+  {
+   "name": "Dire Maul - North",
+   "name_es": "La Masacre: Norte",
+   "levels": "56-60 (foreverchanges/method.gg)",
+   "classic_levels": "56-60",
+   "zone": "Feralas",
+   "alliance_access": "Requiere la Crescent Key.",
+   "new_or_changed": "Datos de Classic.",
+   "quests": [
+    {
+     "name": "Unfinished Gordok Business (1318)",
+     "level": 60,
+     "giver": "Captain Kromcrush, dentro",
+     "reward": "Uno de los 4 guanteletes Gordok (18366-18369)",
+     "worth": "Sí."
+    },
+    {
+     "name": "The Gordok Ogre Suit (5518)",
+     "level": 60,
+     "giver": "Knot Thimblejack, dentro",
+     "reward": "Gordok Ogre Suit (18258)",
+     "worth": "Opcional (sastres/peleteros)."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Crown of the Ogre King",
+     "id": 18526,
+     "icon": null,
+     "slot": "Cabeza",
+     "boss": "King Gordok",
+     "for": "Lanzadores (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "verified": false
+    },
+    {
+     "name": "Tarnished Elven Ring",
+     "id": 18500,
+     "icon": null,
+     "slot": "Anillo",
+     "boss": "Cofre de Tributo",
+     "for": "Físicos (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "verified": false
+    }
+   ],
+   "tips": [
+    "'Tribute run': si no matas a los guardias (Mol'dar, Fengus, Slip'kik) ni a Kromcrush, antes de King Gordok, recibes el cofre de tributo y buffs de mundo.",
+    "Duración: 30-45 min."
+   ],
+   "priority": "skip para subir de nivel. Contenido de 60 (farmeo del tributo)."
+  },
+  {
+   "name": "Scholomance",
+   "name_es": "Scholomance",
+   "levels": "58-60 (foreverchanges/method.gg). El mínimo de entrada en Forever está sin confirmar.",
+   "classic_levels": "58-60",
+   "zone": "Tierras de la Peste del Oeste, Caer Darrow",
+   "alliance_access": "Vuela al Campamento del Orvallo (Tierras de la Peste del Oeste) y baja al lago de Caer Darrow. En Classic hace falta la Skeleton Key (cadena del Campamento del Orvallo). foreverchanges no la menciona: sin confirmar en Forever.",
+   "new_or_changed": "Piezas D1 con estadísticas de Forever verificadas: Boots of Valor (16734), de Kirtonos; Helm of Valor (16731) y Devout Crown (16693), de Gandling.",
+   "quests": [],
+   "drops": [
+    {
+     "name": "Boots of Valor",
+     "id": 16734,
+     "icon": "inv_boots_plate_03",
+     "slot": "Pies, placas (D1)",
+     "boss": "Kirtonos the Herald",
+     "for": "Guerrero",
+     "verified": true
+    },
+    {
+     "name": "Helm of Valor",
+     "id": 16731,
+     "icon": "inv_helmet_02",
+     "slot": "Cabeza, placas (D1)",
+     "boss": "Darkmaster Gandling",
+     "for": "Guerrero",
+     "verified": true
+    },
+    {
+     "name": "Devout Crown",
+     "id": 16693,
+     "icon": "inv_crown_01",
+     "slot": "Cabeza, tela (D1)",
+     "boss": "Darkmaster Gandling",
+     "for": "Sacerdote",
+     "verified": true
+    },
+    {
+     "name": "Headmaster's Charge",
+     "id": 13937,
+     "icon": null,
+     "slot": "Bastón 2M",
+     "boss": "Darkmaster Gandling",
+     "for": "Lanzadores (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "verified": false
+    }
+   ],
+   "tips": [
+    "15 jefes. La ruta típica: Kirtonos (con el Blood of Innocents), Jandice Barov (busca la imagen real), Rattlegore, Ras Frostwhisper, las 6 salas del sótano y Gandling.",
+    "Contenido de 60. Duración: 60-90 min."
+   ],
+   "priority": "skip para subir de nivel. Contenido de 60 (D1)."
+  },
+  {
+   "name": "Stratholme - Main Gate (Living)",
+   "name_es": "Stratholme: Puerta Principal",
+   "levels": "58-60 (foreverchanges/method.gg)",
+   "classic_levels": "58-60",
+   "zone": "Tierras de la Peste del Este (norte)",
+   "alliance_access": "Vuela a la Capilla de la Esperanza de la Luz y ve al noroeste hasta la puerta principal. La piedra de encuentro está fuera.",
+   "new_or_changed": "Datos de Classic (solo 16 de 112 objetos vistos con estadísticas de Forever).",
+   "quests": [
+    {
+     "name": "The Restless Souls (5282)",
+     "level": 60,
+     "giver": "Egan, Tierras de la Peste del Este",
+     "reward": "Testament of Hope (13315)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Houses of the Holy (5243)",
+     "level": 60,
+     "giver": "Leonid Barthalomew, Capilla de la Esperanza de la Luz",
+     "reward": "Crown of the Penitent (13216) o Band of the Penitent (13217)",
+     "worth": "Sí."
+    },
+    {
+     "name": "The Active Agent (5213)",
+     "level": 60,
+     "giver": "Betina Bigglezink, Capilla de la Esperanza de la Luz",
+     "reward": "Seal of the Dawn (13209) o Rune of the Dawn (19812)",
+     "worth": "Sí (abalorio Argenta)."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Demonshear",
+     "id": 13348,
+     "icon": null,
+     "slot": "Espada 2M",
+     "boss": "Balnazzar",
+     "for": "Guerrero, paladín (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "verified": false
+    },
+    {
+     "name": "Hammer of the Grand Crusader",
+     "id": 18717,
+     "icon": null,
+     "slot": "Maza 2M",
+     "boss": "Balnazzar",
+     "for": "Paladín (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "verified": false
+    }
+   ],
+   "tips": [
+    "Ruta: Timmy the Cruel en la plaza → Malor the Zealous → Cannon Master Willey → Archivist Galford (quema la biblioteca) → Balnazzar (Grand Crusader Dathrohan).",
+    "Contenido de 60. Duración: 60 min."
+   ],
+   "priority": "skip para subir de nivel. Contenido de 60."
+  },
+  {
+   "name": "Stratholme - Service Gate (Undead)",
+   "name_es": "Stratholme: Puerta de Servicio",
+   "levels": "58-60 (foreverchanges/method.gg)",
+   "classic_levels": "58-60",
+   "zone": "Tierras de la Peste del Este (norte)",
+   "alliance_access": "La puerta de servicio está al este de la ciudad. La Key to the City (12382), que suelta Magistrate Barthilas, abre la puerta principal.",
+   "new_or_changed": "Gauntlets of Valor (16737, de Ramstein) tiene estadísticas nuevas en Forever (verificado). Es de suponer que vuelve la montura Deathcharger's Reins de Rivendare (sin confirmar en Forever).",
+   "quests": [
+    {
+     "name": "Above and Beyond (5263) → The Argent Hold (5265)",
+     "level": 60,
+     "giver": "Duke Nicholas Zverenhoff, Capilla de la Esperanza de la Luz",
+     "reward": "Argent Avenger (13246), Argent Defender (13243) o Argent Crusader (13249)",
+     "worth": "Sí."
+    },
+    {
+     "name": "Dead Man's Plea (8945)",
+     "level": 60,
+     "giver": "Anthion Harmon, Tierras de la Peste del Este",
+     "reward": "Ysida's Satchel (22137)",
+     "worth": "Sí (carrera contrarreloj)."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Gauntlets of Valor",
+     "id": 16737,
+     "icon": "inv_gauntlets_26",
+     "slot": "Manos, placas (D1)",
+     "boss": "Ramstein the Gorger",
+     "for": "Guerrero",
+     "verified": true
+    },
+    {
+     "name": "Deathcharger's Reins",
+     "id": 13335,
+     "icon": null,
+     "slot": "Montura",
+     "boss": "Baron Rivendare",
+     "for": "Todos (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "verified": false
+    }
+   ],
+   "tips": [
+    "Ruta: Magistrate Barthilas → Baroness Anastari, Nerub'enkan y Maleki (abren los zigurats) → Ramstein → Black Guard Swordsmith → Baron Rivendare.",
+    "Contenido de 60. Duración: 45-60 min (el run de 45 min de Ysida es opcional)."
+   ],
+   "priority": "skip para subir de nivel. Contenido de 60."
+  },
+  {
+   "name": "The Drowned City",
+   "name_es": "La Ciudad Sumergida",
+   "levels": "35-40 (Blizzard)",
+   "classic_levels": null,
+   "zone": "Mar de la Vega de Tuercespina. Según warcrafttavern, frente a la costa al oeste de Grom'gol; según foreverchanges, en la Isla de Gillijim (suroeste), con portal en la cueva Sunken Hollow.",
+   "alliance_access": "Sin confirmar. Se entra buceando o por el portal de Sunken Hollow, que no funcionaba en el beta, y no hay barco ni vuelo conocidos. Previsión: bajar desde la Bahía del Botín o Rebel Camp e ir a nado hacia el oeste.",
+   "new_or_changed": "Mazmorra NUEVA, al aire libre, con un temporal que va a más. Trolls, naga y un barco pirata hundido: la ciudad troll de I'lalai. Nombres provisionales de jefes en el datamining: Zul'Alai, Var'Taka, Captain Dreadrise, Deathless Marrow, Gill y Min'loth the Serpent (sin confirmar). No estuvo disponible en el beta.",
+   "quests": [
+    {
+     "name": "Ancient Gurubashi Idol (96774)",
+     "level": 40,
+     "giver": "Mazu'kon, Mulgore (HORDA)",
+     "reward": "8.800 PX",
+     "worth": "No aplica a la Alianza. No se conocen misiones de Alianza (sin confirmar)."
+    }
+   ],
+   "drops": [],
+   "tips": [
+    "Sin datos de recorrido: no se ha podido probar en el beta (tope 30). Mira Wowhead o Icy Veins después del lanzamiento."
+   ],
+   "priority": "good (sin confirmar): es nueva y encaja en el hueco 35-40 junto a la Vega. Decide cuando haya datos reales en el lanzamiento."
+  },
+  {
+   "name": "Krol'dok Stronghold",
+   "name_es": "Bastión de Krol'dok",
+   "levels": "40-45 (Blizzard/foreverchanges); warcrafttavern y kami-labs llegan a citar 40-55",
+   "classic_levels": null,
+   "zone": "Clarofluvial (Riverglades, zona nueva de 36-44 al este de los Reinos del Este, junto a Tierras Inhóspitas, Las Estepas Ardientes y Crestagrana), aprox. 48.6, 26.3",
+   "alliance_access": "Vuelo de la Alianza a Farholde Keep (Clarofluvial) y subida a la colina de la fortaleza, cerca de Bolder'ok.",
+   "new_or_changed": "Mazmorra NUEVA: fortaleza ogra del Martillo Crepuscular con talleres y un puente con oleadas (si te caes, sobrevives y tienes que volver a subir). Blizzard mostró 5 jefes sin nombre. Hay un conjunto Krol'dok Battlegear de 5 piezas, oculto. Objetos: Krol'dok Compound Key (267089), Krol'dok Ogre Key (271721) y Krol'dok Moulding (267137, inicia una misión).",
+   "quests": [
+    {
+     "name": "Misión que empieza con Krol'dok Moulding (267137)",
+     "level": null,
+     "giver": "Objeto que se encuentra dentro (sin confirmar)",
+     "reward": "Sin confirmar",
+     "worth": "Sin confirmar."
+    }
+   ],
+   "drops": [],
+   "tips": [
+    "Sin datos de recorrido (no estuvo en el beta)."
+   ],
+   "priority": "good (sin confirmar): está en ruta si subes por Clarofluvial entre el 40 y el 44."
+  },
+  {
+   "name": "Alcaz Prison",
+   "name_es": "Prisión de Alcaz",
+   "levels": "48-53 (Blizzard)",
+   "classic_levels": null,
+   "zone": "Isla de Alcaz, noreste del Marjal Revolcafango",
+   "alliance_access": "Desde Theramore (Marjal Revolcafango), la isla de Alcaz queda al este y se llega a nado. No hay detalles de entrada (sin confirmar).",
+   "new_or_changed": "Mazmorra NUEVA: los Defias tenían nobles retenidos para pedir rescate (se rumorea que entre ellos estuvo Varian Wrynn) y ahora luchan contra los naga. Kami-labs la llama 'Defias Prison'. Sin jefes, botín ni misiones conocidos.",
+   "quests": [],
+   "drops": [],
+   "tips": [
+    "Sin datos. Por la temática Defias y Varian, es probable que tenga misiones de Ventormenta/Theramore para la Alianza (sin confirmar)."
+   ],
+   "priority": "good (sin confirmar): queda cerca de Theramore, base de la Alianza, en el tramo 48-53."
+  },
+  {
+   "name": "Blackmaw Hold",
+   "name_es": "Bastión Fauceoscura",
+   "levels": "55-60 (Blizzard)",
+   "classic_levels": null,
+   "zone": "Azshara norte, tras la Puerta de los Furbolgs",
+   "alliance_access": "Vuelo de la Alianza a Talrendis Point (Azshara) y al norte hasta la puerta (sin confirmar).",
+   "new_or_changed": "Mazmorra NUEVA: ciudad furbolg con varias rutas y jefes y una corrupción que se extiende por sus bosquecillos. Sus túneles llevan hacia la banda Barrow Deeps. Objetos vistos: Blackmaw Pouch (273050; se entrega a los Blackmaw de Ursolan) y Blackmaw Ritual Totem (276893, de misión).",
+   "quests": [],
+   "drops": [],
+   "tips": [
+    "Sin datos de recorrido."
+   ],
+   "priority": "good (sin confirmar): alternativa nueva a Profundidades de Roca Negra y la Cumbre Inferior en el 55-60, y antesala de Barrow Deeps."
+  },
+  {
+   "name": "Shaper's Terrace",
+   "name_es": "Bancal del Creador",
+   "levels": "58-60 (Blizzard)",
+   "classic_levels": null,
+   "zone": "Cráter de Un'Goro, colinas del norte",
+   "alliance_access": "Vuelo al Refugio de la Marshal (Un'Goro) y subida a las colinas del norte (sin confirmar).",
+   "new_or_changed": "Mazmorra NUEVA: instalación titánica con dinosaurios, pozos de alquitrán y consolas que se activan con cristales de energía. Sin jefes, botín ni misiones conocidos.",
+   "quests": [],
+   "drops": [],
+   "tips": [
+    "Sin datos de recorrido."
+   ],
+   "priority": "skip para subir de nivel (58-60, casi contenido de 60). Mírala ya en 60."
+  },
+  {
+   "name": "Ragefire Chasm",
+   "name_es": "Sima Ígnea",
+   "levels": "13-18",
+   "classic_levels": "13-18",
+   "zone": "Orgrimmar",
+   "alliance_access": "La entrada está dentro de Orgrimmar. Para un Alianza es inviable en la práctica.",
+   "new_or_changed": "Marcada como CHANGED por kami-labs (sin detalles). Sin misiones de Alianza.",
+   "quests": [],
+   "drops": [],
+   "tips": [
+    "Usa el Salón de los Feudales (13-18), que es su equivalente para la Alianza."
+   ],
+   "priority": "skip: es de la Horda. La alternativa de Alianza es el Salón de los Feudales."
+  }
+ ]
+}

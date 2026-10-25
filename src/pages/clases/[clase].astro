@@ -77,7 +77,7 @@ const rkey = (r) => r.split(" (")[0].replace("Skyborne - High Order", "Skyborne"
         <button type="button" data-mode="alt" aria-pressed="false">{L.alt.spec}</button>
       </div>
     )}
-    <p class="note" style="margin-top:8px">Árboles de la última build de la beta ({d.build_checked || "1.60.1.70425"}). Un punto por nivel desde el 10: 51 a nivel 60. Con la ventaja de Legacy <b>Talented</b> los puntos llegan hasta 5 niveles antes (el orden es el mismo). Mueve el control para ver la build en tu nivel.</p>
+    <p class="note" style="margin-top:8px">Árboles de la última build de la beta ({(d.build_checked || "1.60.1.70425").split(" ")[0]}). Un punto por nivel desde el 10: 51 a nivel 60. Con la ventaja de Legacy <b>Talented</b> los puntos llegan hasta 5 niveles antes (el orden es el mismo). Mueve el control para ver la build en tu nivel.</p>
     <div class="trees" id="trees">
       {[0, 1, 2].map((ti) => <TalentTree id={id} tree={ti} n={total} tint={TINTS[id][ti]} build={L.order} />)}
     </div>

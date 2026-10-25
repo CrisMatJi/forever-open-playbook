@@ -3,7 +3,9 @@ import Base from "../layouts/Base.astro";
 import Icon from "../components/Icon.astro";
 import G from "../data/general.json";
 import { MISC_ICON, url } from "../lib/wow.js";
-import { RACE_ICON } from "../lib/classes.js";
+import { RACE_ICON, RACE_ES } from "../lib/classes.js";
+const CL_ES = { Warrior: "Guerrero", Paladin: "Paladín", Hunter: "Cazador", Rogue: "Pícaro", Priest: "Sacerdote", Shaman: "Chamán", Mage: "Mago", Warlock: "Brujo", Druid: "Druida" };
+const clEs = (c) => c.replace(/^(\w+)/, (m) => CL_ES[m] || m);
 const L = G.legacy, R = G.zone_route, P = G.professions, S = G.systems;
 const TREE = { adventure: "Aventura", professions: "Profesiones", resourcefulness: "Recursos" };
 const SYS = [
@@ -48,8 +50,8 @@ const host = (u) => { try { return new URL(u).hostname.replace("www.", ""); } ca
         const k = r.race.startsWith("Night") ? "Night Elf" : r.race.split(" ")[0];
         return (
           <article class="racecard">
-            <div class="racehead"><Icon name={RACE_ICON[k]} size={40} label={k} big /><div><b>{r.race}</b><span class="note">{r.start}</span></div></div>
-            <p class="note"><b>Clases:</b> {r.classes.join(", ")}</p>
+            <div class="racehead"><Icon name={RACE_ICON[k]} size={40} label={k} big /><div><b>{RACE_ES[k] ? r.race.replace(k, RACE_ES[k]) : r.race}</b><span class="note">{r.start}</span></div></div>
+            <p class="note"><b>Clases:</b> {r.classes.map(clEs).join(", ")}</p>
             <p class="note">{r.racials_current}</p>
             {r.requires && <p class="warnline">{r.requires}</p>}
           </article>

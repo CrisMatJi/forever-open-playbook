@@ -4,8 +4,13 @@ import Icon from "../components/Icon.astro";
 import D from "../data/dungeons.json";
 import G from "../data/general.json";
 const wh = (i) => `https://www.wowhead.com/forever/item=${i}`;
-const PRI = (p = "") => (p.toLowerCase().startsWith("must") || p.toLowerCase().startsWith("imprescindible") ? "q-leg" : p.toLowerCase().startsWith("good") || p.toLowerCase().startsWith("buena") ? "q-rare" : "");
-const priLabel = (p = "") => p.split(/[ :—-]/)[0].replace(/^must$/i, "Imprescindible").replace(/^good$/i, "Buena").replace(/^skip$/i, "Opcional");
+const pk = (p = "") => { const t = p.toLowerCase(); return t.startsWith("must") ? "must" : t.startsWith("good") ? "good" : "skip"; };
+const PRI = (p) => ({ must: "q-leg", good: "q-rare", skip: "" })[pk(p)];
+const priLabel = (p) => ({ must: "Imprescindible", good: "Buena", skip: "Opcional" })[pk(p)];
+const priText = (p = "") => p.replace(/^[a-z/ ()]+(sin confirmar\))?\s*:\s*/i, "");
+const short = (l = "") => (l.match(/\d+\s*-\s*\d+/) || [l])[0].replace(/\s/g, "");
+const minLvl = (l = "") => +(l.match(/\d+/) || [99])[0];
+const LIST = [...D.dungeons].sort((a, b) => minLvl(a.levels) - minLvl(b.levels));
 const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const xp = G.dungeons?.xp_changes || [];
 ---
@@ -21,17 +26,18 @@ const xp = G.dungeons?.xp_changes || [];
   <section class="box">
     <div class="tablewrap"><table class="wide">
       <thead><tr><th>Nivel</th><th>Mazmorra</th><th>Dónde</th><th>Prioridad</th></tr></thead>
-      <tbody>{D.dungeons.map((d) => (
-        <tr><td class="num"><span class="lvlband">{d.levels}</span></td><td><a href={`#${slug(d.name)}`}><b>{d.name}</b></a>{d.name_es && <div class="note">{d.name_es}</div>}{d.new_or_changed && <div class="note" style="color:var(--q-unc)">Novedad</div>}</td><td class="note">{d.zone}</td><td><span class={`vtag ${PRI(d.priority)}`}>{priLabel(d.priority)}</span></td></tr>
+      <tbody>{LIST.map((d) => (
+        <tr><td class="num"><span class="lvlband">{short(d.levels)}</span></td><td><a href={`#${slug(d.name)}`}><b>{d.name}</b></a>{d.name_es && <div class="note">{d.name_es}</div>}{d.new_or_changed && <div class="note" style="color:var(--q-unc)">Novedad</div>}</td><td class="note">{d.zone}</td><td><span class={`vtag ${PRI(d.priority)}`}>{priLabel(d.priority)}</span></td></tr>
       ))}</tbody>
     </table></div>
   </section>
 
-  {D.dungeons.map((d) => (
+  {LIST.map((d) => (
     <section class="box" id={slug(d.name)}>
-      <div class="titlerow"><h2>{d.name}</h2><span class="lvlband num">{d.levels}</span></div>
-      <p class="note">{[d.name_es, d.zone, d.classic_levels && `Classic: ${d.classic_levels}`].filter(Boolean).join(" · ")}</p>
-      {d.priority && <p class="goodline" style="margin-top:8px">{d.priority}</p>}
+      <div class="titlerow"><h2>{d.name}</h2><span class="lvlband num">{short(d.levels)}</span></div>
+      <p class="note">{[d.name_es, d.zone].filter(Boolean).join(" · ")}</p>
+      <p class="note">Nivel: {d.levels}{d.classic_levels ? ` · Classic: ${d.classic_levels}` : ""}</p>
+      {d.priority && <p class={pk(d.priority) === "skip" ? "warnline" : "goodline"} style="margin-top:8px"><b>{priLabel(d.priority)}:</b> {priText(d.priority)}</p>}
       {d.new_or_changed && <p style="margin-top:8px"><b>En Forever:</b> {d.new_or_changed}</p>}
       {d.alliance_access && <p style="margin-top:8px"><b>Cómo llegar:</b> {d.alliance_access}</p>}
       {d.quests?.length > 0 && (

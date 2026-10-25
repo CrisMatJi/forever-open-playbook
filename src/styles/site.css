@@ -237,3 +237,7 @@ code{overflow-wrap:anywhere}
 .scores i::after{content:"";display:block;height:100%;width:calc(var(--v)*20%);background:var(--cc)}
 .dtable td:first-child{white-space:nowrap}
 .lvlband{display:inline-block;min-width:64px;font-weight:700;color:var(--gold)}
+.detail>*,.trees>*,.split>*,.gearlist>*{min-width:0}
+.bul li,.steps li,.order li,td,dd{overflow-wrap:anywhere}
+@media (max-width:700px){.detail,.split{grid-template-columns:minmax(0,1fr)}}
+.vtag{white-space:nowrap}
