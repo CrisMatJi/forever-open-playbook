@@ -1,0 +1,142 @@
+---
+import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
+import G from "../data/general.json";
+import { MISC_ICON, url } from "../lib/wow.js";
+import { RACE_ICON } from "../lib/classes.js";
+const L = G.legacy, R = G.zone_route, P = G.professions, S = G.systems;
+const TREE = { adventure: "Aventura", professions: "Profesiones", resourcefulness: "Recursos" };
+const SYS = [
+  ["rested_xp", "Descanso"], ["kill_xp_rules", "Experiencia por bicho"], ["camping", "Campamentos"], ["mounts", "Monturas"],
+  ["travel", "Viajes"], ["layering", "Capas (layering)"], ["group_finder", "Buscador de grupo"], ["library_books", "Libros de la biblioteca"],
+  ["ley_lines_and_convergences", "Líneas ley y convergencias"], ["class_changes_leveling", "Cambios de clase al subir"], ["dual_spec", "Doble especialización"], ["other", "Otros"],
+];
+const host = (u) => { try { return new URL(u).hostname.replace("www.", ""); } catch { return u; } };
+---
+<Base title="Leveo" active="leveo" description="Preparación para el leveo de WoW Forever en la Alianza: noche del lanzamiento, ruta de zonas 1-60, Legacy, profesiones y sistemas que dan experiencia.">
+  <div class="pagehead">
+    <div class="eyebrow">Alianza · 1-{G.launch.level_cap_at_launch}</div>
+    <h1>Preparación para el leveo</h1>
+    <p class="lede">Todo lo que no depende de tu clase: cuándo sale, por dónde subir, qué sistemas te dan experiencia extra, cómo funciona el Legacy al empezar de cero y qué profesiones coger.</p>
+  </div>
+
+  <nav class="toc box" aria-label="En esta página">
+    {[["lanzamiento", "Lanzamiento"], ["inicio", "Zonas de inicio"], ["ruta", "Ruta de zonas"], ["talentos", "Talentos"], ["legacy", "Legacy"], ["profesiones", "Profesiones"], ["sistemas", "Sistemas"], ["consejos", "Consejos"], ["webs", "Webs útiles"], ["dudas", "Lo que falta saber"]].map(([a, t]) => <a href={`#${a}`}>{t}</a>)}
+  </nav>
+
+  <section class="box" id="lanzamiento">
+    <h2>Lanzamiento</h2>
+    <div class="facts" style="margin-top:12px">
+      <div class="fact"><b>5 NOV · 00:00</b><span>{G.launch.spain_time}</span></div>
+      <div class="fact"><b>NIVEL {G.launch.level_cap_at_launch}</b><span>Tope desde el primer día, y no va a subir</span></div>
+      <div class="fact"><b>0 LEGACY</b><span>Empiezas de cero: el primer punto llega a nivel 25</span></div>
+    </div>
+    <ul class="bul" style="margin-top:12px">
+      <li>{G.launch.level_cap_note}</li>
+      <li>{G.launch.realms}</li>
+    </ul>
+    <div class="split" style="margin-top:12px">
+      <div><div class="eyebrow">Fechas</div><ol class="timeline">{G.launch.pre_launch_dates.map((x) => <li><span class="when">{x.date}</span><span class="what">{x.item}{x.confirmed === false ? " (sin confirmar)" : ""}{x.note ? ` · ${x.note}` : ""}</span></li>)}</ol></div>
+      <div><div class="eyebrow">Después del lanzamiento</div><ol class="timeline">{G.launch.roadmap.map((x) => <li><span class="when">{x.when}</span><span class="what">{x.content}{x.confirmed === false ? " (sin confirmar)" : ""}</span></li>)}</ol></div>
+    </div>
+  </section>
+
+  <section class="box" id="inicio">
+    <h2>Zonas de inicio de la Alianza</h2>
+    <div class="racegrid">
+      {G.starting_zones.alliance_races.map((r) => {
+        const k = r.race.startsWith("Night") ? "Night Elf" : r.race.split(" ")[0];
+        return (
+          <article class="racecard">
+            <div class="racehead"><Icon name={RACE_ICON[k]} size={40} label={k} big /><div><b>{r.race}</b><span class="note">{r.start}</span></div></div>
+            <p class="note"><b>Clases:</b> {r.classes.join(", ")}</p>
+            <p class="note">{r.racials_current}</p>
+            {r.requires && <p class="warnline">{r.requires}</p>}
+          </article>
+        );
+      })}
+    </div>
+    {G.starting_zones.notes && <p class="note" style="margin-top:10px">{G.starting_zones.notes}</p>}
+  </section>
+
+  <section style="display:grid;gap:12px" id="ruta">
+    <div class="titlerow"><h2>Ruta de zonas</h2><span class="note">Guía paso a paso en español: <a href="https://foreverhispano.com/guia-leveo-1-60/" target="_blank" rel="noopener">ForeverHispano</a></span></div>
+    <p class="warnline">{R.caveat}</p>
+    <div class="tablewrap"><table class="wide">
+      <thead><tr><th>Nivel</th><th>Zona</th><th>Qué hacer</th></tr></thead>
+      <tbody>{R.route.map((z) => <tr><td class="num"><span class="lvlband">{z.levels}</span></td><td><b>{z.zone}</b>{z.new_or_changed && <div class="note" style="color:var(--q-unc)">{z.new_or_changed}</div>}</td><td>{z.notes}</td></tr>)}</tbody>
+    </table></div>
+    {R.zones_changed_vs_classic?.length > 0 && <div class="box"><div class="eyebrow">Zonas que cambian respecto a Classic</div><ul class="bul">{R.zones_changed_vs_classic.map((x) => <li>{x}</li>)}</ul></div>}
+  </section>
+
+  <section class="box" id="talentos">
+    <h2>Talentos</h2>
+    <ul class="bul" style="margin-top:10px">
+      <li>{G.talents_rules.points_per_level}</li>
+      <li>{G.talents_rules.row_rule}</li>
+      <li>{G.talents_rules.row_unlock_levels_single_tree}</li>
+      <li>{G.talents_rules.milestone_talents}</li>
+      <li>{G.talents_rules.changes_vs_classic}</li>
+      <li>Reinicio: {G.talents_rules.respec_location}. Doble especialización: {G.talents_rules.dual_spec}.</li>
+    </ul>
+    <p class="note" style="margin-top:10px">La build de leveo de cada clase, nivel a nivel, está en <a href={url("clases")}>Clases</a>.</p>
+  </section>
+
+  <section class="box" id="legacy">
+    <h2>Legacy</h2>
+    <p class="lede">{L.summary}</p>
+    <div class="split" style="margin-top:12px">
+      <div><div class="eyebrow">Al empezar</div><ul class="bul"><li>{L.beta_points_carry_over}</li><li>{L.first_point_at_launch}</li><li>{L.single_character_max_earnable}</li><li>{L.cost_and_gates}</li></ul></div>
+      <div><div class="eyebrow">Cómo se ganan los puntos</div><ul class="bul">{Object.values(L.how_points_are_earned).map((x) => <li>{x}</li>)}</ul></div>
+    </div>
+    {L.suggested_leveling_spend_16 && <p class="goodline" style="margin-top:12px"><b>En qué gastarlos:</b> {L.suggested_leveling_spend_16}</p>}
+    <div class="trees" style="margin-top:14px">
+      {Object.entries(L.perks).map(([k, list]) => (
+        <div class="tablewrap"><table class="wide">
+          <thead><tr><th colspan="2">{TREE[k] || k}</th></tr></thead>
+          <tbody>{list.map((p) => <tr><td><b>{p.name}</b><div class="note">{p.ranks} rango{p.ranks > 1 ? "s" : ""}{p.gate && p.gate !== "none" ? ` · ${p.gate}` : ""}</div></td><td class="note">{p.effect}</td></tr>)}</tbody>
+        </table></div>
+      ))}
+    </div>
+    <ul class="bul" style="margin-top:12px">{Object.values(L.respec_costs).map((x) => <li>{x}</li>)}</ul>
+  </section>
+
+  <section class="box" id="profesiones">
+    <h2>Profesiones</h2>
+    <div class="split" style="margin-top:12px">
+      <div><div class="eyebrow">Para subir de nivel</div><ul class="bul">{P.best_pairs_leveling.map((x) => <li>{x}</li>)}</ul><div class="eyebrow" style="margin-top:12px">Para PvP</div><p>{P.best_pairs_pvp}</p></div>
+      <div><div class="eyebrow">Recolección</div><ul class="bul">{P.gathering_tips.map((x) => <li>{x}</li>)}</ul></div>
+    </div>
+    <div class="eyebrow" style="margin-top:14px">Qué cambia en Forever</div>
+    <ul class="bul">{P.changes.map((x) => <li>{x}</li>)}</ul>
+    <div class="eyebrow" style="margin-top:14px">Merchant's Favor</div>
+    <ul class="bul">{Object.entries(P.merchants_favor).filter(([k]) => k !== "pawani_vendor").map(([, x]) => <li>{x}</li>)}</ul>
+  </section>
+
+  <section class="box" id="sistemas">
+    <h2>Sistemas que te ayudan a subir</h2>
+    {S.xp_buffs?.length > 0 && <div class="goodline" style="margin-top:12px"><b>Experiencia extra:</b><ul class="bul">{S.xp_buffs.map((x) => <li>{x}</li>)}</ul></div>}
+    <dl class="cmds" style="margin-top:12px">
+      {SYS.filter(([k]) => S[k]).map(([k, t]) => <><dt>{t}</dt><dd>{S[k]}</dd></>)}
+    </dl>
+  </section>
+
+  <section class="box" id="consejos">
+    <h2>Consejos para la noche del lanzamiento</h2>
+    <ol class="steps" style="margin-top:10px">{G.general_tips.map((x) => <li>{x}</li>)}</ol>
+  </section>
+
+  <section class="box" id="webs">
+    <h2>Webs útiles</h2>
+    <div class="racegrid">
+      {G.community_sites.map((s) => (
+        <article class="racecard"><div><b><a href={s.url} target="_blank" rel="noopener">{s.name}</a></b> <span class="note">{host(s.url)}</span></div><p class="note">{s.content}</p>{s.reliability && <p class="note"><i>{s.reliability}</i></p>}</article>
+      ))}
+    </div>
+  </section>
+
+  <section class="box" id="dudas">
+    <h2>Lo que todavía no se sabe</h2>
+    <ul class="bul" style="margin-top:10px">{G.open_questions.map((x) => <li>{x}</li>)}</ul>
+  </section>
+</Base>

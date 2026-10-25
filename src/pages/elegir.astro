@@ -1,0 +1,74 @@
+---
+import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
+import { CLASS_ICON, CLASS_COLOR, url } from "../lib/wow.js";
+import { CLASSES, NAME, SLUG, RACE_ICON } from "../lib/classes.js";
+
+const CRIT = ["Velocidad de leveo", "Seguridad en solitario", "Encontrar grupo", "Duelo 1v1", "Versatilidad", "Facilidad para ti"];
+const OPTS = [
+  {
+    id: "druid", race: "Night Elf", raceEs: "Elfo de la noche", alt: "Skyborne si tienes el pack Heroic o superior",
+    scores: [4, 4, 5, 4, 5, 3],
+    tag: "La más completa",
+    pros: ["Puede tanquear, sanar o hacer daño: siempre encuentras grupo y cambias de papel con una reespecialización.", "Feral sube rápido y con muy poco tiempo muerto: oso al 10, gato al 20 y Forma de viaje.", "La que más se mueve del juego: escapar, perseguir y viajar es facilísimo.", "Elfo de la noche: Fusión de las sombras y ráfaga de crítico con Luz de Elune para PvP."],
+    cons: ["Sin Tiger's Fury: la energía depende de Shifting Power, que gasta maná.", "Muchos botones y formas: la curva de aprendizaje es la más larga de las tres.", "Vulnerable a miedos y aturdimientos si te sacan de forma."],
+  },
+  {
+    id: "shaman", race: "Dwarf", raceEs: "Enano", alt: "Es la única raza de Alianza que puede ser Chamán",
+    scores: [4, 4, 5, 4, 4, 5],
+    tag: "La que ya dominas",
+    pros: ["Ya conoces la clase de la beta: tótems, choques, imbuiciones y Stormstrike.", "En la Alianza es nueva y solo la puede llevar el Enano: habrá pocos y te querrán en grupo como sanador.", "Mejora es muy seguro subiendo: Maelstrom Weapon te da curas y Descargas instantáneas y el lobo instantáneo llega antes del 20.", "Forma de piedra del Enano anula venenos y sangrados: muy buena contra Pícaros y Guerreros."],
+    cons: ["Sin Bloodlust, Hex ni Earth Shield en Forever.", "Depende mucho del arma: si te quedas sin una buena de dos manos, se nota.", "Sin escapes fiables más allá del Lobo fantasmal."],
+  },
+  {
+    id: "warlock", race: "Human", raceEs: "Humano", alt: "Gnomo si prefieres Destrucción o kitear",
+    scores: [5, 5, 3, 5, 2, 3],
+    tag: "La más fuerte en PvP",
+    pros: ["Subir de nivel es muy cómodo: el demonio tanquea, los DoTs matan y desde el 30 tanqueas tú con Drain Life.", "La mejor clase en duelo de las tres (fue S en nuestra tier list a 30): Miedo, Death Coil, Seducción y Curse of Tongues.", "Humano: Will to Survive rompe aturdimientos y +2% de crítico.", "Banes y Maldiciones van por separado: puedes tener una de cada en el rival."],
+    cons: ["Solo hace daño: en mazmorras compites con muchos DPS y tardas más en encontrar grupo (aunque invocar y dar Piedras de salud ayuda).", "Gestión de Fragmentos de alma y muchos hechizos canalizados que te pueden cortar.", "Sin movilidad propia: sufre contra quien le pega encima."],
+  },
+];
+---
+<Base title="Elegir clase" active="elegir" description="Chamán, Brujo o Druida en la Alianza de WoW Forever: qué raza llevar y cuál te conviene según cómo juegas.">
+  <div class="pagehead">
+    <div class="eyebrow">Tus tres opciones · Alianza</div>
+    <h1>¿Chamán, Brujo o Druida?</h1>
+    <p class="lede">Las tres suben bien y las tres son fuertes en duelo. Lo que cambia es cómo juegas: si quieres grupo fácil, si quieres lo más fuerte en PvP o si prefieres algo que ya conoces. Las puntuaciones son nuestra valoración con los datos de la beta (de 1 a 5).</p>
+  </div>
+
+  <section class="choose">
+    {OPTS.map((o) => {
+      const d = CLASSES[o.id];
+      return (
+        <article class="choosecard" style={`--cc:${CLASS_COLOR[o.id]}`}>
+          <div class="racehead"><Icon name={CLASS_ICON[o.id]} size={48} label={NAME[o.id]} big /><Icon name={RACE_ICON[o.race]} size={48} label={o.raceEs} big /><div><h3>{NAME[o.id]} {o.raceEs}</h3><span class="vtag q-leg">{o.tag}</span></div></div>
+          <p class="note">Leveo: <b>{d.leveling.spec}</b> · alternativa: {d.leveling.alt?.spec}. {o.alt}.</p>
+          <div class="scores">{CRIT.map((c, i) => <div><span>{c}</span><i style={`--v:${o.scores[i]}`}></i><b class="num">{o.scores[i]}</b></div>)}</div>
+          <div><div class="eyebrow">A favor</div><ul class="bul">{o.pros.map((x) => <li>{x}</li>)}</ul></div>
+          <div><div class="eyebrow">En contra</div><ul class="bul">{o.cons.map((x) => <li>{x}</li>)}</ul></div>
+          <a class="chip gold" href={url(`clases/${SLUG[o.id]}`)}>Guía de {NAME[o.id]}</a>
+        </article>
+      );
+    })}
+  </section>
+
+  <section class="box">
+    <h2>Si tuviera que elegir por ti</h2>
+    <div class="split" style="margin-top:12px">
+      <div>
+        <p class="goodline"><b>Quieres encontrar grupo siempre y hacer de todo → Druida Elfo de la noche.</b> Es la única que puede ser tanque, sanador o daño, y sube con muy poco tiempo muerto. El Skyborne es algo mejor en PvE, pero exige el pack Heroic o superior.</p>
+        <p class="goodline" style="margin-top:10px"><b>Quieres ir a lo seguro con lo que ya sabes → Chamán Enano.</b> Te sirve todo lo que aprendiste con Brumas y en la Alianza vais a ser pocos, así que te buscarán como sanador.</p>
+        <p class="goodline" style="margin-top:10px"><b>Quieres lo más fuerte en PvP y subir solo → Brujo Humano.</b> Es la mejor de las tres en duelo y la más cómoda en solitario; solo te costará algo más encontrar grupo de mazmorra.</p>
+      </div>
+      <div>
+        <div class="eyebrow">Para decidir esta semana</div>
+        <ul class="bul">
+          <li>Las tres llegan a su talento de 31 puntos a nivel 40 (35 con Talented en alters). La forma importante llega antes: oso al 10 y gato al 20 en Druida, Stormstrike al 25 en Chamán y el súcubo al 20 en Brujo.</li>
+          <li>El Legacy es de cuenta: lo que ganes con tu primer personaje te sirve para un segundo. Si dudas entre dos, empieza por la que quieras jugar en grupo y deja la otra de alter.</li>
+          <li>Si juegas en reino PvP, la cuenta queda atada a una facción en esa región: decide Alianza con tus amigos antes del día 4.</li>
+          <li>Reserva de nombre del 27 de octubre al 3 de noviembre si tienes un pack de mejora.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</Base>

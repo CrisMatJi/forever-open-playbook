@@ -2,7 +2,8 @@
 import Base from "../../layouts/Base.astro";
 import Icon from "../../components/Icon.astro";
 import { CLASS_ICON, CLASS_COLOR, url } from "../../lib/wow.js";
-import { CLASSES, ORDER, PICKS, NAME, SLUG } from "../../lib/classes.js";
+import { CLASSES, ORDER, PICKS, NAME, SLUG, RACE_ES } from "../../lib/classes.js";
+const rk = (r) => { const k = r.split(" (")[0].replace("Skyborne - High Order", "Skyborne"); return RACE_ES[k] || k; };
 ---
 <Base title="Clases" active="clases" description="Guía de leveo de las 9 clases de WoW Forever para la Alianza.">
   <div class="pagehead">
@@ -19,7 +20,7 @@ import { CLASSES, ORDER, PICKS, NAME, SLUG } from "../../lib/classes.js";
           <div>
             <b>{NAME[id]}</b>
             <span class="note">Leveo: {d?.leveling?.spec || "—"}</span>
-            {d?.races?.[0] && <span class="note">Raza: {d.races.filter((r) => r.verdict === "best").map((r) => r.race).join(" / ") || d.races[0].race}</span>}
+            {d?.races?.[0] && <span class="note">Raza: {d.races.filter((r) => r.verdict === "best").map((r) => rk(r.race)).join(" / ") || rk(d.races[0].race)}</span>}
             {PICKS.includes(id) && <span class="vtag q-leg">En tu lista</span>}
           </div>
         </a>

@@ -21,6 +21,7 @@ const wh = (i) => `https://www.wowhead.com/forever/item=${i}`;
 const verdictClass = { best: "q-leg", good: "q-rare", ok: "q-unc" };
 const verdictTxt = { best: "La mejor", good: "Buena", ok: "Vale" };
 const lvlOf = (i) => i + 10;
+const rkey = (r) => r.split(" (")[0].replace("Skyborne - High Order", "Skyborne");
 ---
 <Base title={`${NAME[id]}: guía de leveo`} active="clases" description={`Guía de leveo de ${NAME[id]} en WoW Forever para la Alianza: raza, talentos por nivel, equipo, misiones de clase y mazmorras.`}>
   <nav class="classpick" aria-label="Clase">
@@ -54,7 +55,7 @@ const lvlOf = (i) => i + 10;
       <div class="racegrid">
         {d.races.map((r) => (
           <article class={`racecard ${r.verdict === "best" ? "best" : ""}`}>
-            <div class="racehead"><Icon name={RACE_ICON[r.race]} size={40} label={r.race} big /><div><b>{RACE_ES[r.race] || r.race}</b><span class={`vtag ${verdictClass[r.verdict] || ""}`}>{verdictTxt[r.verdict] || r.verdict}</span></div></div>
+            <div class="racehead"><Icon name={RACE_ICON[rkey(r.race)]} size={40} label={rkey(r.race)} big /><div><b>{RACE_ES[rkey(r.race)] || rkey(r.race)}</b><span class={`vtag ${verdictClass[r.verdict] || ""}`}>{verdictTxt[r.verdict] || r.verdict}</span></div></div>
             <p>{r.why}</p>
             {r.racials && <p class="note">{r.racials}</p>}
           </article>
@@ -76,7 +77,7 @@ const lvlOf = (i) => i + 10;
         <button type="button" data-mode="alt" aria-pressed="false">{L.alt.spec}</button>
       </div>
     )}
-    {d.talents_note && <p class="note" style="margin-top:8px">{d.talents_note}</p>}
+    <p class="note" style="margin-top:8px">Árboles de la última build de la beta ({d.build_checked || "1.60.1.70425"}). Un punto por nivel desde el 10: 51 a nivel 60. Con la ventaja de Legacy <b>Talented</b> los puntos llegan hasta 5 niveles antes (el orden es el mismo). Mueve el control para ver la build en tu nivel.</p>
     <div class="trees" id="trees">
       {[0, 1, 2].map((ti) => <TalentTree id={id} tree={ti} n={total} tint={TINTS[id][ti]} build={L.order} />)}
     </div>
@@ -125,7 +126,7 @@ const lvlOf = (i) => i + 10;
       <div class="gear-grid">
         {d.gear.map((g) => {
           const inner = (<>
-            <Icon name={g.icon || "inv_misc_questionmark"} size={44} label={g.name} big class="q-unc" />
+            {g.icon && <Icon name={g.icon} size={44} label={g.name} big class="q-unc" />}
             <span><span class="gear-slot">{g.slot} · Nv {g.levels}</span><b>{g.name}</b></span>
           </>);
           return (

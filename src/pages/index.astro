@@ -1,49 +1,45 @@
 ---
 import Base from "../layouts/Base.astro";
 import Icon from "../components/Icon.astro";
-import { url, MISC_ICON, CLASS_ICON, PROF_ICON } from "../lib/wow.js";
+import { url, MISC_ICON, CLASS_ICON, CLASS_COLOR } from "../lib/wow.js";
+import { ORDER, NAME, SLUG, PICKS } from "../lib/classes.js";
 const cards = [
-  ["guia", "Mi guía", "guide", "Ruta de speedrun por nivel y checklist del Chamán Orco, sincronizable con el addon."],
-  ["gameplay", "Mi gameplay", "gameplay", "Cómo jugar el Chamán en cada tramo de nivel: imbuiciones, choques, tótems y ventana de daño."],
-  ["tier", "Tier list", "tier", "Qué clases rinden en duelo 1v1 a nivel 30 con las raciales de Forever."],
-  ["sacerdote", "Contra el Sacerdote", "priest", "Quién tiene respuesta al escudo, las curas, el Grito y la Quemadura de maná."],
-  ["builds", "Builds a 30", "builds", "Árboles de talentos reales con iconos, de 21 a 26 puntos con Talented."],
-  ["legacy", "Legacy", "legacy", "Blizzard regala 16 puntos: en qué gastarlos para tener 26 talentos a nivel 30."],
-  ["reglas", "Reglas del torneo", "rules", "Todo el reglamento por temas y lo que te puede descalificar."],
-  ["addon", "Addon ForeverPvPTournament", "addon", "Tracker en el juego que se marca solo y te dice qué toca según tu nivel."],
+  ["elegir", "Elegir clase", "choose", "Chamán, Brujo o Druida: qué raza de la Alianza llevar y cuál te conviene."],
+  ["clases", "Guía por clase", "classes", "Las 9 clases: talentos de leveo nivel a nivel, habilidades, equipo, misiones y mazmorras."],
+  ["leveo", "Preparación para el leveo", "level", "Ruta de zonas 1-60, Legacy desde cero, profesiones y todo lo que da experiencia extra."],
+  ["mazmorras", "Mazmorras", "dungeon", "Niveles de Forever, cómo llegar desde la Alianza, misiones y el botín que interesa."],
+  ["duelos", "Duelos a nivel máximo", "pvp", "Puntos fuertes, débiles y plan contra cada clase. Provisional hasta el lanzamiento."],
 ];
 ---
-<Base title="Forever Open Playbook" active="">
+<Base title="Forever Playbook">
   <section class="hero">
     <div>
-      <div class="eyebrow">The Forever Open · duelos 1v1 · WoW Forever beta · solo Horda</div>
-      <h1>Forever Open Playbook</h1>
-      <p class="lede">Tier list del torneo, cómo ganarle al Sacerdote, árboles de talentos a nivel 30 y el plan exacto para sacar 26 puntos de talento con Legacy. Con las raciales de Forever, no las de Classic.</p>
+      <div class="eyebrow">WoW Forever · Alianza · leveo 1-60</div>
+      <h1>Forever Playbook</h1>
+      <p class="lede">Tu preparación para el lanzamiento: qué clase y raza jugar, la build de talentos para subir nivel a nivel, el equipo que merece la pena, las mazmorras de cada tramo y cómo plantear los duelos.</p>
       <div class="cta">
-        <a class="chip gold" href={url("guia")}><Icon name={CLASS_ICON.shaman} size={22} label="Chamán" /> Empezar mi guía</a>
-        <a class="chip" href={url("addon")}><Icon name={MISC_ICON.addon} size={22} label="Addon" /> Descargar el addon</a>
+        <a class="chip gold" href={url("elegir")}><Icon name={MISC_ICON.choose} size={22} label="" fallback="?" /> Elegir clase</a>
+        <a class="chip" href={url("leveo")}><Icon name={MISC_ICON.level} size={22} label="" fallback="" /> Plan de leveo</a>
       </div>
     </div>
     <div class="box" style="display:grid;gap:12px">
-      <div class="eyebrow">Clasificatoria · 17 de octubre</div>
-      <div class="countdown" id="cd" data-target="2026-10-17T19:00:00+02:00">
+      <div class="eyebrow">Lanzamiento · jueves 5 de noviembre, 00:00</div>
+      <div class="countdown" id="cd" data-target="2026-11-04T23:00:00Z">
         <div><b data-u="d">–</b><span>DÍAS</span></div>
         <div><b data-u="h">–</b><span>HORAS</span></div>
         <div><b data-u="m">–</b><span>MIN</span></div>
         <div><b data-u="s">–</b><span>SEG</span></div>
       </div>
-      <p class="note">Empieza a las 19:00 (17:00 UTC) según Raider.IO. El formato de la clasificatoria se publica en el Discord.</p>
+      <p class="note">Miércoles 4 a las 15:00 hora del Pacífico = medianoche en la España peninsular (23:00 en Canarias). Sale a la vez en todo el mundo.</p>
     </div>
   </section>
 
   <div class="facts">
-    <div class="fact"><b class="num">2 OCT</b><span>Inscripción cerrada</span></div>
-    <div class="fact"><b class="num">16 OCT</b><span>Envío de la build</span></div>
-    <div class="fact"><b class="num">17 OCT</b><span>Clasificatoria, 15 g de entrada</span></div>
-    <div class="fact"><b class="num">18 OCT</b><span>Final, BO5 por cruce</span></div>
-    <div class="fact"><b>TOP 4</b><span>de cada clase pasan a la final</span></div>
-    <div class="fact"><b class="num">$5.555</b><span>al mejor de cada clase</span></div>
-    <div class="fact"><b class="num">$50.000</b><span>al campeón (bolsa de $100.000)</span></div>
+    <div class="fact"><b>NIVEL 60</b><span>Tope desde el primer día</span></div>
+    <div class="fact"><b>51</b><span>Puntos de talento, uno por nivel desde el 10</span></div>
+    <div class="fact"><b>0 LEGACY</b><span>Empiezas de cero; el primer punto a nivel 25</span></div>
+    <div class="fact"><b>NIVEL 40</b><span>Primera montura, 100 oro</span></div>
+    <div class="fact"><b>9 DIC</b><span>Abren las bandas</span></div>
   </div>
 
   <section class="cards" aria-label="Secciones">
@@ -56,14 +52,14 @@ const cards = [
   </section>
 
   <section class="box">
-    <div class="titlerow"><h2>El plan en una línea</h2></div>
-    <div class="summary" style="margin-top:12px">
-      <div><span>Clase y raza</span><b><Icon name={CLASS_ICON.shaman} size={22} label="Chamán" /> Chamán Orco</b><em>Mejora · tier A</em></div>
-      <div><span>Recolección 1-28</span><b><Icon name={PROF_ICON["Desuello"]} size={22} label="Desuello" /> <Icon name={PROF_ICON["Minería"]} size={22} label="Minería" /> Desuello + Minería</b><em>todo al banco</em></div>
-      <div><span>Al 28</span><b><Icon name={PROF_ICON["Peletería"]} size={22} label="Peletería" /> <Icon name={PROF_ICON["Ingeniería"]} size={22} label="Ingeniería" /> Peletería + Ingeniería</b><em>a 225 de golpe</em></div>
-      <div><span>Legacy</span><b><Icon name={MISC_ICON.legacy} size={22} label="Legacy" /> 16 regalados</b><em>Talented 5/5 → 26 talentos</em></div>
-      <div><span>Torneo</span><b><Icon name={MISC_ICON.duel} size={22} label="Torneo" /> 17-18 oct</b><em>desde las 19:00</em></div>
-    </div>
+    <div class="titlerow"><h2>Las 9 clases</h2><span class="note">Resaltadas, las tres que estás pensando</span></div>
+    <nav class="classpick" style="margin-top:12px" aria-label="Clases">
+      {ORDER.map((o) => (
+        <a href={url(`clases/${SLUG[o]}`)} style={PICKS.includes(o) ? `border-color:${CLASS_COLOR[o]}` : ""}>
+          <Icon name={CLASS_ICON[o]} size={26} label={NAME[o]} /> {NAME[o]}
+        </a>
+      ))}
+    </nav>
   </section>
 
   <script>

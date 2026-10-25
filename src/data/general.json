@@ -1,0 +1,418 @@
+{
+  "meta": {
+    "researched_on": "2026-10-25",
+    "beta_builds_seen": ["1.60.1.70425 (talentsforever)", "1.60.1.70532 (foreverchanges, latest beta build, Oct 22)"],
+    "note": "The beta was capped at level 30 the whole time. Everything from 31 to 60 (zones, dungeons, Shen'dralas, Hyjal) was never tested publicly, so level ranges above 30 come from client data, Blizzard announcements and Classic routes. Treat them as provisional."
+  },
+
+  "launch": {
+    "date_utc": "2026-11-04T23:00:00Z",
+    "official_time": "Nov 4 2026, 3:00 p.m. PST (Blizzard's English page). Blizzard's French page says midnight Paris time on Nov 5.",
+    "spain_time": "Thu Nov 5 2026, 00:00 CET (mainland Spain); Nov 4 23:00 in the Canary Islands",
+    "time_discrepancies": "The Wowhead copy of the Blizzard blue post says 'PDT' in one place and 'PST' in another. The warcraft.wiki.gg patch page says '0:00 UTC'. Most sources, including Blizzard FR, playnews.gg, kami-labs and ForeverHispano, agree on 23:00 UTC = 00:00 Spain. US DST ends Nov 1, so PST (UTC-8) applies.",
+    "level_cap_at_launch": 60,
+    "level_cap_note": "The cap is 60 at launch and stays 60 permanently. Blizzard's 'Journey before destination' pillar rules out level cap increases; growth is horizontal (new zones at any level range, dungeons, raids, Legacy). The beta cap was 30 from Oct 1 until the beta ended. The 30 was beta-only.",
+    "level_cap_confirmed": true,
+    "realms": "No realm list. One 'mega-realm' per ruleset per region (Normal, PvP, RP, RP-PvP; Hardcore later) with layering. You can only group with players on the same ruleset and faction. On the PvP ruleset an account is limited to one faction per region.",
+    "pre_launch_dates": [
+      {"item": "Beta", "date": "Sep 17 - Oct 21/23, 2026 (extended to 10 AM PDT Oct 23 per Warcraft Tavern)", "confirmed": true},
+      {"item": "Stress test (progress wiped)", "date": "Oct 21, 2026", "confirmed": true},
+      {"item": "Early Name Reservation (upgrade-pack owners, up to 3 characters, first+last name)", "date": "Oct 27 - Nov 3, 2026 (PST)", "confirmed": true},
+      {"item": "Launch", "date": "Nov 4, 2026 15:00 PST", "confirmed": true},
+      {"item": "Friend free pass (1 week)", "date": "Nov 4-11, 2026", "confirmed": false, "note": "Mobalytics only. The Heroic and Epic packs include Invite-A-Friend codes."}
+    ],
+    "roadmap": [
+      {"when": "Dec 9, 2026", "content": "Raids unlock: Barrow Deeps (10-player, new), Hyjal Summit (20-player, new), Onyxia's Lair (40-player)", "level_cap_change": "none", "confirmed": true},
+      {"when": "Winter 2026/2027", "content": "Hardcore ruleset, with 12 Hardcore-specific Legacy challenges", "level_cap_change": "none", "confirmed": true},
+      {"when": "Spring 2027", "content": "2 new raids (10 and 20 player), 2 new dungeons, new quests and playable area, new legendary questline, PvP season refresh", "level_cap_change": "none", "confirmed": "Announced as plans, no date"},
+      {"when": "Summer 2027", "content": "Revamped iconic raid, new raid, expanded world content, 2 new dungeons, PvP season refresh, professions and Legacy updates", "level_cap_change": "none", "confirmed": "Announced as plans, no date"},
+      {"when": "Each content update", "content": "Blizzard says the Legacy per-character spending cap (16 at launch) will rise, and new challenges, perks and rewards will be added", "level_cap_change": "none", "confirmed": true}
+    ],
+    "sources": [
+      "https://warcraft.wiki.gg/wiki/Patch_1.60.1",
+      "https://www.digitalcitizen.life/world-of-warcraft-forever-will-stay-at-level-60-and-focus-on-horizontal-progression/",
+      "https://www.wowhead.com/forever/blue-tracker/news/eu/24302093",
+      "https://www.playnews.gg/en/release-dates/world-of-warcraft-forever-launch-time-11-p-m-on-4-november-names-from-27-october",
+      "https://kami-labs.fr/en/wow-forever/personnages-de-la-beta-wow-forever-conserves/",
+      "https://insider-gaming.com/when-does-wow-forever-come-out-release-date-times/",
+      "https://mobalytics.gg/wow-forever/guides/wow-forever-roadmap",
+      "https://www.warcrafttavern.com/forever/guides/beta/",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-realms/",
+      "https://foreverhispano.com/"
+    ]
+  },
+
+  "legacy": {
+    "summary": "The Legacy system replaces achievements. There are 65 Legacy Challenges and each pays 1 Legacy Point, once per account. Points are account-wide, but each character spends its own allocation in three perk trees (Professions, Adventure, Resourcefulness). The per-character spending cap at launch is 16 points. Total points earned also unlock account rewards. Open the window with the shield icon or the Y key.",
+    "beta_points_carry_over": "No (very likely). Every beta tester got 16 points through the 'Legacy Challenge' from Oct 8, and Kaivax said the grant lasts 'until the end of the Beta'. Beta characters are deleted. Blizzard never explicitly said 'wiped', but nothing points to a carry-over. Plan your first character with 0 Legacy points.",
+    "first_point_at_launch": "Your account gets its first point when your first character reaches level 25 (class challenge). Two faster alternatives: a non-gathering primary craft at skill 150, or exploring the whole world map (hard). So your first launch character levels 1-25 with no perks and can only start spending around 25+.",
+    "how_points_are_earned": {
+      "classes": "27 points: reach levels 25, 45 and 60 on each of the 9 classes. Blizzard says 45. Some sites say 40, which is wrong.",
+      "tradeskills": "18 points: skill 150, 225 and 300 in each of Alchemy, Blacksmithing, Enchanting, Engineering, Leatherworking and Tailoring. Gathering and secondary professions earn nothing.",
+      "pvp": "12 points: PvP ranks 3, 7, 10, 13 and 14 (5). Exalted with the 4 battleground factions: AV, AB, WSG, Darkspear Islands (4). Field of Honor Journey weeks 4, 7 and 10 (3).",
+      "dungeons": "3 points: kill the final boss of every level 15-25 dungeon, every 26-45 dungeon and every 46-60 dungeon (Novice, Experienced and Master Spelunker; foreverchanges says groups of 6, 10 and 17 dungeons).",
+      "raids": "3 points: Hyjal Summit, Barrow Deeps, Onyxia's Lair (from Dec 9).",
+      "adventure": "2 points: Explore Azeroth, and the questline from 'An Earnest Proposition' to 'Saving the Best for Last'."
+    },
+    "per_character_cap_at_launch": 16,
+    "single_character_max_earnable": "29 points can be earned without alts (Blizzard), but you can only spend 16 per character.",
+    "cost_and_gates": "Each rank appears to cost 1 point (talentsforever and foreverchanges planners use 1 point per rank; client data has no explicit cost). Gates look like talent trees: some perks need 5 or 10 points in the same tree, and some need ranks in a prerequisite perk. Each tree can take up to 25 points (Warcraft Tavern). Every tree also has hidden slots for perks that will be added later.",
+    "perks": {
+      "adventure": [
+        {"name": "Well Rested", "ranks": 5, "gate": "none", "effect": "Rested XP accumulates 4% faster per rank (up to +20%), and the rested cap rises by the same amount"},
+        {"name": "Thrill of Adventure", "ranks": 5, "gate": "none", "effect": "Killing a non-trivial enemy restores 1-5% of max HP and mana over 10 sec. Open world only."},
+        {"name": "High Alert", "ranks": 2, "gate": "5 in Adventure", "effect": "Detect stealth as if you were 1 or 2 levels higher. Not in battlegrounds."},
+        {"name": "Talented", "ranks": 5, "gate": "5 in Adventure + 5 Well Rested (Icy Veins)", "effect": "Talent points start at level 9, 8, 7, 6 or 5 instead of 10. The total stays 51. It can't be unlearned while you would owe talent points."},
+        {"name": "Field Guide", "ranks": 3, "gate": "5 in Adventure", "effect": "Camp object cooldowns reduced by 8/16/25%"},
+        {"name": "Field Medicine", "ranks": 2, "gate": "5 in Adventure", "effect": "Recently Bandaged is 5 or 10 sec shorter. Open world only."},
+        {"name": "Frequent Flier", "ranks": 1, "gate": "10 in Adventure + 3 Field Guide", "effect": "Flight paths cost 50% less and the flight mount is 20% faster"}
+      ],
+      "professions": [
+        {"name": "Working Overtime", "ranks": 5, "gate": "none", "effect": "+4% tradeskill skill-up chance per rank"},
+        {"name": "Bountiful Harvest", "ranks": 5, "gate": "none", "effect": "+20% Scarce materials per rank from Mining, Herbalism and Skinning"},
+        {"name": "Bartering", "ranks": 2, "gate": "5 in Professions", "effect": "Vendor prices reduced by 5/10%. Since Oct 15 it no longer discounts training or repairs. It also discounts mounts (not Riding skill)."},
+        {"name": "Performance Bonus", "ranks": 3, "gate": "5 in Professions + 5 Bountiful Harvest", "effect": "5/10/15% chance of double Merchant's Favor per crate"},
+        {"name": "Master Chef", "ranks": 5, "gate": "5 or 10 in Professions (moved Oct 15)", "effect": "10% chance per rank of an extra cooking result"},
+        {"name": "Dedicated Study", "ranks": 1, "gate": "10 in Professions + 2 Bartering", "effect": "+1 skill to your lowest primary or secondary tradeskill. 23h cooldown. With all five professions at 300 it gives 2-4 Elemental Essences instead."},
+        {"name": "Luremaster", "ranks": 2, "gate": "5 or 10 in Professions", "effect": "With a lure active, 25/50% chance of an extra fish"}
+      ],
+      "resourcefulness": [
+        {"name": "Gourmand", "ranks": 3, "gate": "none", "effect": "Food buff duration +33% per rank (up to +100%). This also extends the Well Fed +5% kill-XP buff."},
+        {"name": "The Quick and the Dead", "ranks": 2, "gate": "none", "effect": "Ghost speed +5/10%. Helpful spells cost nothing for 1/2 min after resurrection or until combat."},
+        {"name": "Reinforce", "ranks": 5, "gate": "none", "effect": "-8% durability loss on death per rank"},
+        {"name": "For Great Honor", "ranks": 5, "gate": "5 in Resourcefulness", "effect": "+2% Honor per rank"},
+        {"name": "Permanence", "ranks": 2, "gate": "5 in Resourcefulness + 3 Gourmand", "effect": "Long party/raid class buffs and camp buffs last 50/100% longer"},
+        {"name": "Diplomat", "ranks": 5, "gate": "5 in Resourcefulness", "effect": "+2% reputation per rank"},
+        {"name": "Reagent Economy", "ranks": 1, "gate": "10 in Resourcefulness + 2 Quick and the Dead", "effect": "Class abilities don't need vendor reagents, and tier-1 camp objects need no materials"}
+      ]
+    },
+    "suggested_leveling_spend_16": "Unconfirmed, my suggestion. Leveling alts: Well Rested 5 + Talented 5 (needs 5 Well Rested) + Thrill of Adventure up to 5, or Field Guide/Field Medicine. Second option: Gourmand 3 + Reinforce. First character: none until level 25. At 25 the single point can go into Well Rested 1 or Thrill of Adventure 1.",
+    "account_rewards": [
+      {"points_earned": 15, "reward": "Holstered Replica Ironforge Air Rifle (toy)"},
+      {"points_earned": 25, "reward": "Spectral Bear Cub (pet)"},
+      {"points_earned": 40, "reward": "Spectral Bear Tabard"},
+      {"points_earned": 55, "reward": "Reins of the Spectral Bear (mount)"}
+    ],
+    "rewards_npc": "Innkeeper Wiley, Ratchet",
+    "hardcore_rule": "Points earned in Hardcore count in all rulesets. Normal points don't count in Hardcore.",
+    "respec_costs": {
+      "legacy_perks": "You reset at a class trainer in a major city. Beta: the cheapest reset was 1 silver, and the price escalates per reset and decays by one step per hour (beta-only pricing). Live price unconfirmed; one site quotes 10g.",
+      "talents": "Escalating fee: first 1g, then 5g, rising to a cap of 50g (allthings.how). Blizzard/wiki: the fee decays over time back down to 1g. Beta had a reduced 1s cost (beta only). Unconfirmed details for live.",
+      "dual_spec": "Learned at level 40 from class trainers for 10g. Swap freely outside combat and battlegrounds. Changing talents within a spec still costs the respec fee."
+    },
+    "sources": [
+      "https://news.blizzard.com/en-us/article/24307383/",
+      "https://www.icy-veins.com/wow-forever/legacy-system",
+      "https://www.warcrafttavern.com/forever/guides/legacy/",
+      "https://foreverchanges.pro/legacy-perks",
+      "https://foreverhispano.com/legado/",
+      "https://talentsforever.com",
+      "https://us.forums.blizzard.com/en/wow/t/legacy-points-for-beta-testing/2368776",
+      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-8/2360696/5",
+      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696/6",
+      "https://www.icy-veins.com/wow-forever/news/players-getting-free-legacy-points-for-testing/",
+      "https://allthings.how/wow-forever-how-to-respec-your-talents-at-a-class-trainer/",
+      "https://www.method.gg/wow-forever/how-to-get-a-mount-in-wow-forever-cost-requirement-and-mount-options"
+    ]
+  },
+
+  "talents_rules": {
+    "points_per_level": "1 per level from level 10 (51 at level 60). With the Legacy perk Talented the first point comes at level 9 down to 5, and the total stays 51.",
+    "total_points": 51,
+    "rows_per_tree": 7,
+    "row_rule": "A new row opens for every 5 points spent in that tree, as in Classic. Row thresholds are 0/5/10/15/20/25/30 points.",
+    "row_unlock_levels_single_tree": "Without Talented, if every point goes into one tree: row 1 at level 10, row 2 at 14, row 3 at 19, row 4 at 24, row 5 at 29, row 6 at 34, row 7 at 39. The 31-point capstone is taken at level 40. With Talented 5/5 (points from level 5) everything comes 5 levels earlier, so the capstone is at 35. These levels are derived from the rules, not published by Blizzard.",
+    "milestone_talents": "1-point 'gold medal' talents at 11, 21 and 31 points, plus a new 1-point talent at 16 points in every tree (4 per tree)",
+    "capstone": "31-point talent (row 7). Earliest at level 40, or 35 with Talented 5/5.",
+    "changes_vs_classic": "114 new, 301 changed and 81 removed talents (foreverchanges). Many former talent buffs are now baseline (Blessing of Kings, Improved MotW, Improved Hunter's Mark, Aimed Shot at 20 for every Hunter).",
+    "respec_location": "Class trainer in a major city, for both talents and Legacy perks",
+    "dual_spec": "Level 40, 10g",
+    "sources": [
+      "https://talentsforever.com",
+      "https://www.icy-veins.com/wow/news/start-planning-your-wow-forever-character-with-our-new-talent-calculator/",
+      "https://www.icy-veins.com/wow-forever/news/talents-as-baseline-abilities-leveling-changes-and-more-class-deep-dives-hunter-and-druid/",
+      "https://powerupgaming.co.uk/2026/09/14/new-wow-forever-talents-changes-vs-classic-guide/",
+      "https://foreverchanges.pro/level-30",
+      "https://foreverchanges.pro/changes",
+      "https://warcraft.wiki.gg/wiki/Patch_1.60.1"
+    ]
+  },
+
+  "starting_zones": {
+    "alliance_races": [
+      {"race": "Human", "start": "Northshire Valley, Elwynn Forest (1-10)", "classes": ["Warrior", "Paladin", "Rogue", "Priest", "Mage", "Warlock", "Hunter (NEW in Forever)"], "racials_current": "Will to Survive (stun break), Perception (stealth detection 20s), Ruthless (+2% crit, replaced Sword Spec on Oct 15), The Human Spirit (+5% Spirit)"},
+      {"race": "Dwarf", "start": "Coldridge Valley, Dun Morogh (1-10)", "classes": ["Warrior", "Paladin", "Hunter", "Rogue", "Priest", "Shaman (NEW in Forever)"], "racials_current": "Stoneform, Find Treasure (now also finds extra items in chests), Earth Fury (+2% crit damage and healing, replaced Mace Spec on Oct 15), Big Game Hunter (+5% damage vs beasts)"},
+      {"race": "Gnome", "start": "Coldridge Valley, Dun Morogh (1-10)", "classes": ["Warrior", "Rogue", "Mage", "Warlock", "Priest (NEW in Forever)"], "racials_current": "Escape Artist, Eureka! (8s buff: cheaper spells and +10% damage/healing), Expansive Mind (+5% max mana/rage/energy), Engineering Specialization"},
+      {"race": "Night Elf", "start": "Shadowglen, Teldrassil (1-10/11)", "classes": ["Warrior", "Hunter", "Rogue", "Priest", "Druid"], "racials_current": "Elune's Light (+10% crit for 15s), Shadowmeld, Quickness (+1% dodge, +2% run speed, now stacks), Wisp Spirit"},
+      {"race": "Skyborne - High Order (Alliance)", "start": "Zephras Isle (1-12), a new floating island in Skywall. Major town is Valanaar.", "classes": ["Druid", "Hunter", "Mage", "Rogue", "Warrior"], "racials_current": "Walk on Air (glide 10s, 90s cd), Read Ley Line (+100% HP/mana regen, castable while moving), Wind Blessed (+3% haste after Oct 15), Elemental Insight (+5% damage vs elementals)", "requires": "Skyborne Heroic Pack, Skyborne Epic Pack or Warcraft Forever Collection", "leaving": "Skyship from Valanaar's Alliance/Kirin Tor dock to Dalaran (Alterac Mountains), then the Violet Citadel portal to the Stormwind Mage Tower, then the Deeprun Tram to Ironforge. The Windshaper (Horde) variant goes to Mulgore."}
+    ],
+    "class_by_race_alliance": {
+      "Warrior": ["Human", "Dwarf", "Gnome", "Night Elf", "Skyborne"],
+      "Paladin": ["Human", "Dwarf"],
+      "Hunter": ["Human (new)", "Dwarf", "Night Elf", "Skyborne"],
+      "Rogue": ["Human", "Dwarf", "Gnome", "Night Elf", "Skyborne"],
+      "Priest": ["Human", "Dwarf", "Gnome (new)", "Night Elf"],
+      "Shaman": ["Dwarf (new)"],
+      "Mage": ["Human", "Gnome", "Skyborne"],
+      "Warlock": ["Human", "Gnome"],
+      "Druid": ["Night Elf", "Skyborne"]
+    },
+    "notes": "The six new combinations in Forever are Human Hunter, Dwarf Shaman and Gnome Priest (Alliance) and Orc Mage, Troll Warlock and Undead Paladin (Horde). Racials were heavily reworked on Oct 15, and Blizzard said it would keep revisiting them. Expect more changes at launch. Zephras Isle has a movement-speed mechanic (Blessing of Zephras: run through tornadoes for +40% speed), and Windstones work as potions on the island only.",
+    "sources": [
+      "https://www.icy-veins.com/wow-forever/news/all-new-race-and-class-combos-and-racial-abilities-in-wow-forever-official/",
+      "https://www.method.gg/wow-forever/all-class-and-race-combinations-in-world-of-warcraft-forever",
+      "https://warcraft.wiki.gg/wiki/Skyborne",
+      "https://warcraft.wiki.gg/wiki/Zephras_Isle",
+      "https://www.warcrafttavern.com/forever/news/racial-class-ability-changes-in-the-wow-forever-beta/",
+      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696/6",
+      "https://www.warcrafttavern.com/forever/guides/how-to-get-to-ironforge-from-the-zephras-isle/",
+      "https://www.warcrafttavern.com/forever/guides/zephras-isle-walkthrough/"
+    ]
+  },
+
+  "zone_route": {
+    "caveat": "Levels 1-30 were tested in the beta. Levels 30-60 are a provisional route based on Classic, Forever client data and announcements (ForeverHispano also marks 30-60 as 'tramo provisional'). The XP curve is unchanged from Classic: 4,084,700 XP to reach 60.",
+    "route": [
+      {"levels": "1-10/12", "zone": "Elwynn Forest (Human) / Dun Morogh (Dwarf, Gnome) / Teldrassil (Night Elf) / Zephras Isle 1-12 (Skyborne)", "notes": "Starting zones will be very crowded at launch (layering). Take a gathering profession early. Junior trainers are in the starting zones (e.g. Kelsey Fargo in Northshire), and Poor Copper Veins can be mined from level 1. Library book: Archmage Theocritus's journal at the top of the Tower of Azora, Elwynn (65.4,70.1). Turn books in to Garon Wendell, Stormwind Mage Quarter. Camping unlocks around level 5 through a quest chain (needs Cooking for the campfire).", "new_or_changed": "Zephras Isle is new"},
+      {"levels": "10-20", "zone": "Westfall (12-17) and/or Loch Modan (10-20); Night Elves do Darkshore (16-21)", "notes": "Hall of Thanes (13-18, new dungeon under Ironforge / Old Ironforge): collect the quests first. Deadmines 18-24. Merchant's Favor opens at level 10 (crates go to Marcy Baker, Azeroth Commerce Authority, Three Corners, Redridge). The Cozy Sleeping Bag chain starts at level 14 at the Nailed Plank, Alexston Farmstead, Westfall (37,50): Barrens > Stonetalon > Loch Modan dam (49,12) > Hillsbrad Thoradin's Wall. Library books are in Loch Modan (Thelsamar inn), Westfall (Moonbrook, Sentinel Hill inn) and Darkshore (Ruins of Mathystra).", "new_or_changed": "Hall of Thanes is new. Westfall respawns were fixed."},
+      {"levels": "20-22", "zone": "Redridge Mountains (Lakeshire)", "notes": "foreverchanges route: Redridge Canyons, Galardell Valley. Redridge's map changed substantially in Forever, and the 'Blackrock Blockade' quest was updated. The ACA trade camp (Merchant's Favor recipes and writs) is at Three Corners.", "new_or_changed": "Map changed"},
+      {"levels": "22-24 (and back at 26-29)", "zone": "Wetlands (Menethil Harbor)", "notes": "25+ new quests. Excavation Site: Wetlands dungeon (Blizzard: 26-31; other sources: 24-29) with quests such as Highland Hides, Songblade Search and Horrors in the Highland. Respawns for Dragonmaw, gnolls and Incendicite were increased.", "new_or_changed": "New quests and new dungeon"},
+      {"levels": "24-28", "zone": "Duskwood (Darkshire)", "notes": "About 32 quests (foreverchanges): Addle's Stead, Raven Hill, Brightwood Grove. Respawns increased.", "new_or_changed": "Respawn tuning only"},
+      {"levels": "25-30", "zone": "Ashenvale (Astranaar), optional Stonetalon for Night Elves", "notes": "Leave at 27, come back at 29-30. Blackfathom Deeps 25-31. Stockade 26-32 in Stormwind. Darkspear Islands battleground opens at 30.", "new_or_changed": "Lighting only, no new quests reported"},
+      {"levels": "28-33", "zone": "Thousand Needles (28-31) / Hillsbrad Foothills (30-32) / Alterac Mountains (City of Dalaran)", "notes": "City of Dalaran dungeon 28-33 (wiki: 28-34; don't enter below the boss level of 31). Alliance quests start in Stormwind and Southshore and lead to Archmage Modera on the south shore of Lordamere Lake (Silverpine). She gives the Dalaran Sewer Key. Skyborne arrive in Dalaran by skyship. Horde are attacked on sight in Dalaran.", "new_or_changed": "Alterac Mountains map changed. City of Dalaran is a new dungeon."},
+      {"levels": "31-35", "zone": "Desolace", "notes": "Changed on Oct 8: the Gelkis/Magram 'Valley of Bones' quests now need level 35 (were 30). 16 rewards were retuned to equip level 35. The Valley of Bones is the only listed path into the new zone Shen'dralas. Gnomeregan 31-37 and Scarlet Monastery wings 31-45 are in this range.", "new_or_changed": "Map changed, centaur quests moved to 35"},
+      {"levels": "34-45", "zone": "Stranglethorn Vale (Booty Bay), Arathi Highlands (37-40), Badlands (39-44), Swamp of Sorrows / Dustwallow (35-45)", "notes": "The Drowned City (35-40, new, STV coast). Uldaman 44-50 (wiki) / 36-45 (Tavern). Razorfen Downs 38-44.", "new_or_changed": "Drowned City is new"},
+      {"levels": "35-45", "zone": "The Riverglades (NEW zone)", "notes": "150+ quests, contested. Alliance hub: Farholde Keep, with an Alliance flight path. Reach it on foot from Redridge (Redridge Pass / Blackrock Pass), Badlands, Burning Steppes or Swamp of Sorrows, or by boat from Steamwheedle Port (Tanaris) to Powderfuse Port. One site claims Alliance can only arrive by boat; the wiki shows land access from Redridge. Krol'dok Stronghold dungeon (40-45). Likely the best 35-45 hub for Alliance.", "new_or_changed": "New"},
+      {"levels": "40", "zone": "(Mount)", "notes": "Apprentice Riding plus your first mount for 100g at your racial riding trainer. Human: Randal Hunter, Eastvale Logging Camp (Elwynn). Dwarf: Amberstill Ranch. Gnome: Steelgrill's Depot (Dun Morogh). Night Elf: Darnassus. Skyborne: Genn Fairweather (Zephras Isle). 10% off at Honored. Dual spec 10g. Free class mounts: Alliance Paladin (Tome of Nobility), Warlock (quest from Strahad Farsan, Ratchet).", "new_or_changed": "Mount at 40 for 100g (cheaper than Classic)"},
+      {"levels": "43-50", "zone": "Feralas (43-46), Tanaris (45-47, Zul'Farrak 45-51), Hinterlands (46-48), Searing Gorge (47-49), Azshara (45-55)", "notes": "Shen'dralas (NEW, south-east of Desolace, between Feralas and Mulgore) has an unconfirmed level range: Gfinity says 45-53, the wiki says unknown, Warcraft Tavern estimated 30-50. Maraudon 48-54. Alcaz Prison (48-53, new, island NE of Dustwallow Marsh) needs boat/flight planning.", "new_or_changed": "Shen'dralas new, Alcaz Prison new"},
+      {"levels": "48-55", "zone": "Un'Goro Crater (48-52), Burning Steppes (51-53), Felwood (52-54)", "notes": "Sunken Temple 52-58, BRD 52-60. Shaper's Terrace (58-60, new) is in Un'Goro.", "new_or_changed": "Shaper's Terrace new"},
+      {"levels": "53-60", "zone": "Winterspring (53-55), Western Plaguelands (54-57), Eastern Plaguelands (53-60), Silithus (56-60)", "notes": "Blackmaw Hold (55-60, new, North Azshara). LBRS, DM, Scholomance, Stratholme. The Eastern Plaguelands map changed substantially.", "new_or_changed": "EPL map changed, Blackmaw Hold new"},
+      {"levels": "55/60+", "zone": "Mount Hyjal (NEW, endgame)", "notes": "Client data marks it level 60, and the Group Finder lists 55-60 questing. Entry is through Darkwhisper Gorge (Winterspring), with a taxi link from Everlook. Reputations: Guardians of Hyjal, Barkskin Burrow. Raids open Dec 9. The exact entry requirement is unconfirmed.", "new_or_changed": "New"}
+    ],
+    "zones_changed_vs_classic": [
+      "Maps substantially changed (wiki map comparison): Alterac Mountains, Eastern Plaguelands, Redridge Mountains, Stormwind, Tirisfal Glades, Desolace, Mulgore",
+      "Tirisfal Glades (Horde zone): quest and creature levels around Shadowvale and Bandarion Keep were raised to fix the difficulty escalation (Oct 8). New dungeon there: Ruins of Lordaeron (15-22).",
+      "Desolace: the Valley of Bones centaur quests now need level 35 (Oct 8)",
+      "Wetlands: 25+ new quests and a new dungeon",
+      "Dalaran is back in Alterac Mountains, with a city, quests and a dungeon"
+    ],
+    "sources": [
+      "https://foreverchanges.pro/level-30",
+      "https://foreverhispano.com/guia-leveo-1-60/",
+      "https://foreverhispano.com/zonas/",
+      "https://warcraft.wiki.gg/wiki/Riverglades",
+      "https://warcraft.wiki.gg/wiki/Shen%27dralas",
+      "https://warcraft.wiki.gg/wiki/Zephras_Isle",
+      "https://warcraft.wiki.gg/wiki/City_of_Dalaran",
+      "https://warcraft.wiki.gg/wiki/Forever_map_comparison",
+      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-8/2360696/5",
+      "https://www.gfinityesports.com/article/world-of-warcraft-forever-new-zones-travel-routes-guide",
+      "https://www.warcrafttavern.com/forever/news/all-new-zones-areas-in-wow-forever-revealed-at-blizzcon/",
+      "https://expcarry.com/wow-forever-mount-hyjal-guide",
+      "https://expcarry.com/es/guia-subida-nivel-wow-forever-alianza",
+      "https://koroboost.com/guide/wow-forever-leveling-guide",
+      "https://www.warcrafttavern.com/forever/guides/cozy-sleeping-bag/",
+      "https://www.warcrafttavern.com/forever/guides/library-books/",
+      "https://games.gg/world-of-warcraft/guides/wow-forever-ashenvale-leveling-guide/"
+    ]
+  },
+
+  "dungeons": {
+    "note": "Brief list. A separate agent covers dungeons in depth. Levels come from warcraft.wiki.gg (Patch 1.60.1). Warcraft Tavern lists slightly different ranges, shown in brackets where they differ.",
+    "xp_changes": [
+      "Oct 1: dungeon quests give 50% less of the EXTRA XP Forever had added on top of Classic values (e.g. Deviate Hides went from about 4,650 to about 3,100 XP; Classic was 1,600). Quest rewards were recalibrated and several dungeon quest rewards went from Rare (blue) to Uncommon (green).",
+      "Oct 8: XP from dungeon mob kills +~20%. A bug that gave low XP when grouped with higher-level players was fixed: XP now depends on your own level, as in Era.",
+      "Oct 8: Truthseeker's Bow (library book reward) now needs level 40"
+    ],
+    "list": [
+      {"name": "The Hall of Thanes", "levels": "13-18", "zone": "Ironforge (Old Ironforge)", "new_in_forever": true},
+      {"name": "Ragefire Chasm", "levels": "13-19", "zone": "Orgrimmar (Horde city)", "new_in_forever": false},
+      {"name": "Ruins of Lordaeron", "levels": "15-22 [15-20]", "zone": "Tirisfal Glades / Undercity", "new_in_forever": true},
+      {"name": "The Deadmines", "levels": "18-24 [15-22]", "zone": "Westfall", "new_in_forever": false},
+      {"name": "Wailing Caverns", "levels": "19-25 [17-24]", "zone": "The Barrens", "new_in_forever": false},
+      {"name": "Shadowfang Keep", "levels": "23-29 [20-26]", "zone": "Silverpine Forest", "new_in_forever": false},
+      {"name": "Excavation Site: Wetlands", "levels": "24-29 (Blizzard Oct 1 notes: 26-31)", "zone": "Wetlands", "new_in_forever": true},
+      {"name": "Blackfathom Deeps", "levels": "25-31 [22-28]", "zone": "Ashenvale", "new_in_forever": false},
+      {"name": "The Stockade", "levels": "26-32 [25-29]", "zone": "Stormwind City", "new_in_forever": false},
+      {"name": "City of Dalaran", "levels": "28-33 (wiki dungeon page: 28-34)", "zone": "Alterac Mountains", "new_in_forever": true},
+      {"name": "Razorfen Kraul", "levels": "30-36 [29-38]", "zone": "The Barrens", "new_in_forever": false},
+      {"name": "Gnomeregan", "levels": "31-37 [29-38]", "zone": "Dun Morogh", "new_in_forever": false},
+      {"name": "Scarlet Monastery Graveyard", "levels": "31-37", "zone": "Tirisfal Glades", "new_in_forever": false},
+      {"name": "Scarlet Monastery Library", "levels": "34-40", "zone": "Tirisfal Glades", "new_in_forever": false},
+      {"name": "The Drowned City", "levels": "35-40", "zone": "Stranglethorn Vale (coast)", "new_in_forever": true},
+      {"name": "Scarlet Monastery Armory", "levels": "37-43", "zone": "Tirisfal Glades", "new_in_forever": false},
+      {"name": "Razorfen Downs", "levels": "38-44", "zone": "The Barrens", "new_in_forever": false},
+      {"name": "Scarlet Monastery Cathedral", "levels": "39-45", "zone": "Tirisfal Glades", "new_in_forever": false},
+      {"name": "Krol'dok Stronghold", "levels": "40-45", "zone": "Riverglades", "new_in_forever": true},
+      {"name": "Uldaman", "levels": "44-50 [36-45]", "zone": "Badlands", "new_in_forever": false},
+      {"name": "Zul'Farrak", "levels": "45-51", "zone": "Tanaris", "new_in_forever": false},
+      {"name": "Alcaz Prison", "levels": "48-53", "zone": "Dustwallow Marsh (Alcaz Island)", "new_in_forever": true},
+      {"name": "Maraudon", "levels": "48-54", "zone": "Desolace", "new_in_forever": false},
+      {"name": "Sunken Temple", "levels": "52-58", "zone": "Swamp of Sorrows", "new_in_forever": false},
+      {"name": "Blackrock Depths", "levels": "52-60", "zone": "Blackrock Mountain", "new_in_forever": false},
+      {"name": "Dire Maul East", "levels": "55-60", "zone": "Feralas", "new_in_forever": false},
+      {"name": "Blackmaw Hold", "levels": "55-60", "zone": "Azshara", "new_in_forever": true},
+      {"name": "Lower Blackrock Spire", "levels": "55-60", "zone": "Blackrock Mountain", "new_in_forever": false},
+      {"name": "Upper Blackrock Spire", "levels": "60 (listed by Warcraft Tavern only)", "zone": "Blackrock Mountain", "new_in_forever": false},
+      {"name": "Dire Maul West / North", "levels": "58-60", "zone": "Feralas", "new_in_forever": false},
+      {"name": "Scholomance", "levels": "58-60", "zone": "Western Plaguelands", "new_in_forever": false},
+      {"name": "Shaper's Terrace", "levels": "58-60", "zone": "Un'Goro Crater", "new_in_forever": true},
+      {"name": "Stratholme", "levels": "58-60", "zone": "Eastern Plaguelands", "new_in_forever": false}
+    ],
+    "raids_dec_9": ["Barrow Deeps (10, Mount Hyjal)", "Hyjal Summit (20, Mount Hyjal)", "Onyxia's Lair (40, Dustwallow)"],
+    "sources": [
+      "https://warcraft.wiki.gg/wiki/Patch_1.60.1",
+      "https://www.warcrafttavern.com/forever/guides/dungeons/",
+      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-8/2360696/5",
+      "https://www.warcrafttavern.com/forever/news/level-30-content-is-now-available-in-the-wow-forever-beta/",
+      "https://www.warcrafttavern.com/forever/news/experience-from-dungeon-kills-is-going-up-in-the-wow-forever-beta/",
+      "https://kami-labs.fr/en/wow-forever/beta-wow-forever-xp-donjons-coupee/",
+      "https://foreverchanges.pro/dungeons"
+    ]
+  },
+
+  "professions": {
+    "changes": [
+      "925 new recipes, plus 317 Merchant's Favor recipes (foreverchanges, build 70532). Blizzard says 'over 600'. Most new recipes are in LW (270), BS (197) and Tailoring (180).",
+      "First Aid now makes every tier of healing potion (Minor at skill 1, Lesser 55, Healing 110, Greater 155, Superior 215, Major 275). The recipes use Spices plus herbs. First Aid also gets Poultices (cure disease up to a level) and Tourniquets (stop bleeds). Alchemy keeps flasks, elixirs, mana potions and transmutes.",
+      "Skill tiers by character level: Apprentice 1 (gathering) or 5 (crafting/secondary) up to 75; Journeyman level 10 up to 150; Expert level 20 up to 225; Artisan level 35 up to 300 (special trainers, or a quest for secondaries)",
+      "Camp objects: each profession's tier-1 object at skill 20, tier 2 from a blueprint at 140, tier 3 at 300. Mining: Lodestone (Attack Power), Rock Garden (spawns ore), Molten Foundry. Herbalism: Incense Candle (Int), Fermenter, Seed Hybridizer. Skinning: Camp Chair (+2% crit), Field Guide (Track Beasts), Trapper's Workbench. Leatherworking: Camp Tent (rested-XP style buff, 'Boosted Rest' cooldown). First Aid: First Aid Kit (+Stamina), Toxin Study, Plague Doctor's Laboratory. Engineering: Reagent Bot, Repair Bot, Anarchist's Workbench. Blacksmithing: Sharpening Wheel (Str). Alchemy: Mana Well. Enchanting: Enchanted Lute (stats and resistances). Tailoring: Faction Banner (Spirit). Fishing: Fish Bowl. Cooking: campfires (Basic at skill 1, Journeyman 140, Expert 220), Cookie's Feast, Iron Oven. Camp buffs are weaker than class buffs and don't stack with them.",
+      "Gathering: new Scarce materials (herbs Frilled Lichen, Rosecap, Stranglevine; also new Marefoil, Demonsage, Death Lotus and herb seeds). Mining has new ores and bars (Pyrite, Bauxite, Pitchblende, Azerothium). Ore nodes respawn dynamically (faster when crowded). You only get a skill-up on the first mine of a vein. Creatures can be skinned only once (Oct 1). Fewer Poor Copper veins in starting areas.",
+      "Dungeon tools for non-gatherers: Rockslicer (Deadmines, mine without Mining, 30 uses) and Graverobber's Shovel (Stockade, loot Grave Moss)",
+      "Some BS and LW recipes are random dungeon drops. Enchanting wands vendor for 1 copper. Many crafted items have lower vendor prices (Oct 15), so crafting for vendor gold is weak.",
+      "Tauren Cultivation duplicates herb nodes (Horde only)",
+      "Legacy profession perks: Working Overtime, Bountiful Harvest, Dedicated Study and others (see legacy)"
+    ],
+    "merchants_favor": {
+      "what": "Per-character currency, usable from level 10. Fill a 'Waylaid Crate' (drops from mobs/dungeons or bought on the AH) with the listed bundle of materials (e.g. 20 Peacebloom). It becomes a Sealed crate (bind on pickup) that you turn in for Favor.",
+      "alliance_npc": "Marcy Baker, Azeroth Commerce Authority camp at Three Corners, Redridge Mountains. Horde: Dokimi, Durotar Supply and Logistics, Barrens.",
+      "tiers": "Apprentice and Journeyman from level 10; Expert from 20; Artisan from 35. Favor per crate: raw materials 5/10/15, crafted (cloth bolts, bars, parts) 10/20/30 for Apprentice/Journeyman/Expert. The first crate's Shipping Label quest gives +50 Favor and 2,000 reputation once.",
+      "reputation": "From Craftsman's Writs (75/125/200, each once per day) and Forged Delivery Receipts. Honored = 9,000, Exalted = 42,000.",
+      "buys": "Recipes (about 30-240 Favor, need the profession), profession title certificate (1,000, at skill 300), Packmule Treat pet (1,500), toy license (1,200, Honored), Reins of the Pack Kodo (6,000, level 60 + Journeyman Riding), tabard (200 + 5g, Exalted). No bags confirmed.",
+      "leveling_tips": "Crafters: buy armor patterns first (head, boots, gloves, belt). Enchanters: class relic (45) and Enchant Weapon - Revelation. Skip early Alchemy/Engineering recipes, which mostly need skill 165+. Herb crates are the cheapest to fill.",
+      "pawani_vendor": "Not found in any source. Possibly a mistaken name. Unknown."
+    },
+    "best_pairs_leveling": [
+      "Gathering pays for the 100g mount at 40: Herbalism + Mining or Skinning + Mining is the classic gold choice. Herbalism now also feeds your own First Aid healing potions.",
+      "Self-sufficient crafter: Warrior/Paladin BS + Mining; Hunter/Rogue/Druid/Shaman LW + Skinning; Priest/Mage/Warlock Tailoring + Enchanting (Gfinity)",
+      "Always level First Aid (bandages, healing potions, cures, Stamina camp kit) and Cooking (Well Fed gives +5% kill XP, plus campfires). Cooking is required for camping."
+    ],
+    "best_pairs_pvp": "Engineering + Mining is the consensus PvP and endgame choice (grenades, gadgets). Gnomes get the Engineering Specialization racial. Sources: Warcraft Tavern, Gfinity.",
+    "gathering_tips": [
+      "Keep Find Minerals or Find Herbs active (they can't run together). Reapply Find Herbs after death.",
+      "Herbs give skill for about 100 levels but turn green around +50, so change zones about every 50 skill",
+      "Skin while questing. Fully loot before skinning.",
+      "Crowded zones respawn ore faster (dynamic spawns)",
+      "Mining gear: Goblin Mining Helm (+5), Miner's Cape (+2)"
+    ],
+    "sources": [
+      "https://foreverchanges.pro/professions",
+      "https://foreverchanges.pro/merchants-favor",
+      "https://www.wow-professions.com/forever/merchants-favor-durotar-supply-azeroth-commerce",
+      "https://blizzardwatch.com/2026/10/16/first-aid-getting-new-recipes-updates-world-warcraft-forever/",
+      "https://www.warcrafttavern.com/forever/guides/professions/",
+      "https://www.warcrafttavern.com/forever/guides/camping/",
+      "https://www.warcrafttavern.com/forever/guides/mining/",
+      "https://www.warcrafttavern.com/forever/guides/herbalism/",
+      "https://www.warcrafttavern.com/forever/guides/skinning/",
+      "https://www.gfinityesports.com/article/the-best-profession-pairings-for-every-class-in-world-of-warcraft-forever",
+      "https://warcraft.wiki.gg/wiki/Patch_1.60.1",
+      "https://foreverhispano.com/sistemas-y-profesiones/"
+    ]
+  },
+
+  "systems": {
+    "rested_xp": "Rested XP accrues in inns, capital cities and the Cozy Sleeping Bag: 5% of the level per 8h, capped at 150% (30 bubbles), about 10 days to fill. It doubles kill XP only. The Legacy perk Well Rested adds up to +20% rate and cap.",
+    "xp_buffs": [
+      "Well Fed (most cooked food): +5% kill XP for about 15 min. Lost on death. Gourmand extends it.",
+      "Cozy Sleeping Bag: lie on it for 1 min per stack, up to 3 stacks of +1% XP (+3% total), lasting about 2h (foreverchanges), and it persists through death. Usable by the party, 1h cooldown. Not usable in cities or inns. It counts as a rested area. Alliance chain from level 14 (see zone_route 10-20).",
+      "Camp Tent (Leatherworking camp object): rested-XP style buff for 1h, persists through death. Has its own 'Boosted Rest' cooldown.",
+      "All three stack"
+    ],
+    "kill_xp_rules": "Mobs below your level give less XP. Forever bases the calculation on the mob's level relative to yours, with about 10% less at 4 levels below at level 30. Group size and higher-level members reduce kill XP. Quest turn-ins aren't affected by grouping. No quest credit in raid groups.",
+    "camping": "Unlocks around level 5 through a quest chain. You need a Cooking campfire (Simple Wood plus Flint and Tinder); it burns about 10 min with a 5 min placement cooldown. Each character can add one profession object (1h cooldown), and other players can add theirs. /sit at the camp for 1 min to get the buffs (each lasts about 1h). Camp buffs don't stack with the equivalent class buff. Campfires don't hurt players below level 5.",
+    "mounts": "Level 40: Apprentice Riding plus your racial mount for 100g (+60% speed). Extra colors 20g each. Level 60: Journeyman Riding 1,000g, epic mount 200g (+100%). 10% off at Honored with your home faction. Bartering gives up to 10% off mounts only. Other races' mounts need Exalted. Free Paladin and Warlock mounts at 40. No flying mounts. Store mounts (Cerulean Prideclaw) still need Riding bought in game, and Cerulean Prideclaw may need level 60 (unconfirmed).",
+    "travel": "Flight paths as in Classic. Frequent Flier gives -50% cost and +20% speed. Riverglades has an Alliance flight path at Farholde Keep. Neutral boat Powderfuse Port (Riverglades) to Steamwheedle Port (Tanaris). Zephras skyship to Dalaran, which has a portal to Stormwind. Everlook has a taxi link to Hyjal. There are no portal rooms.",
+    "group_finder": "There is a Group Finder tool (lists dungeon eligibility and questing activities), but no automatic dungeon matchmaking. Blizzard's design avoids auto-matchmaking.",
+    "cooldown_manager": "Built-in cooldown manager UI. It supports all classes, racials and trinkets, and spell ranks are grouped into one entry (Oct 15). Consumables come later.",
+    "library_books": "Books are scattered around the world (from SoD), now usable by all classes. Turn them in at Garon Wendell, Stormwind Mage Quarter (38,81). Rewards at 10 books (level 1, neck), 20 (level 20, ring) and 25 (level 30, Truthseeker's Bow at level 40 / off-hand).",
+    "ley_lines_and_convergences": "Elemental Convergences and Leylines spawn in most zones (more spawn points since Oct 15). The Skyborne racial Read Ley Line activates one for +100% HP and mana regeneration.",
+    "dual_spec": "Level 40, 10g at the class trainer",
+    "class_changes_leveling": "Wands and Auto Shot need 0.5s standing still before firing (Oct 15). Hunter: Aimed Shot baseline at 20, traps usable in combat. Mage: Frost Blast at 24. Druid: Shred at 20. Paladin: Blessing of Kings baseline. Low-rank spells get reduced spell power (downranking penalty; foreverchanges has a downrank calculator).",
+    "layering": "Mega-realm with per-zone layers. Joining a group moves you to the leader's layer, and inviting can force a layer change. Rares and quest mobs are per layer. Beta testers complained about layer switches interrupting quests.",
+    "other": "Hardcore comes later. Darkspear Islands battleground opens at level 30. Account-wide transmog collection: selling an uncollected BoE to a vendor makes it soulbound. New tutorial for new players. Barbershops in all capitals. Chronoboon Displacer exists but world buffs are removed inside dungeons and raids.",
+    "revive_spell": "No general 'Revive' spell found in any source. Unknown.",
+    "sources": [
+      "https://www.warcrafttavern.com/forever/guides/experience/",
+      "https://www.warcrafttavern.com/forever/guides/camping/",
+      "https://www.warcrafttavern.com/forever/guides/cozy-sleeping-bag/",
+      "https://www.method.gg/wow-forever/how-to-get-a-mount-in-wow-forever-cost-requirement-and-mount-options",
+      "https://mein-mmo.de/en/wow-forever-beginners-guide-46-tips-to-make-your-start-noticeably-easier,1593013/3/",
+      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696/6",
+      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-8/2360696/5",
+      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696/4",
+      "https://www.warcrafttavern.com/forever/guides/library-books/",
+      "https://www.icy-veins.com/wow-forever/news/wow-forever-players-say-layering-is-interrupting-quests-and-pvp/",
+      "https://conquestcapped.com/guides/wow-forever/wow-forever-realms/",
+      "https://foreverchanges.pro/level-30",
+      "https://foreverchanges.pro/cozy-sleeping-bag",
+      "https://warcraft.wiki.gg/wiki/Patch_1.60.1"
+    ]
+  },
+
+  "general_tips": [
+    "Launch is 00:00 on Thu Nov 5 (Spain). Reserve your name Oct 27 - Nov 3 if you own an upgrade pack, and agree on ruleset and faction with friends: there are no faction or ruleset transfers, and the PvP ruleset locks the account to one faction per region.",
+    "Your first character starts with 0 Legacy points (beta points don't carry over). The first point comes at level 25. Plan to spend it in Well Rested or Thrill of Adventure. Talented only pays off on alts.",
+    "Starting zones will be packed. Mobs are tagged first-come. Group up with people doing the same kill quest, since joining a group pulls you into the leader's layer. Use the Group Finder to get groups for quests. If one starting zone is jammed, consider a different race start (e.g. a Dwarf in Dun Morogh instead of Elwynn).",
+    "Learn Cooking early: you need it to build campfires (camping unlocks around level 5), and Well Fed gives +5% kill XP. Learn First Aid too: it now makes healing potions and cures as well as bandages.",
+    "Pick up a gathering profession at level 1 (Mining/Herbalism/Skinning). Gold for the 100g level-40 mount is the main early bottleneck. Ore respawns faster in crowded zones.",
+    "From level 10, turn filled Waylaid Crates in to Marcy Baker at Three Corners (Redridge) for Merchant's Favor. The first crate's Shipping Label quest gives +50 Favor and 2,000 rep. Herb crates are the cheapest.",
+    "At level 14, do the Cozy Sleeping Bag chain (start at the Nailed Plank, Alexston Farmstead, Westfall 37,50). That's +3% XP for about 2h, it survives death, and the bag doubles as a portable rested area.",
+    "Collect library books on your route (Elwynn Tower of Azora, Westfall Moonbrook, Loch Modan Thelsamar, Darkshore Mathystra) and turn them in at Garon Wendell (Stormwind Mage Quarter) for neck and ring rewards at 10 and 20 books.",
+    "Run each dungeon once with all its quests (pick them up beforehand). Kill XP is +20%, but the bonus quest XP was halved, so chain-running dungeons is no longer the meta. Group with people at your level, because XP is now based on your own level.",
+    "Rested XP only doubles kill XP. Log out in inns or capitals (or in the sleeping bag) every session.",
+    "Save gold: at level 40, Apprentice Riding plus the mount costs 100g (90g at Honored). Skip low-value trainer ranks. Paladins and Warlocks get a free mount by quest. Dual spec costs 10g at 40, and epic riding at 60 is 1,000g + 200g.",
+    "Bags: Forever sources say nothing specific about bags. General Classic advice applies: buy or craft 6-slot bags early (Linen/Woolen bags from tailors on the AH) and aim for 10-12 slots by 20. Merchant's Favor doesn't list bags.",
+    "Alliance mid-levels: Wetlands has 25+ new quests and the Excavation Site dungeon. For 35-45, the new Riverglades zone (150+ quests, Alliance flight path at Farholde Keep) is reachable on foot from Redridge, so you don't depend on the Tanaris boat.",
+    "Desolace's centaur 'Valley of Bones' quests now need level 35. Don't go there at 30.",
+    "Auto Shot and wands need 0.5s standing still now. Account for this when kiting or wanding.",
+    "Use the in-game Cooldown Manager instead of a cooldown addon. Addons with Forever-specific data: Forever Guide (CurseForge, /fguide) and the ForeverChanges and ForeverHispano addons.",
+    "Flight paths: grab every flight point you pass. Long routes need the intermediate stops too. Ask a guard for directions in cities.",
+    "Activate camp buffs that complement your class (e.g. Lodestone AP for melee) only when no class buff covers that stat, because they don't stack."
+  ],
+
+  "community_sites": [
+    {"name": "ForeverChanges", "url": "https://foreverchanges.pro/", "content": "Fan database tracking the latest beta build (1.60.1.70532, Oct 22). Changes vs Classic (/changes), talent calculator and spellbook, Legacy perk planner (/legacy-perks: 65 challenges, 16-point cap, beta reset costs), professions with recipe counts and camp objects (/professions), Merchant's Favor guide (/merchants-favor), dungeons and dungeon quests, quests, rares, library books, world map, BiS at level 30 per spec (/bis), Level 30 guide with an Alliance 20-30 route (/level-30), Cozy Sleeping Bag, downrank calculator, hunter pets, patch notes, an addon, and FR/DE/ZH/RU versions.", "reliability": "Good. Datamined from the client and cross-checks with Blizzard notes. Content is capped at the level 30 beta."},
+    {"name": "ForeverHispano", "url": "https://foreverhispano.com/", "content": "Spanish-language portal. Interactive 1-60 leveling guide with step lists per zone (/guia-leveo-1-60/; 1-30 beta-validated, 30-60 provisional), zone atlas with Forever level ranges (/zonas/), Legacy trees with Spanish perk names (/legado/), talent calculator, character and profession planners, dungeons and raids, item finder, BiS (coming soon), addon guide, own addon (/aventura-addon/), Blue Tracker, news, guild/group finder, Discord (discord.gg/qkW5Y8yzk6), and a countdown in Spain time (Nov 5 00:00).", "reliability": "Good for Spanish names and routes. The 30-60 route is based on Classic."},
+    {"name": "Talents Forever", "url": "https://talentsforever.com", "content": "Talent calculator and build planner for all 9 classes from beta client 1.60.1.70425. Marks new, changed and moved talents vs Classic, shows leveling order per level, shareable and saved builds, racials and the 21 Legacy perks (16 points), patch tracking, per-class JSON exports. Rules: 1 point per level from 10, 51 total, a row every 5 points.", "reliability": "Good, client data"},
+    {"name": "Warcraft Tavern (Forever)", "url": "https://www.warcrafttavern.com/forever/", "content": "Class leveling guides for all 9 classes, Experience and Rested XP guide, dungeon list, Legacy overview, every profession guide, camping and camp objects, Cozy Sleeping Bag, library books, Zephras Isle walkthrough, class and weapon trainer locations, reprints of dev notes."},
+    {"name": "Icy Veins (WoW Forever)", "url": "https://www.icy-veins.com/wow-forever/", "content": "Legacy system guide with perk gates, race guide, talent calculator, news on dev notes. Many pages failed to fetch from this environment."},
+    {"name": "warcraft.wiki.gg", "url": "https://warcraft.wiki.gg/wiki/Patch_1.60.1", "content": "The most complete overview: dungeon table with Forever levels, racials, roadmap, zone pages (Riverglades, Zephras Isle, City of Dalaran), Forever map comparison, Legacy and Merchant's Favor pages."},
+    {"name": "Blizzard forums - dev notes (Kaivax)", "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696", "content": "Official beta development notes (Sep 24, Oct 1, Oct 8, Oct 15). The primary source for XP, quest, Desolace/Tirisfal and racial changes."},
+    {"name": "Wowhead Forever", "url": "https://www.wowhead.com/forever", "content": "Database and blue tracker. The fetch was blocked in this session (permission prompt unanswered), so it was not reviewed."},
+    {"name": "Forever Guide addon (CurseForge)", "url": "https://www.curseforge.com/wow/addons/forever-guide", "content": "In-game /fguide: dungeon quests and chains, 22k-item drop search, ~800 class quests, gear recommendations, 404 rares, layer switching, recipes with AH profit, library books. Game version 1.60.1."}
+  ],
+
+  "open_questions": [
+    "Exact launch build and patch notes. No post-Oct 15 dev notes and no launch notes had been published as of Oct 25.",
+    "Final XP tuning for dungeons and quests at launch. Blizzard said the numbers weren't final.",
+    "Whether beta Legacy points are formally wiped. Implied, not explicitly stated.",
+    "Exact cost per Legacy perk rank (assumed 1 point) and the live Legacy reset price",
+    "Live talent respec price curve (1g > 5g > ... 50g cap, decaying back to 1g) is not officially confirmed",
+    "Level ranges and quest flow for 31-60, including Riverglades, Shen'dralas (level range unknown: 45-53? 30-50?), Mount Hyjal entry requirements and new quests. None of this was beta-tested.",
+    "Final level ranges of several dungeons (Excavation Site 24-29 vs 26-31; Uldaman 44-50 vs 36-45; Classic dungeon ranges differ between wiki and Warcraft Tavern)",
+    "Expert and Artisan Merchant's Favor crate rewards, and any weekly caps",
+    "Whether more racial changes come at launch (Blizzard said it would keep revisiting racials)",
+    "Layer caps and launch-night queue handling",
+    "'Pawani' vendor and a generic 'Revive' spell: not found in any source",
+    "Bag sources specific to Forever (none documented)",
+    "Whether the friend free pass Nov 4-11 is real (Mobalytics only)"
+  ],
+
+  "blocked_or_failed_urls": [
+    "https://www.wowhead.com/forever (permission prompt not answered)",
+    "Several icy-veins.com pages returned client_error (dungeon XP news, healing potions news, zones-and-maps, realms, 'Your Legacy Is the Journey')",
+    "https://mobalytics.gg/wow-forever/guides/zone-map-level-ranges (client_error)",
+    "https://talentsforever.com/patch-notes (client_error)"
+  ]
+}

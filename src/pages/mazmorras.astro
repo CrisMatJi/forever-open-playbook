@@ -1,0 +1,60 @@
+---
+import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
+import D from "../data/dungeons.json";
+import G from "../data/general.json";
+const wh = (i) => `https://www.wowhead.com/forever/item=${i}`;
+const PRI = (p = "") => (p.toLowerCase().startsWith("must") || p.toLowerCase().startsWith("imprescindible") ? "q-leg" : p.toLowerCase().startsWith("good") || p.toLowerCase().startsWith("buena") ? "q-rare" : "");
+const priLabel = (p = "") => p.split(/[ :—-]/)[0].replace(/^must$/i, "Imprescindible").replace(/^good$/i, "Buena").replace(/^skip$/i, "Opcional");
+const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const xp = G.dungeons?.xp_changes || [];
+---
+<Base title="Mazmorras" active="mazmorras" description="Mazmorras de WoW Forever para la Alianza: niveles, cómo llegar, misiones y botín que interesa.">
+  <div class="pagehead">
+    <div class="eyebrow">Alianza · niveles de Forever</div>
+    <h1>Mazmorras</h1>
+    <p class="lede">Cada mazmorra hasta nivel 60 con su rango en Forever, cómo llegar desde la Alianza, las misiones que merece la pena llevar y el botín que buscas. Las nuevas de Forever están marcadas.</p>
+  </div>
+
+  {xp.length > 0 && <section class="box"><div class="eyebrow">Experiencia en mazmorras</div><ul class="bul">{xp.map((x) => <li>{x}</li>)}</ul>{D.cap_note && <p class="note" style="margin-top:8px">{D.cap_note}</p>}</section>}
+
+  <section class="box">
+    <div class="tablewrap"><table class="wide">
+      <thead><tr><th>Nivel</th><th>Mazmorra</th><th>Dónde</th><th>Prioridad</th></tr></thead>
+      <tbody>{D.dungeons.map((d) => (
+        <tr><td class="num"><span class="lvlband">{d.levels}</span></td><td><a href={`#${slug(d.name)}`}><b>{d.name}</b></a>{d.name_es && <div class="note">{d.name_es}</div>}{d.new_or_changed && <div class="note" style="color:var(--q-unc)">Novedad</div>}</td><td class="note">{d.zone}</td><td><span class={`vtag ${PRI(d.priority)}`}>{priLabel(d.priority)}</span></td></tr>
+      ))}</tbody>
+    </table></div>
+  </section>
+
+  {D.dungeons.map((d) => (
+    <section class="box" id={slug(d.name)}>
+      <div class="titlerow"><h2>{d.name}</h2><span class="lvlband num">{d.levels}</span></div>
+      <p class="note">{[d.name_es, d.zone, d.classic_levels && `Classic: ${d.classic_levels}`].filter(Boolean).join(" · ")}</p>
+      {d.priority && <p class="goodline" style="margin-top:8px">{d.priority}</p>}
+      {d.new_or_changed && <p style="margin-top:8px"><b>En Forever:</b> {d.new_or_changed}</p>}
+      {d.alliance_access && <p style="margin-top:8px"><b>Cómo llegar:</b> {d.alliance_access}</p>}
+      {d.quests?.length > 0 && (
+        <div class="tablewrap" style="margin-top:12px"><table class="wide">
+          <thead><tr><th>Misión</th><th>Nv</th><th>Dónde se coge</th><th>Recompensa</th></tr></thead>
+          <tbody>{d.quests.map((q) => <tr><td><b>{q.name}</b>{q.worth && <div class="note">{q.worth}</div>}</td><td class="num">{q.level}</td><td class="note">{q.giver}</td><td>{q.reward}</td></tr>)}</tbody>
+        </table></div>
+      )}
+      {d.drops?.length > 0 && (
+        <div class="gear-grid" style="margin-top:12px">
+          {d.drops.map((g) => {
+            const inner = (<>{g.icon && <Icon name={g.icon} size={36} label={g.name} big class="q-rare" />}<span><span class="gear-slot">{g.slot}{g.boss ? ` · ${g.boss}` : ""}</span><b>{g.name}</b></span></>);
+            return (
+              <article class="gear-card">
+                {g.id ? <a class="gear-main" href={wh(g.id)} target="_blank" rel="noopener" data-wowhead={`item=${g.id}&domain=forever`}>{inner}</a> : <div class="gear-main">{inner}</div>}
+                {g.for && <p class="gear-how">{g.for}</p>}
+              </article>
+            );
+          })}
+        </div>
+      )}
+      {d.tips?.length > 0 && <ul class="bul" style="margin-top:12px">{d.tips.map((t) => <li>{t}</li>)}</ul>}
+    </section>
+  ))}
+  {D.sources?.length > 0 && <p class="note">Fuentes: {D.sources.slice(0, 8).map((s, i) => <><a href={s} target="_blank" rel="noopener">{new URL(s).hostname.replace("www.", "")}</a>{i < Math.min(D.sources.length, 8) - 1 ? " · " : ""}</>)}</p>}
+</Base>

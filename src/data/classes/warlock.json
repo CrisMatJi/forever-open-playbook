@@ -1,0 +1,911 @@
+{
+ "id": "warlock",
+ "build_checked": "1.60.1.70425 (+ hotfixes servidor 16 y 22 Oct 2026; datos de juego iguales en 1.60.1.70532, última beta)",
+ "sources": [
+  "https://talentsforever.com/warlock/changes",
+  "https://talentsforever.com/warlock",
+  "https://talentsforever.com/export/warlock.json",
+  "https://talentsforever.com/warlock/leveling",
+  "https://talentsforever.com/warlock/abilities",
+  "https://talentsforever.com/warlock/races",
+  "https://foreverchanges.pro/patch-notes",
+  "https://foreverchanges.pro/racials",
+  "https://foreverchanges.pro/level-30",
+  "https://foreverchanges.pro/item/7001",
+  "https://foreverchanges.pro/item/11288",
+  "https://foreverchanges.pro/item/6898",
+  "https://foreverchanges.pro/item/6324",
+  "https://foreverchanges.pro/item/6631",
+  "https://foreverchanges.pro/item/6900",
+  "https://foreverchanges.pro/item/14153",
+  "https://foreverhispano.com/clases-y-guias/?clase=Warlock",
+  "https://foreverhispano.com/clases-y-guias/?clase=Warlock&rama=affliction",
+  "https://www.warcrafttavern.com/forever/guides/warlock-leveling/",
+  "https://mobalytics.gg/wow-forever/classes/warlock-leveling-guide",
+  "https://kami-labs.fr/en/wow-classic/wow-forever-classic-plus-4-novembre/"
+ ],
+ "talents": {
+  "trees": [
+   "Aflicción",
+   "Demonología",
+   "Destrucción"
+  ],
+  "list": [
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 1,
+    "name": "Improved Life Tap",
+    "max": 2,
+    "pre": null,
+    "eff": "Life Tap mana gained +10% per rank (+20%)",
+    "icon": "spell_shadow_burningspirit"
+   },
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 2,
+    "name": "Suppression",
+    "max": 5,
+    "pre": null,
+    "eff": "+1% spell hit and -4% threat per rank (+5% / -20%)",
+    "icon": "spell_shadow_unsummonbuilding"
+   },
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 3,
+    "name": "Improved Corruption",
+    "max": 5,
+    "pre": null,
+    "eff": "Corruption cast time -0.4 s and damage +2% per rank (instant, +10%)",
+    "icon": "spell_shadow_abominationexplosion"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 1,
+    "name": "Grim Reach",
+    "max": 2,
+    "pre": null,
+    "eff": "Affliction spell range +10% per rank (+20%); replaces Malediction",
+    "icon": "spell_shadow_callofbone"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 2,
+    "name": "Soul Harvest",
+    "max": 2,
+    "pre": null,
+    "eff": "After a Drain Soul kill on a non-trivial target, mana regen up to +100% for 10 s",
+    "icon": "inv_elemental_primal_shadow"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 3,
+    "name": "Improved Drains",
+    "max": 3,
+    "pre": null,
+    "eff": "Drain Life, Drain Soul and Wrack damage/drain up to +20% (values differ between sources)",
+    "icon": "spell_shadow_haunting"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 1,
+    "name": "Improved Bane of Agony",
+    "max": 2,
+    "pre": null,
+    "eff": "Bane of Agony damage +5% per rank (+10%)",
+    "icon": "spell_shadow_curseofsargeras"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 2,
+    "name": "Fel Concentration",
+    "max": 3,
+    "pre": null,
+    "eff": "70% chance Drains and Wrack lose no channel time when hit (hotfix 22 Oct)",
+    "icon": "spell_shadow_fingerofdeath"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 3,
+    "name": "Amplify Curse",
+    "max": 1,
+    "pre": null,
+    "eff": "Next Curse of Weakness or Bane of Agony +50%, or Curse of Exhaustion +20%, within 30 s; 3 min cooldown",
+    "icon": "spell_shadow_contagion"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 4,
+    "name": "Pandemic",
+    "max": 3,
+    "pre": null,
+    "eff": "Crit damage bonus of Corruption, Banes, Drains, Siphon Life and Wrack up to +100%",
+    "icon": "spell_shadow_unstableaffliction_2"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 1,
+    "name": "Malevolence",
+    "max": 5,
+    "pre": null,
+    "eff": "Shadow spell crit +1% per rank (+5%)",
+    "icon": "spell_shadow_focusedpower"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 2,
+    "name": "Nightfall",
+    "max": 2,
+    "pre": null,
+    "eff": "2% chance per rank (Corruption, Drain Life, Drain Soul, Wrack) for Shadow Trance: next Shadow Bolt instant",
+    "icon": "spell_shadow_twilight"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 3,
+    "name": "Curse of Exhaustion",
+    "max": 1,
+    "pre": "Amplify Curse",
+    "eff": "Teaches Curse of Exhaustion: target movement -30% for 12 s",
+    "icon": "spell_shadow_grimward"
+   },
+   {
+    "tree": 0,
+    "row": 5,
+    "col": 2,
+    "name": "Siphon Life",
+    "max": 1,
+    "pre": null,
+    "eff": "Teaches Siphon Life: drains 11 health every 3 s for 30 s (rank 1)",
+    "icon": "spell_shadow_requiem"
+   },
+   {
+    "tree": 0,
+    "row": 5,
+    "col": 3,
+    "name": "Soul Siphon",
+    "max": 3,
+    "pre": null,
+    "eff": "Drain damage +4% per rank per other Affliction effect on the target (max +36% at 3/3)",
+    "icon": "spell_shadow_lifedrain02"
+   },
+   {
+    "tree": 0,
+    "row": 6,
+    "col": 3,
+    "name": "Shadow Mastery",
+    "max": 5,
+    "pre": null,
+    "eff": "Shadow spell damage and drain +2% per rank (+10%)",
+    "icon": "spell_shadow_shadetruesight"
+   },
+   {
+    "tree": 0,
+    "row": 7,
+    "col": 2,
+    "name": "Wrack",
+    "max": 1,
+    "pre": "Siphon Life",
+    "eff": "Teaches Wrack: channeled 36 Shadow dmg/s; your other Shadow DoTs on the target +10% for 6 s",
+    "icon": "ability_deathknight_hemorrhagicfever"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 1,
+    "name": "Improved Health Funnel",
+    "max": 2,
+    "pre": null,
+    "eff": "Health Funnel +40% transfer, -30% cost, -100% threat (at 2/2)",
+    "icon": "spell_shadow_lifedrain"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 2,
+    "name": "Improved Imp",
+    "max": 3,
+    "pre": null,
+    "eff": "Imp Firebolt and Fire Shield +10% per rank (+30%); Blood Pact no longer improved",
+    "icon": "spell_shadow_summonimp"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 3,
+    "name": "Demonic Embrace",
+    "max": 5,
+    "pre": null,
+    "eff": "Stamina +3% per rank (+15%), no Spirit penalty",
+    "icon": "spell_shadow_metamorphosis"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 4,
+    "name": "Unholy Power",
+    "max": 5,
+    "pre": null,
+    "eff": "All demons' damage +2% per rank (+10%)",
+    "icon": "spell_shadow_shadowworddominate"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 1,
+    "name": "Demonic Aegis",
+    "max": 2,
+    "pre": null,
+    "eff": "Demon Skin and Demon Armor +15% per rank (+30%)",
+    "icon": "spell_shadow_ragingscream"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 2,
+    "name": "Improved Voidwalker",
+    "max": 3,
+    "pre": null,
+    "eff": "Voidwalker Torment, Consume Shadows, Sacrifice, Suffering +10% per rank",
+    "icon": "spell_shadow_summonvoidwalker"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 3,
+    "name": "Fel Vitality",
+    "max": 3,
+    "pre": null,
+    "eff": "Demon health and mana +5% per rank and your max mana +5% per rank (+15%)",
+    "icon": "spell_shadow_demonictactics"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 4,
+    "name": "Demonic Energies",
+    "max": 2,
+    "pre": null,
+    "eff": "Heal your demon for up to 15% of your spell damage; demon gains mana from your Life Tap",
+    "icon": "spell_shadow_felmending"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 1,
+    "name": "Improved Sayaad",
+    "max": 3,
+    "pre": null,
+    "eff": "Succubus/Incubus spell effects and durations +10% per rank",
+    "icon": "ability_warlock_randomizesuccubusincubus"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 2,
+    "name": "Demonic Sacrifice",
+    "max": 1,
+    "pre": null,
+    "eff": "Sacrifice your demon for a 2 h buff (Imp: +Shadow dmg; Succubus/Incubus: +Fire dmg; Voidwalker: 2% mana/4 s; Felhunter: 3% health/4 s)",
+    "icon": "spell_shadow_psychicscream"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 3,
+    "name": "Master Summoner",
+    "max": 2,
+    "pre": null,
+    "eff": "Demon summon cast time -2 s and mana cost -20% per rank",
+    "icon": "spell_shadow_impphaseshift"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 1,
+    "name": "Decimation",
+    "max": 2,
+    "pre": null,
+    "eff": "Soul Fire cooldown reduced (45-90% depending on source); bonus vs targets below 35% health",
+    "icon": "spell_fire_fireball02"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 3,
+    "name": "Fel Domination",
+    "max": 1,
+    "pre": "Master Summoner",
+    "eff": "Next summon 5.5 s faster and 50% cheaper; 5 min cooldown",
+    "icon": "spell_nature_removecurse"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 4,
+    "name": "Demonic Brand",
+    "max": 3,
+    "pre": null,
+    "eff": "Searing Pain -threat and brands the target; your demon's next attacks deal extra Fire/Shadow damage",
+    "icon": "ability_demonhunter_chaoticimprint_fire"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 1,
+    "name": "Improved Felhunter",
+    "max": 3,
+    "pre": null,
+    "eff": "Felhunter abilities +10% per rank; Spell Lock cooldown -2 s per rank",
+    "icon": "spell_shadow_summonfelhunter"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 2,
+    "name": "Soul Link",
+    "max": 1,
+    "pre": "Demonic Sacrifice",
+    "eff": "30% of damage taken is redirected to your demon; you and demon deal +3% damage",
+    "icon": "spell_shadow_gathershadows"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 3,
+    "name": "Demonic Knowledge",
+    "max": 3,
+    "pre": null,
+    "eff": "Spell damage for you and your demon up to 100% of your level while a demon is active",
+    "icon": "spell_shadow_improvedvampiricembrace"
+   },
+   {
+    "tree": 1,
+    "row": 6,
+    "col": 3,
+    "name": "Master Demonologist",
+    "max": 5,
+    "pre": null,
+    "eff": "Demon-dependent bonus up to 10% (Imp: Fire dmg; Succubus: Shadow dmg; Felhunter: -magic dmg taken; Voidwalker: threat/defense)",
+    "icon": "spell_shadow_shadowpact"
+   },
+   {
+    "tree": 1,
+    "row": 7,
+    "col": 2,
+    "name": "Demonic Pact",
+    "max": 1,
+    "pre": "Soul Link",
+    "eff": "Summoning a different demon no longer cancels Demonic Sacrifice",
+    "icon": "inv_ability_soulharvesterwarlock_demonicsoul"
+   },
+   {
+    "tree": 2,
+    "row": 1,
+    "col": 1,
+    "name": "Destructive Reach",
+    "max": 2,
+    "pre": null,
+    "eff": "Destruction spell range +10% per rank (+20%)",
+    "icon": "spell_shadow_corpseexplode"
+   },
+   {
+    "tree": 2,
+    "row": 1,
+    "col": 2,
+    "name": "Improved Shadow Bolt",
+    "max": 5,
+    "pre": null,
+    "eff": "Shadow Bolt crits increase Shadow damage the target takes from you by 4% per rank for 12 s",
+    "icon": "spell_shadow_shadowbolt"
+   },
+   {
+    "tree": 2,
+    "row": 1,
+    "col": 3,
+    "name": "Bane",
+    "max": 5,
+    "pre": null,
+    "eff": "Shadow Bolt, Immolate and Incinerate cast -0.1 s per rank, Soul Fire -0.4 s per rank",
+    "icon": "spell_shadow_deathpact"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 1,
+    "name": "Molten Skin",
+    "max": 5,
+    "pre": null,
+    "eff": "All damage taken -2% per rank (-10%)",
+    "icon": "ability_mage_moltenarmor"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 2,
+    "name": "Cataclysm",
+    "max": 3,
+    "pre": null,
+    "eff": "Destruction spell mana cost up to -10%",
+    "icon": "spell_fire_windsofwoe"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 3,
+    "name": "Aftermath",
+    "max": 5,
+    "pre": null,
+    "eff": "Immolate initial damage +10% per rank; Conflagrate chance to daze (-50% speed, 5 s)",
+    "icon": "spell_fire_fire"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 2,
+    "name": "Ruin",
+    "max": 5,
+    "pre": null,
+    "eff": "Destruction spell crit damage bonus +20% per rank (+100%)",
+    "icon": "spell_shadow_shadowwordpain"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 3,
+    "name": "Shadowburn",
+    "max": 1,
+    "pre": null,
+    "eff": "Teaches Shadowburn: instant Shadow damage (65-73 r1), Soul Shard if target dies within 8 s; 15 s CD",
+    "icon": "spell_shadow_scourgebuild"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 1,
+    "name": "Intensity",
+    "max": 3,
+    "pre": null,
+    "eff": "70% chance Destruction spells lose no cast time when hit (hotfix 22 Oct)",
+    "icon": "spell_fire_lavaspawn"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 2,
+    "name": "Agonizing Flames",
+    "max": 3,
+    "pre": null,
+    "eff": "Searing Pain crit and all Destruction damage up to +10% (+3% per rank per ledger)",
+    "icon": "spell_fire_soulburn"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 3,
+    "name": "Conflagrate",
+    "max": 1,
+    "pre": null,
+    "eff": "Teaches Conflagrate: consumes your Immolate for Fire damage (88-110 r1); 10 s CD",
+    "icon": "spell_fire_fireball"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 1,
+    "name": "Pyroclasm",
+    "max": 2,
+    "pre": "Intensity",
+    "eff": "Soul Fire, Rain of Fire and Hellfire up to 26% chance to stun 3 s",
+    "icon": "spell_fire_volcano"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 2,
+    "name": "Bane of Havoc",
+    "max": 1,
+    "pre": null,
+    "eff": "Teaches Bane of Havoc: 15% of your damage to other targets also hits the cursed target (5 min)",
+    "icon": "ability_warlock_baneofhavoc"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 3,
+    "name": "Fire and Brimstone",
+    "max": 3,
+    "pre": "Conflagrate",
+    "eff": "Conflagrate crit chance up to +25%",
+    "icon": "spell_fire_meteorstorm"
+   },
+   {
+    "tree": 2,
+    "row": 6,
+    "col": 3,
+    "name": "Shadow and Flame",
+    "max": 5,
+    "pre": null,
+    "eff": "Conflagrate and Shadowburn buff the opposite school; chance to keep Immolate / refund Soul Shard",
+    "icon": "spell_fire_playingwithfire"
+   },
+   {
+    "tree": 2,
+    "row": 7,
+    "col": 2,
+    "name": "Incinerate",
+    "max": 1,
+    "pre": "Bane of Havoc",
+    "eff": "Teaches Incinerate: Fire damage (99-113 r1), +25% if Immolate is on the target, 2.5 s cast",
+    "icon": "spell_fire_burnout"
+   }
+  ]
+ },
+ "talents_note": "Árboles completos verificados contra el export JSON de talentsforever (build 70425 + hotfixes). Cambios vs datos locales (70170): Malediction desaparece y su hueco (fila 2, col 1) lo ocupa Grim Reach; Improved Drains, Soul Harvest y el resto mantienen posición. Hotfix 22 Oct: Fel Concentration e Intensity pasan al 70% a 3/3. Amplify Curse: hotfix 16 Oct deja Curse of Exhaustion en +20% (Weakness/Agony +50%). Hay valores contradictorios dentro de talentsforever (Decimation 45% vs 90%, Shadow Mastery 1% vs 2% por rango, Conflagrate/Incinerate daño); se indican en 'eff'. Iconos del export.",
+ "level_cap": 60,
+ "leveling": {
+  "spec": "Aflicción (drain tank)",
+  "why": "Aflicción es la rama de subida más completa y segura: Corrupción instantánea, Bane of Agony (Terror de agonía) y Siphon Life matan mientras el demonio tanquea, y desde 30 Drain Life con Fel Concentration/Soul Siphon te permite tanquear tú mismo sin apenas pausas. Warcraft Tavern y Mobalytics la recomiendan; en talentsforever Demonología es la más elegida (44%) y queda como alternativa.",
+  "order": [
+   "Improved Corruption*5",
+   "Improved Life Tap*2",
+   "Improved Drains*3",
+   "Improved Bane of Agony*2",
+   "Fel Concentration*3",
+   "Nightfall*2",
+   "Malevolence*3",
+   "Siphon Life*1",
+   "Soul Siphon*3",
+   "Malevolence*2",
+   "Shadow Mastery*4",
+   "Wrack*1",
+   "Shadow Mastery*1",
+   "Suppression*5",
+   "Pandemic*3",
+   "Demonic Embrace*5",
+   "Fel Vitality*3",
+   "Demonic Aegis*2",
+   "Demonic Sacrifice*1"
+  ],
+  "alt": {
+   "spec": "Demonología (mascota fuerte, más seguro con poco equipo)",
+   "order": [
+    "Unholy Power*5",
+    "Demonic Energies*2",
+    "Fel Vitality*3",
+    "Improved Sayaad*3",
+    "Master Summoner*2",
+    "Demonic Sacrifice*1",
+    "Demonic Brand*3",
+    "Fel Domination*1",
+    "Decimation*2",
+    "Soul Link*1",
+    "Demonic Knowledge*3",
+    "Master Demonologist*4",
+    "Demonic Pact*1",
+    "Master Demonologist*1",
+    "Improved Corruption*5",
+    "Suppression*5",
+    "Improved Bane of Agony*2",
+    "Improved Drains*3",
+    "Demonic Embrace*4"
+   ]
+  },
+  "stats": "Poder con hechizos / daño de Sombras > DPS de varita (hasta ~30-38) > Golpe (Suppression da 5%) > Intelecto > Espíritu (Life Tap escala con Espíritu en Forever) > Aguante (más vida = más maná vía Life Tap) > Crítico. La Celeridad apenas importa (DoTs y drenajes no se benefician, según Mobalytics).",
+  "weapons": "Varita siempre equipada (Lesser/Greater Magic Wand de Encantamiento, luego Gravestone Scepter). Bastón o espada a 1M + orbe con poder con hechizos; dagas y varitas por defecto, espadas a 1M y bastones en Ventormenta (Woo Ping). Nota: el racial humano de espadas ya no existe en 70425 (ahora es Ruthless, +2% crítico general), así que no hace falta entrenar espadas por el racial. Piedra de hechizo/fuego según rama (sin confirmar compatibilidad con aceites).",
+  "abilities": [
+   [
+    1,
+    "Shadow Bolt (Descarga de las Sombras) / Immolate (Inmolar)",
+    "Pull inicial antes de tener DoTs."
+   ],
+   [
+    1,
+    "Summon Imp (Invocar diablillo)",
+    "Daño a distancia; Blood Pact para grupo."
+   ],
+   [
+    4,
+    "Corruption (Corrupción)",
+    "DoT principal; instantáneo con Improved Corruption 5/5."
+   ],
+   [
+    6,
+    "Life Tap (Transfusión de vida)",
+    "Escala con Espíritu en Forever."
+   ],
+   [
+    8,
+    "Bane of Agony (Terror de agonía)",
+    "Antes Curse of Agony; Banes y Maldiciones se pueden tener a la vez (1 de cada)."
+   ],
+   [
+    8,
+    "Fear (Miedo)",
+    "Rango 20 m en Forever."
+   ],
+   [
+    10,
+    "Summon Voidwalker (Invocar abisario)",
+    "Tanque; misión de clase."
+   ],
+   [
+    10,
+    "Drain Soul (Drenar alma)",
+    "Cada tick puede dar Fragmento de alma; matando siempre da."
+   ],
+   [
+    14,
+    "Drain Life (Drenar vida)",
+    "Base del 'drain tank' a partir de 30 (rango 4 al 38 es un salto importante)."
+   ],
+   [
+    20,
+    "Summon Succubus/Incubus (Invocar súcubo/íncubo)",
+    "Mayor daño de mascota; Seducción en humanoides 15 s."
+   ],
+   [
+    20,
+    "Demon Armor (Armadura demoníaca)",
+    "Sustituye a Demon Skin (Piel de demonio)."
+   ],
+   [
+    20,
+    "Curse of the Elements (Maldición de los elementos)",
+    "Ahora afecta a todo el daño mágico."
+   ],
+   [
+    28,
+    "Banish (Desterrar)",
+    "Ya no se rompe por daño."
+   ],
+   [
+    30,
+    "Summon Felhunter (Invocar manáfago)",
+    "Spell Lock y Devour Magic; clave en PvP."
+   ],
+   [
+    30,
+    "Siphon Life (Succionar vida)",
+    "Talento de Aflicción."
+   ],
+   [
+    30,
+    "Hellfire (Fuego infernal)",
+    "AoE; cuidado con la amenaza."
+   ],
+   [
+    40,
+    "Wrack (Arruinar)",
+    "Talento 40 de Aflicción: canalizado y +10% a tus DoTs de Sombras."
+   ],
+   [
+    40,
+    "Howl of Terror (Aullido de terror)",
+    "Miedo en área."
+   ],
+   [
+    42,
+    "Death Coil (Espiral de la muerte)",
+    "Miedo corto + daño + curación."
+   ],
+   [
+    60,
+    "Bane of Doom (Terror de fatalidad, nombre sin confirmar)",
+    "No se puede lanzar a jugadores; puede invocar un Doomguard."
+   ]
+  ],
+  "rotation": [
+   "Manda al demonio (abisario hasta 20, luego súcubo; manáfago si quieres seguridad) y deja que tome amenaza.",
+   "Bane of Agony (Terror de agonía): sus primeros ticks pegan poco y dejan al demonio tomar el pull; además marca el objetivo como tuyo.",
+   "Corruption (instantánea) y, en objetivos que duren, Immolate y Siphon Life.",
+   "Antes de 30: varita hasta que muera. Desde 30: Drain Life (Drenar vida) como relleno, varita cuando estés lleno de vida o el enemigo casi muerto.",
+   "Shadow Bolt instantánea cuando salte Nightfall (Ocaso).",
+   "Remata con Drain Soul (Drenar alma) si necesitas fragmentos o para Soul Harvest.",
+   "Life Tap cuando la vida supere al maná; con Wrack (40+) canaliza sobre objetivos con todos tus DoTs.",
+   "Pull doble: DoTea el segundo, demonio al primero y Miedo al segundo."
+  ],
+  "class_quests": [
+   [
+    10,
+    "Gakin's Summons (Humano) / The Slaughtered Lamb (Gnomo)",
+    "Summon Voidwalker (abisario)",
+    "Humano: Villadorada → Gakin the Darkbinder, Ventormenta; Gnomo: desde Forjaz hacia Ventormenta (sin confirmar detalles)"
+   ],
+   [
+    20,
+    "Devourer of Souls",
+    "Summon Succubus (súcubo) + primera bolsa de almas (sin confirmar)",
+    "Ventormenta (Gakin)"
+   ],
+   [
+    20,
+    "What Is Love?",
+    "Summon Incubus (íncubo)",
+    "Ventormenta"
+   ],
+   [
+    20,
+    "The Orb of Soran'ruk",
+    "Orb of Soran'ruk (orbe) o Staff of Soran'ruk (bastón)",
+    "Doan Karhan, Los Baldíos; requiere fragmentos de Cavernas de Brazanegra y Castillo de Colmillo Oscuro"
+   ],
+   [
+    30,
+    "Seeking Strahad",
+    "Summon Felhunter (manáfago)",
+    "Ventormenta → Strahad Farsan, Trinquete (Los Baldíos)"
+   ],
+   [
+    40,
+    "Summon Felsteed",
+    "Montura de brujo (sin confirmar en Forever; ninguna fuente la menciona)",
+    "Sin confirmar"
+   ],
+   [
+    50,
+    "Inferno (cadena de Infernal)",
+    "Inferno (según Mobalytics)",
+    "Sin confirmar"
+   ],
+   [
+    60,
+    "Ritual of Doom / Dreadsteed",
+    "Ritual of Doom (según Mobalytics); Dreadsteed sin confirmar",
+    "Sin confirmar"
+   ]
+  ],
+  "tips": [
+   "Las Banes y las Maldiciones son ahora categorías separadas: Bane of Agony + Curse of the Elements/Weakness a la vez.",
+   "Drain Soul da fragmentos por tick: farmea fragmentos con el demonio tanqueando y Drain Soul rango 1. Las piedras de encuentro ya no invocan: Ritual of Summoning es la única forma, lleva fragmentos de sobra.",
+   "La bolsa de fragmentos puede ir en la ranura de componentes.",
+   "Siphon Life solo compensa si dura al menos 2/3 de su duración; no gastes DoTs en enemigos a punto de morir.",
+   "Con Demonología, no lances Searing Pain antes de que Demonic Brand esté marcado o quitarás el aggro al demonio.",
+   "Perk de Legado 'Talented': empiezas a recibir talentos hasta 5 niveles antes; sigue el mismo orden.",
+   "Sastrería + Encantamiento: ropa de Sombras y varitas propias."
+  ]
+ },
+ "races": [
+  {
+   "race": "Human (Humano)",
+   "verdict": "best",
+   "racials": "Ruthless (+2% crítico con hechizos y ataques); Will to Survive (quita todos los aturdimientos, 3 min); The Human Spirit (+5% Espíritu → más Life Tap); Perception",
+   "why": "El +2% de crítico y +5% de Espíritu sirven en PvE, y Will to Survive (rompe aturdimientos) es de lo mejor en PvP contra pícaros y guerreros. Elección por defecto (sin confirmar con datos al 60)."
+  },
+  {
+   "race": "Gnome (Gnomo)",
+   "verdict": "good",
+   "racials": "Expansive Mind (+5% maná máximo); Eureka! (8 s: hechizos no periódicos -10% coste y +10% daño, 2 min; no afecta a Corrupción, Banes ni la quemadura de Inmolar, sí a Drains y Wrack); Escape Artist (rompe ralentizaciones/raíces + 3 s de inmunidad, 2 min); Engineering Specialization",
+   "why": "Mejor para Destrucción (Eureka! potencia Shadow Bolt/Conflagrate/Incinerate) y muy bueno en PvP contra kiteo y raíces. Algo peor que el humano para Aflicción pura."
+  }
+ ],
+ "gear": [
+  {
+   "levels": "13-22",
+   "slot": "Varita",
+   "name": "Greater Magic Wand",
+   "id": 11288,
+   "source": "Encantamiento (70), receta de instructor",
+   "why": "17.5 DPS +2 poder con hechizos; la varita es tu principal daño de relleno antes de 30."
+  },
+  {
+   "levels": "18-25",
+   "slot": "Arma 2M",
+   "name": "Living Root",
+   "id": 6631,
+   "source": "Verdan the Everliving, Cuevas de los Lamentos (38%)",
+   "why": "Bastón con +15 daño con hechizos y +45 curación en Forever."
+  },
+  {
+   "levels": "20-35",
+   "slot": "Mano izquierda",
+   "name": "Orb of Soran'ruk",
+   "id": 6898,
+   "source": "Misión de clase The Orb of Soran'ruk (quest 1740), Los Baldíos",
+   "why": "+9 daño de Fuego y Sombras y curación en uso (mejorado en Forever)."
+  },
+  {
+   "levels": "20-35",
+   "slot": "Arma 2M",
+   "name": "Staff of Soran'ruk",
+   "id": null,
+   "source": "Misma misión de clase (alternativa al orbe)",
+   "why": "+34 daño de Sombras y Fuego, +14 Aguante según Warcraft Tavern; ID de objeto sin confirmar."
+  },
+  {
+   "levels": "23-30",
+   "slot": "Pecho",
+   "name": "Robes of Arugal",
+   "id": 6324,
+   "source": "Archmage Arugal, Castillo de Colmillo Oscuro (35%)",
+   "why": "+6 daño con hechizos, +18 curación, Espíritu y Aguante."
+  },
+  {
+   "levels": "24-35",
+   "slot": "Varita",
+   "name": "Gravestone Scepter",
+   "id": 7001,
+   "source": "Misión Blackfathom Villainy (Alianza, quest 1200), Cavernas de Brazanegra",
+   "why": "29 DPS de Sombras +6 daño de Sombras: la mejor varita antes de 30."
+  },
+  {
+   "levels": "~35-45",
+   "slot": "Pecho",
+   "name": "Enchanted Gold Bloodrobe",
+   "id": 6900,
+   "source": "Misión de brujo The Completed Robe (ubicación/facción sin confirmar)",
+   "why": "Túnica rara de brujo +17 Int +10 Agu."
+  },
+  {
+   "levels": "57-60",
+   "slot": "Pecho",
+   "name": "Robe of the Void",
+   "id": 14153,
+   "source": "Sastrería; patrón de Darkmaster Gandling (Scholomance)",
+   "why": "Épica +46 poder con hechizos y curación de mascota en uso."
+  }
+ ],
+ "dungeons": [
+  "Cavernas de Brazanegra (20-28): misión Blackfathom Villainy (Gravestone Scepter) y fragmentos para el Orbe de Soran'ruk.",
+  "Castillo de Colmillo Oscuro (20-26): Robes of Arugal y el otro fragmento de Soran'ruk (viaje largo para la Alianza).",
+  "Cuevas de los Lamentos (17-24): Living Root.",
+  "Monasterio Escarlata (30-42) y Scholomance (58-60, patrón de Robe of the Void).",
+  "En grupo eres útil por Healthstones, Ritual of Summoning (única forma de invocar en Forever) y Curse of the Elements que ahora potencia todo el daño mágico."
+ ],
+ "changes": [
+  "Curse of Agony pasa a Bane of Agony: Banes y Maldiciones son categorías separadas (puedes tener una de cada en el objetivo).",
+  "Nuevos talentos-hechizo: Bane of Havoc (30), Wrack (40, Aflicción) e Incinerate (40, Destrucción).",
+  "Drain Soul puede dar Fragmentos de alma en cada tick; las piedras de encuentro ya no invocan (Ritual of Summoning es la única invocación).",
+  "Demonic Sacrifice dura 2 h y cambia: Diablillo da daño de Sombras, Súcubo/Íncubo daño de Fuego; Demonic Pact (40) permite invocar otro demonio sin perderlo.",
+  "Maldiciones rehechas: Curse of Weakness solo daño físico, Curse of Recklessness reduce armadura (y frena Miedo), Curse of the Elements afecta a todo el daño mágico, Curse of Tongues +50% tiempo de lanzamiento.",
+  "Life Tap escala con Espíritu; Fear tiene 20 m de alcance; Banish no se rompe por daño; Seducción afecta a humanoides hasta 15 s.",
+  "Bane of Doom no se puede lanzar a jugadores y pega 1742 tras 1 min.",
+  "Nuevo demonio Íncubo como alternativa a la súcubo.",
+  "Talentos +1% sustituidos por efectos más notables; Dark Pact, Improved Healthstone/Firestone/Spellstone y Emberstorm eliminados."
+ ],
+ "pvp": {
+  "strengths": [
+   "Control fuerte: Fear, Howl of Terror, Death Coil, Seducción (15 s en humanoides) y Spell Lock del manáfago.",
+   "Curse of Tongues ahora +50% de tiempo de lanzamiento: devastador contra lanzadores.",
+   "Daño sostenido con DoTs y drenajes; Soul Link y Demon Armor dan aguante.",
+   "Humano: Will to Survive contra aturdimientos; Gnomo: Escape Artist contra raíces/ralentizaciones."
+  ],
+  "weaknesses": [
+   "Sin escapes de movilidad propios; vulnerable a stuns y a interrupciones si castea Shadow Bolt.",
+   "Muchas habilidades de canalización (Drains, Wrack) que se pueden cortar.",
+   "Bane of Doom no funciona contra jugadores.",
+   "Depende de Fragmentos de alma para demonios y Shadowburn/Death Coil."
+  ],
+  "duel_plan": [
+   "Pre-duelo: Demon Armor, Soul Link o sacrificio según rama, manáfago (o súcubo contra cuerpo a cuerpo), Healthstone.",
+   "Abre con Curse of Exhaustion/Corruption/Bane of Agony a máxima distancia, Siphon Life.",
+   "Fear al acercarse; renueva DoTs y usa Drain Life con Fel Concentration.",
+   "Death Coil como cierre de emergencia o para cortar una cura; Howl of Terror si se pega.",
+   "Contra lanzadores: Curse of Tongues + Spell Lock.",
+   "Notas provisionales: valores de beta, sin pruebas al 60."
+  ],
+  "vs": {
+   "warrior": "Kitea con Curse of Exhaustion + Fear y DoTs; Death Coil cuando rompa Miedo con Berserker Rage. Humano: Will to Survive contra sus stuns (provisional).",
+   "rogue": "Mantén Demon Armor y Soul Link; Healthstone y Will to Survive/Escape Artist tras la apertura; Fear y Seducción al romper stun (provisional).",
+   "mage": "Curse of Tongues y Spell Lock; Devour Magic para quitar Ice Barrier/bufos. Cuidado con Polymorph en el demonio (provisional).",
+   "priest": "Spell Lock a las curas, Curse of Tongues; Devour Magic de Power Word: Shield. Duelo largo de recursos: Life Tap con cabeza (provisional).",
+   "warlock": "Espejo: gana quien gestione Spell Lock y Devour Magic. Curse of Tongues obliga a no castear (provisional).",
+   "hunter": "Acércate o fuérzale a mínimo rango; Fear a su mascota no, a él. Death Coil y DoTs; Curse of Exhaustion para no ser kiteado (provisional).",
+   "druid": "Curse of Tongues/Recklessness, Spell Lock a Healing Touch; Fear funciona aunque cambien de forma. Purgar HoTs con Devour Magic (provisional).",
+   "shaman": "Tremor Totem anula tus Miedos: destrúyelo con el demonio. Spell Lock a sus curas y Curse of Tongues (provisional).",
+   "paladin": "Duelo largo: Curse of Tongues, Spell Lock a Holy Light y Devour Magic de bendiciones; Death Coil al burbujear no sirve, espera (provisional)."
+  }
+ }
+}

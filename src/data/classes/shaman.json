@@ -1,0 +1,882 @@
+{
+ "id": "shaman",
+ "build_checked": "1.60.1.70425 (+ hotfixes servidor 22 Oct 2026; datos de juego iguales en 1.60.1.70532, última beta)",
+ "sources": [
+  "https://talentsforever.com/shaman/changes",
+  "https://talentsforever.com/shaman",
+  "https://talentsforever.com/export/shaman.json",
+  "https://talentsforever.com/shaman/leveling",
+  "https://talentsforever.com/shaman/abilities",
+  "https://foreverchanges.pro/class/shaman",
+  "https://foreverchanges.pro/patch-notes",
+  "https://foreverchanges.pro/racials",
+  "https://foreverchanges.pro/item/7230",
+  "https://foreverchanges.pro/item/9449",
+  "https://foreverchanges.pro/item/10399",
+  "https://foreverchanges.pro/item/10410",
+  "https://foreverchanges.pro/item/10413",
+  "https://foreverchanges.pro/item/7717",
+  "https://foreverchanges.pro/item/870",
+  "https://foreverchanges.pro/item/12784",
+  "https://foreverhispano.com/clases-y-guias/?clase=Shaman",
+  "https://foreverhispano.com/clases-y-guias/?clase=Shaman&rama=enhancement",
+  "https://www.warcrafttavern.com/forever/guides/shaman/",
+  "https://www.warcrafttavern.com/forever/guides/dwarf-shaman-totem-quests/",
+  "https://www.method.gg/wow-forever/wow-forever-shaman-leveling-guide-and-talents",
+  "https://kami-labs.fr/en/wow-classic/wow-forever-classic-plus-4-novembre/"
+ ],
+ "talents": {
+  "trees": [
+   "Elemental",
+   "Mejora",
+   "Restauración"
+  ],
+  "list": [
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 2,
+    "name": "Convection",
+    "max": 5,
+    "pre": null,
+    "eff": "Shock, Lightning Bolt, Lava Burst and Chain Lightning mana cost -2% per rank (-10%)",
+    "icon": "spell_nature_wispsplode"
+   },
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 3,
+    "name": "Concussion",
+    "max": 5,
+    "pre": null,
+    "eff": "Lightning Bolt, Chain Lightning and Earth Shock damage +1% per rank (+5%)",
+    "icon": "spell_nature_earthshock"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 1,
+    "name": "Elemental Devastation",
+    "max": 3,
+    "pre": null,
+    "eff": "Direct-damage spell crits give +3% melee crit per rank for 10 s (+9%)",
+    "icon": "spell_fire_elementaldevastation"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 2,
+    "name": "Reverberation",
+    "max": 5,
+    "pre": null,
+    "eff": "Shock cooldowns -0.2 s per rank (-1 s)",
+    "icon": "spell_frost_frostward"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 3,
+    "name": "Elemental Alacrity",
+    "max": 3,
+    "pre": null,
+    "eff": "Lightning Bolt, Chain Lightning and Lava Burst cast time -0.17 s per rank (-0.5 s)",
+    "icon": "spell_lightning_lightningbolt01"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 4,
+    "name": "Call of Flame",
+    "max": 3,
+    "pre": null,
+    "eff": "Fire totems, Flame Shock, Fire Nova and Lava Burst damage +5% per rank (+15%), Flame Shock +3 s per rank",
+    "icon": "spell_fire_immolation"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 1,
+    "name": "Elemental Focus",
+    "max": 1,
+    "pre": null,
+    "eff": "10% chance after a Fire, Frost or Nature damage spell for Clearcasting (next damage spell free)",
+    "icon": "spell_shadow_manaburn"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 2,
+    "name": "Elemental Warding",
+    "max": 3,
+    "pre": null,
+    "eff": "Fire, Frost and Nature damage taken -10% at 3/3",
+    "icon": "spell_nature_spiritarmor"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 1,
+    "name": "Trial by Fire",
+    "max": 2,
+    "pre": null,
+    "eff": "Fire Nova damage +20% and cooldown -4 s, Magma Totem +20 s (at 2/2)",
+    "icon": "spell_fire_sealoffire"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 2,
+    "name": "Eye of the Storm",
+    "max": 3,
+    "pre": null,
+    "eff": "70% chance Lightning Bolt, Chain Lightning and Lava Burst lose no cast time when damaged (hotfix 22 Oct)",
+    "icon": "spell_nature_eyeofthestorm"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 4,
+    "name": "Earthbound",
+    "max": 1,
+    "pre": null,
+    "eff": "Earthbind Totem immobilizes nearby enemies for 5 s when cast",
+    "icon": "spell_nature_stranglevines"
+   },
+   {
+    "tree": 0,
+    "row": 5,
+    "col": 1,
+    "name": "Elemental Reach",
+    "max": 2,
+    "pre": null,
+    "eff": "+6 yd range on Lightning Bolt, Chain Lightning, Fire Nova and Lava Burst; Totemic Projection cooldown -20 s",
+    "icon": "spell_nature_stormreach"
+   },
+   {
+    "tree": 0,
+    "row": 5,
+    "col": 2,
+    "name": "Lava Burst",
+    "max": 1,
+    "pre": null,
+    "eff": "Teaches Lava Burst: Fire damage (rank 1 113-145), +20% if your Flame Shock is on the target, 10 s cooldown",
+    "icon": "spell_shaman_lavaburst"
+   },
+   {
+    "tree": 0,
+    "row": 5,
+    "col": 3,
+    "name": "Lightning Overload",
+    "max": 3,
+    "pre": "Elemental Alacrity",
+    "eff": "Lightning Bolt and Chain Lightning have up to 10% chance to cast a free half-damage, no-threat copy",
+    "icon": "spell_nature_lightningoverload"
+   },
+   {
+    "tree": 0,
+    "row": 6,
+    "col": 3,
+    "name": "Elemental Fury",
+    "max": 5,
+    "pre": "Lightning Overload",
+    "eff": "Crit damage bonus of Fire, Frost and Nature spells and Searing/Magma Totems +100% at 5/5",
+    "icon": "spell_fire_volcano"
+   },
+   {
+    "tree": 0,
+    "row": 7,
+    "col": 2,
+    "name": "Elemental Mastery",
+    "max": 1,
+    "pre": "Lava Burst",
+    "eff": "15 s: Lightning Bolt and Lava Burst cast 0.5 s faster and Chain Lightning has no cooldown; 3 min cooldown",
+    "icon": "spell_nature_wispheal"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 1,
+    "name": "Earth's Grasp",
+    "max": 2,
+    "pre": null,
+    "eff": "Stoneclaw Totem health +50%, Earthbind Totem radius +20% (at 2/2)",
+    "icon": "spell_nature_stoneclawtotem"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 2,
+    "name": "Thundering Strikes",
+    "max": 5,
+    "pre": null,
+    "eff": "+1% crit chance with all spells and attacks per rank (+5%)",
+    "icon": "ability_thunderbolt"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 3,
+    "name": "Ancestral Knowledge",
+    "max": 5,
+    "pre": null,
+    "eff": "Intellect +2% per rank (+10%)",
+    "icon": "spell_shadow_grimward"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 1,
+    "name": "Guardian Totems",
+    "max": 2,
+    "pre": null,
+    "eff": "Stoneskin and Windwall Totems +20%, Grounding Totem cooldown -2 s",
+    "icon": "spell_nature_stoneskintotem"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 2,
+    "name": "Mental Dexterity",
+    "max": 3,
+    "pre": null,
+    "eff": "Gain Attack Power equal to up to 100% of your Intellect (3/3)",
+    "icon": "spell_nature_mentalquickness"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 3,
+    "name": "Improved Ghost Wolf",
+    "max": 2,
+    "pre": null,
+    "eff": "Ghost Wolf cast time -3 s (instant) and usable indoors (at 2/2)",
+    "icon": "spell_nature_spiritwolf"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 4,
+    "name": "Improved Lightning Shield",
+    "max": 3,
+    "pre": null,
+    "eff": "Lightning Shield orb damage +5% per rank (+15%)",
+    "icon": "spell_nature_lightningshield"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 1,
+    "name": "Elemental Weapons",
+    "max": 3,
+    "pre": null,
+    "eff": "Rockbiter AP +20%, Windfury +40%, Flametongue and Frostbrand +15% (at 3/3)",
+    "icon": "spell_fire_flametounge"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 3,
+    "name": "Shamanistic Focus",
+    "max": 1,
+    "pre": null,
+    "eff": "Shock and Lightning Shield mana cost -45%",
+    "icon": "spell_nature_elementalabsorption"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 4,
+    "name": "Anticipation",
+    "max": 3,
+    "pre": null,
+    "eff": "Dodge +2% per rank (+6%)",
+    "icon": "spell_nature_mirrorimage"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 1,
+    "name": "Toughness",
+    "max": 5,
+    "pre": null,
+    "eff": "Stamina +2% per rank (+10%)",
+    "icon": "spell_holy_devotion"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 2,
+    "name": "Flurry",
+    "max": 5,
+    "pre": "Mental Dexterity",
+    "eff": "After a melee crit, attack speed up to +25% for the next 3 swings",
+    "icon": "ability_ghoulfrenzy"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 3,
+    "name": "Stormstrike",
+    "max": 1,
+    "pre": null,
+    "eff": "Instant weapon strike (8 s cooldown); your next Lightning Bolt, Chain Lightning or Earth Shock within 12 s deals +20%",
+    "icon": "ability_shaman_stormstrike"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 1,
+    "name": "Spirit Weapons",
+    "max": 1,
+    "pre": null,
+    "eff": "Allows parry; threat changed by 30% depending on whether Rockbiter Weapon is active",
+    "icon": "ability_parry"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 2,
+    "name": "Mental Quickness",
+    "max": 2,
+    "pre": null,
+    "eff": "Spell damage and healing increased by up to 30% of your Intellect",
+    "icon": "spell_nature_sleep"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 3,
+    "name": "Improved Stormstrike",
+    "max": 2,
+    "pre": "Stormstrike",
+    "eff": "Stormstrike grants 50% mana regen while casting for 15 s; chance to reset its cooldown on dodge/parry",
+    "icon": "spell_shaman_improvedstormstrike"
+   },
+   {
+    "tree": 1,
+    "row": 6,
+    "col": 3,
+    "name": "Maelstrom Weapon",
+    "max": 5,
+    "pre": null,
+    "eff": "Melee hits stack (max 5) reducing your next Lightning Bolt cast time and mana cost (export says 20%; per stack vs total sin confirmar)",
+    "icon": "spell_shaman_maelstromweapon"
+   },
+   {
+    "tree": 1,
+    "row": 7,
+    "col": 2,
+    "name": "Rage of the Farseer",
+    "max": 1,
+    "pre": "Mental Quickness",
+    "eff": "Personal +30% attack speed for 25 s, 3 min cooldown (not raid-wide, no spell haste)",
+    "icon": "spell_nature_bloodlust"
+   },
+   {
+    "tree": 2,
+    "row": 1,
+    "col": 2,
+    "name": "Improved Healing Wave",
+    "max": 5,
+    "pre": null,
+    "eff": "Healing Wave cast time -0.1 s per rank (-0.5 s)",
+    "icon": "spell_nature_magicimmunity"
+   },
+   {
+    "tree": 2,
+    "row": 1,
+    "col": 3,
+    "name": "Tidal Focus",
+    "max": 5,
+    "pre": null,
+    "eff": "Healing spell mana cost -1% and hit chance +1% per rank",
+    "icon": "spell_frost_manarecharge"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 1,
+    "name": "Mindfulness",
+    "max": 3,
+    "pre": null,
+    "eff": "Up to 50% of mana regeneration continues while casting",
+    "icon": "spell_nature_sleep"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 2,
+    "name": "Natural Grace",
+    "max": 3,
+    "pre": null,
+    "eff": "Spell threat -5% per rank (-15%)",
+    "icon": "spell_nature_healingtouch"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 3,
+    "name": "Totemic Focus",
+    "max": 5,
+    "pre": null,
+    "eff": "Totem (and totem-moving spell) mana cost -5% per rank (-25%)",
+    "icon": "spell_nature_moonglow"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 4,
+    "name": "Improved Reincarnation",
+    "max": 2,
+    "pre": null,
+    "eff": "Reincarnation cooldown -20 min, max health +4%, +20% health/mana on reincarnation (at 2/2)",
+    "icon": "spell_nature_reincarnation"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 1,
+    "name": "Ancestral Healing",
+    "max": 3,
+    "pre": null,
+    "eff": "Healing crits raise target armor up to +25% for 15 s",
+    "icon": "spell_nature_undyingstrength"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 2,
+    "name": "Healing Focus",
+    "max": 3,
+    "pre": null,
+    "eff": "70% chance healing spells lose no cast time when damaged (hotfix 22 Oct)",
+    "icon": "spell_nature_healingwavelesser"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 3,
+    "name": "Water Shield",
+    "max": 1,
+    "pre": null,
+    "eff": "Teaches Water Shield: 3 globes, each restores 2% max mana when hit or on a spell crit; 10 min",
+    "icon": "ability_shaman_watershield"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 1,
+    "name": "Tidal Mastery",
+    "max": 5,
+    "pre": null,
+    "eff": "Healing spell crit +1% per rank (no longer affects lightning spells)",
+    "icon": "spell_nature_tranquility"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 2,
+    "name": "Restorative Totems",
+    "max": 5,
+    "pre": null,
+    "eff": "Mana Spring Totem +25%, Healing Stream Totem +50% (at 5/5)",
+    "icon": "spell_nature_manaregentotem"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 3,
+    "name": "Mana Tide Totem",
+    "max": 1,
+    "pre": null,
+    "eff": "Totem restores mana (88 per 3 s, rank 1) to group members within 30 yd for 12 s",
+    "icon": "spell_frost_summonwaterelemental"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 2,
+    "name": "Healing Way",
+    "max": 3,
+    "pre": null,
+    "eff": "Healing Wave amount up to +25% (flat, no stacks)",
+    "icon": "spell_nature_healingway"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 3,
+    "name": "Nature's Swiftness",
+    "max": 1,
+    "pre": null,
+    "eff": "Next Nature spell with a cast time under 10 s is instant",
+    "icon": "spell_nature_ravenform"
+   },
+   {
+    "tree": 2,
+    "row": 6,
+    "col": 3,
+    "name": "Purification",
+    "max": 5,
+    "pre": null,
+    "eff": "Healing spell effectiveness +2% per rank (+10%)",
+    "icon": "spell_frost_wizardmark"
+   },
+   {
+    "tree": 2,
+    "row": 7,
+    "col": 2,
+    "name": "Riptide",
+    "max": 1,
+    "pre": "Healing Way",
+    "eff": "Instant heal + HoT over 15 s (6 s cooldown); your next Chain Heal on that target +25%",
+    "icon": "spell_nature_riptide"
+   }
+  ]
+ },
+ "talents_note": "Árboles completos verificados contra el export JSON de talentsforever (build 70425 + hotfixes del 22 Oct). Cambios vs datos locales (70170): Elemental reorganizado (Call of Thunder eliminado; Elemental Alacrity sube a fila 2 sin prerrequisito; Lava Burst baja a fila 5 sin prerrequisito; Earthbound a fila 4; Elemental Fury pasa a fila 6 y requiere Lightning Overload; Lightning Overload requiere Elemental Alacrity; 'Improved Fire Nova' renombrado Trial by Fire; nuevo Elemental Mastery en fila 7). Restauración: Totemic Focus a fila 2, Tidal Mastery a fila 4. Mejora sin cambios de posición. Hay discrepancias de valores dentro de talentsforever (p.ej. Flurry 25% vs 10%, Lightning Overload 10% vs 30%); se usan los valores del tooltip del export. Iconos tomados del export (estilo Wowhead).",
+ "level_cap": 60,
+ "leveling": {
+  "spec": "Mejora (Enhancement)",
+  "why": "Es la rama más rápida y segura en mundo abierto: Mental Dexterity convierte todo tu Intelecto en poder de ataque, Stormstrike llega a 25, Maelstrom Weapon da Descargas de relámpagos instantáneas para curarte o rematar, e Improved Ghost Wolf (lobo instantáneo e interiores) da muchísima movilidad. Es además la opción más elegida (≈62% de builds de subida en talentsforever) y la que recomiendan Warcraft Tavern y Method.",
+  "order": [
+   "Thundering Strikes*5",
+   "Mental Dexterity*3",
+   "Improved Ghost Wolf*2",
+   "Shamanistic Focus*1",
+   "Elemental Weapons*3",
+   "Ancestral Knowledge*1",
+   "Stormstrike*1",
+   "Flurry*5",
+   "Improved Stormstrike*2",
+   "Mental Quickness*2",
+   "Maelstrom Weapon*5",
+   "Rage of the Farseer*1",
+   "Ancestral Knowledge*4",
+   "Concussion*5",
+   "Elemental Devastation*3",
+   "Call of Flame*3",
+   "Spirit Weapons*1",
+   "Toughness*4"
+  ],
+  "alt": {
+   "spec": "Restauración (sanador de mazmorras)",
+   "order": [
+    "Improved Healing Wave*5",
+    "Mindfulness*3",
+    "Tidal Focus*5",
+    "Water Shield*1",
+    "Ancestral Healing*3",
+    "Healing Focus*3",
+    "Tidal Mastery*5",
+    "Mana Tide Totem*1",
+    "Healing Way*3",
+    "Nature's Swiftness*1",
+    "Riptide*1",
+    "Purification*5",
+    "Restorative Totems*5",
+    "Ancestral Knowledge*5",
+    "Thundering Strikes*5"
+   ]
+  },
+  "stats": "Mientras subes: Fuerza ≈ Agilidad y daño del arma (DPS del arma lo primero) > Intelecto (con Mental Dexterity 3/3 cada punto de Intelecto = 1 de poder de ataque, y con Mental Quickness da poder con hechizos y más maná) > Aguante > Espíritu. En Forever el Golpe y el Crítico afectan a todo, la Pericia sustituye a la habilidad con armas y la Celeridad es estadística secundaria. Method propone Agilidad > Fuerza > Aguante > Intelecto; Warcraft Tavern apunta a que el Intelecto puede superar a la Fuerza a niveles altos (sin confirmar al 60).",
+  "weapons": "1-29: arma a dos manos lenta (mazas a 2M y hachas se entrenan en Forjaz; mazas a 1M y bastones vienen por defecto) o 1M+escudo si vas justo de vida. Imbuición Rockbiter Weapon (Arma Muerdepiedras) hasta 10 y luego Flametongue Weapon (Arma Lengua de Fuego; Warcraft Tavern prefiere Muerdepiedras antes de 30, a probar). Desde 30: arma a dos manos lenta (3.3-3.8) + Windfury Weapon (Arma Viento Furioso). Las imbuiciones duran 60 min en Forever; ojo: Windfury Weapon en la mano principal anula el beneficio de Windfury Totem. Sin doble empuñadura (no hay talento Dual Wield).",
+  "abilities": [
+   [
+    1,
+    "Lightning Bolt (Descarga de relámpagos)",
+    "Pull a distancia; en Forever los rangos 4+ se lanzan en 2.5 s."
+   ],
+   [
+    1,
+    "Rockbiter Weapon (Arma Muerdepiedras)",
+    "Primera imbuición; dura 60 min."
+   ],
+   [
+    4,
+    "Earth Shock (Choque de tierra)",
+    "Daño instantáneo e interrupción. Necesita la misión Call of Earth para el Tótem de Tierra."
+   ],
+   [
+    4,
+    "Stoneskin Totem (Tótem Piel de piedra)",
+    "Recompensa de Call of Earth; los tótems duran 5 min y alcanzan 30 m."
+   ],
+   [
+    6,
+    "Earthbind Totem (Tótem Nexo Terrestre)",
+    "Para huir o kitear."
+   ],
+   [
+    8,
+    "Lightning Shield (Escudo de relámpagos)",
+    "Mantener siempre; con Shamanistic Focus cuesta 45% menos."
+   ],
+   [
+    10,
+    "Flame Shock (Choque de llamas)",
+    "DoT; abre la mayoría de pulls."
+   ],
+   [
+    10,
+    "Flametongue Weapon (Arma Lengua de Fuego)",
+    "Imbuición hasta 30."
+   ],
+   [
+    10,
+    "Searing Totem (Tótem abrasador)",
+    "Recompensa de Call of Fire (Tótem de Fuego)."
+   ],
+   [
+    12,
+    "Fire Nova (Nova de Fuego)",
+    "Ahora es un hechizo instantáneo (10 s CD) que explota alrededor de tu tótem de Fuego; AoE principal."
+   ],
+   [
+    12,
+    "Purge (Purgar)",
+    "Quita bufos mágicos al enemigo."
+   ],
+   [
+    20,
+    "Ghost Wolf (Lobo fantasmal)",
+    "Con Improved Ghost Wolf 2/2 es instantáneo y vale en interiores."
+   ],
+   [
+    20,
+    "Call of the Elements (Llamada de los elementos)",
+    "Planta hasta 4 tótems de golpe (3 s). Totemic Recall devuelve 25% del maná."
+   ],
+   [
+    20,
+    "Healing Stream Totem (Tótem Corriente de sanación)",
+    "Recompensa de Call of Water (Tótem de Agua)."
+   ],
+   [
+    22,
+    "Totemic Projection (Proyección totémica)",
+    "Mueve los tótems hasta 30 m."
+   ],
+   [
+    25,
+    "Stormstrike (Golpe de tormenta)",
+    "Talento; 8 s CD, potencia tu siguiente Descarga/Cadena/Choque de tierra un 20%."
+   ],
+   [
+    30,
+    "Windfury Weapon (Arma Viento Furioso)",
+    "Gran salto de daño con arma lenta a 2M."
+   ],
+   [
+    30,
+    "Call of the Ancestors",
+    "Segundo set de tótems (sin nombre español confirmado)."
+   ],
+   [
+    30,
+    "Reincarnation (Reencarnación)",
+    "Requiere Ankh."
+   ],
+   [
+    32,
+    "Chain Lightning (Cadena de relámpagos)",
+    "Rango 1: 2 s de lanzamiento, 6 s CD, 3 objetivos."
+   ],
+   [
+    32,
+    "Windfury Totem (Tótem Viento Furioso)",
+    "Para grupo; no se acumula con tu propia imbuición en mano principal."
+   ],
+   [
+    40,
+    "Rage of the Farseer (Ira del clarividente)",
+    "Talento; +30% velocidad de ataque personal 25 s, 3 min CD."
+   ],
+   [
+    40,
+    "Mail armor (Malla)",
+    "Se aprende en el instructor al 40."
+   ],
+   [
+    40,
+    "Call of the Spirits / Chain Heal (Sanación en cadena)",
+    "Tercer set de tótems y cura en cadena."
+   ],
+   [
+    42,
+    "Grace of Air Totem (Tótem Gracia del aire)",
+    "+Agilidad; ya no requiere 'totem twisting'."
+   ]
+  ],
+  "rotation": [
+   "Mantén Lightning Shield (Escudo de relámpagos) y la imbuición del arma.",
+   "Planta Searing Totem (Tótem abrasador) o, en pulls dobles, tus tótems con Call of the Elements.",
+   "Abre con Flame Shock (Choque de llamas) o una Descarga de relámpagos a distancia.",
+   "Cuerpo a cuerpo: Stormstrike (Golpe de tormenta) cada vez que esté disponible y luego Earth Shock (Choque de tierra) para aprovechar el +20%.",
+   "Con 5 cargas de Maelstrom Weapon (Arma vorágine): Descarga de relámpagos mucho más rápida y barata para rematar (Maelstrom solo afecta a Lightning Bolt, no a curas, según Forever Hispano/Warcraft Tavern). Si vas bajo de vida, Healing Wave normal entre pulls.",
+   "Varios enemigos: agrúpalos junto al tótem de Fuego y usa Fire Nova (Nova de Fuego); Earthbind/Earthbound para controlar.",
+   "Entre pulls: Ghost Wolf instantáneo para moverte, Totemic Recall para recuperar maná de tótems."
+  ],
+  "class_quests": [
+   [
+    4,
+    "Call of Earth",
+    "Earth Totem + Stoneskin Totem",
+    "Teo Hammerstorm, Anvilmar (Dun Morogh 28.8,66.2); Earth Spirit Stone 25.0,62.4"
+   ],
+   [
+    10,
+    "Call of Fire",
+    "Fire Totem + Searing Totem",
+    "Bruegs Kindleborn (cueva, Dun Morogh ~86.7,47.0) → Braldir Ashmantle, Loch Modan 32.0,66.3"
+   ],
+   [
+    20,
+    "Call of Water",
+    "Water Totem + Healing Stream Totem",
+    "Norric Lochthane, Loch Modan 41.9,19.0 → Humedales, Crestagrana, Vallefresno y Páramos de Poniente (cadena larga)"
+   ],
+   [
+    30,
+    "Call of Air",
+    "Air Totem (necesario para tótems de aire)",
+    "Instructor de chamán → Veyric Thundervein, Tierras Altas de Arathi 59.8,27.6 (foreverchanges menciona Mil Agujas; sin confirmar para Alianza)"
+   ]
+  ],
+  "tips": [
+   "Haz Improved Ghost Wolf 2/2 antes del 20: lobo instantáneo e interior es la mayor mejora de calidad de vida.",
+   "Big Game Hunter (+5% daño a bestias) del enano hace que las zonas llenas de bestias sean ideales.",
+   "No hay Bloodlust/Heroism, Earth Shield ni Hex en Forever: tu 'ansia' es Rage of the Farseer y es solo personal.",
+   "Los tótems duran 5 min y llegan a 30 m: colócalos una vez por pull grande y recógelos con Totemic Recall.",
+   "Earth Shock sufrió un recorte fuerte de daño en la beta; úsalo sobre todo para cortar casteos y con el +20% de Stormstrike.",
+   "Si tienes el perk de Legado 'Talented', los talentos se desbloquean hasta 5 niveles antes (empiezas a puntuar antes); el orden es el mismo.",
+   "Cocina: hay comida que da +5% de experiencia por muerte durante 15 min; Peletería+Desuello es buena combinación para subir."
+  ]
+ },
+ "races": [
+  {
+   "race": "Dwarf (Enano)",
+   "verdict": "best",
+   "racials": "Stoneform (quita sangrados/venenos/enfermedades e inmunidad, -10% daño físico 8 s); Earth Fury (+2% al bonus de daño/curación crítica); Big Game Hunter (+5% daño a bestias); Find Treasure",
+   "why": "Única raza Alianza que puede ser chamán en Forever. Stoneform es un gran defensivo en PvP contra pícaros y guerreros, y Big Game Hunter acelera la subida."
+  }
+ ],
+ "gear": [
+  {
+   "levels": "14-25",
+   "slot": "Manos",
+   "name": "Gloves of the Fang",
+   "id": 10413,
+   "source": "Mazmorra Cuevas de los Lamentos (botín de trash/jefes, 2.4%)",
+   "why": "+6 Agi +4 Fue; set Embrace of the Viper (piezas de cuero, el chamán puede llevarlas)."
+  },
+  {
+   "levels": "17-25",
+   "slot": "Piernas",
+   "name": "Leggings of the Fang",
+   "id": 10410,
+   "source": "Lord Cobrahn, Cuevas de los Lamentos (17%)",
+   "why": "+9 Agi +5 Fue +4 Agu; pieza del set de la Víbora."
+  },
+  {
+   "levels": "17-28",
+   "slot": "Pecho",
+   "name": "Blackened Defias Armor",
+   "id": 10399,
+   "source": "Edwin VanCleef, Las Minas de la Muerte (15%)",
+   "why": "Cuero con Fue/Agi/Agu, accesible para la Alianza."
+  },
+  {
+   "levels": "18-29",
+   "slot": "Arma 2M",
+   "name": "Smite's Mighty Hammer",
+   "id": 7230,
+   "source": "Mr. Smite, Las Minas de la Muerte (19%)",
+   "why": "Maza a 2M lenta (3.50) con Fuerza: ideal para Viento Furioso al 30."
+  },
+  {
+   "levels": "29-38",
+   "slot": "Arma 2M",
+   "name": "Manual Crowd Pummeler",
+   "id": 9449,
+   "source": "Crowd Pummeler 9-60, Gnomeregan (33%)",
+   "why": "Maza 2M con uso +50% velocidad de ataque 30 s (3 cargas); muy fuerte para Mejora."
+  },
+  {
+   "levels": "35-45",
+   "slot": "Arma 2M",
+   "name": "Fiery War Axe",
+   "id": 870,
+   "source": "Ligado al equipar, botín mundial/subasta (fuente no listada)",
+   "why": "Hacha épica 2.90 con proc de fuego; necesitas entrenar hachas 2M en Forjaz."
+  },
+  {
+   "levels": "37-45",
+   "slot": "Arma 2M",
+   "name": "Ravager",
+   "id": 7717,
+   "source": "Herod, Monasterio Escarlata (Armería) (14%)",
+   "why": "Hacha 2M 3.50 con torbellino; OJO: en Forever el proc te ralentiza un 80%, peor para mundo abierto."
+  },
+  {
+   "levels": "58-60",
+   "slot": "Arma 2M",
+   "name": "Arcanite Reaper",
+   "id": 12784,
+   "source": "Herrería (planos de Bannok Grimaxe, Cumbre de Roca Negra)",
+   "why": "Hacha 2M 3.80 con +62 AP; arma de referencia al 60."
+  }
+ ],
+ "dungeons": [
+  "Las Minas de la Muerte (17-26): Smite's Mighty Hammer y Blackened Defias Armor; mazmorra 'de casa' para la Alianza.",
+  "Cuevas de los Lamentos (17-24): set Embrace of the Viper (cuero Agi/Fue) — largo viaje para la Alianza, merece la pena con grupo.",
+  "Gnomeregan (29-38): Manual Crowd Pummeler, posiblemente la mejor arma de subida de Mejora; además cerca de Forjaz.",
+  "Monasterio Escarlata (Armería/Catedral, 32-42): armas 2M (Ravager, Mograine's Might — stats de Forever sin confirmar).",
+  "Como Restauración eres muy buscado de sanador; la Alt de talentos te prepara para curar todas las mazmorras."
+ ],
+ "changes": [
+  "Nuevo para la Alianza: el chamán solo está disponible como Enano (o Skyborne en Horda).",
+  "No existen Bloodlust/Heroism, Earth Shield, Hex ni Shamanistic Rage; Rage of the Farseer (talento 40) es un 'ansia' personal de +30% velocidad de ataque.",
+  "Tótems: duran 5 min (antes 2) y alcanzan 30 m; nuevos Call of the Elements/Ancestors/Spirits (tres sets de tótems), Totemic Projection (mover tótems) y Totemic Recall (recuperar 25% de maná).",
+  "Fire Nova Totem se convierte en Fire Nova, hechizo instantáneo que explota en tu tótem de Fuego.",
+  "Imbuiciones de arma duran 60 min; Windfury Weapon en mano principal anula el efecto de Windfury Totem.",
+  "Mejora rediseñada: Mental Dexterity/Mental Quickness (Intelecto → AP/poder con hechizos), Maelstrom Weapon, Stormstrike en fila 4 (8 s CD, ya no debuff de Naturaleza sino +20% al siguiente choque/descarga), sin talentos de escudo ni de armas 2M.",
+  "Elemental: Lava Burst como talento (fila 5), Lightning Overload, Elemental Mastery rehecho; Call of Thunder eliminado; Lightning Bolt pasa a 2.5 s.",
+  "Restauración: Water Shield y Riptide como talentos, Mindfulness (regeneración al castear), Healing Way plano +25%.",
+  "Estadísticas nuevas: Golpe/Crítico afectan a todo, Pericia sustituye a habilidad con armas, Celeridad como estadística secundaria; el poder con hechizos viene sobre todo del equipo.",
+  "Malla se aprende al 40 en el instructor."
+ ],
+ "pvp": {
+  "strengths": [
+   "Ráfaga con Stormstrike + Earth Shock potenciado y Descargas de relámpagos rápidas y baratas con Maelstrom Weapon.",
+   "Muchas utilidades: Grounding Totem, Tremor Totem (contra miedo), Earthbind/Earthbound (raíz 5 s), Purge, Frost Shock.",
+   "Stoneform enano quita venenos/sangrados y reduce daño físico.",
+   "Lobo fantasmal instantáneo con talento para reposicionarte."
+  ],
+  "weaknesses": [
+   "Sin Bloodlust ni Hex; Rage of the Farseer solo da velocidad de ataque.",
+   "Earth Shock recortado: menos ráfaga 'one-shot' que en Classic.",
+   "Muy dependiente del arma; vulnerable a kiteo y control si no tienes trinket/racial disponible.",
+   "Sin escape fiable más allá de Ghost Wolf y Earthbind."
+  ],
+  "duel_plan": [
+   "Pre-bufos: Lightning Shield, Windfury Weapon, tótems adecuados (Tremor contra brujos/sacerdotes, Grounding contra magos).",
+   "Abre con Flame Shock o Frost Shock para pegarte; Earthbind/Earthbound si el rival kitea.",
+   "Stormstrike → Earth Shock potenciado; acumula Maelstrom y gasta 5 cargas en una Descarga de relámpagos rápida; Nature's Swiftness no está en esta build, así que cura solo con hueco seguro.",
+   "Rage of the Farseer en la ventana de ráfaga (tras un crítico/Flurry).",
+   "Guarda Earth Shock para cortar curas/polimorfias; Stoneform contra venenos/sangrados.",
+   "Todo esto es provisional: valores de beta, sin pruebas al 60."
+  ],
+  "vs": {
+   "warrior": "Duelo de presión: Frost Shock y Earthbind para evitar Mortal Strike constante; Stoneform contra Rend/Deep Wounds. Grounding no sirve; cúrate con Maelstrom entre ráfagas (provisional).",
+   "rogue": "Tótems de limpieza de venenos y Stoneform; Earthbound al salir de stun para frenarlo. Mantén Lightning Shield (provisional).",
+   "mage": "Grounding Totem para absorber Polymorph/Frostbolt, Purge de Ice Barrier; pégate con Ghost Wolf y Earth Shock para cortar (provisional).",
+   "priest": "Tremor Totem contra Psychic Scream, Purge escudos y Earth Shock a Greater Heal; presión constante (provisional).",
+   "warlock": "Tremor Totem contra Miedo/Aullido, Purge de bufos; ve a por el brujo, no al demonio. Grounding contra Death Coil (provisional).",
+   "hunter": "Cierra distancia con Ghost Wolf instantáneo; Earthbound y Frost Shock para que no se aleje. Purge de Rapid Fire si procede (provisional).",
+   "druid": "Purge de HoTs y Earth Shock a Healing Touch/Regrowth; Frost Shock para que no se escape en forma felina (provisional).",
+   "shaman": "Espejo: Grounding vs Grounding, gana quien corte mejor la cura de Maelstrom y gestione Purge (provisional).",
+   "paladin": "Purge de bendiciones/escudos y presión con Stormstrike; guarda Earth Shock para su cura larga (provisional)."
+  }
+ }
+}
