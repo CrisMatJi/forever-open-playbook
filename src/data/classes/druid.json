@@ -566,15 +566,15 @@
    "Sharpened Claws*2",
    "Savage Fury*2",
    "Feral Charge*1",
+   "Shredding Attacks*3",
+   "Shifting Power*1",
    "Predatory Strikes*3",
    "Blood Frenzy*2",
    "Leader of the Pack*1",
    "Natural Instinct*2",
-   "Shredding Attacks*3",
-   "Rend and Tear*4",
+   "Rend and Tear*3",
    "Berserk*1",
-   "Rend and Tear*1",
-   "Shifting Power*1",
+   "Rend and Tear*2",
    "Improved Shifting Power*2",
    "Heart of the Wild*5",
    "Furor*5",
@@ -668,14 +668,14 @@
     "Sangrado; activa Rend and Tear."
    ],
    [
-    25,
-    "Shifting Power (Poder cambiante) / Primal Bite (Mordisco primigenio)",
-    "Talentos de fila 4 (Shifting Power requiere Shredding Attacks 3/3)."
-   ],
-   [
     26,
     "Dash (Carrerilla)",
     "Movilidad y escapes."
+   ],
+   [
+    28,
+    "Shifting Power (Poder cambiante)",
+    "Talento de fila 4 (pide Shredding Attacks 3/3): convierte maná en 40 de energía cada 16 s. Primal Bite (Mordisco primigenio, oso) es el otro talento de esa fila; no hace falta para subir en gato."
    ],
    [
     30,

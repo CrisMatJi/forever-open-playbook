@@ -654,7 +654,7 @@
    [
     20,
     "Summon Succubus/Incubus (Invocar súcubo/íncubo)",
-    "Mayor daño de mascota; Seducción en humanoides 15 s."
+    "Mayor daño de mascota. Su Seducción (control de 15 s en humanoides) se aprende a nivel 26."
    ],
    [
     20,
@@ -820,9 +820,9 @@
    "levels": "20-35",
    "slot": "Arma 2M",
    "name": "Staff of Soran'ruk",
-   "id": null,
+   "id": 15109,
    "source": "Misma misión de clase (alternativa al orbe)",
-   "why": "+34 daño de Sombras y Fuego, +14 Aguante según Warcraft Tavern; ID de objeto sin confirmar."
+   "why": "+34 daño de Sombras y Fuego, +14 Aguante según Warcraft Tavern."
   },
   {
    "levels": "23-30",
