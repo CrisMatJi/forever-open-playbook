@@ -1,6 +1,3 @@
-import C from "../data/content.json";
-export const DATA = C;
-
 // Iconos de WoW servidos por el CDN de Wowhead (no se copian al repositorio)
 export const iconUrl = (name, size = "medium") => `https://wow.zamimg.com/images/wow/icons/${size}/${name}.jpg`;
 
@@ -33,6 +30,9 @@ export const PROF_KEY_NAME = {
   alchemy: "Alquimia", blacksmithing: "Herrería",
 };
 export const MISC_ICON = {
+  home: "spell_nature_bloodlust", choose: "inv_misc_questionmark", classes: "achievement_level_10",
+  level: "inv_misc_map_01", dungeon: "inv_misc_key_03", pvp: "ability_dualwield", talents: "ability_marksmanship",
+  quest: "inv_scroll_03", gear: "inv_chest_chain_05", tips: "inv_misc_note_01",
   legacy: "inv_misc_book_09", gameplay: "spell_holy_sealofmight", guide: "inv_misc_map_01", tier: "achievement_arena_2v2_7",
   priest: "spell_holy_powerwordshield", builds: "ability_marksmanship", rules: "inv_scroll_03",
   addon: "inv_gizmo_02", duel: "ability_dualwield", totem: "spell_nature_stoneskintotem",

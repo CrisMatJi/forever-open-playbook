@@ -1,0 +1,60 @@
+---
+import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
+import { CLASS_ICON, CLASS_COLOR, url } from "../lib/wow.js";
+import { CLASSES, ORDER, NAME, SLUG } from "../lib/classes.js";
+---
+<Base title="Duelos" active="duelos" description="Duelos 1v1 en WoW Forever a nivel máximo: puntos fuertes, débiles y plan contra cada clase. Provisional.">
+  <div class="pagehead">
+    <div class="eyebrow">1v1 a nivel máximo · provisional</div>
+    <h1>Duelos por clase</h1>
+    <p class="lede">Lo que ya se sabe de cada clase en duelo con los cambios de Forever: en qué es fuerte, en qué flojea y qué hacer contra cada rival. La beta solo llega a nivel 30, así que todo lo de nivel alto es una previsión que iremos corrigiendo.</p>
+  </div>
+
+  <nav class="classpick" aria-label="Clase" id="dpick">
+    {ORDER.map((o, i) => (
+      <button type="button" data-cls={SLUG[o]} aria-pressed={i === 0 ? "true" : "false"}>
+        <Icon name={CLASS_ICON[o]} size={26} label={NAME[o]} /> {NAME[o]}
+      </button>
+    ))}
+  </nav>
+
+  {ORDER.map((id, i) => {
+    const p = CLASSES[id]?.pvp || {};
+    return (
+      <section class="duel" id={SLUG[id]} data-panel={SLUG[id]} hidden={i !== 0} style={`--cc:${CLASS_COLOR[id]}`}>
+        <div class="box">
+          <div class="titlerow"><h2 class="racecell"><Icon name={CLASS_ICON[id]} size={36} label={NAME[id]} big /> {NAME[id]}</h2><a class="chip" href={url(`clases/${SLUG[id]}`)}>Guía de leveo</a></div>
+          <div class="split" style="margin-top:12px">
+            <div><div class="eyebrow">Puntos fuertes</div><ul class="bul">{(p.strengths || []).map((x) => <li>{x}</li>)}</ul></div>
+            <div><div class="eyebrow">Puntos débiles</div><ul class="bul">{(p.weaknesses || []).map((x) => <li>{x}</li>)}</ul></div>
+          </div>
+          {p.duel_plan?.length > 0 && (<div style="margin-top:14px"><div class="eyebrow">Plan de duelo</div><ol class="steps">{p.duel_plan.map((x) => <li>{x}</li>)}</ol></div>)}
+        </div>
+        {p.vs && (
+          <div class="tablewrap"><table class="wide">
+            <thead><tr><th>Contra</th><th>Qué hacer</th></tr></thead>
+            <tbody>
+              {ORDER.filter((o) => p.vs[o]).map((o) => (
+                <tr><td><span class="racecell"><Icon name={CLASS_ICON[o]} size={24} label={NAME[o]} /> <b>{NAME[o]}</b></span></td><td>{p.vs[o]}</td></tr>
+              ))}
+            </tbody>
+          </table></div>
+        )}
+      </section>
+    );
+  })}
+
+  <script>
+    const btns = document.querySelectorAll<HTMLButtonElement>("#dpick [data-cls]");
+    const panels = document.querySelectorAll<HTMLElement>("[data-panel]");
+    function pick(slug: string, push = true) {
+      if (![...panels].some((p) => p.dataset.panel === slug)) return;
+      panels.forEach((p) => (p.hidden = p.dataset.panel !== slug));
+      btns.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.cls === slug)));
+      if (push) history.replaceState(null, "", `#${slug}`);
+    }
+    btns.forEach((b) => b.addEventListener("click", () => pick(b.dataset.cls!)));
+    if (location.hash) pick(location.hash.slice(1), false);
+  </script>
+</Base>

@@ -1,10 +1,10 @@
 ---
 import { getClass, allocate, stateOf, arrows, S, W, H, cx, cy } from "../lib/talents.js";
 import { iconUrl, abbr } from "../lib/wow.js";
-interface Props { id: string; tree: number; n: number; tint: string }
-const { id, tree, n, tint } = Astro.props;
+interface Props { id: string; tree: number; n: number; tint: string; build: string[] }
+const { id, tree, n, tint, build } = Astro.props;
 const c = getClass(id);
-const { ranks, per } = allocate(id, n);
+const { ranks, per } = allocate(id, n, build);
 const list = c.list.filter((t) => t.tree === tree);
 const pct = (v: number, total: number) => `${(v / total) * 100}%`;
 ---

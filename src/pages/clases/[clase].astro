@@ -1,0 +1,207 @@
+---
+import Base from "../../layouts/Base.astro";
+import Icon from "../../components/Icon.astro";
+import TalentTree from "../../components/TalentTree.astro";
+import { CLASS_ICON, CLASS_COLOR, MISC_ICON, url } from "../../lib/wow.js";
+import { CLASSES, ORDER, NAME, SLUG, ID_BY_SLUG, TINTS, RACE_ICON, RACE_ES } from "../../lib/classes.js";
+import { expand, getClass } from "../../lib/talents.js";
+
+export function getStaticPaths() {
+  return ORDER.map((id) => ({ params: { clase: SLUG[id] } }));
+}
+const id = ID_BY_SLUG[Astro.params.clase];
+const d = CLASSES[id];
+const L = d.leveling || {};
+const cls = getClass(id);
+const cap = d.level_cap || 60;
+const main = expand(L.order);
+const alt = L.alt?.order ? expand(L.alt.order) : null;
+const total = Math.max(0, cap - 9);
+const wh = (i) => `https://www.wowhead.com/forever/item=${i}`;
+const verdictClass = { best: "q-leg", good: "q-rare", ok: "q-unc" };
+const verdictTxt = { best: "La mejor", good: "Buena", ok: "Vale" };
+const lvlOf = (i) => i + 10;
+---
+<Base title={`${NAME[id]}: guía de leveo`} active="clases" description={`Guía de leveo de ${NAME[id]} en WoW Forever para la Alianza: raza, talentos por nivel, equipo, misiones de clase y mazmorras.`}>
+  <nav class="classpick" aria-label="Clase">
+    {ORDER.map((o) => (
+      <a href={url(`clases/${SLUG[o]}`)} aria-current={o === id ? "page" : undefined}>
+        <Icon name={CLASS_ICON[o]} size={26} label={NAME[o]} /> {NAME[o]}
+      </a>
+    ))}
+  </nav>
+
+  <section class="box" style={`--cc:${CLASS_COLOR[id]}`}>
+    <div class="buildtop">
+      <div style="display:flex;gap:14px;align-items:center">
+        <Icon name={CLASS_ICON[id]} size={56} label={NAME[id]} big />
+        <div>
+          <div class="eyebrow">{NAME[id]} · leveo 1-{cap} · Alianza</div>
+          <h1 style="margin-top:4px;font-size:clamp(28px,4vw,40px)">{L.spec || NAME[id]}</h1>
+        </div>
+      </div>
+    </div>
+    {L.why && <p class="lede">{L.why}</p>}
+    <div class="gearlist" style="margin-top:14px">
+      {L.stats && <div><b>Estadísticas</b>{L.stats}</div>}
+      {L.weapons && <div><b>Armas</b>{L.weapons}</div>}
+    </div>
+  </section>
+
+  {d.races?.length > 0 && (
+    <section class="box">
+      <h2>Raza en la Alianza</h2>
+      <div class="racegrid">
+        {d.races.map((r) => (
+          <article class={`racecard ${r.verdict === "best" ? "best" : ""}`}>
+            <div class="racehead"><Icon name={RACE_ICON[r.race]} size={40} label={r.race} big /><div><b>{RACE_ES[r.race] || r.race}</b><span class={`vtag ${verdictClass[r.verdict] || ""}`}>{verdictTxt[r.verdict] || r.verdict}</span></div></div>
+            <p>{r.why}</p>
+            {r.racials && <p class="note">{r.racials}</p>}
+          </article>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="box" id="talentos">
+    <div class="titlerow"><h2>Talentos de leveo</h2><span class="pts num"><span id="perTxt">0/0/0</span><small id="nTxt">nivel {cap}</small></span></div>
+    <div class="slider">
+      <label for="lvl">Tu nivel</label>
+      <input type="range" id="lvl" min="10" max={cap} value={cap} />
+      <output for="lvl" class="num" id="lvlOut">Nivel {cap}</output>
+    </div>
+    {alt && (
+      <div class="modepick classpick" role="group" aria-label="Build">
+        <button type="button" data-mode="main" aria-pressed="true">{L.spec}</button>
+        <button type="button" data-mode="alt" aria-pressed="false">{L.alt.spec}</button>
+      </div>
+    )}
+    {d.talents_note && <p class="note" style="margin-top:8px">{d.talents_note}</p>}
+    <div class="trees" id="trees">
+      {[0, 1, 2].map((ti) => <TalentTree id={id} tree={ti} n={total} tint={TINTS[id][ti]} build={L.order} />)}
+    </div>
+    <div class="tlegend"><span><i style="border-color:var(--gold)"></i>Al máximo</span><span><i style="border-color:var(--green)"></i>Con puntos</span><span><i style="border-color:#555;opacity:.7"></i>Sin puntos</span><span><i style="border-color:#3a3a3a;opacity:.4"></i>Bloqueado</span><span>Cada fila pide 5 puntos más en ese árbol.</span></div>
+    <div class="tdetail" id="tdetail" aria-live="polite"><span></span><span class="tt-ok">Toca un talento para ver su descripción.</span></div>
+    <div class="detail" style="margin-top:16px">
+      <div><div class="eyebrow">Orden de puntos</div>
+        {[["main", main], ["alt", alt]].filter(([, s]) => s).map(([k, s]) => (
+          <ol class="order" data-order={k} hidden={k !== "main"}>
+            {s.map((nm, i) => (
+              <li data-i={i}><span class="num">Nv {lvlOf(i)}</span><span style="display:flex;gap:8px;align-items:center"><Icon name={cls.byName[nm]?.icon} size={20} label={nm} /> {nm}</span></li>
+            ))}
+          </ol>
+        ))}
+      </div>
+      <div>
+        {L.rotation?.length > 0 && (<><div class="eyebrow">Cómo matar bichos</div><ol class="steps">{L.rotation.map((r) => <li>{r}</li>)}</ol></>)}
+        {L.tips?.length > 0 && (<><div class="eyebrow" style="margin-top:14px">Consejos</div><ul class="bul">{L.tips.map((t) => <li>{t}</li>)}</ul></>)}
+      </div>
+    </div>
+  </section>
+
+  {L.abilities?.length > 0 && (
+    <section class="box">
+      <h2>Habilidades por nivel</h2>
+      <div class="tablewrap" style="margin-top:12px"><table class="wide">
+        <thead><tr><th>Nivel</th><th>Habilidad</th><th>Para qué</th></tr></thead>
+        <tbody>{L.abilities.map(([lv, ab, nt]) => <tr><td class="num"><b>{lv}</b></td><td><b>{ab}</b></td><td>{nt}</td></tr>)}</tbody>
+      </table></div>
+    </section>
+  )}
+
+  {L.class_quests?.length > 0 && (
+    <section class="box">
+      <h2>Misiones de clase</h2>
+      <div class="tablewrap" style="margin-top:12px"><table class="wide">
+        <thead><tr><th>Nivel</th><th>Misión</th><th>Qué da</th><th>Dónde</th></tr></thead>
+        <tbody>{L.class_quests.map(([lv, q, r, w]) => <tr><td class="num"><b>{lv}</b></td><td><b>{q}</b></td><td>{r}</td><td class="note">{w}</td></tr>)}</tbody>
+      </table></div>
+    </section>
+  )}
+
+  {d.gear?.length > 0 && (
+    <section style="display:grid;gap:12px">
+      <div class="titlerow"><h2>Equipo que interesa coger</h2><span class="note">Clic en un objeto para ver su ficha en Wowhead</span></div>
+      <div class="gear-grid">
+        {d.gear.map((g) => {
+          const inner = (<>
+            <Icon name={g.icon || "inv_misc_questionmark"} size={44} label={g.name} big class="q-unc" />
+            <span><span class="gear-slot">{g.slot} · Nv {g.levels}</span><b>{g.name}</b></span>
+          </>);
+          return (
+            <article class="gear-card">
+              {g.id ? <a class="gear-main" href={wh(g.id)} target="_blank" rel="noopener" data-wowhead={`item=${g.id}&domain=forever`}>{inner}</a> : <div class="gear-main">{inner}</div>}
+              <p class="gear-how"><b>{g.source}</b>{g.why ? ` · ${g.why}` : ""}</p>
+            </article>
+          );
+        })}
+      </div>
+    </section>
+  )}
+
+  <div class="split">
+    {d.dungeons?.length > 0 && (
+      <section class="box"><h2>Mazmorras para tu clase</h2><ul class="bul" style="margin-top:10px">{d.dungeons.map((x) => <li>{x}</li>)}</ul><p class="note" style="margin-top:10px">Niveles, misiones y botín de cada una en <a href={url("mazmorras")}>Mazmorras</a>.</p></section>
+    )}
+    {d.changes?.length > 0 && (
+      <section class="box"><h2>Qué cambia en Forever</h2><ul class="bul" style="margin-top:10px">{d.changes.map((x) => <li>{x}</li>)}</ul></section>
+    )}
+  </div>
+
+  <section class="box">
+    <div class="titlerow"><h2>Duelos de {NAME[id]}</h2><a class="chip" href={url(`duelos#${SLUG[id]}`)}><Icon name={MISC_ICON.pvp} size={20} label="" fallback="" /> Ver cruces a nivel máximo</a></div>
+    {d.sources?.length > 0 && (
+      <p class="note" style="margin-top:10px">Fuentes: {d.sources.slice(0, 6).map((s, i) => <><a href={s} target="_blank" rel="noopener">{new URL(s).hostname.replace("www.", "")}</a>{i < Math.min(d.sources.length, 6) - 1 ? " · " : ""}</>)}{d.build_checked && ` · build ${d.build_checked}`}</p>
+    )}
+  </section>
+
+  <script type="application/json" id="bdata" set:html={JSON.stringify({ id, cap, main: L.order, alt: L.alt?.order || null })} />
+  <script>
+    import { getClass, allocate, stateOf } from "../../lib/talents.js";
+    import { iconUrl } from "../../lib/wow.js";
+    const { id, cap, main, alt } = JSON.parse(document.getElementById("bdata")!.textContent!);
+    const c = getClass(id);
+    let mode = "main", lvl = cap, ranks: Record<string, number> = {}, per = [0, 0, 0], selected: string | null = null;
+    const $ = (s: string) => document.getElementById(s)!;
+    function paint() {
+      const n = Math.max(0, lvl - 9);
+      ({ ranks, per } = allocate(id, n, mode === "alt" ? alt : main));
+      $("perTxt").textContent = per.join("/");
+      $("nTxt").textContent = `${n} puntos`;
+      $("lvlOut").textContent = `Nivel ${lvl}`;
+      document.querySelectorAll<HTMLButtonElement>(".tslot").forEach((b) => {
+        const t = c.byName[b.dataset.name!];
+        b.className = `tslot ${stateOf(c, t, ranks, per)}${selected === t.name ? " sel" : ""}`;
+        b.querySelector("[data-rank]")!.textContent = String(ranks[t.name] || 0);
+      });
+      document.querySelectorAll<SVGGElement>("[data-arrow-to]").forEach((g) => g.classList.toggle("on", (ranks[g.dataset.arrowTo!] || 0) > 0));
+      document.querySelectorAll<HTMLElement>("[data-per]").forEach((s) => (s.textContent = String(per[+s.dataset.per!])));
+      document.querySelectorAll<HTMLElement>("[data-order]").forEach((o) => (o.hidden = o.dataset.order !== mode));
+      document.querySelectorAll<HTMLButtonElement>("[data-mode]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mode === mode)));
+      document.querySelectorAll<HTMLLIElement>(`[data-order="${mode}"] li`).forEach((li) => {
+        const i = +li.dataset.i!;
+        li.classList.toggle("legacy", i >= n);
+        li.classList.toggle("now", i === n - 1);
+      });
+      if (selected) show(selected);
+    }
+    function show(name: string) {
+      selected = name;
+      const t = c.byName[name];
+      const r = ranks[t.name] || 0;
+      const req1 = t.row > 1 ? `<div class="${per[t.tree] >= 5 * (t.row - 1) ? "tt-ok" : "tt-req"}">Requiere ${5 * (t.row - 1)} puntos en ${c.trees[t.tree]}</div>` : "";
+      const req2 = t.pre ? `<div class="${(ranks[t.pre] || 0) >= (c.byName[t.pre]?.max ?? 0) ? "tt-ok" : "tt-req"}">Requiere ${t.pre} al máximo</div>` : "";
+      const ic = t.icon ? `<span class="wicon" style="--s:44px"><img src="${iconUrl(t.icon, "large")}" alt="" referrerpolicy="no-referrer" onerror="this.remove()"></span>` : "<span></span>";
+      $("tdetail").innerHTML = `${ic}<div><div class="tt-name">${t.name}</div><div class="tt-rank">Rango ${r}/${t.max}</div>${req1}${req2}<div class="tt-eff">${t.eff || ""}</div></div>`;
+      document.querySelectorAll(".tslot").forEach((b) => b.classList.toggle("sel", (b as HTMLElement).dataset.name === name));
+    }
+    document.querySelectorAll<HTMLButtonElement>(".tslot").forEach((b) => {
+      b.addEventListener("click", () => show(b.dataset.name!));
+      b.addEventListener("mouseenter", () => show(b.dataset.name!));
+      b.addEventListener("focus", () => show(b.dataset.name!));
+    });
+    document.querySelectorAll<HTMLButtonElement>("[data-mode]").forEach((b) => b.addEventListener("click", () => { mode = b.dataset.mode!; paint(); }));
+    $("lvl").addEventListener("input", (e) => { lvl = +(e.target as HTMLInputElement).value; paint(); });
+    paint();
+  </script>
+</Base>

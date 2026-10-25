@@ -4,12 +4,12 @@ import "../styles/site.css";
 import Icon from "../components/Icon.astro";
 import { url, MISC_ICON } from "../lib/wow.js";
 interface Props { title: string; description?: string; active?: string }
-const { title, description = "Guía de fans para The Forever Open: tier list, builds a nivel 30, Legacy y la ruta de speedrun del Chamán Orco.", active = "" } = Astro.props;
+const { title, description = "Guía de leveo de WoW Forever para la Alianza: clases, razas, talentos por nivel, equipo, mazmorras y duelos.", active = "" } = Astro.props;
 const NAV = [
-  ["", "Inicio", "duel"], ["guia", "Mi guía", "guide"], ["gameplay", "Mi gameplay", "gameplay"], ["tier", "Tier list", "tier"], ["sacerdote", "Contra Sacerdote", "priest"],
-  ["builds", "Builds a 30", "builds"], ["legacy", "Legacy", "legacy"], ["reglas", "Reglas", "rules"], ["addon", "Addon", "addon"],
+  ["", "Inicio", "home"], ["elegir", "Elegir clase", "choose"], ["clases", "Clases", "classes"],
+  ["leveo", "Leveo", "level"], ["mazmorras", "Mazmorras", "dungeon"], ["duelos", "Duelos", "pvp"],
 ];
-const full = title === "Forever Open Playbook" ? title : `${title} · Forever Open Playbook`;
+const full = title === "Forever Playbook" ? title : `${title} · Forever Playbook`;
 ---
 <!doctype html>
 <html lang="es">
@@ -34,8 +34,8 @@ const full = title === "Forever Open Playbook" ? title : `${title} · Forever Op
   <header class="topbar">
     <div class="topbar-in">
       <a class="brand" href={url("")}>
-        <Icon name="spell_nature_bloodlust" size={30} label="Forever Open" fallback="FO" />
-        <span><b>Forever Open</b><small>Playbook</small></span>
+        <Icon name="spell_holy_divineintervention" size={30} label="Forever Playbook" fallback="FP" />
+        <span><b>Forever</b><small>Playbook · Alianza</small></span>
       </a>
       <nav class="mainnav" aria-label="Secciones">
         {NAV.map(([p, label, ic]) => (
@@ -52,8 +52,8 @@ const full = title === "Forever Open Playbook" ? title : `${title} · Forever Op
   </main>
   <footer class="foot">
     <div class="wrap foot-in">
-      <p>Guía de fans, sin relación con Blizzard Entertainment ni con la organización de The Forever Open. World of Warcraft y sus iconos son marcas de Blizzard Entertainment; los iconos se cargan desde el CDN de Wowhead.</p>
-      <p>Datos de la beta de WoW Forever: lo marcado como <span class="verify">verificar</span> aún no se ha podido comprobar en el juego.</p>
+      <p>Guía de fans, sin relación con Blizzard Entertainment. World of Warcraft y sus iconos son marcas de Blizzard Entertainment; los iconos y fichas de objetos se cargan desde Wowhead.</p>
+      <p>Datos de la beta de WoW Forever. Lo marcado como <span class="verify">sin confirmar</span> puede cambiar en el lanzamiento del 4 de noviembre.</p>
     </div>
   </footer>
 </body>
