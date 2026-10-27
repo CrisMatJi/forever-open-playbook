@@ -18,58 +18,512 @@
   "https://kami-labs.fr/en/wow-classic/wow-forever-classic-plus-4-novembre/"
  ],
  "talents": {
-  "trees": ["Sagrado", "Protección", "Reprensión"],
+  "trees": [
+   "Sagrado",
+   "Protección",
+   "Reprensión"
+  ],
   "list": [
-   {"tree": 0, "row": 1, "col": 2, "name": "Divine Strength", "max": 5, "pre": null, "eff": "Strength +2% per rank", "icon": "ability_golemthunderclap"},
-   {"tree": 0, "row": 1, "col": 3, "name": "Divine Intellect", "max": 5, "pre": null, "eff": "Intellect +2% per rank", "icon": "spell_nature_sleep"},
-   {"tree": 0, "row": 2, "col": 1, "name": "Healing Light", "max": 3, "pre": null, "eff": "Holy Light, Flash of Light and Holy Shock healing +4% per rank", "icon": "spell_holy_holybolt"},
-   {"tree": 0, "row": 2, "col": 2, "name": "Spiritual Focus", "max": 2, "pre": null, "eff": "70% chance to avoid pushback on Flash/Holy Light/Light's Vigil", "icon": "spell_arcane_blink"},
-   {"tree": 0, "row": 2, "col": 3, "name": "Improved Seals", "max": 3, "pre": null, "eff": "Seal and Judgement damage +5% per rank", "icon": "ability_thunderbolt"},
-   {"tree": 0, "row": 2, "col": 4, "name": "Unyielding Faith", "max": 2, "pre": null, "eff": "Fear and disorient duration -15% per rank", "icon": "spell_holy_unyieldingfaith"},
-   {"tree": 0, "row": 3, "col": 1, "name": "Voice of Truth", "max": 1, "pre": null, "eff": "Immune to silence and interrupt for 6 s (3 min)", "icon": "inv_misc_horn_03"},
-   {"tree": 0, "row": 3, "col": 2, "name": "Reverence", "max": 3, "pre": null, "eff": "30% mana regen continues while casting", "icon": "spell_holy_divineillumination"},
-   {"tree": 0, "row": 3, "col": 3, "name": "Purifying Power", "max": 2, "pre": null, "eff": "Cleanse/Purify -20% mana, Exorcism/Holy Wrath cooldown -33%", "icon": "spell_holy_purifyingpower"},
-   {"tree": 0, "row": 4, "col": 1, "name": "Infusion of Light", "max": 2, "pre": null, "eff": "Holy Shock/Flash crits cut next Holy Light cast by 1 s", "icon": "ability_paladin_infusionoflight"},
-   {"tree": 0, "row": 4, "col": 2, "name": "Illumination", "max": 5, "pre": "Reverence", "eff": "Heal crits refund 50% of base mana cost", "icon": "spell_holy_greaterheal"},
-   {"tree": 0, "row": 4, "col": 3, "name": "Divine Favor", "max": 1, "pre": null, "eff": "Next heal is a guaranteed crit (2 min)", "icon": "spell_holy_heal"},
-   {"tree": 0, "row": 5, "col": 1, "name": "Divine Precision", "max": 3, "pre": "Holy Shock", "eff": "Holy spell hit +6% per rank", "icon": "spell_holy_healingfocus"},
-   {"tree": 0, "row": 5, "col": 2, "name": "Holy Shock", "max": 1, "pre": null, "eff": "Instant Holy damage or healing, 10 s cooldown", "icon": "spell_holy_searinglight"},
-   {"tree": 0, "row": 5, "col": 3, "name": "Consecrated Ground", "max": 2, "pre": null, "eff": "Holy damage +5% per rank on the first 4 enemies entering Consecration", "icon": "spell_holy_innerfire"},
-   {"tree": 0, "row": 6, "col": 3, "name": "Holy Power", "max": 5, "pre": null, "eff": "Holy Shock/Holy Strike crit +15%, other spells +5%", "icon": "spell_holy_power"},
-   {"tree": 0, "row": 7, "col": 2, "name": "Light's Vigil", "max": 1, "pre": "Holy Shock", "eff": "Mark a target: next Holy Shock deals bonus damage or heals its party, no cooldown", "icon": "ability_paladin_judgementofthepure"},
-   {"tree": 1, "row": 1, "col": 2, "name": "Toughness", "max": 5, "pre": null, "eff": "Armor from items +2% per rank", "icon": "spell_holy_devotion"},
-   {"tree": 1, "row": 1, "col": 3, "name": "Redoubt", "max": 5, "pre": null, "eff": "Melee hits taken can give +20% block for 10 s or 5 blocks", "icon": "ability_defend"},
-   {"tree": 1, "row": 2, "col": 1, "name": "Precision", "max": 3, "pre": null, "eff": "Hit +1% per rank", "icon": "ability_rogue_ambush"},
-   {"tree": 1, "row": 2, "col": 2, "name": "Guardian's Favor", "max": 2, "pre": null, "eff": "Blessing of Protection cooldown -2 min, Blessing of Freedom +6 s", "icon": "spell_holy_sealofprotection"},
-   {"tree": 1, "row": 2, "col": 4, "name": "Anticipation", "max": 5, "pre": null, "eff": "Defense +4 per rank", "icon": "spell_magic_lesserinvisibilty"},
-   {"tree": 1, "row": 3, "col": 1, "name": "Improved Seal of Fury", "max": 1, "pre": null, "eff": "Mana back when your Seal of Fury shield is fully absorbed", "icon": "spell_holy_righteousnessaura"},
-   {"tree": 1, "row": 3, "col": 2, "name": "Improved Righteous Fury", "max": 3, "pre": null, "eff": "Damage taken -2% per rank while Righteous Fury is active", "icon": "spell_holy_sealoffury"},
-   {"tree": 1, "row": 3, "col": 3, "name": "Shield Specialization", "max": 3, "pre": "Redoubt", "eff": "Shield absorbs +30%, blocks restore 4% max mana", "icon": "inv_shield_06"},
-   {"tree": 1, "row": 3, "col": 4, "name": "Sacred Duty", "max": 2, "pre": null, "eff": "Stamina +4%, Divine Shield/Protection/Templar's Bulwark cooldown -60 s", "icon": "spell_holy_divineintervention"},
-   {"tree": 1, "row": 4, "col": 1, "name": "Swift Judgement", "max": 1, "pre": "Improved Seal of Fury", "eff": "Resets Judgement and makes it free (1 min)", "icon": "ability_paladin_judgementred"},
-   {"tree": 1, "row": 4, "col": 2, "name": "One-Handed Weapon Specialization", "max": 3, "pre": null, "eff": "One-handed damage +10%", "icon": "inv_sword_20"},
-   {"tree": 1, "row": 4, "col": 3, "name": "Improved Hammer of Justice", "max": 3, "pre": null, "eff": "Hammer of Justice cooldown -5 s per rank", "icon": "spell_holy_sealofmight"},
-   {"tree": 1, "row": 5, "col": 2, "name": "Templar's Bulwark", "max": 1, "pre": null, "eff": "Absorb shield equal to 100% max health for 8 s (Forbearance, 5 min)", "icon": "ability_paladin_shieldofthetemplar"},
-   {"tree": 1, "row": 5, "col": 3, "name": "Reckoning", "max": 5, "pre": null, "eff": "Extra attacks after block or crit taken (stores up to 4)", "icon": "spell_holy_blessingofstrength"},
-   {"tree": 1, "row": 6, "col": 3, "name": "Iron Creed", "max": 5, "pre": null, "eff": "Holy Strike threat +25%; with Righteous Fury, -10% damage taken for 6 s", "icon": "spell_holy_improvedresistanceauras"},
-   {"tree": 1, "row": 7, "col": 2, "name": "Holy Shield", "max": 1, "pre": "Templar's Bulwark", "eff": "Block +30% and Holy damage on block, 4 charges", "icon": "spell_holy_blessingofprotection"},
-   {"tree": 2, "row": 1, "col": 2, "name": "Deflection", "max": 5, "pre": null, "eff": "Parry +1% per rank", "icon": "ability_parry"},
-   {"tree": 2, "row": 1, "col": 3, "name": "Benediction", "max": 5, "pre": null, "eff": "Instant spells and abilities -2% mana per rank", "icon": "spell_frost_windwalkon"},
-   {"tree": 2, "row": 2, "col": 1, "name": "Improved Judgement", "max": 2, "pre": null, "eff": "Judgement cooldown -1 s per rank", "icon": "spell_holy_righteousfury"},
-   {"tree": 2, "row": 2, "col": 2, "name": "Holy Conduit", "max": 2, "pre": null, "eff": "Consecration, Holy Wrath, Exorcism and Hammer of Wrath -40% mana", "icon": "spell_holy_devineaegis"},
-   {"tree": 2, "row": 2, "col": 3, "name": "Conviction", "max": 5, "pre": null, "eff": "Melee crit +1% per rank", "icon": "spell_holy_retributionaura"},
-   {"tree": 2, "row": 3, "col": 1, "name": "Vindication", "max": 3, "pre": null, "eff": "Melee hits lower target attack power and raise yours 3%", "icon": "spell_holy_vindication"},
-   {"tree": 2, "row": 3, "col": 2, "name": "Sanctified Judgement", "max": 3, "pre": null, "eff": "Judgement refunds 60% of the seal's mana", "icon": "ability_paladin_judgementblue"},
-   {"tree": 2, "row": 3, "col": 3, "name": "Seal of Command", "max": 1, "pre": null, "eff": "Seal: extra Holy hits (70% weapon); Judgement bonus vs stunned/incapacitated", "icon": "ability_warrior_innerrage"},
-   {"tree": 2, "row": 3, "col": 4, "name": "Pursuit of Justice", "max": 2, "pre": null, "eff": "Movement and mounted speed +15% total", "icon": "spell_holy_persuitofjustice"},
-   {"tree": 2, "row": 4, "col": 1, "name": "Eye for an Eye", "max": 2, "pre": null, "eff": "Crits against you reflect 10% of the damage", "icon": "spell_holy_eyeforaneye"},
-   {"tree": 2, "row": 4, "col": 3, "name": "Sacred Arbiter", "max": 1, "pre": null, "eff": "Holy Strike +20% and refreshes Judgement effects on the target", "icon": "inv_sword_08"},
-   {"tree": 2, "row": 5, "col": 1, "name": "Two-Handed Weapon Specialization", "max": 3, "pre": null, "eff": "Two-handed damage +2% per rank", "icon": "inv_hammer_04"},
-   {"tree": 2, "row": 5, "col": 2, "name": "Vengeance", "max": 3, "pre": "Sanctified Judgement", "eff": "After a crit: Physical and Holy damage +3% for 30 s, stacks 3", "icon": "ability_racial_avatar"},
-   {"tree": 2, "row": 5, "col": 3, "name": "Repentance", "max": 1, "pre": null, "eff": "Incapacitates a humanoid for up to 6 s (1 min)", "icon": "spell_holy_prayerofhealing"},
-   {"tree": 2, "row": 6, "col": 2, "name": "Champion of the Light", "max": 3, "pre": null, "eff": "Spell damage +10% of Intellect per rank (hotfix 22 Oct)", "icon": "ability_paladin_enlightenedjudgements"},
-   {"tree": 2, "row": 6, "col": 3, "name": "Instrument of Law", "max": 2, "pre": null, "eff": "Hammer of Wrath cast -1 s, -20% threat without Righteous Fury", "icon": "spell_holy_divinepurpose"},
-   {"tree": 2, "row": 7, "col": 2, "name": "Twist of Light", "max": 1, "pre": null, "eff": "Seals -20% mana; a replaced seal leaves an echo on your next melee hit", "icon": "spell_holy_blessedresillience"}
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 2,
+    "name": "Divine Strength",
+    "max": 5,
+    "pre": null,
+    "eff": "Strength +2% per rank",
+    "icon": "ability_golemthunderclap"
+   },
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 3,
+    "name": "Divine Intellect",
+    "max": 5,
+    "pre": null,
+    "eff": "Intellect +2% per rank",
+    "icon": "spell_nature_sleep"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 1,
+    "name": "Healing Light",
+    "max": 3,
+    "pre": null,
+    "eff": "Holy Light, Flash of Light and Holy Shock healing +4% per rank",
+    "icon": "spell_holy_holybolt"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 2,
+    "name": "Spiritual Focus",
+    "max": 2,
+    "pre": null,
+    "eff": "70% chance to avoid pushback on Flash/Holy Light/Light's Vigil",
+    "icon": "spell_arcane_blink"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 3,
+    "name": "Improved Seals",
+    "max": 3,
+    "pre": null,
+    "eff": "Seal and Judgement damage +5% per rank",
+    "icon": "ability_thunderbolt"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 4,
+    "name": "Unyielding Faith",
+    "max": 2,
+    "pre": null,
+    "eff": "Fear and disorient duration -15% per rank",
+    "icon": "spell_holy_unyieldingfaith"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 1,
+    "name": "Voice of Truth",
+    "max": 1,
+    "pre": null,
+    "eff": "Immune to silence and interrupt for 6 s (3 min)",
+    "icon": "inv_misc_horn_03"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 2,
+    "name": "Reverence",
+    "max": 3,
+    "pre": null,
+    "eff": "30% mana regen continues while casting",
+    "icon": "spell_holy_divineillumination"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 3,
+    "name": "Purifying Power",
+    "max": 2,
+    "pre": null,
+    "eff": "Cleanse/Purify -20% mana, Exorcism/Holy Wrath cooldown -33%",
+    "icon": "spell_holy_purifyingpower"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 1,
+    "name": "Infusion of Light",
+    "max": 2,
+    "pre": null,
+    "eff": "Holy Shock/Flash crits cut next Holy Light cast by 1 s",
+    "icon": "ability_paladin_infusionoflight"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 2,
+    "name": "Illumination",
+    "max": 5,
+    "pre": "Reverence",
+    "eff": "Heal crits refund 50% of base mana cost",
+    "icon": "spell_holy_greaterheal"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 3,
+    "name": "Divine Favor",
+    "max": 1,
+    "pre": null,
+    "eff": "Next heal is a guaranteed crit (2 min)",
+    "icon": "spell_holy_heal"
+   },
+   {
+    "tree": 0,
+    "row": 5,
+    "col": 1,
+    "name": "Divine Precision",
+    "max": 3,
+    "pre": "Holy Shock",
+    "eff": "Holy spell hit +6% per rank",
+    "icon": "spell_holy_healingfocus"
+   },
+   {
+    "tree": 0,
+    "row": 5,
+    "col": 2,
+    "name": "Holy Shock",
+    "max": 1,
+    "pre": null,
+    "eff": "Instant Holy damage or healing, 10 s cooldown",
+    "icon": "spell_holy_searinglight"
+   },
+   {
+    "tree": 0,
+    "row": 5,
+    "col": 3,
+    "name": "Consecrated Ground",
+    "max": 2,
+    "pre": null,
+    "eff": "Holy damage +5% per rank on the first 4 enemies entering Consecration",
+    "icon": "spell_holy_innerfire"
+   },
+   {
+    "tree": 0,
+    "row": 6,
+    "col": 3,
+    "name": "Holy Power",
+    "max": 5,
+    "pre": null,
+    "eff": "Holy Shock/Holy Strike crit +15%, other spells +5%",
+    "icon": "spell_holy_power"
+   },
+   {
+    "tree": 0,
+    "row": 7,
+    "col": 2,
+    "name": "Light's Vigil",
+    "max": 1,
+    "pre": "Holy Shock",
+    "eff": "Mark a target: next Holy Shock deals bonus damage or heals its party, no cooldown",
+    "icon": "ability_paladin_judgementofthepure"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 2,
+    "name": "Toughness",
+    "max": 5,
+    "pre": null,
+    "eff": "Armor from items +2% per rank",
+    "icon": "spell_holy_devotion"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 3,
+    "name": "Redoubt",
+    "max": 5,
+    "pre": null,
+    "eff": "Melee hits taken can give +20% block for 10 s or 5 blocks",
+    "icon": "ability_defend"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 1,
+    "name": "Precision",
+    "max": 3,
+    "pre": null,
+    "eff": "Hit +1% per rank",
+    "icon": "ability_rogue_ambush"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 2,
+    "name": "Guardian's Favor",
+    "max": 2,
+    "pre": null,
+    "eff": "Blessing of Protection cooldown -2 min, Blessing of Freedom +6 s",
+    "icon": "spell_holy_sealofprotection"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 4,
+    "name": "Anticipation",
+    "max": 5,
+    "pre": null,
+    "eff": "Defense +4 per rank",
+    "icon": "spell_magic_lesserinvisibilty"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 1,
+    "name": "Improved Seal of Fury",
+    "max": 1,
+    "pre": null,
+    "eff": "Mana back when your Seal of Fury shield is fully absorbed",
+    "icon": "spell_holy_righteousnessaura"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 2,
+    "name": "Improved Righteous Fury",
+    "max": 3,
+    "pre": null,
+    "eff": "Damage taken -2% per rank while Righteous Fury is active",
+    "icon": "spell_holy_sealoffury"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 3,
+    "name": "Shield Specialization",
+    "max": 3,
+    "pre": "Redoubt",
+    "eff": "Shield absorbs +30%, blocks restore 4% max mana",
+    "icon": "inv_shield_06"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 4,
+    "name": "Sacred Duty",
+    "max": 2,
+    "pre": null,
+    "eff": "Stamina +4%, Divine Shield/Protection/Templar's Bulwark cooldown -60 s",
+    "icon": "spell_holy_divineintervention"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 1,
+    "name": "Swift Judgement",
+    "max": 1,
+    "pre": "Improved Seal of Fury",
+    "eff": "Resets Judgement and makes it free (1 min)",
+    "icon": "ability_paladin_judgementred"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 2,
+    "name": "One-Handed Weapon Specialization",
+    "max": 3,
+    "pre": null,
+    "eff": "One-handed damage +10%",
+    "icon": "inv_sword_20"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 3,
+    "name": "Improved Hammer of Justice",
+    "max": 3,
+    "pre": null,
+    "eff": "Hammer of Justice cooldown -5 s per rank",
+    "icon": "spell_holy_sealofmight"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 2,
+    "name": "Templar's Bulwark",
+    "max": 1,
+    "pre": null,
+    "eff": "Absorb shield equal to 100% max health for 8 s (Forbearance, 5 min)",
+    "icon": "ability_paladin_shieldofthetemplar"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 3,
+    "name": "Reckoning",
+    "max": 5,
+    "pre": null,
+    "eff": "Extra attacks after block or crit taken (stores up to 4)",
+    "icon": "spell_holy_blessingofstrength"
+   },
+   {
+    "tree": 1,
+    "row": 6,
+    "col": 3,
+    "name": "Iron Creed",
+    "max": 5,
+    "pre": null,
+    "eff": "Holy Strike threat +25%; with Righteous Fury, -10% damage taken for 6 s",
+    "icon": "spell_holy_improvedresistanceauras"
+   },
+   {
+    "tree": 1,
+    "row": 7,
+    "col": 2,
+    "name": "Holy Shield",
+    "max": 1,
+    "pre": "Templar's Bulwark",
+    "eff": "Block +30% and Holy damage on block, 4 charges",
+    "icon": "spell_holy_blessingofprotection"
+   },
+   {
+    "tree": 2,
+    "row": 1,
+    "col": 2,
+    "name": "Deflection",
+    "max": 5,
+    "pre": null,
+    "eff": "Parry +1% per rank",
+    "icon": "ability_parry"
+   },
+   {
+    "tree": 2,
+    "row": 1,
+    "col": 3,
+    "name": "Benediction",
+    "max": 5,
+    "pre": null,
+    "eff": "Instant spells and abilities -2% mana per rank",
+    "icon": "spell_frost_windwalkon"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 1,
+    "name": "Improved Judgement",
+    "max": 2,
+    "pre": null,
+    "eff": "Judgement cooldown -1 s per rank",
+    "icon": "spell_holy_righteousfury"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 2,
+    "name": "Holy Conduit",
+    "max": 2,
+    "pre": null,
+    "eff": "Consecration, Holy Wrath, Exorcism and Hammer of Wrath -40% mana",
+    "icon": "spell_holy_devineaegis"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 3,
+    "name": "Conviction",
+    "max": 5,
+    "pre": null,
+    "eff": "Melee crit +1% per rank",
+    "icon": "spell_holy_retributionaura"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 1,
+    "name": "Vindication",
+    "max": 3,
+    "pre": null,
+    "eff": "Melee hits lower target attack power and raise yours 3%",
+    "icon": "spell_holy_vindication"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 2,
+    "name": "Sanctified Judgement",
+    "max": 3,
+    "pre": null,
+    "eff": "Judgement refunds 60% of the seal's mana",
+    "icon": "ability_paladin_judgementblue"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 3,
+    "name": "Seal of Command",
+    "max": 1,
+    "pre": null,
+    "eff": "Seal: extra Holy hits (70% weapon); Judgement bonus vs stunned/incapacitated",
+    "icon": "ability_warrior_innerrage"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 4,
+    "name": "Pursuit of Justice",
+    "max": 2,
+    "pre": null,
+    "eff": "Movement and mounted speed +15% total",
+    "icon": "spell_holy_persuitofjustice"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 1,
+    "name": "Eye for an Eye",
+    "max": 2,
+    "pre": null,
+    "eff": "Crits against you reflect 10% of the damage",
+    "icon": "spell_holy_eyeforaneye"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 3,
+    "name": "Sacred Arbiter",
+    "max": 1,
+    "pre": null,
+    "eff": "Holy Strike +20% and refreshes Judgement effects on the target",
+    "icon": "inv_sword_08"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 1,
+    "name": "Two-Handed Weapon Specialization",
+    "max": 3,
+    "pre": null,
+    "eff": "Two-handed damage +2% per rank",
+    "icon": "inv_hammer_04"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 2,
+    "name": "Vengeance",
+    "max": 3,
+    "pre": "Sanctified Judgement",
+    "eff": "After a crit: Physical and Holy damage +3% for 30 s, stacks 3",
+    "icon": "ability_racial_avatar"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 3,
+    "name": "Repentance",
+    "max": 1,
+    "pre": null,
+    "eff": "Incapacitates a humanoid for up to 6 s (1 min)",
+    "icon": "spell_holy_prayerofhealing"
+   },
+   {
+    "tree": 2,
+    "row": 6,
+    "col": 2,
+    "name": "Champion of the Light",
+    "max": 3,
+    "pre": null,
+    "eff": "Spell damage +10% of Intellect per rank (hotfix 22 Oct)",
+    "icon": "ability_paladin_enlightenedjudgements"
+   },
+   {
+    "tree": 2,
+    "row": 6,
+    "col": 3,
+    "name": "Instrument of Law",
+    "max": 2,
+    "pre": null,
+    "eff": "Hammer of Wrath cast -1 s, -20% threat without Righteous Fury",
+    "icon": "spell_holy_divinepurpose"
+   },
+   {
+    "tree": 2,
+    "row": 7,
+    "col": 2,
+    "name": "Twist of Light",
+    "max": 1,
+    "pre": null,
+    "eff": "Seals -20% mana; a replaced seal leaves an echo on your next melee hit",
+    "icon": "spell_holy_blessedresillience"
+   }
   ]
  },
  "talents_note": "Verificado con el export de talentsforever (build 70425 + hotfix 22 oct). 50 talentos (17/16/17). Cambios respecto a la 70170 local: eliminados Improved Holy Strike (Sagrado) y Crusade (Reprensión); Champion of the Light rebajado a 10/20/30% del intelecto (hotfix 22 oct); Reckoning almacena 4 cargas; Shield Specialization devuelve 4% de maná. Consecration y Blessing of Kings ya no son talentos (entrenables al 20). Iconos tomados del export cuando difieren del archivo local.",
@@ -126,27 +580,111 @@
   "stats": "Fuerza / poder de ataque y daño del arma > Aguante > poder con hechizos > Intelecto > armadura (Warcraft Tavern). Golpe hasta tener Precision. Con Champion of the Light el intelecto se convierte en poder con hechizos. Para Protección: poder con hechizos, Aguante, Intelecto, Fuerza.",
   "weapons": "Reprensión: arma de dos manos lenta (mejora Golpe Sagrado y Sello de orden). Protección: arma de una mano rápida + escudo (más golpes de Sello de furia). Sagrado: una mano con poder con hechizos. Lo mejor es un arma con poder con hechizos y buen daño. Las armas de asta requieren el nivel 20 y entrenarlas; la placa no llega hasta el 40. Herrería + Minería dan piezas con poder con hechizos para las tres ramas. Usa Piedra de afilar/aceites y cocina con buff de experiencia.",
   "abilities": [
-   [1, "Seal of Righteousness (Sello de rectitud), Holy Light (Luz Sagrada), Devotion Aura (Aura de devoción)", "Sello principal de daño; escala con poder con hechizos."],
-   [4, "Judgement (Sentencia), Blessing of Might (Bendición de poderío)", "La Sentencia ya no consume el sello y no activa el tiempo global: úsala siempre que esté lista."],
-   [6, "Holy Strike (Golpe Sagrado, nuevo), Divine Protection (Protección divina), Seal of the Crusader", "Golpe Sagrado: ataque instantáneo Sagrado del 50% del arma + bonificación por rango."],
-   [8, "Hammer of Justice (Martillo de justicia), Purify (Purificar)", "Aturdimiento."],
-   [10, "Seal of Fury (Sello de furia, nuevo), Blessing of Protection (Bendición de protección), Lay on Hands (Imposición de manos)", "Sello de tanque: daño Sagrado fijo por golpe + escudo; su Sentencia provoca. Imposición de manos ahora 20 min de reutilización."],
-   [12, "Redemption (Redención)", "Misión de clase."],
-   [14, "Blessing of Wisdom (Bendición de sabiduría)", "Las bendiciones duran 1 hora."],
-   [16, "Retribution Aura (Aura de reprensión), Righteous Fury (Furia recta)", ""],
-   [20, "Consecration (Consagración, ahora base), Blessing of Kings (Bendición de reyes, ahora base), Exorcism (Exorcismo), Flash of Light (Destello de Luz), Seal of Command (Sello de orden, talento), armas de asta", "Gran salto de poder al 20."],
-   [24, "Turn Undead", ""],
-   [26, "Salvation (Salvación) y Revoke (Revocar)", "Salvación ya no es una bendición: se combina con otra."],
-   [30, "Seal of Light, Divine Intervention, Holy Shock (Choque Sagrado, talento Sagrado)", ""],
-   [34, "Divine Shield (Escudo divino)", "Ahora reduce tu daño a la mitad en vez de ralentizar los ataques."],
-   [38, "Seal of Wisdom", ""],
-   [40, "Montura, placa, doble especialización, Blessing of Light, Twist of Light (Giro de la Luz, talento)", ""],
-   [42, "Cleanse (Limpiar)", ""],
-   [44, "Hammer of Wrath (Martillo de cólera)", "Ejecución por debajo del 20%."],
-   [46, "Blessing of Sacrifice", ""],
-   [50, "Holy Wrath (Cólera Sagrada)", ""],
-   [52, "Greater Blessing of Might", ""],
-   [60, "Greater Blessing of Kings, Greater Blessing of Light, Mass Salvation", ""]
+   [
+    1,
+    "Seal of Righteousness (Sello de rectitud), Holy Light (Luz Sagrada), Devotion Aura (Aura de devoción)",
+    "Sello principal de daño; escala con poder con hechizos."
+   ],
+   [
+    4,
+    "Judgement (Sentencia), Blessing of Might (Bendición de poderío)",
+    "La Sentencia ya no consume el sello y no activa el tiempo global: úsala siempre que esté lista."
+   ],
+   [
+    6,
+    "Holy Strike (Golpe Sagrado, nuevo), Divine Protection (Protección divina), Seal of the Crusader",
+    "Golpe Sagrado: ataque instantáneo Sagrado del 50% del arma + bonificación por rango."
+   ],
+   [
+    8,
+    "Hammer of Justice (Martillo de justicia), Purify (Purificar)",
+    "Aturdimiento."
+   ],
+   [
+    10,
+    "Seal of Fury (Sello de furia, nuevo), Blessing of Protection (Bendición de protección), Lay on Hands (Imposición de manos)",
+    "Sello de tanque: daño Sagrado fijo por golpe + escudo; su Sentencia provoca. Imposición de manos ahora 20 min de reutilización."
+   ],
+   [
+    12,
+    "Redemption (Redención)",
+    "Misión de clase."
+   ],
+   [
+    14,
+    "Blessing of Wisdom (Bendición de sabiduría)",
+    "Las bendiciones duran 1 hora."
+   ],
+   [
+    16,
+    "Retribution Aura (Aura de reprensión), Righteous Fury (Furia recta)",
+    ""
+   ],
+   [
+    20,
+    "Consecration (Consagración, ahora base), Blessing of Kings (Bendición de reyes, ahora base), Exorcism (Exorcismo), Flash of Light (Destello de Luz), Seal of Command (Sello de orden, talento), armas de asta",
+    "Gran salto de poder al 20."
+   ],
+   [
+    24,
+    "Turn Undead",
+    ""
+   ],
+   [
+    26,
+    "Salvation (Salvación) y Revoke (Revocar)",
+    "Salvación ya no es una bendición: se combina con otra."
+   ],
+   [
+    30,
+    "Seal of Light, Divine Intervention, Holy Shock (Choque Sagrado, talento Sagrado)",
+    ""
+   ],
+   [
+    34,
+    "Divine Shield (Escudo divino)",
+    "Ahora reduce tu daño a la mitad en vez de ralentizar los ataques."
+   ],
+   [
+    38,
+    "Seal of Wisdom",
+    ""
+   ],
+   [
+    40,
+    "Montura, placa, doble especialización, Blessing of Light, Twist of Light (Giro de la Luz, talento)",
+    ""
+   ],
+   [
+    42,
+    "Cleanse (Limpiar)",
+    ""
+   ],
+   [
+    44,
+    "Hammer of Wrath (Martillo de cólera)",
+    "Ejecución por debajo del 20%."
+   ],
+   [
+    46,
+    "Blessing of Sacrifice",
+    ""
+   ],
+   [
+    50,
+    "Holy Wrath (Cólera Sagrada)",
+    ""
+   ],
+   [
+    52,
+    "Greater Blessing of Might",
+    ""
+   ],
+   [
+    60,
+    "Greater Blessing of Kings, Greater Blessing of Light, Mass Salvation",
+    ""
+   ]
   ],
   "rotation": [
    "Mantén aura y bendición (Aura de reprensión/devoción + Bendición de poderío o reyes).",
@@ -158,10 +696,30 @@
    "Cúrate con Luz Sagrada / Destello de Luz entre pulls; en apuros, Protección divina o Martillo de justicia antes de curarte."
   ],
   "class_quests": [
-   [12, "The Tome of Divinity", "Redemption (Redención)", "Ventormenta (Catedral de la Luz) o Forjaz (Sala de los Místicos)"],
-   [20, "The Tome of Valor", "Sense Undead / mejora de equipo (sin confirmar en Forever)", "Ventormenta -> Páramos de Poniente (sin confirmar)"],
-   [20, "The Test of Righteousness -> Verigan's Fist", "Verigan's Fist (martillo de dos manos)", "Ventormenta (Jordan Stilwell, Forjaz) -> Vallefresno, Costa Oscura, Páramos (cadena de Classic, sin confirmar)"],
-   [60, "Summon Charger", "Montura épica de clase (detalles sin confirmar en Forever)", "Sin confirmar"]
+   [
+    12,
+    "The Tome of Divinity",
+    "Redemption (Redención)",
+    "Ventormenta (Catedral de la Luz) o Forjaz (Sala de los Místicos)"
+   ],
+   [
+    20,
+    "The Tome of Valor",
+    "Sense Undead / mejora de equipo (sin confirmar en Forever)",
+    "Ventormenta -> Páramos de Poniente (sin confirmar)"
+   ],
+   [
+    20,
+    "The Test of Righteousness -> Verigan's Fist",
+    "Verigan's Fist (martillo de dos manos)",
+    "Ventormenta (Jordan Stilwell, Forjaz) -> Vallefresno, Costa Oscura, Páramos (cadena de Classic, sin confirmar)"
+   ],
+   [
+    60,
+    "Summon Charger",
+    "Montura épica de clase (detalles sin confirmar en Forever)",
+    "Sin confirmar"
+   ]
   ],
   "tips": [
    "El tope al lanzamiento es 60 (permanente). 51 puntos sin Legado; el Legado 'Talented' adelanta talentos hasta 5 niveles.",
@@ -174,20 +732,100 @@
   ]
  },
  "races": [
-  {"race": "Human", "verdict": "best", "racials": "Ruthless (+2% probabilidad de crítico), Will to Survive (quita aturdimientos), Perception (detecta sigilo 20 s), The Human Spirit (+5% espíritu)", "why": "La mejor para PvP (Will to Survive contra aturdimientos, Perception contra pícaros). Ruthless da crítico, que alimenta Vengeance en Reprensión."},
-  {"race": "Dwarf", "verdict": "best", "racials": "Stoneform (inmune a sangrado/veneno/enfermedad y menos daño físico 8 s), Earth Fury (+2% daño y sanación crítica), Big Game Hunter (+5% daño a bestias), Find Treasure", "why": "Excelente tanque y muy duro en PvP contra pícaros/cazadores; Big Game Hunter acelera el leveo contra bestias. Elección de gusto entre humano y enano."}
+  {
+   "race": "Human",
+   "verdict": "best",
+   "racials": "Ruthless (+1% de crítico; era +2% antes del ajuste de lanzamiento), Will to Survive (quita aturdimientos), Perception (detecta sigilo 20 s), The Human Spirit (+10% espíritu)",
+   "why": "La mejor para PvP (Will to Survive contra aturdimientos, Perception contra pícaros). Ruthless da crítico, que alimenta Vengeance en Reprensión."
+  },
+  {
+   "race": "Dwarf",
+   "verdict": "best",
+   "racials": "Stoneform (inmune a sangrado/veneno/enfermedad y menos daño físico 8 s), Artisan's Precision (+1% de golpe con hechizos y ataques; sustituye a Earth Fury), Big Game Hunter (+5% daño a bestias), Find Treasure",
+   "why": "Excelente tanque y muy duro en PvP contra pícaros/cazadores; Big Game Hunter acelera el leveo contra bestias. Elección de gusto entre humano y enano."
+  }
  ],
  "gear": [
-  {"levels": "13-18", "slot": "Arma", "name": "Recompensas de Hall of Thanes", "id": null, "source": "Hall of Thanes (Forjaz, nueva)", "why": "Primera mazmorra cercana para la Alianza (nombres de objetos sin confirmar)."},
-  {"levels": "15-22", "slot": "Arma de dos manos", "name": "Smite's Mighty Hammer", "id": 7230, "source": "Mr. Smite, Las Minas de la Muerte (origen de Classic, sin confirmar en Forever)", "why": "Arma lenta de dos manos para Golpe Sagrado."},
-  {"levels": "15-22", "slot": "Arma de una mano", "name": "Rhahk'Zor's Hammer", "id": null, "source": "Rhahk'Zor, Las Minas de la Muerte", "why": "Recomendado por Method."},
-  {"levels": "18-25", "slot": "Arma", "name": "Scepter of the Abandoned", "id": null, "source": "Sin confirmar (citado por Method)", "why": "Arma con poder con hechizos y daño de arma."},
-  {"levels": "20-30", "slot": "Arma de dos manos", "name": "Verigan's Fist", "id": 6953, "source": "Misión de clase de paladín (cadena de Classic, sin confirmar en Forever)", "why": "Martillo de dos manos de misión de clase."},
-  {"levels": "10-20", "slot": "Reliquia", "name": "Tenets of the Silver Hand", "id": null, "source": "Encantamiento (BoP)", "why": "Primer libram; solo si subes Encantamiento."},
-  {"levels": "28-33", "slot": "Sostener en mano izquierda (Sagrado)", "name": "Ponderous Orb", "id": 273052, "source": "Shade of the Archmage, City of Dalaran", "why": "Opción para paladín sanador."},
-  {"levels": "30-40", "slot": "Torso (malla)", "name": "Ironspine's Ribcage", "id": 7688, "source": "Ironspine, Monasterio Escarlata (raro)", "why": "Fuerza y aguante, útil para tanque."},
-  {"levels": "30-38", "slot": "Escudo", "name": "Marbled Buckler", "id": null, "source": "Misión de Horado Rajacieno", "why": "Escudo para Protección."},
-  {"levels": "36-46", "slot": "Arma de dos manos", "name": "Objetos de Monasterio Escarlata (Armería/Catedral)", "id": null, "source": "Monasterio Escarlata", "why": "Itemización nueva en Forever; listas 30-60 aún sin publicar (sin confirmar)."}
+  {
+   "levels": "13-18",
+   "slot": "Arma",
+   "name": "Recompensas de Hall of Thanes",
+   "id": null,
+   "source": "Hall of Thanes (Forjaz, nueva)",
+   "why": "Primera mazmorra cercana para la Alianza (nombres de objetos sin confirmar)."
+  },
+  {
+   "levels": "15-22",
+   "slot": "Arma de dos manos",
+   "name": "Smite's Mighty Hammer",
+   "id": 7230,
+   "source": "Mr. Smite, Las Minas de la Muerte (origen de Classic, sin confirmar en Forever)",
+   "why": "Arma lenta de dos manos para Golpe Sagrado."
+  },
+  {
+   "levels": "15-22",
+   "slot": "Arma de una mano",
+   "name": "Rhahk'Zor's Hammer",
+   "id": null,
+   "source": "Rhahk'Zor, Las Minas de la Muerte",
+   "why": "Recomendado por Method."
+  },
+  {
+   "levels": "18-25",
+   "slot": "Arma",
+   "name": "Scepter of the Abandoned",
+   "id": null,
+   "source": "Sin confirmar (citado por Method)",
+   "why": "Arma con poder con hechizos y daño de arma."
+  },
+  {
+   "levels": "20-30",
+   "slot": "Arma de dos manos",
+   "name": "Verigan's Fist",
+   "id": 6953,
+   "source": "Misión de clase de paladín (cadena de Classic, sin confirmar en Forever)",
+   "why": "Martillo de dos manos de misión de clase."
+  },
+  {
+   "levels": "10-20",
+   "slot": "Reliquia",
+   "name": "Tenets of the Silver Hand",
+   "id": null,
+   "source": "Encantamiento (BoP)",
+   "why": "Primer libram; solo si subes Encantamiento."
+  },
+  {
+   "levels": "28-33",
+   "slot": "Sostener en mano izquierda (Sagrado)",
+   "name": "Ponderous Orb",
+   "id": 273052,
+   "source": "Shade of the Archmage, City of Dalaran",
+   "why": "Opción para paladín sanador."
+  },
+  {
+   "levels": "30-40",
+   "slot": "Torso (malla)",
+   "name": "Ironspine's Ribcage",
+   "id": 7688,
+   "source": "Ironspine, Monasterio Escarlata (raro)",
+   "why": "Fuerza y aguante, útil para tanque."
+  },
+  {
+   "levels": "30-38",
+   "slot": "Escudo",
+   "name": "Marbled Buckler",
+   "id": null,
+   "source": "Misión de Horado Rajacieno",
+   "why": "Escudo para Protección."
+  },
+  {
+   "levels": "36-46",
+   "slot": "Arma de dos manos",
+   "name": "Objetos de Monasterio Escarlata (Armería/Catedral)",
+   "id": null,
+   "source": "Monasterio Escarlata",
+   "why": "Itemización nueva en Forever; listas 30-60 aún sin publicar (sin confirmar)."
+  }
  ],
  "dungeons": [
   "Hall of Thanes (13-18, Forjaz, nueva) y Las Minas de la Muerte (15-22): armas de dos manos tempranas.",
@@ -212,9 +850,25 @@
   "Los no-muertos de la Horda pueden ser paladín; en Alianza solo humano y enano."
  ],
  "pvp": {
-  "strengths": ["Muy resistente: placa, Escudo divino, Imposición de manos, Bendición de protección y curas propias", "Bendición de libertad contra raíces y ralentizaciones", "Burst con Sello de orden + Sentencia sobre objetivos aturdidos (Martillo de justicia / Arrepentimiento)", "Eye for an Eye y Vengeance castigan críticos"],
-  "weaknesses": ["Movilidad baja: los kiteadores (mago, cazador) lo explotan", "Dependencia de maná en duelos largos", "Pocas interrupciones", "Purgas y disipaciones contra sus bendiciones"],
-  "duel_plan": ["Prepara Bendición de poderío/reyes, aura (Concentración contra lanzadores, Devoción contra melé) y sello.", "Acorta distancia con Pursuit of Justice; Bendición de libertad contra raíces y ralentizaciones.", "Martillo de justicia -> Sentencia con Sello de orden (daño extra contra aturdidos) -> Golpe Sagrado: ventana de burst.", "Arrepentimiento para cortar una cura o separar al rival y curarte tú.", "Escudo divino para curarte o resetear; guarda Imposición de manos para el final."],
+  "strengths": [
+   "Muy resistente: placa, Escudo divino, Imposición de manos, Bendición de protección y curas propias",
+   "Bendición de libertad contra raíces y ralentizaciones",
+   "Burst con Sello de orden + Sentencia sobre objetivos aturdidos (Martillo de justicia / Arrepentimiento)",
+   "Eye for an Eye y Vengeance castigan críticos"
+  ],
+  "weaknesses": [
+   "Movilidad baja: los kiteadores (mago, cazador) lo explotan",
+   "Dependencia de maná en duelos largos",
+   "Pocas interrupciones",
+   "Purgas y disipaciones contra sus bendiciones"
+  ],
+  "duel_plan": [
+   "Prepara Bendición de poderío/reyes, aura (Concentración contra lanzadores, Devoción contra melé) y sello.",
+   "Acorta distancia con Pursuit of Justice; Bendición de libertad contra raíces y ralentizaciones.",
+   "Martillo de justicia -> Sentencia con Sello de orden (daño extra contra aturdidos) -> Golpe Sagrado: ventana de burst.",
+   "Arrepentimiento para cortar una cura o separar al rival y curarte tú.",
+   "Escudo divino para curarte o resetear; guarda Imposición de manos para el final."
+  ],
   "vs": {
    "warrior": "Pareja: Bendición de protección contra su burst físico y Libertad contra Hamstring; tus curas te dan ventaja en duelos largos. (provisional)",
    "rogue": "Will to Survive/Stoneform tras la apertura, Purificar venenos, Bendición de protección o Escudo divino si te encadena. (provisional)",

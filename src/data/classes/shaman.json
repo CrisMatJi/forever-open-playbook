@@ -757,8 +757,8 @@
   {
    "race": "Dwarf (Enano)",
    "verdict": "best",
-   "racials": "Stoneform (quita sangrados/venenos/enfermedades e inmunidad, -10% daño físico 8 s); Earth Fury (+2% al bonus de daño/curación crítica); Big Game Hunter (+5% daño a bestias); Find Treasure",
-   "why": "Única raza Alianza que puede ser chamán en Forever. Stoneform es un gran defensivo en PvP contra pícaros y guerreros, y Big Game Hunter acelera la subida."
+   "racials": "Stoneform (quita sangrados/venenos/enfermedades e inmunidad, -10% daño físico 8 s); Artisan's Precision (+1% de golpe con hechizos y ataques; sustituye a Earth Fury); Big Game Hunter (+5% daño a bestias); Find Treasure",
+   "why": "Única raza de la Alianza que puede ser Chamán. Forma de piedra es un gran defensivo contra Pícaros y Guerreros, Big Game Hunter (+5% contra bestias) acelera la subida y, tras el ajuste de lanzamiento, Artisan's Precision da +1% de golpe."
   }
  ],
  "gear": [

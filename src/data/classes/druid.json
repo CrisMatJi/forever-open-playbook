@@ -762,15 +762,15 @@
  "races": [
   {
    "race": "Skyborne (High Order, Alianza)",
-   "verdict": "best",
-   "racials": "Wind Blessed (+3% celeridad de hechizos, cuerpo a cuerpo y distancia); Read Leyline (+100% regeneración de vida y maná 30 s, o 15 min junto a una línea ley); Walk on Air (planear 10 s); Elemental Insight (+5% daño a elementales)",
-   "why": "Mejor en PvE (celeridad permanente y menos tiempo muerto subiendo); Method la recomienda para Alianza en gato y equilibrio. Requiere pack Heroic o superior; empieza en la Isla de Zephras (1-12) con formas de druida propias."
+   "verdict": "good",
+   "racials": "Wind Blessed (+2% celeridad de hechizos, cuerpo a cuerpo y distancia); Read Leyline (+50% de regeneración de vida y maná durante 15 s; junto a una línea ley te deja Attuned 1 h y entonces es +100%); Walk on Air (planear 10 s); Elemental Insight (+5% daño a elementales)",
+   "why": "Tras el ajuste de raciales del lanzamiento queda casi igual que el Elfo de la noche: +2% de celeridad (antes 3%), regeneración del 50% durante 15 s (100% solo si estás Attuned tras una línea ley) y Skysight (+30% de velocidad 1 h si la usas en una convergencia). Cómodo para subir, pero requiere el pack Heroic o superior."
   },
   {
    "race": "Night Elf (Elfo de la noche)",
-   "verdict": "good",
+   "verdict": "best",
    "racials": "Elune's Light (+10% crítico con hechizos y ataques 15 s); Shadowmeld (en combate reduce la probabilidad de ser atacado, 2 min CD); Quickness (+1% esquivar, +2% velocidad, Acechar como si fueras 1 nivel más); Wisp Spirit (+75% velocidad como fuego fatuo)",
-   "why": "Muy buena para PvP feral (sigilo más difícil de detectar, Elune's Light para ráfaga). Sin coste de pack."
+   "why": "Tras el ajuste de raciales del lanzamiento es la mejor relación: Luz de Elune (+10% de crítico 15 s) para la ráfaga, +2% de velocidad siempre activa, Fusión de las sombras fuera de combate y no necesita ningún pack. El Skyborne solo le saca un 2% de celeridad."
   }
  ],
  "gear": [

@@ -1,418 +1,952 @@
 {
-  "meta": {
-    "researched_on": "2026-10-25",
-    "beta_builds_seen": ["1.60.1.70425 (talentsforever)", "1.60.1.70532 (foreverchanges, última versión de la beta, 22 de oct)"],
-    "note": "La beta estuvo limitada a nivel 30 todo el tiempo. Nada del 31 al 60 (zonas, mazmorras, Shen'dralas, Hyjal) se probó en público, así que los rangos de nivel por encima de 30 salen de los datos del cliente, anuncios de Blizzard y rutas de Classic. Tómalos como provisionales."
-  },
-
-  "launch": {
-    "date_utc": "2026-11-04T23:00:00Z",
-    "official_time": "4 de nov de 2026, 15:00 PST (página de Blizzard en inglés). La página de Blizzard en francés dice medianoche hora de París del 5 de nov.",
-    "spain_time": "Jueves 5 de nov de 2026 a las 00:00 (hora peninsular); miércoles 4 de nov a las 23:00 en Canarias",
-    "time_discrepancies": "La copia en Wowhead del mensaje oficial de Blizzard pone 'PDT' en un sitio y 'PST' en otro. La página del parche en warcraft.wiki.gg dice '0:00 UTC'. La mayoría de fuentes, incluidas Blizzard FR, playnews.gg, kami-labs y ForeverHispano, coinciden en 23:00 UTC = 00:00 en España. El horario de verano de EE. UU. termina el 1 de nov, así que se aplica PST (UTC-8).",
-    "level_cap_at_launch": 60,
-    "level_cap_note": "El nivel máximo es 60 en el lanzamiento y se queda en 60 para siempre. El pilar de Blizzard 'Journey before destination' (el viaje antes que el destino) descarta subir el nivel máximo; el crecimiento es horizontal (nuevas zonas para cualquier rango de nivel, mazmorras, bandas y Legacy). El tope de la beta fue 30 desde el 1 de oct hasta el final. Ese 30 era solo de la beta.",
-    "level_cap_confirmed": true,
-    "realms": "No hay lista de reinos. Hay un 'megarreino' por tipo de reino y región (Normal, JcJ, Rol, Rol-JcJ; Hardcore más adelante) con capas (layering). Solo puedes agruparte con jugadores del mismo tipo de reino y facción. En el tipo JcJ una cuenta solo puede tener una facción por región.",
-    "pre_launch_dates": [
-      {"item": "Beta", "date": "17 de sep - 21/23 de oct de 2026 (ampliada hasta las 10:00 PDT del 23 de oct, según Warcraft Tavern)", "confirmed": true},
-      {"item": "Prueba de estrés (progreso borrado)", "date": "21 de oct de 2026", "confirmed": true},
-      {"item": "Reserva anticipada de nombres (dueños de un pack de mejora, hasta 3 personajes, nombre y apellido)", "date": "27 de oct - 3 de nov de 2026 (PST)", "confirmed": true},
-      {"item": "Lanzamiento", "date": "4 de nov de 2026, 15:00 PST", "confirmed": true},
-      {"item": "Pase gratuito para amigos (1 semana)", "date": "4-11 de nov de 2026", "confirmed": false, "note": "Solo lo menciona Mobalytics. Los packs Heroic y Epic incluyen códigos de Invitar a un amigo."}
-    ],
-    "roadmap": [
-      {"when": "9 de dic de 2026", "content": "Se abren las bandas: Barrow Deeps (10 jugadores, nueva), Hyjal Summit (La Cima Hyjal) (20 jugadores, nueva) y Onyxia's Lair (Guarida de Onyxia) (40 jugadores)", "level_cap_change": "ninguno", "confirmed": true},
-      {"when": "Invierno 2026/2027", "content": "Tipo de reino Hardcore, con 12 desafíos de Legacy propios de Hardcore", "level_cap_change": "ninguno", "confirmed": true},
-      {"when": "Primavera 2027", "content": "2 bandas nuevas (10 y 20 jugadores), 2 mazmorras nuevas, nuevas misiones y zona jugable, nueva cadena de misiones legendaria, renovación de temporada JcJ", "level_cap_change": "ninguno", "confirmed": "Anunciado como plan, sin fecha"},
-      {"when": "Verano 2027", "content": "Banda icónica renovada, banda nueva, más contenido en el mundo, 2 mazmorras nuevas, renovación de temporada JcJ, novedades en profesiones y Legacy", "level_cap_change": "ninguno", "confirmed": "Anunciado como plan, sin fecha"},
-      {"when": "Cada actualización de contenido", "content": "Blizzard dice que subirá el tope de puntos de Legacy que puede gastar cada personaje (16 en el lanzamiento) y que añadirá nuevos desafíos, ventajas y recompensas", "level_cap_change": "ninguno", "confirmed": true}
-    ],
-    "sources": [
-      "https://warcraft.wiki.gg/wiki/Patch_1.60.1",
-      "https://www.digitalcitizen.life/world-of-warcraft-forever-will-stay-at-level-60-and-focus-on-horizontal-progression/",
-      "https://www.wowhead.com/forever/blue-tracker/news/eu/24302093",
-      "https://www.playnews.gg/en/release-dates/world-of-warcraft-forever-launch-time-11-p-m-on-4-november-names-from-27-october",
-      "https://kami-labs.fr/en/wow-forever/personnages-de-la-beta-wow-forever-conserves/",
-      "https://insider-gaming.com/when-does-wow-forever-come-out-release-date-times/",
-      "https://mobalytics.gg/wow-forever/guides/wow-forever-roadmap",
-      "https://www.warcrafttavern.com/forever/guides/beta/",
-      "https://conquestcapped.com/guides/wow-forever/wow-forever-realms/",
-      "https://foreverhispano.com/"
-    ]
-  },
-
-  "legacy": {
-    "summary": "El sistema Legacy (Legado) sustituye a los logros. Hay 65 desafíos de Legacy y cada uno da 1 punto de Legacy, una vez por cuenta. Los puntos son de toda la cuenta, pero cada personaje gasta los suyos en tres árboles de ventajas (Professions, Adventure, Resourcefulness). En el lanzamiento cada personaje puede gastar como máximo 16 puntos. El total de puntos conseguidos también desbloquea recompensas de cuenta. Abre la ventana con el icono del escudo o con la tecla Y.",
-    "beta_points_carry_over": "No (casi seguro). Todos los probadores de la beta recibieron 16 puntos con el 'Legacy Challenge' desde el 8 de oct, y Kaivax dijo que duraban 'hasta el final de la beta'. Los personajes de la beta se borran. Blizzard nunca dijo 'borrados' de forma explícita, pero nada indica que se conserven. Planea tu primer personaje con 0 puntos de Legacy.",
-    "first_point_at_launch": "Tu cuenta consigue su primer punto cuando tu primer personaje llega a nivel 25 (desafío de clase). Hay dos opciones más rápidas: una profesión principal de fabricación (no de recolección) a 150, o explorar todo el mapa del mundo (difícil). Así que tu primer personaje del lanzamiento sube del 1 al 25 sin ventajas y solo empieza a gastar puntos hacia el 25 o más.",
-    "how_points_are_earned": {
-      "classes": "27 puntos: llegar a nivel 25, 45 y 60 con cada una de las 9 clases. Blizzard dice 45. Algunas webs dicen 40, y es un error.",
-      "tradeskills": "18 puntos: habilidad 150, 225 y 300 en Alchemy (Alquimia), Blacksmithing (Herrería), Enchanting (Encantamiento), Engineering (Ingeniería), Leatherworking (Peletería) y Tailoring (Sastrería). Las profesiones de recolección y las secundarias no dan nada.",
-      "pvp": "12 puntos: rangos JcJ 3, 7, 10, 13 y 14 (5). Exaltado con las 4 facciones de campo de batalla: AV (Valle de Alterac), AB (Cuenca de Arathi), WSG (Garganta Grito de Guerra) y Darkspear Islands (4). Semanas 4, 7 y 10 del Field of Honor Journey (3).",
-      "dungeons": "3 puntos: matar al jefe final de todas las mazmorras de nivel 15-25, de todas las de 26-45 y de todas las de 46-60 (Novice, Experienced y Master Spelunker; foreverchanges habla de grupos de 6, 10 y 17 mazmorras).",
-      "raids": "3 puntos: Hyjal Summit, Barrow Deeps y Onyxia's Lair (desde el 9 de dic).",
-      "adventure": "2 puntos: Explore Azeroth, y la cadena de misiones desde 'An Earnest Proposition' hasta 'Saving the Best for Last'."
-    },
-    "per_character_cap_at_launch": 16,
-    "single_character_max_earnable": "Se pueden conseguir 29 puntos sin alters (personajes secundarios), según Blizzard, pero cada personaje solo puede gastar 16.",
-    "cost_and_gates": "Parece que cada rango cuesta 1 punto (los planificadores de talentsforever y foreverchanges usan 1 punto por rango; los datos del cliente no dan un coste explícito). Los requisitos funcionan como un árbol de talentos: algunas ventajas piden 5 o 10 puntos en el mismo árbol, y otras piden rangos en una ventaja previa. Cada árbol admite hasta 25 puntos (Warcraft Tavern). Todos los árboles tienen además huecos ocultos para ventajas que se añadirán más adelante.",
-    "perks": {
-      "adventure": [
-        {"name": "Well Rested", "ranks": 5, "gate": "ninguno", "effect": "La experiencia de descanso se acumula un 4% más rápido por rango (hasta +20%), y el máximo de descanso sube lo mismo"},
-        {"name": "Thrill of Adventure", "ranks": 5, "gate": "ninguno", "effect": "Matar a un enemigo que dé experiencia te devuelve un 1-5% de la vida y el maná máximos en 10 s. Solo en el mundo abierto."},
-        {"name": "High Alert", "ranks": 2, "gate": "5 en Adventure", "effect": "Detectas sigilo como si tuvieras 1 o 2 niveles más. No funciona en campos de batalla."},
-        {"name": "Talented", "ranks": 5, "gate": "5 en Adventure + 5 en Well Rested (Icy Veins)", "effect": "Los puntos de talento empiezan a nivel 9, 8, 7, 6 o 5 en vez de a nivel 10. El total sigue siendo 51. No se puede desaprender si te dejaría debiendo puntos de talento."},
-        {"name": "Field Guide", "ranks": 3, "gate": "5 en Adventure", "effect": "Reduce un 8/16/25% el tiempo de reutilización de los objetos de campamento"},
-        {"name": "Field Medicine", "ranks": 2, "gate": "5 en Adventure", "effect": "Recently Bandaged dura 5 o 10 s menos. Solo en el mundo abierto."},
-        {"name": "Frequent Flier", "ranks": 1, "gate": "10 en Adventure + 3 en Field Guide", "effect": "Los vuelos cuestan un 50% menos y la montura de vuelo va un 20% más rápido"}
-      ],
-      "professions": [
-        {"name": "Working Overtime", "ranks": 5, "gate": "ninguno", "effect": "+4% de probabilidad de subir habilidad de profesión por rango"},
-        {"name": "Bountiful Harvest", "ranks": 5, "gate": "ninguno", "effect": "+20% de materiales Scarce por rango en Minería, Herboristería y Desuello"},
-        {"name": "Bartering", "ranks": 2, "gate": "5 en Professions", "effect": "Precios de vendedor un 5/10% más baratos. Desde el 15 de oct ya no rebaja el entrenamiento ni las reparaciones. También rebaja las monturas (no la habilidad de equitación)."},
-        {"name": "Performance Bonus", "ranks": 3, "gate": "5 en Professions + 5 en Bountiful Harvest", "effect": "5/10/15% de probabilidad de doble Merchant's Favor por caja"},
-        {"name": "Master Chef", "ranks": 5, "gate": "5 o 10 en Professions (cambiado el 15 de oct)", "effect": "10% de probabilidad por rango de un resultado extra al cocinar"},
-        {"name": "Dedicated Study", "ranks": 1, "gate": "10 en Professions + 2 en Bartering", "effect": "+1 de habilidad a tu profesión principal o secundaria más baja. Reutilización de 23 h. Con las cinco profesiones a 300 da 2-4 Elemental Essences en su lugar."},
-        {"name": "Luremaster", "ranks": 2, "gate": "5 o 10 en Professions", "effect": "Con un cebo activo, 25/50% de probabilidad de un pez extra"}
-      ],
-      "resourcefulness": [
-        {"name": "Gourmand", "ranks": 3, "gate": "ninguno", "effect": "La duración de los beneficios de comida sube un 33% por rango (hasta +100%). También alarga el +5% de experiencia por muertes de Well Fed (Bien alimentado)."},
-        {"name": "The Quick and the Dead", "ranks": 2, "gate": "ninguno", "effect": "Velocidad del fantasma +5/10%. Los hechizos de apoyo no cuestan nada durante 1/2 min tras resucitar o hasta entrar en combate."},
-        {"name": "Reinforce", "ranks": 5, "gate": "ninguno", "effect": "-8% de pérdida de durabilidad al morir por rango"},
-        {"name": "For Great Honor", "ranks": 5, "gate": "5 en Resourcefulness", "effect": "+2% de honor por rango"},
-        {"name": "Permanence", "ranks": 2, "gate": "5 en Resourcefulness + 3 en Gourmand", "effect": "Los beneficios largos de clase en grupo/banda y los de campamento duran un 50/100% más"},
-        {"name": "Diplomat", "ranks": 5, "gate": "5 en Resourcefulness", "effect": "+2% de reputación por rango"},
-        {"name": "Reagent Economy", "ranks": 1, "gate": "10 en Resourcefulness + 2 en Quick and the Dead", "effect": "Las habilidades de clase no necesitan componentes de vendedor, y los objetos de campamento de nivel 1 no necesitan materiales"}
-      ]
-    },
-    "suggested_leveling_spend_16": "Sin confirmar, es mi sugerencia. Para subir alters: Well Rested 5 + Talented 5 (requiere 5 en Well Rested) + Thrill of Adventure hasta 5, o Field Guide/Field Medicine. Segunda opción: Gourmand 3 + Reinforce. Primer personaje: nada hasta nivel 25. A nivel 25 ese único punto puede ir a Well Rested 1 o a Thrill of Adventure 1.",
-    "account_rewards": [
-      {"points_earned": 15, "reward": "Holstered Replica Ironforge Air Rifle (juguete)"},
-      {"points_earned": 25, "reward": "Spectral Bear Cub (mascota)"},
-      {"points_earned": 40, "reward": "Spectral Bear Tabard (tabardo)"},
-      {"points_earned": 55, "reward": "Reins of the Spectral Bear (montura)"}
-    ],
-    "rewards_npc": "Innkeeper Wiley, Ratchet (Trinquete)",
-    "hardcore_rule": "Los puntos conseguidos en Hardcore cuentan en todos los tipos de reino. Los puntos de reinos normales no cuentan en Hardcore.",
-    "respec_costs": {
-      "legacy_perks": "Se reinician con un instructor de clase en una ciudad principal. En la beta el reinicio más barato costaba 1 de plata; el precio sube con cada reinicio y baja un escalón por hora (precio solo de la beta). Precio en el juego final sin confirmar; una web habla de 10 de oro.",
-      "talents": "Precio creciente: el primero 1 de oro, luego 5 de oro, y sube hasta un máximo de 50 de oro (allthings.how). Blizzard y la wiki: el precio baja con el tiempo hasta volver a 1 de oro. En la beta costaba solo 1 de plata (solo beta). Detalles del juego final sin confirmar.",
-      "dual_spec": "Se aprende a nivel 40 con los instructores de clase por 10 de oro. Cambias libremente fuera de combate y de campos de batalla. Cambiar talentos dentro de una especialización sigue costando el precio de reinicio."
-    },
-    "sources": [
-      "https://news.blizzard.com/en-us/article/24307383/",
-      "https://www.icy-veins.com/wow-forever/legacy-system",
-      "https://www.warcrafttavern.com/forever/guides/legacy/",
-      "https://foreverchanges.pro/legacy-perks",
-      "https://foreverhispano.com/legado/",
-      "https://talentsforever.com",
-      "https://us.forums.blizzard.com/en/wow/t/legacy-points-for-beta-testing/2368776",
-      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-8/2360696/5",
-      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696/6",
-      "https://www.icy-veins.com/wow-forever/news/players-getting-free-legacy-points-for-testing/",
-      "https://allthings.how/wow-forever-how-to-respec-your-talents-at-a-class-trainer/",
-      "https://www.method.gg/wow-forever/how-to-get-a-mount-in-wow-forever-cost-requirement-and-mount-options"
-    ]
-  },
-
-  "talents_rules": {
-    "points_per_level": "1 por nivel desde el nivel 10 (51 a nivel 60). Con la ventaja de Legacy Talented el primer punto llega entre el nivel 9 y el 5, y el total sigue siendo 51.",
-    "total_points": 51,
-    "rows_per_tree": 7,
-    "row_rule": "Se abre una fila nueva por cada 5 puntos gastados en ese árbol, como en Classic. Las filas piden 0/5/10/15/20/25/30 puntos.",
-    "row_unlock_levels_single_tree": "Sin Talented, si pones todos los puntos en un solo árbol: fila 1 a nivel 10, fila 2 a 14, fila 3 a 19, fila 4 a 24, fila 5 a 29, fila 6 a 34 y fila 7 a 39. El talento final de 31 puntos se coge a nivel 40. Con Talented 5/5 (puntos desde nivel 5) todo llega 5 niveles antes, así que el talento final es a nivel 35. Estos niveles se deducen de las reglas; Blizzard no los ha publicado.",
-    "milestone_talents": "Talentos 'medalla de oro' de 1 punto a los 11, 21 y 31 puntos, más un nuevo talento de 1 punto a los 16 puntos en cada árbol (4 por árbol)",
-    "capstone": "Talento de 31 puntos (fila 7). Como pronto a nivel 40, o a 35 con Talented 5/5.",
-    "changes_vs_classic": "114 talentos nuevos, 301 cambiados y 81 eliminados (foreverchanges). Muchos talentos que antes eran mejoras ahora vienen de base (Blessing of Kings (Bendición de reyes), Improved MotW, Improved Hunter's Mark, y Aimed Shot (Disparo apuntado) a nivel 20 para todos los cazadores).",
-    "respec_location": "Instructor de clase en una ciudad principal, tanto para talentos como para ventajas de Legacy",
-    "dual_spec": "Nivel 40, 10 de oro",
-    "sources": [
-      "https://talentsforever.com",
-      "https://www.icy-veins.com/wow/news/start-planning-your-wow-forever-character-with-our-new-talent-calculator/",
-      "https://www.icy-veins.com/wow-forever/news/talents-as-baseline-abilities-leveling-changes-and-more-class-deep-dives-hunter-and-druid/",
-      "https://powerupgaming.co.uk/2026/09/14/new-wow-forever-talents-changes-vs-classic-guide/",
-      "https://foreverchanges.pro/level-30",
-      "https://foreverchanges.pro/changes",
-      "https://warcraft.wiki.gg/wiki/Patch_1.60.1"
-    ]
-  },
-
-  "starting_zones": {
-    "alliance_races": [
-      {"race": "Human", "start": "Northshire Valley (Valle de Villanorte), Elwynn Forest (Bosque de Elwynn) (1-10)", "classes": ["Warrior", "Paladin", "Rogue", "Priest", "Mage", "Warlock", "Hunter (NUEVO en Forever)"], "racials_current": "Will to Survive (rompe aturdimientos), Perception (detectar sigilo 20 s), Ruthless (+2% de crítico; sustituyó a Sword Specialization el 15 de oct), The Human Spirit (+5% de espíritu)"},
-      {"race": "Dwarf", "start": "Coldridge Valley (Valle de Crestanevada), Dun Morogh (1-10)", "classes": ["Warrior", "Paladin", "Hunter", "Rogue", "Priest", "Shaman (NUEVO en Forever)"], "racials_current": "Stoneform (Forma de piedra), Find Treasure (Encontrar tesoro; ahora también encuentra objetos extra en cofres), Earth Fury (+2% de daño y sanación crítica; sustituyó a Mace Specialization el 15 de oct), Big Game Hunter (+5% de daño contra bestias)"},
-      {"race": "Gnome", "start": "Coldridge Valley, Dun Morogh (1-10)", "classes": ["Warrior", "Rogue", "Mage", "Warlock", "Priest (NUEVO en Forever)"], "racials_current": "Escape Artist (Artista del escape), Eureka! (beneficio de 8 s: hechizos más baratos y +10% de daño/sanación), Expansive Mind (+5% de maná/ira/energía máximos), Engineering Specialization"},
-      {"race": "Night Elf", "start": "Shadowglen (Cañada Umbría), Teldrassil (1-10/11)", "classes": ["Warrior", "Hunter", "Rogue", "Priest", "Druid"], "racials_current": "Elune's Light (+10% de crítico durante 15 s), Shadowmeld (Fusión de las sombras), Quickness (+1% de esquivar y +2% de velocidad de carrera; ahora se acumula), Wisp Spirit"},
-      {"race": "Skyborne - High Order (Alianza)", "start": "Zephras Isle (1-12), una nueva isla flotante en Skywall. La ciudad principal es Valanaar.", "classes": ["Druid", "Hunter", "Mage", "Rogue", "Warrior"], "racials_current": "Walk on Air (planear 10 s, reutilización de 90 s), Read Ley Line (+100% de regeneración de vida y maná; se puede lanzar en movimiento), Wind Blessed (+3% de celeridad desde el 15 de oct), Elemental Insight (+5% de daño contra elementales)", "requires": "Skyborne Heroic Pack, Skyborne Epic Pack o Warcraft Forever Collection", "leaving": "Aeronave desde el muelle de la Alianza/Kirin Tor de Valanaar hasta Dalaran (Alterac Mountains (Montañas de Alterac)), luego el portal de la Violet Citadel (Ciudadela Violeta) a la Torre de los Magos de Stormwind (Ventormenta), y después el Deeprun Tram (Tranvía Subterráneo) hasta Ironforge (Forjaz). La variante Windshaper (Horda) va a Mulgore."}
-    ],
-    "class_by_race_alliance": {
-      "Warrior": ["Human", "Dwarf", "Gnome", "Night Elf", "Skyborne"],
-      "Paladin": ["Human", "Dwarf"],
-      "Hunter": ["Human (nuevo)", "Dwarf", "Night Elf", "Skyborne"],
-      "Rogue": ["Human", "Dwarf", "Gnome", "Night Elf", "Skyborne"],
-      "Priest": ["Human", "Dwarf", "Gnome (nuevo)", "Night Elf"],
-      "Shaman": ["Dwarf (nuevo)"],
-      "Mage": ["Human", "Gnome", "Skyborne"],
-      "Warlock": ["Human", "Gnome"],
-      "Druid": ["Night Elf", "Skyborne"]
-    },
-    "notes": "Las seis combinaciones nuevas de Forever son Human Hunter (cazador humano), Dwarf Shaman (chamán enano) y Gnome Priest (sacerdote gnomo) en la Alianza, y Orc Mage (mago orco), Troll Warlock (brujo trol) y Undead Paladin (paladín no-muerto) en la Horda. Los raciales se rehicieron a fondo el 15 de oct, y Blizzard dijo que seguiría revisándolos. Espera más cambios en el lanzamiento. Zephras Isle tiene una mecánica de velocidad (Blessing of Zephras: atraviesa tornados para ganar +40% de velocidad), y las Windstones funcionan como pociones, pero solo en la isla.",
-    "sources": [
-      "https://www.icy-veins.com/wow-forever/news/all-new-race-and-class-combos-and-racial-abilities-in-wow-forever-official/",
-      "https://www.method.gg/wow-forever/all-class-and-race-combinations-in-world-of-warcraft-forever",
-      "https://warcraft.wiki.gg/wiki/Skyborne",
-      "https://warcraft.wiki.gg/wiki/Zephras_Isle",
-      "https://www.warcrafttavern.com/forever/news/racial-class-ability-changes-in-the-wow-forever-beta/",
-      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696/6",
-      "https://www.warcrafttavern.com/forever/guides/how-to-get-to-ironforge-from-the-zephras-isle/",
-      "https://www.warcrafttavern.com/forever/guides/zephras-isle-walkthrough/"
-    ]
-  },
-
-  "zone_route": {
-    "caveat": "Los niveles 1-30 se probaron en la beta. Los niveles 30-60 son una ruta provisional basada en Classic, los datos del cliente de Forever y los anuncios (ForeverHispano también marca el 30-60 como 'tramo provisional'). La curva de experiencia es la misma que en Classic: 4.084.700 XP para llegar a 60.",
-    "route": [
-      {"levels": "1-10/12", "zone": "Elwynn Forest (humanos) / Dun Morogh (enanos y gnomos) / Teldrassil (elfos de la noche) / Zephras Isle 1-12 (Skyborne)", "notes": "Las zonas de inicio estarán llenísimas en el lanzamiento (capas). Coge pronto una profesión de recolección. Hay instructores básicos en las zonas de inicio (p. ej. Kelsey Fargo en Northshire), y las Poor Copper Veins se pueden minar desde nivel 1. Libro de la biblioteca: el diario del Archimago Theocritus, en lo alto de la Tower of Azora (Torre de Azora), Elwynn (65.4,70.1). Entrega los libros a Garon Wendell, en el Barrio de los Magos de Stormwind. El campamento se desbloquea hacia el nivel 5 con una cadena de misiones (necesitas Cocina para la hoguera).", "new_or_changed": "Zephras Isle es nueva"},
-      {"levels": "10-20", "zone": "Westfall (Páramos de Poniente) (12-17) y/o Loch Modan (10-20); los elfos de la noche hacen Darkshore (Costa Oscura) (16-21)", "notes": "Hall of Thanes (13-18, mazmorra nueva bajo Ironforge / Old Ironforge): recoge antes las misiones. The Deadmines (Las Minas de la Muerte) 18-24. Merchant's Favor se abre a nivel 10 (las cajas se entregan a Marcy Baker, Azeroth Commerce Authority, Three Corners, Redridge). La cadena del Cozy Sleeping Bag empieza a nivel 14 en el Nailed Plank, Alexston Farmstead, Westfall (37,50): Barrens (Los Baldíos) > Stonetalon (Sierra Espolón) > presa de Loch Modan (49,12) > Thoradin's Wall en Hillsbrad. Hay libros de la biblioteca en Loch Modan (posada de Thelsamar), Westfall (Moonbrook (Arroyo de la Luna), posada de Sentinel Hill (Colina del Centinela)) y Darkshore (Ruins of Mathystra).", "new_or_changed": "Hall of Thanes es nueva. Se arreglaron las reapariciones de Westfall."},
-      {"levels": "20-22", "zone": "Redridge Mountains (Montañas Crestagrana) (Lakeshire (Villa del Lago))", "notes": "Ruta de foreverchanges: Redridge Canyons, Galardell Valley. El mapa de Redridge cambió bastante en Forever, y la misión 'Blackrock Blockade' se actualizó. El campamento comercial de la ACA (recetas y órdenes de Merchant's Favor) está en Three Corners.", "new_or_changed": "Mapa cambiado"},
-      {"levels": "22-24 (y vuelta a 26-29)", "zone": "Wetlands (Los Humedales) (Menethil Harbor (Puerto de Menethil))", "notes": "Más de 25 misiones nuevas. Excavation Site: Wetlands, mazmorra (Blizzard: 26-31; otras fuentes: 24-29) con misiones como Highland Hides, Songblade Search y Horrors in the Highland. Se aumentaron las reapariciones de Dragonmaw, gnolls e Incendicite.", "new_or_changed": "Misiones nuevas y mazmorra nueva"},
-      {"levels": "24-28", "zone": "Duskwood (Bosque del Ocaso) (Darkshire (Villa Oscura))", "notes": "Unas 32 misiones (foreverchanges): Addle's Stead, Raven Hill, Brightwood Grove. Reapariciones aumentadas.", "new_or_changed": "Solo ajuste de reapariciones"},
-      {"levels": "25-30", "zone": "Ashenvale (Vallefresno) (Astranaar), Stonetalon opcional para elfos de la noche", "notes": "Sal a nivel 27 y vuelve a 29-30. Blackfathom Deeps (Cavernas de Brazanegra) 25-31. The Stockade (Las Mazmorras) 26-32 en Stormwind. El campo de batalla Darkspear Islands se abre a nivel 30.", "new_or_changed": "Solo iluminación; no se han visto misiones nuevas"},
-      {"levels": "28-33", "zone": "Thousand Needles (Las Mil Agujas) (28-31) / Hillsbrad Foothills (Laderas de Trabalomas) (30-32) / Alterac Mountains (City of Dalaran)", "notes": "Mazmorra City of Dalaran 28-33 (wiki: 28-34; no entres por debajo del nivel del jefe, 31). Las misiones de la Alianza empiezan en Stormwind y Southshore (Costasur) y llevan a la Archimaga Modera, en la orilla sur del lago Lordamere (Silverpine (Bosque de Argénteos)). Ella da la Dalaran Sewer Key. Los Skyborne llegan a Dalaran en aeronave. En Dalaran atacan a la Horda nada más verla.", "new_or_changed": "Mapa de Alterac Mountains cambiado. City of Dalaran es una mazmorra nueva."},
-      {"levels": "31-35", "zone": "Desolace", "notes": "Cambio del 8 de oct: las misiones de Gelkis/Magram del 'Valley of Bones' ahora piden nivel 35 (antes 30). Se reajustaron 16 recompensas para equiparse a nivel 35. El Valley of Bones es la única entrada conocida a la nueva zona Shen'dralas. Gnomeregan 31-37 y las alas del Scarlet Monastery (Monasterio Escarlata) 31-45 entran en este rango.", "new_or_changed": "Mapa cambiado, misiones de centauros movidas a nivel 35"},
-      {"levels": "34-45", "zone": "Stranglethorn Vale (Vega de Tuercespina) (Booty Bay (Bahía del Botín)), Arathi Highlands (Tierras Altas de Arathi) (37-40), Badlands (Tierras Inhóspitas) (39-44), Swamp of Sorrows (Pantano de las Penas) / Dustwallow (35-45)", "notes": "The Drowned City (35-40, nueva, costa de STV). Uldaman 44-50 (wiki) / 36-45 (Tavern). Razorfen Downs (Zahúrda Rajacieno) 38-44.", "new_or_changed": "The Drowned City es nueva"},
-      {"levels": "35-45", "zone": "The Riverglades (zona NUEVA)", "notes": "Más de 150 misiones, zona disputada. Base de la Alianza: Farholde Keep, con ruta de vuelo de la Alianza. Se llega a pie desde Redridge (Redridge Pass / Blackrock Pass), Badlands, Burning Steppes o Swamp of Sorrows, o en barco desde Steamwheedle Port (Tanaris) hasta Powderfuse Port. Una web dice que la Alianza solo puede llegar en barco; la wiki muestra acceso por tierra desde Redridge. Mazmorra Krol'dok Stronghold (40-45). Seguramente la mejor base para la Alianza del 35 al 45.", "new_or_changed": "Nueva"},
-      {"levels": "40", "zone": "(Montura)", "notes": "Equitación de aprendiz y tu primera montura por 100 de oro con el instructor de equitación de tu raza. Humanos: Randal Hunter, Eastvale Logging Camp (Elwynn). Enanos: Amberstill Ranch. Gnomos: Steelgrill's Depot (Dun Morogh). Elfos de la noche: Darnassus. Skyborne: Genn Fairweather (Zephras Isle). 10% de descuento con reputación Honorable. Doble especialización: 10 de oro. Monturas de clase gratis: Paladín de la Alianza (Tome of Nobility) y Brujo (misión de Strahad Farsan, Ratchet).", "new_or_changed": "Montura a nivel 40 por 100 de oro (más barata que en Classic)"},
-      {"levels": "43-50", "zone": "Feralas (43-46), Tanaris (45-47, Zul'Farrak 45-51), Hinterlands (Tierras del Interior) (46-48), Searing Gorge (La Garganta de Fuego) (47-49), Azshara (45-55)", "notes": "Shen'dralas (NUEVA, al sureste de Desolace, entre Feralas y Mulgore) tiene un rango de nivel sin confirmar: Gfinity dice 45-53, la wiki dice desconocido y Warcraft Tavern calculaba 30-50. Maraudon 48-54. Alcaz Prison (48-53, nueva, en una isla al noreste de Dustwallow Marsh (Marjal Revolcafango)) requiere planear barco o vuelo.", "new_or_changed": "Shen'dralas nueva, Alcaz Prison nueva"},
-      {"levels": "48-55", "zone": "Un'Goro Crater (Cráter de Un'Goro) (48-52), Burning Steppes (Las Estepas Ardientes) (51-53), Felwood (Frondavil) (52-54)", "notes": "Sunken Temple 52-58, BRD (Blackrock Depths (Profundidades de Roca Negra)) 52-60. Shaper's Terrace (58-60, nueva) está en Un'Goro.", "new_or_changed": "Shaper's Terrace nueva"},
-      {"levels": "53-60", "zone": "Winterspring (Cuna del Invierno) (53-55), Western Plaguelands (Tierras de la Peste del Oeste) (54-57), Eastern Plaguelands (Tierras de la Peste del Este) (53-60), Silithus (56-60)", "notes": "Blackmaw Hold (55-60, nueva, norte de Azshara). LBRS (Lower Blackrock Spire (Cumbre de Roca Negra Inferior)), DM (Dire Maul (La Masacre)), Scholomance, Stratholme. El mapa de Eastern Plaguelands cambió bastante.", "new_or_changed": "Mapa de EPL cambiado, Blackmaw Hold nueva"},
-      {"levels": "55/60+", "zone": "Mount Hyjal (Monte Hyjal) (NUEVA, contenido final)", "notes": "Los datos del cliente la marcan como nivel 60, y el Group Finder muestra misiones de 55-60. Se entra por Darkwhisper Gorge (Winterspring), con un enlace de vuelo desde Everlook (Gamuza). Reputaciones: Guardians of Hyjal, Barkskin Burrow. Las bandas se abren el 9 de dic. El requisito exacto de entrada está sin confirmar.", "new_or_changed": "Nueva"}
-    ],
-    "zones_changed_vs_classic": [
-      "Mapas muy cambiados (comparativa de mapas de la wiki): Alterac Mountains, Eastern Plaguelands, Redridge Mountains, Stormwind, Tirisfal Glades (Claros de Tirisfal), Desolace, Mulgore",
-      "Tirisfal Glades (zona de la Horda): se subió el nivel de misiones y criaturas alrededor de Shadowvale y Bandarion Keep para arreglar el salto de dificultad (8 de oct). Mazmorra nueva allí: Ruins of Lordaeron (15-22).",
-      "Desolace: las misiones de centauros del Valley of Bones ahora piden nivel 35 (8 de oct)",
-      "Wetlands: más de 25 misiones nuevas y una mazmorra nueva",
-      "Dalaran vuelve a Alterac Mountains, con ciudad, misiones y mazmorra"
-    ],
-    "sources": [
-      "https://foreverchanges.pro/level-30",
-      "https://foreverhispano.com/guia-leveo-1-60/",
-      "https://foreverhispano.com/zonas/",
-      "https://warcraft.wiki.gg/wiki/Riverglades",
-      "https://warcraft.wiki.gg/wiki/Shen%27dralas",
-      "https://warcraft.wiki.gg/wiki/Zephras_Isle",
-      "https://warcraft.wiki.gg/wiki/City_of_Dalaran",
-      "https://warcraft.wiki.gg/wiki/Forever_map_comparison",
-      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-8/2360696/5",
-      "https://www.gfinityesports.com/article/world-of-warcraft-forever-new-zones-travel-routes-guide",
-      "https://www.warcrafttavern.com/forever/news/all-new-zones-areas-in-wow-forever-revealed-at-blizzcon/",
-      "https://expcarry.com/wow-forever-mount-hyjal-guide",
-      "https://expcarry.com/es/guia-subida-nivel-wow-forever-alianza",
-      "https://koroboost.com/guide/wow-forever-leveling-guide",
-      "https://www.warcrafttavern.com/forever/guides/cozy-sleeping-bag/",
-      "https://www.warcrafttavern.com/forever/guides/library-books/",
-      "https://games.gg/world-of-warcraft/guides/wow-forever-ashenvale-leveling-guide/"
-    ]
-  },
-
-  "dungeons": {
-    "note": "Lista breve. Otro agente cubre las mazmorras a fondo. Los niveles vienen de warcraft.wiki.gg (Patch 1.60.1). Warcraft Tavern da rangos algo distintos, que se muestran entre corchetes cuando no coinciden.",
-    "xp_changes": [
-      "1 de oct: las misiones de mazmorra dan un 50% menos de la experiencia EXTRA que Forever había añadido sobre los valores de Classic (p. ej. Deviate Hides pasó de unos 4.650 a unos 3.100 XP; en Classic eran 1.600). Se recalibraron las recompensas de misión y varias recompensas de misiones de mazmorra pasaron de raras (azules) a poco comunes (verdes).",
-      "8 de oct: la experiencia por matar enemigos en mazmorras sube ~20%. Se arregló un error que daba poca experiencia al ir en grupo con jugadores de más nivel: ahora la experiencia depende de tu propio nivel, como en Era.",
-      "8 de oct: Truthseeker's Bow (recompensa de los libros de la biblioteca) ahora pide nivel 40"
-    ],
-    "list": [
-      {"name": "The Hall of Thanes", "levels": "13-18", "zone": "Ironforge (Old Ironforge)", "new_in_forever": true},
-      {"name": "Ragefire Chasm (Sima Ígnea)", "levels": "13-19", "zone": "Orgrimmar (ciudad de la Horda)", "new_in_forever": false},
-      {"name": "Ruins of Lordaeron", "levels": "15-22 [15-20]", "zone": "Tirisfal Glades / Undercity (Entrañas)", "new_in_forever": true},
-      {"name": "The Deadmines (Las Minas de la Muerte)", "levels": "18-24 [15-22]", "zone": "Westfall", "new_in_forever": false},
-      {"name": "Wailing Caverns (Cuevas de los Lamentos)", "levels": "19-25 [17-24]", "zone": "The Barrens", "new_in_forever": false},
-      {"name": "Shadowfang Keep (Castillo de Colmillo Oscuro)", "levels": "23-29 [20-26]", "zone": "Silverpine Forest", "new_in_forever": false},
-      {"name": "Excavation Site: Wetlands", "levels": "24-29 (notas de Blizzard del 1 de oct: 26-31)", "zone": "Wetlands", "new_in_forever": true},
-      {"name": "Blackfathom Deeps (Cavernas de Brazanegra)", "levels": "25-31 [22-28]", "zone": "Ashenvale", "new_in_forever": false},
-      {"name": "The Stockade (Las Mazmorras)", "levels": "26-32 [25-29]", "zone": "Stormwind City", "new_in_forever": false},
-      {"name": "City of Dalaran", "levels": "28-33 (página de la mazmorra en la wiki: 28-34)", "zone": "Alterac Mountains", "new_in_forever": true},
-      {"name": "Razorfen Kraul (Horado Rajacieno)", "levels": "30-36 [29-38]", "zone": "The Barrens", "new_in_forever": false},
-      {"name": "Gnomeregan", "levels": "31-37 [29-38]", "zone": "Dun Morogh", "new_in_forever": false},
-      {"name": "Scarlet Monastery Graveyard", "levels": "31-37", "zone": "Tirisfal Glades", "new_in_forever": false},
-      {"name": "Scarlet Monastery Library", "levels": "34-40", "zone": "Tirisfal Glades", "new_in_forever": false},
-      {"name": "The Drowned City", "levels": "35-40", "zone": "Stranglethorn Vale (costa)", "new_in_forever": true},
-      {"name": "Scarlet Monastery Armory", "levels": "37-43", "zone": "Tirisfal Glades", "new_in_forever": false},
-      {"name": "Razorfen Downs (Zahúrda Rajacieno)", "levels": "38-44", "zone": "The Barrens", "new_in_forever": false},
-      {"name": "Scarlet Monastery Cathedral", "levels": "39-45", "zone": "Tirisfal Glades", "new_in_forever": false},
-      {"name": "Krol'dok Stronghold", "levels": "40-45", "zone": "Riverglades", "new_in_forever": true},
-      {"name": "Uldaman", "levels": "44-50 [36-45]", "zone": "Badlands", "new_in_forever": false},
-      {"name": "Zul'Farrak", "levels": "45-51", "zone": "Tanaris", "new_in_forever": false},
-      {"name": "Alcaz Prison", "levels": "48-53", "zone": "Dustwallow Marsh (Alcaz Island)", "new_in_forever": true},
-      {"name": "Maraudon", "levels": "48-54", "zone": "Desolace", "new_in_forever": false},
-      {"name": "Sunken Temple", "levels": "52-58", "zone": "Swamp of Sorrows", "new_in_forever": false},
-      {"name": "Blackrock Depths (Profundidades de Roca Negra)", "levels": "52-60", "zone": "Blackrock Mountain (Montaña Roca Negra)", "new_in_forever": false},
-      {"name": "Dire Maul East (La Masacre Este)", "levels": "55-60", "zone": "Feralas", "new_in_forever": false},
-      {"name": "Blackmaw Hold", "levels": "55-60", "zone": "Azshara", "new_in_forever": true},
-      {"name": "Lower Blackrock Spire (Cumbre de Roca Negra Inferior)", "levels": "55-60", "zone": "Blackrock Mountain", "new_in_forever": false},
-      {"name": "Upper Blackrock Spire (Cumbre de Roca Negra Superior)", "levels": "60 (solo lo lista Warcraft Tavern)", "zone": "Blackrock Mountain", "new_in_forever": false},
-      {"name": "Dire Maul West / North (La Masacre Oeste / Norte)", "levels": "58-60", "zone": "Feralas", "new_in_forever": false},
-      {"name": "Scholomance", "levels": "58-60", "zone": "Western Plaguelands", "new_in_forever": false},
-      {"name": "Shaper's Terrace", "levels": "58-60", "zone": "Un'Goro Crater", "new_in_forever": true},
-      {"name": "Stratholme", "levels": "58-60", "zone": "Eastern Plaguelands", "new_in_forever": false}
-    ],
-    "raids_dec_9": ["Barrow Deeps (10, Mount Hyjal)", "Hyjal Summit (20, Mount Hyjal)", "Onyxia's Lair (40, Dustwallow)"],
-    "sources": [
-      "https://warcraft.wiki.gg/wiki/Patch_1.60.1",
-      "https://www.warcrafttavern.com/forever/guides/dungeons/",
-      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-8/2360696/5",
-      "https://www.warcrafttavern.com/forever/news/level-30-content-is-now-available-in-the-wow-forever-beta/",
-      "https://www.warcrafttavern.com/forever/news/experience-from-dungeon-kills-is-going-up-in-the-wow-forever-beta/",
-      "https://kami-labs.fr/en/wow-forever/beta-wow-forever-xp-donjons-coupee/",
-      "https://foreverchanges.pro/dungeons"
-    ]
-  },
-
-  "professions": {
-    "changes": [
-      "925 recetas nuevas, más 317 recetas de Merchant's Favor (foreverchanges, versión 70532). Blizzard dice 'más de 600'. La mayoría de recetas nuevas son de Peletería (270), Herrería (197) y Sastrería (180).",
-      "First Aid (Primeros auxilios) ahora hace todos los niveles de poción de sanación (Minor con habilidad 1, Lesser 55, Healing 110, Greater 155, Superior 215, Major 275). Las recetas usan Spices y hierbas. Primeros auxilios también hace Poultices (curan enfermedades hasta cierto nivel) y Tourniquets (cortan sangrados). Alquimia se queda con frascos, elixires, pociones de maná y transmutaciones.",
-      "Niveles de habilidad según nivel de personaje: Aprendiz desde nivel 1 (recolección) o 5 (fabricación/secundarias) hasta 75; Oficial desde nivel 10 hasta 150; Experto desde nivel 20 hasta 225; Artesano desde nivel 35 hasta 300 (instructores especiales, o una misión para las secundarias)",
-      "Objetos de campamento: el objeto de nivel 1 de cada profesión con habilidad 20, el de nivel 2 con un plano a 140 y el de nivel 3 a 300. Minería: Lodestone (poder de ataque), Rock Garden (hace aparecer mineral), Molten Foundry. Herboristería: Incense Candle (intelecto), Fermenter, Seed Hybridizer. Desuello: Camp Chair (+2% de crítico), Field Guide (Rastrear bestias), Trapper's Workbench. Peletería: Camp Tent (beneficio tipo experiencia de descanso, con reutilización propia 'Boosted Rest'). Primeros auxilios: First Aid Kit (+aguante), Toxin Study, Plague Doctor's Laboratory. Ingeniería: Reagent Bot, Repair Bot, Anarchist's Workbench. Herrería: Sharpening Wheel (fuerza). Alquimia: Mana Well. Encantamiento: Enchanted Lute (estadísticas y resistencias). Sastrería: Faction Banner (espíritu). Pesca: Fish Bowl. Cocina: hogueras (básica con habilidad 1, de oficial a 140, de experto a 220), Cookie's Feast, Iron Oven. Los beneficios de campamento son más débiles que los de clase y no se acumulan con ellos.",
-      "Recolección: nuevos materiales Scarce (hierbas Frilled Lichen, Rosecap, Stranglevine; también las nuevas Marefoil, Demonsage, Death Lotus y semillas de hierbas). Minería tiene minerales y barras nuevos (Pyrite, Bauxite, Pitchblende, Azerothium). Los filones reaparecen de forma dinámica (más rápido si hay mucha gente). Solo subes habilidad en la primera extracción de cada filón. Cada criatura solo se puede desollar una vez (1 de oct). Hay menos Poor Copper Veins en las zonas de inicio.",
-      "Herramientas de mazmorra para quien no recolecta: Rockslicer (The Deadmines; mina sin tener Minería, 30 usos) y Graverobber's Shovel (The Stockade; recoge Grave Moss)",
-      "Algunas recetas de Herrería y Peletería caen al azar en mazmorras. Las varitas de Encantamiento se venden por 1 de cobre. Muchos objetos fabricados se venden más baratos al vendedor (15 de oct), así que fabricar para vender al vendedor da poco oro.",
-      "Cultivation de los tauren duplica los nodos de hierbas (solo Horda)",
-      "Ventajas de Legacy para profesiones: Working Overtime, Bountiful Harvest, Dedicated Study y otras (ver legacy)"
-    ],
-    "merchants_favor": {
-      "what": "Moneda de cada personaje, disponible desde nivel 10. Llena una 'Waylaid Crate' (la sueltan enemigos y mazmorras, o se compra en la casa de subastas) con el lote de materiales que pide (p. ej. 20 Peacebloom). Se convierte en una caja sellada (se liga al recogerla) que entregas a cambio de Favor.",
-      "alliance_npc": "Marcy Baker, campamento de la Azeroth Commerce Authority en Three Corners, Redridge Mountains. Horda: Dokimi, Durotar Supply and Logistics, Barrens.",
-      "tiers": "Aprendiz y Oficial desde nivel 10; Experto desde 20; Artesano desde 35. Favor por caja: materiales en bruto 5/10/15, fabricados (rollos de tela, barras, piezas) 10/20/30 para Aprendiz/Oficial/Experto. La misión Shipping Label de la primera caja da +50 de Favor y 2.000 de reputación una sola vez.",
-      "reputation": "Con los Craftsman's Writs (75/125/200, cada uno una vez al día) y los Forged Delivery Receipts. Honorable = 9.000, Exaltado = 42.000.",
-      "buys": "Recetas (unos 30-240 de Favor, piden la profesión), certificado de título de profesión (1.000, con habilidad 300), mascota Packmule Treat (1.500), licencia de juguete (1.200, Honorable), Reins of the Pack Kodo (6.000, nivel 60 + equitación de oficial), tabardo (200 + 5 de oro, Exaltado). No hay bolsas confirmadas.",
-      "leveling_tips": "Fabricantes: compra primero patrones de armadura (cabeza, botas, guantes, cinturón). Encantadores: reliquia de clase (45) y Enchant Weapon - Revelation. Sáltate las primeras recetas de Alquimia e Ingeniería, que casi todas piden habilidad 165+. Las cajas de hierbas son las más baratas de llenar.",
-      "pawani_vendor": "No aparece en ninguna fuente. Puede que sea un nombre equivocado. Desconocido."
-    },
-    "best_pairs_leveling": [
-      "La recolección paga la montura de 100 de oro a nivel 40: Herboristería + Minería o Desuello + Minería es la opción clásica para hacer oro. Herboristería ahora también te da las hierbas para tus propias pociones de sanación de Primeros auxilios.",
-      "Fabricante autosuficiente: Guerrero/Paladín Herrería + Minería; Cazador/Pícaro/Druida/Chamán Peletería + Desuello; Sacerdote/Mago/Brujo Sastrería + Encantamiento (Gfinity)",
-      "Sube siempre Primeros auxilios (vendas, pociones de sanación, curas, kit de campamento de aguante) y Cocina (Well Fed da +5% de experiencia por muertes, y además hogueras). Cocina es obligatoria para acampar."
-    ],
-    "best_pairs_pvp": "Ingeniería + Minería es la opción de consenso para JcJ y contenido final (granadas, artilugios). Los gnomos tienen el racial Engineering Specialization. Fuentes: Warcraft Tavern, Gfinity.",
-    "gathering_tips": [
-      "Ten activo Find Minerals (Encontrar minerales) o Find Herbs (Encontrar hierbas) (no pueden ir a la vez). Vuelve a activar Find Herbs tras morir.",
-      "Las hierbas dan habilidad durante unos 100 puntos, pero se ponen en verde hacia +50, así que cambia de zona cada unos 50 puntos de habilidad",
-      "Desuella mientras haces misiones. Saquea todo antes de desollar.",
-      "En zonas con mucha gente el mineral reaparece más rápido (apariciones dinámicas)",
-      "Equipo de minería: Goblin Mining Helm (+5), Miner's Cape (+2)"
-    ],
-    "sources": [
-      "https://foreverchanges.pro/professions",
-      "https://foreverchanges.pro/merchants-favor",
-      "https://www.wow-professions.com/forever/merchants-favor-durotar-supply-azeroth-commerce",
-      "https://blizzardwatch.com/2026/10/16/first-aid-getting-new-recipes-updates-world-warcraft-forever/",
-      "https://www.warcrafttavern.com/forever/guides/professions/",
-      "https://www.warcrafttavern.com/forever/guides/camping/",
-      "https://www.warcrafttavern.com/forever/guides/mining/",
-      "https://www.warcrafttavern.com/forever/guides/herbalism/",
-      "https://www.warcrafttavern.com/forever/guides/skinning/",
-      "https://www.gfinityesports.com/article/the-best-profession-pairings-for-every-class-in-world-of-warcraft-forever",
-      "https://warcraft.wiki.gg/wiki/Patch_1.60.1",
-      "https://foreverhispano.com/sistemas-y-profesiones/"
-    ]
-  },
-
-  "systems": {
-    "rested_xp": "La experiencia de descanso se acumula en posadas, capitales y en el Cozy Sleeping Bag: un 5% del nivel cada 8 h, hasta un máximo del 150% (30 burbujas); tarda unos 10 días en llenarse. Solo duplica la experiencia por muertes. La ventaja de Legacy Well Rested añade hasta +20% de ritmo y de máximo.",
-    "xp_buffs": [
-      "Well Fed (Bien alimentado; casi toda la comida cocinada): +5% de experiencia por muertes durante unos 15 min. Se pierde al morir. Gourmand lo alarga.",
-      "Cozy Sleeping Bag: túmbate en él 1 min por acumulación, hasta 3 acumulaciones de +1% de experiencia (+3% en total); dura unas 2 h (foreverchanges) y se mantiene al morir. Lo puede usar el grupo, reutilización de 1 h. No se puede usar en ciudades ni posadas. Cuenta como zona de descanso. Cadena de la Alianza desde nivel 14 (ver zone_route 10-20).",
-      "Camp Tent (objeto de campamento de Peletería): beneficio tipo experiencia de descanso durante 1 h, se mantiene al morir. Tiene su propia reutilización 'Boosted Rest'.",
-      "Los tres se acumulan"
-    ],
-    "kill_xp_rules": "Los enemigos de menor nivel que tú dan menos experiencia. Forever calcula según el nivel del enemigo respecto al tuyo: a nivel 30, uno de 4 niveles menos da un 10% menos aprox. El tamaño del grupo y los miembros de más nivel reducen la experiencia por muertes. Entregar misiones no se ve afectado por ir en grupo. En grupos de banda no se cuentan las misiones.",
-    "camping": "Se desbloquea hacia el nivel 5 con una cadena de misiones. Necesitas una hoguera de Cocina (Simple Wood más Flint and Tinder); arde unos 10 min y tiene 5 min de reutilización para colocarla. Cada personaje puede añadir un objeto de profesión (reutilización de 1 h), y otros jugadores pueden añadir los suyos. Usa /sit en el campamento 1 min para recibir los beneficios (cada uno dura aprox. 1 h). Los beneficios de campamento no se acumulan con el beneficio de clase equivalente. Las hogueras no dañan a jugadores de nivel inferior a 5.",
-    "mounts": "Nivel 40: equitación de aprendiz más la montura de tu raza por 100 de oro (+60% de velocidad). Colores extra a 20 de oro cada uno. Nivel 60: equitación de oficial por 1.000 de oro y montura épica por 200 de oro (+100%). 10% de descuento con reputación Honorable con tu facción de origen. Bartering da hasta un 10% de descuento solo en monturas. Las monturas de otras razas piden Exaltado. Monturas gratis para paladín y brujo a nivel 40. No hay monturas voladoras. Las monturas de la tienda (Cerulean Prideclaw) también necesitan comprar la equitación en el juego, y puede que Cerulean Prideclaw pida nivel 60 (sin confirmar).",
-    "travel": "Rutas de vuelo como en Classic. Frequent Flier da -50% de coste y +20% de velocidad. Riverglades tiene una ruta de vuelo de la Alianza en Farholde Keep. Barco neutral de Powderfuse Port (Riverglades) a Steamwheedle Port (Tanaris). Aeronave de Zephras a Dalaran, que tiene portal a Stormwind. Everlook tiene enlace de vuelo a Hyjal. No hay salas de portales.",
-    "group_finder": "Hay una herramienta Group Finder (muestra para qué mazmorras eres apto y actividades de misiones), pero no hay emparejamiento automático para mazmorras. Blizzard lo evita a propósito.",
-    "cooldown_manager": "Gestor de tiempos de reutilización integrado en la interfaz. Funciona con todas las clases, raciales y abalorios, y los rangos de un mismo hechizo se agrupan en una sola entrada (15 de oct). Los consumibles llegarán más adelante.",
-    "library_books": "Hay libros repartidos por el mundo (vienen de SoD) y ahora los pueden usar todas las clases. Entrégalos a Garon Wendell, Barrio de los Magos de Stormwind (38,81). Recompensas a los 10 libros (nivel 1, collar), 20 (nivel 20, anillo) y 25 (nivel 30, Truthseeker's Bow a nivel 40 / mano izquierda).",
-    "ley_lines_and_convergences": "En la mayoría de zonas aparecen Elemental Convergences y Leylines (hay más puntos de aparición desde el 15 de oct). El racial Skyborne Read Ley Line activa una para +100% de regeneración de vida y maná.",
-    "dual_spec": "Nivel 40, 10 de oro con el instructor de clase",
-    "class_changes_leveling": "Las varitas y Auto Shot (Disparo automático) necesitan 0,5 s quieto antes de disparar (15 de oct). Cazador: Aimed Shot de base a nivel 20, trampas utilizables en combate. Mago: Frost Blast a nivel 24. Druida: Shred (Triturar) a nivel 20. Paladín: Blessing of Kings de base. Los hechizos de rango bajo tienen menos poder con hechizos (penalización por bajar de rango; foreverchanges tiene una calculadora para esto).",
-    "layering": "Megarreino con capas por zona. Al unirte a un grupo pasas a la capa del líder, e invitar puede forzar un cambio de capa. Los raros y los enemigos de misión son de cada capa. Los probadores de la beta se quejaron de que los cambios de capa interrumpían misiones.",
-    "other": "Hardcore llegará más adelante. El campo de batalla Darkspear Islands se abre a nivel 30. Colección de transfiguración para toda la cuenta: vender a un vendedor un objeto BoE (se liga al equiparlo) que no tengas en la colección lo vuelve ligado. Nuevo tutorial para jugadores nuevos. Barberías en todas las capitales. Existe el Chronoboon Displacer, pero los beneficios de mundo se quitan dentro de mazmorras y bandas.",
-    "revive_spell": "No aparece ningún hechizo general 'Revive' en ninguna fuente. Desconocido.",
-    "sources": [
-      "https://www.warcrafttavern.com/forever/guides/experience/",
-      "https://www.warcrafttavern.com/forever/guides/camping/",
-      "https://www.warcrafttavern.com/forever/guides/cozy-sleeping-bag/",
-      "https://www.method.gg/wow-forever/how-to-get-a-mount-in-wow-forever-cost-requirement-and-mount-options",
-      "https://mein-mmo.de/en/wow-forever-beginners-guide-46-tips-to-make-your-start-noticeably-easier,1593013/3/",
-      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696/6",
-      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-8/2360696/5",
-      "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696/4",
-      "https://www.warcrafttavern.com/forever/guides/library-books/",
-      "https://www.icy-veins.com/wow-forever/news/wow-forever-players-say-layering-is-interrupting-quests-and-pvp/",
-      "https://conquestcapped.com/guides/wow-forever/wow-forever-realms/",
-      "https://foreverchanges.pro/level-30",
-      "https://foreverchanges.pro/cozy-sleeping-bag",
-      "https://warcraft.wiki.gg/wiki/Patch_1.60.1"
-    ]
-  },
-
-  "general_tips": [
-    "El lanzamiento es el jueves 5 de nov a las 00:00 (hora peninsular). Reserva tu nombre del 27 de oct al 3 de nov si tienes un pack de mejora, y acuerda con tus amigos tipo de reino y facción: no hay transferencias de facción ni de tipo de reino, y el tipo JcJ bloquea la cuenta a una sola facción por región.",
-    "Tu primer personaje empieza con 0 puntos de Legacy (los puntos de la beta no se conservan). El primer punto llega a nivel 25. Planea gastarlo en Well Rested o en Thrill of Adventure. Talented solo compensa en alters.",
-    "Las zonas de inicio estarán a reventar. Los enemigos son del primero que los golpea. Agrúpate con gente que hace la misma misión de matar, porque al unirte a un grupo pasas a la capa del líder. Usa el Group Finder para buscar grupo para misiones. Si una zona de inicio está colapsada, plantéate empezar con otra raza (p. ej. un enano en Dun Morogh en vez de Elwynn).",
-    "Aprende Cocina pronto: la necesitas para montar hogueras (el campamento se desbloquea hacia el nivel 5), y Well Fed da +5% de experiencia por muertes. Aprende también Primeros auxilios: ahora hace pociones de sanación y curas además de vendas.",
-    "Coge una profesión de recolección a nivel 1 (Minería/Herboristería/Desuello). El oro para la montura de 100 de oro a nivel 40 es el principal cuello de botella al principio. El mineral reaparece más rápido en zonas con mucha gente.",
-    "Desde nivel 10, entrega las Waylaid Crates llenas a Marcy Baker en Three Corners (Redridge) para conseguir Merchant's Favor. La misión Shipping Label de la primera caja da +50 de Favor y 2.000 de reputación. Las cajas de hierbas son las más baratas.",
-    "A nivel 14, haz la cadena del Cozy Sleeping Bag (empieza en el Nailed Plank, Alexston Farmstead, Westfall 37,50). Son +3% de experiencia durante unas 2 h, se mantiene al morir, y el saco sirve además como zona de descanso portátil.",
-    "Recoge los libros de la biblioteca por el camino (Tower of Azora en Elwynn, Moonbrook en Westfall, Thelsamar en Loch Modan, Mathystra en Darkshore) y entrégalos a Garon Wendell (Barrio de los Magos de Stormwind) para conseguir collar y anillo a los 10 y 20 libros.",
-    "Haz cada mazmorra una vez con todas sus misiones (cógelas antes). La experiencia por muertes sube un 20%, pero la experiencia extra de las misiones se redujo a la mitad, así que repetir mazmorras en bucle ya no es lo más eficiente. Agrúpate con gente de tu nivel, porque ahora la experiencia depende de tu propio nivel.",
-    "La experiencia de descanso solo duplica la experiencia por muertes. Desconéctate en posadas o capitales (o en el saco de dormir) cada vez que termines.",
-    "Ahorra oro: a nivel 40, la equitación de aprendiz más la montura cuestan 100 de oro (90 de oro con Honorable). Sáltate los rangos de instructor que aportan poco. Paladines y brujos consiguen montura gratis por misión. La doble especialización cuesta 10 de oro a nivel 40, y la equitación épica a nivel 60 cuesta 1.000 + 200 de oro.",
-    "Bolsas: las fuentes de Forever no dicen nada concreto sobre bolsas. Vale el consejo general de Classic: compra o fabrica pronto bolsas de 6 casillas (bolsas de lino o de lana de sastres en la casa de subastas) y apunta a 10-12 casillas para el nivel 20. Merchant's Favor no incluye bolsas.",
-    "Niveles medios de la Alianza: Wetlands tiene más de 25 misiones nuevas y la mazmorra Excavation Site. Para el 35-45, la nueva zona Riverglades (más de 150 misiones, ruta de vuelo de la Alianza en Farholde Keep) se alcanza a pie desde Redridge, así que no dependes del barco de Tanaris.",
-    "Las misiones de centauros del 'Valley of Bones' en Desolace ahora piden nivel 35. No vayas allí a nivel 30.",
-    "Auto Shot y las varitas ahora necesitan 0,5 s quieto. Tenlo en cuenta al kitear (atacar mientras te alejas) o al usar varita.",
-    "Usa el Cooldown Manager del juego en vez de un addon de tiempos de reutilización. Addons con datos propios de Forever: Forever Guide (CurseForge, /fguide) y los addons de ForeverChanges y ForeverHispano.",
-    "Rutas de vuelo: consigue cada punto de vuelo por el que pases. Las rutas largas necesitan también las paradas intermedias. En las ciudades, pregunta a un guardia cómo llegar.",
-    "Activa los beneficios de campamento que complementen a tu clase (p. ej. Lodestone, poder de ataque, para cuerpo a cuerpo) solo cuando ningún beneficio de clase cubra esa estadística, porque no se acumulan."
+ "meta": {
+  "researched_on": "2026-10-25",
+  "beta_builds_seen": [
+   "1.60.1.70425 (talentsforever)",
+   "1.60.1.70532 (foreverchanges, última versión de la beta, 22 de oct)"
   ],
-
-  "community_sites": [
-    {"name": "ForeverChanges", "url": "https://foreverchanges.pro/", "content": "Base de datos hecha por fans que sigue la última versión de la beta (1.60.1.70532, 22 de oct). Cambios respecto a Classic (/changes), calculadora de talentos y libro de hechizos, planificador de ventajas de Legacy (/legacy-perks: 65 desafíos, tope de 16 puntos, costes de reinicio de la beta), profesiones con número de recetas y objetos de campamento (/professions), guía de Merchant's Favor (/merchants-favor), mazmorras y sus misiones, misiones, raros, libros de la biblioteca, mapa del mundo, mejor equipo (BiS) a nivel 30 por especialización (/bis), guía de nivel 30 con ruta de la Alianza del 20 al 30 (/level-30), Cozy Sleeping Bag, calculadora de rangos de hechizo, mascotas de cazador, notas de parche, un addon y versiones en FR/DE/ZH/RU.", "reliability": "Buena. Datos extraídos del cliente y contrastados con las notas de Blizzard. El contenido llega hasta el nivel 30 de la beta."},
-    {"name": "ForeverHispano", "url": "https://foreverhispano.com/", "content": "Portal en español. Guía interactiva de subida 1-60 con listas de pasos por zona (/guia-leveo-1-60/; 1-30 validado en la beta, 30-60 provisional), atlas de zonas con los rangos de nivel de Forever (/zonas/), árboles de Legacy con nombres de ventajas en español (/legado/), calculadora de talentos, planificadores de personaje y profesiones, mazmorras y bandas, buscador de objetos, BiS (próximamente), guía de addons, addon propio (/aventura-addon/), Blue Tracker, noticias, buscador de hermandades y grupos, Discord (discord.gg/qkW5Y8yzk6) y una cuenta atrás en hora de España (5 de nov a las 00:00).", "reliability": "Buena para nombres en español y rutas. La ruta 30-60 se basa en Classic."},
-    {"name": "Talents Forever", "url": "https://talentsforever.com", "content": "Calculadora de talentos y planificador de builds para las 9 clases, con datos del cliente de la beta 1.60.1.70425. Marca los talentos nuevos, cambiados y movidos respecto a Classic, muestra el orden de subida por nivel, builds guardadas y para compartir, raciales y las 21 ventajas de Legacy (16 puntos), seguimiento de parches y exportaciones JSON por clase. Reglas: 1 punto por nivel desde el 10, 51 en total, una fila cada 5 puntos.", "reliability": "Buena, datos del cliente"},
-    {"name": "Warcraft Tavern (Forever)", "url": "https://www.warcrafttavern.com/forever/", "content": "Guías de subida para las 9 clases, guía de experiencia y experiencia de descanso, lista de mazmorras, resumen de Legacy, guías de todas las profesiones, campamento y objetos de campamento, Cozy Sleeping Bag, libros de la biblioteca, guía paso a paso de Zephras Isle, ubicación de instructores de clase y de armas, y copias de las notas de desarrollo."},
-    {"name": "Icy Veins (WoW Forever)", "url": "https://www.icy-veins.com/wow-forever/", "content": "Guía del sistema Legacy con requisitos de ventajas, guía de razas, calculadora de talentos y noticias sobre las notas de desarrollo. Muchas páginas no se pudieron cargar desde este entorno."},
-    {"name": "warcraft.wiki.gg", "url": "https://warcraft.wiki.gg/wiki/Patch_1.60.1", "content": "El resumen más completo: tabla de mazmorras con niveles de Forever, raciales, hoja de ruta, páginas de zonas (Riverglades, Zephras Isle, City of Dalaran), comparativa de mapas de Forever, y páginas de Legacy y Merchant's Favor."},
-    {"name": "Blizzard forums - dev notes (Kaivax)", "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696", "content": "Notas oficiales de desarrollo de la beta (24 de sep, 1 de oct, 8 de oct y 15 de oct). La fuente principal para los cambios de experiencia, misiones, Desolace/Tirisfal y raciales."},
-    {"name": "Wowhead Forever", "url": "https://www.wowhead.com/forever", "content": "Base de datos y blue tracker (seguimiento de mensajes oficiales). La carga se bloqueó en esta sesión (aviso de permiso sin responder), así que no se revisó."},
-    {"name": "Forever Guide addon (CurseForge)", "url": "https://www.curseforge.com/wow/addons/forever-guide", "content": "En el juego con /fguide: misiones y cadenas de mazmorra, buscador de botín con 22.000 objetos, ~800 misiones de clase, recomendaciones de equipo, 404 raros, cambio de capa, recetas con beneficio en la casa de subastas y libros de la biblioteca. Versión del juego 1.60.1."}
+  "note": "La beta estuvo limitada a nivel 30 todo el tiempo. Nada del 31 al 60 (zonas, mazmorras, Shen'dralas, Hyjal) se probó en público, así que los rangos de nivel por encima de 30 salen de los datos del cliente, anuncios de Blizzard y rutas de Classic. Tómalos como provisionales."
+ },
+ "launch": {
+  "date_utc": "2026-11-04T23:00:00Z",
+  "official_time": "4 de nov de 2026, 15:00 PST (página de Blizzard en inglés). La página de Blizzard en francés dice medianoche hora de París del 5 de nov.",
+  "spain_time": "Jueves 5 de nov de 2026 a las 00:00 (hora peninsular); miércoles 4 de nov a las 23:00 en Canarias",
+  "time_discrepancies": "La copia en Wowhead del mensaje oficial de Blizzard pone 'PDT' en un sitio y 'PST' en otro. La página del parche en warcraft.wiki.gg dice '0:00 UTC'. La mayoría de fuentes, incluidas Blizzard FR, playnews.gg, kami-labs y ForeverHispano, coinciden en 23:00 UTC = 00:00 en España. El horario de verano de EE. UU. termina el 1 de nov, así que se aplica PST (UTC-8).",
+  "level_cap_at_launch": 60,
+  "level_cap_note": "El nivel máximo es 60 en el lanzamiento y se queda en 60 para siempre. El pilar de Blizzard 'Journey before destination' (el viaje antes que el destino) descarta subir el nivel máximo; el crecimiento es horizontal (nuevas zonas para cualquier rango de nivel, mazmorras, bandas y Legacy). El tope de la beta fue 30 desde el 1 de oct hasta el final. Ese 30 era solo de la beta.",
+  "level_cap_confirmed": true,
+  "realms": "No hay lista de reinos. Hay un 'megarreino' por tipo de reino y región (Normal, JcJ, Rol, Rol-JcJ; Hardcore más adelante) con capas (layering). Solo puedes agruparte con jugadores del mismo tipo de reino y facción. En el tipo JcJ una cuenta solo puede tener una facción por región.",
+  "pre_launch_dates": [
+   {
+    "item": "Beta",
+    "date": "17 de sep - 21/23 de oct de 2026 (ampliada hasta las 10:00 PDT del 23 de oct, según Warcraft Tavern)",
+    "confirmed": true
+   },
+   {
+    "item": "Prueba de estrés (progreso borrado)",
+    "date": "21 de oct de 2026",
+    "confirmed": true
+   },
+   {
+    "item": "Reserva anticipada de nombres (dueños de un pack de mejora, hasta 3 personajes, nombre y apellido)",
+    "date": "27 de oct - 3 de nov de 2026 (PST)",
+    "confirmed": true
+   },
+   {
+    "item": "Lanzamiento",
+    "date": "4 de nov de 2026, 15:00 PST",
+    "confirmed": true
+   },
+   {
+    "item": "Pase gratuito para amigos (1 semana)",
+    "date": "4-11 de nov de 2026",
+    "confirmed": false,
+    "note": "Solo lo menciona Mobalytics. Los packs Heroic y Epic incluyen códigos de Invitar a un amigo."
+   }
   ],
-
-  "open_questions": [
-    "La versión exacta y las notas del parche de lanzamiento. A 25 de oct no se habían publicado notas de desarrollo posteriores al 15 de oct ni notas de lanzamiento.",
-    "El ajuste final de experiencia de mazmorras y misiones en el lanzamiento. Blizzard dijo que los números no eran definitivos.",
-    "Si los puntos de Legacy de la beta se borran oficialmente. Se da a entender, pero no se ha dicho de forma explícita.",
-    "El coste exacto por rango de ventaja de Legacy (se supone 1 punto) y el precio de reinicio de Legacy en el juego final",
-    "La curva de precios de reinicio de talentos en el juego final (1 de oro > 5 de oro > ... máximo de 50 de oro, bajando de nuevo a 1 de oro) no está confirmada oficialmente",
-    "Rangos de nivel y flujo de misiones del 31 al 60, incluidas Riverglades, Shen'dralas (rango de nivel desconocido: ¿45-53? ¿30-50?), los requisitos de entrada a Mount Hyjal y las misiones nuevas. Nada de esto se probó en la beta.",
-    "Rangos de nivel finales de varias mazmorras (Excavation Site 24-29 o 26-31; Uldaman 44-50 o 36-45; los rangos de las mazmorras de Classic no coinciden entre la wiki y Warcraft Tavern)",
-    "Recompensas de las cajas de Merchant's Favor de nivel Experto y Artesano, y si hay límites semanales",
-    "Si llegarán más cambios de raciales en el lanzamiento (Blizzard dijo que seguiría revisándolos)",
-    "Límites de las capas y cómo se gestionarán las colas la noche del lanzamiento",
-    "El vendedor 'Pawani' y un hechizo general 'Revive': no aparecen en ninguna fuente",
-    "Fuentes de bolsas propias de Forever (no hay nada documentado)",
-    "Si el pase gratuito para amigos del 4 al 11 de nov es real (solo lo menciona Mobalytics)"
+  "roadmap": [
+   {
+    "when": "9 de dic de 2026",
+    "content": "Se abren las bandas: Barrow Deeps (10 jugadores, nueva), Hyjal Summit (La Cima Hyjal) (20 jugadores, nueva) y Onyxia's Lair (Guarida de Onyxia) (40 jugadores)",
+    "level_cap_change": "ninguno",
+    "confirmed": true
+   },
+   {
+    "when": "Invierno 2026/2027",
+    "content": "Tipo de reino Hardcore, con 12 desafíos de Legacy propios de Hardcore",
+    "level_cap_change": "ninguno",
+    "confirmed": true
+   },
+   {
+    "when": "Primavera 2027",
+    "content": "2 bandas nuevas (10 y 20 jugadores), 2 mazmorras nuevas, nuevas misiones y zona jugable, nueva cadena de misiones legendaria, renovación de temporada JcJ",
+    "level_cap_change": "ninguno",
+    "confirmed": "Anunciado como plan, sin fecha"
+   },
+   {
+    "when": "Verano 2027",
+    "content": "Banda icónica renovada, banda nueva, más contenido en el mundo, 2 mazmorras nuevas, renovación de temporada JcJ, novedades en profesiones y Legacy",
+    "level_cap_change": "ninguno",
+    "confirmed": "Anunciado como plan, sin fecha"
+   },
+   {
+    "when": "Cada actualización de contenido",
+    "content": "Blizzard dice que subirá el tope de puntos de Legacy que puede gastar cada personaje (16 en el lanzamiento) y que añadirá nuevos desafíos, ventajas y recompensas",
+    "level_cap_change": "ninguno",
+    "confirmed": true
+   }
   ],
-
-  "blocked_or_failed_urls": [
-    "https://www.wowhead.com/forever (permission prompt not answered)",
-    "Several icy-veins.com pages returned client_error (dungeon XP news, healing potions news, zones-and-maps, realms, 'Your Legacy Is the Journey')",
-    "https://mobalytics.gg/wow-forever/guides/zone-map-level-ranges (client_error)",
-    "https://talentsforever.com/patch-notes (client_error)"
+  "sources": [
+   "https://warcraft.wiki.gg/wiki/Patch_1.60.1",
+   "https://www.digitalcitizen.life/world-of-warcraft-forever-will-stay-at-level-60-and-focus-on-horizontal-progression/",
+   "https://www.wowhead.com/forever/blue-tracker/news/eu/24302093",
+   "https://www.playnews.gg/en/release-dates/world-of-warcraft-forever-launch-time-11-p-m-on-4-november-names-from-27-october",
+   "https://kami-labs.fr/en/wow-forever/personnages-de-la-beta-wow-forever-conserves/",
+   "https://insider-gaming.com/when-does-wow-forever-come-out-release-date-times/",
+   "https://mobalytics.gg/wow-forever/guides/wow-forever-roadmap",
+   "https://www.warcrafttavern.com/forever/guides/beta/",
+   "https://conquestcapped.com/guides/wow-forever/wow-forever-realms/",
+   "https://foreverhispano.com/"
   ]
+ },
+ "legacy": {
+  "summary": "El sistema Legacy (Legado) sustituye a los logros. Hay 65 desafíos de Legacy y cada uno da 1 punto de Legacy, una vez por cuenta. Los puntos son de toda la cuenta, pero cada personaje gasta los suyos en tres árboles de ventajas (Professions, Adventure, Resourcefulness). En el lanzamiento cada personaje puede gastar como máximo 16 puntos. El total de puntos conseguidos también desbloquea recompensas de cuenta. Abre la ventana con el icono del escudo o con la tecla Y.",
+  "beta_points_carry_over": "No (casi seguro). Todos los probadores de la beta recibieron 16 puntos con el 'Legacy Challenge' desde el 8 de oct, y Kaivax dijo que duraban 'hasta el final de la beta'. Los personajes de la beta se borran. Blizzard nunca dijo 'borrados' de forma explícita, pero nada indica que se conserven. Planea tu primer personaje con 0 puntos de Legacy.",
+  "first_point_at_launch": "Tu cuenta consigue su primer punto cuando tu primer personaje llega a nivel 25 (desafío de clase). Hay dos opciones más rápidas: una profesión principal de fabricación (no de recolección) a 150, o explorar todo el mapa del mundo (difícil). Así que tu primer personaje del lanzamiento sube del 1 al 25 sin ventajas y solo empieza a gastar puntos hacia el 25 o más.",
+  "how_points_are_earned": {
+   "classes": "27 puntos: llegar a nivel 25, 45 y 60 con cada una de las 9 clases. Blizzard dice 45. Algunas webs dicen 40, y es un error.",
+   "tradeskills": "18 puntos: habilidad 150, 225 y 300 en Alchemy (Alquimia), Blacksmithing (Herrería), Enchanting (Encantamiento), Engineering (Ingeniería), Leatherworking (Peletería) y Tailoring (Sastrería). Las profesiones de recolección y las secundarias no dan nada.",
+   "pvp": "12 puntos: rangos JcJ 3, 7, 10, 13 y 14 (5). Exaltado con las 4 facciones de campo de batalla: AV (Valle de Alterac), AB (Cuenca de Arathi), WSG (Garganta Grito de Guerra) y Darkspear Islands (4). Semanas 4, 7 y 10 del Field of Honor Journey (3).",
+   "dungeons": "3 puntos: matar al jefe final de todas las mazmorras de nivel 15-25, de todas las de 26-45 y de todas las de 46-60 (Novice, Experienced y Master Spelunker; foreverchanges habla de grupos de 6, 10 y 17 mazmorras).",
+   "raids": "3 puntos: Hyjal Summit, Barrow Deeps y Onyxia's Lair (desde el 9 de dic).",
+   "adventure": "2 puntos: Explore Azeroth, y la cadena de misiones desde 'An Earnest Proposition' hasta 'Saving the Best for Last'."
+  },
+  "per_character_cap_at_launch": 16,
+  "single_character_max_earnable": "Se pueden conseguir 29 puntos sin alters (personajes secundarios), según Blizzard, pero cada personaje solo puede gastar 16.",
+  "cost_and_gates": "Parece que cada rango cuesta 1 punto (los planificadores de talentsforever y foreverchanges usan 1 punto por rango; los datos del cliente no dan un coste explícito). Los requisitos funcionan como un árbol de talentos: algunas ventajas piden 5 o 10 puntos en el mismo árbol, y otras piden rangos en una ventaja previa. Cada árbol admite hasta 25 puntos (Warcraft Tavern). Todos los árboles tienen además huecos ocultos para ventajas que se añadirán más adelante.",
+  "perks": {
+   "adventure": [
+    {
+     "name": "Well Rested",
+     "ranks": 5,
+     "gate": "ninguno",
+     "effect": "La experiencia de descanso se acumula un 4% más rápido por rango (hasta +20%), y el máximo de descanso sube lo mismo"
+    },
+    {
+     "name": "Thrill of Adventure",
+     "ranks": 5,
+     "gate": "ninguno",
+     "effect": "Matar a un enemigo que dé experiencia te devuelve un 1-5% de la vida y el maná máximos en 10 s. Solo en el mundo abierto."
+    },
+    {
+     "name": "High Alert",
+     "ranks": 2,
+     "gate": "5 en Adventure",
+     "effect": "Detectas sigilo como si tuvieras 1 o 2 niveles más. No funciona en campos de batalla."
+    },
+    {
+     "name": "Talented",
+     "ranks": 5,
+     "gate": "5 en Adventure + 5 en Well Rested (Icy Veins)",
+     "effect": "Los puntos de talento empiezan a nivel 9, 8, 7, 6 o 5 en vez de a nivel 10. El total sigue siendo 51. No se puede desaprender si te dejaría debiendo puntos de talento."
+    },
+    {
+     "name": "Field Guide",
+     "ranks": 3,
+     "gate": "5 en Adventure",
+     "effect": "Reduce un 8/16/25% el tiempo de reutilización de los objetos de campamento"
+    },
+    {
+     "name": "Field Medicine",
+     "ranks": 2,
+     "gate": "5 en Adventure",
+     "effect": "Recently Bandaged dura 5 o 10 s menos. Solo en el mundo abierto."
+    },
+    {
+     "name": "Frequent Flier",
+     "ranks": 1,
+     "gate": "10 en Adventure + 3 en Field Guide",
+     "effect": "Los vuelos cuestan un 50% menos y la montura de vuelo va un 20% más rápido"
+    }
+   ],
+   "professions": [
+    {
+     "name": "Working Overtime",
+     "ranks": 5,
+     "gate": "ninguno",
+     "effect": "+4% de probabilidad de subir habilidad de profesión por rango"
+    },
+    {
+     "name": "Bountiful Harvest",
+     "ranks": 5,
+     "gate": "ninguno",
+     "effect": "+20% de materiales Scarce por rango en Minería, Herboristería y Desuello"
+    },
+    {
+     "name": "Bartering",
+     "ranks": 2,
+     "gate": "5 en Professions",
+     "effect": "Precios de vendedor un 5/10% más baratos. Desde el 15 de oct ya no rebaja el entrenamiento ni las reparaciones. También rebaja las monturas (no la habilidad de equitación)."
+    },
+    {
+     "name": "Performance Bonus",
+     "ranks": 3,
+     "gate": "5 en Professions + 5 en Bountiful Harvest",
+     "effect": "5/10/15% de probabilidad de doble Merchant's Favor por caja"
+    },
+    {
+     "name": "Master Chef",
+     "ranks": 5,
+     "gate": "5 o 10 en Professions (cambiado el 15 de oct)",
+     "effect": "10% de probabilidad por rango de un resultado extra al cocinar"
+    },
+    {
+     "name": "Dedicated Study",
+     "ranks": 1,
+     "gate": "10 en Professions + 2 en Bartering",
+     "effect": "+1 de habilidad a tu profesión principal o secundaria más baja. Reutilización de 23 h. Con las cinco profesiones a 300 da 2-4 Elemental Essences en su lugar."
+    },
+    {
+     "name": "Luremaster",
+     "ranks": 2,
+     "gate": "5 o 10 en Professions",
+     "effect": "Con un cebo activo, 25/50% de probabilidad de un pez extra"
+    }
+   ],
+   "resourcefulness": [
+    {
+     "name": "Gourmand",
+     "ranks": 3,
+     "gate": "ninguno",
+     "effect": "La duración de los beneficios de comida sube un 33% por rango (hasta +100%). También alarga el +5% de experiencia por muertes de Well Fed (Bien alimentado)."
+    },
+    {
+     "name": "The Quick and the Dead",
+     "ranks": 2,
+     "gate": "ninguno",
+     "effect": "Velocidad del fantasma +5/10%. Los hechizos de apoyo no cuestan nada durante 1/2 min tras resucitar o hasta entrar en combate."
+    },
+    {
+     "name": "Reinforce",
+     "ranks": 5,
+     "gate": "ninguno",
+     "effect": "-8% de pérdida de durabilidad al morir por rango"
+    },
+    {
+     "name": "For Great Honor",
+     "ranks": 5,
+     "gate": "5 en Resourcefulness",
+     "effect": "+2% de honor por rango"
+    },
+    {
+     "name": "Permanence",
+     "ranks": 2,
+     "gate": "5 en Resourcefulness + 3 en Gourmand",
+     "effect": "Los beneficios largos de clase en grupo/banda y los de campamento duran un 50/100% más"
+    },
+    {
+     "name": "Diplomat",
+     "ranks": 5,
+     "gate": "5 en Resourcefulness",
+     "effect": "+2% de reputación por rango"
+    },
+    {
+     "name": "Reagent Economy",
+     "ranks": 1,
+     "gate": "10 en Resourcefulness + 2 en Quick and the Dead",
+     "effect": "Las habilidades de clase no necesitan componentes de vendedor, y los objetos de campamento de nivel 1 no necesitan materiales"
+    }
+   ]
+  },
+  "suggested_leveling_spend_16": "Sin confirmar, es mi sugerencia. Para subir alters: Well Rested 5 + Talented 5 (requiere 5 en Well Rested) + Thrill of Adventure hasta 5, o Field Guide/Field Medicine. Segunda opción: Gourmand 3 + Reinforce. Primer personaje: nada hasta nivel 25. A nivel 25 ese único punto puede ir a Well Rested 1 o a Thrill of Adventure 1.",
+  "account_rewards": [
+   {
+    "points_earned": 15,
+    "reward": "Holstered Replica Ironforge Air Rifle (juguete)"
+   },
+   {
+    "points_earned": 25,
+    "reward": "Spectral Bear Cub (mascota)"
+   },
+   {
+    "points_earned": 40,
+    "reward": "Spectral Bear Tabard (tabardo)"
+   },
+   {
+    "points_earned": 55,
+    "reward": "Reins of the Spectral Bear (montura)"
+   }
+  ],
+  "rewards_npc": "Innkeeper Wiley, Ratchet (Trinquete)",
+  "hardcore_rule": "Los puntos conseguidos en Hardcore cuentan en todos los tipos de reino. Los puntos de reinos normales no cuentan en Hardcore.",
+  "respec_costs": {
+   "legacy_perks": "Se reinician con un instructor de clase en una ciudad principal. En la beta el reinicio más barato costaba 1 de plata; el precio sube con cada reinicio y baja un escalón por hora (precio solo de la beta). Precio en el juego final sin confirmar; una web habla de 10 de oro.",
+   "talents": "Precio creciente: el primero 1 de oro, luego 5 de oro, y sube hasta un máximo de 50 de oro (allthings.how). Blizzard y la wiki: el precio baja con el tiempo hasta volver a 1 de oro. En la beta costaba solo 1 de plata (solo beta). Detalles del juego final sin confirmar.",
+   "dual_spec": "Se aprende a nivel 40 con los instructores de clase por 10 de oro. Cambias libremente fuera de combate y de campos de batalla. Cambiar talentos dentro de una especialización sigue costando el precio de reinicio."
+  },
+  "sources": [
+   "https://news.blizzard.com/en-us/article/24307383/",
+   "https://www.icy-veins.com/wow-forever/legacy-system",
+   "https://www.warcrafttavern.com/forever/guides/legacy/",
+   "https://foreverchanges.pro/legacy-perks",
+   "https://foreverhispano.com/legado/",
+   "https://talentsforever.com",
+   "https://us.forums.blizzard.com/en/wow/t/legacy-points-for-beta-testing/2368776",
+   "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-8/2360696/5",
+   "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696/6",
+   "https://www.icy-veins.com/wow-forever/news/players-getting-free-legacy-points-for-testing/",
+   "https://allthings.how/wow-forever-how-to-respec-your-talents-at-a-class-trainer/",
+   "https://www.method.gg/wow-forever/how-to-get-a-mount-in-wow-forever-cost-requirement-and-mount-options"
+  ]
+ },
+ "talents_rules": {
+  "points_per_level": "1 por nivel desde el nivel 10 (51 a nivel 60). Con la ventaja de Legacy Talented el primer punto llega entre el nivel 9 y el 5, y el total sigue siendo 51.",
+  "total_points": 51,
+  "rows_per_tree": 7,
+  "row_rule": "Se abre una fila nueva por cada 5 puntos gastados en ese árbol, como en Classic. Las filas piden 0/5/10/15/20/25/30 puntos.",
+  "row_unlock_levels_single_tree": "Sin Talented, si pones todos los puntos en un solo árbol: fila 1 a nivel 10, fila 2 a 14, fila 3 a 19, fila 4 a 24, fila 5 a 29, fila 6 a 34 y fila 7 a 39. El talento final de 31 puntos se coge a nivel 40. Con Talented 5/5 (puntos desde nivel 5) todo llega 5 niveles antes, así que el talento final es a nivel 35. Estos niveles se deducen de las reglas; Blizzard no los ha publicado.",
+  "milestone_talents": "Talentos 'medalla de oro' de 1 punto a los 11, 21 y 31 puntos, más un nuevo talento de 1 punto a los 16 puntos en cada árbol (4 por árbol)",
+  "capstone": "Talento de 31 puntos (fila 7). Como pronto a nivel 40, o a 35 con Talented 5/5.",
+  "changes_vs_classic": "114 talentos nuevos, 301 cambiados y 81 eliminados (foreverchanges). Muchos talentos que antes eran mejoras ahora vienen de base (Blessing of Kings (Bendición de reyes), Improved MotW, Improved Hunter's Mark, y Aimed Shot (Disparo apuntado) a nivel 20 para todos los cazadores).",
+  "respec_location": "Instructor de clase en una ciudad principal, tanto para talentos como para ventajas de Legacy",
+  "dual_spec": "Nivel 40, 10 de oro",
+  "sources": [
+   "https://talentsforever.com",
+   "https://www.icy-veins.com/wow/news/start-planning-your-wow-forever-character-with-our-new-talent-calculator/",
+   "https://www.icy-veins.com/wow-forever/news/talents-as-baseline-abilities-leveling-changes-and-more-class-deep-dives-hunter-and-druid/",
+   "https://powerupgaming.co.uk/2026/09/14/new-wow-forever-talents-changes-vs-classic-guide/",
+   "https://foreverchanges.pro/level-30",
+   "https://foreverchanges.pro/changes",
+   "https://warcraft.wiki.gg/wiki/Patch_1.60.1"
+  ]
+ },
+ "starting_zones": {
+  "alliance_races": [
+   {
+    "race": "Human",
+    "start": "Northshire Valley (Valle de Villanorte), Elwynn Forest (Bosque de Elwynn) (1-10)",
+    "classes": [
+     "Warrior",
+     "Paladin",
+     "Rogue",
+     "Priest",
+     "Mage",
+     "Warlock",
+     "Hunter (NUEVO en Forever)"
+    ],
+    "racials_current": "Will to Survive (rompe aturdimientos), Perception (detectar sigilo 20 s), Ruthless (+1% de crítico; era +2% antes del ajuste de lanzamiento), The Human Spirit (+5% de espíritu)"
+   },
+   {
+    "race": "Dwarf",
+    "start": "Coldridge Valley (Valle de Crestanevada), Dun Morogh (1-10)",
+    "classes": [
+     "Warrior",
+     "Paladin",
+     "Hunter",
+     "Rogue",
+     "Priest",
+     "Shaman (NUEVO en Forever)"
+    ],
+    "racials_current": "Stoneform (Forma de piedra), Find Treasure (Encontrar tesoro; ahora también encuentra objetos extra en cofres), Artisan's Precision (+1% de golpe con hechizos y ataques; sustituye a Earth Fury), Big Game Hunter (+5% de daño contra bestias)"
+   },
+   {
+    "race": "Gnome",
+    "start": "Coldridge Valley, Dun Morogh (1-10)",
+    "classes": [
+     "Warrior",
+     "Rogue",
+     "Mage",
+     "Warlock",
+     "Priest (NUEVO en Forever)"
+    ],
+    "racials_current": "Escape Artist (Artista del escape), Eureka! (beneficio de 8 s: hechizos más baratos y +10% de daño/sanación), Expansive Mind (+5% de maná/ira/energía máximos), Engineering Specialization"
+   },
+   {
+    "race": "Night Elf",
+    "start": "Shadowglen (Cañada Umbría), Teldrassil (1-10/11)",
+    "classes": [
+     "Warrior",
+     "Hunter",
+     "Rogue",
+     "Priest",
+     "Druid"
+    ],
+    "racials_current": "Elune's Light (+10% de crítico durante 15 s), Shadowmeld (Fusión de las sombras), Quickness (+1% de esquivar y +2% de velocidad de carrera; ahora se acumula), Wisp Spirit"
+   },
+   {
+    "race": "Skyborne - High Order (Alianza)",
+    "start": "Zephras Isle (1-12), una nueva isla flotante en Skywall. La ciudad principal es Valanaar.",
+    "classes": [
+     "Druid",
+     "Hunter",
+     "Mage",
+     "Rogue",
+     "Warrior"
+    ],
+    "racials_current": "Walk on Air (planear 10 s, reutilización de 90 s), Read Leyline (+50% de regeneración de vida y maná durante 15 s; junto a una línea ley te deja Attuned 1 h y entonces es +100%), Wind Blessed (+2% de celeridad desde el 15 de oct), Elemental Insight (+5% de daño contra elementales) Ajuste de lanzamiento (Blizzard, 26 oct): Skysight da +15% de velocidad 15 s, y en una convergencia elemental te deja Charged 1 h con +30%.",
+    "requires": "Skyborne Heroic Pack, Skyborne Epic Pack o Warcraft Forever Collection",
+    "leaving": "Aeronave desde el muelle de la Alianza/Kirin Tor de Valanaar hasta Dalaran (Alterac Mountains (Montañas de Alterac)), luego el portal de la Violet Citadel (Ciudadela Violeta) a la Torre de los Magos de Stormwind (Ventormenta), y después el Deeprun Tram (Tranvía Subterráneo) hasta Ironforge (Forjaz). La variante Windshaper (Horda) va a Mulgore."
+   }
+  ],
+  "class_by_race_alliance": {
+   "Warrior": [
+    "Human",
+    "Dwarf",
+    "Gnome",
+    "Night Elf",
+    "Skyborne"
+   ],
+   "Paladin": [
+    "Human",
+    "Dwarf"
+   ],
+   "Hunter": [
+    "Human (nuevo)",
+    "Dwarf",
+    "Night Elf",
+    "Skyborne"
+   ],
+   "Rogue": [
+    "Human",
+    "Dwarf",
+    "Gnome",
+    "Night Elf",
+    "Skyborne"
+   ],
+   "Priest": [
+    "Human",
+    "Dwarf",
+    "Gnome (nuevo)",
+    "Night Elf"
+   ],
+   "Shaman": [
+    "Dwarf (nuevo)"
+   ],
+   "Mage": [
+    "Human",
+    "Gnome",
+    "Skyborne"
+   ],
+   "Warlock": [
+    "Human",
+    "Gnome"
+   ],
+   "Druid": [
+    "Night Elf",
+    "Skyborne"
+   ]
+  },
+  "notes": "Las seis combinaciones nuevas de Forever son Human Hunter (cazador humano), Dwarf Shaman (chamán enano) y Gnome Priest (sacerdote gnomo) en la Alianza, y Orc Mage (mago orco), Troll Warlock (brujo trol) y Undead Paladin (paladín no-muerto) en la Horda. Los raciales se rehicieron a fondo el 15 de oct, y Blizzard dijo que seguiría revisándolos. Espera más cambios en el lanzamiento. Zephras Isle tiene una mecánica de velocidad (Blessing of Zephras: atraviesa tornados para ganar +40% de velocidad), y las Windstones funcionan como pociones, pero solo en la isla.",
+  "sources": [
+   "https://www.icy-veins.com/wow-forever/news/all-new-race-and-class-combos-and-racial-abilities-in-wow-forever-official/",
+   "https://www.method.gg/wow-forever/all-class-and-race-combinations-in-world-of-warcraft-forever",
+   "https://warcraft.wiki.gg/wiki/Skyborne",
+   "https://warcraft.wiki.gg/wiki/Zephras_Isle",
+   "https://www.warcrafttavern.com/forever/news/racial-class-ability-changes-in-the-wow-forever-beta/",
+   "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696/6",
+   "https://www.warcrafttavern.com/forever/guides/how-to-get-to-ironforge-from-the-zephras-isle/",
+   "https://www.warcrafttavern.com/forever/guides/zephras-isle-walkthrough/"
+  ]
+ },
+ "zone_route": {
+  "caveat": "Los niveles 1-30 se probaron en la beta. Los niveles 30-60 son una ruta provisional basada en Classic, los datos del cliente de Forever y los anuncios (ForeverHispano también marca el 30-60 como 'tramo provisional'). La curva de experiencia es la misma que en Classic: 4.084.700 XP para llegar a 60.",
+  "route": [
+   {
+    "levels": "1-10/12",
+    "zone": "Elwynn Forest (humanos) / Dun Morogh (enanos y gnomos) / Teldrassil (elfos de la noche) / Zephras Isle 1-12 (Skyborne)",
+    "notes": "Las zonas de inicio estarán llenísimas en el lanzamiento (capas). Coge pronto una profesión de recolección. Hay instructores básicos en las zonas de inicio (p. ej. Kelsey Fargo en Northshire), y las Poor Copper Veins se pueden minar desde nivel 1. Libro de la biblioteca: el diario del Archimago Theocritus, en lo alto de la Tower of Azora (Torre de Azora), Elwynn (65.4,70.1). Entrega los libros a Garon Wendell, en el Barrio de los Magos de Stormwind. El campamento se desbloquea hacia el nivel 5 con una cadena de misiones (necesitas Cocina para la hoguera).",
+    "new_or_changed": "Zephras Isle es nueva"
+   },
+   {
+    "levels": "10-20",
+    "zone": "Westfall (Páramos de Poniente) (12-17) y/o Loch Modan (10-20); los elfos de la noche hacen Darkshore (Costa Oscura) (16-21)",
+    "notes": "Hall of Thanes (13-18, mazmorra nueva bajo Ironforge / Old Ironforge): recoge antes las misiones. The Deadmines (Las Minas de la Muerte) 18-24. Merchant's Favor se abre a nivel 10 (las cajas se entregan a Marcy Baker, Azeroth Commerce Authority, Three Corners, Redridge). La cadena del Cozy Sleeping Bag empieza a nivel 14 en el Nailed Plank, Alexston Farmstead, Westfall (37,50): Barrens (Los Baldíos) > Stonetalon (Sierra Espolón) > presa de Loch Modan (49,12) > Thoradin's Wall en Hillsbrad. Hay libros de la biblioteca en Loch Modan (posada de Thelsamar), Westfall (Moonbrook (Arroyo de la Luna), posada de Sentinel Hill (Colina del Centinela)) y Darkshore (Ruins of Mathystra).",
+    "new_or_changed": "Hall of Thanes es nueva. Se arreglaron las reapariciones de Westfall."
+   },
+   {
+    "levels": "20-22",
+    "zone": "Redridge Mountains (Montañas Crestagrana) (Lakeshire (Villa del Lago))",
+    "notes": "Ruta de foreverchanges: Redridge Canyons, Galardell Valley. El mapa de Redridge cambió bastante en Forever, y la misión 'Blackrock Blockade' se actualizó. El campamento comercial de la ACA (recetas y órdenes de Merchant's Favor) está en Three Corners.",
+    "new_or_changed": "Mapa cambiado"
+   },
+   {
+    "levels": "22-24 (y vuelta a 26-29)",
+    "zone": "Wetlands (Los Humedales) (Menethil Harbor (Puerto de Menethil))",
+    "notes": "Más de 25 misiones nuevas. Excavation Site: Wetlands, mazmorra (Blizzard: 26-31; otras fuentes: 24-29) con misiones como Highland Hides, Songblade Search y Horrors in the Highland. Se aumentaron las reapariciones de Dragonmaw, gnolls e Incendicite.",
+    "new_or_changed": "Misiones nuevas y mazmorra nueva"
+   },
+   {
+    "levels": "24-28",
+    "zone": "Duskwood (Bosque del Ocaso) (Darkshire (Villa Oscura))",
+    "notes": "Unas 32 misiones (foreverchanges): Addle's Stead, Raven Hill, Brightwood Grove. Reapariciones aumentadas.",
+    "new_or_changed": "Solo ajuste de reapariciones"
+   },
+   {
+    "levels": "25-30",
+    "zone": "Ashenvale (Vallefresno) (Astranaar), Stonetalon opcional para elfos de la noche",
+    "notes": "Sal a nivel 27 y vuelve a 29-30. Blackfathom Deeps (Cavernas de Brazanegra) 25-31. The Stockade (Las Mazmorras) 26-32 en Stormwind. El campo de batalla Darkspear Islands se abre a nivel 30.",
+    "new_or_changed": "Solo iluminación; no se han visto misiones nuevas"
+   },
+   {
+    "levels": "28-33",
+    "zone": "Thousand Needles (Las Mil Agujas) (28-31) / Hillsbrad Foothills (Laderas de Trabalomas) (30-32) / Alterac Mountains (City of Dalaran)",
+    "notes": "Mazmorra City of Dalaran 28-33 (wiki: 28-34; no entres por debajo del nivel del jefe, 31). Las misiones de la Alianza empiezan en Stormwind y Southshore (Costasur) y llevan a la Archimaga Modera, en la orilla sur del lago Lordamere (Silverpine (Bosque de Argénteos)). Ella da la Dalaran Sewer Key. Los Skyborne llegan a Dalaran en aeronave. En Dalaran atacan a la Horda nada más verla.",
+    "new_or_changed": "Mapa de Alterac Mountains cambiado. City of Dalaran es una mazmorra nueva."
+   },
+   {
+    "levels": "31-35",
+    "zone": "Desolace",
+    "notes": "Cambio del 8 de oct: las misiones de Gelkis/Magram del 'Valley of Bones' ahora piden nivel 35 (antes 30). Se reajustaron 16 recompensas para equiparse a nivel 35. El Valley of Bones es la única entrada conocida a la nueva zona Shen'dralas. Gnomeregan 31-37 y las alas del Scarlet Monastery (Monasterio Escarlata) 31-45 entran en este rango.",
+    "new_or_changed": "Mapa cambiado, misiones de centauros movidas a nivel 35"
+   },
+   {
+    "levels": "34-45",
+    "zone": "Stranglethorn Vale (Vega de Tuercespina) (Booty Bay (Bahía del Botín)), Arathi Highlands (Tierras Altas de Arathi) (37-40), Badlands (Tierras Inhóspitas) (39-44), Swamp of Sorrows (Pantano de las Penas) / Dustwallow (35-45)",
+    "notes": "The Drowned City (35-40, nueva, costa de STV). Uldaman 44-50 (wiki) / 36-45 (Tavern). Razorfen Downs (Zahúrda Rajacieno) 38-44.",
+    "new_or_changed": "The Drowned City es nueva"
+   },
+   {
+    "levels": "35-45",
+    "zone": "The Riverglades (zona NUEVA)",
+    "notes": "Más de 150 misiones, zona disputada. Base de la Alianza: Farholde Keep, con ruta de vuelo de la Alianza. Se llega a pie desde Redridge (Redridge Pass / Blackrock Pass), Badlands, Burning Steppes o Swamp of Sorrows, o en barco desde Steamwheedle Port (Tanaris) hasta Powderfuse Port. Una web dice que la Alianza solo puede llegar en barco; la wiki muestra acceso por tierra desde Redridge. Mazmorra Krol'dok Stronghold (40-45). Seguramente la mejor base para la Alianza del 35 al 45.",
+    "new_or_changed": "Nueva"
+   },
+   {
+    "levels": "40",
+    "zone": "(Montura)",
+    "notes": "Equitación de aprendiz y tu primera montura por 100 de oro con el instructor de equitación de tu raza. Humanos: Randal Hunter, Eastvale Logging Camp (Elwynn). Enanos: Amberstill Ranch. Gnomos: Steelgrill's Depot (Dun Morogh). Elfos de la noche: Darnassus. Skyborne: Genn Fairweather (Zephras Isle). 10% de descuento con reputación Honorable. Doble especialización: 10 de oro. Monturas de clase gratis: Paladín de la Alianza (Tome of Nobility) y Brujo (misión de Strahad Farsan, Ratchet).",
+    "new_or_changed": "Montura a nivel 40 por 100 de oro (más barata que en Classic)"
+   },
+   {
+    "levels": "43-50",
+    "zone": "Feralas (43-46), Tanaris (45-47, Zul'Farrak 45-51), Hinterlands (Tierras del Interior) (46-48), Searing Gorge (La Garganta de Fuego) (47-49), Azshara (45-55)",
+    "notes": "Shen'dralas (NUEVA, al sureste de Desolace, entre Feralas y Mulgore) tiene un rango de nivel sin confirmar: Gfinity dice 45-53, la wiki dice desconocido y Warcraft Tavern calculaba 30-50. Maraudon 48-54. Alcaz Prison (48-53, nueva, en una isla al noreste de Dustwallow Marsh (Marjal Revolcafango)) requiere planear barco o vuelo.",
+    "new_or_changed": "Shen'dralas nueva, Alcaz Prison nueva"
+   },
+   {
+    "levels": "48-55",
+    "zone": "Un'Goro Crater (Cráter de Un'Goro) (48-52), Burning Steppes (Las Estepas Ardientes) (51-53), Felwood (Frondavil) (52-54)",
+    "notes": "Sunken Temple 52-58, BRD (Blackrock Depths (Profundidades de Roca Negra)) 52-60. Shaper's Terrace (58-60, nueva) está en Un'Goro.",
+    "new_or_changed": "Shaper's Terrace nueva"
+   },
+   {
+    "levels": "53-60",
+    "zone": "Winterspring (Cuna del Invierno) (53-55), Western Plaguelands (Tierras de la Peste del Oeste) (54-57), Eastern Plaguelands (Tierras de la Peste del Este) (53-60), Silithus (56-60)",
+    "notes": "Blackmaw Hold (55-60, nueva, norte de Azshara). LBRS (Lower Blackrock Spire (Cumbre de Roca Negra Inferior)), DM (Dire Maul (La Masacre)), Scholomance, Stratholme. El mapa de Eastern Plaguelands cambió bastante.",
+    "new_or_changed": "Mapa de EPL cambiado, Blackmaw Hold nueva"
+   },
+   {
+    "levels": "55/60+",
+    "zone": "Mount Hyjal (Monte Hyjal) (NUEVA, contenido final)",
+    "notes": "Los datos del cliente la marcan como nivel 60, y el Group Finder muestra misiones de 55-60. Se entra por Darkwhisper Gorge (Winterspring), con un enlace de vuelo desde Everlook (Gamuza). Reputaciones: Guardians of Hyjal, Barkskin Burrow. Las bandas se abren el 9 de dic. El requisito exacto de entrada está sin confirmar.",
+    "new_or_changed": "Nueva"
+   }
+  ],
+  "zones_changed_vs_classic": [
+   "Mapas muy cambiados (comparativa de mapas de la wiki): Alterac Mountains, Eastern Plaguelands, Redridge Mountains, Stormwind, Tirisfal Glades (Claros de Tirisfal), Desolace, Mulgore",
+   "Tirisfal Glades (zona de la Horda): se subió el nivel de misiones y criaturas alrededor de Shadowvale y Bandarion Keep para arreglar el salto de dificultad (8 de oct). Mazmorra nueva allí: Ruins of Lordaeron (15-22).",
+   "Desolace: las misiones de centauros del Valley of Bones ahora piden nivel 35 (8 de oct)",
+   "Wetlands: más de 25 misiones nuevas y una mazmorra nueva",
+   "Dalaran vuelve a Alterac Mountains, con ciudad, misiones y mazmorra"
+  ],
+  "sources": [
+   "https://foreverchanges.pro/level-30",
+   "https://foreverhispano.com/guia-leveo-1-60/",
+   "https://foreverhispano.com/zonas/",
+   "https://warcraft.wiki.gg/wiki/Riverglades",
+   "https://warcraft.wiki.gg/wiki/Shen%27dralas",
+   "https://warcraft.wiki.gg/wiki/Zephras_Isle",
+   "https://warcraft.wiki.gg/wiki/City_of_Dalaran",
+   "https://warcraft.wiki.gg/wiki/Forever_map_comparison",
+   "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-8/2360696/5",
+   "https://www.gfinityesports.com/article/world-of-warcraft-forever-new-zones-travel-routes-guide",
+   "https://www.warcrafttavern.com/forever/news/all-new-zones-areas-in-wow-forever-revealed-at-blizzcon/",
+   "https://expcarry.com/wow-forever-mount-hyjal-guide",
+   "https://expcarry.com/es/guia-subida-nivel-wow-forever-alianza",
+   "https://koroboost.com/guide/wow-forever-leveling-guide",
+   "https://www.warcrafttavern.com/forever/guides/cozy-sleeping-bag/",
+   "https://www.warcrafttavern.com/forever/guides/library-books/",
+   "https://games.gg/world-of-warcraft/guides/wow-forever-ashenvale-leveling-guide/"
+  ]
+ },
+ "dungeons": {
+  "note": "Lista breve. Otro agente cubre las mazmorras a fondo. Los niveles vienen de warcraft.wiki.gg (Patch 1.60.1). Warcraft Tavern da rangos algo distintos, que se muestran entre corchetes cuando no coinciden.",
+  "xp_changes": [
+   "1 de oct: las misiones de mazmorra dan un 50% menos de la experiencia EXTRA que Forever había añadido sobre los valores de Classic (p. ej. Deviate Hides pasó de unos 4.650 a unos 3.100 XP; en Classic eran 1.600). Se recalibraron las recompensas de misión y varias recompensas de misiones de mazmorra pasaron de raras (azules) a poco comunes (verdes).",
+   "8 de oct: la experiencia por matar enemigos en mazmorras sube ~20%. Se arregló un error que daba poca experiencia al ir en grupo con jugadores de más nivel: ahora la experiencia depende de tu propio nivel, como en Era.",
+   "8 de oct: Truthseeker's Bow (recompensa de los libros de la biblioteca) ahora pide nivel 40"
+  ],
+  "list": [
+   {
+    "name": "The Hall of Thanes",
+    "levels": "13-18",
+    "zone": "Ironforge (Old Ironforge)",
+    "new_in_forever": true
+   },
+   {
+    "name": "Ragefire Chasm (Sima Ígnea)",
+    "levels": "13-19",
+    "zone": "Orgrimmar (ciudad de la Horda)",
+    "new_in_forever": false
+   },
+   {
+    "name": "Ruins of Lordaeron",
+    "levels": "15-22 [15-20]",
+    "zone": "Tirisfal Glades / Undercity (Entrañas)",
+    "new_in_forever": true
+   },
+   {
+    "name": "The Deadmines (Las Minas de la Muerte)",
+    "levels": "18-24 [15-22]",
+    "zone": "Westfall",
+    "new_in_forever": false
+   },
+   {
+    "name": "Wailing Caverns (Cuevas de los Lamentos)",
+    "levels": "19-25 [17-24]",
+    "zone": "The Barrens",
+    "new_in_forever": false
+   },
+   {
+    "name": "Shadowfang Keep (Castillo de Colmillo Oscuro)",
+    "levels": "23-29 [20-26]",
+    "zone": "Silverpine Forest",
+    "new_in_forever": false
+   },
+   {
+    "name": "Excavation Site: Wetlands",
+    "levels": "24-29 (notas de Blizzard del 1 de oct: 26-31)",
+    "zone": "Wetlands",
+    "new_in_forever": true
+   },
+   {
+    "name": "Blackfathom Deeps (Cavernas de Brazanegra)",
+    "levels": "25-31 [22-28]",
+    "zone": "Ashenvale",
+    "new_in_forever": false
+   },
+   {
+    "name": "The Stockade (Las Mazmorras)",
+    "levels": "26-32 [25-29]",
+    "zone": "Stormwind City",
+    "new_in_forever": false
+   },
+   {
+    "name": "City of Dalaran",
+    "levels": "28-33 (página de la mazmorra en la wiki: 28-34)",
+    "zone": "Alterac Mountains",
+    "new_in_forever": true
+   },
+   {
+    "name": "Razorfen Kraul (Horado Rajacieno)",
+    "levels": "30-36 [29-38]",
+    "zone": "The Barrens",
+    "new_in_forever": false
+   },
+   {
+    "name": "Gnomeregan",
+    "levels": "31-37 [29-38]",
+    "zone": "Dun Morogh",
+    "new_in_forever": false
+   },
+   {
+    "name": "Scarlet Monastery Graveyard",
+    "levels": "31-37",
+    "zone": "Tirisfal Glades",
+    "new_in_forever": false
+   },
+   {
+    "name": "Scarlet Monastery Library",
+    "levels": "34-40",
+    "zone": "Tirisfal Glades",
+    "new_in_forever": false
+   },
+   {
+    "name": "The Drowned City",
+    "levels": "35-40",
+    "zone": "Stranglethorn Vale (costa)",
+    "new_in_forever": true
+   },
+   {
+    "name": "Scarlet Monastery Armory",
+    "levels": "37-43",
+    "zone": "Tirisfal Glades",
+    "new_in_forever": false
+   },
+   {
+    "name": "Razorfen Downs (Zahúrda Rajacieno)",
+    "levels": "38-44",
+    "zone": "The Barrens",
+    "new_in_forever": false
+   },
+   {
+    "name": "Scarlet Monastery Cathedral",
+    "levels": "39-45",
+    "zone": "Tirisfal Glades",
+    "new_in_forever": false
+   },
+   {
+    "name": "Krol'dok Stronghold",
+    "levels": "40-45",
+    "zone": "Riverglades",
+    "new_in_forever": true
+   },
+   {
+    "name": "Uldaman",
+    "levels": "44-50 [36-45]",
+    "zone": "Badlands",
+    "new_in_forever": false
+   },
+   {
+    "name": "Zul'Farrak",
+    "levels": "45-51",
+    "zone": "Tanaris",
+    "new_in_forever": false
+   },
+   {
+    "name": "Alcaz Prison",
+    "levels": "48-53",
+    "zone": "Dustwallow Marsh (Alcaz Island)",
+    "new_in_forever": true
+   },
+   {
+    "name": "Maraudon",
+    "levels": "48-54",
+    "zone": "Desolace",
+    "new_in_forever": false
+   },
+   {
+    "name": "Sunken Temple",
+    "levels": "52-58",
+    "zone": "Swamp of Sorrows",
+    "new_in_forever": false
+   },
+   {
+    "name": "Blackrock Depths (Profundidades de Roca Negra)",
+    "levels": "52-60",
+    "zone": "Blackrock Mountain (Montaña Roca Negra)",
+    "new_in_forever": false
+   },
+   {
+    "name": "Dire Maul East (La Masacre Este)",
+    "levels": "55-60",
+    "zone": "Feralas",
+    "new_in_forever": false
+   },
+   {
+    "name": "Blackmaw Hold",
+    "levels": "55-60",
+    "zone": "Azshara",
+    "new_in_forever": true
+   },
+   {
+    "name": "Lower Blackrock Spire (Cumbre de Roca Negra Inferior)",
+    "levels": "55-60",
+    "zone": "Blackrock Mountain",
+    "new_in_forever": false
+   },
+   {
+    "name": "Upper Blackrock Spire (Cumbre de Roca Negra Superior)",
+    "levels": "60 (solo lo lista Warcraft Tavern)",
+    "zone": "Blackrock Mountain",
+    "new_in_forever": false
+   },
+   {
+    "name": "Dire Maul West / North (La Masacre Oeste / Norte)",
+    "levels": "58-60",
+    "zone": "Feralas",
+    "new_in_forever": false
+   },
+   {
+    "name": "Scholomance",
+    "levels": "58-60",
+    "zone": "Western Plaguelands",
+    "new_in_forever": false
+   },
+   {
+    "name": "Shaper's Terrace",
+    "levels": "58-60",
+    "zone": "Un'Goro Crater",
+    "new_in_forever": true
+   },
+   {
+    "name": "Stratholme",
+    "levels": "58-60",
+    "zone": "Eastern Plaguelands",
+    "new_in_forever": false
+   }
+  ],
+  "raids_dec_9": [
+   "Barrow Deeps (10, Mount Hyjal)",
+   "Hyjal Summit (20, Mount Hyjal)",
+   "Onyxia's Lair (40, Dustwallow)"
+  ],
+  "sources": [
+   "https://warcraft.wiki.gg/wiki/Patch_1.60.1",
+   "https://www.warcrafttavern.com/forever/guides/dungeons/",
+   "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-8/2360696/5",
+   "https://www.warcrafttavern.com/forever/news/level-30-content-is-now-available-in-the-wow-forever-beta/",
+   "https://www.warcrafttavern.com/forever/news/experience-from-dungeon-kills-is-going-up-in-the-wow-forever-beta/",
+   "https://kami-labs.fr/en/wow-forever/beta-wow-forever-xp-donjons-coupee/",
+   "https://foreverchanges.pro/dungeons"
+  ]
+ },
+ "professions": {
+  "changes": [
+   "925 recetas nuevas, más 317 recetas de Merchant's Favor (foreverchanges, versión 70532). Blizzard dice 'más de 600'. La mayoría de recetas nuevas son de Peletería (270), Herrería (197) y Sastrería (180).",
+   "First Aid (Primeros auxilios) ahora hace todos los niveles de poción de sanación (Minor con habilidad 1, Lesser 55, Healing 110, Greater 155, Superior 215, Major 275). Las recetas usan Spices y hierbas. Primeros auxilios también hace Poultices (curan enfermedades hasta cierto nivel) y Tourniquets (cortan sangrados). Alquimia se queda con frascos, elixires, pociones de maná y transmutaciones.",
+   "Niveles de habilidad según nivel de personaje: Aprendiz desde nivel 1 (recolección) o 5 (fabricación/secundarias) hasta 75; Oficial desde nivel 10 hasta 150; Experto desde nivel 20 hasta 225; Artesano desde nivel 35 hasta 300 (instructores especiales, o una misión para las secundarias)",
+   "Objetos de campamento: el objeto de nivel 1 de cada profesión con habilidad 20, el de nivel 2 con un plano a 140 y el de nivel 3 a 300. Minería: Lodestone (poder de ataque), Rock Garden (hace aparecer mineral), Molten Foundry. Herboristería: Incense Candle (intelecto), Fermenter, Seed Hybridizer. Desuello: Camp Chair (+2% de crítico), Field Guide (Rastrear bestias), Trapper's Workbench. Peletería: Camp Tent (beneficio tipo experiencia de descanso, con reutilización propia 'Boosted Rest'). Primeros auxilios: First Aid Kit (+aguante), Toxin Study, Plague Doctor's Laboratory. Ingeniería: Reagent Bot, Repair Bot, Anarchist's Workbench. Herrería: Sharpening Wheel (fuerza). Alquimia: Mana Well. Encantamiento: Enchanted Lute (estadísticas y resistencias). Sastrería: Faction Banner (espíritu). Pesca: Fish Bowl. Cocina: hogueras (básica con habilidad 1, de oficial a 140, de experto a 220), Cookie's Feast, Iron Oven. Los beneficios de campamento son más débiles que los de clase y no se acumulan con ellos.",
+   "Recolección: nuevos materiales Scarce (hierbas Frilled Lichen, Rosecap, Stranglevine; también las nuevas Marefoil, Demonsage, Death Lotus y semillas de hierbas). Minería tiene minerales y barras nuevos (Pyrite, Bauxite, Pitchblende, Azerothium). Los filones reaparecen de forma dinámica (más rápido si hay mucha gente). Solo subes habilidad en la primera extracción de cada filón. Cada criatura solo se puede desollar una vez (1 de oct). Hay menos Poor Copper Veins en las zonas de inicio.",
+   "Herramientas de mazmorra para quien no recolecta: Rockslicer (The Deadmines; mina sin tener Minería, 30 usos) y Graverobber's Shovel (The Stockade; recoge Grave Moss)",
+   "Algunas recetas de Herrería y Peletería caen al azar en mazmorras. Las varitas de Encantamiento se venden por 1 de cobre. Muchos objetos fabricados se venden más baratos al vendedor (15 de oct), así que fabricar para vender al vendedor da poco oro.",
+   "Cultivation de los tauren duplica los nodos de hierbas (solo Horda)",
+   "Ventajas de Legacy para profesiones: Working Overtime, Bountiful Harvest, Dedicated Study y otras (ver legacy)"
+  ],
+  "merchants_favor": {
+   "what": "Moneda de cada personaje, disponible desde nivel 10. Llena una 'Waylaid Crate' (la sueltan enemigos y mazmorras, o se compra en la casa de subastas) con el lote de materiales que pide (p. ej. 20 Peacebloom). Se convierte en una caja sellada (se liga al recogerla) que entregas a cambio de Favor.",
+   "alliance_npc": "Marcy Baker, campamento de la Azeroth Commerce Authority en Three Corners, Redridge Mountains. Horda: Dokimi, Durotar Supply and Logistics, Barrens.",
+   "tiers": "Aprendiz y Oficial desde nivel 10; Experto desde 20; Artesano desde 35. Favor por caja: materiales en bruto 5/10/15, fabricados (rollos de tela, barras, piezas) 10/20/30 para Aprendiz/Oficial/Experto. La misión Shipping Label de la primera caja da +50 de Favor y 2.000 de reputación una sola vez.",
+   "reputation": "Con los Craftsman's Writs (75/125/200, cada uno una vez al día) y los Forged Delivery Receipts. Honorable = 9.000, Exaltado = 42.000.",
+   "buys": "Recetas (unos 30-240 de Favor, piden la profesión), certificado de título de profesión (1.000, con habilidad 300), mascota Packmule Treat (1.500), licencia de juguete (1.200, Honorable), Reins of the Pack Kodo (6.000, nivel 60 + equitación de oficial), tabardo (200 + 5 de oro, Exaltado). No hay bolsas confirmadas.",
+   "leveling_tips": "Fabricantes: compra primero patrones de armadura (cabeza, botas, guantes, cinturón). Encantadores: reliquia de clase (45) y Enchant Weapon - Revelation. Sáltate las primeras recetas de Alquimia e Ingeniería, que casi todas piden habilidad 165+. Las cajas de hierbas son las más baratas de llenar.",
+   "pawani_vendor": "No aparece en ninguna fuente. Puede que sea un nombre equivocado. Desconocido."
+  },
+  "best_pairs_leveling": [
+   "La recolección paga la montura de 100 de oro a nivel 40: Herboristería + Minería o Desuello + Minería es la opción clásica para hacer oro. Herboristería ahora también te da las hierbas para tus propias pociones de sanación de Primeros auxilios.",
+   "Fabricante autosuficiente: Guerrero/Paladín Herrería + Minería; Cazador/Pícaro/Druida/Chamán Peletería + Desuello; Sacerdote/Mago/Brujo Sastrería + Encantamiento (Gfinity)",
+   "Sube siempre Primeros auxilios (vendas, pociones de sanación, curas, kit de campamento de aguante) y Cocina (Well Fed da +5% de experiencia por muertes, y además hogueras). Cocina es obligatoria para acampar."
+  ],
+  "best_pairs_pvp": "Ingeniería + Minería es la opción de consenso para JcJ y contenido final (granadas, artilugios). Los gnomos tienen el racial Engineering Specialization. Fuentes: Warcraft Tavern, Gfinity.",
+  "gathering_tips": [
+   "Ten activo Find Minerals (Encontrar minerales) o Find Herbs (Encontrar hierbas) (no pueden ir a la vez). Vuelve a activar Find Herbs tras morir.",
+   "Las hierbas dan habilidad durante unos 100 puntos, pero se ponen en verde hacia +50, así que cambia de zona cada unos 50 puntos de habilidad",
+   "Desuella mientras haces misiones. Saquea todo antes de desollar.",
+   "En zonas con mucha gente el mineral reaparece más rápido (apariciones dinámicas)",
+   "Equipo de minería: Goblin Mining Helm (+5), Miner's Cape (+2)"
+  ],
+  "sources": [
+   "https://foreverchanges.pro/professions",
+   "https://foreverchanges.pro/merchants-favor",
+   "https://www.wow-professions.com/forever/merchants-favor-durotar-supply-azeroth-commerce",
+   "https://blizzardwatch.com/2026/10/16/first-aid-getting-new-recipes-updates-world-warcraft-forever/",
+   "https://www.warcrafttavern.com/forever/guides/professions/",
+   "https://www.warcrafttavern.com/forever/guides/camping/",
+   "https://www.warcrafttavern.com/forever/guides/mining/",
+   "https://www.warcrafttavern.com/forever/guides/herbalism/",
+   "https://www.warcrafttavern.com/forever/guides/skinning/",
+   "https://www.gfinityesports.com/article/the-best-profession-pairings-for-every-class-in-world-of-warcraft-forever",
+   "https://warcraft.wiki.gg/wiki/Patch_1.60.1",
+   "https://foreverhispano.com/sistemas-y-profesiones/"
+  ]
+ },
+ "systems": {
+  "rested_xp": "La experiencia de descanso se acumula en posadas, capitales y en el Cozy Sleeping Bag: un 5% del nivel cada 8 h, hasta un máximo del 150% (30 burbujas); tarda unos 10 días en llenarse. Solo duplica la experiencia por muertes. La ventaja de Legacy Well Rested añade hasta +20% de ritmo y de máximo.",
+  "xp_buffs": [
+   "Well Fed (Bien alimentado; casi toda la comida cocinada): +5% de experiencia por muertes durante unos 15 min. Se pierde al morir. Gourmand lo alarga.",
+   "Cozy Sleeping Bag: túmbate en él 1 min por acumulación, hasta 3 acumulaciones de +1% de experiencia (+3% en total); dura unas 2 h (foreverchanges) y se mantiene al morir. Lo puede usar el grupo, reutilización de 1 h. No se puede usar en ciudades ni posadas. Cuenta como zona de descanso. Cadena de la Alianza desde nivel 14 (ver zone_route 10-20).",
+   "Camp Tent (objeto de campamento de Peletería): beneficio tipo experiencia de descanso durante 1 h, se mantiene al morir. Tiene su propia reutilización 'Boosted Rest'.",
+   "Los tres se acumulan"
+  ],
+  "kill_xp_rules": "Los enemigos de menor nivel que tú dan menos experiencia. Forever calcula según el nivel del enemigo respecto al tuyo: a nivel 30, uno de 4 niveles menos da un 10% menos aprox. El tamaño del grupo y los miembros de más nivel reducen la experiencia por muertes. Entregar misiones no se ve afectado por ir en grupo. En grupos de banda no se cuentan las misiones.",
+  "camping": "Se desbloquea hacia el nivel 5 con una cadena de misiones. Necesitas una hoguera de Cocina (Simple Wood más Flint and Tinder); arde unos 10 min y tiene 5 min de reutilización para colocarla. Cada personaje puede añadir un objeto de profesión (reutilización de 1 h), y otros jugadores pueden añadir los suyos. Usa /sit en el campamento 1 min para recibir los beneficios (cada uno dura aprox. 1 h). Los beneficios de campamento no se acumulan con el beneficio de clase equivalente. Las hogueras no dañan a jugadores de nivel inferior a 5.",
+  "mounts": "Nivel 40: equitación de aprendiz más la montura de tu raza por 100 de oro (+60% de velocidad). Colores extra a 20 de oro cada uno. Nivel 60: equitación de oficial por 1.000 de oro y montura épica por 200 de oro (+100%). 10% de descuento con reputación Honorable con tu facción de origen. Bartering da hasta un 10% de descuento solo en monturas. Las monturas de otras razas piden Exaltado. Monturas gratis para paladín y brujo a nivel 40. No hay monturas voladoras. Las monturas de la tienda (Cerulean Prideclaw) también necesitan comprar la equitación en el juego, y puede que Cerulean Prideclaw pida nivel 60 (sin confirmar).",
+  "travel": "Rutas de vuelo como en Classic. Frequent Flier da -50% de coste y +20% de velocidad. Riverglades tiene una ruta de vuelo de la Alianza en Farholde Keep. Barco neutral de Powderfuse Port (Riverglades) a Steamwheedle Port (Tanaris). Aeronave de Zephras a Dalaran, que tiene portal a Stormwind. Everlook tiene enlace de vuelo a Hyjal. No hay salas de portales.",
+  "group_finder": "Hay una herramienta Group Finder (muestra para qué mazmorras eres apto y actividades de misiones), pero no hay emparejamiento automático para mazmorras. Blizzard lo evita a propósito.",
+  "cooldown_manager": "Gestor de tiempos de reutilización integrado en la interfaz. Funciona con todas las clases, raciales y abalorios, y los rangos de un mismo hechizo se agrupan en una sola entrada (15 de oct). Los consumibles llegarán más adelante.",
+  "library_books": "Hay libros repartidos por el mundo (vienen de SoD) y ahora los pueden usar todas las clases. Entrégalos a Garon Wendell, Barrio de los Magos de Stormwind (38,81). Recompensas a los 10 libros (nivel 1, collar), 20 (nivel 20, anillo) y 25 (nivel 30, Truthseeker's Bow a nivel 40 / mano izquierda).",
+  "ley_lines_and_convergences": "En la mayoría de zonas aparecen Elemental Convergences y Leylines (hay más puntos de aparición desde el 15 de oct). El racial Skyborne Read Ley Line activa una para +50% de regeneración (+100% con Attuned) de vida y maná.",
+  "dual_spec": "Nivel 40, 10 de oro con el instructor de clase",
+  "class_changes_leveling": "Las varitas y Auto Shot (Disparo automático) necesitan 0,5 s quieto antes de disparar (15 de oct). Cazador: Aimed Shot de base a nivel 20, trampas utilizables en combate. Mago: Frost Blast a nivel 24. Druida: Shred (Triturar) a nivel 20. Paladín: Blessing of Kings de base. Los hechizos de rango bajo tienen menos poder con hechizos (penalización por bajar de rango; foreverchanges tiene una calculadora para esto).",
+  "layering": "Megarreino con capas por zona. Al unirte a un grupo pasas a la capa del líder, e invitar puede forzar un cambio de capa. Los raros y los enemigos de misión son de cada capa. Los probadores de la beta se quejaron de que los cambios de capa interrumpían misiones.",
+  "other": "Hardcore llegará más adelante. El campo de batalla Darkspear Islands se abre a nivel 30. Colección de transfiguración para toda la cuenta: vender a un vendedor un objeto BoE (se liga al equiparlo) que no tengas en la colección lo vuelve ligado. Nuevo tutorial para jugadores nuevos. Barberías en todas las capitales. Existe el Chronoboon Displacer, pero los beneficios de mundo se quitan dentro de mazmorras y bandas.",
+  "revive_spell": "No aparece ningún hechizo general 'Revive' en ninguna fuente. Desconocido.",
+  "sources": [
+   "https://www.warcrafttavern.com/forever/guides/experience/",
+   "https://www.warcrafttavern.com/forever/guides/camping/",
+   "https://www.warcrafttavern.com/forever/guides/cozy-sleeping-bag/",
+   "https://www.method.gg/wow-forever/how-to-get-a-mount-in-wow-forever-cost-requirement-and-mount-options",
+   "https://mein-mmo.de/en/wow-forever-beginners-guide-46-tips-to-make-your-start-noticeably-easier,1593013/3/",
+   "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696/6",
+   "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-october-8/2360696/5",
+   "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696/4",
+   "https://www.warcrafttavern.com/forever/guides/library-books/",
+   "https://www.icy-veins.com/wow-forever/news/wow-forever-players-say-layering-is-interrupting-quests-and-pvp/",
+   "https://conquestcapped.com/guides/wow-forever/wow-forever-realms/",
+   "https://foreverchanges.pro/level-30",
+   "https://foreverchanges.pro/cozy-sleeping-bag",
+   "https://warcraft.wiki.gg/wiki/Patch_1.60.1"
+  ]
+ },
+ "general_tips": [
+  "El lanzamiento es el jueves 5 de nov a las 00:00 (hora peninsular). Reserva tu nombre del 27 de oct al 3 de nov si tienes un pack de mejora, y acuerda con tus amigos tipo de reino y facción: no hay transferencias de facción ni de tipo de reino, y el tipo JcJ bloquea la cuenta a una sola facción por región.",
+  "Tu primer personaje empieza con 0 puntos de Legacy (los puntos de la beta no se conservan). El primer punto llega a nivel 25. Planea gastarlo en Well Rested o en Thrill of Adventure. Talented solo compensa en alters.",
+  "Las zonas de inicio estarán a reventar. Los enemigos son del primero que los golpea. Agrúpate con gente que hace la misma misión de matar, porque al unirte a un grupo pasas a la capa del líder. Usa el Group Finder para buscar grupo para misiones. Si una zona de inicio está colapsada, plantéate empezar con otra raza (p. ej. un enano en Dun Morogh en vez de Elwynn).",
+  "Aprende Cocina pronto: la necesitas para montar hogueras (el campamento se desbloquea hacia el nivel 5), y Well Fed da +5% de experiencia por muertes. Aprende también Primeros auxilios: ahora hace pociones de sanación y curas además de vendas.",
+  "Coge una profesión de recolección a nivel 1 (Minería/Herboristería/Desuello). El oro para la montura de 100 de oro a nivel 40 es el principal cuello de botella al principio. El mineral reaparece más rápido en zonas con mucha gente.",
+  "Desde nivel 10, entrega las Waylaid Crates llenas a Marcy Baker en Three Corners (Redridge) para conseguir Merchant's Favor. La misión Shipping Label de la primera caja da +50 de Favor y 2.000 de reputación. Las cajas de hierbas son las más baratas.",
+  "A nivel 14, haz la cadena del Cozy Sleeping Bag (empieza en el Nailed Plank, Alexston Farmstead, Westfall 37,50). Son +3% de experiencia durante unas 2 h, se mantiene al morir, y el saco sirve además como zona de descanso portátil.",
+  "Recoge los libros de la biblioteca por el camino (Tower of Azora en Elwynn, Moonbrook en Westfall, Thelsamar en Loch Modan, Mathystra en Darkshore) y entrégalos a Garon Wendell (Barrio de los Magos de Stormwind) para conseguir collar y anillo a los 10 y 20 libros.",
+  "Haz cada mazmorra una vez con todas sus misiones (cógelas antes). La experiencia por muertes sube un 20%, pero la experiencia extra de las misiones se redujo a la mitad, así que repetir mazmorras en bucle ya no es lo más eficiente. Agrúpate con gente de tu nivel, porque ahora la experiencia depende de tu propio nivel.",
+  "La experiencia de descanso solo duplica la experiencia por muertes. Desconéctate en posadas o capitales (o en el saco de dormir) cada vez que termines.",
+  "Ahorra oro: a nivel 40, la equitación de aprendiz más la montura cuestan 100 de oro (90 de oro con Honorable). Sáltate los rangos de instructor que aportan poco. Paladines y brujos consiguen montura gratis por misión. La doble especialización cuesta 10 de oro a nivel 40, y la equitación épica a nivel 60 cuesta 1.000 + 200 de oro.",
+  "Bolsas: las fuentes de Forever no dicen nada concreto sobre bolsas. Vale el consejo general de Classic: compra o fabrica pronto bolsas de 6 casillas (bolsas de lino o de lana de sastres en la casa de subastas) y apunta a 10-12 casillas para el nivel 20. Merchant's Favor no incluye bolsas.",
+  "Niveles medios de la Alianza: Wetlands tiene más de 25 misiones nuevas y la mazmorra Excavation Site. Para el 35-45, la nueva zona Riverglades (más de 150 misiones, ruta de vuelo de la Alianza en Farholde Keep) se alcanza a pie desde Redridge, así que no dependes del barco de Tanaris.",
+  "Las misiones de centauros del 'Valley of Bones' en Desolace ahora piden nivel 35. No vayas allí a nivel 30.",
+  "Auto Shot y las varitas ahora necesitan 0,5 s quieto. Tenlo en cuenta al kitear (atacar mientras te alejas) o al usar varita.",
+  "Usa el Cooldown Manager del juego en vez de un addon de tiempos de reutilización. Addons con datos propios de Forever: Forever Guide (CurseForge, /fguide) y los addons de ForeverChanges y ForeverHispano.",
+  "Rutas de vuelo: consigue cada punto de vuelo por el que pases. Las rutas largas necesitan también las paradas intermedias. En las ciudades, pregunta a un guardia cómo llegar.",
+  "Activa los beneficios de campamento que complementen a tu clase (p. ej. Lodestone, poder de ataque, para cuerpo a cuerpo) solo cuando ningún beneficio de clase cubra esa estadística, porque no se acumulan."
+ ],
+ "community_sites": [
+  {
+   "name": "ForeverChanges",
+   "url": "https://foreverchanges.pro/",
+   "content": "Base de datos hecha por fans que sigue la última versión de la beta (1.60.1.70532, 22 de oct). Cambios respecto a Classic (/changes), calculadora de talentos y libro de hechizos, planificador de ventajas de Legacy (/legacy-perks: 65 desafíos, tope de 16 puntos, costes de reinicio de la beta), profesiones con número de recetas y objetos de campamento (/professions), guía de Merchant's Favor (/merchants-favor), mazmorras y sus misiones, misiones, raros, libros de la biblioteca, mapa del mundo, mejor equipo (BiS) a nivel 30 por especialización (/bis), guía de nivel 30 con ruta de la Alianza del 20 al 30 (/level-30), Cozy Sleeping Bag, calculadora de rangos de hechizo, mascotas de cazador, notas de parche, un addon y versiones en FR/DE/ZH/RU.",
+   "reliability": "Buena. Datos extraídos del cliente y contrastados con las notas de Blizzard. El contenido llega hasta el nivel 30 de la beta."
+  },
+  {
+   "name": "ForeverHispano",
+   "url": "https://foreverhispano.com/",
+   "content": "Portal en español. Guía interactiva de subida 1-60 con listas de pasos por zona (/guia-leveo-1-60/; 1-30 validado en la beta, 30-60 provisional), atlas de zonas con los rangos de nivel de Forever (/zonas/), árboles de Legacy con nombres de ventajas en español (/legado/), calculadora de talentos, planificadores de personaje y profesiones, mazmorras y bandas, buscador de objetos, BiS (próximamente), guía de addons, addon propio (/aventura-addon/), Blue Tracker, noticias, buscador de hermandades y grupos, Discord (discord.gg/qkW5Y8yzk6) y una cuenta atrás en hora de España (5 de nov a las 00:00).",
+   "reliability": "Buena para nombres en español y rutas. La ruta 30-60 se basa en Classic."
+  },
+  {
+   "name": "Talents Forever",
+   "url": "https://talentsforever.com",
+   "content": "Calculadora de talentos y planificador de builds para las 9 clases, con datos del cliente de la beta 1.60.1.70425. Marca los talentos nuevos, cambiados y movidos respecto a Classic, muestra el orden de subida por nivel, builds guardadas y para compartir, raciales y las 21 ventajas de Legacy (16 puntos), seguimiento de parches y exportaciones JSON por clase. Reglas: 1 punto por nivel desde el 10, 51 en total, una fila cada 5 puntos.",
+   "reliability": "Buena, datos del cliente"
+  },
+  {
+   "name": "Warcraft Tavern (Forever)",
+   "url": "https://www.warcrafttavern.com/forever/",
+   "content": "Guías de subida para las 9 clases, guía de experiencia y experiencia de descanso, lista de mazmorras, resumen de Legacy, guías de todas las profesiones, campamento y objetos de campamento, Cozy Sleeping Bag, libros de la biblioteca, guía paso a paso de Zephras Isle, ubicación de instructores de clase y de armas, y copias de las notas de desarrollo."
+  },
+  {
+   "name": "Icy Veins (WoW Forever)",
+   "url": "https://www.icy-veins.com/wow-forever/",
+   "content": "Guía del sistema Legacy con requisitos de ventajas, guía de razas, calculadora de talentos y noticias sobre las notas de desarrollo. Muchas páginas no se pudieron cargar desde este entorno."
+  },
+  {
+   "name": "warcraft.wiki.gg",
+   "url": "https://warcraft.wiki.gg/wiki/Patch_1.60.1",
+   "content": "El resumen más completo: tabla de mazmorras con niveles de Forever, raciales, hoja de ruta, páginas de zonas (Riverglades, Zephras Isle, City of Dalaran), comparativa de mapas de Forever, y páginas de Legacy y Merchant's Favor."
+  },
+  {
+   "name": "Blizzard forums - dev notes (Kaivax)",
+   "url": "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes/2360696",
+   "content": "Notas oficiales de desarrollo de la beta (24 de sep, 1 de oct, 8 de oct y 15 de oct). La fuente principal para los cambios de experiencia, misiones, Desolace/Tirisfal y raciales."
+  },
+  {
+   "name": "Wowhead Forever",
+   "url": "https://www.wowhead.com/forever",
+   "content": "Base de datos y blue tracker (seguimiento de mensajes oficiales). La carga se bloqueó en esta sesión (aviso de permiso sin responder), así que no se revisó."
+  },
+  {
+   "name": "Forever Guide addon (CurseForge)",
+   "url": "https://www.curseforge.com/wow/addons/forever-guide",
+   "content": "En el juego con /fguide: misiones y cadenas de mazmorra, buscador de botín con 22.000 objetos, ~800 misiones de clase, recomendaciones de equipo, 404 raros, cambio de capa, recetas con beneficio en la casa de subastas y libros de la biblioteca. Versión del juego 1.60.1."
+  }
+ ],
+ "open_questions": [
+  "La versión exacta y las notas del parche de lanzamiento. A 25 de oct no se habían publicado notas de desarrollo posteriores al 15 de oct ni notas de lanzamiento.",
+  "El ajuste final de experiencia de mazmorras y misiones en el lanzamiento. Blizzard dijo que los números no eran definitivos.",
+  "Si los puntos de Legacy de la beta se borran oficialmente. Se da a entender, pero no se ha dicho de forma explícita.",
+  "El coste exacto por rango de ventaja de Legacy (se supone 1 punto) y el precio de reinicio de Legacy en el juego final",
+  "La curva de precios de reinicio de talentos en el juego final (1 de oro > 5 de oro > ... máximo de 50 de oro, bajando de nuevo a 1 de oro) no está confirmada oficialmente",
+  "Rangos de nivel y flujo de misiones del 31 al 60, incluidas Riverglades, Shen'dralas (rango de nivel desconocido: ¿45-53? ¿30-50?), los requisitos de entrada a Mount Hyjal y las misiones nuevas. Nada de esto se probó en la beta.",
+  "Rangos de nivel finales de varias mazmorras (Excavation Site 24-29 o 26-31; Uldaman 44-50 o 36-45; los rangos de las mazmorras de Classic no coinciden entre la wiki y Warcraft Tavern)",
+  "Recompensas de las cajas de Merchant's Favor de nivel Experto y Artesano, y si hay límites semanales",
+  "Si llegarán más cambios de raciales en el lanzamiento (Blizzard dijo que seguiría revisándolos)",
+  "Límites de las capas y cómo se gestionarán las colas la noche del lanzamiento",
+  "El vendedor 'Pawani' y un hechizo general 'Revive': no aparecen en ninguna fuente",
+  "Fuentes de bolsas propias de Forever (no hay nada documentado)",
+  "Si el pase gratuito para amigos del 4 al 11 de nov es real (solo lo menciona Mobalytics)"
+ ],
+ "blocked_or_failed_urls": [
+  "https://www.wowhead.com/forever (permission prompt not answered)",
+  "Several icy-veins.com pages returned client_error (dungeon XP news, healing potions news, zones-and-maps, realms, 'Your Legacy Is the Journey')",
+  "https://mobalytics.gg/wow-forever/guides/zone-map-level-ranges (client_error)",
+  "https://talentsforever.com/patch-notes (client_error)"
+ ]
 }

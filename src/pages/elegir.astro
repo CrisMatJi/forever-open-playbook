@@ -7,7 +7,7 @@ import { CLASSES, NAME, SLUG, RACE_ICON } from "../lib/classes.js";
 const CRIT = ["Velocidad de leveo", "Seguridad en solitario", "Encontrar grupo", "Duelo 1v1", "Versatilidad", "Facilidad para ti"];
 const OPTS = [
   {
-    id: "druid", race: "Night Elf", raceEs: "Elfo de la noche", alt: "Skyborne si tienes el pack Heroic o superior",
+    id: "druid", race: "Night Elf", raceEs: "Elfo de la noche", alt: "Tras el ajuste de raciales del lanzamiento, el Skyborne (pack Heroic o superior) apenas aporta un 2% de celeridad más",
     scores: [4, 4, 5, 4, 5, 3],
     tag: "La más completa",
     pros: ["Puede tanquear, sanar o hacer daño: siempre encuentras grupo y cambias de papel con una reespecialización.", "Feral sube rápido y con muy poco tiempo muerto: oso al 10, gato al 20 y Forma de viaje.", "La que más se mueve del juego: escapar, perseguir y viajar es facilísimo.", "Elfo de la noche: Fusión de las sombras y ráfaga de crítico con Luz de Elune para PvP."],
@@ -17,14 +17,14 @@ const OPTS = [
     id: "shaman", race: "Dwarf", raceEs: "Enano", alt: "Es la única raza de Alianza que puede ser Chamán",
     scores: [4, 4, 5, 4, 4, 5],
     tag: "La que ya dominas",
-    pros: ["Ya conoces la clase de la beta: tótems, choques, imbuiciones y Stormstrike.", "En la Alianza es nueva y solo la puede llevar el Enano: habrá pocos y te querrán en grupo como sanador.", "Mejora es muy seguro subiendo: Maelstrom Weapon te da Descargas de relámpagos instantáneas y gratis para rematar, y con Improved Ghost Wolf el lobo es instantáneo desde que lo aprendes al 20.", "Forma de piedra del Enano anula venenos y sangrados: muy buena contra Pícaros y Guerreros."],
+    pros: ["Ya conoces la clase de la beta: tótems, choques, imbuiciones y Stormstrike.", "En la Alianza es nueva y solo la puede llevar el Enano: habrá pocos y te querrán en grupo como sanador.", "Mejora es muy seguro subiendo: Maelstrom Weapon te da Descargas de relámpagos instantáneas y gratis para rematar, y con Improved Ghost Wolf el lobo es instantáneo desde que lo aprendes al 20.", "Enano: Forma de piedra anula venenos y sangrados (muy buena contra Pícaros y Guerreros) y, desde el lanzamiento, +1% de golpe con Artisan's Precision."],
     cons: ["Sin Bloodlust, Hex ni Earth Shield en Forever.", "Depende mucho del arma: si te quedas sin una buena de dos manos, se nota.", "Sin escapes fiables más allá del Lobo fantasmal."],
   },
   {
-    id: "warlock", race: "Human", raceEs: "Humano", alt: "Gnomo si prefieres Destrucción o kitear",
+    id: "warlock", race: "Human", raceEs: "Humano", alt: "El Gnomo queda a la par tras el ajuste de raciales, y es mejor para Destrucción o contra quien te frena",
     scores: [5, 5, 3, 5, 2, 3],
     tag: "La más fuerte en PvP",
-    pros: ["Subir de nivel es muy cómodo: el demonio tanquea, los DoTs matan y desde el 30 tanqueas tú con Drain Life.", "La mejor clase en duelo de las tres (fue S en nuestra tier list a 30): Miedo, Death Coil, Seducción y Curse of Tongues.", "Humano: Will to Survive rompe aturdimientos y +2% de crítico.", "Banes y Maldiciones van por separado: puedes tener una de cada en el rival."],
+    pros: ["Subir de nivel es muy cómodo: el demonio tanquea, los DoTs matan y desde el 30 tanqueas tú con Drain Life.", "La mejor clase en duelo de las tres (fue S en nuestra tier list a 30): Miedo, Death Coil, Seducción y Curse of Tongues.", "Humano: Will to Survive rompe aturdimientos (el crítico racial baja al +1% en el lanzamiento).", "Banes y Maldiciones van por separado: puedes tener una de cada en el rival."],
     cons: ["Solo hace daño: en mazmorras compites con muchos DPS y tardas más en encontrar grupo (aunque invocar y dar Piedras de salud ayuda).", "Gestión de Fragmentos de alma y muchos hechizos canalizados que te pueden cortar.", "Sin movilidad propia: sufre contra quien le pega encima."],
   },
 ];
@@ -56,7 +56,7 @@ const OPTS = [
     <h2>Si tuviera que elegir por ti</h2>
     <div class="split" style="margin-top:12px">
       <div>
-        <p class="goodline"><b>Quieres encontrar grupo siempre y hacer de todo → Druida Elfo de la noche.</b> Es la única que puede ser tanque, sanador o daño, y sube con muy poco tiempo muerto. El Skyborne es algo mejor en PvE, pero exige el pack Heroic o superior.</p>
+        <p class="goodline"><b>Quieres encontrar grupo siempre y hacer de todo → Druida Elfo de la noche.</b> Es la única que puede ser tanque, sanador o daño, y sube con muy poco tiempo muerto. Tras el ajuste de raciales del lanzamiento el Skyborne solo le saca un 2% de celeridad y exige el pack Heroic o superior: no compensa.</p>
         <p class="goodline" style="margin-top:10px"><b>Quieres ir a lo seguro con lo que ya sabes → Chamán Enano.</b> Te sirve todo lo que aprendiste con Brumas y en la Alianza vais a ser pocos, así que te buscarán como sanador.</p>
         <p class="goodline" style="margin-top:10px"><b>Quieres lo más fuerte en PvP y subir solo → Brujo Humano.</b> Es la mejor de las tres en duelo y la más cómoda en solitario; solo te costará algo más encontrar grupo de mazmorra.</p>
       </div>

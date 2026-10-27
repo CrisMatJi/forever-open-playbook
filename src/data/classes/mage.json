@@ -20,62 +20,552 @@
   "https://kami-labs.fr/en/wow-classic/wow-forever-classic-plus-4-novembre/"
  ],
  "talents": {
-  "trees": ["Arcano", "Fuego", "Escarcha"],
+  "trees": [
+   "Arcano",
+   "Fuego",
+   "Escarcha"
+  ],
   "list": [
-   {"tree": 0, "row": 1, "col": 1, "name": "Wand Specialization", "max": 2, "pre": null, "eff": "Wand damage +13-25%", "icon": "inv_wand_01"},
-   {"tree": 0, "row": 1, "col": 2, "name": "Arcane Focus", "max": 5, "pre": null, "eff": "+1% Arcane hit per rank", "icon": "spell_holy_devotion"},
-   {"tree": 0, "row": 1, "col": 3, "name": "Improved Channeling", "max": 5, "pre": null, "eff": "Avoid pushback on Arcane Missiles, Arcane Blast and Arcane Wrath", "icon": "spell_nature_starfall"},
-   {"tree": 0, "row": 1, "col": 4, "name": "Missile Barrage", "max": 2, "pre": null, "eff": "Arcane Blast (40%) and Fireball/Frostbolt/Frost Blast/Frostfire/Arcane Wrath (20%) can make next Arcane Missiles free and 50% faster", "icon": "ability_mage_missilebarrage"},
-   {"tree": 0, "row": 2, "col": 1, "name": "Arcane Subtlety", "max": 2, "pre": null, "eff": "Reduces target resistances and Arcane threat", "icon": "spell_holy_dispelmagic"},
-   {"tree": 0, "row": 2, "col": 2, "name": "Magic Absorption", "max": 2, "pre": null, "eff": "Resistances up, mana back on fully resisted spells", "icon": "spell_nature_astralrecalgroup"},
-   {"tree": 0, "row": 2, "col": 3, "name": "Arcane Concentration", "max": 5, "pre": null, "eff": "2% chance per rank for Clearcasting", "icon": "spell_shadow_manaburn"},
-   {"tree": 0, "row": 2, "col": 4, "name": "Arcane Resilience", "max": 2, "pre": null, "eff": "Armor based on Intellect", "icon": "spell_arcane_arcaneresilience"},
-   {"tree": 0, "row": 3, "col": 1, "name": "Arcane Geometry", "max": 2, "pre": null, "eff": "Arcane spell range +3/6 yd", "icon": "inv_ability_mage_radiantspark"},
-   {"tree": 0, "row": 3, "col": 2, "name": "Arcane Impact", "max": 3, "pre": null, "eff": "Arcane crit +2% per rank", "icon": "spell_nature_wispsplode"},
-   {"tree": 0, "row": 3, "col": 4, "name": "Arcane Blast", "max": 1, "pre": null, "eff": "1.5 s Arcane nuke; each cast gives 15% of Intellect as spell damage and +175% cost, up to 4 stacks for 15 s", "icon": "spell_arcane_blast"},
-   {"tree": 0, "row": 4, "col": 1, "name": "Arcane Shielding", "max": 2, "pre": null, "eff": "Mana Shield loses less mana, Mage Armor gives more resistance", "icon": "spell_shadow_detectlesserinvisibility"},
-   {"tree": 0, "row": 4, "col": 2, "name": "Improved Counterspell", "max": 2, "pre": null, "eff": "Counterspell also silences", "icon": "spell_frost_iceshock"},
-   {"tree": 0, "row": 4, "col": 3, "name": "Arcane Meditation", "max": 3, "pre": "Arcane Concentration", "eff": "Mana regen continues while casting", "icon": "spell_shadow_siphonmana"},
-   {"tree": 0, "row": 4, "col": 4, "name": "Arcane Wrath", "max": 1, "pre": "Arcane Blast", "eff": "3.5 s Arcane nuke, 6 s cooldown, scales with 5% of max mana", "icon": "ability_mage_netherwindpresence"},
-   {"tree": 0, "row": 5, "col": 2, "name": "Presence of Mind", "max": 1, "pre": null, "eff": "Next spell is instant", "icon": "spell_nature_enchantarmor"},
-   {"tree": 0, "row": 5, "col": 3, "name": "Arcane Mind", "max": 5, "pre": null, "eff": "Intellect up and Arcane crit damage bonus up", "icon": "spell_shadow_charm"},
-   {"tree": 0, "row": 6, "col": 3, "name": "Arcane Instability", "max": 3, "pre": null, "eff": "+1% spell damage and crit per rank", "icon": "spell_shadow_teleport"},
-   {"tree": 0, "row": 7, "col": 2, "name": "Arcane Power", "max": 1, "pre": "Presence of Mind", "eff": "More spell damage and mana cost for 15 s", "icon": "spell_nature_lightning"},
-   {"tree": 1, "row": 1, "col": 1, "name": "Improved Fire Blast", "max": 2, "pre": null, "eff": "Fire Blast cooldown down and range up (was Wake of Fire)", "icon": "spell_fire_lavaspawn"},
-   {"tree": 1, "row": 1, "col": 2, "name": "Incineration", "max": 3, "pre": null, "eff": "Fire Blast, Ice Lance, Arcane Blast and Scorch crit +2% per rank", "icon": "spell_fire_flameshock"},
-   {"tree": 1, "row": 1, "col": 3, "name": "Improved Fireball", "max": 5, "pre": null, "eff": "Fireball and Frostfire Bolt cast time -0.1 s per rank", "icon": "spell_fire_flamebolt"},
-   {"tree": 1, "row": 2, "col": 1, "name": "Ignite", "max": 5, "pre": null, "eff": "Fire crits burn for extra damage (8% per rank)", "icon": "spell_fire_incinerate"},
-   {"tree": 1, "row": 2, "col": 2, "name": "Flame Throwing", "max": 2, "pre": null, "eff": "Fire range +3 yd per rank", "icon": "spell_fire_flare"},
-   {"tree": 1, "row": 2, "col": 3, "name": "Impact", "max": 3, "pre": null, "eff": "Fire spells may stun for 2 s", "icon": "spell_fire_meteorstorm"},
-   {"tree": 1, "row": 3, "col": 1, "name": "Burning Soul", "max": 3, "pre": null, "eff": "Avoid pushback on Fire spells, less Fire threat", "icon": "spell_fire_fire"},
-   {"tree": 1, "row": 3, "col": 2, "name": "Improved Flamestrike", "max": 3, "pre": null, "eff": "Flamestrike crit +5% per rank", "icon": "spell_fire_selfdestruct"},
-   {"tree": 1, "row": 3, "col": 3, "name": "Pyroblast", "max": 1, "pre": null, "eff": "Big Fire projectile with a DoT", "icon": "spell_fire_fireball02"},
-   {"tree": 1, "row": 4, "col": 1, "name": "Improved Scorch", "max": 3, "pre": null, "eff": "Scorch may apply Fire vulnerability", "icon": "spell_fire_soulburn"},
-   {"tree": 1, "row": 4, "col": 2, "name": "Improved Fire Ward", "max": 2, "pre": null, "eff": "Fire Ward may reflect Fire spells", "icon": "spell_fire_firearmor"},
-   {"tree": 1, "row": 4, "col": 3, "name": "Heating Up", "max": 1, "pre": "Pyroblast", "eff": "Crits stack a buff that shortens next Pyroblast cast (was Hot Streak)", "icon": "spell_fire_firebolt"},
-   {"tree": 1, "row": 4, "col": 4, "name": "Master of Elements", "max": 3, "pre": null, "eff": "Fire and Frost crits refund mana", "icon": "spell_fire_masterofelements"},
-   {"tree": 1, "row": 5, "col": 2, "name": "Critical Mass", "max": 5, "pre": null, "eff": "Fire crit +2% per rank (10% total)", "icon": "spell_nature_wispheal"},
-   {"tree": 1, "row": 5, "col": 3, "name": "Blast Wave", "max": 1, "pre": null, "eff": "Instant area damage and slow", "icon": "spell_holy_excorcism_02"},
-   {"tree": 1, "row": 6, "col": 3, "name": "Fire Power", "max": 3, "pre": null, "eff": "Fire damage +1/2/3% per Fire effect on target, max 12%", "icon": "spell_fire_immolation"},
-   {"tree": 1, "row": 7, "col": 2, "name": "Combustion", "max": 1, "pre": "Critical Mass", "eff": "Stacking Fire crit until 3 crits", "icon": "spell_fire_sealoffire"},
-   {"tree": 2, "row": 1, "col": 1, "name": "Frost Warding", "max": 2, "pre": null, "eff": "Frost/Ice Armor, Frost Ward and Ice Barrier stronger", "icon": "spell_frost_frostward"},
-   {"tree": 2, "row": 1, "col": 2, "name": "Improved Frostbolt", "max": 5, "pre": null, "eff": "Frostbolt and Frost Blast -0.1 s cast per rank", "icon": "spell_frost_frostbolt02"},
-   {"tree": 2, "row": 1, "col": 3, "name": "Elemental Precision", "max": 3, "pre": null, "eff": "Frost and Fire hit +2% per rank (6% total)", "icon": "spell_ice_magicdamage"},
-   {"tree": 2, "row": 2, "col": 1, "name": "Ice Shards", "max": 5, "pre": null, "eff": "Frost crit damage bonus +20% per rank (+100%)", "icon": "spell_frost_iceshard"},
-   {"tree": 2, "row": 2, "col": 2, "name": "Frostbite", "max": 3, "pre": null, "eff": "Chill effects have 5% per rank chance to freeze for 5 s", "icon": "spell_frost_frostarmor"},
-   {"tree": 2, "row": 2, "col": 3, "name": "Improved Frost Nova", "max": 2, "pre": null, "eff": "Frost Nova cooldown -2 s per rank", "icon": "spell_frost_freezingbreath"},
-   {"tree": 2, "row": 2, "col": 4, "name": "Permafrost", "max": 3, "pre": null, "eff": "Chill lasts longer and slows more", "icon": "spell_frost_wisp"},
-   {"tree": 2, "row": 3, "col": 1, "name": "Frost Channeling", "max": 3, "pre": null, "eff": "Frost spells -5% mana and less threat per rank", "icon": "spell_frost_stun"},
-   {"tree": 2, "row": 3, "col": 2, "name": "Improved Blizzard", "max": 3, "pre": null, "eff": "Blizzard chills", "icon": "spell_frost_icestorm"},
-   {"tree": 2, "row": 3, "col": 3, "name": "Ice Lance", "max": 1, "pre": null, "eff": "Instant Frost damage, +200% against frozen targets", "icon": "spell_frost_frostblast"},
-   {"tree": 2, "row": 4, "col": 1, "name": "Arctic Reach", "max": 2, "pre": null, "eff": "Range/radius of several Frost spells up", "icon": "spell_shadow_darkritual"},
-   {"tree": 2, "row": 4, "col": 2, "name": "Ice Block", "max": 1, "pre": null, "eff": "Immune to everything for 10 s, cannot act", "icon": "spell_frost_frost"},
-   {"tree": 2, "row": 4, "col": 4, "name": "Shatter", "max": 3, "pre": null, "eff": "Crit chance against frozen targets (+50% at 3/3)", "icon": "spell_frost_frostshock"},
-   {"tree": 2, "row": 5, "col": 1, "name": "Improved Cone of Cold", "max": 3, "pre": null, "eff": "Cone of Cold damage up", "icon": "spell_frost_glacier"},
-   {"tree": 2, "row": 5, "col": 2, "name": "Cold Snap", "max": 1, "pre": null, "eff": "Resets your other Frost cooldowns", "icon": "spell_frost_wizardmark"},
-   {"tree": 2, "row": 5, "col": 3, "name": "Fingers of Frost", "max": 2, "pre": "Ice Lance", "eff": "Chill effects: 15% chance that next 2 spells act as if target were frozen", "icon": "ability_mage_wintersgrasp"},
-   {"tree": 2, "row": 6, "col": 3, "name": "Winter's Chill", "max": 5, "pre": null, "eff": "Frost spells stack a debuff: next Cone of Cold +5% damage and +7% spell damage per stack (5 stacks)", "icon": "spell_frost_chillingblast"},
-   {"tree": 2, "row": 7, "col": 2, "name": "Ice Barrier", "max": 1, "pre": "Cold Snap", "eff": "Absorb shield that also boosts Frost damage", "icon": "spell_ice_lament"}
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 1,
+    "name": "Wand Specialization",
+    "max": 2,
+    "pre": null,
+    "eff": "Wand damage +13-25%",
+    "icon": "inv_wand_01"
+   },
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 2,
+    "name": "Arcane Focus",
+    "max": 5,
+    "pre": null,
+    "eff": "+1% Arcane hit per rank",
+    "icon": "spell_holy_devotion"
+   },
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 3,
+    "name": "Improved Channeling",
+    "max": 5,
+    "pre": null,
+    "eff": "Avoid pushback on Arcane Missiles, Arcane Blast and Arcane Wrath",
+    "icon": "spell_nature_starfall"
+   },
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 4,
+    "name": "Missile Barrage",
+    "max": 2,
+    "pre": null,
+    "eff": "Arcane Blast (40%) and Fireball/Frostbolt/Frost Blast/Frostfire/Arcane Wrath (20%) can make next Arcane Missiles free and 50% faster",
+    "icon": "ability_mage_missilebarrage"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 1,
+    "name": "Arcane Subtlety",
+    "max": 2,
+    "pre": null,
+    "eff": "Reduces target resistances and Arcane threat",
+    "icon": "spell_holy_dispelmagic"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 2,
+    "name": "Magic Absorption",
+    "max": 2,
+    "pre": null,
+    "eff": "Resistances up, mana back on fully resisted spells",
+    "icon": "spell_nature_astralrecalgroup"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 3,
+    "name": "Arcane Concentration",
+    "max": 5,
+    "pre": null,
+    "eff": "2% chance per rank for Clearcasting",
+    "icon": "spell_shadow_manaburn"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 4,
+    "name": "Arcane Resilience",
+    "max": 2,
+    "pre": null,
+    "eff": "Armor based on Intellect",
+    "icon": "spell_arcane_arcaneresilience"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 1,
+    "name": "Arcane Geometry",
+    "max": 2,
+    "pre": null,
+    "eff": "Arcane spell range +3/6 yd",
+    "icon": "inv_ability_mage_radiantspark"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 2,
+    "name": "Arcane Impact",
+    "max": 3,
+    "pre": null,
+    "eff": "Arcane crit +2% per rank",
+    "icon": "spell_nature_wispsplode"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 4,
+    "name": "Arcane Blast",
+    "max": 1,
+    "pre": null,
+    "eff": "1.5 s Arcane nuke; each cast gives 15% of Intellect as spell damage and +175% cost, up to 4 stacks for 15 s",
+    "icon": "spell_arcane_blast"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 1,
+    "name": "Arcane Shielding",
+    "max": 2,
+    "pre": null,
+    "eff": "Mana Shield loses less mana, Mage Armor gives more resistance",
+    "icon": "spell_shadow_detectlesserinvisibility"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 2,
+    "name": "Improved Counterspell",
+    "max": 2,
+    "pre": null,
+    "eff": "Counterspell also silences",
+    "icon": "spell_frost_iceshock"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 3,
+    "name": "Arcane Meditation",
+    "max": 3,
+    "pre": "Arcane Concentration",
+    "eff": "Mana regen continues while casting",
+    "icon": "spell_shadow_siphonmana"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 4,
+    "name": "Arcane Wrath",
+    "max": 1,
+    "pre": "Arcane Blast",
+    "eff": "3.5 s Arcane nuke, 6 s cooldown, scales with 5% of max mana",
+    "icon": "ability_mage_netherwindpresence"
+   },
+   {
+    "tree": 0,
+    "row": 5,
+    "col": 2,
+    "name": "Presence of Mind",
+    "max": 1,
+    "pre": null,
+    "eff": "Next spell is instant",
+    "icon": "spell_nature_enchantarmor"
+   },
+   {
+    "tree": 0,
+    "row": 5,
+    "col": 3,
+    "name": "Arcane Mind",
+    "max": 5,
+    "pre": null,
+    "eff": "Intellect up and Arcane crit damage bonus up",
+    "icon": "spell_shadow_charm"
+   },
+   {
+    "tree": 0,
+    "row": 6,
+    "col": 3,
+    "name": "Arcane Instability",
+    "max": 3,
+    "pre": null,
+    "eff": "+1% spell damage and crit per rank",
+    "icon": "spell_shadow_teleport"
+   },
+   {
+    "tree": 0,
+    "row": 7,
+    "col": 2,
+    "name": "Arcane Power",
+    "max": 1,
+    "pre": "Presence of Mind",
+    "eff": "More spell damage and mana cost for 15 s",
+    "icon": "spell_nature_lightning"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 1,
+    "name": "Improved Fire Blast",
+    "max": 2,
+    "pre": null,
+    "eff": "Fire Blast cooldown down and range up (was Wake of Fire)",
+    "icon": "spell_fire_lavaspawn"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 2,
+    "name": "Incineration",
+    "max": 3,
+    "pre": null,
+    "eff": "Fire Blast, Ice Lance, Arcane Blast and Scorch crit +2% per rank",
+    "icon": "spell_fire_flameshock"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 3,
+    "name": "Improved Fireball",
+    "max": 5,
+    "pre": null,
+    "eff": "Fireball and Frostfire Bolt cast time -0.1 s per rank",
+    "icon": "spell_fire_flamebolt"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 1,
+    "name": "Ignite",
+    "max": 5,
+    "pre": null,
+    "eff": "Fire crits burn for extra damage (8% per rank)",
+    "icon": "spell_fire_incinerate"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 2,
+    "name": "Flame Throwing",
+    "max": 2,
+    "pre": null,
+    "eff": "Fire range +3 yd per rank",
+    "icon": "spell_fire_flare"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 3,
+    "name": "Impact",
+    "max": 3,
+    "pre": null,
+    "eff": "Fire spells may stun for 2 s",
+    "icon": "spell_fire_meteorstorm"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 1,
+    "name": "Burning Soul",
+    "max": 3,
+    "pre": null,
+    "eff": "Avoid pushback on Fire spells, less Fire threat",
+    "icon": "spell_fire_fire"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 2,
+    "name": "Improved Flamestrike",
+    "max": 3,
+    "pre": null,
+    "eff": "Flamestrike crit +5% per rank",
+    "icon": "spell_fire_selfdestruct"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 3,
+    "name": "Pyroblast",
+    "max": 1,
+    "pre": null,
+    "eff": "Big Fire projectile with a DoT",
+    "icon": "spell_fire_fireball02"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 1,
+    "name": "Improved Scorch",
+    "max": 3,
+    "pre": null,
+    "eff": "Scorch may apply Fire vulnerability",
+    "icon": "spell_fire_soulburn"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 2,
+    "name": "Improved Fire Ward",
+    "max": 2,
+    "pre": null,
+    "eff": "Fire Ward may reflect Fire spells",
+    "icon": "spell_fire_firearmor"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 3,
+    "name": "Heating Up",
+    "max": 1,
+    "pre": "Pyroblast",
+    "eff": "Crits stack a buff that shortens next Pyroblast cast (was Hot Streak)",
+    "icon": "spell_fire_firebolt"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 4,
+    "name": "Master of Elements",
+    "max": 3,
+    "pre": null,
+    "eff": "Fire and Frost crits refund mana",
+    "icon": "spell_fire_masterofelements"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 2,
+    "name": "Critical Mass",
+    "max": 5,
+    "pre": null,
+    "eff": "Fire crit +2% per rank (10% total)",
+    "icon": "spell_nature_wispheal"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 3,
+    "name": "Blast Wave",
+    "max": 1,
+    "pre": null,
+    "eff": "Instant area damage and slow",
+    "icon": "spell_holy_excorcism_02"
+   },
+   {
+    "tree": 1,
+    "row": 6,
+    "col": 3,
+    "name": "Fire Power",
+    "max": 3,
+    "pre": null,
+    "eff": "Fire damage +1/2/3% per Fire effect on target, max 12%",
+    "icon": "spell_fire_immolation"
+   },
+   {
+    "tree": 1,
+    "row": 7,
+    "col": 2,
+    "name": "Combustion",
+    "max": 1,
+    "pre": "Critical Mass",
+    "eff": "Stacking Fire crit until 3 crits",
+    "icon": "spell_fire_sealoffire"
+   },
+   {
+    "tree": 2,
+    "row": 1,
+    "col": 1,
+    "name": "Frost Warding",
+    "max": 2,
+    "pre": null,
+    "eff": "Frost/Ice Armor, Frost Ward and Ice Barrier stronger",
+    "icon": "spell_frost_frostward"
+   },
+   {
+    "tree": 2,
+    "row": 1,
+    "col": 2,
+    "name": "Improved Frostbolt",
+    "max": 5,
+    "pre": null,
+    "eff": "Frostbolt and Frost Blast -0.1 s cast per rank",
+    "icon": "spell_frost_frostbolt02"
+   },
+   {
+    "tree": 2,
+    "row": 1,
+    "col": 3,
+    "name": "Elemental Precision",
+    "max": 3,
+    "pre": null,
+    "eff": "Frost and Fire hit +2% per rank (6% total)",
+    "icon": "spell_ice_magicdamage"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 1,
+    "name": "Ice Shards",
+    "max": 5,
+    "pre": null,
+    "eff": "Frost crit damage bonus +20% per rank (+100%)",
+    "icon": "spell_frost_iceshard"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 2,
+    "name": "Frostbite",
+    "max": 3,
+    "pre": null,
+    "eff": "Chill effects have 5% per rank chance to freeze for 5 s",
+    "icon": "spell_frost_frostarmor"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 3,
+    "name": "Improved Frost Nova",
+    "max": 2,
+    "pre": null,
+    "eff": "Frost Nova cooldown -2 s per rank",
+    "icon": "spell_frost_freezingbreath"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 4,
+    "name": "Permafrost",
+    "max": 3,
+    "pre": null,
+    "eff": "Chill lasts longer and slows more",
+    "icon": "spell_frost_wisp"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 1,
+    "name": "Frost Channeling",
+    "max": 3,
+    "pre": null,
+    "eff": "Frost spells -5% mana and less threat per rank",
+    "icon": "spell_frost_stun"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 2,
+    "name": "Improved Blizzard",
+    "max": 3,
+    "pre": null,
+    "eff": "Blizzard chills",
+    "icon": "spell_frost_icestorm"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 3,
+    "name": "Ice Lance",
+    "max": 1,
+    "pre": null,
+    "eff": "Instant Frost damage, +200% against frozen targets",
+    "icon": "spell_frost_frostblast"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 1,
+    "name": "Arctic Reach",
+    "max": 2,
+    "pre": null,
+    "eff": "Range/radius of several Frost spells up",
+    "icon": "spell_shadow_darkritual"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 2,
+    "name": "Ice Block",
+    "max": 1,
+    "pre": null,
+    "eff": "Immune to everything for 10 s, cannot act",
+    "icon": "spell_frost_frost"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 4,
+    "name": "Shatter",
+    "max": 3,
+    "pre": null,
+    "eff": "Crit chance against frozen targets (+50% at 3/3)",
+    "icon": "spell_frost_frostshock"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 1,
+    "name": "Improved Cone of Cold",
+    "max": 3,
+    "pre": null,
+    "eff": "Cone of Cold damage up",
+    "icon": "spell_frost_glacier"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 2,
+    "name": "Cold Snap",
+    "max": 1,
+    "pre": null,
+    "eff": "Resets your other Frost cooldowns",
+    "icon": "spell_frost_wizardmark"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 3,
+    "name": "Fingers of Frost",
+    "max": 2,
+    "pre": "Ice Lance",
+    "eff": "Chill effects: 15% chance that next 2 spells act as if target were frozen",
+    "icon": "ability_mage_wintersgrasp"
+   },
+   {
+    "tree": 2,
+    "row": 6,
+    "col": 3,
+    "name": "Winter's Chill",
+    "max": 5,
+    "pre": null,
+    "eff": "Frost spells stack a debuff: next Cone of Cold +5% damage and +7% spell damage per stack (5 stacks)",
+    "icon": "spell_frost_chillingblast"
+   },
+   {
+    "tree": 2,
+    "row": 7,
+    "col": 2,
+    "name": "Ice Barrier",
+    "max": 1,
+    "pre": "Cold Snap",
+    "eff": "Absorb shield that also boosts Frost damage",
+    "icon": "spell_ice_lament"
+   }
   ]
  },
  "talents_note": "Verificado con el export de talentsforever (build 70425 + hotfixes 20/22 oct). Cambios respecto a la 70170 local: eliminado Piercing Ice; añadido Arcane Wrath (Arcano fila 4 col 4, requiere Arcane Blast); Missile Barrage pasa a fila 1 col 4 y 2 rangos; Wake of Fire renombrado Improved Fire Blast; Hot Streak renombrado Heating Up; Critical Mass 3->5 rangos; Fire Power 5->3 rangos; Elemental Precision 5->3 rangos (2% por rango); Frostbite, Permafrost, Frost Channeling e Improved Blizzard recolocados; Winter's Chill rediseñado (potencia Cone of Cold); Ice Lance +200% (antes 300%). Iconos tomados del export (datos del cliente) cuando difieren del archivo local. Ojo: las guías de ForeverHispano (24/10) aún usan Hielo penetrante y Precisión elemental 5/5, datos anteriores a 70425.",
@@ -137,22 +627,86 @@
   "stats": "Poder con hechizos (también sube el daño de la varita) > Intelecto > Espíritu (regeneración) > Aguante. Golpe de hechizos cuando lo encuentres (Elemental Precision da +6%). El crítico vale mucho en Escarcha por Ice Shards y Shatter. Los humanos y Skyborne aportan crítico/celeridad por racial.",
   "weapons": "Bastones (staves) o daga/espada + sostener en mano izquierda; prioriza poder con hechizos. Varita desde el nivel 5: Lesser Magic Wand (Encantamiento/subasta) y Greater Magic Wand al 13; luego Gravestone Scepter (misión de Cavernas de Brazanegra). Sastrería y Encantamiento son las profesiones recomendadas (piezas BoP de tela con poder con hechizos desde el 10; Minor/Lesser Wizard Oil en el arma). Cocina para el buff de experiencia de la comida.",
   "abilities": [
-   [1, "Frost Armor (Armadura de Escarcha), Arcane Intellect (Intelecto Arcano), Fireball (Bola de Fuego)", "Mantén siempre armadura e intelecto."],
-   [4, "Frostbolt (Descarga de Escarcha), Conjure Water (Conjurar agua)", "Tu hechizo principal: ralentiza y kitea."],
-   [6, "Fire Blast (Explosión de Fuego), Conjure Food, Comprehend Scroll", "Comprehend Scroll lee pergaminos que dan buffs temporales de leveo (nuevo en Forever)."],
-   [8, "Polymorph (Polimorfia), Arcane Missiles (Misiles Arcanos)", "Oveja para separar pulls dobles."],
-   [10, "Frost Nova (Nova de Escarcha)", "Raíz para Ice Lance contra congelados y para huir."],
-   [14, "Arcane Explosion (Deflagración Arcana)", "AoE instantáneo cuerpo a cuerpo."],
-   [16, "Flamestrike (Fogonazo)", ""],
-   [20, "Ice Lance (Lanza de hielo, talento), Blizzard (Ventisca), Blink (Traslación), Evocation (Evocación), Mana Shield, Teleport: Stormwind/Ironforge", "Gran salto de daño con Ice Lance."],
-   [22, "Scorch (Agostar), Frost Ward", ""],
-   [24, "Frost Blast (nuevo en Forever), Counterspell (Contrahechizo)", "Frost Blast: hechizo de 1,5 s que daña y ralentiza un 40%; también se acelera con Improved Frostbolt."],
-   [26, "Cone of Cold (Cono de frío)", "Con Winter's Chill acumulado hace mucho daño en área."],
-   [28, "Conjure Mana Agate", "Gema de maná."],
-   [30, "Ice Armor, Fingers of Frost (talento), Teleport: Darnassus", ""],
-   [34, "Mage Armor", ""],
-   [40, "Ice Barrier (Barrera de hielo, talento), Frostfire Bolt (Descarga de Pirofrío, nueva), Teleport: Dalaran, portales, montura y doble especialización", "Doble especialización al 40."],
-   [56, "Arcane Brilliance", "Versión de grupo de Intelecto Arcano."]
+   [
+    1,
+    "Frost Armor (Armadura de Escarcha), Arcane Intellect (Intelecto Arcano), Fireball (Bola de Fuego)",
+    "Mantén siempre armadura e intelecto."
+   ],
+   [
+    4,
+    "Frostbolt (Descarga de Escarcha), Conjure Water (Conjurar agua)",
+    "Tu hechizo principal: ralentiza y kitea."
+   ],
+   [
+    6,
+    "Fire Blast (Explosión de Fuego), Conjure Food, Comprehend Scroll",
+    "Comprehend Scroll lee pergaminos que dan buffs temporales de leveo (nuevo en Forever)."
+   ],
+   [
+    8,
+    "Polymorph (Polimorfia), Arcane Missiles (Misiles Arcanos)",
+    "Oveja para separar pulls dobles."
+   ],
+   [
+    10,
+    "Frost Nova (Nova de Escarcha)",
+    "Raíz para Ice Lance contra congelados y para huir."
+   ],
+   [
+    14,
+    "Arcane Explosion (Deflagración Arcana)",
+    "AoE instantáneo cuerpo a cuerpo."
+   ],
+   [
+    16,
+    "Flamestrike (Fogonazo)",
+    ""
+   ],
+   [
+    20,
+    "Ice Lance (Lanza de hielo, talento), Blizzard (Ventisca), Blink (Traslación), Evocation (Evocación), Mana Shield, Teleport: Stormwind/Ironforge",
+    "Gran salto de daño con Ice Lance."
+   ],
+   [
+    22,
+    "Scorch (Agostar), Frost Ward",
+    ""
+   ],
+   [
+    24,
+    "Frost Blast (nuevo en Forever), Counterspell (Contrahechizo)",
+    "Frost Blast: hechizo de 1,5 s que daña y ralentiza un 40%; también se acelera con Improved Frostbolt."
+   ],
+   [
+    26,
+    "Cone of Cold (Cono de frío)",
+    "Con Winter's Chill acumulado hace mucho daño en área."
+   ],
+   [
+    28,
+    "Conjure Mana Agate",
+    "Gema de maná."
+   ],
+   [
+    30,
+    "Ice Armor, Fingers of Frost (talento), Teleport: Darnassus",
+    ""
+   ],
+   [
+    34,
+    "Mage Armor",
+    ""
+   ],
+   [
+    40,
+    "Ice Barrier (Barrera de hielo, talento), Frostfire Bolt (Descarga de Pirofrío, nueva), Teleport: Dalaran, portales, montura y doble especialización",
+    "Doble especialización al 40."
+   ],
+   [
+    56,
+    "Arcane Brilliance",
+    "Versión de grupo de Intelecto Arcano."
+   ]
   ],
   "rotation": [
    "Abre desde el máximo alcance con Descarga de Escarcha (Frostbolt).",
@@ -164,10 +718,30 @@
    "Emergencias: Traslación (Blink), Bloque de hielo (Ice Block), Polimorfia al segundo mob, Mordedura de frío (Cold Snap) para recuperar Nova/Bloque."
   ],
   "class_quests": [
-   [10, "Speak with Bink -> Mage-tastic Gizmonitor (gnomo) / Speak with Jennea -> Mirror Lake (humano) / Speak with Belann -> Boughs in the Wind (Skyborne, sin confirmar)", "Misión de clase de nivel 10 (recompensa sin confirmar)", "Forjaz (gnomo), Ventormenta (humano), zona de inicio Skyborne"],
-   [15, "Report to Jennea -> Investigate the Blue Recluse -> Gathering Materials -> Manaweave Robe", "Manaweave Robe (túnica de tela)", "Ventormenta (Jennea Cannon, Torre de los Magos)"],
-   [26, "High Sorcerer Andromath -> Ur's Treatise on Shadow Magic -> Pristine Spider Silk -> Astral Knot Garment", "Astral Knot Garment (túnica)", "Ventormenta (Alto hechicero Andromath)"],
-   [30, "Mage's Wand (cadena)", "Varita de clase (Icy Veins la llama Icefury Wand al 30+; en Classic la cadena era de nivel 38-40 en el Pantano Revolcafango) (sin confirmar)", "Pantano Revolcafango / requisitos en Monasterio Escarlata y Tierras Altas de Arathi (sin confirmar)"]
+   [
+    10,
+    "Speak with Bink -> Mage-tastic Gizmonitor (gnomo) / Speak with Jennea -> Mirror Lake (humano) / Speak with Belann -> Boughs in the Wind (Skyborne, sin confirmar)",
+    "Misión de clase de nivel 10 (recompensa sin confirmar)",
+    "Forjaz (gnomo), Ventormenta (humano), zona de inicio Skyborne"
+   ],
+   [
+    15,
+    "Report to Jennea -> Investigate the Blue Recluse -> Gathering Materials -> Manaweave Robe",
+    "Manaweave Robe (túnica de tela)",
+    "Ventormenta (Jennea Cannon, Torre de los Magos)"
+   ],
+   [
+    26,
+    "High Sorcerer Andromath -> Ur's Treatise on Shadow Magic -> Pristine Spider Silk -> Astral Knot Garment",
+    "Astral Knot Garment (túnica)",
+    "Ventormenta (Alto hechicero Andromath)"
+   ],
+   [
+    30,
+    "Mage's Wand (cadena)",
+    "Varita de clase (Icy Veins la llama Icefury Wand al 30+; en Classic la cadena era de nivel 38-40 en el Pantano Revolcafango) (sin confirmar)",
+    "Pantano Revolcafango / requisitos en Monasterio Escarlata y Tierras Altas de Arathi (sin confirmar)"
+   ]
   ],
   "tips": [
    "El tope de nivel al lanzamiento es 60 y será permanente; recibes 51 puntos (uno por nivel desde el 10). El Legado 'Talented' (en alters) da hasta 5 puntos extra y adelanta los talentos 5 niveles; las listas de aquí NO cuentan con Legado.",
@@ -180,24 +754,130 @@
   ]
  },
  "races": [
-  {"race": "Gnome", "verdict": "best", "racials": "Eureka! (8 s: +10% daño/sanación y -50% coste de hechizos, ahora sin cargas), Expansive Mind (+5% maná), Escape Artist (rompe raíces y ralentizaciones), Engineering Specialization", "why": "Mejor opción PvE y muy buena en PvP: Eureka! es una ventana de daño barata y Escape Artist salva contra guerreros, cazadores y otros magos. Mobalytics lo pone como primera opción Alianza."},
-  {"race": "Human", "verdict": "best", "racials": "Ruthless (+2% probabilidad de crítico con hechizos y ataques), Will to Survive (quita aturdimientos, tipo abalorio PvP), Perception (detecta sigilo 20 s), The Human Spirit (+5% espíritu)", "why": "Ideal para PvP: Will to Survive quita aturdimientos de pícaros y guerreros y Perception descubre pícaros. Ruthless da crítico, que en Escarcha/Fuego vale mucho."},
-  {"race": "Skyborne", "verdict": "good", "racials": "Wind Blessed (+3% celeridad), Read Ley Line (+100% regeneración de vida y maná 30 s, o 15 min cerca de una línea ley; se puede lanzar en movimiento), Walk on Air (planeo 10 s), Elemental Insight (+5% daño a elementales)", "why": "Raza nueva de la Alianza (Alto Orden, Kirin Tor). Gran comodidad al subir por la regeneración de maná y celeridad pasiva; menos herramientas PvP que humano o gnomo. Empieza en la Isla de Zephras (1-12/15)."}
+  {
+   "race": "Gnome",
+   "verdict": "best",
+   "racials": "Eureka! (8 s: +10% daño/sanación y -50% coste de hechizos, ahora sin cargas), Expansive Mind (+5% maná), Escape Artist (rompe raíces y ralentizaciones), Engineering Specialization",
+   "why": "Mejor opción PvE y muy buena en PvP: Eureka! es una ventana de daño barata y Escape Artist salva contra guerreros, cazadores y otros magos. Mobalytics lo pone como primera opción Alianza."
+  },
+  {
+   "race": "Human",
+   "verdict": "best",
+   "racials": "Ruthless (+1% de crítico; era +2% antes del ajuste de lanzamiento), Will to Survive (quita aturdimientos, tipo abalorio PvP), Perception (detecta sigilo 20 s), The Human Spirit (+10% espíritu)",
+   "why": "Ideal para PvP: Will to Survive quita aturdimientos de pícaros y guerreros y Perception descubre pícaros. Ruthless da crítico, que en Escarcha/Fuego vale mucho."
+  },
+  {
+   "race": "Skyborne",
+   "verdict": "good",
+   "racials": "Wind Blessed (+2% celeridad), Read Leyline (+50% de regeneración de vida y maná durante 15 s; junto a una línea ley te deja Attuned 1 h y entonces es +100%), Walk on Air (planeo 10 s), Elemental Insight (+5% daño a elementales)",
+   "why": "Raza nueva de la Alianza (Alto Orden, Kirin Tor). Gran comodidad al subir por la regeneración de maná y celeridad pasiva; menos herramientas PvP que humano o gnomo. Empieza en la Isla de Zephras (1-12/15)."
+  }
  ],
  "gear": [
-  {"levels": "5-13", "slot": "Varita", "name": "Lesser Magic Wand", "id": 11287, "source": "Encantamiento o subasta", "why": "Daño sin coste de maná desde muy pronto."},
-  {"levels": "13-20", "slot": "Varita", "name": "Greater Magic Wand", "id": 11288, "source": "Encantamiento o subasta", "why": "Mejora grande de la varita."},
-  {"levels": "10-20", "slot": "Cintura", "name": "Novice Arcanist's Sash", "id": null, "source": "Sastrería (BoP, nivel 10)", "why": "Pieza azul con poder con hechizos (nueva receta de Forever)."},
-  {"levels": "13-20", "slot": "Arma (vara/varita)", "name": "Golemheart Stave / Deepblaze", "id": null, "source": "Misiones Plunder y Old Ironforge Incursion, Hall of Thanes (Forjaz, 13-18)", "why": "Mazmorra nueva de la Alianza; buenas recompensas para lanzadores según Icy Veins."},
-  {"levels": "15-22", "slot": "Bastón", "name": "Emberstone Staff", "id": 5201, "source": "Capitán Verdepiel (Captain Greenskin), Las Minas de la Muerte", "why": "Bastón de lanzador temprano."},
-  {"levels": "17-20", "slot": "Hombros", "name": "Double-Stitched Woolen Shoulders", "id": null, "source": "Sastrería", "why": "Recomendado por Icy Veins."},
-  {"levels": "19-24", "slot": "Bastón", "name": "Coldspire Staff", "id": null, "source": "Rath'mael, Ruins of Lordaeron (15-20)", "why": "Gran salto de poder según Icy Veins."},
-  {"levels": "20-28", "slot": "Bastón", "name": "Fallen Dragon's Scepter", "id": null, "source": "Misión Stopping the Cycle (cadena élite de los Humedales)", "why": "Recompensa de misión de la Alianza."},
-  {"levels": "22-30", "slot": "Varita", "name": "Gravestone Scepter", "id": 7001, "source": "Misión Blackfathom Villainy, Cavernas de Brazanegra", "why": "Varita de referencia hasta los 30."},
-  {"levels": "24-30", "slot": "Bastón", "name": "Rod of the Sleepwalker", "id": null, "source": "Señor Crepuscular Kelris, Cavernas de Brazanegra", "why": "Recomendado por Icy Veins."},
-  {"levels": "28-33", "slot": "Torso / Manos", "name": "Violet Sorcerer's Robes / Ephemeral Grips", "id": 273044, "source": "City of Dalaran (mazmorra nueva, 28-33)", "why": "Piezas de tela de mago de nivel 30 (Ephemeral Grips id 273034)."},
-  {"levels": "29-38", "slot": "Bastón", "name": "Hydrocane", "id": 9452, "source": "Viscous Fallout, Gnomeregan", "why": "Bastón con respiración acuática y estadísticas de lanzador."},
-  {"levels": "33-45", "slot": "Varios", "name": "Objetos de Monasterio Escarlata (Biblioteca/Catedral)", "id": null, "source": "Monasterio Escarlata", "why": "Itemización nueva en Forever; listas de 30-60 aún sin publicar (sin confirmar)."}
+  {
+   "levels": "5-13",
+   "slot": "Varita",
+   "name": "Lesser Magic Wand",
+   "id": 11287,
+   "source": "Encantamiento o subasta",
+   "why": "Daño sin coste de maná desde muy pronto."
+  },
+  {
+   "levels": "13-20",
+   "slot": "Varita",
+   "name": "Greater Magic Wand",
+   "id": 11288,
+   "source": "Encantamiento o subasta",
+   "why": "Mejora grande de la varita."
+  },
+  {
+   "levels": "10-20",
+   "slot": "Cintura",
+   "name": "Novice Arcanist's Sash",
+   "id": null,
+   "source": "Sastrería (BoP, nivel 10)",
+   "why": "Pieza azul con poder con hechizos (nueva receta de Forever)."
+  },
+  {
+   "levels": "13-20",
+   "slot": "Arma (vara/varita)",
+   "name": "Golemheart Stave / Deepblaze",
+   "id": null,
+   "source": "Misiones Plunder y Old Ironforge Incursion, Hall of Thanes (Forjaz, 13-18)",
+   "why": "Mazmorra nueva de la Alianza; buenas recompensas para lanzadores según Icy Veins."
+  },
+  {
+   "levels": "15-22",
+   "slot": "Bastón",
+   "name": "Emberstone Staff",
+   "id": 5201,
+   "source": "Capitán Verdepiel (Captain Greenskin), Las Minas de la Muerte",
+   "why": "Bastón de lanzador temprano."
+  },
+  {
+   "levels": "17-20",
+   "slot": "Hombros",
+   "name": "Double-Stitched Woolen Shoulders",
+   "id": null,
+   "source": "Sastrería",
+   "why": "Recomendado por Icy Veins."
+  },
+  {
+   "levels": "19-24",
+   "slot": "Bastón",
+   "name": "Coldspire Staff",
+   "id": null,
+   "source": "Rath'mael, Ruins of Lordaeron (15-20)",
+   "why": "Gran salto de poder según Icy Veins."
+  },
+  {
+   "levels": "20-28",
+   "slot": "Bastón",
+   "name": "Fallen Dragon's Scepter",
+   "id": null,
+   "source": "Misión Stopping the Cycle (cadena élite de los Humedales)",
+   "why": "Recompensa de misión de la Alianza."
+  },
+  {
+   "levels": "22-30",
+   "slot": "Varita",
+   "name": "Gravestone Scepter",
+   "id": 7001,
+   "source": "Misión Blackfathom Villainy, Cavernas de Brazanegra",
+   "why": "Varita de referencia hasta los 30."
+  },
+  {
+   "levels": "24-30",
+   "slot": "Bastón",
+   "name": "Rod of the Sleepwalker",
+   "id": null,
+   "source": "Señor Crepuscular Kelris, Cavernas de Brazanegra",
+   "why": "Recomendado por Icy Veins."
+  },
+  {
+   "levels": "28-33",
+   "slot": "Torso / Manos",
+   "name": "Violet Sorcerer's Robes / Ephemeral Grips",
+   "id": 273044,
+   "source": "City of Dalaran (mazmorra nueva, 28-33)",
+   "why": "Piezas de tela de mago de nivel 30 (Ephemeral Grips id 273034)."
+  },
+  {
+   "levels": "29-38",
+   "slot": "Bastón",
+   "name": "Hydrocane",
+   "id": 9452,
+   "source": "Viscous Fallout, Gnomeregan",
+   "why": "Bastón con respiración acuática y estadísticas de lanzador."
+  },
+  {
+   "levels": "33-45",
+   "slot": "Varios",
+   "name": "Objetos de Monasterio Escarlata (Biblioteca/Catedral)",
+   "id": null,
+   "source": "Monasterio Escarlata",
+   "why": "Itemización nueva en Forever; listas de 30-60 aún sin publicar (sin confirmar)."
+  }
  ],
  "dungeons": [
   "Hall of Thanes (13-18, Forjaz, nueva): la primera mazmorra cercana para la Alianza; da varitas y bastones de misión.",
@@ -222,9 +902,25 @@
   "Alianza Skyborne puede ser mago."
  ],
  "pvp": {
-  "strengths": ["Control enorme: Nova de Escarcha, Cono de frío, Mordedura de Escarcha, Polimorfia, Contrahechizo", "Ráfaga de críticos con Lanza de hielo + Shatter + Fingers of Frost", "Kiteo: Traslación, Frost Blast (40% ralentización), Descarga de Escarcha", "Bloque de hielo + Mordedura de frío (Cold Snap) + Barrera de hielo para sobrevivir"],
-  "weaknesses": ["Tela y poca vida", "Muy dependiente de cooldowns; sin ellos cae rápido ante pícaros", "Contrahechizos y silencios cortan la Escarcha", "Purgas/disipaciones quitan Barrera de hielo"],
-  "duel_plan": ["Prepara Armadura de hielo/Mage Armor según el rival, Barrera de hielo antes de empezar.", "Abre con Descarga de Escarcha o Frost Blast desde lejos; si se acerca, Nova -> Lanza de hielo (con Shatter) o Descarga de Escarcha de crítico seguro.", "Guarda Traslación para salir de raíces/melé y Polimorfia para resetear y beber o recolocarte.", "Si te bajan del 30%: Bloque de hielo, Mordedura de frío para tener otra Nova y otra Barrera.", "Usa Eureka!/Ruthless en la ventana de congelación para el burst."],
+  "strengths": [
+   "Control enorme: Nova de Escarcha, Cono de frío, Mordedura de Escarcha, Polimorfia, Contrahechizo",
+   "Ráfaga de críticos con Lanza de hielo + Shatter + Fingers of Frost",
+   "Kiteo: Traslación, Frost Blast (40% ralentización), Descarga de Escarcha",
+   "Bloque de hielo + Mordedura de frío (Cold Snap) + Barrera de hielo para sobrevivir"
+  ],
+  "weaknesses": [
+   "Tela y poca vida",
+   "Muy dependiente de cooldowns; sin ellos cae rápido ante pícaros",
+   "Contrahechizos y silencios cortan la Escarcha",
+   "Purgas/disipaciones quitan Barrera de hielo"
+  ],
+  "duel_plan": [
+   "Prepara Armadura de hielo/Mage Armor según el rival, Barrera de hielo antes de empezar.",
+   "Abre con Descarga de Escarcha o Frost Blast desde lejos; si se acerca, Nova -> Lanza de hielo (con Shatter) o Descarga de Escarcha de crítico seguro.",
+   "Guarda Traslación para salir de raíces/melé y Polimorfia para resetear y beber o recolocarte.",
+   "Si te bajan del 30%: Bloque de hielo, Mordedura de frío para tener otra Nova y otra Barrera.",
+   "Usa Eureka!/Ruthless en la ventana de congelación para el burst."
+  ],
   "vs": {
    "warrior": "Favorable si mantienes distancia: Nova + Frost Blast + Descarga; cuidado con Interceptar/Carga y Hamstring. Will to Survive (humano) o Escape Artist (gnomo) clave. (provisional)",
    "rogue": "Difícil si te abre con cadena de aturdimientos: guarda Will to Survive/Escape Artist, Nova y Traslación; Perception humana ayuda. Barrera de hielo antes de que aparezca. (provisional)",

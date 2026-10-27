@@ -604,7 +604,7 @@
    ]
   },
   "stats": "Poder con hechizos / daño de Sombras > DPS de varita (hasta ~30-38) > Golpe (Suppression da 5%) > Intelecto > Espíritu (Life Tap escala con Espíritu en Forever) > Aguante (más vida = más maná vía Life Tap) > Crítico. La Celeridad apenas importa (DoTs y drenajes no se benefician, según Mobalytics).",
-  "weapons": "Varita siempre equipada (Lesser/Greater Magic Wand de Encantamiento, luego Gravestone Scepter). Bastón o espada a 1M + orbe con poder con hechizos; dagas y varitas por defecto, espadas a 1M y bastones en Ventormenta (Woo Ping). Nota: el racial humano de espadas ya no existe en 70425 (ahora es Ruthless, +2% crítico general), así que no hace falta entrenar espadas por el racial. Piedra de hechizo/fuego según rama (sin confirmar compatibilidad con aceites).",
+  "weapons": "Varita siempre equipada (Lesser/Greater Magic Wand de Encantamiento, luego Gravestone Scepter). Bastón o espada a 1M + orbe con poder con hechizos; dagas y varitas por defecto, espadas a 1M y bastones en Ventormenta (Woo Ping). Nota: el racial humano de espadas ya no existe en 70425 (ahora es Ruthless, +1% de crítico), así que no hace falta entrenar espadas por el racial. Piedra de hechizo/fuego según rama (sin confirmar compatibilidad con aceites).",
   "abilities": [
    [
     1,
@@ -781,14 +781,14 @@
   {
    "race": "Human (Humano)",
    "verdict": "best",
-   "racials": "Ruthless (+2% crítico con hechizos y ataques); Will to Survive (quita todos los aturdimientos, 3 min); The Human Spirit (+5% Espíritu → más Life Tap); Perception",
-   "why": "El +2% de crítico y +5% de Espíritu sirven en PvE, y Will to Survive (rompe aturdimientos) es de lo mejor en PvP contra pícaros y guerreros. Elección por defecto (sin confirmar con datos al 60)."
+   "racials": "Ruthless (+1% de crítico; era +2% antes del ajuste de lanzamiento); Will to Survive (quita todos los aturdimientos, 3 min); The Human Spirit (+10% Espíritu → más Life Tap); Perception",
+   "why": "Voluntad de sobrevivir (rompe aturdimientos) sigue siendo de lo mejor en PvP contra Pícaros y Guerreros. Tras el ajuste de lanzamiento su crítico baja al +1% y el Espíritu sube al +10%, que al Brujo le aporta poco."
   },
   {
    "race": "Gnome (Gnomo)",
-   "verdict": "good",
+   "verdict": "best",
    "racials": "Expansive Mind (+5% maná máximo); Eureka! (8 s: hechizos no periódicos -10% coste y +10% daño, 2 min; no afecta a Corrupción, Banes ni la quemadura de Inmolar, sí a Drains y Wrack); Escape Artist (rompe ralentizaciones/raíces + 3 s de inmunidad, 2 min); Engineering Specialization",
-   "why": "Mejor para Destrucción (Eureka! potencia Shadow Bolt/Conflagrate/Incinerate) y muy bueno en PvP contra kiteo y raíces. Algo peor que el humano para Aflicción pura."
+   "why": "Tras el ajuste de raciales queda a la par del Humano: Artista del escape contra raíces y ralentizaciones, Eureka! (+10% de daño 8 s) y +5% de maná máximo no cambian, mientras que el Humano baja su crítico al 1%. Mejor para Destrucción y para no dejar que te frenen."
   }
  ],
  "gear": [

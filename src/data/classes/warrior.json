@@ -23,60 +23,532 @@
   "https://warcraft.wiki.gg/wiki/Patch_1.60.1"
  ],
  "talents": {
-  "trees": ["Armas", "Furia", "Protección"],
+  "trees": [
+   "Armas",
+   "Furia",
+   "Protección"
+  ],
   "list": [
-   {"tree":0,"row":1,"col":1,"name":"Improved Heroic Strike","max":3,"pre":null,"eff":"Heroic Strike -1 Rage per rank (-3)","icon":"ability_rogue_ambush"},
-   {"tree":0,"row":1,"col":2,"name":"Deflection","max":5,"pre":null,"eff":"+1% parry per rank (+5%)","icon":"ability_parry"},
-   {"tree":0,"row":1,"col":3,"name":"Improved Rend","max":3,"pre":null,"eff":"Rend bleed damage increased (+35% at 3/3)","icon":"ability_gouge"},
-   {"tree":0,"row":2,"col":1,"name":"Improved Charge","max":2,"pre":null,"eff":"Charge +3 Rage per rank (+6)","icon":"ability_warrior_charge"},
-   {"tree":0,"row":2,"col":2,"name":"Improved Tactical Mastery","max":5,"pre":null,"eff":"Keep up to +3 extra Rage per rank on stance change (+15)","icon":"spell_nature_enchantarmor"},
-   {"tree":0,"row":2,"col":4,"name":"Improved Overpower","max":2,"pre":null,"eff":"Overpower crit +25% per rank (+50%)","icon":"inv_sword_05"},
-   {"tree":0,"row":3,"col":2,"name":"Anger Management","max":1,"pre":"Improved Tactical Mastery","eff":"1 Rage every 3 s in combat; -30% Rage decay out of combat","icon":"spell_holy_blessingofstamina"},
-   {"tree":0,"row":3,"col":3,"name":"Deep Wounds","max":3,"pre":"Improved Rend","eff":"Crits bleed for 20% of avg weapon damage per rank over 12 s (60%)","icon":"ability_backstab"},
-   {"tree":0,"row":4,"col":1,"name":"Spearing Strike","max":1,"pre":null,"eff":"15 Rage, Battle Stance: 40% weapon damage, +80% vs Giants, Dragonkin and mounted (dismounts)","icon":"inv_spear_01"},
-   {"tree":0,"row":4,"col":2,"name":"Two-Handed Weapon Specialization","max":3,"pre":null,"eff":"+1% two-hand damage per rank (+3%)","icon":"inv_axe_09"},
-   {"tree":0,"row":4,"col":3,"name":"Impale","max":2,"pre":"Deep Wounds","eff":"+10% ability crit damage bonus per rank (+20%)","icon":"ability_searingarrow"},
-   {"tree":0,"row":5,"col":1,"name":"Bloodthrill","max":5,"pre":null,"eff":"Main-hand hits on your Rend targets: 4% per rank (20%) to enable Overpower","icon":"inv_sword_01"},
-   {"tree":0,"row":5,"col":2,"name":"Sweeping Strikes","max":1,"pre":null,"eff":"30 Rage: next 5 melee attacks hit an extra nearby target","icon":"ability_rogue_slicedice"},
-   {"tree":0,"row":5,"col":3,"name":"Weaponmaster","max":5,"pre":null,"eff":"Axe/Polearm +5% crit; Mace/Staff ignore 15% armor; Sword 5% extra attack (at 5/5)","icon":"garrison_weaponupgrade"},
-   {"tree":0,"row":6,"col":1,"name":"Improved Slam","max":2,"pre":null,"eff":"Slam cast time and GCD -0.5 s; Slam no longer delays auto attacks","icon":"ability_warrior_decisivestrike"},
-   {"tree":0,"row":6,"col":3,"name":"Improved Hamstring","max":3,"pre":null,"eff":"Hamstring 5% chance per rank to root 5 s (15%)","icon":"ability_shockwave"},
-   {"tree":0,"row":7,"col":2,"name":"Mortal Strike","max":1,"pre":"Sweeping Strikes","eff":"30 Rage: weapon damage +85, -50% healing received","icon":"ability_warrior_savageblow"},
-   {"tree":1,"row":1,"col":2,"name":"Booming Voice","max":5,"pre":null,"eff":"Shouts +10% area and -5% Rage cost per rank","icon":"spell_nature_purge"},
-   {"tree":1,"row":1,"col":3,"name":"Cruelty","max":5,"pre":null,"eff":"+1% melee crit per rank (+5%)","icon":"ability_rogue_eviscerate"},
-   {"tree":1,"row":2,"col":2,"name":"Lingering Rage","max":5,"pre":null,"eff":"Rage starts decaying 2 s later per rank out of combat (10 s)","icon":"ability_warrior_secondwind"},
-   {"tree":1,"row":2,"col":3,"name":"Unbridled Wrath","max":5,"pre":null,"eff":"12% chance per rank to gain 1 extra Rage on weapon hit (60%)","icon":"spell_nature_stoneclawtotem"},
-   {"tree":1,"row":3,"col":1,"name":"Furious Precision","max":3,"pre":null,"eff":"Off-hand hit chance increased (+10% at 3/3)","icon":"ability_warrior_incite"},
-   {"tree":1,"row":3,"col":2,"name":"Piercing Howl","max":1,"pre":null,"eff":"10 Rage: daze enemies within 10 yd, -50% speed 6 s","icon":"spell_shadow_deathscream"},
-   {"tree":1,"row":3,"col":3,"name":"Blood Craze","max":3,"pre":null,"eff":"Regenerate up to 3% health over 6 s after being crit or taking a big hit","icon":"spell_shadow_summonimp"},
-   {"tree":1,"row":4,"col":1,"name":"Dual Wield Specialization","max":5,"pre":null,"eff":"Off-hand damage +5% and off-hand Rage +10% per rank","icon":"ability_dualwield"},
-   {"tree":1,"row":4,"col":2,"name":"Raging Blows","max":1,"pre":null,"eff":"Cleave and Whirlwind -3 Rage","icon":"ability_whirlwind"},
-   {"tree":1,"row":4,"col":3,"name":"Enrage","max":5,"pre":null,"eff":"30% chance when hit: +2% Physical damage per rank (10%) for 12 s","icon":"spell_shadow_unholyfrenzy"},
-   {"tree":1,"row":4,"col":4,"name":"Improved Execute","max":2,"pre":null,"eff":"Execute costs less Rage (-5 at 2/2)","icon":"inv_sword_48"},
-   {"tree":1,"row":5,"col":1,"name":"Improved Berserker Rage","max":2,"pre":null,"eff":"Berserker Rage gives Rage (10 at 2/2) and removes movement impairing effects","icon":"spell_nature_ancestralguardian"},
-   {"tree":1,"row":5,"col":2,"name":"Death Wish","max":1,"pre":null,"eff":"10 Rage, 3 min: +20% Physical damage and Fear immunity, more damage taken","icon":"spell_shadow_deathpact"},
-   {"tree":1,"row":5,"col":4,"name":"Improved Intercept","max":2,"pre":null,"eff":"Intercept cooldown -5 s per rank","icon":"ability_rogue_sprint"},
-   {"tree":1,"row":6,"col":2,"name":"Flurry","max":5,"pre":"Death Wish","eff":"+5% attack speed per rank (25%) for 3 swings after a melee crit","icon":"ability_ghoulfrenzy"},
-   {"tree":1,"row":6,"col":3,"name":"Gore Drinker","max":2,"pre":"Enrage","eff":"Enrage, Berserker Rage, Bloodrage, Death Wish, Bloodthirst: next 3 hits heal 0.5% per rank","icon":"racial_troll_berserk"},
-   {"tree":1,"row":7,"col":2,"name":"Bloodthirst","max":1,"pre":null,"eff":"30 Rage, 6 s: damage = 45% of Attack Power + flat, plus movement speed","icon":"spell_nature_bloodlust"},
-   {"tree":2,"row":1,"col":1,"name":"Improved Bloodrage","max":2,"pre":null,"eff":"Bloodrage Rage +25% per rank (+50%)","icon":"ability_racial_bloodrage"},
-   {"tree":2,"row":1,"col":2,"name":"Shield Specialization","max":5,"pre":null,"eff":"+1% block per rank; 20% per rank (100%) to gain 5 Rage on block","icon":"inv_shield_06"},
-   {"tree":2,"row":1,"col":3,"name":"Iron Will","max":5,"pre":null,"eff":"Stun and Fear duration -3% per rank (-15%)","icon":"spell_magic_magearmor"},
-   {"tree":2,"row":2,"col":1,"name":"Anticipation","max":5,"pre":null,"eff":"+4 Defense skill per rank (+20)","icon":"spell_nature_mirrorimage"},
-   {"tree":2,"row":2,"col":3,"name":"Improved Revenge","max":3,"pre":null,"eff":"Revenge damage +20% per rank (+60%)","icon":"ability_warrior_revenge"},
-   {"tree":2,"row":2,"col":4,"name":"Improved Thunder Clap","max":3,"pre":null,"eff":"Thunder Clap -2 Rage per rank (-6)","icon":"ability_thunderclap"},
-   {"tree":2,"row":3,"col":1,"name":"Last Stand","max":1,"pre":null,"eff":"3 min: +30% maximum health for 20 s","icon":"spell_holy_ashestoashes"},
-   {"tree":2,"row":3,"col":2,"name":"Master of Defense","max":2,"pre":"Shield Specialization","eff":"With a shield: 50% per rank (100%) to gain 5 Rage on dodge or parry","icon":"ability_warrior_shieldguard"},
-   {"tree":2,"row":3,"col":3,"name":"Improved Disarm","max":3,"pre":null,"eff":"Disarm cooldown reduced (-20 s at 3/3)","icon":"ability_warrior_disarm"},
-   {"tree":2,"row":3,"col":4,"name":"Defiance","max":3,"pre":null,"eff":"Defensive Stance threat +5% per rank with a shield (+15%)","icon":"ability_warrior_innerrage"},
-   {"tree":2,"row":4,"col":1,"name":"Improved Sunder Armor","max":3,"pre":null,"eff":"Sunder Armor -1 Rage per rank (-3)","icon":"ability_warrior_sunder"},
-   {"tree":2,"row":4,"col":2,"name":"Vanguard","max":1,"pre":null,"eff":"Charge usable in Defensive Stance","icon":"ability_warrior_shieldcharge"},
-   {"tree":2,"row":4,"col":3,"name":"Improved Shield Bash","max":2,"pre":null,"eff":"Shield Bash 50% per rank (100%) to silence 3 s","icon":"ability_warrior_shieldbash"},
-   {"tree":2,"row":5,"col":1,"name":"Improved Shield Wall","max":2,"pre":null,"eff":"Shield Wall cooldown reduced","icon":"ability_warrior_shieldwall"},
-   {"tree":2,"row":5,"col":2,"name":"Concussion Blow","max":1,"pre":null,"eff":"10 Rage, 45 s: stun 5 s","icon":"ability_thunderbolt"},
-   {"tree":2,"row":5,"col":3,"name":"Focused Rage","max":3,"pre":null,"eff":"Offensive abilities -1 Rage per rank (-3)","icon":"ability_warrior_focusedrage"},
-   {"tree":2,"row":6,"col":3,"name":"Bastion","max":5,"pre":null,"eff":"+2% all damage per rank with a shield (+10%)","icon":"inv_shield_04"},
-   {"tree":2,"row":7,"col":2,"name":"Shield Slam","max":1,"pre":"Concussion Blow","eff":"20 Rage, needs shield: damage + Block Value, 50% to dispel a magic effect","icon":"inv_shield_05"}
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 1,
+    "name": "Improved Heroic Strike",
+    "max": 3,
+    "pre": null,
+    "eff": "Heroic Strike -1 Rage per rank (-3)",
+    "icon": "ability_rogue_ambush"
+   },
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 2,
+    "name": "Deflection",
+    "max": 5,
+    "pre": null,
+    "eff": "+1% parry per rank (+5%)",
+    "icon": "ability_parry"
+   },
+   {
+    "tree": 0,
+    "row": 1,
+    "col": 3,
+    "name": "Improved Rend",
+    "max": 3,
+    "pre": null,
+    "eff": "Rend bleed damage increased (+35% at 3/3)",
+    "icon": "ability_gouge"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 1,
+    "name": "Improved Charge",
+    "max": 2,
+    "pre": null,
+    "eff": "Charge +3 Rage per rank (+6)",
+    "icon": "ability_warrior_charge"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 2,
+    "name": "Improved Tactical Mastery",
+    "max": 5,
+    "pre": null,
+    "eff": "Keep up to +3 extra Rage per rank on stance change (+15)",
+    "icon": "spell_nature_enchantarmor"
+   },
+   {
+    "tree": 0,
+    "row": 2,
+    "col": 4,
+    "name": "Improved Overpower",
+    "max": 2,
+    "pre": null,
+    "eff": "Overpower crit +25% per rank (+50%)",
+    "icon": "inv_sword_05"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 2,
+    "name": "Anger Management",
+    "max": 1,
+    "pre": "Improved Tactical Mastery",
+    "eff": "1 Rage every 3 s in combat; -30% Rage decay out of combat",
+    "icon": "spell_holy_blessingofstamina"
+   },
+   {
+    "tree": 0,
+    "row": 3,
+    "col": 3,
+    "name": "Deep Wounds",
+    "max": 3,
+    "pre": "Improved Rend",
+    "eff": "Crits bleed for 20% of avg weapon damage per rank over 12 s (60%)",
+    "icon": "ability_backstab"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 1,
+    "name": "Spearing Strike",
+    "max": 1,
+    "pre": null,
+    "eff": "15 Rage, Battle Stance: 40% weapon damage, +80% vs Giants, Dragonkin and mounted (dismounts)",
+    "icon": "inv_spear_01"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 2,
+    "name": "Two-Handed Weapon Specialization",
+    "max": 3,
+    "pre": null,
+    "eff": "+1% two-hand damage per rank (+3%)",
+    "icon": "inv_axe_09"
+   },
+   {
+    "tree": 0,
+    "row": 4,
+    "col": 3,
+    "name": "Impale",
+    "max": 2,
+    "pre": "Deep Wounds",
+    "eff": "+10% ability crit damage bonus per rank (+20%)",
+    "icon": "ability_searingarrow"
+   },
+   {
+    "tree": 0,
+    "row": 5,
+    "col": 1,
+    "name": "Bloodthrill",
+    "max": 5,
+    "pre": null,
+    "eff": "Main-hand hits on your Rend targets: 4% per rank (20%) to enable Overpower",
+    "icon": "inv_sword_01"
+   },
+   {
+    "tree": 0,
+    "row": 5,
+    "col": 2,
+    "name": "Sweeping Strikes",
+    "max": 1,
+    "pre": null,
+    "eff": "30 Rage: next 5 melee attacks hit an extra nearby target",
+    "icon": "ability_rogue_slicedice"
+   },
+   {
+    "tree": 0,
+    "row": 5,
+    "col": 3,
+    "name": "Weaponmaster",
+    "max": 5,
+    "pre": null,
+    "eff": "Axe/Polearm +5% crit; Mace/Staff ignore 15% armor; Sword 5% extra attack (at 5/5)",
+    "icon": "garrison_weaponupgrade"
+   },
+   {
+    "tree": 0,
+    "row": 6,
+    "col": 1,
+    "name": "Improved Slam",
+    "max": 2,
+    "pre": null,
+    "eff": "Slam cast time and GCD -0.5 s; Slam no longer delays auto attacks",
+    "icon": "ability_warrior_decisivestrike"
+   },
+   {
+    "tree": 0,
+    "row": 6,
+    "col": 3,
+    "name": "Improved Hamstring",
+    "max": 3,
+    "pre": null,
+    "eff": "Hamstring 5% chance per rank to root 5 s (15%)",
+    "icon": "ability_shockwave"
+   },
+   {
+    "tree": 0,
+    "row": 7,
+    "col": 2,
+    "name": "Mortal Strike",
+    "max": 1,
+    "pre": "Sweeping Strikes",
+    "eff": "30 Rage: weapon damage +85, -50% healing received",
+    "icon": "ability_warrior_savageblow"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 2,
+    "name": "Booming Voice",
+    "max": 5,
+    "pre": null,
+    "eff": "Shouts +10% area and -5% Rage cost per rank",
+    "icon": "spell_nature_purge"
+   },
+   {
+    "tree": 1,
+    "row": 1,
+    "col": 3,
+    "name": "Cruelty",
+    "max": 5,
+    "pre": null,
+    "eff": "+1% melee crit per rank (+5%)",
+    "icon": "ability_rogue_eviscerate"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 2,
+    "name": "Lingering Rage",
+    "max": 5,
+    "pre": null,
+    "eff": "Rage starts decaying 2 s later per rank out of combat (10 s)",
+    "icon": "ability_warrior_secondwind"
+   },
+   {
+    "tree": 1,
+    "row": 2,
+    "col": 3,
+    "name": "Unbridled Wrath",
+    "max": 5,
+    "pre": null,
+    "eff": "12% chance per rank to gain 1 extra Rage on weapon hit (60%)",
+    "icon": "spell_nature_stoneclawtotem"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 1,
+    "name": "Furious Precision",
+    "max": 3,
+    "pre": null,
+    "eff": "Off-hand hit chance increased (+10% at 3/3)",
+    "icon": "ability_warrior_incite"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 2,
+    "name": "Piercing Howl",
+    "max": 1,
+    "pre": null,
+    "eff": "10 Rage: daze enemies within 10 yd, -50% speed 6 s",
+    "icon": "spell_shadow_deathscream"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 3,
+    "name": "Blood Craze",
+    "max": 3,
+    "pre": null,
+    "eff": "Regenerate up to 3% health over 6 s after being crit or taking a big hit",
+    "icon": "spell_shadow_summonimp"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 1,
+    "name": "Dual Wield Specialization",
+    "max": 5,
+    "pre": null,
+    "eff": "Off-hand damage +5% and off-hand Rage +10% per rank",
+    "icon": "ability_dualwield"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 2,
+    "name": "Raging Blows",
+    "max": 1,
+    "pre": null,
+    "eff": "Cleave and Whirlwind -3 Rage",
+    "icon": "ability_whirlwind"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 3,
+    "name": "Enrage",
+    "max": 5,
+    "pre": null,
+    "eff": "30% chance when hit: +2% Physical damage per rank (10%) for 12 s",
+    "icon": "spell_shadow_unholyfrenzy"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 4,
+    "name": "Improved Execute",
+    "max": 2,
+    "pre": null,
+    "eff": "Execute costs less Rage (-5 at 2/2)",
+    "icon": "inv_sword_48"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 1,
+    "name": "Improved Berserker Rage",
+    "max": 2,
+    "pre": null,
+    "eff": "Berserker Rage gives Rage (10 at 2/2) and removes movement impairing effects",
+    "icon": "spell_nature_ancestralguardian"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 2,
+    "name": "Death Wish",
+    "max": 1,
+    "pre": null,
+    "eff": "10 Rage, 3 min: +20% Physical damage and Fear immunity, more damage taken",
+    "icon": "spell_shadow_deathpact"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 4,
+    "name": "Improved Intercept",
+    "max": 2,
+    "pre": null,
+    "eff": "Intercept cooldown -5 s per rank",
+    "icon": "ability_rogue_sprint"
+   },
+   {
+    "tree": 1,
+    "row": 6,
+    "col": 2,
+    "name": "Flurry",
+    "max": 5,
+    "pre": "Death Wish",
+    "eff": "+5% attack speed per rank (25%) for 3 swings after a melee crit",
+    "icon": "ability_ghoulfrenzy"
+   },
+   {
+    "tree": 1,
+    "row": 6,
+    "col": 3,
+    "name": "Gore Drinker",
+    "max": 2,
+    "pre": "Enrage",
+    "eff": "Enrage, Berserker Rage, Bloodrage, Death Wish, Bloodthirst: next 3 hits heal 0.5% per rank",
+    "icon": "racial_troll_berserk"
+   },
+   {
+    "tree": 1,
+    "row": 7,
+    "col": 2,
+    "name": "Bloodthirst",
+    "max": 1,
+    "pre": null,
+    "eff": "30 Rage, 6 s: damage = 45% of Attack Power + flat, plus movement speed",
+    "icon": "spell_nature_bloodlust"
+   },
+   {
+    "tree": 2,
+    "row": 1,
+    "col": 1,
+    "name": "Improved Bloodrage",
+    "max": 2,
+    "pre": null,
+    "eff": "Bloodrage Rage +25% per rank (+50%)",
+    "icon": "ability_racial_bloodrage"
+   },
+   {
+    "tree": 2,
+    "row": 1,
+    "col": 2,
+    "name": "Shield Specialization",
+    "max": 5,
+    "pre": null,
+    "eff": "+1% block per rank; 20% per rank (100%) to gain 5 Rage on block",
+    "icon": "inv_shield_06"
+   },
+   {
+    "tree": 2,
+    "row": 1,
+    "col": 3,
+    "name": "Iron Will",
+    "max": 5,
+    "pre": null,
+    "eff": "Stun and Fear duration -3% per rank (-15%)",
+    "icon": "spell_magic_magearmor"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 1,
+    "name": "Anticipation",
+    "max": 5,
+    "pre": null,
+    "eff": "+4 Defense skill per rank (+20)",
+    "icon": "spell_nature_mirrorimage"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 3,
+    "name": "Improved Revenge",
+    "max": 3,
+    "pre": null,
+    "eff": "Revenge damage +20% per rank (+60%)",
+    "icon": "ability_warrior_revenge"
+   },
+   {
+    "tree": 2,
+    "row": 2,
+    "col": 4,
+    "name": "Improved Thunder Clap",
+    "max": 3,
+    "pre": null,
+    "eff": "Thunder Clap -2 Rage per rank (-6)",
+    "icon": "ability_thunderclap"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 1,
+    "name": "Last Stand",
+    "max": 1,
+    "pre": null,
+    "eff": "3 min: +30% maximum health for 20 s",
+    "icon": "spell_holy_ashestoashes"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 2,
+    "name": "Master of Defense",
+    "max": 2,
+    "pre": "Shield Specialization",
+    "eff": "With a shield: 50% per rank (100%) to gain 5 Rage on dodge or parry",
+    "icon": "ability_warrior_shieldguard"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 3,
+    "name": "Improved Disarm",
+    "max": 3,
+    "pre": null,
+    "eff": "Disarm cooldown reduced (-20 s at 3/3)",
+    "icon": "ability_warrior_disarm"
+   },
+   {
+    "tree": 2,
+    "row": 3,
+    "col": 4,
+    "name": "Defiance",
+    "max": 3,
+    "pre": null,
+    "eff": "Defensive Stance threat +5% per rank with a shield (+15%)",
+    "icon": "ability_warrior_innerrage"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 1,
+    "name": "Improved Sunder Armor",
+    "max": 3,
+    "pre": null,
+    "eff": "Sunder Armor -1 Rage per rank (-3)",
+    "icon": "ability_warrior_sunder"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 2,
+    "name": "Vanguard",
+    "max": 1,
+    "pre": null,
+    "eff": "Charge usable in Defensive Stance",
+    "icon": "ability_warrior_shieldcharge"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 3,
+    "name": "Improved Shield Bash",
+    "max": 2,
+    "pre": null,
+    "eff": "Shield Bash 50% per rank (100%) to silence 3 s",
+    "icon": "ability_warrior_shieldbash"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 1,
+    "name": "Improved Shield Wall",
+    "max": 2,
+    "pre": null,
+    "eff": "Shield Wall cooldown reduced",
+    "icon": "ability_warrior_shieldwall"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 2,
+    "name": "Concussion Blow",
+    "max": 1,
+    "pre": null,
+    "eff": "10 Rage, 45 s: stun 5 s",
+    "icon": "ability_thunderbolt"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 3,
+    "name": "Focused Rage",
+    "max": 3,
+    "pre": null,
+    "eff": "Offensive abilities -1 Rage per rank (-3)",
+    "icon": "ability_warrior_focusedrage"
+   },
+   {
+    "tree": 2,
+    "row": 6,
+    "col": 3,
+    "name": "Bastion",
+    "max": 5,
+    "pre": null,
+    "eff": "+2% all damage per rank with a shield (+10%)",
+    "icon": "inv_shield_04"
+   },
+   {
+    "tree": 2,
+    "row": 7,
+    "col": 2,
+    "name": "Shield Slam",
+    "max": 1,
+    "pre": "Concussion Blow",
+    "eff": "20 Rage, needs shield: damage + Block Value, 50% to dispel a magic effect",
+    "icon": "inv_shield_05"
+   }
   ]
  },
  "talents_note": "Árboles verificados contra el export de talentsforever (build 70425, 52 talentos). Cambios frente al local 70170: posiciones corregidas (Improved Overpower 2,4; Anger Management 3,2 con prereq Improved Tactical Mastery; Deep Wounds requiere Improved Rend; Impale requiere Deep Wounds; Improved Hamstring 6,3; Fury: Booming Voice 1,2, Cruelty 1,3, Lingering Rage 2,2, Unbridled Wrath 2,3, Death Wish 5,2, Improved Intercept 5,4, Flurry 6,2, Gore Drinker 6,3 con prereq Enrage; Prot: Improved Revenge 2,3, Improved Thunder Clap 2,4, Bastion 6,3); Last Stand ya NO requiere Improved Bloodrage; Anticipation da Defensa (+20), no esquiva; Master of Defense da 5 de ira al esquivar/parar con escudo; iconos nuevos tomados del export. Los valores de Improved Shield Wall, Bloodthirst y Death Wish tienen texto truncado en la fuente.",
@@ -135,26 +607,106 @@
   "stats": "Protección: DPS del arma de una mano y buen escudo (armadura/valor de bloqueo) > Fuerza/Poder de ataque > Aguante > Agilidad > Armadura. Armas: daño máximo del arma de dos manos (lenta) > Fuerza > Aguante > Agilidad. A partir de ~30 el crítico gana valor por Heridas profundas/Empalar. Precisión siempre útil; caps sin confirmar en Forever.",
   "weapons": "Protección: arma de una mano rápida-media + escudo; compara armadura y valor de bloqueo del escudo antes que el daño. Armas: arma de dos manos lenta (3.3–3.8 s) para Golpe mortal, Abrumar, Torbellino. Lleva siempre un arma de una mano + escudo de recambio. Piedras de afilar/contrapesos de Herrería (en Forever se pueden combinar con otras mejoras, sin confirmar para guerrero). Encantamientos de arma clásicos: Golpe/Fuerza menor, Cruzado al final (sin confirmar en Forever). Entrena hachas, mazas, espadas y armas de asta (Woo Ping en Ventormenta: espadas/armas de asta desde 20; Buliwyf Stonehand en Forjaz: hachas/mazas/armas de fuego).",
   "abilities": [
-   [1, "Battle Shout (Grito de batalla), Heroic Strike (Golpe heroico), Battle Stance (Actitud de batalla)", "Mantén siempre Grito de batalla."],
-   [4, "Charge (Cargar), Rend (Desgarrar)", "Desgarrar escala con poder de ataque en Forever: úsalo en mobs que duren."],
-   [6, "Thunder Clap (Atronar)", "En Forever ralentiza un 20%; base del AoE de Protección."],
-   [8, "Hamstring (Seccionar)", "Para frenar huidas."],
-   [10, "Defensive Stance (Actitud defensiva), Sunder Armor (Hender armadura), Taunt (Provocar), Bloodrage (Ira sangrienta)", "Misión de clase de nivel 10."],
-   [12, "Overpower (Abrumar), Shield Bash (Azote de escudo)", "Primer gasto barato y corte de hechizos."],
-   [14, "Revenge (Revancha), Demoralizing Shout (Grito desmoralizador), Tactical Mastery (Maestría táctica)", "Revancha hace viable Protección."],
-   [16, "Shield Block (Bloquear con escudo), Mocking Blow (Golpe burlón)", ""],
-   [18, "Disarm (Desarmar)", ""],
-   [20, "Victory Rush (Ataque victorioso), Cleave (Rajar), Slam (Embate), Retaliation (Represalias), Last Stand (Última carga), Piercing Howl (Aullido perforador)", "Ataque victorioso: sin coste de ira y pequeña autocuración; ideal para encadenar mobs."],
-   [22, "Intimidating Shout (Grito intimidador)", "Úsalo para packs grandes, no lo guardes."],
-   [24, "Execute (Ejecutar)", ""],
-   [25, "Spearing Strike (Golpe de lanza)", "Talento de Armas; útil contra gigantes, dragonantes y montados."],
-   [26, "Challenging Shout (Grito desafiante)", ""],
-   [28, "Shield Wall (Muro de escudo)", ""],
-   [30, "Berserker Stance (Actitud rabiosa), Berserker Rage (Ira rabiosa), Intercept (Interceptar), Concussion Blow (Arremetida de conmoción), Sweeping Strikes (Golpes de barrido), Death Wish (Deseo de muerte)", "Berserker Rage pasó a nivel 30 en un hotfix de la beta."],
-   [36, "Whirlwind (Torbellino)", "Fuerte para subir en cualquier rama."],
-   [38, "Pummel (Zurrar)", ""],
-   [40, "Shield Slam (Embate con escudo), Mortal Strike (Golpe mortal), Bloodthirst (Sed de sangre), armadura de placas, doble especialización", "Doble especialización en el instructor por 10 oro."],
-   [50, "Recklessness (Temeridad)", ""]
+   [
+    1,
+    "Battle Shout (Grito de batalla), Heroic Strike (Golpe heroico), Battle Stance (Actitud de batalla)",
+    "Mantén siempre Grito de batalla."
+   ],
+   [
+    4,
+    "Charge (Cargar), Rend (Desgarrar)",
+    "Desgarrar escala con poder de ataque en Forever: úsalo en mobs que duren."
+   ],
+   [
+    6,
+    "Thunder Clap (Atronar)",
+    "En Forever ralentiza un 20%; base del AoE de Protección."
+   ],
+   [
+    8,
+    "Hamstring (Seccionar)",
+    "Para frenar huidas."
+   ],
+   [
+    10,
+    "Defensive Stance (Actitud defensiva), Sunder Armor (Hender armadura), Taunt (Provocar), Bloodrage (Ira sangrienta)",
+    "Misión de clase de nivel 10."
+   ],
+   [
+    12,
+    "Overpower (Abrumar), Shield Bash (Azote de escudo)",
+    "Primer gasto barato y corte de hechizos."
+   ],
+   [
+    14,
+    "Revenge (Revancha), Demoralizing Shout (Grito desmoralizador), Tactical Mastery (Maestría táctica)",
+    "Revancha hace viable Protección."
+   ],
+   [
+    16,
+    "Shield Block (Bloquear con escudo), Mocking Blow (Golpe burlón)",
+    ""
+   ],
+   [
+    18,
+    "Disarm (Desarmar)",
+    ""
+   ],
+   [
+    20,
+    "Victory Rush (Ataque victorioso), Cleave (Rajar), Slam (Embate), Retaliation (Represalias), Last Stand (Última carga), Piercing Howl (Aullido perforador)",
+    "Ataque victorioso: sin coste de ira y pequeña autocuración; ideal para encadenar mobs."
+   ],
+   [
+    22,
+    "Intimidating Shout (Grito intimidador)",
+    "Úsalo para packs grandes, no lo guardes."
+   ],
+   [
+    24,
+    "Execute (Ejecutar)",
+    ""
+   ],
+   [
+    25,
+    "Spearing Strike (Golpe de lanza)",
+    "Talento de Armas; útil contra gigantes, dragonantes y montados."
+   ],
+   [
+    26,
+    "Challenging Shout (Grito desafiante)",
+    ""
+   ],
+   [
+    28,
+    "Shield Wall (Muro de escudo)",
+    ""
+   ],
+   [
+    30,
+    "Berserker Stance (Actitud rabiosa), Berserker Rage (Ira rabiosa), Intercept (Interceptar), Concussion Blow (Arremetida de conmoción), Sweeping Strikes (Golpes de barrido), Death Wish (Deseo de muerte)",
+    "Berserker Rage pasó a nivel 30 en un hotfix de la beta."
+   ],
+   [
+    36,
+    "Whirlwind (Torbellino)",
+    "Fuerte para subir en cualquier rama."
+   ],
+   [
+    38,
+    "Pummel (Zurrar)",
+    ""
+   ],
+   [
+    40,
+    "Shield Slam (Embate con escudo), Mortal Strike (Golpe mortal), Bloodthirst (Sed de sangre), armadura de placas, doble especialización",
+    "Doble especialización en el instructor por 10 oro."
+   ],
+   [
+    50,
+    "Recklessness (Temeridad)",
+    ""
+   ]
   ],
   "rotation": [
    "Grito de batalla activo; entra con Cargar (con Vanguard también en actitud defensiva).",
@@ -166,10 +718,30 @@
    "No guardes Represalias, Grito intimidador ni Muro de escudo: úsalos para tirar packs más grandes."
   ],
   "class_quests": [
-   [10, "Misión de Actitud defensiva (Humano: Bartleby's Mug / Enano: Vejrek / Elfo de la noche: Vorlus Vilehoof / Skyborne: The Skybreaker Bulwark)", "Defensive Stance, Sunder Armor y Taunt; continuación que da un arma de una mano a elegir", "Zona inicial de tu raza (Skyborne: Zephras Isle)"],
-   [20, "Fire Hardened Hauberk (Humano: Fire Hardened Mail) / Brutal Hauberk (Skyborne)", "Pechera de mallas (sin confirmar detalles)", "Instructor de guerrero de tu capital (sin confirmar)"],
-   [30, "The Affray", "Berserker Stance (e Intercept según Warcraft Tavern)", "Fray Island, cerca de Trinquete (Los Baldíos)"],
-   [30, "Whirlwind Weapon", "Whirlwind Axe / Whirlwind Sword / Whirlwind Warhammer", "Empieza en las Montañas de Alterac (sin confirmar); larga y difícil en solitario"]
+   [
+    10,
+    "Misión de Actitud defensiva (Humano: Bartleby's Mug / Enano: Vejrek / Elfo de la noche: Vorlus Vilehoof / Skyborne: The Skybreaker Bulwark)",
+    "Defensive Stance, Sunder Armor y Taunt; continuación que da un arma de una mano a elegir",
+    "Zona inicial de tu raza (Skyborne: Zephras Isle)"
+   ],
+   [
+    20,
+    "Fire Hardened Hauberk (Humano: Fire Hardened Mail) / Brutal Hauberk (Skyborne)",
+    "Pechera de mallas (sin confirmar detalles)",
+    "Instructor de guerrero de tu capital (sin confirmar)"
+   ],
+   [
+    30,
+    "The Affray",
+    "Berserker Stance (e Intercept según Warcraft Tavern)",
+    "Fray Island, cerca de Trinquete (Los Baldíos)"
+   ],
+   [
+    30,
+    "Whirlwind Weapon",
+    "Whirlwind Axe / Whirlwind Sword / Whirlwind Warhammer",
+    "Empieza en las Montañas de Alterac (sin confirmar); larga y difícil en solitario"
+   ]
   ],
   "tips": [
    "En Forever el nivel máximo es 60 desde el lanzamiento (5 nov 2026, 00:00 hora peninsular); las bandas abren el 9 dic.",
@@ -182,26 +754,142 @@
   ]
  },
  "races": [
-  {"race":"Human","verdict":"best","racials":"Ruthless (+2% crit con hechizos y habilidades, cualquier arma), Will to Survive (quita todos los aturdimientos, 3 min), The Human Spirit (+5% espíritu), Perception (detección de sigilo 20 s, 3 min)","why":"El mejor de la Alianza: +2% crit pasivo para PvE y un rompe-aturdimientos para PvP. Ya no requiere espadas."},
-  {"race":"Gnome","verdict":"good","racials":"Escape Artist (rompe ralentizaciones/raíces + 3 s de inmunidad, 2 min), Expansive Mind (+5% ira máxima), Eureka! (8 s: +10% daño no periódico y -10% coste, 2 min), Engineering Specialization","why":"Escape Artist es oro contra kiteo en PvP y Eureka! es un pequeño cooldown ofensivo."},
-  {"race":"Night Elf","verdict":"good","racials":"Elune's Light (+10% crit 15 s, 3 min), Shadowmeld, Quickness (+1% esquiva, +2% velocidad), Wisp Spirit","why":"Elune's Light es un buen cooldown de burst para Armas; Quickness ayuda a tanquear."},
-  {"race":"Dwarf","verdict":"ok","racials":"Stoneform (quita sangrados/venenos/enfermedades, -10% daño físico 8 s, 3 min), Earth Fury (+2% bonus de daño crítico), Big Game Hunter (+5% daño a bestias), Find Treasure","why":"Stoneform es un buen defensivo contra pícaros y guerreros; ofensivamente algo por debajo del humano."},
-  {"race":"Skyborne (High Order)","verdict":"ok","racials":"Wind Blessed (+3% celeridad), Walk on Air (planeo 10 s), Read Leyline (+100% regen. de salud/maná fuera de combate), Elemental Insight (+5% daño a elementales)","why":"El 3% de celeridad es útil y Read Leyline reduce tiempo muerto al subir; sin herramientas de PvP. Requiere comprar el pack Skyborne. Empieza en Zephras Isle."}
+  {
+   "race": "Human",
+   "verdict": "best",
+   "racials": "Ruthless (+1% de crítico; era +2% antes del ajuste de lanzamiento), Will to Survive (quita todos los aturdimientos, 3 min), The Human Spirit (+10% espíritu), Perception (detección de sigilo 20 s, 3 min)",
+   "why": "El mejor de la Alianza: +2% crit pasivo para PvE y un rompe-aturdimientos para PvP. Ya no requiere espadas."
+  },
+  {
+   "race": "Gnome",
+   "verdict": "good",
+   "racials": "Escape Artist (rompe ralentizaciones/raíces + 3 s de inmunidad, 2 min), Expansive Mind (+5% ira máxima), Eureka! (8 s: +10% daño no periódico y -10% coste, 2 min), Engineering Specialization",
+   "why": "Escape Artist es oro contra kiteo en PvP y Eureka! es un pequeño cooldown ofensivo."
+  },
+  {
+   "race": "Night Elf",
+   "verdict": "good",
+   "racials": "Elune's Light (+10% crit 15 s, 3 min), Shadowmeld, Quickness (+1% esquiva, +2% velocidad), Wisp Spirit",
+   "why": "Elune's Light es un buen cooldown de burst para Armas; Quickness ayuda a tanquear."
+  },
+  {
+   "race": "Dwarf",
+   "verdict": "ok",
+   "racials": "Stoneform (quita sangrados/venenos/enfermedades, -10% daño físico 8 s, 3 min), Artisan's Precision (+1% de golpe con hechizos y ataques; sustituye a Earth Fury), Big Game Hunter (+5% daño a bestias), Find Treasure",
+   "why": "Stoneform es un buen defensivo contra pícaros y guerreros; ofensivamente algo por debajo del humano."
+  },
+  {
+   "race": "Skyborne (High Order)",
+   "verdict": "ok",
+   "racials": "Wind Blessed (+2% celeridad), Walk on Air (planeo 10 s), Read Leyline (+50% de regeneración de vida y maná durante 15 s; junto a una línea ley te deja Attuned 1 h y entonces es +100%), Elemental Insight (+5% daño a elementales)",
+   "why": "El 2% de celeridad es útil y Read Leyline reduce tiempo muerto al subir; sin herramientas de PvP. Requiere comprar el pack Skyborne. Empieza en Zephras Isle."
+  }
  ],
  "gear": [
-  {"levels":"10","slot":"Arma de una mano","name":"Recompensa de la continuación de la misión de Actitud defensiva","id":null,"source":"Misión de clase nivel 10","why":"Primera arma decente; varios tipos a elegir."},
-  {"levels":"13-18","slot":"Arma de una mano (hacha)","name":"Durgen's Crescent Axe","id":270256,"source":"Hall of Thanes (Salón de los Feudales), jefe final Dirgen Dirgehammer","why":"Hacha para Protección; mazmorra nueva de Alianza en Forjaz."},
-  {"levels":"13-18","slot":"Pecho / Pies (mallas)","name":"Golemguard Chest / Treads of the Protector Golem","id":271098,"source":"Hall of Thanes, jefe Plunder","why":"Mallas tempranas (Treads: id 270229)."},
-  {"levels":"15-22","slot":"Dos manos (hacha)","name":"Corpse Chopper","id":271217,"source":"Ruins of Lordaeron, jefe Bjork","why":"Arma 2M para Armas (viaje largo para Alianza vía Costa Sur)."},
-  {"levels":"15-22","slot":"Escudo","name":"Mirror of Rath'mael","id":271213,"source":"Ruins of Lordaeron, jefe Rath'mael","why":"Escudo para Protección."},
-  {"levels":"17-26","slot":"Dos manos (maza)","name":"Smite's Mighty Hammer","id":7230,"source":"The Deadmines, Mr. Smite","why":"Clásico 2M de leveo (botín sin confirmar en Forever)."},
-  {"levels":"17-26","slot":"Una mano (espada)","name":"Cruel Barb","id":5191,"source":"The Deadmines, Edwin VanCleef","why":"Gran arma de una mano (confirmada en Forever por Method para pícaro)."},
-  {"levels":"24-29","slot":"Hombros / Pies (mallas)","name":"Reliquary Mantle / Raptorclaw Greaves","id":273028,"source":"Excavation Site: Wetlands (Relic Guardian / Shadetooth)","why":"Mallas de la nueva mazmorra de Los Humedales (Greaves: id 273025)."},
-  {"levels":"24-29","slot":"A distancia (arma de fuego)","name":"Golemsight Long Gun","id":273029,"source":"Excavation Site: Wetlands, Relic Guardian","why":"Arma a distancia para estadísticas y tirar mobs."},
-  {"levels":"28-33","slot":"Dos manos (hacha)","name":"Guardian's Dualblade","id":273046,"source":"City of Dalaran, Unstable Sentinel","why":"2M para Armas; Dalaran está en Alterac."},
-  {"levels":"28-33","slot":"Escudo / Pecho","name":"Bonepile Gaze / Mana-Warped Chain Shirt","id":273055,"source":"City of Dalaran (Lyn the Ignored, jefe secreto / Arcane Anomaly)","why":"Escudo y pechera de mallas (Shirt: id 273035)."},
-  {"levels":"30","slot":"Dos manos","name":"Whirlwind Axe","id":6975,"source":"Misión de clase Whirlwind Weapon","why":"Arma muy fuerte para su nivel (también Whirlwind Sword/Warhammer)."},
-  {"levels":"36-44","slot":"Dos manos (hacha)","name":"Ravager","id":7717,"source":"Scarlet Monastery Armory, Herod","why":"Clásico de leveo con proc de torbellino (sin confirmar en Forever)."}
+  {
+   "levels": "10",
+   "slot": "Arma de una mano",
+   "name": "Recompensa de la continuación de la misión de Actitud defensiva",
+   "id": null,
+   "source": "Misión de clase nivel 10",
+   "why": "Primera arma decente; varios tipos a elegir."
+  },
+  {
+   "levels": "13-18",
+   "slot": "Arma de una mano (hacha)",
+   "name": "Durgen's Crescent Axe",
+   "id": 270256,
+   "source": "Hall of Thanes (Salón de los Feudales), jefe final Dirgen Dirgehammer",
+   "why": "Hacha para Protección; mazmorra nueva de Alianza en Forjaz."
+  },
+  {
+   "levels": "13-18",
+   "slot": "Pecho / Pies (mallas)",
+   "name": "Golemguard Chest / Treads of the Protector Golem",
+   "id": 271098,
+   "source": "Hall of Thanes, jefe Plunder",
+   "why": "Mallas tempranas (Treads: id 270229)."
+  },
+  {
+   "levels": "15-22",
+   "slot": "Dos manos (hacha)",
+   "name": "Corpse Chopper",
+   "id": 271217,
+   "source": "Ruins of Lordaeron, jefe Bjork",
+   "why": "Arma 2M para Armas (viaje largo para Alianza vía Costa Sur)."
+  },
+  {
+   "levels": "15-22",
+   "slot": "Escudo",
+   "name": "Mirror of Rath'mael",
+   "id": 271213,
+   "source": "Ruins of Lordaeron, jefe Rath'mael",
+   "why": "Escudo para Protección."
+  },
+  {
+   "levels": "17-26",
+   "slot": "Dos manos (maza)",
+   "name": "Smite's Mighty Hammer",
+   "id": 7230,
+   "source": "The Deadmines, Mr. Smite",
+   "why": "Clásico 2M de leveo (botín sin confirmar en Forever)."
+  },
+  {
+   "levels": "17-26",
+   "slot": "Una mano (espada)",
+   "name": "Cruel Barb",
+   "id": 5191,
+   "source": "The Deadmines, Edwin VanCleef",
+   "why": "Gran arma de una mano (confirmada en Forever por Method para pícaro)."
+  },
+  {
+   "levels": "24-29",
+   "slot": "Hombros / Pies (mallas)",
+   "name": "Reliquary Mantle / Raptorclaw Greaves",
+   "id": 273028,
+   "source": "Excavation Site: Wetlands (Relic Guardian / Shadetooth)",
+   "why": "Mallas de la nueva mazmorra de Los Humedales (Greaves: id 273025)."
+  },
+  {
+   "levels": "24-29",
+   "slot": "A distancia (arma de fuego)",
+   "name": "Golemsight Long Gun",
+   "id": 273029,
+   "source": "Excavation Site: Wetlands, Relic Guardian",
+   "why": "Arma a distancia para estadísticas y tirar mobs."
+  },
+  {
+   "levels": "28-33",
+   "slot": "Dos manos (hacha)",
+   "name": "Guardian's Dualblade",
+   "id": 273046,
+   "source": "City of Dalaran, Unstable Sentinel",
+   "why": "2M para Armas; Dalaran está en Alterac."
+  },
+  {
+   "levels": "28-33",
+   "slot": "Escudo / Pecho",
+   "name": "Bonepile Gaze / Mana-Warped Chain Shirt",
+   "id": 273055,
+   "source": "City of Dalaran (Lyn the Ignored, jefe secreto / Arcane Anomaly)",
+   "why": "Escudo y pechera de mallas (Shirt: id 273035)."
+  },
+  {
+   "levels": "30",
+   "slot": "Dos manos",
+   "name": "Whirlwind Axe",
+   "id": 6975,
+   "source": "Misión de clase Whirlwind Weapon",
+   "why": "Arma muy fuerte para su nivel (también Whirlwind Sword/Warhammer)."
+  },
+  {
+   "levels": "36-44",
+   "slot": "Dos manos (hacha)",
+   "name": "Ravager",
+   "id": 7717,
+   "source": "Scarlet Monastery Armory, Herod",
+   "why": "Clásico de leveo con proc de torbellino (sin confirmar en Forever)."
+  }
  ],
  "dungeons": [
   "Hall of Thanes (Salón de los Feudales, 13-18, Forjaz): mazmorra nueva solo con misiones para Alianza; hacha y mallas.",
@@ -220,12 +908,29 @@
   "Shield Specialization da 5 de ira por bloqueo (antes 1); Thunder Clap ralentiza 20% con 6 s de cooldown.",
   "Desgarrar escala con poder de ataque; nueva habilidad Victory Rush (Ataque victorioso) a nivel 20.",
   "Mortal Strike, Bloodthirst y Shield Slam se aprenden a 40; Whirlwind a 36; Berserker Rage a 30.",
-  "Raciales rediseñadas: Humano Ruthless (+2% crit con cualquier arma), Enano Earth Fury, Elfo de la noche Elune's Light, Gnomo Eureka!; nueva raza Skyborne."
+  "Raciales rediseñadas: Humano Ruthless (+1% de crítico; era +2% antes del ajuste de lanzamiento), Enano Artisan's Precision, Elfo de la noche Elune's Light, Gnomo Eureka!; nueva raza Skyborne."
  ],
  "pvp": {
-  "strengths": ["Golpe mortal (-50% curación) en Armas", "Cargar/Interceptar y Seccionar con raíz (Improved Hamstring)", "Arremetida de conmoción y Embate con escudo (disipa) en Protección", "Ira rabiosa mejorada quita ralentizaciones y da ira", "Spearing Strike desmonta"],
-  "weaknesses": ["Sin autocuración relevante salvo Ataque victorioso", "Muy vulnerable al kiteo (magos, cazadores)", "Dependiente del arma y de la sanación externa", "Pocas herramientas contra miedo sin Ira rabiosa"],
-  "duel_plan": ["Pre-buff: Grito de batalla e Ira sangrienta antes de entrar.", "Cargar > Seccionar inmediatamente > Desgarrar > Golpe mortal en cooldown.", "Abrumar tras esquivas (y con Bloodthrill), Zurrar/Azote de escudo a los casteos.", "Guarda Voluntad de supervivencia (Humano)/Artista del escape (Gnomo) para el CC clave.", "Usa Intimidating Shout + vendas o Represalias contra melés; Desarmar contra pícaros y guerreros."],
+  "strengths": [
+   "Golpe mortal (-50% curación) en Armas",
+   "Cargar/Interceptar y Seccionar con raíz (Improved Hamstring)",
+   "Arremetida de conmoción y Embate con escudo (disipa) en Protección",
+   "Ira rabiosa mejorada quita ralentizaciones y da ira",
+   "Spearing Strike desmonta"
+  ],
+  "weaknesses": [
+   "Sin autocuración relevante salvo Ataque victorioso",
+   "Muy vulnerable al kiteo (magos, cazadores)",
+   "Dependiente del arma y de la sanación externa",
+   "Pocas herramientas contra miedo sin Ira rabiosa"
+  ],
+  "duel_plan": [
+   "Pre-buff: Grito de batalla e Ira sangrienta antes de entrar.",
+   "Cargar > Seccionar inmediatamente > Desgarrar > Golpe mortal en cooldown.",
+   "Abrumar tras esquivas (y con Bloodthrill), Zurrar/Azote de escudo a los casteos.",
+   "Guarda Voluntad de supervivencia (Humano)/Artista del escape (Gnomo) para el CC clave.",
+   "Usa Intimidating Shout + vendas o Represalias contra melés; Desarmar contra pícaros y guerreros."
+  ],
   "vs": {
    "warrior": "Espejo: gana quien mantenga Seccionar y use antes Golpe mortal; Desarmar en su Temeridad/Deseo de muerte.",
    "rogue": "Difícil si te abre con aturdimientos; aguanta con Voluntad de supervivencia/Forma de piedra, Desarmar durante Evasión y Seccionar para que no se reposicione (provisional).",
