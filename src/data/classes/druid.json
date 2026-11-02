@@ -1,6 +1,6 @@
 {
  "id": "druid",
- "build_checked": "1.60.1.70425 (+ hotfixes Druida 22 Oct 2026 según export de talentsforever; datos de juego iguales en 1.60.1.70532, última beta)",
+ "build_checked": "1.60.1.70630 + hotfixes Druida 30 oct 2026 (export de talentsforever generado el 30 oct 2026; foreverchanges ya en 1.60.1.70707, builds 70685/70707 en reinos de lanzamiento)",
  "sources": [
   "https://talentsforever.com/druid/changes",
   "https://talentsforever.com/druid",
@@ -23,7 +23,9 @@
   "https://foreverhispano.com/clases-y-guias/?clase=Druid&rama=feral-cat",
   "https://www.warcrafttavern.com/forever/guides/druid-leveling/",
   "https://www.method.gg/wow-forever/wow-forever-druid-leveling-guide-and-talents",
-  "https://kami-labs.fr/en/wow-classic/wow-forever-classic-plus-4-novembre/"
+  "https://kami-labs.fr/en/wow-classic/wow-forever-classic-plus-4-novembre/",
+  "https://foreverchanges.pro/talents/druid",
+  "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/"
  ],
  "talents": {
   "trees": [
@@ -49,7 +51,7 @@
     "name": "Genesis",
     "max": 5,
     "pre": null,
-    "eff": "Periodic damage and healing from your spells +1% per rank (+5%)",
+    "eff": "Periodic damage and healing from your spells +2% per rank (+10%; was +5%)",
     "icon": "spell_arcane_arcane03"
    },
    {
@@ -189,7 +191,7 @@
     "name": "Moonkin Form",
     "max": 1,
     "pre": null,
-    "eff": "Moonkin Form: +360% item armor, +3% spell crit to party/raid within 45 yd, Omen of Clarity chance +100%",
+    "eff": "Moonkin Form: +360% item armor; +3% crit chance (all types, spells included) to party/raid within 45 yd; Omen of Clarity chance up",
     "icon": "spell_nature_forceofnature"
    },
    {
@@ -206,11 +208,11 @@
     "tree": 1,
     "row": 1,
     "col": 3,
-    "name": "Heart of the Wild",
+    "name": "Furor",
     "max": 5,
     "pre": null,
-    "eff": "Intellect +2% per rank; Bear Form Stamina up to +20%, Cat Form Strength up to +10%",
-    "icon": "spell_holy_blessingofagility"
+    "eff": "Bear Form: 20% chance per rank for 10 Rage; Cat Form keeps/restores Energy on shifting (moved from Restoration to Feral row 1)",
+    "icon": "spell_holy_blessingofstamina"
    },
    {
     "tree": 1,
@@ -296,31 +298,31 @@
     "tree": 1,
     "row": 4,
     "col": 1,
-    "name": "Shifting Power",
-    "max": 1,
-    "pre": "Shredding Attacks",
-    "eff": "Cat Form: convert 55% of base mana into 40 Energy; 16 s cooldown, not at full Energy",
-    "icon": "spell_druid_displacement"
-   },
-   {
-    "tree": 1,
-    "row": 4,
-    "col": 2,
-    "name": "Primal Bite",
-    "max": 1,
-    "pre": "Savage Fury",
-    "eff": "Bear: bite for 100% weapon damage +26 with high threat (20 Rage, 6 s CD)",
-    "icon": "ability_racial_cannibalize"
-   },
-   {
-    "tree": 1,
-    "row": 4,
-    "col": 3,
     "name": "Predatory Strikes",
     "max": 3,
     "pre": null,
     "eff": "Attack Power in Cat/Bear/Dire Bear Form +50% of your level per rank",
     "icon": "ability_hunter_pet_cat"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 2,
+    "name": "Lacerate",
+    "max": 1,
+    "pre": "Savage Fury",
+    "eff": "Teaches Lacerate: stacking bleed (20 over 15 s + 10% weapon damage r1, up to 5 stacks) with threat; higher ranks at 34/42/50/58",
+    "icon": "ability_druid_lacerate"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 3,
+    "name": "Predatory Discipline",
+    "max": 1,
+    "pre": null,
+    "eff": "Ferocious Bite no longer spends excess Energy but still gains damage from it (sin confirmar: not yet translated in game)",
+    "icon": "spell_druid_savagery"
    },
    {
     "tree": 1,
@@ -335,21 +337,11 @@
    {
     "tree": 1,
     "row": 5,
-    "col": 1,
-    "name": "Improved Shifting Power",
-    "max": 2,
-    "pre": "Shifting Power",
-    "eff": "Shifting Power cooldown -4 s per rank",
-    "icon": "ability_hunter_aspectmastery"
-   },
-   {
-    "tree": 1,
-    "row": 5,
     "col": 2,
     "name": "Leader of the Pack",
     "max": 1,
     "pre": null,
-    "eff": "In Cat/Bear forms, +3% melee and ranged crit to party/raid within 45 yd",
+    "eff": "In Cat/Bear forms, +3% crit chance of all types (spells included) to party/raid within 45 yd",
     "icon": "spell_nature_unyeildingstamina"
    },
    {
@@ -366,16 +358,6 @@
     "tree": 1,
     "row": 6,
     "col": 1,
-    "name": "Natural Reaction",
-    "max": 5,
-    "pre": null,
-    "eff": "Dodge +1% per rank; chance for 5 Rage on dodge (100% at 5/5)",
-    "icon": "ability_bullrush"
-   },
-   {
-    "tree": 1,
-    "row": 6,
-    "col": 3,
     "name": "Rend and Tear",
     "max": 5,
     "pre": "Predatory Strikes",
@@ -384,13 +366,33 @@
    },
    {
     "tree": 1,
+    "row": 6,
+    "col": 4,
+    "name": "Natural Reaction",
+    "max": 5,
+    "pre": null,
+    "eff": "Dodge +1% per rank; chance for 5 Rage on dodge (100% at 5/5)",
+    "icon": "ability_bullrush"
+   },
+   {
+    "tree": 1,
     "row": 7,
     "col": 2,
-    "name": "Berserk",
+    "name": "Primal Bite",
     "max": 1,
     "pre": "Leader of the Pack",
-    "eff": "15 s: Primal Bite hits 3 targets with no cooldown, combo-point builders +100% crit chance, Fear immunity; 3 min CD",
-    "icon": "ability_druid_berserk"
+    "eff": "Bear: bite for 100% weapon damage +42 with high threat (spell ranks 42/62/77); moved from row 4 to row 7",
+    "icon": "ability_racial_cannibalize"
+   },
+   {
+    "tree": 1,
+    "row": 7,
+    "col": 3,
+    "name": "Shifting Power",
+    "max": 1,
+    "pre": "Predatory Discipline",
+    "eff": "Cat Form: convert 55% of base mana into 40 Energy; 8 s cooldown (was 16 s); moved to row 7",
+    "icon": "spell_druid_displacement"
    },
    {
     "tree": 2,
@@ -406,11 +408,11 @@
     "tree": 2,
     "row": 1,
     "col": 3,
-    "name": "Furor",
+    "name": "Heart of the Wild",
     "max": 5,
     "pre": null,
-    "eff": "Bear Form: chance for 10 Rage; Cat Form restores your previous Energy plus up to 10 per second out of form (100% at 5/5)",
-    "icon": "spell_holy_blessingofstamina"
+    "eff": "Intellect +2% per rank; Bear Form Stamina up to +20%, Cat Form Strength up to +10%",
+    "icon": "spell_holy_blessingofagility"
    },
    {
     "tree": 2,
@@ -419,18 +421,18 @@
     "name": "Naturalist",
     "max": 5,
     "pre": null,
-    "eff": "Healing Touch cast time -0.1 s and all damage +1% per rank (+5%)",
+    "eff": "Healing Touch and Wild Growth cast time -0.1 s and all damage +2% per rank (+10%; was +5%)",
     "icon": "spell_nature_healingtouch"
    },
    {
     "tree": 2,
     "row": 2,
     "col": 2,
-    "name": "Subtlety",
+    "name": "Reflection",
     "max": 3,
     "pre": null,
-    "eff": "Nature and Arcane spell threat -10% per rank (-30%)",
-    "icon": "ability_eyeoftheowl"
+    "eff": "Up to 50% of mana regeneration continues while casting",
+    "icon": "spell_frost_windwalkon"
    },
    {
     "tree": 2,
@@ -446,11 +448,11 @@
     "tree": 2,
     "row": 3,
     "col": 2,
-    "name": "Reflection",
+    "name": "Subtlety",
     "max": 3,
     "pre": null,
-    "eff": "Up to 50% of mana regeneration continues while casting",
-    "icon": "spell_frost_windwalkon"
+    "eff": "Nature and Arcane spell threat -10% per rank (-30%)",
+    "icon": "ability_eyeoftheowl"
    },
    {
     "tree": 2,
@@ -466,11 +468,11 @@
     "tree": 2,
     "row": 3,
     "col": 4,
-    "name": "Gift of the Earthmother",
+    "name": "Bloom",
     "max": 1,
     "pre": null,
-    "eff": "Rejuvenation, Swiftmend and Wild Growth global cooldown -0.5 s",
-    "icon": "spell_nature_spiritarmor"
+    "eff": "When your Rejuvenation or Regrowth expires, the target is healed for 100% of your Spirit (replaces Gift of the Earthmother)",
+    "icon": "inv_misc_herb_felblossom"
    },
    {
     "tree": 2,
@@ -499,7 +501,7 @@
     "name": "Swiftmend",
     "max": 1,
     "pre": null,
-    "eff": "Teaches Swiftmend: instant heal equal to a Rejuvenation/Regrowth's full periodic amount (no longer consumes it)",
+    "eff": "Teaches Swiftmend: instant heal on a target with your own Rejuvenation or Regrowth, consuming it (tooltip change; behaviour sin confirmar)",
     "icon": "inv_relics_idolofrejuvenation"
    },
    {
@@ -549,62 +551,65 @@
     "name": "Wild Growth",
     "max": 1,
     "pre": "Living Spirit",
-    "eff": "Teaches Wild Growth: instant, heals target and party for 336 over 7 s (r1), 6 s CD",
+    "eff": "Teaches Wild Growth: 3 s cast (was instant; 2.5 s with Naturalist 5/5), heals target and party for 336 over 7 s (r1)",
     "icon": "ability_druid_flourish"
    }
   ]
  },
- "talents_note": "Árboles completos verificados contra el export JSON de talentsforever (build 70425 + hotfixes Druida 22 Oct). Cambios vs datos locales (70170): Balance of Nature eliminado (Equilibrio queda con 16 talentos); Predatory Instincts renombrado Natural Instinct y movido a fila 5 col 4 (ahora también +25% del Intelecto como curación); Blood Frenzy ahora 2 rangos de 50% (100% a 2/2); Furor/Thick Hide/Brutal Impact con valores nuevos. Sin cambios de talentos tras 70425 según foreverchanges. Ojo: el texto 'ForeverHispano feral oso' usa 'Rabia' para Berserk. Iconos del export.",
+ "talents_note": "Árboles verificados contra el export JSON de talentsforever (generado 30 oct 2026, build 70630 + hotfixes 30 oct) y foreverchanges (build 70707). Cambios del 30 oct: eliminados Berserk, Improved Shifting Power y Gift of the Earthmother; Primal Bite pasa a fila 7 col 2 (requiere Leader of the Pack; sus 3 rangos de hechizo suben a +42/62/77) y Shifting Power a fila 7 col 3 (requiere Predatory Discipline, 8 s de reutilización); Furor pasa a Feral fila 1 col 3 y Heart of the Wild a Restauración; Lacerate es talento de fila 4 (requiere Savage Fury); nuevos Predatory Discipline (Feral fila 4) y Bloom (Restauración fila 3, sustituye a Gift of the Earthmother); Genesis y Naturalist 2-10%; Leader of the Pack y Moonkin Form +3% a todo tipo de crítico; Wild Growth con 3 s de lanzamiento. 52 talentos (16/20/16). Iconos del export.",
  "level_cap": 60,
  "leveling": {
   "spec": "Combate feral (gato, oso para pulls difíciles)",
-  "why": "Feral es la subida más rápida y cómoda: oso desde 10, gato desde 20 con Acechar y Carrerilla para elegir pulls, Shifting Power convierte maná en energía, Blood Frenzy da combo extra en críticos y las habilidades ferales escalan con el daño del arma en Forever. Es la opción más elegida (≈46% en talentsforever) y la que recomiendan Warcraft Tavern y Method. Furor y Naturalist (+5% de daño) completan desde Restauración.",
+  "why": "Feral sigue siendo la subida más cómoda y la más elegida tras el hotfix del 30 oct (56% de las builds en talentsforever; Method, actualizado el 2 nov, la mantiene como la más rápida): oso desde 10, gato desde 20 con Acechar y Carrerilla para elegir pulls, Blood Frenzy da combo extra en críticos y las habilidades ferales escalan con el daño del arma. El cambio importante: Shifting Power pasa a la fila 7 y ya no llega hasta el nivel 40 (antes ~28), aunque ahora tiene 8 s de reutilización sin talento extra; Berserk desaparece. Entre 20 y 39 el gato depende de Furor (sube a fila 1 de Feral) para recuperar energía y de matar rápido; aun así, chain-pull en gato gasta mucho menos maná que Equilibrio, que sigue necesitando beber más a menudo. Equilibrio mejora (Genesis 2-10%, Moonkin +3% a todo crítico) y es una alternativa válida si prefieres DoTs y raíces múltiples, pero ninguna fuente lo sitúa por delante de Feral para subir. Un híbrido oso/gato no aporta ventaja al subir en solitario: los talentos de oso (Primal Bite, Natural Reaction) solo compensan si vas a tanquear mazmorras. Desde Restauración: Heart of the Wild y Naturalist (+10% de daño); en Equilibrio, Genesis (potencia Arañazo/Destripar) y Nature's Majesty.",
   "order": [
    "Ferocity*5",
-   "Thick Hide*3",
    "Feral Swiftness*2",
+   "Furor*3",
    "Sharpened Claws*2",
    "Savage Fury*2",
    "Feral Charge*1",
-   "Shredding Attacks*3",
-   "Shifting Power*1",
    "Predatory Strikes*3",
    "Blood Frenzy*2",
    "Leader of the Pack*1",
+   "Predatory Discipline*1",
    "Natural Instinct*2",
-   "Rend and Tear*3",
-   "Berserk*1",
-   "Rend and Tear*2",
-   "Improved Shifting Power*2",
+   "Furor*1",
+   "Rend and Tear*5",
+   "Shifting Power*1",
+   "Primal Bite*1",
+   "Furor*1",
    "Heart of the Wild*5",
-   "Furor*5",
    "Naturalist*5",
-   "Natural Shapeshifter*1"
+   "Genesis*5",
+   "Nature's Majesty*2",
+   "Shredding Attacks*1"
   ],
   "alt": {
    "spec": "Equilibrio (lechúcico; DoTs + raíces múltiples)",
    "order": [
-    "Improved Wrath*5",
-    "Moonglow*3",
+    "Genesis*5",
     "Improved Moonfire*2",
     "Nature's Majesty*2",
+    "Moonglow*1",
     "Nature's Splendor*1",
-    "Improved Entangling Roots*2",
+    "Moonglow*2",
+    "Nature's Reach*2",
     "Insect Swarm*1",
-    "Vengeance*5",
+    "Vengeance*4",
     "Nature's Grace*1",
-    "Eclipse*3",
+    "Vengeance*1",
+    "Improved Wrath*3",
     "Moonfury*5",
     "Moonkin Form*1",
-    "Improved Starfire*5",
-    "Nature's Reach*2",
-    "Improved Entangling Roots*1",
-    "Genesis*5",
-    "Nature's Focus*5",
-    "Naturalist*2"
+    "Improved Wrath*2",
+    "Eclipse*3",
+    "Heart of the Wild*5",
+    "Naturalist*5",
+    "Reflection*3",
+    "Natural Shapeshifter*2"
    ]
   },
-  "stats": "Feral: Fuerza/Agilidad/Poder de ataque y DPS del arma (en Forever las habilidades ferales escalan con el arma) > Aguante > Intelecto (más maná para Shifting Power y curarte; Heart of the Wild) > Espíritu > Armadura. Antes del 10-20 (lanzador): Intelecto/poder con hechizos > Aguante/Espíritu. Method sugiere priorizar Intelecto y Espíritu en el equipo de subida feral; a contrastar en juego.",
+  "stats": "Feral: Fuerza/Agilidad/Poder de ataque y DPS del arma (en Forever las habilidades ferales escalan con el arma) > Aguante > Intelecto (más maná para curarte y, desde el 40, para Shifting Power; Heart of the Wild) > Espíritu > Armadura. Antes del 10-20 (lanzador): Intelecto/poder con hechizos > Aguante/Espíritu. Method sugiere priorizar Intelecto y Espíritu en el equipo de subida feral; a contrastar en juego.",
   "weapons": "Las habilidades ferales escalan con el daño del arma: busca armas a 2M de alto daño. Por defecto dagas y bastones; mazas a 1M/2M en Forjaz (Buliwyf Stonehand); armas de puño en Darnassus/Forjaz; armas de asta (nuevo) desde 20 en Ventormenta (Woo Ping). Sin imbuiciones de clase; piedras de afilar/pesas o encantamientos según arma (comportamiento en formas sin confirmar).",
   "abilities": [
    [
@@ -668,14 +673,14 @@
     "Sangrado; activa Rend and Tear."
    ],
    [
+    25,
+    "Lacerate (Lacerar, talento) / Predatory Discipline (talento)",
+    "30 oct: Lacerate pasa a ser talento de fila 4 de Feral (requiere Savage Fury; rangos superiores en el instructor a 34, 42, 50 y 58). Es de oso: no hace falta para subir en gato."
+   ],
+   [
     26,
     "Dash (Carrerilla)",
     "Movilidad y escapes."
-   ],
-   [
-    28,
-    "Shifting Power (Poder cambiante)",
-    "Talento de fila 4 (pide Shredding Attacks 3/3): convierte maná en 40 de energía cada 16 s. Primal Bite (Mordisco primigenio, oso) es el otro talento de esa fila; no hace falta para subir en gato."
    ],
    [
     30,
@@ -694,13 +699,13 @@
    ],
    [
     40,
-    "Dire Bear Form (Forma de oso temible) / Berserk (Rabia) / Innervate (Estimular)",
-    "Berserk es el talento 40 de Feral."
+    "Dire Bear Form (Forma de oso temible) / Innervate (Estimular) / Shifting Power (Poder cambiante, talento) / Primal Bite (Mordisco primigenio, talento)",
+    "30 oct: Shifting Power (maná → 40 de energía, 8 s de reutilización) y Primal Bite (oso) son ahora la fila 7 de Feral: llegan al 40 como pronto (30 puntos en Feral). Berserk ya no existe."
    ],
    [
     42,
-    "Lacerate (Lacerar)",
-    "Nuevo sangrado de oso."
+    "Lacerate (Lacerar) rango 3",
+    "Ahora es talento (fila 4); el rango 2 se entrena al 34 y los siguientes al 42, 50 y 58."
    ],
    [
     44,
@@ -713,7 +718,8 @@
    "20+ (gato): Acechar y abre con Triturar por la espalda (Abalanzarse desde 36); o Fuego feérico a distancia para pullear sin ir sigiloso.",
    "Arañazo y luego Garra (o Triturar por detrás) para combos; Blood Frenzy da combos extra en críticos.",
    "Destripar a 4-5 combos solo si el objetivo va a vivir; si no, Mordedura feroz (32+) o seguir con Garra.",
-   "Shifting Power cuando bajes de ~50 de energía; con Furor 5/5, salir y entrar a gato también recupera energía.",
+   "20-39: sin Shifting Power, la energía sale de Furor (salir y volver a gato) y de no malgastarla; si te quedas seco, termina en oso o con Cólera.",
+   "Desde el 40: Shifting Power cada 8 s cuando bajes de ~50 de energía (no funciona con la energía llena).",
    "Si se complica: Forma de oso para aguantar, Raíces/Presa de la naturaleza para huir, curas (Toque de sanación/Recrecimiento/Rejuvenecimiento) fuera de forma entre pulls.",
    "No pongas sangrados en enemigos a punto de morir; Rend and Tear premia que el objetivo esté sangrando."
   ],
@@ -752,7 +758,9 @@
   "tips": [
    "Haz la misión de Forma de oso nada más llegar a 10: es el mayor salto de poder hasta el gato.",
    "En Forever puedes usar consumibles e interactuar con PNJ/objetos sin salir de forma.",
-   "Tiger's Fury ya no existe; tu gestión de energía es Shifting Power + Furor.",
+   "Tiger's Fury ya no existe; tu gestión de energía es Furor hasta el 40 y Furor + Shifting Power (8 s) desde el 40.",
+   "30 oct: Shifting Power y Primal Bite están en la fila 7 (nivel 40 como pronto) y Berserk desaparece. Feral sigue siendo la mejor subida porque gasta poco maná y elige pulls con sigilo; si el tramo 20-39 se te hace lento, Equilibrio (build alternativa) es la opción, no un híbrido oso/gato.",
+   "Furor ahora está en la fila 1 de Feral: cógelo pronto para recuperar energía al cambiar de forma mientras no tengas Shifting Power.",
    "Los puntos de combo ya no se pierden al cambiar de objetivo (según Method; sin confirmar al 100%).",
    "Embrace of the Viper (Cuevas de los Lamentos) convierte tu forma felina en serpiente y su bonus de 5 piezas puede aturdir 1 s.",
    "Perk de Legado 'Talented': talentos hasta 5 niveles antes; el orden es el mismo.",
@@ -856,20 +864,28 @@
  ],
  "changes": [
   "Nature's Grasp (10), Omen of Clarity (20) y Faerie Fire pasan a ser habilidades base; Faerie Fire (Feral) desaparece como talento.",
-  "Tiger's Fury desaparece; nuevo Shifting Power (maná → energía) e Improved Shifting Power; Furor rehecho para recuperar energía al volver a gato.",
-  "Primal Bite (ataque de amenaza de oso) en lugar de Mangle; Berserk (40) potencia Primal Bite y los críticos de combos; Lacerate (42) nuevo.",
-  "Restauración: Wild Growth (40), Gift of the Earthmother, Living Spirit; Swiftmend en fila 4 y ya no consume el HoT.",
+  "Tiger's Fury desaparece; nuevo Shifting Power (maná → energía); Furor rehecho para recuperar energía al volver a gato.",
+  "Primal Bite (ataque de amenaza de oso) en lugar de Mangle; Lacerate nuevo.",
+  "Restauración: Wild Growth (40), Bloom, Living Spirit; Swiftmend en fila 4.",
   "Equilibrio: Eclipse, Overgrowth (Raíces a 3 objetivos), Nature's Splendor, Genesis; Moonkin Form da +3% crítico de hechizo al grupo y más Omen.",
   "Puedes usar consumibles e interactuar sin salir de forma; Raíces enredadoras funciona en interiores.",
   "Armas de asta desde 20; las habilidades ferales escalan con el daño del arma.",
   "Revive (12) nuevo para resucitar fuera de combate; Forma de viaje a 30 con +40%.",
-  "Nueva raza Skyborne con formas de druida propias."
+  "Nueva raza Skyborne con formas de druida propias.",
+  "30 oct: Berserk eliminado del árbol (ninguna fuente indica que pase a ser habilidad base).",
+  "30 oct: Primal Bite pasa a la fila 7 de Feral (30 puntos, nivel 40 en vez de 25), bajo Leader of the Pack; sus 3 rangos de hechizo hacen más daño (+42/62/77).",
+  "30 oct: Shifting Power pasa a la fila 7 (bajo Predatory Discipline) con 8 s de reutilización en vez de 16; Improved Shifting Power eliminado.",
+  "30 oct: Gift of the Earthmother eliminado y sustituido por Bloom (cura igual al 100% de tu Espíritu cuando expira tu Rejuvenecimiento o Recrecimiento).",
+  "30 oct: Furor pasa a la fila 1 de Feral; Heart of the Wild a Restauración; Lacerate pasa a talento de fila 4 (requiere Savage Fury); nuevo Predatory Discipline (Feral fila 4).",
+  "30 oct: Genesis y Naturalist pasan de 1-5% a 2-10%; Naturalist también acorta Wild Growth.",
+  "30 oct: Leader of the Pack y Moonkin Form dan +3% a todo tipo de crítico (hechizos incluidos).",
+  "30 oct: Wild Growth pasa a tener 3 s de lanzamiento (2,5 s con Naturalist); Swiftmend requiere tu propio Rejuvenecimiento o Recrecimiento y lo consume (según foreverchanges solo cambió el texto; sin confirmar)."
  ],
  "pvp": {
   "strengths": [
    "Máxima movilidad: Forma de viaje, Carrerilla, Feral Charge (salto en gato 8-25 m), Forma acuática.",
    "Híbrido: cura fuera de forma, Innervate, raíces (incluso en interiores) y Presa de la naturaleza base.",
-   "Ráfaga feral con Berserk (+100% crítico de combos) y Blood Frenzy (combo extra en críticos).",
+   "Ráfaga feral con Blood Frenzy (combo extra en críticos) y Shifting Power cada 8 s desde el 40.",
    "Cambiar de forma rompe ralentizaciones/polimorfia."
   ],
   "weaknesses": [
@@ -881,7 +897,7 @@
   "duel_plan": [
    "Pre-bufos: Marca de lo Salvaje, Espinas, Rejuvenecimiento antes de entrar en forma.",
    "Gato en sigilo: apertura con Abalanzarse (aturdimiento) o Devastar, luego Arañazo y Triturar.",
-   "Berserk en la ventana de ráfaga para Destripar/Mordedura feroz con combos rápidos.",
+   "Shifting Power (8 s) para no quedarte sin energía en la ventana de Destripar/Mordedura feroz.",
    "Si te kitean: Feral Charge (gato) o Carrerilla; Raíces enredadoras para controlar.",
    "Curas: sal de forma solo con el rival controlado (raíces/aturdido); Nature's Swiftness no está en esta build.",
    "Provisional: valores de beta, sin pruebas al 60."
@@ -893,9 +909,9 @@
    "priest": "Presión constante de sangrados; cuidado con Psychic Scream (Elune's Light/burst justo después) (provisional).",
    "warlock": "Pégate rápido (Carrerilla/Feral Charge) para cortar casteos; Miedo es tu gran problema (provisional).",
    "hunter": "Cierra distancia en gato y usa Raíces para evitar el kiteo; su mascota puede mantenerte fuera de sigilo (provisional).",
-   "druid": "Espejo: gana quien aproveche mejor Berserk y las raíces; Faerie Fire contra sigilo (provisional).",
+   "druid": "Espejo: gana quien gestione mejor la energía (Shifting Power) y las raíces; Faerie Fire contra sigilo (provisional).",
    "shaman": "Muévete fuera del rango de Earthbind; Purge le quita tus HoTs, cura solo con él controlado (provisional).",
-   "paladin": "Duelo largo; guarda la ráfaga de Berserk para tras su burbuja y evita sus aturdimientos con Carrerilla (provisional)."
+   "paladin": "Duelo largo; guarda la ráfaga para tras su burbuja y evita sus aturdimientos con Carrerilla (provisional)."
   }
  }
 }

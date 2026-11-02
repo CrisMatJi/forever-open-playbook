@@ -1,6 +1,6 @@
 {
  "id": "mage",
- "build_checked": "1.60.1.70425 (beta, 15 oct 2026) + hotfixes de servidor del 20 y 22 oct 2026 (export de talentsforever generado el 23 oct 2026)",
+ "build_checked": "1.60.1.70630 + hotfixes de servidor del 28 y 30 oct 2026 (export de talentsforever generado el 30 oct 2026; foreverchanges en 1.60.1.70707, builds 70685/70707 ya en reinos de lanzamiento)",
  "sources": [
   "https://talentsforever.com/mage/changes",
   "https://talentsforever.com/mage",
@@ -17,7 +17,8 @@
   "https://www.icy-veins.com/wow-forever/news/all-new-race-and-class-combos-and-racial-abilities-in-wow-forever-official/",
   "https://www.warcrafttavern.com/forever/guides/dungeons/",
   "https://leprestore.com/guides/world-of-warcraft-forever/wow-forever-best-level-30-gear/",
-  "https://kami-labs.fr/en/wow-classic/wow-forever-classic-plus-4-novembre/"
+  "https://kami-labs.fr/en/wow-classic/wow-forever-classic-plus-4-novembre/",
+  "https://foreverchanges.pro/talents/mage"
  ],
  "talents": {
   "trees": [
@@ -40,16 +41,6 @@
     "tree": 0,
     "row": 1,
     "col": 2,
-    "name": "Arcane Focus",
-    "max": 5,
-    "pre": null,
-    "eff": "+1% Arcane hit per rank",
-    "icon": "spell_holy_devotion"
-   },
-   {
-    "tree": 0,
-    "row": 1,
-    "col": 3,
     "name": "Improved Channeling",
     "max": 5,
     "pre": null,
@@ -59,12 +50,12 @@
    {
     "tree": 0,
     "row": 1,
-    "col": 4,
-    "name": "Missile Barrage",
-    "max": 2,
+    "col": 3,
+    "name": "Arcane Resilience",
+    "max": 3,
     "pre": null,
-    "eff": "Arcane Blast (40%) and Fireball/Frostbolt/Frost Blast/Frostfire/Arcane Wrath (20%) can make next Arcane Missiles free and 50% faster",
-    "icon": "ability_mage_missilebarrage"
+    "eff": "Armor equal to 25% of Intellect per rank (75% at 3/3; was 2 ranks/50%)",
+    "icon": "spell_arcane_arcaneresilience"
    },
    {
     "tree": 0,
@@ -100,11 +91,11 @@
     "tree": 0,
     "row": 2,
     "col": 4,
-    "name": "Arcane Resilience",
+    "name": "Missile Barrage",
     "max": 2,
     "pre": null,
-    "eff": "Armor based on Intellect",
-    "icon": "spell_arcane_arcaneresilience"
+    "eff": "Arcane Blast (20% at r1) and other spells can make your next Arcane Missiles cheaper and faster (exact values sin confirmar)",
+    "icon": "ability_mage_missilebarrage"
    },
    {
     "tree": 0,
@@ -133,7 +124,7 @@
     "name": "Arcane Blast",
     "max": 1,
     "pre": null,
-    "eff": "1.5 s Arcane nuke; each cast gives 15% of Intellect as spell damage and +175% cost, up to 4 stacks for 15 s",
+    "eff": "1.5 s Arcane nuke; each cast gives 12% of Intellect as spell damage and +100% mana cost for 18 s (was 15% / +175% / 15 s)",
     "icon": "spell_arcane_blast"
    },
    {
@@ -213,37 +204,27 @@
     "name": "Arcane Power",
     "max": 1,
     "pre": "Presence of Mind",
-    "eff": "More spell damage and mana cost for 15 s",
+    "eff": "For 15 s, spells deal 30% more damage and cost 30% more mana",
     "icon": "spell_nature_lightning"
-   },
-   {
-    "tree": 1,
-    "row": 1,
-    "col": 1,
-    "name": "Improved Fire Blast",
-    "max": 2,
-    "pre": null,
-    "eff": "Fire Blast cooldown down and range up (was Wake of Fire)",
-    "icon": "spell_fire_lavaspawn"
    },
    {
     "tree": 1,
     "row": 1,
     "col": 2,
     "name": "Incineration",
-    "max": 3,
+    "max": 5,
     "pre": null,
-    "eff": "Fire Blast, Ice Lance, Arcane Blast and Scorch crit +2% per rank",
+    "eff": "Fire Blast, Ice Lance, Arcane Blast and Scorch crit +2% per rank (now 5 ranks)",
     "icon": "spell_fire_flameshock"
    },
    {
     "tree": 1,
     "row": 1,
     "col": 3,
-    "name": "Improved Fireball",
+    "name": "Accelerant",
     "max": 5,
     "pre": null,
-    "eff": "Fireball and Frostfire Bolt cast time -0.1 s per rank",
+    "eff": "Fireball, Frostfire Bolt and Arcane Wrath cast time -0.1 s per rank (was Improved Fireball)",
     "icon": "spell_fire_flamebolt"
    },
    {
@@ -308,6 +289,16 @@
    },
    {
     "tree": 1,
+    "row": 3,
+    "col": 4,
+    "name": "Improved Fire Blast",
+    "max": 2,
+    "pre": null,
+    "eff": "Fire Blast cooldown -1 s and range +8 yd per rank (moved to row 3)",
+    "icon": "spell_fire_lavaspawn"
+   },
+   {
+    "tree": 1,
     "row": 4,
     "col": 1,
     "name": "Improved Scorch",
@@ -351,9 +342,9 @@
     "row": 5,
     "col": 2,
     "name": "Critical Mass",
-    "max": 5,
+    "max": 3,
     "pre": null,
-    "eff": "Fire crit +2% per rank (10% total)",
+    "eff": "Fire crit +2% per rank (6% total; was 5 ranks/10%)",
     "icon": "spell_nature_wispheal"
    },
    {
@@ -373,7 +364,7 @@
     "name": "Fire Power",
     "max": 3,
     "pre": null,
-    "eff": "Fire damage +1/2/3% per Fire effect on target, max 12%",
+    "eff": "Fire damage +1% per Fire effect on the target, up to +4% (rank scaling sin confirmar)",
     "icon": "spell_fire_immolation"
    },
    {
@@ -403,17 +394,17 @@
     "name": "Improved Frostbolt",
     "max": 5,
     "pre": null,
-    "eff": "Frostbolt and Frost Blast -0.1 s cast per rank",
+    "eff": "Frostbolt cast time -0.1 s per rank",
     "icon": "spell_frost_frostbolt02"
    },
    {
     "tree": 2,
     "row": 1,
     "col": 3,
-    "name": "Elemental Precision",
+    "name": "Precision",
     "max": 3,
     "pre": null,
-    "eff": "Frost and Fire hit +2% per rank (6% total)",
+    "eff": "Hit chance with all spells +2% per rank (6%; was Elemental Precision, Frost/Fire only)",
     "icon": "spell_ice_magicdamage"
    },
    {
@@ -483,7 +474,7 @@
     "name": "Ice Lance",
     "max": 1,
     "pre": null,
-    "eff": "Instant Frost damage, +200% against frozen targets",
+    "eff": "Instant Frost damage, +300% against frozen targets (was +200%); 8 s cooldown on every rank",
     "icon": "spell_frost_frostblast"
    },
    {
@@ -493,7 +484,7 @@
     "name": "Arctic Reach",
     "max": 2,
     "pre": null,
-    "eff": "Range/radius of several Frost spells up",
+    "eff": "Range of Frostbolt, Ice Lance and Blizzard +10% per rank; Frost Nova and Cone of Cold radius up",
     "icon": "spell_shadow_darkritual"
    },
    {
@@ -553,7 +544,7 @@
     "name": "Winter's Chill",
     "max": 5,
     "pre": null,
-    "eff": "Frost spells stack a debuff: next Cone of Cold +5% damage and +7% spell damage per stack (5 stacks)",
+    "eff": "Frostbolt and empowered Ice Lance can stack Winter's Chill: next Cone of Cold +20% damage per stack (was +5%)",
     "icon": "spell_frost_chillingblast"
    },
    {
@@ -563,16 +554,16 @@
     "name": "Ice Barrier",
     "max": 1,
     "pre": "Cold Snap",
-    "eff": "Absorb shield that also boosts Frost damage",
+    "eff": "Absorb shield (493 r1); Frost damage +15% for 1 min (was 3%) and another +5% while the shield holds",
     "icon": "spell_ice_lament"
    }
   ]
  },
- "talents_note": "Verificado con el export de talentsforever (build 70425 + hotfixes 20/22 oct). Cambios respecto a la 70170 local: eliminado Piercing Ice; añadido Arcane Wrath (Arcano fila 4 col 4, requiere Arcane Blast); Missile Barrage pasa a fila 1 col 4 y 2 rangos; Wake of Fire renombrado Improved Fire Blast; Hot Streak renombrado Heating Up; Critical Mass 3->5 rangos; Fire Power 5->3 rangos; Elemental Precision 5->3 rangos (2% por rango); Frostbite, Permafrost, Frost Channeling e Improved Blizzard recolocados; Winter's Chill rediseñado (potencia Cone of Cold); Ice Lance +200% (antes 300%). Iconos tomados del export (datos del cliente) cuando difieren del archivo local. Ojo: las guías de ForeverHispano (24/10) aún usan Hielo penetrante y Precisión elemental 5/5, datos anteriores a 70425.",
+ "talents_note": "Verificado con el export de talentsforever (generado 30 oct 2026, build 70630 + hotfixes 28/30 oct) y foreverchanges (build 70707). 53 talentos (18/17/18). Cambios: eliminado Arcane Focus; Elemental Precision pasa a ser Precision (Escarcha fila 1, golpe con todos los hechizos); Improved Fireball pasa a llamarse Accelerant (también acelera Arcane Wrath); Incineration 5 rangos; Improved Fire Blast pasa a fila 3; Critical Mass 3 rangos (6%); Fire Power hasta +4%; Arcane Resilience 3 rangos; Missile Barrage a fila 2; Improved Channeling a fila 1 col 2; Ice Lance +300% contra congelados con 8 s de reutilización en todos los rangos; Ice Barrier +15% de daño de Escarcha; Winter's Chill +20% por acumulación; Arctic Reach alcanza a Ice Lance. Frost Blast ya no se entrena. Iconos del export.",
  "level_cap": 60,
  "leveling": {
   "spec": "Escarcha",
-  "why": "Consenso de Icy Veins, Method, Warcraft Tavern y Mobalytics: Escarcha es la más segura en solitario. Lanza de hielo (Ice Lance) + Mordedura de Escarcha (Frostbite) + Trizar (Shatter, +50% crítico contra congelados) + Dedos de Escarcha (Fingers of Frost) dan críticos enormes con mucho control para kitear. Sin Legado: 51 puntos.",
+  "why": "Consenso de Icy Veins, Method, Warcraft Tavern y Mobalytics: Escarcha es la más segura en solitario, y los cambios del 28-30 oct la refuerzan. Lanza de hielo (Ice Lance) hace +300% contra congelados (8 s de reutilización) y, con Mordedura de Escarcha (Frostbite), Trizar (Shatter) y Dedos de Escarcha (Fingers of Frost), da críticos enormes con mucho control para kitear. Barrera de hielo (Ice Barrier, al 40) ahora da +15% de daño de Escarcha durante 1 min. Precision (fila 1 de Escarcha) sustituye a Arcane Focus/Elemental Precision. Los 10 puntos finales van a Arcano para Arcane Concentration (lanzamientos gratis). Sin Legado: 51 puntos.",
   "order": [
    "Improved Frostbolt*5",
    "Frostbite*3",
@@ -581,27 +572,25 @@
    "Ice Shards*3",
    "Improved Blizzard*1",
    "Shatter*3",
-   "Frost Channeling*2",
+   "Arctic Reach*2",
    "Fingers of Frost*2",
    "Cold Snap*1",
-   "Elemental Precision*2",
-   "Ice Block*1",
-   "Winter's Chill*4",
+   "Frost Channeling*2",
+   "Winter's Chill*5",
    "Ice Barrier*1",
-   "Winter's Chill*1",
-   "Improved Cone of Cold*3",
-   "Elemental Precision*1",
-   "Improved Blizzard*2",
+   "Precision*3",
    "Improved Frost Nova*2",
-   "Missile Barrage*2",
-   "Arcane Focus*3",
-   "Arcane Concentration*5",
-   "Frost Channeling*1"
+   "Ice Block*1",
+   "Frost Channeling*1",
+   "Improved Cone of Cold*3",
+   "Arcane Resilience*3",
+   "Wand Specialization*2",
+   "Arcane Concentration*5"
   ],
   "alt": {
    "spec": "Fuego (mazmorras / grupo, Combustion al 40)",
    "order": [
-    "Improved Fireball*5",
+    "Accelerant*5",
     "Ignite*5",
     "Pyroblast*1",
     "Incineration*3",
@@ -609,22 +598,22 @@
     "Heating Up*1",
     "Master of Elements*3",
     "Improved Scorch*1",
-    "Critical Mass*5",
+    "Critical Mass*3",
     "Blast Wave*1",
-    "Fire Power*3",
     "Flame Throwing*1",
+    "Fire Power*3",
+    "Incineration*2",
     "Combustion*1",
-    "Elemental Precision*3",
-    "Missile Barrage*2",
-    "Wand Specialization*2",
-    "Arcane Focus*1",
-    "Arcane Concentration*5",
-    "Arcane Subtlety*2",
+    "Improved Scorch*2",
     "Impact*3",
-    "Improved Scorch*2"
+    "Precision*3",
+    "Frost Warding*2",
+    "Arcane Resilience*3",
+    "Wand Specialization*2",
+    "Arcane Concentration*5"
    ]
   },
-  "stats": "Poder con hechizos (también sube el daño de la varita) > Intelecto > Espíritu (regeneración) > Aguante. Golpe de hechizos cuando lo encuentres (Elemental Precision da +6%). El crítico vale mucho en Escarcha por Ice Shards y Shatter. Los humanos y Skyborne aportan crítico/celeridad por racial.",
+  "stats": "Poder con hechizos (también sube el daño de la varita) > Intelecto > Espíritu (regeneración) > Aguante. Golpe de hechizos cuando lo encuentres (Precision, fila 1 de Escarcha, da +6% a todos los hechizos). El crítico vale mucho en Escarcha por Ice Shards y Shatter. Los humanos y Skyborne aportan crítico/celeridad por racial.",
   "weapons": "Bastones (staves) o daga/espada + sostener en mano izquierda; prioriza poder con hechizos. Varita desde el nivel 5: Lesser Magic Wand (Encantamiento/subasta) y Greater Magic Wand al 13; luego Gravestone Scepter (misión de Cavernas de Brazanegra). Sastrería y Encantamiento son las profesiones recomendadas (piezas BoP de tela con poder con hechizos desde el 10; Minor/Lesser Wizard Oil en el arma). Cocina para el buff de experiencia de la comida.",
   "abilities": [
    [
@@ -665,7 +654,7 @@
    [
     20,
     "Ice Lance (Lanza de hielo, talento), Blizzard (Ventisca), Blink (Traslación), Evocation (Evocación), Mana Shield, Teleport: Stormwind/Ironforge",
-    "Gran salto de daño con Ice Lance."
+    "Gran salto de daño con Ice Lance (+300% contra congelados, 8 s de reutilización)."
    ],
    [
     22,
@@ -674,8 +663,8 @@
    ],
    [
     24,
-    "Frost Blast (nuevo en Forever), Counterspell (Contrahechizo)",
-    "Frost Blast: hechizo de 1,5 s que daña y ralentiza un 40%; también se acelera con Improved Frostbolt."
+    "Counterspell (Contrahechizo)",
+    "Frost Blast ya no se entrena (eliminado del libro de hechizos el 28 oct)."
    ],
    [
     26,
@@ -700,7 +689,7 @@
    [
     40,
     "Ice Barrier (Barrera de hielo, talento), Frostfire Bolt (Descarga de Pirofrío, nueva), Teleport: Dalaran, portales, montura y doble especialización",
-    "Doble especialización al 40."
+    "Barrera de hielo da +15% de daño de Escarcha 1 min. Doble especialización al 40."
    ],
    [
     56,
@@ -710,11 +699,11 @@
   ],
   "rotation": [
    "Abre desde el máximo alcance con Descarga de Escarcha (Frostbolt).",
-   "Si salta Dedos de Escarcha (Fingers of Frost) o Mordedura de Escarcha (Frostbite) congela al objetivo, gasta en Lanza de hielo (Ice Lance): +200% de daño y +50% de crítico con Shatter.",
-   "Cuando el mob llegue a melé: Nova de Escarcha (Frost Nova), retrocede y encadena Lanza de hielo mientras dure la congelación.",
-   "Usa Misiles Arcanos solo con proc de Tromba de misiles (Missile Barrage), que lo hace gratis y más rápido (cuando tengas el talento).",
+   "Si salta Dedos de Escarcha (Fingers of Frost) o Mordedura de Escarcha (Frostbite) congela al objetivo, gasta en Lanza de hielo (Ice Lance): +300% de daño y mucho más crítico con Shatter. Tiene 8 s de reutilización: no la spamees, guárdala para el congelado.",
+   "Cuando el mob llegue a melé: Nova de Escarcha (Frost Nova), retrocede y usa Lanza de hielo + Descarga de Escarcha mientras dure la congelación.",
+   "Desde el 40: mantén Barrera de hielo (Ice Barrier) activa: absorbe daño y da +15% de daño de Escarcha.",
    "Remata con la varita los mobs con poca vida para ahorrar maná (regla de los 5 segundos).",
-   "AoE (3+ mobs): Cono de frío para generar procs, Lanza de hielo a los congelados, Nova de Escarcha para más congelaciones; con 5+ mobs, Ventisca (Blizzard) con Improved Blizzard para ralentizar y Deflagración Arcana si te alcanzan. Es caro en maná: bebe entre pulls.",
+   "AoE (3+ mobs): Cono de frío para generar procs, Lanza de hielo a un congelado, Nova de Escarcha para más congelaciones; con 5+ mobs, Ventisca (Blizzard) con Improved Blizzard para ralentizar y Deflagración Arcana si te alcanzan. Es caro en maná: bebe entre pulls.",
    "Emergencias: Traslación (Blink), Bloque de hielo (Ice Block), Polimorfia al segundo mob, Mordedura de frío (Cold Snap) para recuperar Nova/Bloque."
   ],
   "class_quests": [
@@ -745,12 +734,13 @@
   ],
   "tips": [
    "El tope de nivel al lanzamiento es 60 y será permanente; recibes 51 puntos (uno por nivel desde el 10). El Legado 'Talented' (en alters) da hasta 5 puntos extra y adelanta los talentos 5 niveles; las listas de aquí NO cuentan con Legado.",
-   "Puedes resetear talentos a partir del nivel 22 según Icy Veins; algunos suben como Arcano (Missile Barrage + Wand Specialization) y pasan a Escarcha más tarde.",
+   "Puedes resetear talentos a partir del nivel 22 según Icy Veins; algunos suben como Arcano (Missile Barrage + Wand Specialization) y pasan a Escarcha más tarde. Ojo: Missile Barrage ahora está en la fila 2 de Arcano.",
    "Conjura comida, agua y gema de maná al empezar cada sesión.",
    "Desde el 20 tienes teleport a Ventormenta/Forjaz: pon la piedra de hogar cerca de tu zona de misiones, no en la capital.",
    "Haz cada mazmorra al menos una vez con sus misiones: dan mucha experiencia y objetos azules.",
    "Usa Comprehend Scroll con los pergaminos que encuentres (buffs temporales de leveo).",
-   "Guarda maná para Nova de Escarcha + Traslación si un pull de AoE sale mal."
+   "Guarda maná para Nova de Escarcha + Traslación si un pull de AoE sale mal.",
+   "30 oct: Arcane Focus ya no existe; el golpe de hechizos sale de Precision (Escarcha fila 1, +6% a todos los hechizos). Frost Blast ya no se entrena: tu ralentización es Descarga de Escarcha."
   ]
  },
  "races": [
@@ -889,23 +879,31 @@
   "Como mago aportas AoE en pulls grandes (Ventisca/Cono de frío) y Polimorfia: sube rápido en grupo."
  ],
  "changes": [
-  "Nuevo hechizo Frost Blast al nivel 24 (1,5 s, daño y ralentización del 40%).",
-  "Frostfire Bolt (Descarga de Pirofrío) entrenable al 40; Improved Fireball también la acelera.",
-  "Ice Lance pasa a talento de Escarcha fila 3 (+200% contra congelados; antes del 15 oct era +300%).",
+  "Frost Blast se añadió al 24 el 15 oct, pero desde el 28 oct ya no se entrena.",
+  "Frostfire Bolt (Descarga de Pirofrío) entrenable al 40; Accelerant (antes Improved Fireball) también la acelera.",
+  "Ice Lance pasa a talento de Escarcha fila 3.",
   "Fingers of Frost y Shatter (+50% crítico contra congelados) hacen el estilo 'shatter' muy fuerte; Frostbite congela 5 s.",
   "Winter's Chill ya no da crítico: ahora acumula daño para tu siguiente Cono de frío (Cone of Cold), que además ralentiza más a los 4 primeros objetivos.",
-  "Arcane Blast es talento (1,5 s, acumula 15% del intelecto como poder con hechizos hasta 4 veces) y nuevo talento Arcane Wrath (3,5 s, 6 s de reutilización, escala con el 5% del maná máximo).",
-  "Missile Barrage (2 rangos, fila 1): procs de Misiles Arcanos gratis y 50% más rápidos.",
-  "Fuego: Hot Streak se llama Heating Up (reduce el tiempo de lanzamiento de Piroexplosión, no la hace instantánea); Combustion termina tras 3 críticos; Critical Mass 5 rangos; Fire Power rediseñado.",
+  "Arcane Blast es talento y nuevo talento Arcane Wrath (3,5 s, 6 s de reutilización, escala con el 5% del maná máximo).",
+  "Missile Barrage (2 rangos, ahora fila 2): procs de Misiles Arcanos más baratos y rápidos.",
+  "Fuego: Hot Streak se llama Heating Up (reduce el tiempo de lanzamiento de Piroexplosión, no la hace instantánea); Combustion termina tras 3 críticos; Fire Power rediseñado.",
   "Se eliminan los talentos de +1% pasivo (Piercing Ice, Magic Attunement) por elecciones más visibles.",
   "Comprehend Scroll y pergaminos de buff; Teleport: Dalaran al 40; doble especialización al 40.",
-  "Alianza Skyborne puede ser mago."
+  "Alianza Skyborne puede ser mago.",
+  "30 oct: Arcane Focus eliminado; Elemental Precision pasa a ser Precision (Escarcha fila 1) y aplica a todos los hechizos (+6%).",
+  "30 oct: Ice Lance hace +300% contra objetivos congelados (antes +200%) y todos sus rangos tienen 8 s de reutilización; Arctic Reach también aumenta su alcance.",
+  "30 oct: Critical Mass pasa a 3 rangos: +6% de crítico de Fuego en vez de +10%.",
+  "30 oct: Ice Barrier da +15% de daño de Escarcha durante 1 min (antes 3%) y +5% más mientras dure el escudo (antes 3%).",
+  "30 oct: Winter's Chill: cada acumulación da +20% de daño al siguiente Cono de frío (antes 5%).",
+  "30 oct: Frost Blast ya no se entrena (eliminado del libro de hechizos con la build 70685).",
+  "30 oct: Arcane Blast da 12% del Intelecto como poder con hechizos por lanzamiento (antes 15%), +100% de coste (antes 175%) y dura 18 s (antes 15 s).",
+  "30 oct: Incineration pasa a 5 rangos; Improved Fireball pasa a llamarse Accelerant (también acelera Arcane Wrath); Arcane Resilience 3 rangos (hasta 75% del Intelecto como armadura); varios talentos de Arcano y Fuego cambian de posición."
  ],
  "pvp": {
   "strengths": [
    "Control enorme: Nova de Escarcha, Cono de frío, Mordedura de Escarcha, Polimorfia, Contrahechizo",
    "Ráfaga de críticos con Lanza de hielo + Shatter + Fingers of Frost",
-   "Kiteo: Traslación, Frost Blast (40% ralentización), Descarga de Escarcha",
+   "Kiteo: Traslación, Descarga de Escarcha (ralentización) y Lanza de hielo instantánea en movimiento",
    "Bloque de hielo + Mordedura de frío (Cold Snap) + Barrera de hielo para sobrevivir"
   ],
   "weaknesses": [
@@ -916,13 +914,13 @@
   ],
   "duel_plan": [
    "Prepara Armadura de hielo/Mage Armor según el rival, Barrera de hielo antes de empezar.",
-   "Abre con Descarga de Escarcha o Frost Blast desde lejos; si se acerca, Nova -> Lanza de hielo (con Shatter) o Descarga de Escarcha de crítico seguro.",
+   "Abre con Descarga de Escarcha desde lejos; si se acerca, Nova -> Lanza de hielo (con Shatter, 8 s de reutilización) o Descarga de Escarcha de crítico seguro.",
    "Guarda Traslación para salir de raíces/melé y Polimorfia para resetear y beber o recolocarte.",
    "Si te bajan del 30%: Bloque de hielo, Mordedura de frío para tener otra Nova y otra Barrera.",
    "Usa Eureka!/Ruthless en la ventana de congelación para el burst."
   ],
   "vs": {
-   "warrior": "Favorable si mantienes distancia: Nova + Frost Blast + Descarga; cuidado con Interceptar/Carga y Hamstring. Will to Survive (humano) o Escape Artist (gnomo) clave. (provisional)",
+   "warrior": "Favorable si mantienes distancia: Nova + Descarga de Escarcha + Lanza de hielo; cuidado con Interceptar/Carga y Hamstring. Will to Survive (humano) o Escape Artist (gnomo) clave. (provisional)",
    "rogue": "Difícil si te abre con cadena de aturdimientos: guarda Will to Survive/Escape Artist, Nova y Traslación; Perception humana ayuda. Barrera de hielo antes de que aparezca. (provisional)",
    "mage": "Espejo: gana quien gestione Contrahechizo y Polimorfia. Usa Lanza de hielo en movimiento y obliga a gastar Bloque de hielo primero. (provisional)",
    "priest": "Disciplina/Sombras te disipan Barrera y te silencian; Contrahechizo a Penitencia o a curas largas y aprovecha congelaciones. (provisional)",
