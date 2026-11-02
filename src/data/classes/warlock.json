@@ -88,7 +88,7 @@
     "name": "Improved Drains",
     "max": 3,
     "pre": null,
-    "eff": "Drain Life, Drain Soul and Wrack damage/drain up to +20% (values differ between sources)",
+    "eff": "Drain Life, Drain Soul and Drain Mana damage/health/mana drained +7% to +20% (hotfix 30 Oct: Drain Mana replaces Wrack; per-rank values sin confirmar)",
     "icon": "spell_shadow_haunting"
    },
    {
@@ -553,7 +553,7 @@
    }
   ]
  },
- "talents_note": "Árboles completos verificados contra el export JSON de talentsforever (build 70425 + hotfixes). Cambios vs datos locales (70170): Malediction desaparece y su hueco (fila 2, col 1) lo ocupa Grim Reach; Improved Drains, Soul Harvest y el resto mantienen posición. Hotfix 22 Oct: Fel Concentration e Intensity pasan al 70% a 3/3. Amplify Curse: hotfix 16 Oct deja Curse of Exhaustion en +20% (Weakness/Agony +50%). Hay valores contradictorios dentro de talentsforever (Decimation 45% vs 90%, Shadow Mastery 1% vs 2% por rango, Conflagrate/Incinerate daño); se indican en 'eff'. Iconos del export.",
+ "talents_note": "Árboles completos verificados contra el export JSON de talentsforever (build 70425 + hotfixes). Cambios vs datos locales (70170): Malediction desaparece y su hueco (fila 2, col 1) lo ocupa Grim Reach; Improved Drains, Soul Harvest y el resto mantienen posición. Hotfix 22 Oct: Fel Concentration e Intensity pasan al 70% a 3/3. Amplify Curse: hotfix 16 Oct deja Curse of Exhaustion en +20% (Weakness/Agony +50%). Hay valores contradictorios dentro de talentsforever (Decimation 45% vs 90%, Shadow Mastery 1% vs 2% por rango, Conflagrate/Incinerate daño); se indican en 'eff'. Iconos del export. Revisado con el export del 30 Oct (hotfixes 30 Oct, builds 70685/70707): estructura sin cambios; Improved Drains cubre Drain Mana en vez de Wrack.",
  "level_cap": 60,
  "leveling": {
   "spec": "Aflicción (drain tank)",
@@ -873,7 +873,8 @@
   "Life Tap escala con Espíritu; Fear tiene 20 m de alcance; Banish no se rompe por daño; Seducción afecta a humanoides hasta 15 s.",
   "Bane of Doom no se puede lanzar a jugadores y pega 1742 tras 1 min.",
   "Nuevo demonio Íncubo como alternativa a la súcubo.",
-  "Talentos +1% sustituidos por efectos más notables; Dark Pact, Improved Healthstone/Firestone/Spellstone y Emberstorm eliminados."
+  "Talentos +1% sustituidos por efectos más notables; Dark Pact, Improved Healthstone/Firestone/Spellstone y Emberstorm eliminados.",
+  "30 oct: Improved Drains (Drenajes mejorados) ahora mejora Drain Mana (Drenar maná) en lugar de Wrack: entre un 7% y un 20% más de maná drenado (junto a Drain Life y Drain Soul)."
  ],
  "pvp": {
   "strengths": [
