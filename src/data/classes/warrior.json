@@ -1,6 +1,6 @@
 {
  "id": "warrior",
- "build_checked": "1.60.1.70425 (beta, datos exportados por talentsforever.com el 2026-10-23)",
+ "build_checked": "1.60.1.70685/70707 + hotfixes del 30 oct 2026 (export de talentsforever generado el 30 oct 2026, árboles de la 70630 + hotfixes)",
  "sources": [
   "https://talentsforever.com/warrior",
   "https://talentsforever.com/warrior/changes",
@@ -20,7 +20,10 @@
   "https://www.method.gg/wow-forever/dungeons/ruins-of-lordaeron",
   "https://www.method.gg/wow-forever/dungeons/excavation-site-wetlands",
   "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
-  "https://warcraft.wiki.gg/wiki/Patch_1.60.1"
+  "https://warcraft.wiki.gg/wiki/Patch_1.60.1",
+  "https://foreverchanges.pro/patch-notes",
+  "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/",
+  "https://foreverchanges.pro/talents/warrior"
  ],
  "talents": {
   "trees": [
@@ -176,7 +179,7 @@
     "name": "Improved Slam",
     "max": 2,
     "pre": null,
-    "eff": "Slam cast time and GCD -0.5 s; Slam no longer delays auto attacks",
+    "eff": "Slam cast time and GCD -0.25 s per rank (-0.5 s), Slam no longer delays auto attacks, Slam cooldown -3 s",
     "icon": "ability_warrior_decisivestrike"
    },
    {
@@ -326,7 +329,7 @@
     "name": "Death Wish",
     "max": 1,
     "pre": null,
-    "eff": "10 Rage, 3 min: +20% Physical damage and Fear immunity, more damage taken",
+    "eff": "10 Rage, 3 min: +20% Physical damage and Fear immunity for 30 s, +5% damage taken",
     "icon": "spell_shadow_deathpact"
    },
    {
@@ -551,11 +554,11 @@
    }
   ]
  },
- "talents_note": "Árboles verificados contra el export de talentsforever (build 70425, 52 talentos). Cambios frente al local 70170: posiciones corregidas (Improved Overpower 2,4; Anger Management 3,2 con prereq Improved Tactical Mastery; Deep Wounds requiere Improved Rend; Impale requiere Deep Wounds; Improved Hamstring 6,3; Fury: Booming Voice 1,2, Cruelty 1,3, Lingering Rage 2,2, Unbridled Wrath 2,3, Death Wish 5,2, Improved Intercept 5,4, Flurry 6,2, Gore Drinker 6,3 con prereq Enrage; Prot: Improved Revenge 2,3, Improved Thunder Clap 2,4, Bastion 6,3); Last Stand ya NO requiere Improved Bloodrage; Anticipation da Defensa (+20), no esquiva; Master of Defense da 5 de ira al esquivar/parar con escudo; iconos nuevos tomados del export. Los valores de Improved Shield Wall, Bloodthirst y Death Wish tienen texto truncado en la fuente.",
+ "talents_note": "Verificado con el export de talentsforever generado el 30 oct 2026 (build 70630; sin hotfixes de talentos de guerrero). 52 talentos, posiciones y prerrequisitos sin cambios respecto a la 70425. Efectos completados: Improved Slam (-0,25 s por rango y -3 s de reutilización), Death Wish (30 s, +5% de daño recibido). El cambio del 30 oct (build 70707) afecta a la habilidad Revancha, no a talentos.",
  "level_cap": 60,
  "leveling": {
   "spec": "Protección (escudo, en solitario)",
-  "why": "En Forever Protección es la rama más usada para subir (48% de builds en talentsforever) y Method la recomienda para ir solo: Shield Specialization da 5 de ira por bloqueo, Vanguard permite Cargar en actitud defensiva, Bastion +10% de daño con escudo y Atronar mejorado hace AoE con poco daño recibido. Menos tiempo muerto que Armas; a 40 llega Shield Slam (Embate con escudo).",
+  "why": "En Forever Protección es la rama más usada para subir (48% de builds en talentsforever) y Method la recomienda para ir solo: Shield Specialization da 5 de ira por bloqueo, Vanguard permite Cargar en actitud defensiva, Bastion +10% de daño con escudo y Atronar mejorado hace AoE con poco daño recibido. Menos tiempo muerto que Armas; a 40 llega Shield Slam (Embate con escudo). Desde la build 70707 (30 oct) Revancha escala con el poder de ataque (22,5-25% según la fuente, sin confirmar el valor exacto), lo que refuerza aún más Protección con Improved Revenge 3/3.",
   "order": [
    "Shield Specialization*5",
    "Improved Thunder Clap*3",
@@ -640,7 +643,7 @@
    [
     14,
     "Revenge (Revancha), Demoralizing Shout (Grito desmoralizador), Tactical Mastery (Maestría táctica)",
-    "Revancha hace viable Protección."
+    "Revancha hace viable Protección. Desde el 30 oct suma un 22,5-25% del poder de ataque (sin confirmar el valor exacto) en todos los rangos."
    ],
    [
     16,
@@ -710,7 +713,7 @@
   ],
   "rotation": [
    "Grito de batalla activo; entra con Cargar (con Vanguard también en actitud defensiva).",
-   "Protección: Desgarrar en el objetivo principal, Revancha cada vez que se active, Atronar con 2+ enemigos, Golpe heroico solo con ira sobrante.",
+   "Protección: Desgarrar en el objetivo principal, Revancha cada vez que se active (escala con poder de ataque desde el 30 oct), Atronar con 2+ enemigos, Golpe heroico solo con ira sobrante.",
    "Junta 2-3 mobs: Grito desmoralizador + Atronar, y deja que los bloqueos/esquivas (Shield Specialization, Master of Defense) te den ira.",
    "Remata con Ataque victorioso (gratis y cura) y encadena al siguiente mob antes de perder ira (Lingering Rage si vas Furia).",
    "Desde 40: Embate con escudo en cooldown como golpe principal.",
@@ -901,6 +904,8 @@
   "Ruins of Lordaeron (15-22) tiene buen botín de guerrero pero está en Tirisfal: para Alianza solo merece la pena en grupo o si eres Skyborne (portal Ventormenta-Dalaran)."
  ],
  "changes": [
+  "30 oct: Revancha (Revenge) añade poder de ataque a su daño en todos los rangos: rango 6 = 138-168 + 22,5-25% del poder de ataque (foreverchanges indica 22,5%, wowforever.be 25%; sin confirmar el valor exacto). Antes no escalaba.",
+  "28 oct: Improved Hamstring y las raíces de talento del cazador (Entrapment, Counterattack, Improved Wing Clip) comparten grupo de rendimientos decrecientes.",
   "Las especializaciones de hacha, maza, espada y arma de asta se fusionan en Weaponmaster (Armas, fila 5).",
   "Nuevos talentos: Spearing Strike, Bloodthrill, Weaponmaster, Lingering Rage, Furious Precision, Raging Blows, Gore Drinker, Master of Defense, Vanguard, Focused Rage.",
   "Eliminados: Toughness, Improved Shield Block, Improved Taunt, Improved Demoralizing Shout, Improved Cleave, Improved Battle Shout (algunos integrados en el hechizo).",

@@ -1,6 +1,6 @@
 {
  "id": "hunter",
- "build_checked": "1.60.1.70425 (beta, datos exportados por talentsforever.com el 2026-10-23)",
+ "build_checked": "1.60.1.70685/70707 + hotfixes del 30 oct 2026 (export de talentsforever generado el 30 oct 2026, árboles de la 70630 + hotfixes)",
  "sources": [
   "https://talentsforever.com/hunter",
   "https://talentsforever.com/hunter/changes",
@@ -17,7 +17,10 @@
   "https://www.method.gg/wow-forever/dungeons/ruins-of-lordaeron",
   "https://www.method.gg/wow-forever/dungeons/excavation-site-wetlands",
   "https://www.method.gg/wow-forever/dungeons/city-of-dalaran",
-  "https://warcraft.wiki.gg/wiki/Patch_1.60.1"
+  "https://warcraft.wiki.gg/wiki/Patch_1.60.1",
+  "https://foreverchanges.pro/patch-notes",
+  "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/",
+  "https://foreverchanges.pro/talents/hunter"
  ],
  "talents": {
   "trees": [
@@ -68,8 +71,8 @@
    },
    {
     "tree": 0,
-    "row": 2,
-    "col": 3,
+    "row": 3,
+    "col": 1,
     "name": "Pathfinding",
     "max": 2,
     "pre": null,
@@ -79,7 +82,7 @@
    {
     "tree": 0,
     "row": 2,
-    "col": 4,
+    "col": 3,
     "name": "Improved Revive Pet",
     "max": 2,
     "pre": null,
@@ -153,7 +156,7 @@
     "name": "Intimidation",
     "max": 1,
     "pre": "Bestial Swiftness",
-    "eff": "1 min: pet's next attack stuns 3 s",
+    "eff": "1 min: pet's next attack stuns 3 s and gets +100% crit chance",
     "icon": "ability_devour"
    },
    {
@@ -283,7 +286,7 @@
     "name": "Trueshot Aura",
     "max": 1,
     "pre": null,
-    "eff": "Party/raid within 45 yd +30 Ranged Attack Power (rank 1)",
+    "eff": "Party/raid within 45 yd +15 Ranged Attack Power (rank 1, nerfed 28-30 Oct)",
     "icon": "ability_trueshot"
    },
    {
@@ -528,16 +531,16 @@
    }
   ]
  },
- "talents_note": "Árboles verificados contra el export de talentsforever (build 70425, 50 talentos). Posiciones y prerrequisitos coinciden con el local 70170; se actualizan efectos con valores de rango máximo (Entrapment ahora siempre enraíza, Deflection +5% parada, Deadly Aspects 10%/30%, etc.) e iconos según el export (Deadly Aspects spell_nature_ravenform, Focused Fire inv_weapon_crossbow_10, Summon Hawk ability_hunter_animalhandler, Spirit Bond ability_druid_demoralizingroar, Lethal Attacks ability_searingarrow, Lone Wolf ability_mount_whitedirewolf, Sniper Shot hunter_pvp_snipershot, Improved Tracking inv_misc_head_dragon_black, Survival Tactics ability_ensnare, Predator's Edge ability_dualwield, Expose Prey ability_hunter_swiftstrike, Survivalist's Discipline ability_hunter_mastertactitian, Lacerating Strikes ability_gouge). Árbol renombrado a 'Dominio de bestias' (nombre de ForeverHispano).",
+ "talents_note": "Verificado con el export de talentsforever generado el 30 oct 2026 (build 70630 + hotfixes del 28 y 30 oct). 50 talentos. 30 oct: Pathfinding baja a Dominio de bestias fila 3 col 1 (antes fila 2 col 3) e Improved Revive Pet pasa a fila 2 col 3 (antes col 4); Intimidation añade +100% de crítico al ataque que aturde (marcado como hotfix del 30 oct). 28 oct: Trueshot Aura +15 de poder de ataque a distancia en el rango de talento (antes 30). Prerrequisitos sin cambios (Intimidation <- Bestial Swiftness, Bestial Wrath <- Intimidation, Frenzy <- Ferocity, Mortal Shots <- Careful Aim, Sniper Shot <- Trueshot Aura, Counterattack <- Deterrence, Lacerating Strikes <- Expose Prey, Rapid Recuperation <- Rapid Killing). Árbol renombrado a 'Dominio de bestias' (nombre de ForeverHispano).",
  "level_cap": 60,
  "leveling": {
   "spec": "Dominio de bestias (mascota + halcones)",
-  "why": "Recomendada por Warcraft Tavern, Method y la ruta inicial de ForeverHispano: la mascota tanquea y hace gran parte del daño mientras disparas, con poco tiempo muerto. Summon Hawk a 25, Intimidation a 30 y Bestial Wrath a 40. El orden coincide con la build provisional de 60 de ForeverHispano (31/20/0).",
+  "why": "Recomendada por Warcraft Tavern, Method y la ruta inicial de ForeverHispano: la mascota tanquea y hace gran parte del daño mientras disparas, con poco tiempo muerto. Summon Hawk a 25, Intimidation a 30 y Bestial Wrath a 40 (31/20/0). Tras el hotfix del 30 oct Pathfinding baja a la fila 3 y compite con Unleashed Fury: los 2 puntos de la fila 2 van a Endurance Training (vida y armadura de la mascota). Con Trueshot Aura rebajada a +15 de poder de ataque a distancia, el punto pasa a Mortal Shots 5/5 (ajuste propio; sin confirmar por guías actualizadas).",
   "order": [
    "Deadly Aspects*5",
    "Focused Fire*2",
-   "Pathfinding*2",
    "Improved Revive Pet*1",
+   "Endurance Training*2",
    "Unleashed Fury*5",
    "Summon Hawk*1",
    "Bestial Swiftness*1",
@@ -550,8 +553,7 @@
    "Lethal Attacks*5",
    "Efficiency*5",
    "Careful Aim*5",
-   "Trueshot Aura*1",
-   "Mortal Shots*4"
+   "Mortal Shots*5"
   ],
   "alt": {
    "spec": "Supervivencia (cuerpo a cuerpo con arma de asta/dos armas + disparos)",
@@ -602,7 +604,7 @@
    [
     10,
     "Aspect of the Hawk (Aspecto del halcón), Tame Beast (Domesticar bestia), Call Pet, Revive Pet, Feed Pet",
-    "Misión de clase para domesticar (Taming the Beast)."
+    "Misión de clase para domesticar (Taming the Beast). Aspecto del halcón rebajado el 28-30 oct: rangos 1-5 dan 15/22/30/38/47 de poder de ataque a distancia (antes 20/35/50/70/90)."
    ],
    [
     12,
@@ -637,7 +639,7 @@
    [
     25,
     "Summon Hawk (Invocar halcón), Trueshot Aura (Aura de disparo certero), Counterattack",
-    "Talentos de 16 puntos; hasta 2 halcones activos."
+    "Talentos de 16 puntos; hasta 2 halcones activos. Trueshot Aura ahora da solo +15 de poder de ataque a distancia (talento)."
    ],
    [
     26,
@@ -722,7 +724,8 @@
    "Fingir muerte te mata si no lo cancelas en 6 minutos.",
    "Peletería + Desuello: equipo de agilidad desde nivel 10 (Brawler's Leather Helm citado por Method como BiS de la beta).",
    "La comida cocinada da bonus de experiencia y los buffs de campamento afectan también a la mascota.",
-   "Lleva agua y munición del nivel adecuado; el alcance mínimo sigue siendo 8 m."
+   "Lleva agua y munición del nivel adecuado; el alcance mínimo sigue siendo 8 m.",
+   "Pathfinding ahora está en la fila 3 de Dominio de bestias (hotfix 30 oct): si quieres más velocidad con Guepardo, cógelo después de Bestial Wrath o cámbialo por Endurance Training."
   ]
  },
  "races": [
@@ -866,9 +869,14 @@
   "Nuevas de nivel alto: The Drowned City (35-40), Krol'dok Stronghold (40-45), Alcaz Prison (48-53), Blackmaw Hold (55-60), Shaper's Terrace (58-60)."
  ],
  "changes": [
+  "30 oct: Pathfinding pasa de la fila 2 a la fila 3 de Dominio de bestias (columna 1); Improved Revive Pet pasa de la columna 4 a la 3 de la fila 2. Sin cambios numéricos.",
+  "30 oct: Aspecto del halcón casi se reduce a la mitad en los rangos 1-5: 15/22/30/38/47 de poder de ataque a distancia (antes 20/35/50/70/90) (hotfix del 28 oct ya activo).",
+  "30 oct: Trueshot Aura baja en el rango de talento a +15 de poder de ataque a distancia (antes 30) y en los rangos 2-4 a 22/30/40 (antes 40/50/75) (hotfix del 28 oct ya activo).",
+  "30 oct: Intimidation: el ataque que aturde gana +100% de probabilidad de crítico (marcado como hotfix del 30 oct en talentsforever; sin confirmar si es nuevo).",
+  "28 oct: Improved Hamstring del guerrero y las raíces de talento del cazador (Entrapment, Counterattack, Improved Wing Clip) comparten grupo de rendimientos decrecientes.",
   "Disparo de puntería es habilidad base a nivel 20 (2 s de lanzamiento, menos daño) y comparte 6 s de CD con Multidisparo (instantáneo); Wyvern Sting desaparece.",
   "Nuevo Summon Hawk (talento de 16 puntos de Bestias, hasta 2 halcones, CD compartido con Disparo arcano) y Lacerate base a 30.",
-  "Trueshot Aura y Counterattack bajan a fila 4 (nivel 25); Bestial Wrath requiere Intimidation y esta requiere Bestial Swiftness.",
+  "Trueshot Aura y Counterattack bajan a fila 4 (nivel 25); Bestial Wrath requiere Intimidation y esta requiere Bestial Swiftness; Pathfinding baja a la fila 3 (30 oct).",
   "Nuevos talentos: Careful Aim, Rapid Killing, Lone Wolf, Rapid Recuperation, Sniper Shot, Focused Fire, Improved Tracking, Predator's Edge, Resourcefulness, Expose Prey, Survivalist's Discipline, Strider Kick, Lacerating Strikes, Survival Tactics.",
   "Trampas: cooldowns separados de Escarcha y Fuego (30 s), utilizables en combate y una de cada tipo a la vez.",
   "Salva sin reutilización, Fuego rápido acelera también el cuerpo a cuerpo, Aspecto de la bestia da poder de ataque cuerpo a cuerpo, Picadura de escórpido reduce un 2% el golpe.",
