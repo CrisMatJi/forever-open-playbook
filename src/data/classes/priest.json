@@ -1,6 +1,6 @@
 {
  "id": "priest",
- "build_checked": "1.60.1.70685/70707 + hotfixes del 30 oct 2026 (export de talentsforever generado el 30 oct 2026, árboles de la 70630 + hotfixes)",
+ "build_checked": "Notas oficiales de Blizzard 'Updated November 2' (2 nov 2026) + hotfix detectado el 3 nov (foreverchanges); export de talentsforever generado el 2 nov 2026",
  "sources": [
   "https://talentsforever.com/priest/changes",
   "https://talentsforever.com/export/priest.json",
@@ -18,7 +18,10 @@
   "https://leprestore.com/guides/world-of-warcraft-forever/wow-forever-best-level-30-gear/",
   "https://foreverchanges.pro/patch-notes",
   "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/",
-  "https://foreverchanges.pro/talents/priest"
+  "https://foreverchanges.pro/talents/priest",
+  "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/9",
+  "https://www.bluetracker.gg/wow/topic/us-en/2360696-wow-forever-beta-development-notes-updated-november-2/",
+  "https://foreverchanges.pro/es/patch-notes"
  ],
  "talents": {
   "trees": [
@@ -484,7 +487,7 @@
     "name": "Vampiric Embrace",
     "max": 1,
     "pre": null,
-    "eff": "Party healed by 20% of your Shadow damage for 30 s, 30 s cooldown",
+    "eff": "Party healed by 20% of your Shadow damage for 30 s, 30 s cooldown; the healing can't crit",
     "icon": "spell_shadow_unsummonbuilding"
    },
    {
@@ -514,7 +517,7 @@
     "name": "Devouring Contagion",
     "max": 2,
     "pre": null,
-    "eff": "Devouring Plague -50% mana and spreads to 2 targets on death",
+    "eff": "Devouring Plague -50% mana and spreads to 2 targets on death (not from critters)",
     "icon": "spell_shadow_devouringplague"
    },
    {
@@ -549,11 +552,11 @@
    }
   ]
  },
- "talents_note": "Verificado con el export de talentsforever generado el 30 oct 2026 (build 70630 + hotfixes del 30 oct). 52 talentos (18/17/17). 30 oct: Binding Heal sale del árbol Sagrado (ahora hechizo de instructor) y su hueco (fila 4 col 4) lo ocupa el nuevo Holy Binding; Renewed Hope ya no menciona Binding Heal. Anteriores (70425): eliminados Shadow Affinity e Improved Fade; añadido Dark Inspiration; Mental Strength fila 2 col 3; Improved Power Word: Shield fila 3 col 3; Improved Mind Blast fila 2 col 1; Twilight Focus 70%; Devouring Contagion propaga a 2 objetivos; Improved Mind Flay 10/20% por tick.",
+ "talents_note": "Verificado con el export de talentsforever generado el 2 nov 2026 y las notas oficiales del 2 nov. 52 talentos (18/17/17), sin cambios de posición ni de rangos. 2 nov (oficial): Binding Heal se elimina del árbol Sagrado y su hueco (fila 4 col 4) lo ocupa Holy Binding; la sanación de Vampiric Embrace ya no puede ser crítica; Devouring Contagion ya no propaga Devouring Plague al saltar desde una alimaña. Anteriores (70425): eliminados Shadow Affinity e Improved Fade; añadido Dark Inspiration; Mental Strength fila 2 col 3; Improved Power Word: Shield fila 3 col 3; Improved Mind Blast fila 2 col 1; Twilight Focus 70%; Devouring Contagion propaga a 2 objetivos; Improved Mind Flay 10/20% por tick.",
  "level_cap": 60,
  "leveling": {
   "spec": "Sombras",
-  "why": "Sombras es la más cómoda en solitario (Spirit Tap = casi sin pausas para beber, Tortura mental ralentiza, Forma de las Sombras abarata un 50%) y aun así puedes curar mazmorras sin respec. Wand Specialization primero si consigues varita al 10. Sin Legado, Forma de las Sombras llega al 42.",
+  "why": "Sombras es la más cómoda en solitario (Spirit Tap = casi sin pausas para beber, Tortura mental ralentiza, Forma de las Sombras abarata un 50%) y aun así puedes curar mazmorras sin respec. Wand Specialization primero si consigues varita al 10. Sin Legado, Forma de las Sombras llega al 42. 2 nov: los cambios del sacerdote son menores (Palabra de las Sombras: muerte ya no te daña si falla, la sanación de Abrazo vampírico no crítica, el escudo se puede reemplazar), así que Sombras sigue siendo la mejor opción; ten en cuenta que los mobs de nivel alto tienen más vida.",
   "order": [
    "Wand Specialization*2",
    "Spirit Tap*5",
@@ -615,7 +618,7 @@
    [
     6,
     "Power Word: Shield (Palabra de poder: escudo)",
-    "Ponlo antes del pull para no sufrir retroceso."
+    "Ponlo antes del pull para no sufrir retroceso. 2 nov: se puede reemplazar por otra Palabra de poder: escudo de rango igual o superior."
    ],
    [
     8,
@@ -670,7 +673,7 @@
    [
     32,
     "Shadow Word: Death (Palabra de las Sombras: muerte)",
-    "Nuevo y base: daño instantáneo; si no mata, te haces daño igual al 30% de tu vida máxima (30 oct; antes 10%). 18 s de reutilización."
+    "Nuevo y base: daño instantáneo; si no mata, te haces daño igual al 30% de tu vida máxima (confirmado el 2 nov; antes 10%). Desde el 2 nov ya no te daña si el hechizo falla (fallo/miss). 18 s de reutilización."
    ],
    [
     40,
@@ -698,7 +701,7 @@
    "Abre con Explosión mental (Mind Blast) desde el máximo alcance y aplica Palabra de las Sombras: dolor.",
    "Hasta el 20: varita mientras el DoT trabaja; remata con varita por debajo del 20%.",
    "Desde el 20: Tortura mental (Mind Flay) mientras se acerca (ralentiza 50%), Explosión mental en cada reutilización, Peste devoradora en mobs que vayan a durar.",
-   "Desde el 32: Palabra de las Sombras: muerte solo para rematar con seguridad: si no mata te quita el 30% de tu vida máxima (30 oct).",
+   "Desde el 32: Palabra de las Sombras: muerte solo para rematar con seguridad: si no mata te quita el 30% de tu vida máxima (si falla por fallo ya no te daña, 2 nov).",
    "Si se complica: Grito psíquico, escudo, Renovar; Abrazo vampírico te cura con tu daño de Sombras.",
    "Encadena muertes para mantener Spirit Tap activo y apenas beber."
   ],
@@ -724,7 +727,8 @@
    "Penitencia (Disciplina, 30) pega fuerte en solitario si prefieres subir como Disciplina hasta el 40 y luego pasar a Sombras (enfoque de Method).",
    "Prayer of Healing ahora cura al grupo del objetivo que elijas y Renew de varios sacerdotes se acumula en el mismo objetivo.",
    "Lleva agua de tu nivel y pociones de maná antes de entrar en mazmorras.",
-   "Sanación conjunta (Binding Heal) ya no cuesta talento: entrénala al 25. Si sanas mazmorras como Disciplina, Holy Binding (Sagrado, fila 4) añade autocuración a Sanación relámpago."
+   "Sanación conjunta (Binding Heal) ya no cuesta talento: entrénala al 25. Si sanas mazmorras como Disciplina, Holy Binding (Sagrado, fila 4) añade autocuración a Sanación relámpago.",
+   "2 nov: la vida de los mobs de nivel alto sube; con Spirit Tap y Dark Inspiration sigues casi sin beber, pero cuenta con un Explosión mental más por mob."
   ]
  },
  "races": [
@@ -853,10 +857,15 @@
   "El sacerdote siempre encuentra grupo como sanador: aprovecha para subir en mazmorras con build de Disciplina/Sombras (con Abrazo vampírico)."
  ],
  "changes": [
+  "2 nov: la sanación de Abrazo vampírico ya no puede ser crítica.",
+  "2 nov: Palabra de poder: escudo se puede reemplazar por otra de rango igual o superior.",
+  "2 nov: Devouring Contagion ya no propaga Peste devoradora cuando salta desde una alimaña.",
+  "2 nov: Dark Sacrifice (racial no muerto) ya no rompe los efectos de control; las habilidades raciales del sacerdote son la excepción a la regla de mismo coste por nivel.",
+  "2 nov: Blizzard sube el daño de las clases y, para compensar, la vida de las criaturas de nivel alto (sin cifras publicadas).",
   "30 oct: Binding Heal (Sanación conjunta) deja de ser talento de Sagrado: se entrena en el instructor de clase con 6 rangos (rango 1 al 25: 236-284 de sanación por 155 de maná).",
-  "30 oct: nuevo talento Holy Binding (Sagrado, fila 4, en el hueco de Binding Heal): cuando tu Sanación relámpago cura a otro, te curas el 50% de esa cantidad sin generar amenaza.",
-  "30 oct: el daño que te hace Palabra de las Sombras: muerte si no mata sube del 10% al 30% de tu vida máxima.",
-  "30 oct: Curar enfermedad y Suprimir enfermedad se pueden lanzar en Forma de las Sombras.",
+  "2 nov: Binding Heal se elimina del árbol Sagrado y lo sustituye Holy Binding (fila 4): cuando tu Sanación relámpago cura a otro, te curas el 50% de esa cantidad sin generar amenaza (ya activo desde el 30 oct).",
+  "2 nov: Palabra de las Sombras: muerte te quita el 30% de tu vida máxima si no mata (antes 10%; ya activo desde el 30 oct) y ya no te daña si el hechizo falla.",
+  "2 nov: Curar enfermedad y Suprimir enfermedad ya no te sacan de la Forma de las Sombras (ya activo desde el 30 oct).",
   "30 oct: Renewed Hope ya no menciona Binding Heal en su descripción (sin cambios numéricos).",
   "Fear Ward y Devouring Plague disponibles para todos los sacerdotes al 20 (Peste devoradora 24 s de reutilización y puede critear).",
   "Shadow Word: Death base al 32 (18 s de reutilización; si no mata, te hace daño: 30% de tu vida máxima desde el 30 oct).",
@@ -871,7 +880,7 @@
  ],
  "pvp": {
   "strengths": [
-   "Sombras: mucho daño sostenido y Palabra de las Sombras: muerte como remate (ojo: 30% de tu vida si no mata)",
+   "Sombras: mucho daño sostenido y Palabra de las Sombras: muerte como remate (30% de tu vida si no mata; desde el 2 nov no te daña si falla)",
    "Control: Grito psíquico, Silencio, Control mental, Quemadura de maná",
    "Supervivencia: escudo, Fade, curas (fuera de forma), raciales defensivos",
    "Disciplina: Penitencia y escudos muy difíciles de matar"

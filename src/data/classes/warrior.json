@@ -1,6 +1,6 @@
 {
  "id": "warrior",
- "build_checked": "1.60.1.70685/70707 + hotfixes del 30 oct 2026 (export de talentsforever generado el 30 oct 2026, árboles de la 70630 + hotfixes)",
+ "build_checked": "Notas oficiales de Blizzard 'Updated November 2' (2 nov 2026) + hotfix detectado el 3 nov (foreverchanges); export de talentsforever generado el 30 oct 2026 (anterior a las notas: posiciones nuevas de Furia tomadas de las notas)",
  "sources": [
   "https://talentsforever.com/warrior",
   "https://talentsforever.com/warrior/changes",
@@ -23,7 +23,10 @@
   "https://warcraft.wiki.gg/wiki/Patch_1.60.1",
   "https://foreverchanges.pro/patch-notes",
   "https://wowforever.be/news/druids-and-paladins-get-reshuffled-talent-trees/",
-  "https://foreverchanges.pro/talents/warrior"
+  "https://foreverchanges.pro/talents/warrior",
+  "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/9",
+  "https://www.bluetracker.gg/wow/topic/us-en/2360696-wow-forever-beta-development-notes-updated-november-2/",
+  "https://foreverchanges.pro/es/patch-notes"
  ],
  "talents": {
   "trees": [
@@ -77,9 +80,9 @@
     "row": 2,
     "col": 2,
     "name": "Improved Tactical Mastery",
-    "max": 5,
+    "max": 3,
     "pre": null,
-    "eff": "Keep up to +3 extra Rage per rank on stance change (+15)",
+    "eff": "Keep +5 extra Rage per rank on stance change (+15)",
     "icon": "spell_nature_enchantarmor"
    },
    {
@@ -129,7 +132,7 @@
     "name": "Two-Handed Weapon Specialization",
     "max": 3,
     "pre": null,
-    "eff": "+1% two-hand damage per rank (+3%)",
+    "eff": "+2% two-hand damage per rank (+6%)",
     "icon": "inv_axe_09"
    },
    {
@@ -147,9 +150,9 @@
     "row": 5,
     "col": 1,
     "name": "Bloodthrill",
-    "max": 5,
+    "max": 2,
     "pre": null,
-    "eff": "Main-hand hits on your Rend targets: 4% per rank (20%) to enable Overpower",
+    "eff": "Main-hand hits on your Rend targets: 10% per rank (20%) to enable Overpower",
     "icon": "inv_sword_01"
    },
    {
@@ -179,7 +182,7 @@
     "name": "Improved Slam",
     "max": 2,
     "pre": null,
-    "eff": "Slam cast time and GCD -0.25 s per rank (-0.5 s), Slam no longer delays auto attacks, Slam cooldown -3 s",
+    "eff": "Slam cast time and GCD -0.25 s per rank (-0.5 s), Slam no longer delays auto attacks, Slam cooldown -2.5 s per rank (-5 s)",
     "icon": "ability_warrior_decisivestrike"
    },
    {
@@ -189,7 +192,7 @@
     "name": "Improved Hamstring",
     "max": 3,
     "pre": null,
-    "eff": "Hamstring 5% chance per rank to root 5 s (15%)",
+    "eff": "Hamstring 5% chance per rank to root 5 s (15%); root has diminishing returns",
     "icon": "ability_shockwave"
    },
    {
@@ -209,7 +212,7 @@
     "name": "Booming Voice",
     "max": 5,
     "pre": null,
-    "eff": "Shouts +10% area and -5% Rage cost per rank",
+    "eff": "Shouts +10% area and -5% Rage cost per rank; Piercing Howl -5% Rage cost per rank",
     "icon": "spell_nature_purge"
    },
    {
@@ -269,8 +272,18 @@
     "name": "Blood Craze",
     "max": 3,
     "pre": null,
-    "eff": "Regenerate up to 3% health over 6 s after being crit or taking a big hit",
+    "eff": "Regenerate up to 3% health over 6 s after being crit or taking a big hit (no threat, not while sitting)",
     "icon": "spell_shadow_summonimp"
+   },
+   {
+    "tree": 1,
+    "row": 3,
+    "col": 4,
+    "name": "Enrage",
+    "max": 5,
+    "pre": null,
+    "eff": "30% chance when hit: +2% Physical damage per rank (10%) for 12 s",
+    "icon": "spell_shadow_unholyfrenzy"
    },
    {
     "tree": 1,
@@ -296,11 +309,11 @@
     "tree": 1,
     "row": 4,
     "col": 3,
-    "name": "Enrage",
-    "max": 5,
+    "name": "Reckless Swings",
+    "max": 1,
     "pre": null,
-    "eff": "30% chance when hit: +2% Physical damage per rank (10%) for 12 s",
-    "icon": "spell_shadow_unholyfrenzy"
+    "eff": "15 s cooldown, costs 25% of base health: next 4 melee attacks generate +5 Rage, lasts 8 s",
+    "icon": "ability_criticalstrike"
    },
    {
     "tree": 1,
@@ -335,6 +348,16 @@
    {
     "tree": 1,
     "row": 5,
+    "col": 3,
+    "name": "Gore Drinker",
+    "max": 2,
+    "pre": "Blood Craze",
+    "eff": "Enrage, Berserker Rage, Bloodrage, Death Wish, Bloodthirst: next 3 hits heal 0.5% per rank (no threat)",
+    "icon": "racial_troll_berserk"
+   },
+   {
+    "tree": 1,
+    "row": 5,
     "col": 4,
     "name": "Improved Intercept",
     "max": 2,
@@ -347,20 +370,20 @@
     "row": 6,
     "col": 2,
     "name": "Flurry",
-    "max": 5,
-    "pre": "Death Wish",
-    "eff": "+5% attack speed per rank (25%) for 3 swings after a melee crit",
+    "max": 3,
+    "pre": null,
+    "eff": "+10% attack speed per rank (30%) for 3 swings after a melee crit",
     "icon": "ability_ghoulfrenzy"
    },
    {
     "tree": 1,
     "row": 6,
     "col": 3,
-    "name": "Gore Drinker",
+    "name": "Improved Whirlwind",
     "max": 2,
-    "pre": "Enrage",
-    "eff": "Enrage, Berserker Rage, Bloodrage, Death Wish, Bloodthirst: next 3 hits heal 0.5% per rank",
-    "icon": "racial_troll_berserk"
+    "pre": null,
+    "eff": "Whirlwind cooldown -1 s per rank and +15% damage per rank (30%) to the closest enemy",
+    "icon": "ability_whirlwind"
    },
    {
     "tree": 1,
@@ -368,7 +391,7 @@
     "col": 2,
     "name": "Bloodthirst",
     "max": 1,
-    "pre": null,
+    "pre": "Death Wish",
     "eff": "30 Rage, 6 s: damage = 45% of Attack Power + flat, plus movement speed",
     "icon": "spell_nature_bloodlust"
    },
@@ -469,7 +492,7 @@
     "name": "Defiance",
     "max": 3,
     "pre": null,
-    "eff": "Defensive Stance threat +5% per rank with a shield (+15%)",
+    "eff": "Defensive Stance threat +7/13/20% with a shield",
     "icon": "ability_warrior_innerrage"
    },
    {
@@ -554,11 +577,11 @@
    }
   ]
  },
- "talents_note": "Verificado con el export de talentsforever generado el 30 oct 2026 (build 70630; sin hotfixes de talentos de guerrero). 52 talentos, posiciones y prerrequisitos sin cambios respecto a la 70425. Efectos completados: Improved Slam (-0,25 s por rango y -3 s de reutilización), Death Wish (30 s, +5% de daño recibido). El cambio del 30 oct (build 70707) afecta a la habilidad Revancha, no a talentos.",
+ "talents_note": "Base: export de talentsforever generado el 30 oct 2026 (build 70630), actualizado a mano con las notas oficiales del 2 nov (el export aún no las recoge). 54 talentos. 2 nov: Improved Tactical Mastery pasa a 3 rangos (+5/10/15 de ira); Two-Handed Weapon Specialization 2/4/6%; Bloodthrill pasa a 2 rangos (10/20%); Improved Slam reduce el cooldown de Embate 2,5/5 s; Booming Voice también abarata Aullido perforador; Enrage sube de la fila 4 a la 3; nuevo Reckless Swings (fila 4, 1 punto); Gore Drinker sube de la fila 6 a la 5 y pasa a depender de Blood Craze; Flurry pasa a 3 rangos (10/20/30%) y ya no requiere Death Wish; nuevo Improved Whirlwind (fila 6, 2 puntos); Bloodthirst requiere Death Wish; Defiance 7/13/20%. Las columnas de Enrage (4), Reckless Swings (3), Gore Drinker (3) e Improved Whirlwind (3) son las libres en cada fila: sin confirmar.",
  "level_cap": 60,
  "leveling": {
   "spec": "Protección (escudo, en solitario)",
-  "why": "En Forever Protección es la rama más usada para subir (48% de builds en talentsforever) y Method la recomienda para ir solo: Shield Specialization da 5 de ira por bloqueo, Vanguard permite Cargar en actitud defensiva, Bastion +10% de daño con escudo y Atronar mejorado hace AoE con poco daño recibido. Menos tiempo muerto que Armas; a 40 llega Shield Slam (Embate con escudo). Desde la build 70707 (30 oct) Revancha escala con el poder de ataque (22,5-25% según la fuente, sin confirmar el valor exacto), lo que refuerza aún más Protección con Improved Revenge 3/3.",
+  "why": "En Forever Protección es la rama más usada para subir (48% de builds en talentsforever) y Method la recomienda para ir solo: Shield Specialization da 5 de ira por bloqueo, Vanguard permite Cargar en actitud defensiva, Bastion +10% de daño con escudo y Atronar mejorado hace AoE con poco daño recibido. Menos tiempo muerto que Armas; a 40 llega Shield Slam (Embate con escudo). Desde la build 70707 (30 oct) Revancha escala con el poder de ataque (22,5-25% según la fuente, sin confirmar el valor exacto), lo que refuerza aún más Protección con Improved Revenge 3/3. 2 nov: Defiance sube a 7/13/20% y la Actitud defensiva a +80% de amenaza (para tanquear en grupo), sin perder nada en solitario; Protección sigue siendo la opción más cómoda.",
   "order": [
    "Shield Specialization*5",
    "Improved Thunder Clap*3",
@@ -582,7 +605,7 @@
   ],
   "alt": {
    "spec": "Armas (arma de dos manos; grupos, mazmorras como DPS y PvP)",
-   "why": "Desgarrar escala con poder de ataque y con Improved Rend; Bloodthrill da Abrumar extra; Golpes de barrido a 30 y Golpe mortal a 40. Más daño que Protección pero más dependiente de sanación.",
+   "why": "Desgarrar escala con poder de ataque y con Improved Rend; Golpes de barrido a 30 y Golpe mortal a 40. 2 nov: Two-Handed Weapon Specialization sube a 2/4/6%, Improved Tactical Mastery (3 rangos) y Bloodthrill (2 rangos) cuestan menos puntos y Embate baja a 10 s de cooldown con Improved Slam (15 s base -5 s), así que sobran puntos para Improved Heroic Strike y Furia (Crueldad, Ira desatada, Aullido perforador). Más daño que Protección pero más dependiente de sanación. Orden ajustado por nosotros tras el 2 nov (sin guía actualizada: sin confirmar).",
    "order": [
     "Improved Rend*3",
     "Deflection*2",
@@ -594,17 +617,18 @@
     "Two-Handed Weapon Specialization*3",
     "Impale*2",
     "Sweeping Strikes*1",
-    "Bloodthrill*5",
-    "Improved Slam*2",
+    "Bloodthrill*2",
     "Weaponmaster*2",
-    "Mortal Strike*1",
+    "Improved Slam*2",
     "Weaponmaster*3",
-    "Improved Tactical Mastery*2",
+    "Mortal Strike*1",
     "Anger Management*1",
+    "Improved Heroic Strike*3",
     "Cruelty*5",
     "Unbridled Wrath*5",
     "Piercing Howl*1",
-    "Booming Voice*3"
+    "Booming Voice*2",
+    "Blood Craze*3"
    ]
   },
   "stats": "Protección: DPS del arma de una mano y buen escudo (armadura/valor de bloqueo) > Fuerza/Poder de ataque > Aguante > Agilidad > Armadura. Armas: daño máximo del arma de dos manos (lenta) > Fuerza > Aguante > Agilidad. A partir de ~30 el crítico gana valor por Heridas profundas/Empalar. Precisión siempre útil; caps sin confirmar en Forever.",
@@ -633,7 +657,7 @@
    [
     10,
     "Defensive Stance (Actitud defensiva), Sunder Armor (Hender armadura), Taunt (Provocar), Bloodrage (Ira sangrienta)",
-    "Misión de clase de nivel 10."
+    "Misión de clase de nivel 10. 2 nov: la Actitud defensiva da +80% de amenaza (antes 30%)."
    ],
    [
     12,
@@ -658,7 +682,7 @@
    [
     20,
     "Victory Rush (Ataque victorioso), Cleave (Rajar), Slam (Embate), Retaliation (Represalias), Last Stand (Última carga), Piercing Howl (Aullido perforador)",
-    "Ataque victorioso: sin coste de ira y pequeña autocuración; ideal para encadenar mobs."
+    "Ataque victorioso: sin coste de ira y pequeña autocuración; ideal para encadenar mobs. 2 nov: Embate vuelve a 15 s de cooldown (antes 18 s)."
    ],
    [
     22,
@@ -693,7 +717,7 @@
    [
     36,
     "Whirlwind (Torbellino)",
-    "Fuerte para subir en cualquier rama."
+    "Fuerte para subir en cualquier rama. 2 nov: Improved Whirlwind (Furia) reduce su cooldown y aumenta el daño al enemigo más cercano."
    ],
    [
     38,
@@ -717,7 +741,7 @@
    "Junta 2-3 mobs: Grito desmoralizador + Atronar, y deja que los bloqueos/esquivas (Shield Specialization, Master of Defense) te den ira.",
    "Remata con Ataque victorioso (gratis y cura) y encadena al siguiente mob antes de perder ira (Lingering Rage si vas Furia).",
    "Desde 40: Embate con escudo en cooldown como golpe principal.",
-   "Armas: Cargar > Desgarrar > Abrumar cuando salga (Bloodthrill) > Golpe mortal/Embate > Golpe heroico con exceso; Golpes de barrido + Torbellino/Rajar en packs.",
+   "Armas: Cargar > Desgarrar > Abrumar cuando salga (Bloodthrill) > Golpe mortal/Embate (10 s de cooldown con Improved Slam desde el 2 nov) > Golpe heroico con exceso; Golpes de barrido + Torbellino/Rajar en packs.",
    "No guardes Represalias, Grito intimidador ni Muro de escudo: úsalos para tirar packs más grandes."
   ],
   "class_quests": [
@@ -753,7 +777,8 @@
    "Minería + Herrería (piedras de afilar) o Desuello para oro; el buff de campamento de Desuello da +2% de crítico.",
    "Come comida cocinada: en Forever la comida da bonus de experiencia.",
    "Si gastas puntos de Legado en Talented, los talentos se desbloquean hasta 5 niveles antes (26 puntos a nivel 30).",
-   "La tabla de ataque de Forever castiga más a los guerreros contra mobs de nivel superior: pelea contra mobs de tu nivel o inferiores."
+   "La tabla de ataque de Forever castiga más a los guerreros contra mobs de nivel superior: pelea contra mobs de tu nivel o inferiores.",
+   "2 nov: la vida de los mobs de nivel alto sube; tira packs de 2-3 solo con Revancha y Atronar disponibles."
   ]
  },
  "races": [
@@ -904,12 +929,18 @@
   "Ruins of Lordaeron (15-22) tiene buen botín de guerrero pero está en Tirisfal: para Alianza solo merece la pena en grupo o si eres Skyborne (portal Ventormenta-Dalaran)."
  ],
  "changes": [
+  "2 nov: Actitud defensiva +80% de amenaza (antes 30%); Defiance 7/13/20% (antes 5/10/15%).",
+  "2 nov: Embate vuelve a 15 s de cooldown (antes 18 s); Improved Slam lo reduce 2,5/5 s (antes 3 s).",
+  "2 nov: Two-Handed Weapon Specialization 2/4/6% (antes 1/2/3%); Improved Tactical Mastery pasa a 3 rangos (+5/10/15 de ira; antes 5 rangos de 3); Bloodthrill pasa a 2 rangos (10/20%; antes 5 rangos de 4%).",
+  "2 nov: Furia reorganizada: Enrage sube a la fila 3; nuevo Reckless Swings (fila 4: cuesta el 25% de la vida base y tus 4 siguientes golpes dan +5 de ira); Gore Drinker sube a la fila 5 y depende de Blood Craze; Flurry 3 rangos (10/20/30%) sin requisito; nuevo Improved Whirlwind (fila 6: -1/-2 s de cooldown y +15/30% al enemigo más cercano); Bloodthirst requiere Death Wish.",
+  "2 nov: Booming Voice también abarata Aullido perforador un 5-25%; Blood Craze y Gore Drinker ya no generan amenaza y Blood Craze no se activa sentado.",
+  "2 nov: las raíces por proc tienen rendimientos decrecientes: Frostbite, Entrapment, Improved Wing Clip, Counterattack e Improved Hamstring (sustituye la nota del 28 oct).",
+  "2 nov: Blizzard sube el daño de las clases y, para compensar, la vida de las criaturas de nivel alto (sin cifras publicadas).",
   "30 oct: Revancha (Revenge) añade poder de ataque a su daño en todos los rangos: rango 6 = 138-168 + 22,5-25% del poder de ataque (foreverchanges indica 22,5%, wowforever.be 25%; sin confirmar el valor exacto). Antes no escalaba.",
-  "28 oct: Improved Hamstring y las raíces de talento del cazador (Entrapment, Counterattack, Improved Wing Clip) comparten grupo de rendimientos decrecientes.",
   "Las especializaciones de hacha, maza, espada y arma de asta se fusionan en Weaponmaster (Armas, fila 5).",
   "Nuevos talentos: Spearing Strike, Bloodthrill, Weaponmaster, Lingering Rage, Furious Precision, Raging Blows, Gore Drinker, Master of Defense, Vanguard, Focused Rage.",
   "Eliminados: Toughness, Improved Shield Block, Improved Taunt, Improved Demoralizing Shout, Improved Cleave, Improved Battle Shout (algunos integrados en el hechizo).",
-  "Enrage ahora se activa con cualquier golpe recibido (30%, +10% daño físico); Flurry baja a 25%; Bloodthirst da velocidad de movimiento en vez de curación y ya no requiere Death Wish.",
+  "Enrage se activa con cualquier golpe recibido (30%, +10% daño físico); Bloodthirst da velocidad de movimiento en vez de curación. Desde el 2 nov Flurry es de 3 rangos (30%) sin requisito y Bloodthirst vuelve a requerir Death Wish.",
   "Shield Specialization da 5 de ira por bloqueo (antes 1); Thunder Clap ralentiza 20% con 6 s de cooldown.",
   "Desgarrar escala con poder de ataque; nueva habilidad Victory Rush (Ataque victorioso) a nivel 20.",
   "Mortal Strike, Bloodthirst y Shield Slam se aprenden a 40; Whirlwind a 36; Berserker Rage a 30.",
@@ -918,7 +949,7 @@
  "pvp": {
   "strengths": [
    "Golpe mortal (-50% curación) en Armas",
-   "Cargar/Interceptar y Seccionar con raíz (Improved Hamstring)",
+   "Cargar/Interceptar y Seccionar con raíz (Improved Hamstring; con rendimientos decrecientes desde el 2 nov)",
    "Arremetida de conmoción y Embate con escudo (disipa) en Protección",
    "Ira rabiosa mejorada quita ralentizaciones y da ira",
    "Spearing Strike desmonta"
