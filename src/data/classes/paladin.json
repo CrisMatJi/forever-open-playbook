@@ -1,7 +1,8 @@
 {
  "id": "paladin",
- "build_checked": "1.60.1.70630 + hotfix de servidor del 30 oct 2026 (export de talentsforever generado el 30 oct 2026; foreverchanges en 1.60.1.70707, builds 70685/70707 ya en reinos de lanzamiento)",
+ "build_checked": "Notas oficiales de Blizzard 'Updated November 2' (post #9, 3 nov 2026) + 1.60.1.70630 + hotfix de servidor del 30 oct 2026 (export de talentsforever generado el 30 oct 2026; foreverchanges en 1.60.1.70707, builds 70685/70707 ya en reinos de lanzamiento)",
  "sources": [
+  "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/9",
   "https://talentsforever.com/paladin/changes",
   "https://talentsforever.com/export/paladin.json",
   "https://foreverhispano.com/clases-y-guias/?clase=Paladin",
@@ -253,7 +254,7 @@
     "name": "Templar's Bulwark",
     "max": 1,
     "pre": null,
-    "eff": "Absorb shield equal to 100% max health for 8 s (Forbearance, 5 min)",
+    "eff": "Absorb shield equal to 100% max health for 8 s (Forbearance, 5 min); now a Magic effect that can be dispelled",
     "icon": "ability_paladin_shieldofthetemplar"
    },
    {
@@ -273,7 +274,7 @@
     "name": "Shield Specialization",
     "max": 2,
     "pre": "Redoubt",
-    "eff": "Shield absorbs +15% per rank; blocks can restore 4% max mana (100% chance at 2/2, once per 3 s)",
+    "eff": "Shield block value +15% per rank (+30%); blocks have a 50/100% chance to restore 4% max mana",
     "icon": "inv_shield_06"
    },
    {
@@ -293,7 +294,7 @@
     "name": "Swift Judgement",
     "max": 1,
     "pre": "Templar's Bulwark",
-    "eff": "Unleashes your Seal's Judgement without consuming the Seal, on its own cooldown (values sin confirmar)",
+    "eff": "Instantly unleashes your active Seal; does not share a cooldown with Judgement (was: reset Judgement's cooldown)",
     "icon": "ability_paladin_judgementred"
    },
    {
@@ -343,7 +344,7 @@
     "name": "Reckoning",
     "max": 5,
     "pre": null,
-    "eff": "Extra attacks after block or crit taken (stores up to 4)",
+    "eff": "Extra attacks after block or crit taken (stores up to 4; now performs attacks per stack correctly and no longer gains stacks while sitting)",
     "icon": "spell_holy_blessingofstrength"
    },
    {
@@ -483,7 +484,7 @@
     "name": "Two-Handed Weapon Specialization",
     "max": 3,
     "pre": null,
-    "eff": "Physical damage +2% per rank (+6%) and threat -7% per rank (up to -20%) with a two-handed weapon",
+    "eff": "Holy and Physical damage +2% per rank (+6%; was Physical only) and threat -7/14/20% while wielding a two-handed weapon",
     "icon": "inv_hammer_04"
    },
    {
@@ -513,7 +514,7 @@
     "name": "Vengeance",
     "max": 3,
     "pre": "Seal of Command",
-    "eff": "After a non-periodic crit: Physical and Holy damage +1% per rank for 30 s, stacks 3",
+    "eff": "After a non-periodic crit: Physical and Holy damage +1% per rank for 30 s, stacks up to 5 (was 3; up to +15% at 3/3)",
     "icon": "ability_racial_avatar"
    },
    {
@@ -538,11 +539,11 @@
    }
   ]
  },
- "talents_note": "Verificado con el export de talentsforever (generado 30 oct 2026, build 70630 + hotfix 30 oct) y foreverchanges (build 70707). 51 talentos (17/17/17). Cambios del 30 oct: árboles reordenados (Divine Intellect pasa a Protección, Holy Conduit a Sagrado, Unyielding Faith a Reprensión, Holy Shield a fila 5 sin requisito); eliminados One-Handed Weapon Specialization, Improved Seal of Fury e Instrument of Law (Voice of Truth sale del árbol y se entrena al 20); Twist of Light pasa a ser Unsealed Wrath; nuevos Oath of Light, Boundless Light, Stoicism, Turn Evil y Shieldsworn; rerangos: Spiritual Focus 5, Reverence 2, Improved Seals 5, Divine Precision 2, Shield Specialization 2, Iron Creed 3, Conviction 3, Champion of the Light 5. Swift Judgement ahora requiere Templar's Bulwark y Vengeance requiere Seal of Command. Iconos del export.",
+ "talents_note": "Contrastado con las notas oficiales de Blizzard del 2 nov (post #9): la disposición de los árboles coincide con el export de talentsforever del 30 oct. Verificado con el export de talentsforever (generado 30 oct 2026, build 70630 + hotfix 30 oct) y foreverchanges (build 70707). 51 talentos (17/17/17). Cambios del 30 oct: árboles reordenados (Divine Intellect pasa a Protección, Holy Conduit a Sagrado, Unyielding Faith a Reprensión, Holy Shield a fila 5 sin requisito); eliminados One-Handed Weapon Specialization, Improved Seal of Fury e Instrument of Law (Voice of Truth sale del árbol y se entrena al 20); Twist of Light pasa a ser Unsealed Wrath; nuevos Oath of Light, Boundless Light, Stoicism, Turn Evil y Shieldsworn; rerangos: Spiritual Focus 5, Reverence 2, Improved Seals 5, Divine Precision 2, Shield Specialization 2, Iron Creed 3, Conviction 3, Champion of the Light 5. Swift Judgement ahora requiere Templar's Bulwark y Vengeance requiere Seal of Command. Iconos del export.",
  "level_cap": 60,
  "leveling": {
   "spec": "Reprensión",
-  "why": "Reprensión sigue siendo la recomendación para subir (Warcraft Tavern, Method; Protección como alternativa para mazmorras). Tras el hotfix del 30 oct sale reforzada: Conviction da +2% de crítico por rango a hechizos y ataques (6% con 3 puntos), Champion of the Light sube a 5 rangos (hasta 60% del Intelecto como poder con hechizos y Martillo de cólera más rápido) y Two-Handed Weapon Specialization llega al 6% de daño físico. Benediction y Sanctified Judgement ahorran maná, Seal of Command (al 20) y Vengeance dan daño y Pursuit of Justice velocidad. Al 40, Unsealed Wrath (sustituye a Twist of Light). Después, Improved Seals (ahora 5 rangos en Sagrado) y Precision desde Protección. Sin Legado.",
+  "why": "Reprensión sigue siendo la recomendación para subir (Warcraft Tavern, Method; Protección como alternativa para mazmorras) y las notas oficiales del 2 nov la refuerzan: Two-Handed Weapon Specialization pasa a subir el daño Sagrado y físico (+6%; casi todo tu daño de sellos y Golpe Sagrado es Sagrado), Vengeance acumula hasta 5 veces (hasta +15% con 3 puntos), Conviction da +6% de crítico a hechizos y ataques y Champion of the Light convierte hasta el 60% del Intelecto en poder con hechizos y acelera Martillo de cólera. Blizzard sube la vida de las criaturas de nivel alto para compensar el aumento general de daño. Benediction y Sanctified Judgement ahorran maná, Seal of Command (al 20) y Vengeance dan daño y Pursuit of Justice velocidad. Al 40, Unsealed Wrath. Después, Divine Strength e Improved Seals (5 rangos, Sagrado) y Divine Intellect y Precision desde Protección. Sin Legado.",
   "order": [
    "Benediction*5",
    "Conviction*3",
@@ -614,7 +615,7 @@
    [
     10,
     "Seal of Fury (Sello de furia, nuevo), Blessing of Protection (Bendición de protección), Lay on Hands (Imposición de manos), Righteous Fury (Furia recta)",
-    "Sello de tanque: daño Sagrado fijo por golpe + escudo; su Sentencia provoca. Imposición de manos ahora 20 min de reutilización. Furia recta se aprende al 10 (antes 16)."
+    "Sello de tanque: daño Sagrado fijo por golpe + escudo; su Sentencia provoca 3 s (2 nov; antes 4). Imposición de manos 20 min. 2 nov: Furia recta se aprende al 10 y da +33% a toda la amenaza y +90% adicional al daño Sagrado; The Quick and the Dead la hace gratis."
    ],
    [
     12,
@@ -735,7 +736,10 @@
    "Con Sello de furia ten cuidado en grupo: su Sentencia provoca.",
    "Lleva Symbol of Kings para las Bendiciones superiores y Symbol of Divinity para Intervención divina.",
    "Herrería + Minería es la combinación recomendada.",
-   "30 oct: Salvación, Salvación masiva y las Bendiciones de luz ya no existen; tus bendiciones de subida son Poderío, Reyes y Sabiduría."
+   "2 nov (oficial): Salvación, Salvación masiva, Revoke y Bendición de luz eliminadas; tus bendiciones de subida son Poderío, Reyes y Sabiduría.",
+   "2 nov: Two-Handed Weapon Specialization ahora sube también el daño Sagrado y reduce tu amenaza hasta un 20% con arma a dos manos: si tanqueas, cámbiate a una mano y escudo.",
+   "2 nov: Templar's Bulwark es ahora un efecto mágico que se puede disipar (importante en JcJ).",
+   "2 nov: aprender hechizos ya no los coloca solos en las barras de acción; revisa el libro al entrenar."
   ]
  },
  "races": [
@@ -838,7 +842,7 @@
   "Hall of Thanes (13-18, Forjaz, nueva) y Las Minas de la Muerte (15-22): armas de dos manos tempranas.",
   "Ruins of Lordaeron (15-20, nueva), Cavernas de Brazanegra (22-28), Las Mazmorras (25-29, Ventormenta).",
   "Excavation Site (24-29, nueva, Humedales) y City of Dalaran (28-33, nueva).",
-  "Gnomeregan (29-38), Horado Rajacieno (29-38) y Monasterio Escarlata (30-46): como tanque Protección con Sello de furia + Consagración subes muy rápido en grupo.",
+  "Gnomeregan (29-38), Horado Rajacieno (29-38) y Monasterio Escarlata (30-46): como tanque Protección con Sello de furia + Consagración subes muy rápido en grupo (Furia recta: +33% de amenaza y +90% del daño Sagrado desde el 2 nov; no tanquees con arma a dos manos y Two-Handed Weapon Specialization, que reduce la amenaza).",
   "The Drowned City (35-40, nueva), Uldaman, Zul'Farrak, Krol'Dok Stronghold (40-45, nueva), Maraudon, Alcaz Island Prison (48-53, nueva), Templo de Atal'Hakkar, BRD, Blackmaw Hold (55-60, nueva), Shaper's Terrace (58-60, nueva).",
   "El paladín puede tanquear, curar o pegar: con doble especialización al 40 conviene tener Reprensión + Protección o Sagrado para encontrar grupo rápido."
  ],
@@ -848,7 +852,7 @@
   "La Sentencia ya no consume el sello y va fuera del tiempo global.",
   "Consagración y Bendición de reyes pasan a ser entrenables al 20; Improved Blessing of Wisdom pasa a ser base.",
   "Seal twisting base eliminado; Reprensión lo recupera con Unsealed Wrath (31 puntos, guarda copias del sello activo; antes Twist of Light).",
-  "Templar's Bulwark (Protección, fila 3): escudo del 100% de la vida máxima 8 s; ahora lo requiere Swift Judgement.",
+  "Templar's Bulwark (Protección, fila 3): escudo del 100% de la vida máxima 8 s; lo requiere Swift Judgement; desde el 2 nov es un efecto mágico disipable.",
   "Choque Sagrado (Holy Shock) a 21 puntos con 10 s de reutilización; nuevo Light's Vigil (31 puntos).",
   "Bendiciones de 1 hora; Bendición de santuario eliminada.",
   "Imposición de manos 20 min; Escudo divino reduce tu daño a la mitad en vez de ralentizar los ataques.",
@@ -860,22 +864,28 @@
   "30 oct: nuevos talentos Oath of Light (Sagrado), Boundless Light (Sagrado), Stoicism (Protección), Shieldsworn (Protección, fila 7) y Turn Evil (Reprensión); Twist of Light pasa a ser Unsealed Wrath.",
   "30 oct: Holy Power pasa a dar 10-50% de bonificación de curación crítica; Light's Vigil solo a aliados, 40 m.",
   "30 oct: rerangos: Spiritual Focus 5, Reverence 2, Improved Seals 5 (hasta 15%), Divine Precision 2, Shield Specialization 2, Iron Creed 3, Conviction 3 (+6% crítico a todo), Champion of the Light 5 (hasta 60% del Intelecto).",
-  "30 oct: Redoubt hasta 30% de bloqueo, Improved Righteous Fury hasta 9%, Holy Shield en fila 5 sin requisito y más barato; Sacred Duty ya no da Aguante; Vindication ya no sube tu poder de ataque; Two-Handed Weapon Specialization solo daño físico (hasta 6%).",
+  "30 oct: Redoubt hasta 30% de bloqueo, Improved Righteous Fury hasta 9%, Holy Shield en fila 5 sin requisito y más barato; Sacred Duty ya no da Aguante; Vindication ya no sube tu poder de ataque; Two-Handed Weapon Specialization hasta 6% (el 2 nov pasa a daño Sagrado y físico).",
   "30 oct: muchos talentos cambian de fila y columna (Divine Intellect a Protección, Holy Conduit a Sagrado, Unyielding Faith a Reprensión).",
-  "Righteous Fury se aprende al 10 en vez de al 16 (hotfix 23 oct)."
+  "Righteous Fury se aprende al 10 en vez de al 16 (hotfix 23 oct).",
+  "2 nov (oficial): Two-Handed Weapon Specialization sube el daño Sagrado y físico un 2/4/6% (antes solo físico) y reduce la amenaza un 7/14/20% con arma a dos manos.",
+  "2 nov: Vengeance acumula hasta 5 veces (antes 3) y requiere Seal of Command; Turn Evil nuevo en fila 5; Unsealed Wrath (requiere Repentance) sustituye a Twist of Light.",
+  "2 nov: Templar's Bulwark es un efecto mágico disipable; Swift Judgement desata al instante tu sello activo sin compartir reutilización con la Sentencia.",
+  "2 nov: Furia recta al 10, +33% a toda la amenaza y +90% adicional del daño Sagrado; Sentencia de furia dura 3 s (antes 4); Reckoning corregido (ataques según acumulaciones, no acumula sentado).",
+  "2 nov: confirmados oficialmente los cambios de árbol del 30 oct (Oath of Light, Boundless Light, Stoicism, Shieldsworn, Holy Power 10-50% de curación crítica, Light's Vigil solo aliados, rerangos y cambios de fila).",
+  "2 nov (general): Blizzard sube el daño de las clases y la vida de las criaturas de nivel alto; entrenar todas las habilidades del 1 al 60 cuesta unos 206-207 de oro."
  ],
  "pvp": {
   "strengths": [
    "Muy resistente: placa, Escudo divino, Imposición de manos, Bendición de protección y curas propias",
    "Bendición de libertad contra raíces y ralentizaciones",
    "Burst con Sello de orden + Sentencia sobre objetivos aturdidos (Martillo de justicia / Arrepentimiento)",
-   "Eye for an Eye y Vengeance castigan críticos"
+   "Eye for an Eye y Vengeance (hasta 5 acumulaciones desde el 2 nov) castigan críticos"
   ],
   "weaknesses": [
    "Movilidad baja: los kiteadores (mago, cazador) lo explotan",
    "Dependencia de maná en duelos largos",
    "Pocas interrupciones",
-   "Purgas y disipaciones contra sus bendiciones"
+   "Purgas y disipaciones contra sus bendiciones y, desde el 2 nov, contra Templar's Bulwark"
   ],
   "duel_plan": [
    "Prepara Bendición de poderío/reyes, aura (Concentración contra lanzadores, Devoción contra melé) y sello.",
