@@ -1,7 +1,8 @@
 {
  "id": "rogue",
- "build_checked": "1.60.1.70425 (beta, datos exportados por talentsforever.com el 2026-10-23)",
+ "build_checked": "1.60.1 (notas oficiales de Blizzard \"Updated November 2\", 2026; árboles de talentsforever del 30 Oct + cambios del 2 Nov aplicados a mano)",
  "sources": [
+  "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/9",
   "https://talentsforever.com/rogue",
   "https://talentsforever.com/rogue/changes",
   "https://talentsforever.com/export/rogue.json",
@@ -71,11 +72,11 @@
     "tree": 0,
     "row": 2,
     "col": 2,
-    "name": "Murder",
+    "name": "Improved Expose Armor",
     "max": 2,
     "pre": null,
-    "eff": "+2% damage per rank vs Humanoids and Giants (+4%)",
-    "icon": "spell_shadow_deathscream"
+    "eff": "Expose Armor cheaper; refunds combo points at 5 CP (tooltip inconsistent)",
+    "icon": "ability_warrior_riposte"
    },
    {
     "tree": 0,
@@ -91,30 +92,30 @@
     "tree": 0,
     "row": 3,
     "col": 1,
-    "name": "Relentless Strikes",
-    "max": 1,
+    "name": "Vigor",
+    "max": 2,
     "pre": null,
-    "eff": "Finishers 20% per combo point to restore 25 Energy",
-    "icon": "ability_warrior_decisivestrike"
+    "eff": "Max Energy +5 per rank (+10)",
+    "icon": "spell_nature_earthbindtotem"
    },
    {
     "tree": 0,
     "row": 3,
     "col": 2,
-    "name": "Improved Expose Armor",
-    "max": 2,
+    "name": "Blood Splatter",
+    "max": 1,
     "pre": null,
-    "eff": "Expose Armor cheaper; refunds combo points at 5 CP (tooltip inconsistent)",
-    "icon": "ability_warrior_riposte"
+    "eff": "Rupture duration +6 s and Garrote duration +9 s",
+    "icon": "ability_rogue_rupture"
    },
    {
     "tree": 0,
     "row": 3,
     "col": 3,
     "name": "Lethality",
-    "max": 5,
+    "max": 2,
     "pre": "Malice",
-    "eff": "Crit damage +4% per rank (20%) on Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, Hemorrhage",
+    "eff": "Crit damage +10% per rank (+20%) on Sinister Strike, Gouge, Backstab, Mutilate, Ghostly Strike, Hemorrhage",
     "icon": "ability_criticalstrike"
    },
    {
@@ -151,21 +152,21 @@
     "tree": 0,
     "row": 5,
     "col": 1,
-    "name": "Vigor",
-    "max": 2,
+    "name": "Relentless Strikes",
+    "max": 5,
     "pre": null,
-    "eff": "Max Energy +5 per rank (+10)",
-    "icon": "spell_nature_earthbindtotem"
+    "eff": "Finishers 4% per rank per combo point (20% at 5/5) to restore 25 Energy",
+    "icon": "ability_warrior_decisivestrike"
    },
    {
     "tree": 0,
     "row": 5,
     "col": 2,
-    "name": "Mutilate",
+    "name": "Venom",
     "max": 1,
     "pre": null,
-    "eff": "60 Energy, daggers: strike with both weapons, +20% vs poisoned, 2 combo points",
-    "icon": "ability_rogue_deadlybrew"
+    "eff": "Passive: Shank raises your Poison damage by 30% and Poison apply chance by 20% for 6 s",
+    "icon": "inv_sword_31"
    },
    {
     "tree": 0,
@@ -182,39 +183,39 @@
     "row": 6,
     "col": 3,
     "name": "Seal Fate",
-    "max": 5,
+    "max": 3,
     "pre": null,
-    "eff": "Crits from combo abilities 20% per rank (100%) to add a combo point",
+    "eff": "Crits from combo-point abilities 33/66/100% chance to add a combo point",
     "icon": "spell_shadow_chilltouch"
    },
    {
     "tree": 0,
     "row": 7,
     "col": 2,
-    "name": "Venom",
+    "name": "Mutilate",
     "max": 1,
-    "pre": "Mutilate",
-    "eff": "Finisher: poisons +30% damage and +10% chance for 9-21 s",
-    "icon": "inv_sword_31"
+    "pre": null,
+    "eff": "60 Energy, daggers: strike with both weapons for 90% weapon damage (+flat, increased), 2 combo points",
+    "icon": "ability_rogue_deadlybrew"
    },
    {
     "tree": 1,
     "row": 1,
     "col": 1,
-    "name": "Improved Eviscerate",
+    "name": "Coup de Grace",
     "max": 3,
     "pre": null,
-    "eff": "Eviscerate damage increased (+20% at 3/3)",
+    "eff": "Eviscerate damage +7/13/20%; Death Mark damage and storage rate +7/13/20%",
     "icon": "ability_rogue_eviscerate"
    },
    {
     "tree": 1,
     "row": 1,
     "col": 2,
-    "name": "Improved Sinister Strike",
+    "name": "Efficient Strikes",
     "max": 2,
     "pre": null,
-    "eff": "Sinister Strike costs less Energy (-5 at 2/2)",
+    "eff": "Sinister Strike and Hemorrhage cost 3/5 less Energy",
     "icon": "spell_shadow_ritualofsacrifice"
    },
    {
@@ -259,6 +260,16 @@
    },
    {
     "tree": 1,
+    "row": 2,
+    "col": 4,
+    "name": "Improved Sprint",
+    "max": 2,
+    "pre": null,
+    "eff": "Sprint 50% per rank (100%) to remove movement impairing effects",
+    "icon": "ability_rogue_sprint"
+   },
+   {
+    "tree": 1,
     "row": 3,
     "col": 1,
     "name": "Endurance",
@@ -280,12 +291,12 @@
    {
     "tree": 1,
     "row": 3,
-    "col": 4,
-    "name": "Improved Sprint",
+    "col": 3,
+    "name": "Composure",
     "max": 2,
     "pre": null,
-    "eff": "Sprint 50% per rank (100%) to remove movement impairing effects",
-    "icon": "ability_rogue_sprint"
+    "eff": "Poised reduces Energy cost by 5 more per rank (+10)",
+    "icon": "ability_rogue_feint"
    },
    {
     "tree": 1,
@@ -304,17 +315,37 @@
     "name": "Flawless Execution",
     "max": 1,
     "pre": null,
-    "eff": "Eviscerate costs 10 less Energy",
+    "eff": "Eviscerate costs 15 less Energy",
     "icon": "inv_sword_35"
    },
    {
     "tree": 1,
     "row": 4,
     "col": 3,
+    "name": "Weapon Expertise",
+    "max": 2,
+    "pre": null,
+    "eff": "Chance to be dodged or parried -1% per rank",
+    "icon": "spell_holy_blessingofstrength"
+   },
+   {
+    "tree": 1,
+    "row": 4,
+    "col": 4,
+    "name": "Aggression",
+    "max": 3,
+    "pre": null,
+    "eff": "Sinister Strike and Eviscerate damage +5% per rank (+15%)",
+    "icon": "ability_racial_avatar"
+   },
+   {
+    "tree": 1,
+    "row": 5,
+    "col": 1,
     "name": "Dual Wield Specialization",
-    "max": 5,
+    "max": 2,
     "pre": "Precision",
-    "eff": "Off-hand damage +5% per rank (+25%)",
+    "eff": "Off-hand damage +25% per rank (+50%)",
     "icon": "ability_dualwield"
    },
    {
@@ -341,21 +372,11 @@
     "tree": 1,
     "row": 6,
     "col": 2,
-    "name": "Weapon Expertise",
-    "max": 2,
-    "pre": "Blade Flurry",
-    "eff": "Chance to be dodged or parried -1% per rank",
-    "icon": "spell_holy_blessingofstrength"
-   },
-   {
-    "tree": 1,
-    "row": 6,
-    "col": 3,
-    "name": "Aggression",
-    "max": 3,
+    "name": "Flash of Steel",
+    "max": 5,
     "pre": null,
-    "eff": "Sinister Strike, Backstab and Eviscerate +2% per rank (+6%)",
-    "icon": "ability_racial_avatar"
+    "eff": "Shank generates +3 Energy per rank (+15) and its cooldown is 0.4 s shorter per rank (-2 s)",
+    "icon": "inv_sword_04"
    },
    {
     "tree": 1,
@@ -371,11 +392,11 @@
     "tree": 2,
     "row": 1,
     "col": 1,
-    "name": "Camouflage",
-    "max": 5,
+    "name": "Setup",
+    "max": 3,
     "pre": null,
-    "eff": "Stealth speed penalty -3% and cooldown -1 s per rank",
-    "icon": "ability_stealth"
+    "eff": "15/30/45% chance to add a combo point after dodging or fully resisting an attack or spell",
+    "icon": "spell_nature_mirrorimage"
    },
    {
     "tree": 2,
@@ -392,30 +413,30 @@
     "row": 1,
     "col": 3,
     "name": "Opportunity",
-    "max": 2,
+    "max": 5,
     "pre": null,
-    "eff": "Backstab, Garrote, Ambush and Mutilate +5% per rank (+10%)",
+    "eff": "Backstab, Garrote, Ambush and Mutilate +4% per rank (+20%)",
     "icon": "ability_warrior_warcry"
    },
    {
     "tree": 2,
     "row": 2,
     "col": 1,
-    "name": "Setup",
+    "name": "Camouflage",
     "max": 3,
     "pre": null,
-    "eff": "Combo point on dodge or full resist (100% at 3/3)",
-    "icon": "spell_nature_mirrorimage"
+    "eff": "Stealth movement speed +5% per rank (+15%) and Stealth cooldown -2 s per rank (-6 s)",
+    "icon": "ability_stealth"
    },
    {
     "tree": 2,
     "row": 2,
     "col": 2,
-    "name": "Elusiveness",
+    "name": "Dirty Deeds",
     "max": 2,
     "pre": null,
-    "eff": "Vanish and Blind cooldowns -45 s per rank",
-    "icon": "spell_magic_lesserinvisibilty"
+    "eff": "Cheap Shot and Garrote -10 Energy per rank; Garrote no longer needs to be behind",
+    "icon": "spell_shadow_summonsuccubus"
    },
    {
     "tree": 2,
@@ -451,36 +472,6 @@
     "tree": 2,
     "row": 3,
     "col": 2,
-    "name": "Ghostly Strike",
-    "max": 1,
-    "pre": null,
-    "eff": "40 Energy, 20 s: 180% weapon damage with a dagger, +15% dodge 7 s, 1 CP",
-    "icon": "spell_shadow_curse"
-   },
-   {
-    "tree": 2,
-    "row": 3,
-    "col": 3,
-    "name": "Improved Distract",
-    "max": 2,
-    "pre": null,
-    "eff": "Distract radius +5 yd and lowers enemy stealth detection",
-    "icon": "ability_rogue_distract"
-   },
-   {
-    "tree": 2,
-    "row": 4,
-    "col": 1,
-    "name": "Heightened Senses",
-    "max": 2,
-    "pre": null,
-    "eff": "Better stealth detection; -2% per rank chance to be hit by spells and ranged",
-    "icon": "ability_ambush"
-   },
-   {
-    "tree": 2,
-    "row": 4,
-    "col": 2,
     "name": "Premeditation",
     "max": 1,
     "pre": null,
@@ -489,7 +480,7 @@
    },
    {
     "tree": 2,
-    "row": 4,
+    "row": 3,
     "col": 3,
     "name": "Serrated Blades",
     "max": 3,
@@ -499,13 +490,43 @@
    },
    {
     "tree": 2,
-    "row": 5,
+    "row": 4,
     "col": 1,
-    "name": "Dirty Deeds",
+    "name": "Elusiveness",
     "max": 2,
     "pre": null,
-    "eff": "Cheap Shot and Garrote -10 Energy per rank; Garrote no longer needs to be behind",
-    "icon": "spell_shadow_summonsuccubus"
+    "eff": "Vanish and Blind cooldowns -45 s per rank",
+    "icon": "spell_magic_lesserinvisibilty"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 2,
+    "name": "Ghostly Strike",
+    "max": 1,
+    "pre": null,
+    "eff": "40 Energy, 20 s: weapon strike, +15% dodge 7 s, 1 CP; next Ambush or Garrote within 7 s needs no Stealth",
+    "icon": "spell_shadow_curse"
+   },
+   {
+    "tree": 2,
+    "row": 4,
+    "col": 3,
+    "name": "Quick Getaway",
+    "max": 2,
+    "pre": null,
+    "eff": "+1 max Sap target; +15% movement speed per rank (+30%) for 3 s after sapping",
+    "icon": "ability_rogue_quickrecovery"
+   },
+   {
+    "tree": 2,
+    "row": 5,
+    "col": 1,
+    "name": "Heightened Senses",
+    "max": 2,
+    "pre": null,
+    "eff": "Better stealth detection; -2% per rank chance to be hit by spells and ranged",
+    "icon": "ability_ambush"
    },
    {
     "tree": 2,
@@ -524,98 +545,90 @@
     "name": "Hemorrhage",
     "max": 1,
     "pre": "Serrated Blades",
-    "eff": "35 Energy: 100% weapon damage (145% dagger), Rupture +15% damage taken, 1 CP",
+    "eff": "35 Energy: 100% weapon damage, your Rupture and Garrote +15% damage, 1 CP (dagger damage bug fixed)",
     "icon": "spell_shadow_lifedrain"
    },
    {
     "tree": 2,
     "row": 6,
-    "col": 1,
-    "name": "Quietus",
-    "max": 5,
-    "pre": "Dirty Deeds",
-    "eff": "Sinister Strike, Ghostly Strike, Hemorrhage +2% per rank vs targets below 35%",
-    "icon": "ability_rogue_garrote"
-   },
-   {
-    "tree": 2,
-    "row": 6,
-    "col": 3,
-    "name": "Cutthroat",
+    "col": 2,
+    "name": "Boot Knife",
     "max": 5,
     "pre": null,
-    "eff": "Backstab 3% per rank (15%) to allow Ambush without Stealth for 10 s",
-    "icon": "classicon_rogue"
+    "eff": "Shank 20% per rank (100%) chance to add 2 combo points",
+    "icon": "inv_weapon_shortblade_05"
    },
    {
     "tree": 2,
     "row": 7,
     "col": 2,
-    "name": "Thousand Cuts",
+    "name": "Death Mark",
     "max": 1,
-    "pre": "Preparation",
-    "eff": "Rupture ticks: next Backstab/Hemorrhage -3 Energy, up to 5 stacks",
-    "icon": "ability_rogue_rupture"
+    "pre": null,
+    "eff": "Finisher curse (25 Energy, 20 yd, 10 s CD): stores part of your damage per CP (Garrote/Rupture x2), dealt after 6 s up to an AP/crit-scaled cap",
+    "icon": "spell_shadow_deathscream"
    }
   ]
  },
- "talents_note": "Árboles verificados contra el export de talentsforever (build 70425, 53 talentos). Posiciones y prerrequisitos coinciden con el local 70170, salvo Aggression, que ya NO requiere Hack and Slash. Efectos actualizados con los valores de rango máximo (Riposte desarma 6 s, Mutilate da 2 PC, Hemorrhage de un rango, etc.). Iconos nuevos tomados del export (Mutilate ability_rogue_deadlybrew, Venom inv_sword_31, Flawless Execution inv_sword_35, Dirty Tricks ability_sap, Quietus ability_rogue_garrote, Cutthroat classicon_rogue, Thousand Cuts ability_rogue_rupture). Blizzard ha dicho que Death Mark sustituirá a Thousand Cuts (aún no está en el árbol).",
+ "talents_note": "Árboles actualizados con las notas oficiales del 2 Nov 2026 (el export de talentsforever sigue con fecha 30 Oct). Filas, rangos y efectos según Blizzard; las COLUMNAS de los talentos movidos o nuevos (Blood Splatter, Composure, Flash of Steel, Quick Getaway, Boot Knife, Death Mark, Vigor, Venom, Weapon Expertise, Aggression...) y sus iconos son estimados (sin confirmar). Venom ya no requiere Mutilate (ahora está por encima) y Weapon Expertise ya no puede requerir Blade Flurry (fila inferior): prerrequisitos retirados (sin confirmar). Las notas dicen \"Mutilate moved to Row 7 (was Row 9)\"; se interpreta como fila 7 (estaba en la 5). Eliminados: Murder, Improved Distract, Quietus, Cutthroat, Thousand Cuts.",
  "level_cap": 60,
  "leveling": {
-  "spec": "Combate (espadas/hachas, doble empuñadura)",
-  "why": "La rama más resistente y recomendada por Method, Mobalytics y Warcraft Tavern: Desvío + Respuesta dan supervivencia, Ejecución impecable abarata Eviscerar, Aluvión de acero llega a 30 y Hack and Slash permite cualquier arma (hachas de una mano ya son usables). Sutileza es la más popular en talentsforever pero depende de dagas y sigilo.",
+  "spec": "Combate (espadas/hachas, doble empuñadura + Shank)",
+  "why": "Sigue siendo la rama más resistente y la que recomendaban Method, Mobalytics y Warcraft Tavern antes del 2 nov: Desvío + Respuesta dan supervivencia y Aluvión de acero llega a 30. Con las notas del 2 nov gana todavía más: Ejecución impecable abarata Eviscerar 15, Coup de Grace sube Eviscerar un 20%, Aggression (+15% a Golpe siniestro y Eviscerar) baja a la fila 4, Composure potencia el nuevo pasivo Poised (Disposición, nivel 18) y Flash of Steel convierte el nuevo Shank (nivel 24) en una fuente de energía cada 8 s. Dual Wield Specialization pasa a 2 puntos (+50% mano izquierda), lo que libera puntos. Aún no hay guías de la comunidad actualizadas al 2 nov: el orden es propio, basado en las notas (sin confirmar).",
   "order": [
-   "Improved Sinister Strike*2",
-   "Improved Eviscerate*3",
+   "Coup de Grace*3",
+   "Efficient Strikes*2",
    "Precision*3",
    "Deflection*3",
    "Riposte*1",
-   "Endurance*2",
-   "Improved Sprint*1",
-   "Dual Wield Specialization*5",
+   "Composure*2",
+   "Endurance*1",
+   "Aggression*3",
+   "Flawless Execution*1",
+   "Endurance*1",
+   "Dual Wield Specialization*2",
    "Blade Flurry*1",
    "Hack and Slash*5",
+   "Flash of Steel*5",
    "Weapon Expertise*2",
-   "Aggression*2",
    "Adrenaline Rush*1",
-   "Flawless Execution*1",
    "Malice*5",
    "Ruthlessness*3",
-   "Murder*2",
-   "Relentless Strikes*1",
-   "Lethality*5",
-   "Aggression*1",
-   "Improved Sprint*1",
-   "Lightning Reflexes*1"
+   "Improved Slice and Dice*2",
+   "Lethality*2",
+   "Vigor*2",
+   "Improved Slice and Dice*1"
   ],
   "alt": {
-   "spec": "Sutileza (dagas, Emboscada/Hemorragia; también buena para PvP de mundo)",
-   "why": "Orden más usado en talentsforever (39% de builds): Camuflaje, Emboscada mejorada, Iniciativa, Premeditación, Preparación y Cutthroat a 35 (Emboscada sin sigilo).",
+   "spec": "Sutileza (dagas, Emboscada/Hemorragia + Boot Knife/Death Mark; también buena para PvP de mundo)",
+   "why": "Sutileza se rehízo el 2 nov: desaparecen Cutthroat, Quietus, Thousand Cuts e Improved Distract; Golpe fantasmal (fila 4) permite la siguiente Emboscada/Garrote sin sigilo, Boot Knife hace que Shank dé 2 puntos de combo y Death Mark (fila 7) es el nuevo remate. Se corrigió además el daño excesivo de Hemorragia y Golpe fantasmal con dagas. Orden propio (sin confirmar).",
    "order": [
-    "Camouflage*5",
-    "Opportunity*2",
+    "Opportunity*5",
     "Improved Ambush*3",
-    "Elusiveness*2",
+    "Camouflage*2",
     "Initiative*3",
-    "Ghostly Strike*1",
     "Serrated Blades*3",
+    "Ghostly Strike*1",
+    "Elusiveness*2",
     "Premeditation*1",
     "Hemorrhage*1",
     "Preparation*1",
     "Dirty Deeds*2",
-    "Master of Deception*1",
-    "Cutthroat*5",
-    "Thousand Cuts*1",
+    "Camouflage*1",
+    "Boot Knife*5",
+    "Death Mark*1",
     "Malice*5",
     "Ruthlessness*3",
-    "Murder*2",
-    "Relentless Strikes*1",
-    "Lethality*5",
-    "Quietus*4"
+    "Improved Slice and Dice*2",
+    "Lethality*2",
+    "Vigor*2",
+    "Blood Splatter*1",
+    "Efficient Strikes*2",
+    "Coup de Grace*3"
    ]
   },
-  "stats": "Agilidad > Poder de ataque > Fuerza > Aguante > Armadura al principio; desde ~30, crítico (Malicia/Letalidad) sube por encima de Fuerza. Precisión y habilidad con armas importan más en mazmorras (caps sin confirmar en Forever).",
-  "weapons": "Combate: arma principal lenta (2.6–2.8 s) para Golpe siniestro y Eviscerar, secundaria rápida (1.3–1.6 s); espadas o hachas aprovechan el ataque extra de Hack and Slash. Sutileza/Asesinato: dagas (Puñalada, Emboscada y Mutilar siguen pidiéndolas). Venenos desde 20: Instantáneo en ambas armas para subir; Instantáneo + Mortal en élites/mazmorras. En Forever el veneno se puede combinar con piedra de afilar/contrapeso en la misma arma. Con Totem Viento Furioso no pongas veneno en la mano principal (no se acumulan, según Mobalytics).",
+  "stats": "Agilidad > Poder de ataque > Fuerza > Aguante > Armadura al principio; desde ~30, crítico (Malicia/Letalidad) sube por encima de Fuerza. 2 nov: el coeficiente de poder de ataque de los venenos se duplica (Instantáneo 0.01, Mortal 0.009), así que el poder de ataque gana algo de valor. Precisión y Pericia importan más en mazmorras (caps sin confirmar en Forever).",
+  "weapons": "Combate: arma principal lenta (2.6–2.8 s) para Golpe siniestro y Eviscerar; la secundaria gana importancia el 2 nov (Shank pega con la mano izquierda y Dual Wield Specialization da +50%), así que no la descuides; espadas o hachas aprovechan el ataque extra de Hack and Slash. Sutileza/Asesinato: dagas (Puñalada, Emboscada y Mutilar siguen pidiéndolas; Mutilar pasa a 90% del daño del arma). Venenos desde 20: Instantáneo en ambas armas para subir; Instantáneo + Mortal en élites/mazmorras. En Forever el veneno se puede combinar con piedra de afilar/contrapeso en la misma arma. Con Totem Viento Furioso no pongas veneno en la mano principal (no se acumulan, según Mobalytics).",
   "abilities": [
    [
     1,
@@ -640,7 +653,7 @@
    [
     10,
     "Slice and Dice (Hacer picadillo), Sprint, Sap (Porrazo), Dual Wield",
-    "En Forever Porrazo ya no rompe el sigilo."
+    "En Forever Porrazo ya no rompe el sigilo; 2 nov: Hacer picadillo ya no levanta a objetivos sentados."
    ],
    [
     12,
@@ -659,13 +672,13 @@
    ],
    [
     18,
-    "Ambush (Emboscada)",
-    "Requiere daga."
+    "Ambush (Emboscada), Poised (Disposición, pasivo nuevo del 2 nov)",
+    "Emboscada requiere daga. Poised: fuera de combate y con la energía al máximo, tu siguiente habilidad cuesta 10 de energía menos (nombre español sin confirmar)."
    ],
    [
     20,
-    "Rupture (Ruptura), Instant Poison (Veneno instantáneo), Crippling Poison (Veneno entorpecedor), Riposte (Respuesta)",
-    "Venenos mediante misión de clase."
+    "Rupture (Ruptura), Instant Poison (Veneno instantáneo), Crippling Poison (Veneno entorpecedor), Riposte (Respuesta), Premeditation (Premeditación)",
+    "Venenos mediante misión de clase; Premeditación baja a la fila 3."
    ],
    [
     22,
@@ -674,13 +687,13 @@
    ],
    [
     24,
-    "Mind-numbing Poison (Veneno de aturdimiento mental), Detect Traps",
-    ""
+    "Shank (nuevo 2 nov), Mind-numbing Poison (Veneno de aturdimiento mental), Detect Traps",
+    "Shank: 5 de energía, 10 s CD, golpe con la mano izquierda al 50% que no falla y genera 15 de energía. Úsalo siempre que esté listo."
    ],
    [
     25,
-    "Cold Blood (Sangre fría), Premeditation (Premeditación), Ghostly Strike (Golpe fantasmal)",
-    "Talentos de fila 4/3."
+    "Cold Blood (Sangre fría), Ghostly Strike (Golpe fantasmal), Aggression",
+    "Talentos de fila 4; Golpe fantasmal permite la siguiente Emboscada/Garrote sin sigilo."
    ],
    [
     26,
@@ -689,8 +702,8 @@
    ],
    [
     30,
-    "Kidney Shot (Golpe en los riñones), Deadly Poison (Veneno mortal), Blade Flurry (Aluvión de acero), Mutilate (Mutilar), Hemorrhage (Hemorragia), Preparation (Preparación)",
-    ""
+    "Kidney Shot (Golpe en los riñones), Deadly Poison (Veneno mortal), Blade Flurry (Aluvión de acero), Venom, Hemorrhage (Hemorragia), Preparation (Preparación)",
+    "Venom baja a la fila 5 y pasa a ser pasivo ligado a Shank."
    ],
    [
     32,
@@ -703,19 +716,30 @@
     ""
    ],
    [
+    35,
+    "Flash of Steel / Boot Knife (fila 6)",
+    "Shank más barato en tiempo y energía (Combate) o +2 PC (Sutileza)."
+   ],
+   [
     40,
-    "Adrenaline Rush (Subidón de adrenalina), Safe Fall (Caída segura), Venom, equitación y doble especialización",
-    ""
+    "Adrenaline Rush (Subidón de adrenalina), Mutilate (Mutilar), Death Mark, Safe Fall (Caída segura), equitación y doble especialización",
+    "Mutilar sube a la fila 7 (90% del daño del arma)."
    ],
    [
     42,
     "Slice and Dice rango 2, Vanish rango 2",
     ""
+   ],
+   [
+    44,
+    "Shank rango 2",
+    "Genera 25 de energía."
    ]
   ],
   "rotation": [
-   "En mobs normales entra andando con Golpe siniestro (más rápido que abrir en sigilo); en mobs duros abre con Golpe bajo o Emboscada.",
-   "Golpe siniestro hasta 3-5 puntos de combo; Eviscerar para rematar (Ejecución impecable lo abarata).",
+   "En mobs normales entra andando con Golpe siniestro (más rápido que abrir en sigilo); en mobs duros abre con Golpe bajo o Emboscada. Llega con la energía llena para aprovechar Poised (-10 de energía, -20 con Composure 2/2).",
+   "Desde 24: Shank cada vez que esté disponible (5 de energía, devuelve 15/25 y más con Flash of Steel): es casi energía gratis.",
+   "Golpe siniestro hasta 3-5 puntos de combo; Eviscerar para rematar (Ejecución impecable lo abarata 15 desde el 2 nov).",
    "Hacer picadillo en peleas largas o al encadenar 2 mobs; poco valor en 1 contra 1 corto.",
    "Desde 30, Aluvión de acero en cuanto haya 2 enemigos.",
    "Usa Gubia para ganar energía o vendarte, Patada para cortar casteos y Evasión/Esfumarse si se complica.",
@@ -748,11 +772,14 @@
    ]
   ],
   "tips": [
+   "2 nov: Blizzard subió el daño de todas las clases y la vida de los enemigos de nivel alto; no esperes que los mobs mueran más rápido que antes.",
+   "2 nov: los venenos duplican su coeficiente de poder de ataque; vuelven a merecer la pena desde el 20.",
+   "Si tenías Murder, Cutthroat, Quietus, Thousand Cuts o Improved Distract, han desaparecido: revisa tus talentos tras el parche.",
    "Peletería + Desuello es la combinación recomendada: las recetas tempranas de Peletería se rehicieron en Forever (Devilsaur al final).",
    "Primeros auxilios cura, quita sangrados/enfermedades y en Forever fabrica pociones de salud.",
    "Usa el sistema de campamento (silla, pecera, piedra imán, tienda) para buffs y descanso extra.",
    "La energía se regenera de forma continua (1 punto cada 0.1 s) en lugar de 20 cada 2 s.",
-   "Los venenos son un tercio más débiles por golpe pero con un 50-55% más de cargas y ahora pueden ser críticos.",
+   "Los venenos tienen un 50-55% más de cargas y ahora pueden ser críticos.",
    "Con Legado (Talented) los talentos se desbloquean hasta 5 niveles antes.",
    "No uses sigilo en cada mob salvo con build de Emboscada: ralentiza la subida."
   ]
@@ -904,13 +931,20 @@
   "Nuevas de nivel alto: The Drowned City (35-40), Krol'dok Stronghold (40-45), Alcaz Prison (48-53), Blackmaw Hold (55-60), Shaper's Terrace (58-60)."
  ],
  "changes": [
-  "Nuevos talentos: Mutilate y Venom (Asesinato), Puncturing Wounds y Flawless Execution (Combate), Dirty Tricks, Improved Distract, Quietus, Cutthroat y Thousand Cuts (Sutileza).",
+  "Nuevos talentos: Mutilate y Venom (Asesinato), Puncturing Wounds y Flawless Execution (Combate), Dirty Tricks, Improved Distract, Quietus, Cutthroat y Thousand Cuts (Sutileza) (Quietus, Cutthroat, Thousand Cuts e Improved Distract se eliminaron el 2 nov).",
   "Eliminados: Improved Backstab, Dagger/Mace/Fist Weapon Specialization, Sleight of Hand, Improved Sap y Deadliness; Sword Specialization pasa a Hack and Slash (bonus según el arma).",
   "Energía continua (1 cada 0.1 s); Porrazo ya no rompe el sigilo; Distraer reduce la detección de sigilo enemiga.",
   "Venenos ~1/3 más débiles por golpe con ~50% más cargas, pueden ser críticos y se combinan con piedras de afilar y Totem Viento Furioso.",
   "Exponer armadura más fuerte (2250 de armadura a 5 PC); Ruptura con un 38-42% menos de daño base; Amago reduce mucha más amenaza.",
   "Setup, Premeditation, Cold Blood y Vigor se movieron a filas más bajas; Lethality baja a 4% por rango; Dual Wield Specialization a 25%.",
-  "Las hachas de una mano son usables; Skyborne puede ser pícaro; el Humano tiene Ruthless (+1% de crítico; era +2% antes del ajuste de lanzamiento) en lugar de especialización en espadas."
+  "Las hachas de una mano son usables; Skyborne puede ser pícaro; el Humano tiene Ruthless (+1% de crítico; era +2% antes del ajuste de lanzamiento) en lugar de especialización en espadas.",
+  "2 nov: nuevo pasivo Poised (Disposición, nivel 18): fuera de combate y con energía al máximo, la siguiente habilidad cuesta 10 de energía menos.",
+  "2 nov: nueva habilidad Shank (nivel 24, rango 2 al 44): 5 de energía, 10 s CD, golpe con la mano izquierda al 50% que no falla y genera 15/25 de energía.",
+  "2 nov: Veneno instantáneo (0.005 → 0.01) y Veneno mortal (0.0045 → 0.009) duplican su coeficiente de poder de ataque.",
+  "2 nov: Asesinato: se elimina Murder; Lethality pasa a 2 puntos (10/20%); Relentless Strikes baja a fila 5 con 5 puntos (4-20% por PC); Seal Fate a 3 puntos; Vigor sube a fila 3; nuevo Blood Splatter (fila 3: Ruptura +6 s, Garrote +9 s); Venom (fila 5) pasa a pasivo de Shank (+30% daño y +20% aplicación de venenos 6 s); Mutilate a fila 7 y 90% del daño del arma.",
+  "2 nov: Combate: Improved Eviscerate pasa a Coup de Grace (también mejora Death Mark) e Improved Sinister Strike a Efficient Strikes (también abarata Hemorragia); Flawless Execution -15 de energía; Aggression y Weapon Expertise suben a fila 4 (Aggression +5/10/15% a Golpe siniestro y Eviscerar); Dual Wield Specialization pasa a fila 5 con 2 puntos (+25/50%); nuevos Composure (fila 3) y Flash of Steel (fila 6).",
+  "2 nov: Sutileza: se eliminan Improved Distract, Quietus, Cutthroat y Thousand Cuts; Setup (15/30/45%) a fila 1; Opportunity pasa a 5 puntos (4-20%); Camouflage a fila 2 con 3 puntos; Golpe fantasmal permite Emboscada/Garrote sin sigilo; nuevos Quick Getaway (fila 4), Boot Knife (fila 6) y Death Mark (fila 7, remate que almacena daño).",
+  "2 nov: Blizzard sube el daño de todas las clases y la vida de los enemigos de nivel alto para compensar."
  ],
  "pvp": {
   "strengths": [
@@ -918,10 +952,11 @@
    "Respuesta desarma 6 s tras parar",
    "Premeditación y Preparación (Sutileza) para dobles aperturas",
    "Patada mejorada silencia",
-   "Sprint mejorado y Esfumarse para escapar o resetear"
+   "Sprint mejorado y Esfumarse para escapar o resetear",
+   "2 nov: Shank (energía extra) y Death Mark (Sutileza) dan más ráfaga; Golpe fantasmal permite Emboscada/Garrote sin sigilo; Quick Getaway permite 2 Porrazos (sin confirmar en combate real)."
   ],
   "weaknesses": [
-   "Venenos más débiles por golpe",
+   "Venenos más débiles por golpe que en Classic (aunque el 2 nov duplican su escalado con poder de ataque)",
    "Sufre si pierde la apertura o contra clases con dispersión de CC",
    "Depende de los cooldowns (Evasión, Esfumarse, Ceguera)",
    "Ruptura más débil que en Classic"
