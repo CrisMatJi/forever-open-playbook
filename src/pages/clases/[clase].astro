@@ -132,7 +132,7 @@ const rkey = (r) => r.split(" (")[0].replace("Skyborne - High Order", "Skyborne"
           </>);
           return (
             <article class="gear-card">
-              {g.id ? <a class="gear-main" href={wh(g.id)} target="_blank" rel="noopener" data-wowhead={`item=${g.id}&domain=forever`}>{inner}</a> : <div class="gear-main">{inner}</div>}
+              {g.id ? <a class="gear-main" href={wh(g.id)} target="_blank" rel="noopener" data-wowhead={`item=${g.id}&domain=forever`} data-wh-icon-added={g.icon ? "true" : undefined}>{inner}</a> : <div class="gear-main">{inner}</div>}
               <p class="gear-how"><b>{g.source}</b>{g.why ? ` · ${g.why}` : ""}</p>
             </article>
           );

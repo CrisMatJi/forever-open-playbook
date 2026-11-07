@@ -12,6 +12,17 @@ const short = (l = "") => (l.match(/\d+\s*-\s*\d+/) || [l])[0].replace(/\s/g, ""
 const minLvl = (l = "") => +(l.match(/\d+/) || [99])[0];
 const LIST = [...D.dungeons].sort((a, b) => minLvl(a.levels) - minLvl(b.levels));
 import { slug } from "../lib/dungeons.js";
+// Convierte "Nombre (12345)" en enlaces de Wowhead con icono y ficha al pasar el ratón
+const escH = (t) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const itemLink = (id, label) => `<a class="ritem" href="https://www.wowhead.com/forever/item=${id}" target="_blank" rel="noopener" data-wowhead="item=${id}&domain=forever">${label}</a>`;
+function rewardHtml(text = "") {
+  return escH(text).replace(/([A-Z][^,;():]*?)\s*\((\d{3,6}(?:\/\d{3,6})*)([^)]*)\)/g, (m, name, ids, rest) => {
+    const list = ids.split("/");
+    const main = itemLink(list[0], name.trim());
+    const extra = list.slice(1).map((id, i) => " " + itemLink(id, `(${i + 2})`)).join("");
+    return main + extra + (rest.replace(/^;\s*/, "").trim() ? ` <span class="note">(${rest.replace(/^;\s*/, "").trim()})</span>` : "");
+  });
+}
 import ZoneMap from "../components/ZoneMap.astro";
 import MAPS from "../data/dungeon_maps.json";
 // Agrupa entrada y personajes de misión por zona para pintar un mapa por zona
@@ -70,7 +81,7 @@ const xp = G.dungeons?.xp_changes || [];
             <td><b>{q.name.replace(/ \(\d+\)$/, "")}</b>{q.worth && <div class="note">{q.worth}</div>}</td><td class="num">{q.level}</td>
             <td>{x?.npc ? <>{x.npc_id ? <a href={`https://www.wowhead.com/forever/npc=${x.npc_id}`} target="_blank" rel="noopener"><b>{x.npc}</b></a> : <b>{x.npc}</b>}<span class="qnpc">{x.zone_es || x.zone}{x.x != null && !x.inside ? ` (${x.x}, ${x.y})` : ""}</span></> : <span class="note">{q.giver}</span>}
               {x?.note && <span class="qnpc note">{x.note}</span>}{x?.prereq && <span class="qnpc note">Antes: {x.prereq}</span>}</td>
-            <td>{q.reward}</td></tr>); })}</tbody>
+            <td set:html={rewardHtml(q.reward)} /></tr>); })}</tbody>
         </table></div>
       )}
       {zones.length > 0 && (<div class="zmaps">{zones.map((z) => <ZoneMap zoneId={z.zoneId} zone={z.zone} points={z.points} />)}</div>)}
@@ -81,7 +92,7 @@ const xp = G.dungeons?.xp_changes || [];
             const inner = (<>{g.icon && <Icon name={g.icon} size={36} label={g.name} big class="q-rare" />}<span><span class="gear-slot">{g.slot}{g.boss ? ` · ${g.boss}` : ""}</span><b>{g.name}</b></span></>);
             return (
               <article class="gear-card">
-                {g.id ? <a class="gear-main" href={wh(g.id)} target="_blank" rel="noopener" data-wowhead={`item=${g.id}&domain=forever`}>{inner}</a> : <div class="gear-main">{inner}</div>}
+                {g.id ? <a class="gear-main" href={wh(g.id)} target="_blank" rel="noopener" data-wowhead={`item=${g.id}&domain=forever`} data-wh-icon-added={g.icon ? "true" : undefined}>{inner}</a> : <div class="gear-main">{inner}</div>}
                 {g.for && <p class="gear-how">{g.for}</p>}
               </article>
             );
