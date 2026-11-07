@@ -1,4 +1,823 @@
 {
+ "The Hall of Thanes": {
+  "entrance": {
+   "zone": "Ironforge",
+   "zone_es": "Forjaz",
+   "zone_id": 1537,
+   "x": 43.5,
+   "y": 52.0,
+   "note": "Dentro de Forjaz: desde la Gran Fundición mira a la Gran Sede (sala de Magni), entra y gira a la izquierda por el pasillo con telarañas; baja hasta el puente sobre la lava y el portal (warcrafttavern/gamer-guides)."
+  },
+  "quests": [
+   {
+    "quest": "Old Ironforge Incursion (96393)",
+    "npc": "Earthseer Farsen",
+    "npc_id": 264936,
+    "zone": "Dun Morogh",
+    "zone_es": "Dun Morogh",
+    "zone_id": 1,
+    "x": 64.8,
+    "y": 58.4,
+    "inside": false,
+    "note": "Campamento en la colina sobre la Cantera de Gol'Bolar (Dun Morogh). Se entrega al rey Magni Bronzebeard (Forjaz 39.6, 55.6).",
+    "prereq": "Underground Map (cadena de Farsen: Farsen's Watch → Nip 'Em in the Bud → Underground Map; breadcrumb opcional A Visitor to Dun Morogh)"
+   },
+   {
+    "quest": "The Restless Dead (96394)",
+    "npc": "Afadra Dunwall",
+    "npc_id": null,
+    "zone": "Ironforge",
+    "zone_es": "Forjaz",
+    "zone_id": 1537,
+    "x": 33.0,
+    "y": 48.0,
+    "inside": false,
+    "note": "Viejo Forjaz, subiendo unas escaleras pasado el pasillo bajo la Gran Sede, ya cerca del portal (coords del mapa de Forjaz según warcraft.wiki.gg).",
+    "prereq": null
+   },
+   {
+    "quest": "Important Heirlooms (96403)",
+    "npc": "Thom Filch",
+    "npc_id": null,
+    "zone": "Ironforge",
+    "zone_es": "Forjaz",
+    "zone_id": 1537,
+    "x": 32.4,
+    "y": 44.8,
+    "inside": false,
+    "note": "Viejo Forjaz, junto al puente que lleva al portal de la mazmorra (coords del mapa de Forjaz según warcraft.wiki.gg).",
+    "prereq": null
+   },
+   {
+    "quest": "An Ancient Grudge (96395)",
+    "npc": "Ghostly Attendant",
+    "npc_id": null,
+    "zone": "Ironforge",
+    "zone_es": "Forjaz",
+    "zone_id": 1537,
+    "x": 43.5,
+    "y": 52.0,
+    "inside": true,
+    "note": "Dentro de la mazmorra, en la sala tras el primer pasillo (ala oeste). Coordenadas = entrada.",
+    "prereq": null
+   },
+   {
+    "quest": "The Treaty of Understanding (98423)",
+    "npc": "Treaty of Understanding (tablilla)",
+    "npc_id": null,
+    "zone": "Ironforge",
+    "zone_es": "Forjaz",
+    "zone_id": 1537,
+    "x": 43.5,
+    "y": 52.0,
+    "inside": true,
+    "note": "Tablilla tras la puerta de la cámara del último jefe (Relicario de los Reyes). Se entrega al rey Magni Bronzebeard (Forjaz 39.6, 55.6). Coordenadas = entrada.",
+    "prereq": null
+   }
+  ]
+ },
+ "Ragefire Chasm": {
+  "entrance": {
+   "zone": "Orgrimmar",
+   "zone_es": "Orgrimmar",
+   "zone_id": 1637,
+   "x": 52.0,
+   "y": 49.5,
+   "note": "Grieta de las Sombras, en el centro de Orgrimmar (gamer-guides). Mazmorra de la Horda: inviable para la Alianza."
+  },
+  "quests": []
+ },
+ "Ruins of Lordaeron": {
+  "entrance": {
+   "zone": "Tirisfal Glades",
+   "zone_es": "Claros de Tirisfal",
+   "zone_id": 85,
+   "x": 64.3,
+   "y": 67.2,
+   "note": "Ruinas de Lordaeron, sobre Entrañas (Claros de Tirisfal). Cruza la puerta principal, a la izquierda antes del castillo y sube las escaleras. Coords del portal según kami-labs; gamer-guides da /way 61.9 70.5 para la entrada a las ruinas."
+  },
+  "quests": [
+   {
+    "quest": "Abominable Creatures (95250)",
+    "npc": "Captain Truman",
+    "npc_id": null,
+    "zone": "Tirisfal Glades",
+    "zone_es": "Claros de Tirisfal",
+    "zone_id": 85,
+    "x": 64.3,
+    "y": 67.2,
+    "inside": true,
+    "note": "Justo dentro de la entrada, a la izquierda. Se entrega a él mismo. Coordenadas = entrada.",
+    "prereq": null
+   },
+   {
+    "quest": "Bloodied Insignia (95195)",
+    "npc": "Bloodied Insignia (objeto)",
+    "npc_id": null,
+    "zone": "Tirisfal Glades",
+    "zone_es": "Claros de Tirisfal",
+    "zone_id": 85,
+    "x": 64.3,
+    "y": 67.2,
+    "inside": true,
+    "note": "Lo sueltan los no-muertos (esqueletos) dentro de la mazmorra. Se entrega al General Marcus Jonathan, Valle de los Héroes (Ventormenta). Coordenadas = entrada.",
+    "prereq": null
+   },
+   {
+    "quest": "Crest of Lordaeron (95189)",
+    "npc": "Crest of Lordaeron (objeto)",
+    "npc_id": null,
+    "zone": "Tirisfal Glades",
+    "zone_es": "Claros de Tirisfal",
+    "zone_id": 85,
+    "x": 64.3,
+    "y": 67.2,
+    "inside": true,
+    "note": "Objeto en el suelo/pared en uno de 5 sitios aleatorios dentro (cripta junto a la fuente, torres cerca de Bjork, torre tras The Abandoned). Se entrega a Lady Dena Kennedy, Castillo de Ventormenta. Coordenadas = entrada.",
+    "prereq": null
+   },
+   {
+    "quest": "Remember That I Love You (92415)",
+    "npc": "Blood-Stained Letter (objeto)",
+    "npc_id": null,
+    "zone": "Tirisfal Glades",
+    "zone_es": "Claros de Tirisfal",
+    "zone_id": 85,
+    "x": 64.3,
+    "y": 67.2,
+    "inside": true,
+    "note": "Papel junto al cadáver de Edward Heartweaver dentro de la mazmorra. Se entrega a Orphan Matron Nightingale (Ventormenta), que te manda con Avette Fellwood en Villa Oscura. Coordenadas = entrada.",
+    "prereq": null
+   }
+  ]
+ },
+ "The Deadmines": {
+  "entrance": {
+   "zone": "Westfall",
+   "zone_es": "Páramos de Poniente",
+   "zone_id": 40,
+   "x": 42.5,
+   "y": 71.5,
+   "note": "Arroyoluna: entra en la mina bajo el gran edificio en ruinas (Escondrijo Defias) y baja por el túnel hasta el portal (gamer-guides; warcrafttavern da ~42,72; kami-labs sitúa el portal en 38.0, 77.5)."
+  },
+  "quests": [
+   {
+    "quest": "The Defias Brotherhood (166)",
+    "npc": "Gryan Stoutmantle",
+    "npc_id": 234,
+    "zone": "Westfall",
+    "zone_es": "Páramos de Poniente",
+    "zone_id": 40,
+    "x": 56.2,
+    "y": 47.4,
+    "inside": false,
+    "note": "Colina del Centinela (Páramos de Poniente), en la torre.",
+    "prereq": "Las 6 partes previas de la cadena The Defias Brotherhood (65, 132, 135, 141, 142, 155)"
+   },
+   {
+    "quest": "Underground Assault (2040)",
+    "npc": "Shoni the Shilent",
+    "npc_id": 6579,
+    "zone": "Stormwind City",
+    "zone_es": "Ventormenta",
+    "zone_id": 1519,
+    "x": 55.4,
+    "y": 12.4,
+    "inside": false,
+    "note": "Distrito de los Enanos de Ventormenta.",
+    "prereq": "Opcional: Speak with Shoni, de Gnoarn en Ciudad Manitas (Forjaz)"
+   },
+   {
+    "quest": "Red Silk Bandanas (214)",
+    "npc": "Scout Riell",
+    "npc_id": null,
+    "zone": "Westfall",
+    "zone_es": "Páramos de Poniente",
+    "zone_id": 40,
+    "x": 56.6,
+    "y": 47.4,
+    "inside": false,
+    "note": "En lo alto de la torre de Colina del Centinela.",
+    "prereq": "Cadena que empieza con Scout Galiaan en Colina del Centinela"
+   },
+   {
+    "quest": "Destruction in Deadmines (92753 → 92819)",
+    "npc": "Alba Fairmoon",
+    "npc_id": null,
+    "zone": "Westfall",
+    "zone_es": "Páramos de Poniente",
+    "zone_id": 40,
+    "x": null,
+    "y": null,
+    "inside": false,
+    "note": "Posada de Colina del Centinela (sin coordenadas exactas en las fuentes). Final de la cadena Toxic Soil; kami-labs indica que el último paso empieza con el objeto Extra-Destructive Explosives.",
+    "prereq": "Cadena de Alba Fairmoon: Testing the Wells → Murloc Gills → The State of the Mines → Moonbrook Espionage → A Dynamite Plan / Explosive Consultation"
+   },
+   {
+    "quest": "Collecting Memories (168) / Oh Brother... (167)",
+    "npc": "Wilder Thistlenettle",
+    "npc_id": 656,
+    "zone": "Stormwind City",
+    "zone_es": "Ventormenta",
+    "zone_id": 1519,
+    "x": 65.2,
+    "y": 21.2,
+    "inside": false,
+    "note": "Distrito de los Enanos de Ventormenta.",
+    "prereq": null
+   },
+   {
+    "quest": "The Unsent Letter (373) → The Stockade Riots (391)",
+    "npc": "An Unsent Letter (objeto)",
+    "npc_id": null,
+    "zone": "Westfall",
+    "zone_es": "Páramos de Poniente",
+    "zone_id": 40,
+    "x": 42.5,
+    "y": 71.5,
+    "inside": true,
+    "note": "Lo suelta Edwin VanCleef dentro de la mazmorra. Se entrega a Baros Alexston (Plaza de la Catedral, Ventormenta), que te manda con Warden Thelwater. Coordenadas = entrada.",
+    "prereq": null
+   }
+  ]
+ },
+ "Wailing Caverns": {
+  "entrance": {
+   "zone": "The Barrens",
+   "zone_es": "Los Baldíos",
+   "zone_id": 17,
+   "x": 46.0,
+   "y": 36.3,
+   "note": "En la boca de la roca con forma de calavera, Oasis Olvidado (Los Baldíos). Coords de kami-labs; gamer-guides da /way 46 36."
+  },
+  "quests": [
+   {
+    "quest": "Deviate Hides (1486)",
+    "npc": "Nalpak",
+    "npc_id": null,
+    "zone": "The Barrens",
+    "zone_es": "Los Baldíos",
+    "zone_id": 17,
+    "x": null,
+    "y": null,
+    "inside": false,
+    "note": "Cueva oculta encima de la entrada: sube la colina junto a la piedra de encuentro, cruza por encima de la caverna y salta a un pequeño saliente (sin coordenadas en las fuentes).",
+    "prereq": null
+   },
+   {
+    "quest": "Deviate Eradication (1487)",
+    "npc": "Ebru",
+    "npc_id": null,
+    "zone": "The Barrens",
+    "zone_es": "Los Baldíos",
+    "zone_id": 17,
+    "x": null,
+    "y": null,
+    "inside": false,
+    "note": "En la misma cueva oculta que Nalpak, encima de la entrada (sin coordenadas en las fuentes).",
+    "prereq": null
+   },
+   {
+    "quest": "Smart Drinks (1491)",
+    "npc": "Mebok Mizzyrix",
+    "npc_id": null,
+    "zone": "The Barrens",
+    "zone_es": "Los Baldíos",
+    "zone_id": 17,
+    "x": 62.4,
+    "y": 37.6,
+    "inside": false,
+    "note": "Trinquete (Los Baldíos).",
+    "prereq": "Raptor Horns (de Mebok Mizzyrix)"
+   },
+   {
+    "quest": "Trouble at the Docks (959)",
+    "npc": "Crane Operator Bigglefuzz",
+    "npc_id": null,
+    "zone": "The Barrens",
+    "zone_es": "Los Baldíos",
+    "zone_id": 17,
+    "x": 63.0,
+    "y": 37.4,
+    "inside": false,
+    "note": "Muelles de Trinquete (Los Baldíos).",
+    "prereq": null
+   },
+   {
+    "quest": "The Glowing Shard (6981) → In Nightmares (3369)",
+    "npc": "Glowing Shard (objeto)",
+    "npc_id": null,
+    "zone": "The Barrens",
+    "zone_es": "Los Baldíos",
+    "zone_id": 17,
+    "x": 46.0,
+    "y": 36.3,
+    "inside": true,
+    "note": "Lo suelta Mutanus el Devorador dentro de la mazmorra. Se lleva a Trinquete/Falla Sagewind y la Alianza termina con Mathrengyl Bearwalker en Darnassus. Coordenadas = entrada.",
+    "prereq": null
+   }
+  ]
+ },
+ "Shadowfang Keep": {
+  "entrance": {
+   "zone": "Silverpine Forest",
+   "zone_es": "Bosque de Argénteos",
+   "zone_id": 130,
+   "x": 44.6,
+   "y": 67.7,
+   "note": "En la colina sobre la Aldea Piroleña (Bosque de Argénteos). Coords de kami-labs; gamer-guides da /way 44.8 67.8."
+  },
+  "quests": [
+   {
+    "quest": "The Test of Righteousness (1654)",
+    "npc": "Jordan Stilwell",
+    "npc_id": 6181,
+    "zone": "Dun Morogh",
+    "zone_es": "Dun Morogh",
+    "zone_id": 1,
+    "x": 52.0,
+    "y": 37.0,
+    "inside": false,
+    "note": "Solo paladines. A las puertas de Forjaz (Dun Morogh).",
+    "prereq": "Cadena del Tome of Valor (Catedral de Ventormenta) y The Test of Righteousness (1653)"
+   },
+   {
+    "quest": "The Orb of Soran'ruk (1740)",
+    "npc": "Doan Karhan",
+    "npc_id": null,
+    "zone": "The Barrens",
+    "zone_es": "Los Baldíos",
+    "zone_id": 17,
+    "x": 49.2,
+    "y": 57.2,
+    "inside": false,
+    "note": "Solo brujos. Al sur de Los Baldíos, cerca del Campamento Taurajo (territorio Horda).",
+    "prereq": null
+   }
+  ]
+ },
+ "Blackfathom Deeps": {
+  "entrance": {
+   "zone": "Ashenvale",
+   "zone_es": "Vallefresno",
+   "zone_id": 331,
+   "x": 16.4,
+   "y": 10.9,
+   "note": "Playa de Zoram (noroeste de Vallefresno): el portal está bajo el agua, en el templo hundido de la bahía. Coords del portal según kami-labs; gamer-guides da /way 14.2 14.2."
+  },
+  "quests": [
+   {
+    "quest": "Knowledge in the Deeps (971)",
+    "npc": "Gerrig Bonegrip",
+    "npc_id": null,
+    "zone": "Ironforge",
+    "zone_es": "Forjaz",
+    "zone_id": 1537,
+    "x": 50.5,
+    "y": 6.0,
+    "inside": false,
+    "note": "Las Cavernas Olvidadas (norte de Forjaz).",
+    "prereq": null
+   },
+   {
+    "quest": "Blackfathom Villainy (1200)",
+    "npc": "Argent Guard Thaelrid",
+    "npc_id": null,
+    "zone": "Ashenvale",
+    "zone_es": "Vallefresno",
+    "zone_id": 331,
+    "x": 16.4,
+    "y": 10.9,
+    "inside": true,
+    "note": "Dentro de la mazmorra, en un hueco de la sala de Ghamoo-ra. Se entrega a Dawnwatcher Selgorm (Darnassus). Coordenadas = entrada.",
+    "prereq": "In Search of Thaelrid, de Dawnwatcher Shaedlass (Bancal de los Artesanos, Darnassus)"
+   },
+   {
+    "quest": "Twilight Falls (1199)",
+    "npc": "Argent Guard Manados",
+    "npc_id": null,
+    "zone": "Darnassus",
+    "zone_es": "Darnassus",
+    "zone_id": 1657,
+    "x": 55.2,
+    "y": 23.4,
+    "inside": false,
+    "note": "Bancal de los Artesanos (Darnassus).",
+    "prereq": null
+   },
+   {
+    "quest": "Researching the Corruption (1275)",
+    "npc": "Gershala Nightwhisper",
+    "npc_id": null,
+    "zone": "Darkshore",
+    "zone_es": "Costa Oscura",
+    "zone_id": 148,
+    "x": 38.3,
+    "y": 43.0,
+    "inside": false,
+    "note": "Auberdine (Costa Oscura).",
+    "prereq": "Opcional: The Corruption Abroad, de Argos Nightwhisper en Ventormenta"
+   }
+  ]
+ },
+ "The Stockade": {
+  "entrance": {
+   "zone": "Stormwind City",
+   "zone_es": "Ventormenta",
+   "zone_id": 1519,
+   "x": 40.5,
+   "y": 55.8,
+   "note": "Barrio de los Magos de Ventormenta, junto al canal (gamer-guides; expcarry da ~41,58 y kami-labs 39.6,53.9 para el portal)."
+  },
+  "quests": [
+   {
+    "quest": "The Stockade Riots (391)",
+    "npc": "Warden Thelwater",
+    "npc_id": null,
+    "zone": "Stormwind City",
+    "zone_es": "Ventormenta",
+    "zone_id": 1519,
+    "x": 41.2,
+    "y": 58.0,
+    "inside": false,
+    "note": "Justo fuera de Las Mazmorras (Ventormenta).",
+    "prereq": "The Unsent Letter (carta de VanCleef en Las Minas de la Muerte) → Baros Alexston"
+   },
+   {
+    "quest": "Quell The Uprising (387)",
+    "npc": "Warden Thelwater",
+    "npc_id": null,
+    "zone": "Stormwind City",
+    "zone_es": "Ventormenta",
+    "zone_id": 1519,
+    "x": 41.2,
+    "y": 58.0,
+    "inside": false,
+    "note": "Justo fuera de Las Mazmorras (Ventormenta).",
+    "prereq": null
+   },
+   {
+    "quest": "The Color of Blood (388)",
+    "npc": "Nikova Raskol",
+    "npc_id": null,
+    "zone": "Stormwind City",
+    "zone_es": "Ventormenta",
+    "zone_id": 1519,
+    "x": 73.4,
+    "y": 46.4,
+    "inside": false,
+    "note": "Casco Antiguo de Ventormenta (coords kami-labs; expcarry ~73,46).",
+    "prereq": null
+   },
+   {
+    "quest": "What Comes Around... (386)",
+    "npc": "Guard Berton",
+    "npc_id": null,
+    "zone": "Redridge Mountains",
+    "zone_es": "Montañas Crestagrana",
+    "zone_id": 44,
+    "x": 26.6,
+    "y": 46.8,
+    "inside": false,
+    "note": "Villa del Lago (Montañas Crestagrana).",
+    "prereq": null
+   },
+   {
+    "quest": "Crime and Punishment (377)",
+    "npc": "Councilman Millstipe",
+    "npc_id": null,
+    "zone": "Duskwood",
+    "zone_es": "Bosque del Ocaso",
+    "zone_id": 10,
+    "x": 72.0,
+    "y": 47.8,
+    "inside": false,
+    "note": "Villa Oscura (Bosque del Ocaso).",
+    "prereq": null
+   },
+   {
+    "quest": "The Fury Runs Deep (378)",
+    "npc": "Motley Garmason",
+    "npc_id": null,
+    "zone": "Wetlands",
+    "zone_es": "Los Humedales",
+    "zone_id": 11,
+    "x": 49.6,
+    "y": 18.2,
+    "inside": false,
+    "note": "Dun Modr (norte de Los Humedales).",
+    "prereq": "The Dark Iron War (del mismo NPC)"
+   }
+  ]
+ },
+ "Excavation Site: Wetlands": {
+  "entrance": {
+   "zone": "Wetlands",
+   "zone_es": "Los Humedales",
+   "zone_id": 11,
+   "x": 38.0,
+   "y": 51.0,
+   "note": "En lo alto de la Excavación de Whelgar (Los Humedales), al noreste del Puerto de Menethil (gamer-guides /way 38 51)."
+  },
+  "quests": [
+   {
+    "quest": "Horrors in the Highland (95646)",
+    "npc": "Rethiel the Greenwarden",
+    "npc_id": null,
+    "zone": "Wetlands",
+    "zone_es": "Los Humedales",
+    "zone_id": 11,
+    "x": 56.3,
+    "y": 40.3,
+    "inside": false,
+    "note": "Arboleda del Guardaverde (Los Humedales).",
+    "prereq": "Tramping Paws, Fire Taboo y Blisters on the Land (de Rethiel)"
+   },
+   {
+    "quest": "Lost Relic Carry (95810) → Prehistoric Prism (98824)",
+    "npc": "Titan Relic (objeto)",
+    "npc_id": null,
+    "zone": "Wetlands",
+    "zone_es": "Los Humedales",
+    "zone_id": 11,
+    "x": 38.0,
+    "y": 51.0,
+    "inside": true,
+    "note": "Lo suelta el Relic Guardian dentro. Se entrega al Prospector Whelgar (Los Humedales 38.8, 52.3), que da Prehistoric Prism para High Explorer Magellas (Salón de los Exploradores, Forjaz 69.4, 19.1). Coordenadas = entrada.",
+    "prereq": null
+   },
+   {
+    "quest": "Fallen in the Fen (95795)",
+    "npc": "Cuerpo de Daewyn",
+    "npc_id": null,
+    "zone": "Wetlands",
+    "zone_es": "Los Humedales",
+    "zone_id": 11,
+    "x": 38.0,
+    "y": 51.0,
+    "inside": true,
+    "note": "Cuerpo de un enano en una tienda de la zona de orcos Faucedraco, pasado Shadetooth. Coordenadas = entrada.",
+    "prereq": null
+   },
+   {
+    "quest": "Songblade Search (95772)",
+    "npc": "Dorin Songblade",
+    "npc_id": null,
+    "zone": "Redridge Mountains",
+    "zone_es": "Montañas Crestagrana",
+    "zone_id": 44,
+    "x": 30.8,
+    "y": 46.6,
+    "inside": false,
+    "note": "Armero de Villa del Lago (Montañas Crestagrana). Coords de warcraft.wiki.gg (warcrafttavern da 25.6, 46.6).",
+    "prereq": null
+   },
+   {
+    "quest": "Lost in the Thicket Things (95647) → Heartwoven (95809)",
+    "npc": "Caitlin Grassman",
+    "npc_id": null,
+    "zone": "Wetlands",
+    "zone_es": "Los Humedales",
+    "zone_id": 11,
+    "x": 11.8,
+    "y": 58.6,
+    "inside": false,
+    "note": "Puerto de Menethil (Los Humedales). Dentro se habla con Ardin, que da Heartwoven.",
+    "prereq": "Opcional: Seeking Caitlin, de Llana en Astranaar (Vallefresno 35.0, 48.5)"
+   },
+   {
+    "quest": "Highland Hides (98815)",
+    "npc": "James Halloran",
+    "npc_id": null,
+    "zone": "Wetlands",
+    "zone_es": "Los Humedales",
+    "zone_id": 11,
+    "x": 8.6,
+    "y": 55.6,
+    "inside": false,
+    "note": "Puerto de Menethil (Los Humedales).",
+    "prereq": "Young Crocolisk Skins (484), del mismo NPC"
+   }
+  ]
+ },
+ "City of Dalaran": {
+  "entrance": {
+   "zone": "Silverpine Forest",
+   "zone_es": "Bosque de Argénteos",
+   "zone_id": 130,
+   "x": 69.3,
+   "y": 45.6,
+   "note": "Entrada por las cloacas, en el borde este del mapa del Bosque de Argénteos, al noroeste de Dalaran/Montañas de Alterac (warcrafttavern). Requiere la Dalaran Sewer Key."
+  },
+  "quests": [
+   {
+    "quest": "Heart of Disruption (92458)",
+    "npc": "Image of Archmage Modera",
+    "npc_id": null,
+    "zone": "Silverpine Forest",
+    "zone_es": "Bosque de Argénteos",
+    "zone_id": 130,
+    "x": 68.6,
+    "y": 45.2,
+    "inside": false,
+    "note": "Junto a la entrada de las cloacas de Dalaran (mapa del Bosque de Argénteos). Da la llave de las cloacas.",
+    "prereq": "An Alarming Request (92432), de Emissary Jacques en Costasur (Laderas de Trabalomas 48.3, 60.1)"
+   },
+   {
+    "quest": "Power Overwhelming (92489)",
+    "npc": "High Sorcerer Andromath",
+    "npc_id": null,
+    "zone": "Stormwind City",
+    "zone_es": "Ventormenta",
+    "zone_id": 1519,
+    "x": 37.6,
+    "y": 81.6,
+    "inside": false,
+    "note": "Arriba del Sanctum de los Magos, Barrio de los Magos (Ventormenta). Coords de warcraft.wiki.gg (warcrafttavern da 48.9, 87.7).",
+    "prereq": null
+   },
+   {
+    "quest": "A Green Sample (92456)",
+    "npc": "Shylamiir",
+    "npc_id": null,
+    "zone": "Stormwind City",
+    "zone_es": "Ventormenta",
+    "zone_id": 1519,
+    "x": 31.3,
+    "y": 62.9,
+    "inside": false,
+    "note": "El Parque (Ventormenta).",
+    "prereq": null
+   },
+   {
+    "quest": "Starving Arcane (92457)",
+    "npc": "Image of Archmage Modera",
+    "npc_id": null,
+    "zone": "Silverpine Forest",
+    "zone_es": "Bosque de Argénteos",
+    "zone_id": 130,
+    "x": 68.6,
+    "y": 45.2,
+    "inside": false,
+    "note": "Junto a la entrada de las cloacas de Dalaran (mapa del Bosque de Argénteos).",
+    "prereq": "An Alarming Request (92432), según warcrafttavern"
+   }
+  ]
+ },
+ "Razorfen Kraul": {
+  "entrance": {
+   "zone": "The Barrens",
+   "zone_es": "Los Baldíos",
+   "zone_id": 17,
+   "x": 42.2,
+   "y": 89.8,
+   "note": "Sur de Los Baldíos, entre las zarzas junto a Las Mil Agujas (kami-labs; gamer-guides da /way 42 90)."
+  },
+  "quests": [
+   {
+    "quest": "Willix the Importer (1144)",
+    "npc": "Willix the Importer",
+    "npc_id": null,
+    "zone": "The Barrens",
+    "zone_es": "Los Baldíos",
+    "zone_id": 17,
+    "x": 42.2,
+    "y": 89.8,
+    "inside": true,
+    "note": "En una tienda cerca del último jefe; escolta hasta la salida. Coordenadas = entrada.",
+    "prereq": null
+   },
+   {
+    "quest": "Mortality Wanes (1142)",
+    "npc": "Heralath Fallowbrook",
+    "npc_id": null,
+    "zone": "The Barrens",
+    "zone_es": "Los Baldíos",
+    "zone_id": 17,
+    "x": 42.2,
+    "y": 89.8,
+    "inside": true,
+    "note": "Tirado en el suelo cerca de Charlga Razorflank. Se entrega a Treshala Fallowbrook (Darnassus). Coordenadas = entrada.",
+    "prereq": null
+   },
+   {
+    "quest": "The Crone of the Kraul (1101)",
+    "npc": "Falfindel Waywarder",
+    "npc_id": null,
+    "zone": "Feralas",
+    "zone_es": "Feralas",
+    "zone_id": 357,
+    "x": 89.6,
+    "y": 46.4,
+    "inside": false,
+    "note": "Thalanaar, en el borde de Feralas con Las Mil Agujas.",
+    "prereq": "Lonebrow's Journal (diario junto a un enano muerto al pie del Gran Elevador, Las Mil Agujas)"
+   },
+   {
+    "quest": "Blueleaf Tubers (1221)",
+    "npc": "Mebok Mizzyrix",
+    "npc_id": null,
+    "zone": "The Barrens",
+    "zone_es": "Los Baldíos",
+    "zone_id": 17,
+    "x": 62.4,
+    "y": 37.6,
+    "inside": false,
+    "note": "Trinquete (Los Baldíos). Coge también la caja, el bastón de mando y el manual que hay a su lado.",
+    "prereq": null
+   }
+  ]
+ },
+ "Gnomeregan": {
+  "entrance": {
+   "zone": "Dun Morogh",
+   "zone_es": "Dun Morogh",
+   "zone_id": 1,
+   "x": 24.3,
+   "y": 39.8,
+   "note": "Oeste de Dun Morogh, en las puertas de la ciudad gnoma (gamer-guides; kami-labs sitúa el portal en 17.5, 39.1)."
+  },
+  "quests": [
+   {
+    "quest": "Gyrodrillmatic Excavationators (2928)",
+    "npc": "Shoni the Shilent",
+    "npc_id": 6579,
+    "zone": "Stormwind City",
+    "zone_es": "Ventormenta",
+    "zone_id": 1519,
+    "x": 55.4,
+    "y": 12.4,
+    "inside": false,
+    "note": "Distrito de los Enanos de Ventormenta.",
+    "prereq": null
+   },
+   {
+    "quest": "The Grand Betrayal (2929)",
+    "npc": "High Tinker Mekkatorque",
+    "npc_id": null,
+    "zone": "Ironforge",
+    "zone_es": "Forjaz",
+    "zone_id": 1537,
+    "x": 69.0,
+    "y": 49.0,
+    "inside": false,
+    "note": "Ciudad Manitas (Forjaz).",
+    "prereq": null
+   },
+   {
+    "quest": "A Fine Mess (2904)",
+    "npc": "Kernobee",
+    "npc_id": null,
+    "zone": "Dun Morogh",
+    "zone_es": "Dun Morogh",
+    "zone_id": 1,
+    "x": 24.3,
+    "y": 39.8,
+    "inside": true,
+    "note": "Dentro de la mazmorra; escolta hasta la salida. Coordenadas = entrada.",
+    "prereq": null
+   },
+   {
+    "quest": "Save Techbot's Brain! (2922)",
+    "npc": "Tinkmaster Overspark",
+    "npc_id": null,
+    "zone": "Ironforge",
+    "zone_es": "Forjaz",
+    "zone_id": 1537,
+    "x": 69.6,
+    "y": 50.6,
+    "inside": false,
+    "note": "Ciudad Manitas (Forjaz).",
+    "prereq": "Opcional: Tinkmaster Overspark, de Brother Sarno (Catedral de Ventormenta)"
+   },
+   {
+    "quest": "Gnogaine (2926) / The Only Cure is More Green Glow (2962)",
+    "npc": "Ozzie Togglevolt",
+    "npc_id": null,
+    "zone": "Dun Morogh",
+    "zone_es": "Dun Morogh",
+    "zone_id": 1,
+    "x": 45.9,
+    "y": 49.4,
+    "inside": false,
+    "note": "Kharanos (Dun Morogh).",
+    "prereq": "The Day After, de Gnoarn en Ciudad Manitas (Forjaz)"
+   },
+   {
+    "quest": "Essential Artificials (2924) / Data Rescue (2930)",
+    "npc": "Klockmort Spannerspan",
+    "npc_id": null,
+    "zone": "Ironforge",
+    "zone_es": "Forjaz",
+    "zone_id": 1537,
+    "x": 68.0,
+    "y": 46.8,
+    "inside": false,
+    "note": "Ciudad Manitas (Forjaz). Data Rescue la da Master Mechanic Castpipe, también en Ciudad Manitas (69.8, 48.4).",
+    "prereq": null
+   }
+  ]
+ },
  "The Temple of Atal'Hakkar": {
   "entrance": {
    "zone": "Swamp of Sorrows",
