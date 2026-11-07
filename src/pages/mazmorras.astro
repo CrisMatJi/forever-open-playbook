@@ -12,6 +12,27 @@ const short = (l = "") => (l.match(/\d+\s*-\s*\d+/) || [l])[0].replace(/\s/g, ""
 const minLvl = (l = "") => +(l.match(/\d+/) || [99])[0];
 const LIST = [...D.dungeons].sort((a, b) => minLvl(a.levels) - minLvl(b.levels));
 import { slug } from "../lib/dungeons.js";
+import ZoneMap from "../components/ZoneMap.astro";
+import MAPS from "../data/dungeon_maps.json";
+// Agrupa entrada y personajes de misión por zona para pintar un mapa por zona
+function mapsFor(d) {
+  const m = MAPS[d.name];
+  if (!m) return { zones: [], qinfo: {} };
+  const zones = new Map(), qinfo = {};
+  const add = (zid, zone, pt) => { const k = zid ?? zone; if (!zones.has(k)) zones.set(k, { zoneId: zid, zone, points: [] }); zones.get(k).points.push(pt); };
+  const e = m.entrance;
+  if (e && e.x != null && e.y != null) add(e.zone_id, e.zone_es || e.zone, { n: "E", x: e.x, y: e.y, label: "Entrada de la mazmorra", kind: "entrance" });
+  let i = 0;
+  for (const q of m.quests || []) {
+    const info = { ...q };
+    if (!q.inside && q.x != null && q.y != null) {
+      info.n = String(++i);
+      add(q.zone_id, q.zone_es || q.zone, { n: info.n, x: q.x, y: q.y, label: `${q.npc || "?"} · ${q.quest}`, kind: "quest" });
+    }
+    qinfo[q.quest] = info;
+  }
+  return { zones: [...zones.values()], qinfo };
+}
 const xp = G.dungeons?.xp_changes || [];
 ---
 <Base title="Mazmorras" active="mazmorras" description="Mazmorras de WoW Forever para la Alianza: niveles, cómo llegar, misiones y botín que interesa.">
@@ -40,12 +61,20 @@ const xp = G.dungeons?.xp_changes || [];
       {d.priority && <p class={pk(d.priority) === "skip" ? "warnline" : "goodline"} style="margin-top:8px"><b>{priLabel(d.priority)}:</b> {priText(d.priority)}</p>}
       {d.new_or_changed && <p style="margin-top:8px"><b>En Forever:</b> {d.new_or_changed}</p>}
       {d.alliance_access && <p style="margin-top:8px"><b>Cómo llegar:</b> {d.alliance_access}</p>}
+      {(() => { const { zones, qinfo } = mapsFor(d); return (<>
       {d.quests?.length > 0 && (
         <div class="tablewrap" style="margin-top:12px"><table class="wide">
-          <thead><tr><th>Misión</th><th>Nv</th><th>Dónde se coge</th><th>Recompensa</th></tr></thead>
-          <tbody>{d.quests.map((q) => <tr><td><b>{q.name}</b>{q.worth && <div class="note">{q.worth}</div>}</td><td class="num">{q.level}</td><td class="note">{q.giver}</td><td>{q.reward}</td></tr>)}</tbody>
+          <thead><tr><th>#</th><th>Misión</th><th>Nv</th><th>A quién hablar y dónde</th><th>Recompensa</th></tr></thead>
+          <tbody>{d.quests.map((q) => { const k = Object.keys(qinfo).find((n) => q.name.startsWith(n) || n.startsWith(q.name.replace(/ \(\d+\)$/, ""))); const x = k ? qinfo[k] : null; return (
+            <tr><td style="white-space:nowrap">{x?.n ? <span class="pin-s">{x.n}</span> : x?.inside ? <span class="vtag">dentro</span> : ""}</td>
+            <td><b>{q.name.replace(/ \(\d+\)$/, "")}</b>{q.worth && <div class="note">{q.worth}</div>}</td><td class="num">{q.level}</td>
+            <td>{x?.npc ? <>{x.npc_id ? <a href={`https://www.wowhead.com/forever/npc=${x.npc_id}`} target="_blank" rel="noopener"><b>{x.npc}</b></a> : <b>{x.npc}</b>}<span class="qnpc">{x.zone_es || x.zone}{x.x != null && !x.inside ? ` (${x.x}, ${x.y})` : ""}</span></> : <span class="note">{q.giver}</span>}
+              {x?.note && <span class="qnpc note">{x.note}</span>}{x?.prereq && <span class="qnpc note">Antes: {x.prereq}</span>}</td>
+            <td>{q.reward}</td></tr>); })}</tbody>
         </table></div>
       )}
+      {zones.length > 0 && (<div class="zmaps">{zones.map((z) => <ZoneMap zoneId={z.zoneId} zone={z.zone} points={z.points} />)}</div>)}
+      </>); })()}
       {d.drops?.length > 0 && (
         <div class="gear-grid" style="margin-top:12px">
           {d.drops.map((g) => {

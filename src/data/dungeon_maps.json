@@ -1,0 +1,494 @@
+{
+ "The Temple of Atal'Hakkar": {
+  "entrance": {
+   "zone": "Swamp of Sorrows",
+   "zone_es": "Pantano de las Penas",
+   "zone_id": 8,
+   "x": 70.2,
+   "y": 52.3,
+   "note": "Ruina en el centro del Estanque de las Lágrimas (lago central). Bucea y baja por las escaleras hasta el portal. Coordenadas de mmonster.co; wowhandbook da 77.3, 35.9 para el portal (dato dudoso)."
+  },
+  "quests": [
+   {
+    "quest": "Into The Temple of Atal'Hakkar (1475)",
+    "npc": "Brohann Caskbelly",
+    "npc_id": 5384,
+    "zone": "Stormwind City",
+    "zone_es": "Ventormenta",
+    "zone_id": 1519,
+    "x": 69.5,
+    "y": 40.4,
+    "inside": false,
+    "note": "En el Distrito de los Enanos de Ventormenta. Coordenadas de foreverdb.net y wclbox (wowhandbook da 70.2, 40.7; mmonster da 64.4, 20.9).",
+    "prereq": "Rhapsody's Tale (1469); final de la cadena de 7 misiones que empieza con In Search of The Temple (1448), del mismo Brohann"
+   },
+   {
+    "quest": "The God Hakkar (3528)",
+    "npc": "Yeh'kinya",
+    "npc_id": 8579,
+    "zone": "Tanaris",
+    "zone_es": "Tanaris",
+    "zone_id": 440,
+    "x": 67.0,
+    "y": 22.4,
+    "inside": false,
+    "note": "En Puerto Bonvapor, en la costa noreste de Tanaris. Vuela a Gadgetzan y ve al este.",
+    "prereq": "Cadena de Screecher Spirits → The Prophecy of Mosh'aru → The Ancient Egg (Yeh'kinya); necesitas el Egg of Hakkar"
+   },
+   {
+    "quest": "Jammal'an the Prophet (1446)",
+    "npc": "Atal'ai Exile",
+    "npc_id": 5598,
+    "zone": "The Hinterlands",
+    "zone_es": "Tierras del Interior",
+    "zone_id": 47,
+    "x": 33.8,
+    "y": 75.2,
+    "inside": false,
+    "note": "En el sur de las Tierras del Interior, en una zona de ruinas troll. Vuela al Nido Aquilino y baja hacia el sur. Se entrega al mismo PNJ.",
+    "prereq": null
+   },
+   {
+    "quest": "Into the Depths (3446) / Secret of the Circle (3447)",
+    "npc": "Marvon Rivetseeker",
+    "npc_id": 7771,
+    "zone": "Tanaris",
+    "zone_es": "Tanaris",
+    "zone_id": 440,
+    "x": 52.7,
+    "y": 45.9,
+    "inside": false,
+    "note": "En el centro de Tanaris, al sur de Gadgetzan (mmonster da 52.6, 45.8).",
+    "prereq": "The Stone Circle (3444), de Marvon; para la Alianza la cadena empieza con The Sunken Temple (3445), de Angelas Moonbreeze en Feralas"
+   }
+  ]
+ },
+ "Blackrock Depths": {
+  "entrance": {
+   "zone": "Searing Gorge",
+   "zone_es": "La Garganta de Fuego",
+   "zone_id": 51,
+   "x": 27.1,
+   "y": 72.5,
+   "note": "Portal dentro de la Montaña Roca Negra, al fondo de las cadenas. Coordenadas sobre el mapa de La Garganta de Fuego (wowhandbook y mmonster); mmonster lo sitúa también en 22.6, 7.5 sobre el mapa de Las Estepas Ardientes. Alianza: Vigilia de Morgan o Thorium Point."
+  },
+  "quests": [
+   {
+    "quest": "Jail Break! (4322)",
+    "npc": "Marshal Windsor",
+    "npc_id": 9023,
+    "zone": "Searing Gorge",
+    "zone_es": "La Garganta de Fuego",
+    "zone_id": 51,
+    "x": 27.1,
+    "y": 72.5,
+    "inside": true,
+    "note": "Dentro de la mazmorra, en su celda de la prisión. Necesitas la Prison Cell Key de High Interrogator Gerstahn. Coordenadas = entrada.",
+    "prereq": "A Shred of Hope (cadena de Marshal Windsor, que empieza con Dragonkin Menace de Helendis Riverhorn en Vigilia de Morgan)"
+   },
+   {
+    "quest": "The Princess's Surprise (4363)",
+    "npc": "Princess Moira Bronzebeard",
+    "npc_id": 8929,
+    "zone": "Searing Gorge",
+    "zone_es": "La Garganta de Fuego",
+    "zone_id": 51,
+    "x": 27.1,
+    "y": 72.5,
+    "inside": true,
+    "note": "Dentro de la mazmorra, en la sala del Emperador; habla con ella tras matar a Thaurissan sin tocarla. Coordenadas = entrada.",
+    "prereq": "The Fate of the Kingdom (4362), del rey Magni Bronzebeard en Forjaz (39.1, 56.2)"
+   },
+   {
+    "quest": "Incendius! (4263)",
+    "npc": "Jalinda Sprig",
+    "npc_id": 9561,
+    "zone": "Burning Steppes",
+    "zone_es": "Las Estepas Ardientes",
+    "zone_id": 46,
+    "x": 85.4,
+    "y": 70.1,
+    "inside": false,
+    "note": "En Vigilia de Morgan, en el sureste de Las Estepas Ardientes (punto de vuelo de la Alianza).",
+    "prereq": "Overmaster Pyron (4262), de Jalinda Sprig"
+   },
+   {
+    "quest": "Hurley Blackbreath (4126)",
+    "npc": "Ragnar Thunderbrew",
+    "npc_id": 1267,
+    "zone": "Dun Morogh",
+    "zone_es": "Dun Morogh",
+    "zone_id": 1,
+    "x": 46.8,
+    "y": 52.4,
+    "inside": false,
+    "note": "En Kharanos (Dun Morogh), junto a la posada, cerca de Forjaz.",
+    "prereq": "Ragnar Thunderbrew, de Enohar Thunderbrew en las Tierras Devastadas (63.6, 20.6)"
+   },
+   {
+    "quest": "Ribbly Screwspigot (4136)",
+    "npc": "Yuka Screwspigot",
+    "npc_id": 9544,
+    "zone": "Burning Steppes",
+    "zone_es": "Las Estepas Ardientes",
+    "zone_id": 46,
+    "x": 66.1,
+    "y": 21.9,
+    "inside": false,
+    "note": "En la Cresta de la Llama (norte de Las Estepas Ardientes), puesto neutral goblin.",
+    "prereq": "Yuka Screwspigot, de Yorba Screwspigot en Tanaris (67.0, 24.0), según wowhandbook"
+   },
+   {
+    "quest": "Dark Iron Legacy (3802)",
+    "npc": "Franclorn Forgewright",
+    "npc_id": 8888,
+    "zone": "Burning Steppes",
+    "zone_es": "Las Estepas Ardientes",
+    "zone_id": 46,
+    "x": 29.0,
+    "y": 28.9,
+    "inside": false,
+    "note": "Fantasma en la tumba central dentro de la Montaña Roca Negra (fuera de la instancia). En Classic solo se ve estando muerto. Coordenadas sobre el mapa de Las Estepas Ardientes (mmonster da 28.8, 28.4).",
+    "prereq": null
+   }
+  ]
+ },
+ "Dire Maul - East": {
+  "entrance": {
+   "zone": "Feralas",
+   "zone_es": "Feralas",
+   "zone_id": 357,
+   "x": 64.9,
+   "y": 29.4,
+   "note": "Puerta en el lado este del patio central de La Masacre (Broken Commons, 62.0, 33.3). Otra puerta desde Eldreth Row (67.2, 34.9). Vuela a Bastión Plumaluna."
+  },
+  "quests": [
+   {
+    "quest": "Pusillin and the Elder Azj'Tordin (7441)",
+    "npc": "Azj'Tordin",
+    "npc_id": 14355,
+    "zone": "Feralas",
+    "zone_es": "Feralas",
+    "zone_id": 357,
+    "x": 76.9,
+    "y": 37.4,
+    "inside": false,
+    "note": "En el Pabellón de Lariss, al este de La Masacre (mmonster da 76.8, 37.4).",
+    "prereq": null
+   },
+   {
+    "quest": "Lethtendris's Web (7488)",
+    "npc": "Latronicus Moonspear",
+    "npc_id": 7877,
+    "zone": "Feralas",
+    "zone_es": "Feralas",
+    "zone_id": 357,
+    "x": 30.4,
+    "y": 46.2,
+    "inside": false,
+    "note": "En Bastión Plumaluna, la isla de la costa oeste de Feralas (mmonster da 30.4, 46.0).",
+    "prereq": "Feathermoon Stronghold (7494), de Crier Goodman en Ventormenta (56.4, 74.1)"
+   }
+  ]
+ },
+ "Lower Blackrock Spire": {
+  "entrance": {
+   "zone": "Burning Steppes",
+   "zone_es": "Las Estepas Ardientes",
+   "zone_id": 46,
+   "x": 33.0,
+   "y": 25.2,
+   "note": "Portal en lo alto de la Montaña Roca Negra, compartido con la Cumbre Superior. Sube por las cadenas. Coordenadas sobre el mapa de Las Estepas Ardientes (wowhandbook y mmonster)."
+  },
+  "quests": [
+   {
+    "quest": "Maxwell's Mission (5081)",
+    "npc": "Marshal Maxwell",
+    "npc_id": 9560,
+    "zone": "Burning Steppes",
+    "zone_es": "Las Estepas Ardientes",
+    "zone_id": 46,
+    "x": 84.6,
+    "y": 68.8,
+    "inside": false,
+    "note": "En Vigilia de Morgan (sureste de Las Estepas Ardientes).",
+    "prereq": "Message to Maxwell (5002), que da Bijou dentro de la Cumbre tras Bijou's Belongings (5001)"
+   },
+   {
+    "quest": "Put Her Down (4701)",
+    "npc": "Helendis Riverhorn",
+    "npc_id": 9562,
+    "zone": "Burning Steppes",
+    "zone_es": "Las Estepas Ardientes",
+    "zone_id": 46,
+    "x": 85.5,
+    "y": 68.9,
+    "inside": false,
+    "note": "En Vigilia de Morgan, junto a Marshal Maxwell.",
+    "prereq": null
+   },
+   {
+    "quest": "Seal of Ascension (4742/4743)",
+    "npc": "Vaelan",
+    "npc_id": 10296,
+    "zone": "Burning Steppes",
+    "zone_es": "Las Estepas Ardientes",
+    "zone_id": 46,
+    "x": 33.0,
+    "y": 25.2,
+    "inside": true,
+    "note": "Dentro de la Cumbre Inferior, al principio. Trae las 3 gemas (Omokk, Voone, Wyrmthalak) y el Unadorned Seal of Ascension. Coordenadas = entrada.",
+    "prereq": null
+   },
+   {
+    "quest": "Urok Doomhowl (4867)",
+    "npc": "Warosh",
+    "npc_id": 10799,
+    "zone": "Burning Steppes",
+    "zone_es": "Las Estepas Ardientes",
+    "zone_id": 46,
+    "x": 33.0,
+    "y": 25.2,
+    "inside": true,
+    "note": "Dentro de la mazmorra, en la Ciudad de Hordemar. Mata antes a Omokk. Coordenadas = entrada.",
+    "prereq": null
+   }
+  ]
+ },
+ "Blackmaw Hold": {
+  "entrance": {
+   "zone": "Azshara",
+   "zone_es": "Azshara",
+   "zone_id": 16,
+   "x": null,
+   "y": null,
+   "note": "Mazmorra nueva tras una puerta sellada en Azshara. Ninguna fuente publica aún coordenadas de la entrada."
+  },
+  "quests": []
+ },
+ "Dire Maul - West": {
+  "entrance": {
+   "zone": "Feralas",
+   "zone_es": "Feralas",
+   "zone_id": 357,
+   "x": 60.3,
+   "y": 31.8,
+   "note": "Puertas en la pared oeste del patio central de La Masacre (60.3, 31.8 y 60.3, 29.7). Necesitas la Crescent Key (de Pusillin, en el Este)."
+  },
+  "quests": [
+   {
+    "quest": "The Madness Within (7461) / The Treasure of the Shen'dralar (7462)",
+    "npc": "Shen'dralar Ancient",
+    "npc_id": 14358,
+    "zone": "Feralas",
+    "zone_es": "Feralas",
+    "zone_id": 357,
+    "x": 60.3,
+    "y": 31.8,
+    "inside": true,
+    "note": "Dentro del ala Oeste, en el puente de la Corte de los Altonato. Coordenadas = entrada.",
+    "prereq": "The Treasure of the Shen'dralar requiere The Madness Within"
+   },
+   {
+    "quest": "Dusty Tome (7498-7506)",
+    "npc": null,
+    "npc_id": null,
+    "zone": "Feralas",
+    "zone_es": "Feralas",
+    "zone_id": 357,
+    "x": 60.3,
+    "y": 31.8,
+    "inside": true,
+    "note": "Empieza con un libro de clase que cae dentro; se entrega a Lorekeeper Lydros en el Athenaeum. mmonster indica que la recompensa (Royal Seal of Eldre'Thalas) aún no existe en Forever. Coordenadas = entrada.",
+    "prereq": null
+   }
+  ]
+ },
+ "Dire Maul - North": {
+  "entrance": {
+   "zone": "Feralas",
+   "zone_es": "Feralas",
+   "zone_id": 357,
+   "x": 62.9,
+   "y": 24.9,
+   "note": "Puerta en la pared norte del patio central de La Masacre. Necesitas la Crescent Key."
+  },
+  "quests": [
+   {
+    "quest": "Unfinished Gordok Business (1318)",
+    "npc": "Captain Kromcrush",
+    "npc_id": 14325,
+    "zone": "Feralas",
+    "zone_es": "Feralas",
+    "zone_id": 357,
+    "x": 62.9,
+    "y": 24.9,
+    "inside": true,
+    "note": "Dentro del ala Norte, en el pasillo antes de la sala del trono (solo si no lo matas: tribute run). Te manda al Oeste a por el Gauntlet of Gordok Might. Coordenadas = entrada.",
+    "prereq": null
+   },
+   {
+    "quest": "The Gordok Ogre Suit (5518)",
+    "npc": "Knot Thimblejack",
+    "npc_id": 14338,
+    "zone": "Feralas",
+    "zone_es": "Feralas",
+    "zone_id": 357,
+    "x": 62.9,
+    "y": 24.9,
+    "inside": true,
+    "note": "Dentro del ala Norte, en las salas al oeste de los patios. Lleva 4 Bolts of Runecloth, 8 Rugged Leather, 2 Rune Thread y el Ogre Tannin. Coordenadas = entrada.",
+    "prereq": null
+   }
+  ]
+ },
+ "Scholomance": {
+  "entrance": {
+   "zone": "Western Plaguelands",
+   "zone_es": "Tierras de la Peste del Oeste",
+   "zone_id": 28,
+   "x": 69.0,
+   "y": 72.7,
+   "note": "En lo alto de la isla de Caer Darrow, tras una verja cerrada (Skeleton Key en Classic). Vuela al Campamento del Orvallo (42.9, 85.0) y ve al este hasta el lago."
+  },
+  "quests": []
+ },
+ "Stratholme - Main Gate (Living)": {
+  "entrance": {
+   "zone": "Eastern Plaguelands",
+   "zone_es": "Tierras de la Peste del Este",
+   "zone_id": 139,
+   "x": 26.1,
+   "y": 10.4,
+   "note": "Puerta principal en el noroeste de la zona (wowhandbook; mmonster da 26.5, 10.4). Vuela a la Capilla de la Esperanza de la Luz y cruza la zona hacia el noroeste."
+  },
+  "quests": [
+   {
+    "quest": "The Restless Souls (5282)",
+    "npc": "Egan",
+    "npc_id": 11140,
+    "zone": "Eastern Plaguelands",
+    "zone_es": "Tierras de la Peste del Este",
+    "zone_id": 139,
+    "x": 14.4,
+    "y": 33.7,
+    "inside": false,
+    "note": "En una cabaña de Terrordale, en el oeste de la zona (wowhandbook; mmonster da 11.3, 26.5 con el mapa de Forever).",
+    "prereq": "The Restless Souls (5281), de Caretaker Alen en la Capilla de la Esperanza de la Luz (79.5, 63.9)"
+   },
+   {
+    "quest": "Houses of the Holy (5243)",
+    "npc": "Leonid Barthalomew the Revered",
+    "npc_id": 11036,
+    "zone": "Eastern Plaguelands",
+    "zone_es": "Tierras de la Peste del Este",
+    "zone_id": 139,
+    "x": 81.7,
+    "y": 57.8,
+    "inside": false,
+    "note": "En la Capilla de la Esperanza de la Luz (wowhandbook; mmonster da 71.8, 48.3 con el mapa de Forever).",
+    "prereq": null
+   },
+   {
+    "quest": "The Active Agent (5213)",
+    "npc": "Betina Bigglezink",
+    "npc_id": 11035,
+    "zone": "Eastern Plaguelands",
+    "zone_es": "Tierras de la Peste del Este",
+    "zone_id": 139,
+    "x": 81.5,
+    "y": 59.7,
+    "inside": false,
+    "note": "En la Capilla de la Esperanza de la Luz (wowhandbook; mmonster da 71.6, 49.7 con el mapa de Forever).",
+    "prereq": "The Flesh Does Not Lie, de Betina Bigglezink"
+   }
+  ]
+ },
+ "Stratholme - Service Gate (Undead)": {
+  "entrance": {
+   "zone": "Eastern Plaguelands",
+   "zone_es": "Tierras de la Peste del Este",
+   "zone_id": 139,
+   "x": 43.0,
+   "y": 19.2,
+   "note": "Puerta de servicio al este de la principal, en el borde norte de la zona. Coordenadas de howtoworldofwarcraft.com (que las etiqueta al revés); mmonster da 41.9, 15.8 con el mapa de Forever."
+  },
+  "quests": [
+   {
+    "quest": "Above and Beyond (5263) → The Argent Hold (5265)",
+    "npc": "Duke Nicholas Zverenhoff",
+    "npc_id": 11039,
+    "zone": "Eastern Plaguelands",
+    "zone_es": "Tierras de la Peste del Este",
+    "zone_id": 139,
+    "x": 81.4,
+    "y": 59.8,
+    "inside": false,
+    "note": "En la Capilla de la Esperanza de la Luz (wowhandbook; mmonster da 71.6, 50.1 con el mapa de Forever).",
+    "prereq": "Cadena The Archivist → The Truth Comes Crashing Down (Stratholme Main Gate)"
+   },
+   {
+    "quest": "Dead Man's Plea (8945)",
+    "npc": "Anthion Harmon",
+    "npc_id": 16016,
+    "zone": "Eastern Plaguelands",
+    "zone_es": "Tierras de la Peste del Este",
+    "zone_id": 139,
+    "x": 26.1,
+    "y": 11.3,
+    "inside": false,
+    "note": "Fantasma junto a la puerta principal de Stratholme (mmonster). Se entrega a Ysida Harmon dentro (carrera de 45 min).",
+    "prereq": "Parte de la cadena del conjunto de mazmorra 2 (D2); sin prerrequisito concreto listado"
+   }
+  ]
+ },
+ "Shaper's Terrace": {
+  "entrance": {
+   "zone": "Un'Goro Crater",
+   "zone_es": "Cráter de Un'Goro",
+   "zone_id": 490,
+   "x": null,
+   "y": null,
+   "note": "Mazmorra nueva en las colinas del norte de Un'Goro, en la ladera sobre el Refugio de la Marshal. Ninguna fuente publica aún coordenadas."
+  },
+  "quests": []
+ },
+ "Upper Blackrock Spire": {
+  "entrance": {
+   "zone": "Burning Steppes",
+   "zone_es": "Las Estepas Ardientes",
+   "zone_id": 46,
+   "x": 33.0,
+   "y": 25.2,
+   "note": "Mismo portal que la Cumbre Inferior, en lo alto de la Montaña Roca Negra. La puerta sellada de dentro pide la Seal of Ascension en Classic (sin confirmar en Forever)."
+  },
+  "quests": [
+   {
+    "quest": "General Drakkisath's Demise (5102)",
+    "npc": "Marshal Maxwell",
+    "npc_id": 9560,
+    "zone": "Burning Steppes",
+    "zone_es": "Las Estepas Ardientes",
+    "zone_id": 46,
+    "x": 84.6,
+    "y": 68.8,
+    "inside": false,
+    "note": "En Vigilia de Morgan (sureste de Las Estepas Ardientes).",
+    "prereq": "General Drakkisath's Command (de la Cumbre Inferior), según mmonster"
+   },
+   {
+    "quest": "Drakefire Amulet (6502)",
+    "npc": "Haleh",
+    "npc_id": 10929,
+    "zone": "Winterspring",
+    "zone_es": "Cuna del Invierno",
+    "zone_id": 618,
+    "x": 54.5,
+    "y": 51.2,
+    "inside": false,
+    "note": "En lo alto de Mazthoril, Cuna del Invierno (se llega por la cueva y un portal de runa). Vuela a Everlook.",
+    "prereq": "The Dragon's Eye, del Alto Señor Bolvar Fordragon: final de la larga cadena de Marshal Windsor (empieza con Dragonkin Menace de Helendis Riverhorn)"
+   }
+  ]
+ }
+}
