@@ -7,7 +7,7 @@ interface Props { title: string; description?: string; active?: string }
 const { title, description = "Guía de leveo de WoW Forever para la Alianza: clases, razas, talentos por nivel, equipo, mazmorras y duelos.", active = "" } = Astro.props;
 const NAV = [
   ["", "Inicio", "home"], ["elegir", "Elegir clase", "choose"], ["clases", "Clases", "classes"],
-  ["leveo", "Leveo", "level"], ["mazmorras", "Mazmorras", "dungeon"], ["duelos", "Duelos", "pvp"],
+  ["leveo", "Leveo", "level"], ["mazmorras", "Mazmorras", "dungeon"], ["macros", "Macros", "macro"], ["duelos", "Duelos", "pvp"],
 ];
 const full = title === "Forever Playbook" ? title : `${title} · Forever Playbook`;
 ---

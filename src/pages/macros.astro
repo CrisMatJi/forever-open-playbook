@@ -1,0 +1,131 @@
+---
+import Base from "../layouts/Base.astro";
+import Icon from "../components/Icon.astro";
+import { CLASS_ICON, CLASS_COLOR, url } from "../lib/wow.js";
+import { ORDER, NAME, SLUG, PICKS } from "../lib/classes.js";
+const mods = import.meta.glob("../data/macros/*.json", { eager: true });
+const M = {};
+for (const m of Object.values(mods)) { const d = m.default || m; M[d.class] = d; }
+const first = PICKS.find((c) => M[c]) || ORDER.find((c) => M[c]);
+const CHEAT = [
+  ["#showtooltip", "Primera línea. El botón muestra el icono y la descripción del hechizo que va a lanzar."],
+  ["/cast Hechizo", "Lanza el hechizo (siempre el rango más alto que tengas)."],
+  ["/cast [@mouseover,help,nodead][] Cura", "Si el ratón está sobre un aliado vivo, se lo lanza a él; si no, a tu objetivo. El [] vacío es el \"si no\"."],
+  ["[mod:shift] / [mod:alt] / [mod:ctrl]", "La parte se usa solo si mantienes pulsada esa tecla. Así un botón hace 2 o 3 cosas."],
+  ["[@focus] / /focus", "Lanza sobre tu foco (un segundo objetivo que fijas con /focus). Ideal para controlar a uno mientras pegas a otro."],
+  ["[@player]", "Lo lanza sobre ti sin cambiar de objetivo."],
+  ["[combat] / [nocombat]", "Solo dentro o fuera de combate."],
+  ["[stance:1] / [form:1] / [stealth]", "Según tu postura, forma o si estás en sigilo."],
+  ["/castsequence reset=10/target A, B", "Lanza A, la siguiente pulsación B… Se reinicia a los 10 s sin pulsar o al cambiar de objetivo. Se atasca si un hechizo falla (sin maná, fuera de rango o en reutilización)."],
+  ["/startattack", "Empieza el ataque automático sin gastar tiempo global."],
+  ["/stopcasting", "Corta lo que estés lanzando para usar lo siguiente (interrupciones)."],
+  ["/use 13 · /use 14", "Usa el abalorio de arriba (13) o de abajo (14)."],
+];
+---
+<Base title="Macros" active="macros" description="Packs de macros de WoW Forever por clase, en español y en inglés, explicadas y listas para copiar.">
+  <div class="pagehead">
+    <div class="eyebrow">Packs por clase · cliente en español</div>
+    <h1>Macros</h1>
+    <p class="lede">Las macros más útiles de cada clase, explicadas: qué hacen, cuándo pulsarlas y dónde ponerlas. Cada una está en <b>español</b> (para tu cliente esES) y en inglés. Pulsa <b>Copiar</b> y pégala en el juego.</p>
+  </div>
+
+  <section class="box">
+    <div class="split">
+      <div>
+        <h2>Cómo crear una macro</h2>
+        <ol class="steps" style="margin-top:10px">
+          <li>Escribe <code>/macro</code> en el chat (o Menú → Macros).</li>
+          <li>Pestaña <b>Específicas de [tu personaje]</b> → <b>Nueva</b>. Ponle nombre y elige el icono del <b>signo de interrogación</b>: con <code>#showtooltip</code> el botón toma solo el icono correcto.</li>
+          <li>Pega el texto. Máximo <b>255 caracteres</b> (los saltos de línea cuentan).</li>
+          <li>Arrastra la macro a tu barra y asígnale una tecla. No se pueden crear ni editar en combate.</li>
+        </ol>
+        <p class="warnline" style="margin-top:10px"><b>Idioma:</b> los nombres de hechizos deben estar en el idioma de tu cliente. Usa la versión <b>ES</b>. Si un nombre marcado como <i>sin verificar</i> no funciona, abre el libro de hechizos, haz <b>Mayús + clic</b> en el hechizo con la macro abierta y se escribirá el nombre exacto.</p>
+      </div>
+      <div>
+        <h2>Chuleta rápida</h2>
+        <dl class="cmds" style="margin-top:10px">{CHEAT.map(([c, d]) => <><dt><code>{c}</code></dt><dd>{d}</dd></>)}</dl>
+        <p class="note" style="margin-top:8px">Cada pulsación hace como mucho una acción con tiempo global; lo que no lo usa (abalorios, /startattack, órdenes a la mascota) puede ir delante.</p>
+      </div>
+    </div>
+  </section>
+
+  {Object.keys(M).length === 0 && <p class="warnline">Estamos preparando los packs de macros de cada clase.</p>}
+  <nav class="classpick" id="mpick" aria-label="Clase">
+    {ORDER.filter((o) => M[o]).map((o) => (
+      <button type="button" data-cls={SLUG[o]} aria-pressed={o === first ? "true" : "false"}>
+        <Icon name={CLASS_ICON[o]} size={26} label={NAME[o]} /> {NAME[o]}
+      </button>
+    ))}
+  </nav>
+  <div class="modepick classpick" role="group" aria-label="Idioma de la macro">
+    <button type="button" data-lang="es" aria-pressed="true">Cliente en español</button>
+    <button type="button" data-lang="en" aria-pressed="false">Cliente en inglés</button>
+  </div>
+
+  {ORDER.filter((o) => M[o]).map((o) => {
+    const d = M[o];
+    const cats = [...new Set(d.macros.map((m) => m.category))];
+    return (
+      <section class="duel" data-panel={SLUG[o]} id={`macros-${SLUG[o]}`} hidden={o !== first} style={`--cc:${CLASS_COLOR[o]}`}>
+        <div class="box">
+          <div class="titlerow"><h2 class="racecell"><Icon name={CLASS_ICON[o]} size={36} label={NAME[o]} big /> Macros de {NAME[o]}</h2><a class="chip" href={url(`clases/${SLUG[o]}`)}>Guía de {NAME[o]}</a></div>
+          {d.notes?.length > 0 && <ul class="bul" style="margin-top:10px">{d.notes.map((n) => <li>{n}</li>)}</ul>}
+        </div>
+        {cats.map((cat) => (
+          <>
+            <h3 class="mcat">{cat}</h3>
+            <div class="mgrid">
+              {d.macros.filter((m) => m.category === cat).map((m) => {
+                const unver = (m.spells || []).filter((s) => s.verified === false).map((s) => s.es);
+                return (
+                  <article class="mcard">
+                    <div class="mhead"><b>{m.title}</b><span class="vtag">Nv {m.level}</span></div>
+                    <p>{m.what}</p>
+                    <div class="mcode">
+                      <pre data-l="es">{m.macro_es}</pre>
+                      <pre data-l="en" hidden>{m.macro_en}</pre>
+                      <button type="button" class="copy">Copiar</button>
+                    </div>
+                    <p class="note"><b>Cómo usarla:</b> {m.how}</p>
+                    {m.tip && <p class="note">{m.tip}</p>}
+                    {unver.length > 0 && <p class="note mwarn">Nombre en español sin verificar: {unver.join(", ")}</p>}
+                  </article>
+                );
+              })}
+            </div>
+          </>
+        ))}
+        {d.sources?.length > 0 && <p class="note">Fuentes: {d.sources.slice(0, 8).map((s, i) => <><a href={s} target="_blank" rel="noopener">{new URL(s).hostname.replace("www.", "")}</a>{i < Math.min(d.sources.length, 8) - 1 ? " · " : ""}</>)}</p>}
+      </section>
+    );
+  })}
+
+  <script>
+    const panels = document.querySelectorAll<HTMLElement>("[data-panel]");
+    const btns = document.querySelectorAll<HTMLButtonElement>("#mpick [data-cls]");
+    function pick(slug: string) {
+      if (![...panels].some((p) => p.dataset.panel === slug)) return;
+      panels.forEach((p) => (p.hidden = p.dataset.panel !== slug));
+      btns.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.cls === slug)));
+      history.replaceState(null, "", `#${slug}`);
+    }
+    btns.forEach((b) => b.addEventListener("click", () => pick(b.dataset.cls!)));
+    if (location.hash) pick(location.hash.slice(1));
+    let lang = "es";
+    try { lang = localStorage.getItem("fp-macro-lang") || "es"; } catch {}
+    function setLang(l: string) {
+      lang = l;
+      document.querySelectorAll<HTMLElement>("pre[data-l]").forEach((p) => (p.hidden = p.dataset.l !== l));
+      document.querySelectorAll<HTMLButtonElement>("[data-lang]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === l)));
+      try { localStorage.setItem("fp-macro-lang", l); } catch {}
+    }
+    document.querySelectorAll<HTMLButtonElement>("[data-lang]").forEach((b) => b.addEventListener("click", () => setLang(b.dataset.lang!)));
+    setLang(lang);
+    document.querySelectorAll<HTMLButtonElement>(".copy").forEach((b) => b.addEventListener("click", async () => {
+      const pre = b.parentElement!.querySelector<HTMLElement>(`pre[data-l="${lang}"]`)!;
+      try { await navigator.clipboard.writeText(pre.textContent || ""); b.textContent = "¡Copiada!"; }
+      catch { const r = document.createRange(); r.selectNodeContents(pre); const s = getSelection()!; s.removeAllRanges(); s.addRange(r); b.textContent = "Selecciona y copia"; }
+      setTimeout(() => (b.textContent = "Copiar"), 1500);
+    }));
+  </script>
+</Base>

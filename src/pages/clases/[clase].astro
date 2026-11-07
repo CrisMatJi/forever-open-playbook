@@ -151,7 +151,7 @@ const rkey = (r) => r.split(" (")[0].replace("Skyborne - High Order", "Skyborne"
   </div>
 
   <section class="box">
-    <div class="titlerow"><h2>Duelos de {NAME[id]}</h2><a class="chip" href={url(`duelos#${SLUG[id]}`)}><Icon name={MISC_ICON.pvp} size={20} label="" fallback="" /> Ver cruces a nivel máximo</a></div>
+    <div class="titlerow"><h2>Duelos de {NAME[id]}</h2><a class="chip" href={url(`macros#${SLUG[id]}`)}><Icon name={MISC_ICON.macro} size={20} label="" fallback="" /> Macros de {NAME[id]}</a> <a class="chip" href={url(`duelos#${SLUG[id]}`)}><Icon name={MISC_ICON.pvp} size={20} label="" fallback="" /> Ver cruces a nivel máximo</a></div>
     {d.sources?.length > 0 && (
       <p class="note" style="margin-top:10px">Fuentes: {d.sources.slice(0, 6).map((s, i) => <><a href={s} target="_blank" rel="noopener">{new URL(s).hostname.replace("www.", "")}</a>{i < Math.min(d.sources.length, 6) - 1 ? " · " : ""}</>)}{d.build_checked && ` · build ${d.build_checked}`}</p>
     )}
