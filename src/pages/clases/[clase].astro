@@ -5,6 +5,7 @@ import TalentTree from "../../components/TalentTree.astro";
 import { CLASS_ICON, CLASS_COLOR, MISC_ICON, url } from "../../lib/wow.js";
 import { CLASSES, ORDER, NAME, SLUG, ID_BY_SLUG, TINTS, RACE_ICON, RACE_ES } from "../../lib/classes.js";
 import { expand, getClass } from "../../lib/talents.js";
+import { linkDungeons } from "../../lib/dungeons.js";
 
 export function getStaticPaths() {
   return ORDER.map((id) => ({ params: { clase: SLUG[id] } }));
@@ -142,7 +143,7 @@ const rkey = (r) => r.split(" (")[0].replace("Skyborne - High Order", "Skyborne"
 
   <div class="split">
     {d.dungeons?.length > 0 && (
-      <section class="box"><h2>Mazmorras para tu clase</h2><ul class="bul" style="margin-top:10px">{d.dungeons.map((x) => <li>{x}</li>)}</ul><p class="note" style="margin-top:10px">Niveles, misiones y botín de cada una en <a href={url("mazmorras")}>Mazmorras</a>.</p></section>
+      <section class="box"><h2>Mazmorras para tu clase</h2><ul class="bul" style="margin-top:10px">{d.dungeons.map((x) => <li set:html={linkDungeons(x, url(""))} />)}</ul><p class="note" style="margin-top:10px">Pulsa el nombre de una mazmorra para ver sus misiones, a quién hablar y dónde está en el mapa.</p></section>
     )}
     {d.changes?.length > 0 && (
       <section class="box"><h2>Qué cambia en Forever</h2><ul class="bul" style="margin-top:10px">{d.changes.map((x) => <li>{x}</li>)}</ul></section>

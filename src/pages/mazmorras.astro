@@ -11,7 +11,7 @@ const priText = (p = "") => p.replace(/^[a-z/ ()]+(sin confirmar\))?\s*:\s*/i, "
 const short = (l = "") => (l.match(/\d+\s*-\s*\d+/) || [l])[0].replace(/\s/g, "");
 const minLvl = (l = "") => +(l.match(/\d+/) || [99])[0];
 const LIST = [...D.dungeons].sort((a, b) => minLvl(a.levels) - minLvl(b.levels));
-const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+import { slug } from "../lib/dungeons.js";
 const xp = G.dungeons?.xp_changes || [];
 ---
 <Base title="Mazmorras" active="mazmorras" description="Mazmorras de WoW Forever para la Alianza: niveles, cómo llegar, misiones y botín que interesa.">

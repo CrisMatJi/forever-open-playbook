@@ -1,0 +1,22 @@
+---
+// Mapa de zona con marcadores numerados (coordenadas en % como en el juego)
+interface Pt { n: string; x: number; y: number; label: string; kind?: "entrance" | "quest" }
+interface Props { zoneId: number | null; zone: string; points: Pt[] }
+const { zoneId, zone, points } = Astro.props;
+const srcs = zoneId ? [
+  `https://wow.zamimg.com/images/wow/classic/maps/enus/zoom/${zoneId}.jpg`,
+  `https://wow.zamimg.com/images/wow/classic/maps/enus/original/${zoneId}.jpg`,
+] : [];
+---
+<figure class="zmap">
+  <div class="zmap-stage">
+    {srcs.length > 0 && <img src={srcs[0]} data-alt={srcs.slice(1).join("|")} alt={`Mapa de ${zone}`} loading="lazy" referrerpolicy="no-referrer" onerror="const a=(this.dataset.alt||'').split('|').filter(Boolean);if(a.length){this.dataset.alt=a.slice(1).join('|');this.src=a[0]}else{this.remove()}" />}
+    <span class="zmap-name">{zone}</span>
+    {points.map((p) => (
+      <span class={`pin ${p.kind === "entrance" ? "pin-e" : ""}`} style={`left:${p.x}%;top:${p.y}%`} title={`${p.label} (${p.x}, ${p.y})`}>{p.n}</span>
+    ))}
+  </div>
+  <figcaption>
+    {points.map((p) => <span class="leg"><b class={`pin-s ${p.kind === "entrance" ? "pin-e" : ""}`}>{p.n}</b> {p.label} <span class="num note">({p.x}, {p.y})</span></span>)}
+  </figcaption>
+</figure>
