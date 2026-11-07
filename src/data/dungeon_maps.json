@@ -818,6 +818,499 @@
    }
   ]
  },
+ "Scarlet Monastery - Graveyard": {
+  "entrance": {
+   "zone": "Tirisfal Glades",
+   "zone_es": "Claros de Tirisfal",
+   "zone_id": 85,
+   "x": 84.8,
+   "y": 30.3,
+   "note": "Portal del Monasterio Escarlata en el extremo noreste de Tirisfal, subiendo por el camino al este de Rémol. Las cuatro alas comparten patio (de izquierda a derecha: Cementerio, Catedral, Armería, Biblioteca). Coordenadas de kami-labs."
+  },
+  "quests": []
+ },
+ "Scarlet Monastery - Library": {
+  "entrance": {
+   "zone": "Tirisfal Glades",
+   "zone_es": "Claros de Tirisfal",
+   "zone_id": 85,
+   "x": 84.8,
+   "y": 30.3,
+   "note": "Misma entrada que el resto del Monasterio (noreste de Tirisfal). La Biblioteca es la puerta de la derecha del patio. Coordenadas de kami-labs."
+  },
+  "quests": [
+   {
+    "quest": "Mythology of the Titans (1050)",
+    "npc": "Librarian Mae Paledust",
+    "npc_id": 3979,
+    "zone": "Ironforge",
+    "zone_es": "Forjaz",
+    "zone_id": 1537,
+    "x": 74.6,
+    "y": 12.6,
+    "inside": false,
+    "note": "En la biblioteca del Salón de los Exploradores de Forjaz. El libro está en el suelo de un pasillo de la Biblioteca.",
+    "prereq": null
+   },
+   {
+    "quest": "Past Due (96800)",
+    "npc": "Magus Olvek",
+    "npc_id": 264265,
+    "zone": "Alterac Mountains",
+    "zone_es": "Montañas de Alterac",
+    "zone_id": 36,
+    "x": null,
+    "y": null,
+    "inside": false,
+    "note": "En Dalaran (Silver Enclave según warcrafttavern), Montañas de Alterac. Wowhead Forever no da coordenadas todavía. El libro (The Lost Magic of the Runemasters) está en una mesa de la sala de Arcanist Doan.",
+    "prereq": null
+   },
+   {
+    "quest": "In the Name of the Light (1053)",
+    "npc": "Raleigh the Devout",
+    "npc_id": 3980,
+    "zone": "Hillsbrad Foothills",
+    "zone_es": "Laderas de Trabalomas",
+    "zone_id": 267,
+    "x": 51.4,
+    "y": 58.4,
+    "inside": false,
+    "note": "Piso de arriba de la posada de Costasur. Se completa en la Catedral (también pide a Loksey de la Biblioteca y a Herod de la Armería).",
+    "prereq": "Down the Scarlet Path (1052); cadena que empieza con Brother Anton, de Brother Crowley en la Catedral de la Luz de Ventormenta, y pasa por Brother Anton en Punta de Nijel (Desolace)"
+   }
+  ]
+ },
+ "The Drowned City": {
+  "entrance": {
+   "zone": "Stranglethorn Vale",
+   "zone_es": "Vega de Tuercespina",
+   "zone_id": 33,
+   "x": 21.4,
+   "y": 27.9,
+   "note": "Entrada submarina frente a la costa oeste de Tuercespina: nada más allá del Arrecife Vil hasta Sunken Hollow, junto a la isla de los elementales de agua; verás una cueva con una gran tablilla al lado. Coordenadas aproximadas de warcrafttavern (previas al lanzamiento); Wowhead aún la da como sin confirmar. Vuelo de Alianza más cercano: Bahía del Botín o Villa Oscura."
+  },
+  "quests": [
+   {
+    "quest": "Ancient Gurubashi Idol (96774)",
+    "npc": "Mazu'kon",
+    "npc_id": 264074,
+    "zone": null,
+    "zone_es": null,
+    "zone_id": null,
+    "x": null,
+    "y": null,
+    "inside": false,
+    "note": "Misión de HORDA (da reputación con Trols Lanza Negra y el Anillo de la Tierra): no aplica a la Alianza. Wowhead no confirma ni el que la da ni su ubicación. Como misiones de Alianza se han visto Magics of the Drowned City (95788) y Take Two With Water, todavía sin datos de quién las da.",
+    "prereq": null
+   }
+  ]
+ },
+ "Scarlet Monastery - Armory": {
+  "entrance": {
+   "zone": "Tirisfal Glades",
+   "zone_es": "Claros de Tirisfal",
+   "zone_id": 85,
+   "x": 84.8,
+   "y": 30.3,
+   "note": "Misma entrada que el resto del Monasterio (noreste de Tirisfal). La Armería necesita The Scarlet Key (Biblioteca) o un pícaro con Ganzúa. Coordenadas de kami-labs."
+  },
+  "quests": []
+ },
+ "Razorfen Downs": {
+  "entrance": {
+   "zone": "Thousand Needles",
+   "zone_es": "Las Mil Agujas",
+   "zone_id": 400,
+   "x": 47.8,
+   "y": 23.9,
+   "note": "Las coordenadas del portal (kami-labs) están en el mapa de Las Mil Agujas. La boca de la zona está en el borde sur de Los Baldíos, donde espera Myriam Moonsinger (Los Baldíos 49.0, 94.8). Ruta de Alianza: barco a Theramore y luego hacia el sur por Los Baldíos."
+  },
+  "quests": [
+   {
+    "quest": "Bring the Light (3636)",
+    "npc": "Archbishop Benedictus",
+    "npc_id": 1284,
+    "zone": "Stormwind City",
+    "zone_es": "Ventormenta",
+    "zone_id": 1519,
+    "x": 39.4,
+    "y": 27.4,
+    "inside": false,
+    "note": "En la Catedral de la Luz de Ventormenta. El objetivo es matar a Amnennar the Coldbringer.",
+    "prereq": null
+   },
+   {
+    "quest": "Extinguishing the Idol (3525)",
+    "npc": "Belnistrasz",
+    "npc_id": 8516,
+    "zone": "The Barrens",
+    "zone_es": "Los Baldíos",
+    "zone_id": 17,
+    "x": null,
+    "y": null,
+    "inside": true,
+    "note": "Dentro de la mazmorra, en The Murder Pens (mapa de la instancia 77.6, 15.6). Toda la party tiene que aceptar y entregar antes Scourge of the Downs. Coordenadas de la entrada: ver 'entrance' (Las Mil Agujas 47.8, 23.9).",
+    "prereq": "Scourge of the Downs (3523), también de Belnistrasz"
+   },
+   {
+    "quest": "A Host of Evil (6626)",
+    "npc": "Myriam Moonsinger",
+    "npc_id": 12866,
+    "zone": "The Barrens",
+    "zone_es": "Los Baldíos",
+    "zone_id": 17,
+    "x": 49.0,
+    "y": 94.8,
+    "inside": false,
+    "note": "Junto a la entrada de la Zahúrda, en el extremo sur de Los Baldíos. Se entrega a ella misma.",
+    "prereq": null
+   }
+  ]
+ },
+ "Scarlet Monastery - Cathedral": {
+  "entrance": {
+   "zone": "Tirisfal Glades",
+   "zone_es": "Claros de Tirisfal",
+   "zone_id": 85,
+   "x": 84.8,
+   "y": 30.3,
+   "note": "Misma entrada que el resto del Monasterio (noreste de Tirisfal). Necesita The Scarlet Key. Coordenadas de kami-labs."
+  },
+  "quests": [
+   {
+    "quest": "In the Name of the Light (1053)",
+    "npc": "Raleigh the Devout",
+    "npc_id": 3980,
+    "zone": "Hillsbrad Foothills",
+    "zone_es": "Laderas de Trabalomas",
+    "zone_id": 267,
+    "x": 51.4,
+    "y": 58.4,
+    "inside": false,
+    "note": "Piso de arriba de la posada de Costasur. Se cogen antes de ir al Monasterio.",
+    "prereq": "Down the Scarlet Path (1052); cadena que empieza con Brother Anton, de Brother Crowley en la Catedral de la Luz de Ventormenta, y pasa por Brother Anton en Punta de Nijel (Desolace)"
+   }
+  ]
+ },
+ "Krol'dok Stronghold": {
+  "entrance": {
+   "zone": "Riverglades",
+   "zone_es": "Clarofluvial",
+   "zone_id": 16591,
+   "x": 37.5,
+   "y": 37.5,
+   "note": "En las colinas al noreste de Twilight's Shroud, en el norte de Clarofluvial. Se entra por una cueva al oeste de las grandes puertas de la fortaleza. Vuelo de Alianza: Farholde Keep (Gretchen Mayberry, 60.6, 81.6). Se llega a la zona por el norte de Montañas Crestagrana o por el sur de Tierras Inhóspitas. Coordenadas de la guía de Wowhead y de warcrafttavern."
+  },
+  "quests": [
+   {
+    "quest": "Misión que empieza con Krol'dok Moulding (267137)",
+    "npc": null,
+    "npc_id": null,
+    "zone": "Riverglades",
+    "zone_es": "Clarofluvial",
+    "zone_id": 16591,
+    "x": null,
+    "y": null,
+    "inside": true,
+    "note": "La inicia un objeto, no un PNJ (Krol'dok Moulding, según datamining). Dónde se consigue y la misión en sí están sin confirmar. Coordenadas de la entrada: ver 'entrance'.",
+    "prereq": null
+   }
+  ]
+ },
+ "Uldaman": {
+  "entrance": {
+   "zone": "Badlands",
+   "zone_es": "Tierras Inhóspitas",
+   "zone_id": 3,
+   "x": 44.2,
+   "y": 12.2,
+   "note": "Entrada principal en el norte de Tierras Inhóspitas, junto a la excavación de Hammertoe, cerca del paso a Loch Modan (kami-labs 44.2, 12.2; conquestcapped da 43, 13). Entrada trasera en Dustwind Gulch (66, 43, según conquestcapped). Vuela a Thelsamar y baja hacia el sur."
+  },
+  "quests": [
+   {
+    "quest": "The Platinum Discs (2279 → 2439)",
+    "npc": "The Discs of Norgannon (objeto)",
+    "npc_id": null,
+    "zone": "Badlands",
+    "zone_es": "Tierras Inhóspitas",
+    "zone_id": 3,
+    "x": null,
+    "y": null,
+    "inside": true,
+    "note": "Empieza en los Discos de Norgannon, en la sala final tras matar a Archaedas. Para la Alianza, la segunda parte se entrega a High Explorer Magellas en Forjaz (69.8, 18.4, según kami-labs e icy-veins; dungeons.json pone Dinita Stonemantle, revisar). Coordenadas de la entrada: ver 'entrance'.",
+    "prereq": null
+   },
+   {
+    "quest": "The Lost Tablets of Will (1139)",
+    "npc": "Advisor Belgrum",
+    "npc_id": 2918,
+    "zone": "Ironforge",
+    "zone_es": "Forjaz",
+    "zone_id": 1537,
+    "x": 77.2,
+    "y": 10.0,
+    "inside": false,
+    "note": "En el Salón de los Exploradores de Forjaz. La tablilla está en la sala del jefe final, dentro de Uldaman.",
+    "prereq": "Amulet of Secrets (cadena A Sign of Hope: mapa arrugado en Tierras Inhóspitas → Prospector Ryedol → Hammertoe Grez)"
+   },
+   {
+    "quest": "Restoring the Necklace (cadena de Talvash: 2198, 2199, 2201, 2204, 2361)",
+    "npc": "Talvash del Kissel",
+    "npc_id": 6826,
+    "zone": "Ironforge",
+    "zone_es": "Forjaz",
+    "zone_id": 1537,
+    "x": 36.0,
+    "y": 4.0,
+    "inside": false,
+    "note": "En el Barrio Místico de Forjaz. La cadena empieza con The Shattered Necklace, un objeto que sueltan los enanos Shadowforge dentro de Uldaman.",
+    "prereq": "The Shattered Necklace → Lore for a Price → Back to Uldaman → Find the Gems"
+   },
+   {
+    "quest": "Agmond's Fate (704)",
+    "npc": "Prospector Ironband",
+    "npc_id": 1344,
+    "zone": "Loch Modan",
+    "zone_es": "Loch Modan",
+    "zone_id": 38,
+    "x": 65.8,
+    "y": 65.4,
+    "inside": false,
+    "note": "En la excavación de Ironband, al sureste de Loch Modan. Las urnas están en los túneles de camino a Uldaman.",
+    "prereq": "Ironband Wants You! (Prospector Stormpike, Forjaz) → Find Agmond → Murdaloc"
+   },
+   {
+    "quest": "Solution to Doom (709)",
+    "npc": "Theldurin the Lost",
+    "npc_id": 2785,
+    "zone": "Badlands",
+    "zone_es": "Tierras Inhóspitas",
+    "zone_id": 3,
+    "x": 51.4,
+    "y": 76.4,
+    "inside": false,
+    "note": "Solo, en el sur de Tierras Inhóspitas. La tablilla está en el cofre antiguo del Salón Sellado de Uldaman.",
+    "prereq": null
+   },
+   {
+    "quest": "Power Stones (2418)",
+    "npc": "Rigglefuzz",
+    "npc_id": 2817,
+    "zone": "Badlands",
+    "zone_es": "Tierras Inhóspitas",
+    "zone_id": 3,
+    "x": 42.4,
+    "y": 52.8,
+    "inside": false,
+    "note": "Goblin en el centro de Tierras Inhóspitas. Las piedras se sacan de los enanos de fuera de Uldaman.",
+    "prereq": null
+   },
+   {
+    "quest": "The Hidden Chamber (2240)",
+    "npc": "Baelog",
+    "npc_id": 6906,
+    "zone": "Badlands",
+    "zone_es": "Tierras Inhóspitas",
+    "zone_id": 3,
+    "x": null,
+    "y": null,
+    "inside": true,
+    "note": "Dentro de Uldaman (es uno de los vikingos). Se entrega a Prospector Stormpike en Forjaz (74.4, 12.0, según kami-labs). Coordenadas de la entrada: ver 'entrance'.",
+    "prereq": "The Lost Dwarves (Prospector Stormpike, Forjaz)"
+   }
+  ]
+ },
+ "Zul'Farrak": {
+  "entrance": {
+   "zone": "Tanaris",
+   "zone_es": "Tanaris",
+   "zone_id": 440,
+   "x": 38.7,
+   "y": 19.5,
+   "note": "Noroeste de Tanaris. Vuela a Gadgetzan y ve al noroeste a pie o en montura. Coordenadas de kami-labs."
+  },
+  "quests": [
+   {
+    "quest": "Gahz'rilla (2770)",
+    "npc": "Wizzle Brassbolts",
+    "npc_id": 4453,
+    "zone": "Thousand Needles",
+    "zone_es": "Las Mil Agujas",
+    "zone_id": 400,
+    "x": 78.0,
+    "y": 77.0,
+    "inside": false,
+    "note": "En la Pista de Carreras de las Salinas Brillantes, al sureste de Las Mil Agujas. Hace falta el Mallet of Zul'Farrak para invocar a Gahz'rilla.",
+    "prereq": "The Brassbolts Brothers (Klockmort Spannerspan, Ciudad Manitas de Forjaz), que es la introducción de la Alianza"
+   },
+   {
+    "quest": "Divino-matic Rod (2768)",
+    "npc": "Chief Engineer Bilgewhizzle",
+    "npc_id": 7407,
+    "zone": "Tanaris",
+    "zone_es": "Tanaris",
+    "zone_id": 440,
+    "x": 52.4,
+    "y": 28.4,
+    "inside": false,
+    "note": "En Gadgetzan.",
+    "prereq": null
+   },
+   {
+    "quest": "Tiara of the Deep (2846)",
+    "npc": "Tabetha",
+    "npc_id": 6546,
+    "zone": "Dustwallow Marsh",
+    "zone_es": "Marjal Revolcafango",
+    "zone_id": 15,
+    "x": 46.0,
+    "y": 57.0,
+    "inside": false,
+    "note": "En una cabaña en el centro del Marjal Revolcafango (The Quagmire).",
+    "prereq": "Tabetha's Task (introducción opcional que dan los instructores de magos)"
+   },
+   {
+    "quest": "Nekrum's Medallion (2991)",
+    "npc": "Thadius Grimshade",
+    "npc_id": 8022,
+    "zone": "Blasted Lands",
+    "zone_es": "Las Tierras Devastadas",
+    "zone_id": 4,
+    "x": 67.0,
+    "y": 19.4,
+    "inside": false,
+    "note": "En la torre de la Fortaleza de Nethergarde, al norte de Las Tierras Devastadas.",
+    "prereq": "Witherbark Cages → The Altar of Zul → Thadius Grimshade (cadena que empieza con Gryphon Master Talonaxe, Pico Nidal, Tierras del Interior)"
+   },
+   {
+    "quest": "The Prophecy of Mosh'aru (3527)",
+    "npc": "Yeh'kinya",
+    "npc_id": 8579,
+    "zone": "Tanaris",
+    "zone_es": "Tanaris",
+    "zone_id": 440,
+    "x": 67.0,
+    "y": 22.4,
+    "inside": false,
+    "note": "En Puerto de Steamwheedle, en la costa este de Tanaris.",
+    "prereq": "Screecher Spirits (Yeh'kinya; hay que matar Vale Screechers en Feralas)"
+   },
+   {
+    "quest": "Scarab Shells (2865) / Troll Temper (3042)",
+    "npc": "Tran'rek",
+    "npc_id": 7876,
+    "zone": "Tanaris",
+    "zone_es": "Tanaris",
+    "zone_id": 440,
+    "x": 51.4,
+    "y": 26.8,
+    "inside": false,
+    "note": "Las dos en Gadgetzan: Scarab Shells la da Tran'rek (51.4, 26.8) y Troll Temper, Trenton Lighthammer (npc 7804, 51.4, 28.6).",
+    "prereq": "Ninguno obligatorio (Krazek, en Bahía del Botín, da una introducción opcional para Tran'rek)"
+   }
+  ]
+ },
+ "Maraudon": {
+  "entrance": {
+   "zone": "Desolace",
+   "zone_es": "Desolace",
+   "zone_id": 405,
+   "x": 29.2,
+   "y": 62.5,
+   "note": "Suroeste de Desolace, en el Valle de las Lanzas. Vuela a Punta de Nijel y ve al suroeste. Hay que entrar por la cueva hasta el portal. Coordenadas de kami-labs (Cavindra, la de Legends of Maraudon, está en 29.2, 62.6)."
+  },
+  "quests": [
+   {
+    "quest": "Corruption of Earth and Seed (7065)",
+    "npc": "Keeper Marandis",
+    "npc_id": 13698,
+    "zone": "Desolace",
+    "zone_es": "Desolace",
+    "zone_id": 405,
+    "x": 63.8,
+    "y": 10.6,
+    "inside": false,
+    "note": "En Punta de Nijel, al norte de Desolace. Hay que matar a la Princesa Theradras.",
+    "prereq": null
+   },
+   {
+    "quest": "Vyletongue Corruption (7041)",
+    "npc": "Talendria",
+    "npc_id": 11715,
+    "zone": "Desolace",
+    "zone_es": "Desolace",
+    "zone_id": 405,
+    "x": 68.4,
+    "y": 8.8,
+    "inside": false,
+    "note": "En Punta de Nijel. Llena el vial en el estanque naranja de Maraudon y cura las plantas.",
+    "prereq": null
+   },
+   {
+    "quest": "Twisted Evils (7028)",
+    "npc": "Willow",
+    "npc_id": 13656,
+    "zone": "Desolace",
+    "zone_es": "Desolace",
+    "zone_id": 405,
+    "x": 62.0,
+    "y": 39.4,
+    "inside": false,
+    "note": "Sola, en el centro-este de Desolace. Los grabados de cristal theradric caen dentro de Maraudon.",
+    "prereq": null
+   },
+   {
+    "quest": "The Pariah's Instructions (7067)",
+    "npc": "Centaur Pariah",
+    "npc_id": 13717,
+    "zone": "Desolace",
+    "zone_es": "Desolace",
+    "zone_id": 405,
+    "x": 46.4,
+    "y": 86.6,
+    "inside": false,
+    "note": "Centauro que camina al este de la aldea Gelkis y al sur del Aquelarre Mannoroc, en el sur de Desolace (warcraft.wiki.gg 46.4, 86.6; kami-labs 46.2, 86.6).",
+    "prereq": null
+   },
+   {
+    "quest": "The Scepter of Celebras (7046)",
+    "npc": "Celebras the Redeemed",
+    "npc_id": 13716,
+    "zone": "Desolace",
+    "zone_es": "Desolace",
+    "zone_id": 405,
+    "x": null,
+    "y": null,
+    "inside": true,
+    "note": "Dentro de Maraudon, tras derrotar a Celebras the Cursed. Coordenadas de la entrada: ver 'entrance'.",
+    "prereq": "Legends of Maraudon (Cavindra, junto a la entrada, Desolace 29.2, 62.6)"
+   },
+   {
+    "quest": "Shadowshard Fragments (7070)",
+    "npc": "Archmage Tervosh",
+    "npc_id": 4967,
+    "zone": "Dustwallow Marsh",
+    "zone_es": "Marjal Revolcafango",
+    "zone_id": 15,
+    "x": 59.6,
+    "y": 41.2,
+    "inside": false,
+    "note": "En la torre de Isla Theramore. Coordenadas de kami-labs, sin contrastar con otra fuente: compruébalas en el juego.",
+    "prereq": null
+   }
+  ]
+ },
+ "Alcaz Prison": {
+  "entrance": {
+   "zone": "Dustwallow Marsh",
+   "zone_es": "Marjal Revolcafango",
+   "zone_id": 15,
+   "x": 75,
+   "y": 15,
+   "note": "Isla de Alcaz, al noreste del Marjal Revolcafango. El portal está en el sótano de un gran edificio de la isla: desde el muelle, sube por el camino de la colina a la izquierda. Coordenadas aproximadas de warcrafttavern (previas al lanzamiento). Desde Theramore se llega a nado hacia el norte y el este."
+  },
+  "quests": []
+ },
  "The Temple of Atal'Hakkar": {
   "entrance": {
    "zone": "Swamp of Sorrows",
