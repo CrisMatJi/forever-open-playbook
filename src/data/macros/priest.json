@@ -1,273 +1,273 @@
 {
-  "class": "priest",
-  "notes": [
-    "Nombres esES: los textos oficiales de Blizzard (es-ES) usan 'Sanación relámpago', 'Punición', 'Desvanecer', 'Custodia de miedo' y 'Sanación conjunta'. Algunas webs de terceros traducen distinto ('Destello curativo', 'Acometida'): si una macro no funciona, Mayús+clic en el libro de hechizos.",
-    "Custodia de miedo y Peste devoradora son de todos los sacerdotes a nivel 20; Sanación conjunta pasa a entrenarse con el instructor.",
-    "Palabra de poder: escudo puede sustituirse por un rango igual o mayor, y Renovar de varios sacerdotes se acumula en el mismo objetivo.",
-    "Palabra de las Sombras: muerte ahora te quita el 30 % de tu vida máxima si no mata al objetivo: no la metas en macros de spam.",
-    "Las macros con [@mouseover] funcionan sobre los marcos de grupo de la interfaz por defecto; no necesitan addons.",
-    "Usa Ctrl como modificador: Alt es autolanzamiento por defecto."
-  ],
-  "sources": [
-    "https://rankedboost.com/world-of-warcraft/forever/macros/",
-    "https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/",
-    "https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/",
-    "https://rankedboost.com/world-of-warcraft/forever/macros/priest/",
-    "https://seemeta.com/es/wow-forever/talent-calculator/priest",
-    "https://news.blizzard.com/es-es/article/24301514",
-    "https://news.blizzard.com/es-mx/article/24301514",
-    "https://www.warcrafttavern.com/forever/news/priest-racials-in-world-of-warcraft-forever-fear-ward-is-baseline/",
-    "https://wow.gg/es/guides/wow-forever-holy-priest-beta"
-  ],
-  "macros": [
+ "class": "priest",
+ "notes": [
+  "Nombres esES: los textos oficiales de Blizzard (es-ES) usan 'Sanación relámpago', 'Punición', 'Desvanecer', 'Custodia de miedo' y 'Sanación conjunta'. Algunas webs de terceros traducen distinto ('Destello curativo', 'Acometida'): si una macro no funciona, Mayús+clic en el libro de hechizos.",
+  "Custodia de miedo y Peste devoradora son de todos los sacerdotes a nivel 20; Sanación conjunta pasa a entrenarse con el instructor.",
+  "Palabra de poder: escudo puede sustituirse por un rango igual o mayor, y Renovar de varios sacerdotes se acumula en el mismo objetivo.",
+  "Palabra de las Sombras: muerte ahora te quita el 30 % de tu vida máxima si no mata al objetivo: no la metas en macros de spam.",
+  "Las macros con [@mouseover] funcionan sobre los marcos de grupo de la interfaz por defecto; no necesitan addons.",
+  "Usa Ctrl como modificador: Alt es autolanzamiento por defecto."
+ ],
+ "sources": [
+  "https://rankedboost.com/world-of-warcraft/forever/macros/",
+  "https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/",
+  "https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/priest/",
+  "https://seemeta.com/es/wow-forever/talent-calculator/priest",
+  "https://news.blizzard.com/es-es/article/24301514",
+  "https://news.blizzard.com/es-mx/article/24301514",
+  "https://www.warcrafttavern.com/forever/news/priest-racials-in-world-of-warcraft-forever-fear-ward-is-baseline/",
+  "https://wow.gg/es/guides/wow-forever-holy-priest-beta"
+ ],
+ "macros": [
+  {
+   "id": "sacerdote-sanacion-relampago-raton",
+   "title": "Sanación relámpago (ratón)",
+   "category": "Curación",
+   "level": 20,
+   "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Flash Heal",
+   "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Sanación relámpago",
+   "spells": [
     {
-      "id": "sacerdote-sanacion-relampago-raton",
-      "title": "Sanación relámpago (ratón)",
-      "category": "Curación",
-      "level": 20,
-      "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Flash Heal",
-      "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Sanación relámpago",
-      "spells": [
-        {
-          "en": "Flash Heal",
-          "es": "Sanación relámpago",
-          "verified": true
-        }
-      ],
-      "what": "Cura al aliado bajo el ratón; si no hay, a tu objetivo amistoso; si no, a ti.",
-      "how": "Mantén al enemigo como objetivo y cura pasando el ratón por los marcos del grupo.",
-      "tip": "Con el talento Holy Binding, sanar a otro con Sanación relámpago también te cura un 50 %."
-    },
-    {
-      "id": "sacerdote-renovar-raton",
-      "title": "Renovar (ratón)",
-      "category": "Curación",
-      "level": 8,
-      "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Renew",
-      "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Renovar",
-      "spells": [
-        {
-          "en": "Renew",
-          "es": "Renovar",
-          "verified": true
-        }
-      ],
-      "what": "Pone Renovar al aliado bajo el ratón, a tu objetivo amistoso o a ti.",
-      "how": "Ideal para el tanque mientras subes de nivel en mazmorras.",
-      "tip": "En Forever varios sacerdotes pueden tener Renovar en el mismo objetivo."
-    },
-    {
-      "id": "sacerdote-escudo-raton",
-      "title": "Escudo (corta y escuda)",
-      "category": "Curación",
-      "level": 6,
-      "macro_en": "#showtooltip\n/stopcasting\n/cast [@mouseover,help,nodead][help,nodead][@player] Power Word: Shield",
-      "macro_es": "#showtooltip\n/stopcasting\n/cast [@mouseover,help,nodead][help,nodead][@player] Palabra de poder: escudo",
-      "spells": [
-        {
-          "en": "Power Word: Shield",
-          "es": "Palabra de poder: escudo",
-          "verified": true
-        }
-      ],
-      "what": "Corta tu lanzamiento y escuda al aliado bajo el ratón, a tu objetivo amistoso o a ti.",
-      "how": "Úsalo en reacción a picos de daño sin esperar a que termine tu sanación.",
-      "tip": "Alma debilitada impide repetirlo en el mismo objetivo 15 s."
-    },
-    {
-      "id": "sacerdote-sanacion-conjunta-raton",
-      "title": "Sanación conjunta (ratón)",
-      "category": "Curación",
-      "level": 25,
-      "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead] Binding Heal",
-      "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead] Sanación conjunta",
-      "spells": [
-        {
-          "en": "Binding Heal",
-          "es": "Sanación conjunta",
-          "verified": true
-        }
-      ],
-      "what": "Cura a la vez al aliado bajo el ratón (o tu objetivo amistoso) y a ti mismo.",
-      "how": "Úsala cuando tú y el tanque estéis heridos a la vez.",
-      "tip": "Ahora se entrena con el instructor; el nivel exacto del rango 1 puede variar (datos extraídos: nivel 25)."
-    },
-    {
-      "id": "sacerdote-disipar-raton",
-      "title": "Disipar magia (aliado o enemigo)",
-      "category": "Curación",
-      "level": 18,
-      "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][@mouseover,harm,nodead][help,nodead][harm,nodead][@player] Dispel Magic",
-      "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][@mouseover,harm,nodead][help,nodead][harm,nodead][@player] Disipar magia",
-      "spells": [
-        {
-          "en": "Dispel Magic",
-          "es": "Disipar magia",
-          "verified": true
-        }
-      ],
-      "what": "Disipa magia perjudicial del aliado bajo el ratón o roba/quita beneficios mágicos del enemigo bajo el ratón; si no hay ratón, actúa sobre tu objetivo o sobre ti.",
-      "how": "Pasa el ratón por el aliado con un debuff mágico o por el enemigo con escudo y pulsa."
-    },
-    {
-      "id": "sacerdote-curar-enfermedad-raton",
-      "title": "Curar enfermedad (ratón)",
-      "category": "Curación",
-      "level": 14,
-      "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Cure Disease",
-      "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Curar enfermedad",
-      "spells": [
-        {
-          "en": "Cure Disease",
-          "es": "Curar enfermedad",
-          "verified": true
-        }
-      ],
-      "what": "Quita una enfermedad al aliado bajo el ratón, a tu objetivo amistoso o a ti.",
-      "how": "Imprescindible en mazmorras con no-muertos.",
-      "tip": "Ya no te saca de Forma de las Sombras."
-    },
-    {
-      "id": "sacerdote-custodia-miedo-raton",
-      "title": "Custodia de miedo (ratón)",
-      "category": "Utilidad",
-      "level": 20,
-      "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Fear Ward",
-      "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Custodia de miedo",
-      "spells": [
-        {
-          "en": "Fear Ward",
-          "es": "Custodia de miedo",
-          "verified": true
-        }
-      ],
-      "what": "Protege contra el siguiente efecto de miedo al aliado bajo el ratón, a tu objetivo amistoso o a ti.",
-      "how": "Pónsela al tanque antes de un jefe con miedo o a ti en JcJ contra brujos y sacerdotes.",
-      "tip": "En Forever la aprenden todos los sacerdotes a nivel 20."
-    },
-    {
-      "id": "sacerdote-dolor-raton",
-      "title": "Palabra de las Sombras: dolor (ratón)",
-      "category": "Leveo",
-      "level": 4,
-      "macro_en": "#showtooltip\n/cast [@mouseover,harm,nodead][harm,nodead] Shadow Word: Pain",
-      "macro_es": "#showtooltip\n/cast [@mouseover,harm,nodead][harm,nodead] Palabra de las Sombras: dolor",
-      "spells": [
-        {
-          "en": "Shadow Word: Pain",
-          "es": "Palabra de las Sombras: dolor",
-          "verified": true
-        }
-      ],
-      "what": "Aplica Dolor al enemigo bajo el ratón o a tu objetivo, sin cambiar de objetivo.",
-      "how": "Pon el DoT a varios enemigos pasando el ratón por encima de cada uno."
-    },
-    {
-      "id": "sacerdote-varita",
-      "title": "Varita (auto-objetivo)",
-      "category": "Leveo",
-      "level": 5,
-      "macro_en": "#showtooltip Shoot\n/targetenemy [noharm][dead]\n/cast !Shoot",
-      "macro_es": "#showtooltip Disparar\n/targetenemy [noharm][dead]\n/cast !Disparar",
-      "spells": [
-        {
-          "en": "Shoot",
-          "es": "Disparar",
-          "verified": false
-        }
-      ],
-      "what": "Dispara la varita y, si no tienes enemigo vivo seleccionado, busca el más cercano. El '!' evita que una segunda pulsación pare el disparo.",
-      "how": "Escudo + Dolor + varita es la rotación clásica de leveo: ahorras maná y regeneras con espíritu.",
-      "tip": "Nombre esES del disparo de varita sin confirmar; compruébalo con Mayús+clic."
-    },
-    {
-      "id": "sacerdote-alarido-abalorio",
-      "title": "Alarido psíquico (+abalorio con Ctrl)",
-      "category": "PvP",
-      "level": 14,
-      "macro_en": "#showtooltip Psychic Scream\n/stopcasting\n/use [mod:ctrl] 13\n/cast Psychic Scream",
-      "macro_es": "#showtooltip Alarido psíquico\n/stopcasting\n/use [mod:ctrl] 13\n/cast Alarido psíquico",
-      "spells": [
-        {
-          "en": "Psychic Scream",
-          "es": "Alarido psíquico",
-          "verified": true
-        }
-      ],
-      "what": "Corta tu lanzamiento y aterroriza a los enemigos cercanos; con Ctrl usa además el abalorio superior (por ejemplo, el JcJ para salir de un aturdimiento).",
-      "how": "Úsalo cuando te rodeen cuerpo a cuerpo. Ctrl+tecla si estás aturdido y tienes el abalorio listo.",
-      "tip": "El daño rompe el miedo antes de tiempo."
-    },
-    {
-      "id": "sacerdote-desvanecer",
-      "title": "Desvanecer (corta y quita amenaza)",
-      "category": "Combate",
-      "level": 8,
-      "macro_en": "#showtooltip Fade\n/stopcasting\n/cast Fade",
-      "macro_es": "#showtooltip Desvanecer\n/stopcasting\n/cast Desvanecer",
-      "spells": [
-        {
-          "en": "Fade",
-          "es": "Desvanecer",
-          "verified": true
-        }
-      ],
-      "what": "Corta tu sanación y lanza Desvanecer para quitarte amenaza al instante.",
-      "how": "Pulsa cuando un monstruo se gire hacia ti en mazmorra.",
-      "tip": "En Forever Desvanecer reduce el doble de amenaza."
-    },
-    {
-      "id": "sacerdote-silencio-foco",
-      "title": "Silencio (foco con Ctrl)",
-      "category": "PvP",
-      "level": 30,
-      "macro_en": "#showtooltip Silence\n/stopcasting\n/cast [mod:ctrl,@focus,harm,nodead][@mouseover,harm,nodead][harm,nodead] Silence",
-      "macro_es": "#showtooltip Silencio\n/stopcasting\n/cast [mod:ctrl,@focus,harm,nodead][@mouseover,harm,nodead][harm,nodead] Silencio",
-      "spells": [
-        {
-          "en": "Silence",
-          "es": "Silencio",
-          "verified": true
-        }
-      ],
-      "what": "Corta tu lanzamiento y silencia: con Ctrl a tu foco, si no al enemigo bajo el ratón o a tu objetivo.",
-      "how": "Fija al sanador enemigo como foco y córtale con Ctrl+tecla sin perder tu objetivo.",
-      "tip": "Silencio es talento de Sombra."
-    },
-    {
-      "id": "sacerdote-encadenar-foco",
-      "title": "Encadenar no-muerto al foco",
-      "category": "Combate",
-      "level": 20,
-      "macro_en": "#showtooltip Shackle Undead\n/focus [@focus,noexists][@focus,dead][mod:ctrl]\n/cast [@focus,harm,nodead][harm,nodead] Shackle Undead",
-      "macro_es": "#showtooltip Encadenar no-muerto\n/focus [@focus,noexists][@focus,dead][mod:ctrl]\n/cast [@focus,harm,nodead][harm,nodead] Encadenar no-muerto",
-      "spells": [
-        {
-          "en": "Shackle Undead",
-          "es": "Encadenar no-muerto",
-          "verified": true
-        }
-      ],
-      "what": "Si no tienes foco (o está muerto), o pulsas Ctrl, marca tu objetivo como foco; después encadena al no-muerto del foco.",
-      "how": "Pulsa una vez sobre el no-muerto asignado; vuelve a pulsar para reencadenarlo aunque tengas otro objetivo.",
-      "tip": "Solo un no-muerto encadenado a la vez; cualquier daño lo libera."
-    },
-    {
-      "id": "sacerdote-entereza-raton",
-      "title": "Entereza (ratón)",
-      "category": "Utilidad",
-      "level": 1,
-      "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Power Word: Fortitude",
-      "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Palabra de poder: entereza",
-      "spells": [
-        {
-          "en": "Power Word: Fortitude",
-          "es": "Palabra de poder: entereza",
-          "verified": true
-        }
-      ],
-      "what": "Pone Palabra de poder: entereza al aliado bajo el ratón, al objetivo amistoso o a ti.",
-      "how": "Repasa los marcos del grupo con el ratón tras cada resurrección."
+     "en": "Flash Heal",
+     "es": "Sanación relámpago",
+     "verified": true
     }
-  ]
+   ],
+   "what": "Cura al aliado bajo el ratón; si no hay, a tu objetivo amistoso; si no, a ti.",
+   "how": "Mantén al enemigo como objetivo y cura pasando el ratón por los marcos del grupo.",
+   "tip": "Con el talento Holy Binding, sanar a otro con Sanación relámpago también te cura un 50 %."
+  },
+  {
+   "id": "sacerdote-renovar-raton",
+   "title": "Renovar (ratón)",
+   "category": "Curación",
+   "level": 8,
+   "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Renew",
+   "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Renovar",
+   "spells": [
+    {
+     "en": "Renew",
+     "es": "Renovar",
+     "verified": true
+    }
+   ],
+   "what": "Pone Renovar al aliado bajo el ratón, a tu objetivo amistoso o a ti.",
+   "how": "Ideal para el tanque mientras subes de nivel en mazmorras.",
+   "tip": "En Forever varios sacerdotes pueden tener Renovar en el mismo objetivo."
+  },
+  {
+   "id": "sacerdote-escudo-raton",
+   "title": "Escudo (corta y escuda)",
+   "category": "Curación",
+   "level": 6,
+   "macro_en": "#showtooltip\n/stopcasting\n/cast [@mouseover,help,nodead][help,nodead][@player] Power Word: Shield",
+   "macro_es": "#showtooltip\n/stopcasting\n/cast [@mouseover,help,nodead][help,nodead][@player] Palabra de poder: escudo",
+   "spells": [
+    {
+     "en": "Power Word: Shield",
+     "es": "Palabra de poder: escudo",
+     "verified": true
+    }
+   ],
+   "what": "Corta tu lanzamiento y escuda al aliado bajo el ratón, a tu objetivo amistoso o a ti.",
+   "how": "Úsalo en reacción a picos de daño sin esperar a que termine tu sanación.",
+   "tip": "Alma debilitada impide repetirlo en el mismo objetivo 15 s."
+  },
+  {
+   "id": "sacerdote-sanacion-conjunta-raton",
+   "title": "Sanación conjunta (ratón)",
+   "category": "Curación",
+   "level": 25,
+   "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead] Binding Heal",
+   "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead] Sanación conjunta",
+   "spells": [
+    {
+     "en": "Binding Heal",
+     "es": "Sanación conjunta",
+     "verified": true
+    }
+   ],
+   "what": "Cura a la vez al aliado bajo el ratón (o tu objetivo amistoso) y a ti mismo.",
+   "how": "Úsala cuando tú y el tanque estéis heridos a la vez.",
+   "tip": "Ahora se entrena con el instructor; el nivel exacto del rango 1 puede variar (datos extraídos: nivel 25)."
+  },
+  {
+   "id": "sacerdote-disipar-raton",
+   "title": "Disipar magia (aliado o enemigo)",
+   "category": "Curación",
+   "level": 18,
+   "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][@mouseover,harm,nodead][help,nodead][harm,nodead][@player] Dispel Magic",
+   "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][@mouseover,harm,nodead][help,nodead][harm,nodead][@player] Disipar magia",
+   "spells": [
+    {
+     "en": "Dispel Magic",
+     "es": "Disipar magia",
+     "verified": true
+    }
+   ],
+   "what": "Disipa magia perjudicial del aliado bajo el ratón o roba/quita beneficios mágicos del enemigo bajo el ratón; si no hay ratón, actúa sobre tu objetivo o sobre ti.",
+   "how": "Pasa el ratón por el aliado con un debuff mágico o por el enemigo con escudo y pulsa."
+  },
+  {
+   "id": "sacerdote-curar-enfermedad-raton",
+   "title": "Curar enfermedad (ratón)",
+   "category": "Curación",
+   "level": 14,
+   "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Cure Disease",
+   "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Curar enfermedad",
+   "spells": [
+    {
+     "en": "Cure Disease",
+     "es": "Curar enfermedad",
+     "verified": true
+    }
+   ],
+   "what": "Quita una enfermedad al aliado bajo el ratón, a tu objetivo amistoso o a ti.",
+   "how": "Imprescindible en mazmorras con no-muertos.",
+   "tip": "Ya no te saca de Forma de las Sombras."
+  },
+  {
+   "id": "sacerdote-custodia-miedo-raton",
+   "title": "Custodia de miedo (ratón)",
+   "category": "Utilidad",
+   "level": 20,
+   "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Fear Ward",
+   "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Custodia de miedo",
+   "spells": [
+    {
+     "en": "Fear Ward",
+     "es": "Custodia de miedo",
+     "verified": true
+    }
+   ],
+   "what": "Protege contra el siguiente efecto de miedo al aliado bajo el ratón, a tu objetivo amistoso o a ti.",
+   "how": "Pónsela al tanque antes de un jefe con miedo o a ti en JcJ contra brujos y sacerdotes.",
+   "tip": "En Forever la aprenden todos los sacerdotes a nivel 20."
+  },
+  {
+   "id": "sacerdote-dolor-raton",
+   "title": "Palabra de las Sombras: dolor (ratón)",
+   "category": "Leveo",
+   "level": 4,
+   "macro_en": "#showtooltip\n/cast [@mouseover,harm,nodead][harm,nodead] Shadow Word: Pain",
+   "macro_es": "#showtooltip\n/cast [@mouseover,harm,nodead][harm,nodead] Palabra de las Sombras: dolor",
+   "spells": [
+    {
+     "en": "Shadow Word: Pain",
+     "es": "Palabra de las Sombras: dolor",
+     "verified": true
+    }
+   ],
+   "what": "Aplica Dolor al enemigo bajo el ratón o a tu objetivo, sin cambiar de objetivo.",
+   "how": "Pon el DoT a varios enemigos pasando el ratón por encima de cada uno."
+  },
+  {
+   "id": "sacerdote-varita",
+   "title": "Varita (auto-objetivo)",
+   "category": "Leveo",
+   "level": 5,
+   "macro_en": "#showtooltip Shoot\n/targetenemy [noharm][dead]\n/cast !Shoot",
+   "macro_es": "#showtooltip Disparar\n/targetenemy [noharm][dead]\n/cast !Disparar",
+   "spells": [
+    {
+     "en": "Shoot",
+     "es": "Disparar",
+     "verified": true
+    }
+   ],
+   "what": "Dispara la varita y, si no tienes enemigo vivo seleccionado, busca el más cercano. El '!' evita que una segunda pulsación pare el disparo.",
+   "how": "Escudo + Dolor + varita es la rotación clásica de leveo: ahorras maná y regeneras con espíritu.",
+   "tip": "Nombre esES del disparo de varita sin confirmar; compruébalo con Mayús+clic."
+  },
+  {
+   "id": "sacerdote-alarido-abalorio",
+   "title": "Alarido psíquico (+abalorio con Ctrl)",
+   "category": "PvP",
+   "level": 14,
+   "macro_en": "#showtooltip Psychic Scream\n/stopcasting\n/use [mod:ctrl] 13\n/cast Psychic Scream",
+   "macro_es": "#showtooltip Alarido psíquico\n/stopcasting\n/use [mod:ctrl] 13\n/cast Alarido psíquico",
+   "spells": [
+    {
+     "en": "Psychic Scream",
+     "es": "Alarido psíquico",
+     "verified": true
+    }
+   ],
+   "what": "Corta tu lanzamiento y aterroriza a los enemigos cercanos; con Ctrl usa además el abalorio superior (por ejemplo, el JcJ para salir de un aturdimiento).",
+   "how": "Úsalo cuando te rodeen cuerpo a cuerpo. Ctrl+tecla si estás aturdido y tienes el abalorio listo.",
+   "tip": "El daño rompe el miedo antes de tiempo."
+  },
+  {
+   "id": "sacerdote-desvanecer",
+   "title": "Desvanecer (corta y quita amenaza)",
+   "category": "Combate",
+   "level": 8,
+   "macro_en": "#showtooltip Fade\n/stopcasting\n/cast Fade",
+   "macro_es": "#showtooltip Desvanecer\n/stopcasting\n/cast Desvanecer",
+   "spells": [
+    {
+     "en": "Fade",
+     "es": "Desvanecer",
+     "verified": true
+    }
+   ],
+   "what": "Corta tu sanación y lanza Desvanecer para quitarte amenaza al instante.",
+   "how": "Pulsa cuando un monstruo se gire hacia ti en mazmorra.",
+   "tip": "En Forever Desvanecer reduce el doble de amenaza."
+  },
+  {
+   "id": "sacerdote-silencio-foco",
+   "title": "Silencio (foco con Ctrl)",
+   "category": "PvP",
+   "level": 30,
+   "macro_en": "#showtooltip Silence\n/stopcasting\n/cast [mod:ctrl,@focus,harm,nodead][@mouseover,harm,nodead][harm,nodead] Silence",
+   "macro_es": "#showtooltip Silencio\n/stopcasting\n/cast [mod:ctrl,@focus,harm,nodead][@mouseover,harm,nodead][harm,nodead] Silencio",
+   "spells": [
+    {
+     "en": "Silence",
+     "es": "Silencio",
+     "verified": true
+    }
+   ],
+   "what": "Corta tu lanzamiento y silencia: con Ctrl a tu foco, si no al enemigo bajo el ratón o a tu objetivo.",
+   "how": "Fija al sanador enemigo como foco y córtale con Ctrl+tecla sin perder tu objetivo.",
+   "tip": "Silencio es talento de Sombra."
+  },
+  {
+   "id": "sacerdote-encadenar-foco",
+   "title": "Encadenar no-muerto al foco",
+   "category": "Combate",
+   "level": 20,
+   "macro_en": "#showtooltip Shackle Undead\n/focus [@focus,noexists][@focus,dead][mod:ctrl]\n/cast [@focus,harm,nodead][harm,nodead] Shackle Undead",
+   "macro_es": "#showtooltip Encadenar no-muerto\n/focus [@focus,noexists][@focus,dead][mod:ctrl]\n/cast [@focus,harm,nodead][harm,nodead] Encadenar no-muerto",
+   "spells": [
+    {
+     "en": "Shackle Undead",
+     "es": "Encadenar no-muerto",
+     "verified": true
+    }
+   ],
+   "what": "Si no tienes foco (o está muerto), o pulsas Ctrl, marca tu objetivo como foco; después encadena al no-muerto del foco.",
+   "how": "Pulsa una vez sobre el no-muerto asignado; vuelve a pulsar para reencadenarlo aunque tengas otro objetivo.",
+   "tip": "Solo un no-muerto encadenado a la vez; cualquier daño lo libera."
+  },
+  {
+   "id": "sacerdote-entereza-raton",
+   "title": "Entereza (ratón)",
+   "category": "Utilidad",
+   "level": 1,
+   "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Power Word: Fortitude",
+   "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Palabra de poder: entereza",
+   "spells": [
+    {
+     "en": "Power Word: Fortitude",
+     "es": "Palabra de poder: entereza",
+     "verified": true
+    }
+   ],
+   "what": "Pone Palabra de poder: entereza al aliado bajo el ratón, al objetivo amistoso o a ti.",
+   "how": "Repasa los marcos del grupo con el ratón tras cada resurrección."
+  }
+ ]
 }

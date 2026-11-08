@@ -1,288 +1,288 @@
 {
-  "class": "paladin",
-  "notes": [
-    "Forever eliminó Bendición de salvación, Bendición de luz y sus versiones superiores: no las uses en macros.",
-    "Sentencia ya no consume el sello activo; las macros clásicas de 'juzgar y volver a sellar' ya no hacen falta. Con Sello de furia, Sentencia provoca a 10 m.",
-    "Expulsar el mal (Turn Evil) es un talento de Reprensión que mejora Ahuyentar no-muertos y permite afectar a demonios: se lanza con el mismo hechizo.",
-    "Golpe Sagrado se aprende a nivel 6 y Sentencia a 4; Furia recta baja a nivel 10.",
-    "Nombres esES con discrepancias entre fuentes (Imposición de manos, Bendición de poderío, Ahuyentar no-muertos): si fallan, Mayús+clic en el libro de hechizos.",
-    "Usa Ctrl como modificador: Alt es autolanzamiento por defecto."
-  ],
-  "sources": [
-    "https://rankedboost.com/world-of-warcraft/forever/macros/",
-    "https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/",
-    "https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/",
-    "https://rankedboost.com/world-of-warcraft/forever/macros/paladin/",
-    "https://seemeta.com/es/wow-forever/talent-calculator/paladin",
-    "https://news.blizzard.com/es-es/article/24302099",
-    "https://www.warcrafttavern.com/forever/news/all-changes-to-paladins-in-wow-forever/"
-  ],
-  "macros": [
+ "class": "paladin",
+ "notes": [
+  "Forever eliminó Bendición de salvación, Bendición de luz y sus versiones superiores: no las uses en macros.",
+  "Sentencia ya no consume el sello activo; las macros clásicas de 'juzgar y volver a sellar' ya no hacen falta. Con Sello de furia, Sentencia provoca a 10 m.",
+  "Expulsar el mal (Turn Evil) es un talento de Reprensión que mejora Ahuyentar no-muertos y permite afectar a demonios: se lanza con el mismo hechizo.",
+  "Golpe Sagrado se aprende a nivel 6 y Sentencia a 4; Furia recta baja a nivel 10.",
+  "Nombres esES con discrepancias entre fuentes (Imposición de manos, Bendición de poderío, Ahuyentar no-muertos): si fallan, Mayús+clic en el libro de hechizos.",
+  "Usa Ctrl como modificador: Alt es autolanzamiento por defecto."
+ ],
+ "sources": [
+  "https://rankedboost.com/world-of-warcraft/forever/macros/",
+  "https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/",
+  "https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/paladin/",
+  "https://seemeta.com/es/wow-forever/talent-calculator/paladin",
+  "https://news.blizzard.com/es-es/article/24302099",
+  "https://www.warcrafttavern.com/forever/news/all-changes-to-paladins-in-wow-forever/"
+ ],
+ "macros": [
+  {
+   "id": "paladin-golpe-sentencia",
+   "title": "Golpe Sagrado + Sentencia",
+   "category": "Combate",
+   "level": 6,
+   "macro_en": "#showtooltip Holy Strike\n/targetenemy [noharm][dead]\n/startattack\n/cast [harm,nodead] Judgement\n/cast Holy Strike",
+   "macro_es": "#showtooltip Golpe Sagrado\n/targetenemy [noharm][dead]\n/startattack\n/cast [harm,nodead] Sentencia\n/cast Golpe Sagrado",
+   "spells": [
     {
-      "id": "paladin-golpe-sentencia",
-      "title": "Golpe Sagrado + Sentencia",
-      "category": "Combate",
-      "level": 6,
-      "macro_en": "#showtooltip Holy Strike\n/targetenemy [noharm][dead]\n/startattack\n/cast [harm,nodead] Judgement\n/cast Holy Strike",
-      "macro_es": "#showtooltip Golpe Sagrado\n/targetenemy [noharm][dead]\n/startattack\n/cast [harm,nodead] Sentencia\n/cast Golpe Sagrado",
-      "spells": [
-        {
-          "en": "Holy Strike",
-          "es": "Golpe Sagrado",
-          "verified": true
-        },
-        {
-          "en": "Judgement",
-          "es": "Sentencia",
-          "verified": true
-        }
-      ],
-      "what": "Busca enemigo si no tienes uno vivo, activa el ataque automático y lanza Sentencia si está lista; si no, Golpe Sagrado.",
-      "how": "Tu botón principal de leveo: mantén un sello activo y machaca esta tecla.",
-      "tip": "Solo un hechizo con tiempo global sale por pulsación; si Sentencia está lista, Golpe Sagrado sale en la siguiente."
+     "en": "Holy Strike",
+     "es": "Golpe Sagrado",
+     "verified": true
     },
     {
-      "id": "paladin-sellos-cruzado-rectitud",
-      "title": "Sello del cruzado / rectitud",
-      "category": "Combate",
-      "level": 6,
-      "macro_en": "#showtooltip [mod:ctrl] Judgement; Seal of the Crusader\n/cast [mod:ctrl,@target,harm,nodead] Judgement\n/cast [mod:ctrl] Seal of Righteousness; Seal of the Crusader",
-      "macro_es": "#showtooltip [mod:ctrl] Sentencia; Sello del cruzado\n/cast [mod:ctrl,@target,harm,nodead] Sentencia\n/cast [mod:ctrl] Sello de rectitud; Sello del cruzado",
-      "spells": [
-        {
-          "en": "Seal of Righteousness",
-          "es": "Sello de rectitud",
-          "verified": true
-        },
-        {
-          "en": "Seal of the Crusader",
-          "es": "Sello del cruzado",
-          "verified": true
-        },
-        {
-          "en": "Judgement",
-          "es": "Sentencia",
-          "verified": true
-        }
-      ],
-      "what": "Sin Ctrl pone Sello del cruzado. Con Ctrl juzga al objetivo (aplica la sentencia del cruzado) y cambia a Sello de rectitud.",
-      "how": "Abre con el cruzado, Ctrl+tecla para dejar el debuff y pegar con rectitud.",
-      "tip": "Antes del nivel 6 usa solo Sello de rectitud."
-    },
-    {
-      "id": "paladin-sentencia-provocar",
-      "title": "Sentencia (provocar, ratón)",
-      "category": "Combate",
-      "level": 10,
-      "macro_en": "#showtooltip Judgement\n/cast [@mouseover,harm,nodead][harm,nodead] Judgement",
-      "macro_es": "#showtooltip Sentencia\n/cast [@mouseover,harm,nodead][harm,nodead] Sentencia",
-      "spells": [
-        {
-          "en": "Judgement",
-          "es": "Sentencia",
-          "verified": true
-        }
-      ],
-      "what": "Lanza Sentencia al enemigo bajo el ratón o a tu objetivo. Con Sello de furia activo actúa como provocación a 10 m.",
-      "how": "Para tanques: recupera monstruos sueltos sin cambiar de objetivo.",
-      "tip": "Sello de furia se aprende a nivel 10."
-    },
-    {
-      "id": "paladin-destello-raton",
-      "title": "Destello de Luz (ratón)",
-      "category": "Curación",
-      "level": 20,
-      "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Flash of Light",
-      "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Destello de Luz",
-      "spells": [
-        {
-          "en": "Flash of Light",
-          "es": "Destello de Luz",
-          "verified": true
-        }
-      ],
-      "what": "Cura rápida al aliado bajo el ratón, al objetivo amistoso o a ti.",
-      "how": "Cura en mitad del combate sin soltar al enemigo."
-    },
-    {
-      "id": "paladin-luz-sagrada-raton",
-      "title": "Luz Sagrada (ratón)",
-      "category": "Curación",
-      "level": 1,
-      "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Holy Light",
-      "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Luz Sagrada",
-      "spells": [
-        {
-          "en": "Holy Light",
-          "es": "Luz Sagrada",
-          "verified": true
-        }
-      ],
-      "what": "Cura grande al aliado bajo el ratón, a tu objetivo amistoso o a ti.",
-      "how": "Úsala fuera de combate o con daño previsible en el tanque."
-    },
-    {
-      "id": "paladin-purificar-raton",
-      "title": "Purificar (ratón)",
-      "category": "Curación",
-      "level": 8,
-      "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Purify",
-      "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Purificar",
-      "spells": [
-        {
-          "en": "Purify",
-          "es": "Purificar",
-          "verified": true
-        }
-      ],
-      "what": "Quita veneno o enfermedad al aliado bajo el ratón, al objetivo amistoso o a ti.",
-      "how": "Pasa el ratón por el marco afectado y pulsa.",
-      "tip": "A nivel 42 cambia Purificar por Limpiar (también quita magia)."
-    },
-    {
-      "id": "paladin-bendiciones-raton",
-      "title": "Poderío / sabiduría (ratón)",
-      "category": "Utilidad",
-      "level": 14,
-      "macro_en": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl] Blessing of Wisdom; [@mouseover,help,nodead][] Blessing of Might",
-      "macro_es": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl] Bendición de sabiduría; [@mouseover,help,nodead][] Bendición de poderío",
-      "spells": [
-        {
-          "en": "Blessing of Wisdom",
-          "es": "Bendición de sabiduría",
-          "verified": true
-        },
-        {
-          "en": "Blessing of Might",
-          "es": "Bendición de poderío",
-          "verified": false
-        }
-      ],
-      "what": "Pone Bendición de poderío al aliado bajo el ratón (o a tu objetivo); con Ctrl, Bendición de sabiduría.",
-      "how": "Poderío a los cuerpo a cuerpo, Ctrl+tecla para sabiduría a los lanzadores.",
-      "tip": "Salvación y Luz ya no existen en Forever. Si 'Bendición de poderío' falla, prueba 'Bendición del poderío'."
-    },
-    {
-      "id": "paladin-proteccion-libertad-raton",
-      "title": "Protección / Libertad (ratón)",
-      "category": "PvP",
-      "level": 18,
-      "macro_en": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl] Blessing of Freedom; [@mouseover,help,nodead][] Blessing of Protection",
-      "macro_es": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl] Bendición de libertad; [@mouseover,help,nodead][] Bendición de protección",
-      "spells": [
-        {
-          "en": "Blessing of Protection",
-          "es": "Bendición de protección",
-          "verified": true
-        },
-        {
-          "en": "Blessing of Freedom",
-          "es": "Bendición de libertad",
-          "verified": true
-        }
-      ],
-      "what": "Bendición de protección al aliado bajo el ratón (inmunidad física); con Ctrl, Bendición de libertad (quita raíces y ralentizaciones).",
-      "how": "Salva al sanador que pegan cuerpo a cuerpo o libera al compañero enraizado.",
-      "tip": "Si no hay ratón ni objetivo amistoso, el modo de autolanzamiento decide el destino."
-    },
-    {
-      "id": "paladin-libertad-abalorio",
-      "title": "Abalorio + Libertad propia",
-      "category": "PvP",
-      "level": 18,
-      "macro_en": "#showtooltip Blessing of Freedom\n/use 13\n/cast [@player] Blessing of Freedom",
-      "macro_es": "#showtooltip Bendición de libertad\n/use 13\n/cast [@player] Bendición de libertad",
-      "spells": [
-        {
-          "en": "Blessing of Freedom",
-          "es": "Bendición de libertad",
-          "verified": true
-        }
-      ],
-      "what": "Usa el abalorio superior (ranura 13, p. ej. el JcJ que rompe control) y te pone Bendición de libertad.",
-      "how": "Para escapar de aturdimiento + raíz y volver a por tu objetivo.",
-      "tip": "Si el abalorio está abajo, cambia 13 por 14."
-    },
-    {
-      "id": "paladin-escudo-divino",
-      "title": "Escudo divino (Ctrl cancela)",
-      "category": "PvP",
-      "level": 34,
-      "macro_en": "#showtooltip Divine Shield\n/cancelaura [mod:ctrl] Divine Shield\n/cancelaura [mod:ctrl] Divine Protection\n/cancelaura [mod:ctrl] Blessing of Protection\n/cast [nomod:ctrl] Divine Shield",
-      "macro_es": "#showtooltip Escudo divino\n/cancelaura [mod:ctrl] Escudo divino\n/cancelaura [mod:ctrl] Protección divina\n/cancelaura [mod:ctrl] Bendición de protección\n/cast [nomod:ctrl] Escudo divino",
-      "spells": [
-        {
-          "en": "Blessing of Protection",
-          "es": "Bendición de protección",
-          "verified": true
-        },
-        {
-          "en": "Divine Protection",
-          "es": "Protección divina",
-          "verified": true
-        },
-        {
-          "en": "Divine Shield",
-          "es": "Escudo divino",
-          "verified": true
-        }
-      ],
-      "what": "Burbuja de inmunidad; con Ctrl cancela Escudo divino, Protección divina o Bendición de protección para volver a atacar.",
-      "how": "Burbuja cuando estés a punto de morir; Ctrl+tecla en cuanto estés a salvo.",
-      "tip": "Antes del nivel 34 cambia la última línea por Protección divina (nivel 6)."
-    },
-    {
-      "id": "paladin-martillo-foco",
-      "title": "Martillo de justicia (foco)",
-      "category": "PvP",
-      "level": 8,
-      "macro_en": "#showtooltip Hammer of Justice\n/cast [mod:ctrl,@target,harm,nodead][nomod:ctrl,@focus,harm,nodead][nomod:ctrl,@target,harm,nodead] Hammer of Justice",
-      "macro_es": "#showtooltip Martillo de justicia\n/cast [mod:ctrl,@target,harm,nodead][nomod:ctrl,@focus,harm,nodead][nomod:ctrl,@target,harm,nodead] Martillo de justicia",
-      "spells": [
-        {
-          "en": "Hammer of Justice",
-          "es": "Martillo de justicia",
-          "verified": true
-        }
-      ],
-      "what": "Aturde a tu foco si es un enemigo vivo; si no, a tu objetivo. Con Ctrl siempre a tu objetivo.",
-      "how": "Pon al sanador enemigo como foco y aturdelo sin dejar de pegar a tu objetivo; también sirve como interrupción."
-    },
-    {
-      "id": "paladin-ahuyentar-foco",
-      "title": "Ahuyentar no-muertos (foco)",
-      "category": "Combate",
-      "level": 24,
-      "macro_en": "#showtooltip Turn Undead\n/focus [@focus,noexists][@focus,dead][mod:ctrl]\n/cast [@focus,harm,nodead][harm,nodead] Turn Undead",
-      "macro_es": "#showtooltip Ahuyentar a no-muerto\n/focus [@focus,noexists][@focus,dead][mod:ctrl]\n/cast [@focus,harm,nodead][harm,nodead] Ahuyentar a no-muerto",
-      "spells": [
-        {
-          "en": "Turn Undead",
-          "es": "Ahuyentar a no-muerto",
-          "verified": false
-        }
-      ],
-      "what": "Si no hay foco (o pulsas Ctrl) marca tu objetivo como foco y lanza Ahuyentar no-muertos sobre él.",
-      "how": "Control de un no-muerto extra en mazmorras; con el talento Expulsar el mal también funciona con demonios y es más rápido.",
-      "tip": "Nombre esES sin confirmar en el cliente: Mayús+clic en el libro si falla."
-    },
-    {
-      "id": "paladin-imposicion-raton",
-      "title": "Imposición de manos (ratón)",
-      "category": "Curación",
-      "level": 10,
-      "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Lay on Hands",
-      "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Imposición de manos",
-      "spells": [
-        {
-          "en": "Lay on Hands",
-          "es": "Imposición de manos",
-          "verified": false
-        }
-      ],
-      "what": "Cura toda la vida del aliado bajo el ratón, de tu objetivo amistoso o tuya.",
-      "how": "Emergencia: salva al tanque o a ti sin cambiar de objetivo.",
-      "tip": "Reutilización reducida a 20 min en Forever. Nombre esES con discrepancias entre fuentes."
+     "en": "Judgement",
+     "es": "Sentencia",
+     "verified": true
     }
-  ]
+   ],
+   "what": "Busca enemigo si no tienes uno vivo, activa el ataque automático y lanza Sentencia si está lista; si no, Golpe Sagrado.",
+   "how": "Tu botón principal de leveo: mantén un sello activo y machaca esta tecla.",
+   "tip": "Solo un hechizo con tiempo global sale por pulsación; si Sentencia está lista, Golpe Sagrado sale en la siguiente."
+  },
+  {
+   "id": "paladin-sellos-cruzado-rectitud",
+   "title": "Sello del cruzado / rectitud",
+   "category": "Combate",
+   "level": 6,
+   "macro_en": "#showtooltip [mod:ctrl] Judgement; Seal of the Crusader\n/cast [mod:ctrl,@target,harm,nodead] Judgement\n/cast [mod:ctrl] Seal of Righteousness; Seal of the Crusader",
+   "macro_es": "#showtooltip [mod:ctrl] Sentencia; Sello del cruzado\n/cast [mod:ctrl,@target,harm,nodead] Sentencia\n/cast [mod:ctrl] Sello de rectitud; Sello del cruzado",
+   "spells": [
+    {
+     "en": "Seal of Righteousness",
+     "es": "Sello de rectitud",
+     "verified": true
+    },
+    {
+     "en": "Seal of the Crusader",
+     "es": "Sello del cruzado",
+     "verified": true
+    },
+    {
+     "en": "Judgement",
+     "es": "Sentencia",
+     "verified": true
+    }
+   ],
+   "what": "Sin Ctrl pone Sello del cruzado. Con Ctrl juzga al objetivo (aplica la sentencia del cruzado) y cambia a Sello de rectitud.",
+   "how": "Abre con el cruzado, Ctrl+tecla para dejar el debuff y pegar con rectitud.",
+   "tip": "Antes del nivel 6 usa solo Sello de rectitud."
+  },
+  {
+   "id": "paladin-sentencia-provocar",
+   "title": "Sentencia (provocar, ratón)",
+   "category": "Combate",
+   "level": 10,
+   "macro_en": "#showtooltip Judgement\n/cast [@mouseover,harm,nodead][harm,nodead] Judgement",
+   "macro_es": "#showtooltip Sentencia\n/cast [@mouseover,harm,nodead][harm,nodead] Sentencia",
+   "spells": [
+    {
+     "en": "Judgement",
+     "es": "Sentencia",
+     "verified": true
+    }
+   ],
+   "what": "Lanza Sentencia al enemigo bajo el ratón o a tu objetivo. Con Sello de furia activo actúa como provocación a 10 m.",
+   "how": "Para tanques: recupera monstruos sueltos sin cambiar de objetivo.",
+   "tip": "Sello de furia se aprende a nivel 10."
+  },
+  {
+   "id": "paladin-destello-raton",
+   "title": "Destello de Luz (ratón)",
+   "category": "Curación",
+   "level": 20,
+   "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Flash of Light",
+   "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Destello de Luz",
+   "spells": [
+    {
+     "en": "Flash of Light",
+     "es": "Destello de Luz",
+     "verified": true
+    }
+   ],
+   "what": "Cura rápida al aliado bajo el ratón, al objetivo amistoso o a ti.",
+   "how": "Cura en mitad del combate sin soltar al enemigo."
+  },
+  {
+   "id": "paladin-luz-sagrada-raton",
+   "title": "Luz Sagrada (ratón)",
+   "category": "Curación",
+   "level": 1,
+   "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Holy Light",
+   "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Luz Sagrada",
+   "spells": [
+    {
+     "en": "Holy Light",
+     "es": "Luz Sagrada",
+     "verified": true
+    }
+   ],
+   "what": "Cura grande al aliado bajo el ratón, a tu objetivo amistoso o a ti.",
+   "how": "Úsala fuera de combate o con daño previsible en el tanque."
+  },
+  {
+   "id": "paladin-purificar-raton",
+   "title": "Purificar (ratón)",
+   "category": "Curación",
+   "level": 8,
+   "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Purify",
+   "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Purificar",
+   "spells": [
+    {
+     "en": "Purify",
+     "es": "Purificar",
+     "verified": true
+    }
+   ],
+   "what": "Quita veneno o enfermedad al aliado bajo el ratón, al objetivo amistoso o a ti.",
+   "how": "Pasa el ratón por el marco afectado y pulsa.",
+   "tip": "A nivel 42 cambia Purificar por Limpiar (también quita magia)."
+  },
+  {
+   "id": "paladin-bendiciones-raton",
+   "title": "Poderío / sabiduría (ratón)",
+   "category": "Utilidad",
+   "level": 14,
+   "macro_en": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl] Blessing of Wisdom; [@mouseover,help,nodead][] Blessing of Might",
+   "macro_es": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl] Bendición de sabiduría; [@mouseover,help,nodead][] Bendición del poderío",
+   "spells": [
+    {
+     "en": "Blessing of Wisdom",
+     "es": "Bendición de sabiduría",
+     "verified": true
+    },
+    {
+     "en": "Blessing of Might",
+     "es": "Bendición del poderío",
+     "verified": true
+    }
+   ],
+   "what": "Pone Bendición de poderío al aliado bajo el ratón (o a tu objetivo); con Ctrl, Bendición de sabiduría.",
+   "how": "Poderío a los cuerpo a cuerpo, Ctrl+tecla para sabiduría a los lanzadores.",
+   "tip": "Salvación y Luz ya no existen en Forever. Si 'Bendición de poderío' falla, prueba 'Bendición del poderío'."
+  },
+  {
+   "id": "paladin-proteccion-libertad-raton",
+   "title": "Protección / Libertad (ratón)",
+   "category": "PvP",
+   "level": 18,
+   "macro_en": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl] Blessing of Freedom; [@mouseover,help,nodead][] Blessing of Protection",
+   "macro_es": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl] Bendición de libertad; [@mouseover,help,nodead][] Bendición de protección",
+   "spells": [
+    {
+     "en": "Blessing of Protection",
+     "es": "Bendición de protección",
+     "verified": true
+    },
+    {
+     "en": "Blessing of Freedom",
+     "es": "Bendición de libertad",
+     "verified": true
+    }
+   ],
+   "what": "Bendición de protección al aliado bajo el ratón (inmunidad física); con Ctrl, Bendición de libertad (quita raíces y ralentizaciones).",
+   "how": "Salva al sanador que pegan cuerpo a cuerpo o libera al compañero enraizado.",
+   "tip": "Si no hay ratón ni objetivo amistoso, el modo de autolanzamiento decide el destino."
+  },
+  {
+   "id": "paladin-libertad-abalorio",
+   "title": "Abalorio + Libertad propia",
+   "category": "PvP",
+   "level": 18,
+   "macro_en": "#showtooltip Blessing of Freedom\n/use 13\n/cast [@player] Blessing of Freedom",
+   "macro_es": "#showtooltip Bendición de libertad\n/use 13\n/cast [@player] Bendición de libertad",
+   "spells": [
+    {
+     "en": "Blessing of Freedom",
+     "es": "Bendición de libertad",
+     "verified": true
+    }
+   ],
+   "what": "Usa el abalorio superior (ranura 13, p. ej. el JcJ que rompe control) y te pone Bendición de libertad.",
+   "how": "Para escapar de aturdimiento + raíz y volver a por tu objetivo.",
+   "tip": "Si el abalorio está abajo, cambia 13 por 14."
+  },
+  {
+   "id": "paladin-escudo-divino",
+   "title": "Escudo divino (Ctrl cancela)",
+   "category": "PvP",
+   "level": 34,
+   "macro_en": "#showtooltip Divine Shield\n/cancelaura [mod:ctrl] Divine Shield\n/cancelaura [mod:ctrl] Divine Protection\n/cancelaura [mod:ctrl] Blessing of Protection\n/cast [nomod:ctrl] Divine Shield",
+   "macro_es": "#showtooltip Escudo divino\n/cancelaura [mod:ctrl] Escudo divino\n/cancelaura [mod:ctrl] Protección divina\n/cancelaura [mod:ctrl] Bendición de protección\n/cast [nomod:ctrl] Escudo divino",
+   "spells": [
+    {
+     "en": "Blessing of Protection",
+     "es": "Bendición de protección",
+     "verified": true
+    },
+    {
+     "en": "Divine Protection",
+     "es": "Protección divina",
+     "verified": true
+    },
+    {
+     "en": "Divine Shield",
+     "es": "Escudo divino",
+     "verified": true
+    }
+   ],
+   "what": "Burbuja de inmunidad; con Ctrl cancela Escudo divino, Protección divina o Bendición de protección para volver a atacar.",
+   "how": "Burbuja cuando estés a punto de morir; Ctrl+tecla en cuanto estés a salvo.",
+   "tip": "Antes del nivel 34 cambia la última línea por Protección divina (nivel 6)."
+  },
+  {
+   "id": "paladin-martillo-foco",
+   "title": "Martillo de justicia (foco)",
+   "category": "PvP",
+   "level": 8,
+   "macro_en": "#showtooltip Hammer of Justice\n/cast [mod:ctrl,@target,harm,nodead][nomod:ctrl,@focus,harm,nodead][nomod:ctrl,@target,harm,nodead] Hammer of Justice",
+   "macro_es": "#showtooltip Martillo de justicia\n/cast [mod:ctrl,@target,harm,nodead][nomod:ctrl,@focus,harm,nodead][nomod:ctrl,@target,harm,nodead] Martillo de justicia",
+   "spells": [
+    {
+     "en": "Hammer of Justice",
+     "es": "Martillo de justicia",
+     "verified": true
+    }
+   ],
+   "what": "Aturde a tu foco si es un enemigo vivo; si no, a tu objetivo. Con Ctrl siempre a tu objetivo.",
+   "how": "Pon al sanador enemigo como foco y aturdelo sin dejar de pegar a tu objetivo; también sirve como interrupción."
+  },
+  {
+   "id": "paladin-ahuyentar-foco",
+   "title": "Ahuyentar no-muertos (foco)",
+   "category": "Combate",
+   "level": 24,
+   "macro_en": "#showtooltip Turn Undead\n/focus [@focus,noexists][@focus,dead][mod:ctrl]\n/cast [@focus,harm,nodead][harm,nodead] Turn Undead",
+   "macro_es": "#showtooltip Ahuyentar a no-muerto\n/focus [@focus,noexists][@focus,dead][mod:ctrl]\n/cast [@focus,harm,nodead][harm,nodead] Ahuyentar a no-muerto",
+   "spells": [
+    {
+     "en": "Turn Undead",
+     "es": "Ahuyentar a no-muerto",
+     "verified": true
+    }
+   ],
+   "what": "Si no hay foco (o pulsas Ctrl) marca tu objetivo como foco y lanza Ahuyentar no-muertos sobre él.",
+   "how": "Control de un no-muerto extra en mazmorras; con el talento Expulsar el mal también funciona con demonios y es más rápido.",
+   "tip": "Nombre esES sin confirmar en el cliente: Mayús+clic en el libro si falla."
+  },
+  {
+   "id": "paladin-imposicion-raton",
+   "title": "Imposición de manos (ratón)",
+   "category": "Curación",
+   "level": 10,
+   "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Lay on Hands",
+   "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Emposición",
+   "spells": [
+    {
+     "en": "Lay on Hands",
+     "es": "Emposición",
+     "verified": true
+    }
+   ],
+   "what": "Cura toda la vida del aliado bajo el ratón, de tu objetivo amistoso o tuya.",
+   "how": "Emergencia: salva al tanque o a ti sin cambiar de objetivo.",
+   "tip": "Reutilización reducida a 20 min en Forever. Nombre esES con discrepancias entre fuentes."
+  }
+ ]
 }

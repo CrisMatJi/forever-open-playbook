@@ -1,0 +1,326 @@
+{
+ "class": "hunter",
+ "notes": [
+  "En Forever el cazador cambia solo entre cuerpo a cuerpo y Disparo automático según la distancia: no necesitas macros de /startattack ni de Disparo automático.",
+  "Los nombres de disparos difieren entre fuentes en español: las bases de datos (wow.gg/es, seemeta) usan 'Tiro Arcano', 'Aguijón de serpiente' y 'Tiro de puntería', y el artículo de Blizzard es-ES usa 'Disparo Arcano', 'Picadura de serpiente' y 'Disparo de puntería'. Están marcados verified:false: comprueba con Mayús+clic desde el libro de hechizos.",
+  "Todas las trampas comparten ahora una sola reutilización de 30 s (parche del 2 de noviembre) y se pueden poner en combate.",
+  "Multidisparo comparte reutilización con Disparo de puntería; Disparo Arcano ya no la comparte.",
+  "Los comandos /petattack y /petfollow no son hechizos y no se traducen.",
+  "Usa abalorios por ranura (/use 14) en lugar de por nombre para que funcionen igual en cualquier idioma.",
+  "Disparo de dispersión (Scatter Shot) e Intimidación son talentos en Forever, no facultades básicas. Picadura de dracoleón ha desaparecido."
+ ],
+ "sources": [
+  "https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/",
+  "https://www.warcrafttavern.com/forever/news/wow-forever-pre-launch-class-changes-bug-fixes/",
+  "https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/",
+  "https://kami-labs.fr/en/macros-wow-forever/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/hunter/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/hunter/marksmanship/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/hunter/survival/",
+  "https://warcraft.wiki.gg/wiki/Hunter_abilities_(Forever)",
+  "https://www.warcrafttavern.com/forever/news/powershifting-is-back-sort-of-hunter-druid-deep-dive-for-wow-forever/",
+  "https://warcrafttavern.com/forever/guides/hunter/",
+  "https://news.blizzard.com/es-es/article/24301515",
+  "https://news.blizzard.com/es-mx/article/24301515",
+  "https://wow.gg/es/guides/wow-forever-survival-hunter-beta",
+  "https://seemeta.com/es/wow-forever/talent-calculator/hunter"
+ ],
+ "macros": [
+  {
+   "id": "abrir-marca-picadura",
+   "title": "Marca + Picadura de apertura",
+   "category": "Leveo",
+   "level": 6,
+   "macro_en": "#showtooltip\n/petattack [@target,harm,nodead]\n/cast [nocombat,harm,nodead] Hunter's Mark; [harm,nodead] Serpent Sting",
+   "macro_es": "#showtooltip\n/petattack [@target,harm,nodead]\n/cast [nocombat,harm,nodead] Marca del cazador; [harm,nodead] Aguijón de serpiente",
+   "spells": [
+    {
+     "en": "Hunter's Mark",
+     "es": "Marca del cazador",
+     "verified": true
+    },
+    {
+     "en": "Serpent Sting",
+     "es": "Aguijón de serpiente",
+     "verified": true
+    }
+   ],
+   "what": "Envía a la mascota y pone Marca del cazador fuera de combate; ya en combate lanza Picadura de serpiente.",
+   "how": "Primera tecla de cada pull: una pulsación para marcar y mandar a la mascota, otra para la picadura.",
+   "tip": "Picadura de serpiente se aprende al 4 y Marca del cazador al 6."
+  },
+  {
+   "id": "arcano-mascota",
+   "title": "Disparo Arcano + mascota",
+   "category": "Combate",
+   "level": 6,
+   "macro_en": "#showtooltip Arcane Shot\n/petattack [@target,harm,nodead]\n/cast [@target,harm,nodead] Arcane Shot",
+   "macro_es": "#showtooltip Tiro Arcano\n/petattack [@target,harm,nodead]\n/cast [@target,harm,nodead] Tiro Arcano",
+   "spells": [
+    {
+     "en": "Arcane Shot",
+     "es": "Tiro Arcano",
+     "verified": true
+    }
+   ],
+   "what": "Dispara Disparo Arcano y manda a la mascota a tu objetivo aunque esté en pasivo o atacando a otro.",
+   "how": "Spam cada vez que esté disponible; mantiene a la mascota en tu objetivo.",
+   "tip": "En Forever Disparo Arcano ya no comparte reutilización con Disparo de puntería."
+  },
+  {
+   "id": "punteria-multi",
+   "title": "Puntería / Multidisparo",
+   "category": "Combate",
+   "level": 20,
+   "macro_en": "#showtooltip\n/petattack [harm,nodead]\n/cast [mod:shift] Multi-Shot; Aimed Shot",
+   "macro_es": "#showtooltip\n/petattack [harm,nodead]\n/cast [mod:shift] Multidisparo; Tiro de puntería",
+   "spells": [
+    {
+     "en": "Multi-Shot",
+     "es": "Multidisparo",
+     "verified": true
+    },
+    {
+     "en": "Aimed Shot",
+     "es": "Tiro de puntería",
+     "verified": true
+    }
+   ],
+   "what": "Disparo de puntería por defecto y Multidisparo con Mayús, enviando a la mascota.",
+   "how": "Contra un objetivo, Disparo de puntería; con varios, Mayús. Comparten reutilización, así que elige uno por ciclo.",
+   "tip": "Multidisparo se aprende al 18 y Disparo de puntería al 20 (básico en Forever)."
+  },
+  {
+   "id": "cuerpo-a-cuerpo",
+   "title": "Raptor + Mangosta",
+   "category": "Leveo",
+   "level": 16,
+   "macro_en": "#showtooltip Raptor Strike\n/cast Raptor Strike\n/cast Mongoose Bite",
+   "macro_es": "#showtooltip Golpe de raptor\n/cast Golpe de raptor\n/cast Mordedura de mangosta",
+   "spells": [
+    {
+     "en": "Raptor Strike",
+     "es": "Golpe de raptor",
+     "verified": true
+    },
+    {
+     "en": "Mongoose Bite",
+     "es": "Mordedura de mangosta",
+     "verified": true
+    }
+   ],
+   "what": "Pone en cola Golpe de raptor para tu siguiente golpe y lanza Mordedura de mangosta si está disponible (tras una esquiva o con Exponer presa).",
+   "how": "Spam cuando un enemigo te alcance; el juego ya cambia solo a cuerpo a cuerpo.",
+   "tip": "Golpe de raptor va en el siguiente golpe y no usa tiempo global, así que no bloquea la Mordedura."
+  },
+  {
+   "id": "cortar-alas-separacion",
+   "title": "Cortar alas / Separación",
+   "category": "Combate",
+   "level": 12,
+   "macro_en": "#showtooltip\n/cast [mod:shift] Disengage; Wing Clip",
+   "macro_es": "#showtooltip\n/cast [mod:shift] Separación; Cortar alas",
+   "spells": [
+    {
+     "en": "Disengage",
+     "es": "Separación",
+     "verified": true
+    },
+    {
+     "en": "Wing Clip",
+     "es": "Cortar alas",
+     "verified": true
+    }
+   ],
+   "what": "Ralentiza con Cortar alas; con Mayús usa Separación para reducir amenaza.",
+   "how": "Cortar alas al tenerlo encima, luego aléjate más de 8 m para disparar. Mayús en grupo si superas al tanque.",
+   "tip": "Separación se aprende al 20 y en Forever reduce el doble de amenaza."
+  },
+  {
+   "id": "conmocion-mouseover",
+   "title": "Disparo de conmoción mouseover",
+   "category": "PvP",
+   "level": 8,
+   "macro_en": "#showtooltip Concussive Shot\n/cast [@mouseover,harm,nodead][] Concussive Shot",
+   "macro_es": "#showtooltip Disparo de concusión\n/cast [@mouseover,harm,nodead][] Disparo de concusión",
+   "spells": [
+    {
+     "en": "Concussive Shot",
+     "es": "Disparo de concusión",
+     "verified": true
+    }
+   ],
+   "what": "Ralentiza al enemigo bajo el ratón o a tu objetivo.",
+   "how": "Para frenar a quien persigue a tu sanador o a un enemigo que viene a por ti, sin perder tu objetivo.",
+   "tip": "Nombre esES de una sola fuente: verifica con Mayús+clic."
+  },
+  {
+   "id": "trampas",
+   "title": "Trampas en una tecla",
+   "category": "Combate",
+   "level": 20,
+   "macro_en": "#showtooltip\n/cast [mod:shift] Frost Trap; [mod:ctrl] Explosive Trap; Freezing Trap",
+   "macro_es": "#showtooltip\n/cast [mod:shift] Trampa de Escarcha; [mod:ctrl] Trampa explosiva; Trampa congelante",
+   "spells": [
+    {
+     "en": "Frost Trap",
+     "es": "Trampa de Escarcha",
+     "verified": true
+    },
+    {
+     "en": "Explosive Trap",
+     "es": "Trampa explosiva",
+     "verified": true
+    },
+    {
+     "en": "Freezing Trap",
+     "es": "Trampa congelante",
+     "verified": true
+    }
+   ],
+   "what": "Trampa congelante por defecto, Trampa de Escarcha con Mayús y Trampa explosiva con Ctrl.",
+   "how": "Como todas comparten 30 s de reutilización, elige la que necesites: congelante para controlar, escarcha para kitear, explosiva para grupos.",
+   "tip": "Escarcha llega al 28 y Explosiva al 34. Ya se pueden poner en combate."
+  },
+  {
+   "id": "fingir-muerte",
+   "title": "Fingir muerte + mascota",
+   "category": "PvP",
+   "level": 30,
+   "macro_en": "#showtooltip Feign Death\n/stopcasting\n/petfollow [mod:shift]\n/cast Feign Death",
+   "macro_es": "#showtooltip Fingir muerte\n/stopcasting\n/petfollow [mod:shift]\n/cast Fingir muerte",
+   "spells": [
+    {
+     "en": "Feign Death",
+     "es": "Fingir muerte",
+     "verified": true
+    }
+   ],
+   "what": "Corta tu lanzamiento y usa Fingir muerte; con Mayús además llama a la mascota.",
+   "how": "Para borrar la amenaza o hacer un reset. Pulsa con Mayús si quieres que la mascota deje de atacar.",
+   "tip": "Fingir muerte tiene 30 s de reutilización."
+  },
+  {
+   "id": "mascota-atacar-volver",
+   "title": "Mascota: atacar / volver",
+   "category": "Mascota",
+   "level": 10,
+   "macro_en": "#showtooltip\n/petfollow [mod:shift]\n/petattack [nomod:shift,@mouseover,harm,nodead][nomod:shift]",
+   "macro_es": "#showtooltip\n/petfollow [mod:shift]\n/petattack [nomod:shift,@mouseover,harm,nodead][nomod:shift]",
+   "spells": [],
+   "what": "Manda a la mascota al enemigo bajo el ratón o a tu objetivo; con Mayús la hace volver contigo.",
+   "how": "Control rápido en grupos o JcJ: mouseover para cambiarla de objetivo, Mayús para retirarla antes de que tire más enemigos.",
+   "tip": "No gasta tiempo global."
+  },
+  {
+   "id": "mascota-todo-en-uno",
+   "title": "Llamar / Revivir / Aliviar",
+   "category": "Mascota",
+   "level": 12,
+   "macro_en": "#showtooltip\n/cast [@pet,dead][mod:shift] Revive Pet; [nopet] Call Pet; Mend Pet",
+   "macro_es": "#showtooltip\n/cast [@pet,dead][mod:shift] Revivir mascota; [nopet] Llamar a mascota; Sanar mascota",
+   "spells": [
+    {
+     "en": "Revive Pet",
+     "es": "Revivir mascota",
+     "verified": true
+    },
+    {
+     "en": "Call Pet",
+     "es": "Llamar a mascota",
+     "verified": true
+    },
+    {
+     "en": "Mend Pet",
+     "es": "Sanar mascota",
+     "verified": true
+    }
+   ],
+   "what": "Revive a la mascota si está muerta (o con Mayús), la llama si no la tienes y si no, la cura con Aliviar mascota.",
+   "how": "Una sola tecla para toda la gestión de la mascota. Si al morir la macro intenta llamarla, pulsa con Mayús.",
+   "tip": "Nombres esES dudosos: 'Aliviar mascota' (Blizzard) frente a 'Sanar mascota' (seemeta); verifica con Mayús+clic."
+  },
+  {
+   "id": "aspectos",
+   "title": "Aspectos en una tecla",
+   "category": "Utilidad",
+   "level": 20,
+   "macro_en": "#showtooltip\n/cast [mod:shift] Aspect of the Monkey; [mod:ctrl] Aspect of the Pack; [combat] Aspect of the Hawk; Aspect of the Cheetah",
+   "macro_es": "#showtooltip\n/cast [mod:shift] Aspecto del mono; [mod:ctrl] Aspecto de la manada; [combat] Aspecto del halcón; Aspecto del guepardo",
+   "spells": [
+    {
+     "en": "Aspect of the Monkey",
+     "es": "Aspecto del mono",
+     "verified": true
+    },
+    {
+     "en": "Aspect of the Pack",
+     "es": "Aspecto de la manada",
+     "verified": true
+    },
+    {
+     "en": "Aspect of the Hawk",
+     "es": "Aspecto del halcón",
+     "verified": true
+    },
+    {
+     "en": "Aspect of the Cheetah",
+     "es": "Aspecto del guepardo",
+     "verified": true
+    }
+   ],
+   "what": "Halcón en combate, Guepardo fuera; Mono con Mayús y Manada con Ctrl.",
+   "how": "Pulsa al empezar y al terminar cada combate, no en cada tiempo global.",
+   "tip": "Guepardo te aturde si recibes daño. Manada se aprende al 40."
+  },
+  {
+   "id": "intimidacion",
+   "title": "Intimidación de la mascota",
+   "category": "Mascota",
+   "level": 30,
+   "macro_en": "#showtooltip Intimidation\n/petattack [@target,harm,nodead]\n/cast Intimidation",
+   "macro_es": "#showtooltip Intimidación\n/petattack [@target,harm,nodead]\n/cast Intimidación",
+   "spells": [
+    {
+     "en": "Intimidation",
+     "es": "Intimidación",
+     "verified": true
+    }
+   ],
+   "what": "Manda a la mascota a tu objetivo y usa Intimidación para aturdirlo; en Forever su siguiente ataque tiene un 100 % más de crítico.",
+   "how": "Para cortar a un lanzador o frenar a quien te persigue en JcJ.",
+   "tip": "Talento de Bestias (requiere Bestial Swiftness). La mascota tiene que estar cerca del objetivo."
+  },
+  {
+   "id": "dispersion-foco",
+   "title": "Disparo de dispersión",
+   "category": "PvP",
+   "level": 30,
+   "macro_en": "#showtooltip Scatter Shot\n/stopcasting\n/cast [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Scatter Shot",
+   "macro_es": "#showtooltip Disparo disperso\n/stopcasting\n/cast [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Disparo disperso",
+   "spells": [
+    {
+     "en": "Scatter Shot",
+     "es": "Disparo disperso",
+     "verified": true
+    }
+   ],
+   "what": "Corta tu lanzamiento y desorienta al foco (Mayús), al enemigo bajo el ratón o a tu objetivo.",
+   "how": "Clásico en JcJ: dispersión, luego Trampa congelante para encadenar control.",
+   "tip": "Talento de Puntería. Su nombre esES no está confirmado."
+  },
+  {
+   "id": "abalorio-jcj",
+   "title": "Abalorio JcJ",
+   "category": "PvP",
+   "level": 1,
+   "macro_en": "#showtooltip\n/stopcasting\n/use 14",
+   "macro_es": "#showtooltip\n/stopcasting\n/use 14",
+   "spells": [],
+   "what": "Corta tu lanzamiento y usa el abalorio de la ranura inferior (el abalorio JcJ).",
+   "how": "Pulsa al quedar aturdido, con miedo o inmovilizado. Pon el abalorio JcJ en la ranura 14.",
+   "tip": "Por ranura funciona igual en cualquier idioma del cliente."
+  }
+ ]
+}

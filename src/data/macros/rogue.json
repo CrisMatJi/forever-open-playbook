@@ -1,0 +1,327 @@
+{
+ "class": "rogue",
+ "notes": [
+  "En el cliente esES los nombres de /cast deben coincidir exactamente con el libro de hechizos. Si un nombre marcado verified:false falla, abre la macro, pon el cursor en la línea y haz Mayús+clic sobre la facultad en el libro de hechizos: el juego inserta el nombre correcto.",
+  "Los condicionales ([stealth], [mod:shift], [@focus], [harm,nodead]...) y los comandos (/cast, /startattack) NO se traducen: solo cambian los nombres de facultades.",
+  "Pon /startattack [nostealth] y no /startattack a secas en macros de sigilo: el ataque automático rompería el Sigilo antes del golpe de apertura.",
+  "Zapar ya no rompe el Sigilo en Forever, pero solo afecta a 1 objetivo a la vez (2 con el talento Quick Getaway), solo humanoides fuera de combate.",
+  "Disposición (Poised, nivel 18) es pasiva: si sales de combate con la energía llena, tu siguiente facultad cuesta 10 menos. Abre siempre con la energía al máximo.",
+  "Shank (nivel 24) cuesta 5 de energía, genera 15 (25 en rango 2, nivel 44), no falla y tiene 10 s de reutilización: úsalo cada vez que esté listo. Su nombre esES no está confirmado (probablemente 'Apuñalar').",
+  "Mutilar es talento de Asesinato (fila 7) y requiere dagas en ambas manos; no está en estas macros base.",
+  "Una pulsación = una acción con tiempo global. Evasión, Correr y los abalorios no activan el tiempo global, por eso pueden ir en la misma macro que otra facultad.",
+  "Los abalorios se usan por ranura (/use 13 = abalorio superior, /use 14 = inferior), así no dependes del nombre traducido del objeto. Pon el abalorio JcJ en la ranura 14."
+ ],
+ "sources": [
+  "https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/",
+  "https://www.warcrafttavern.com/forever/news/wow-forever-pre-launch-class-changes-bug-fixes/",
+  "https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/",
+  "https://kami-labs.fr/en/macros-wow-forever/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/rogue/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/rogue/combat/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/rogue/subtlety/",
+  "https://warcraft.wiki.gg/wiki/Rogue_abilities_(Forever)",
+  "https://www.warcrafttavern.com/forever/news/poison-pets-rogue-warlock-deep-dive-for-wow-forever/",
+  "https://news.blizzard.com/es-es/article/24310968",
+  "https://news.blizzard.com/es-mx/article/24310968",
+  "https://wow.gg/es/guides/wow-forever-combat-rogue-beta",
+  "https://wow.gg/es/guides/wow-forever-subtlety-rogue-beta",
+  "https://wow.gg/es/guides/wow-forever-assassination-rogue-beta",
+  "https://wow.gg/es/guides/forever-class-changes-03-11-26",
+  "https://seemeta.com/es/wow-forever/talent-calculator/rogue"
+ ],
+ "macros": [
+  {
+   "id": "apertura-sigilo",
+   "title": "Apertura desde sigilo",
+   "category": "Sigilo",
+   "level": 26,
+   "macro_en": "#showtooltip\n/startattack [nostealth]\n/cast [stealth,mod:shift] Ambush; [stealth] Cheap Shot; Sinister Strike",
+   "macro_es": "#showtooltip\n/startattack [nostealth]\n/cast [stealth,mod:shift] Emboscada; [stealth] Golpe bajo; Golpe siniestro",
+   "spells": [
+    {
+     "en": "Ambush",
+     "es": "Emboscada",
+     "verified": true
+    },
+    {
+     "en": "Cheap Shot",
+     "es": "Golpe bajo",
+     "verified": true
+    },
+    {
+     "en": "Sinister Strike",
+     "es": "Golpe siniestro",
+     "verified": true
+    }
+   ],
+   "what": "En sigilo abre con Golpe bajo (aturdimiento) o, con Mayús, con Emboscada. Fuera de sigilo lanza Golpe siniestro y activa el ataque automático.",
+   "how": "Tecla principal de combate. En sigilo pulsa normal para aturdir o con Mayús para Emboscada (necesita daga y estar detrás). Después sigue pulsándola para Golpe siniestro.",
+   "tip": "Golpe bajo no inicia el ataque automático; la siguiente pulsación ya lo hace. Antes del nivel 26 la línea de Golpe bajo da error: usa Emboscada (Mayús) o Garrote."
+  },
+  {
+   "id": "punalada-dagas",
+   "title": "Puñalada / Emboscada",
+   "category": "Combate",
+   "level": 18,
+   "macro_en": "#showtooltip\n/startattack [nostealth]\n/cast [stealth][mod:ctrl] Ambush; Backstab",
+   "macro_es": "#showtooltip\n/startattack [nostealth]\n/cast [stealth][mod:ctrl] Emboscada; Puñalada",
+   "spells": [
+    {
+     "en": "Ambush",
+     "es": "Emboscada",
+     "verified": true
+    },
+    {
+     "en": "Backstab",
+     "es": "Puñalada",
+     "verified": true
+    }
+   ],
+   "what": "Emboscada en sigilo y Puñalada fuera de él, para builds de dagas.",
+   "how": "Colócate detrás del objetivo. Con Ctrl fuerza Emboscada fuera de sigilo, para aprovechar Golpe fantasmal (permite Emboscada sin sigilo durante 7 s).",
+   "tip": "Requiere daga en la mano principal."
+  },
+  {
+   "id": "golpe-leveo",
+   "title": "Golpe de leveo + Shank",
+   "category": "Leveo",
+   "level": 1,
+   "macro_en": "#showtooltip\n/targetenemy [noharm][dead]\n/startattack\n/cast [mod:shift] Shank; Sinister Strike",
+   "macro_es": "#showtooltip\n/targetenemy [noharm][dead]\n/startattack\n/cast [mod:shift] Apuñalar; Golpe siniestro",
+   "spells": [
+    {
+     "en": "Shank",
+     "es": "Apuñalar",
+     "verified": false
+    },
+    {
+     "en": "Sinister Strike",
+     "es": "Golpe siniestro",
+     "verified": true
+    }
+   ],
+   "what": "Selecciona el enemigo más cercano si no tienes uno vivo, inicia el ataque automático y lanza Golpe siniestro; con Mayús lanza Shank.",
+   "how": "Spam en leveo. Pulsa con Mayús cada vez que Shank esté listo (cada 10 s): devuelve energía y alimenta Veneno (Assassination) o Boot Knife (Subtlety).",
+   "tip": "Shank existe desde el nivel 24; antes de eso la Mayús no hace nada. Si 'Apuñalar' no es su nombre en tu cliente, cámbialo con Mayús+clic desde el libro."
+  },
+  {
+   "id": "remates",
+   "title": "Remates en una tecla",
+   "category": "Combate",
+   "level": 10,
+   "macro_en": "#showtooltip\n/startattack\n/cast [mod:shift] Slice and Dice; [mod:ctrl] Kidney Shot; Eviscerate",
+   "macro_es": "#showtooltip\n/startattack\n/cast [mod:shift] Hacer picadillo; [mod:ctrl] Golpe a los riñones; Eviscerar",
+   "spells": [
+    {
+     "en": "Slice and Dice",
+     "es": "Hacer picadillo",
+     "verified": true
+    },
+    {
+     "en": "Kidney Shot",
+     "es": "Golpe a los riñones",
+     "verified": true
+    },
+    {
+     "en": "Eviscerate",
+     "es": "Eviscerar",
+     "verified": true
+    }
+   ],
+   "what": "Eviscerar por defecto, Hacer picadillo con Mayús y Golpe a los riñones con Ctrl.",
+   "how": "Úsala al llegar a 4-5 puntos de combo. Mantén Hacer picadillo activo con Mayús y guarda Ctrl para cortar lanzamientos o encadenar aturdimientos.",
+   "tip": "Golpe a los riñones se aprende al nivel 30."
+  },
+  {
+   "id": "zapar-mouseover",
+   "title": "Zapar con mouseover",
+   "category": "Sigilo",
+   "level": 10,
+   "macro_en": "#showtooltip Sap\n/stopattack\n/cast [@mouseover,harm,nodead][harm,nodead] Sap",
+   "macro_es": "#showtooltip Zapar\n/stopattack\n/cast [@mouseover,harm,nodead][harm,nodead] Zapar",
+   "spells": [
+    {
+     "en": "Sap",
+     "es": "Zapar",
+     "verified": true
+    }
+   ],
+   "what": "Zapa al enemigo bajo el ratón o, si no hay, a tu objetivo, sin cambiar de objetivo.",
+   "how": "En sigilo pasa el ratón sobre el humanoide que quieres neutralizar y pulsa. Luego abre sobre tu objetivo con la macro de apertura.",
+   "tip": "En Forever Zapar no rompe el Sigilo pero solo puede haber 1 objetivo zapado a la vez (2 con Quick Getaway)."
+  },
+  {
+   "id": "patada-foco",
+   "title": "Patada a foco o mouseover",
+   "category": "PvP",
+   "level": 12,
+   "macro_en": "#showtooltip Kick\n/cast [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Kick",
+   "macro_es": "#showtooltip Patada\n/cast [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Patada",
+   "spells": [
+    {
+     "en": "Kick",
+     "es": "Patada",
+     "verified": true
+    }
+   ],
+   "what": "Interrumpe con Patada al foco (Mayús), al enemigo bajo el ratón o a tu objetivo, en ese orden.",
+   "how": "Pon /focus al sanador o lanzador enemigo y pulsa con Mayús cuando empiece a lanzar. Sin modificador usa mouseover o tu objetivo.",
+   "tip": "Patada es cuerpo a cuerpo: el foco tiene que estar a tu alcance."
+  },
+  {
+   "id": "ceguera-foco",
+   "title": "Ceguera a foco o mouseover",
+   "category": "PvP",
+   "level": 34,
+   "macro_en": "#showtooltip Blind\n/stopattack\n/cast [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Blind",
+   "macro_es": "#showtooltip Ceguera\n/stopattack\n/cast [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Ceguera",
+   "spells": [
+    {
+     "en": "Blind",
+     "es": "Ceguera",
+     "verified": true
+    }
+   ],
+   "what": "Ciega al foco (Mayús), al enemigo bajo el ratón o a tu objetivo, y para el ataque automático.",
+   "how": "Úsala para quitar de en medio a un segundo enemigo o al sanador sin cambiar de objetivo.",
+   "tip": "Consume Polvo cegador; lleva siempre unos cuantos."
+  },
+  {
+   "id": "incapacitar",
+   "title": "Incapacitación segura",
+   "category": "Combate",
+   "level": 6,
+   "macro_en": "#showtooltip Gouge\n/stopattack\n/cast Gouge",
+   "macro_es": "#showtooltip Incapacitación\n/stopattack\n/cast Incapacitación",
+   "spells": [
+    {
+     "en": "Gouge",
+     "es": "Incapacitación",
+     "verified": true
+    }
+   ],
+   "what": "Lanza Incapacitación y detiene el ataque automático para no romperla con tu siguiente golpe.",
+   "how": "Para cortar un lanzamiento con Patada en reutilización, ponerte detrás para Puñalada o ganar tiempo para vendarte.",
+   "tip": "Cualquier daño la rompe; el objetivo debe estar mirándote."
+  },
+  {
+   "id": "esfumar",
+   "title": "Esfumarse seguro",
+   "category": "Utilidad",
+   "level": 22,
+   "macro_en": "#showtooltip Vanish\n/stopattack\n/cast Vanish",
+   "macro_es": "#showtooltip Esfumar\n/stopattack\n/cast Esfumar",
+   "spells": [
+    {
+     "en": "Vanish",
+     "es": "Esfumar",
+     "verified": true
+    }
+   ],
+   "what": "Detiene el ataque automático y usa Esfumar para volver a sigilo y salir del combate.",
+   "how": "Para reiniciar un combate perdido, resetear un mal pull o volver a abrir desde sigilo en JcJ.",
+   "tip": "Nombre esES dudoso: puede ser 'Esfumar' o 'Esfumarse'. Comprueba con Mayús+clic desde el libro de hechizos."
+  },
+  {
+   "id": "evasion-amago",
+   "title": "Evasión / Amago",
+   "category": "Combate",
+   "level": 16,
+   "macro_en": "#showtooltip\n/cast [mod:shift] Feint; Evasion",
+   "macro_es": "#showtooltip\n/cast [mod:shift] Amago; Evasión",
+   "spells": [
+    {
+     "en": "Feint",
+     "es": "Amago",
+     "verified": true
+    },
+    {
+     "en": "Evasion",
+     "es": "Evasión",
+     "verified": true
+    }
+   ],
+   "what": "Evasión por defecto; Amago con Mayús para reducir amenaza.",
+   "how": "Evasión al tener a varios enemigos encima en leveo o contra clases cuerpo a cuerpo. Amago con Mayús en grupo cuando superes al tanque.",
+   "tip": "En Forever Amago reduce el doble de amenaza que en Classic."
+  },
+  {
+   "id": "abalorio-correr",
+   "title": "Abalorio JcJ + Correr",
+   "category": "PvP",
+   "level": 10,
+   "macro_en": "#showtooltip\n/use 14\n/cast Sprint",
+   "macro_es": "#showtooltip\n/use 14\n/cast Correr",
+   "spells": [
+    {
+     "en": "Sprint",
+     "es": "Correr",
+     "verified": true
+    }
+   ],
+   "what": "Usa el abalorio de la ranura inferior (abalorio JcJ) para romper el control y activa Correr para escapar o perseguir.",
+   "how": "Pulsa al quedar aturdido, enraizado o ralentizado. Equipa el abalorio JcJ en la ranura 14.",
+   "tip": "Si el abalorio está en reutilización, solo se lanza Correr."
+  },
+  {
+   "id": "robar-mouseover",
+   "title": "Robar con mouseover",
+   "category": "Utilidad",
+   "level": 4,
+   "macro_en": "#showtooltip Pick Pocket\n/cast [@mouseover,harm,nodead][harm,nodead] Pick Pocket",
+   "macro_es": "#showtooltip Robar\n/cast [@mouseover,harm,nodead][harm,nodead] Robar",
+   "spells": [
+    {
+     "en": "Pick Pocket",
+     "es": "Robar",
+     "verified": true
+    }
+   ],
+   "what": "Roba al enemigo bajo el ratón o a tu objetivo sin cambiar de objetivo.",
+   "how": "En sigilo, roba a los humanoides antes de zaparlos o de abrir. Buen oro extra durante el leveo.",
+   "tip": "Solo funciona en sigilo y con humanoides."
+  },
+  {
+   "id": "sigilo-seguro",
+   "title": "Sigilo sin cancelar",
+   "category": "Sigilo",
+   "level": 1,
+   "macro_en": "#showtooltip Stealth\n/stopattack\n/cast [nostealth] Stealth",
+   "macro_es": "#showtooltip Sigilo\n/stopattack\n/cast [nostealth] Sigilo",
+   "spells": [
+    {
+     "en": "Stealth",
+     "es": "Sigilo",
+     "verified": true
+    }
+   ],
+   "what": "Entra en Sigilo y nunca lo cancela aunque pulses dos veces.",
+   "how": "Pulsa en cuanto termines un combate. Si la pulsas ya en sigilo no pasa nada.",
+   "tip": "Combina con Disposición: espera a tener la energía llena antes de abrir."
+  },
+  {
+   "id": "sangre-fria-eviscerar",
+   "title": "Sangre fría + Eviscerar",
+   "category": "Combate",
+   "level": 20,
+   "macro_en": "#showtooltip Eviscerate\n/startattack\n/cast [mod:shift] Cold Blood\n/cast Eviscerate",
+   "macro_es": "#showtooltip Eviscerar\n/startattack\n/cast [mod:shift] Sangre fría\n/cast Eviscerar",
+   "spells": [
+    {
+     "en": "Eviscerate",
+     "es": "Eviscerar",
+     "verified": true
+    },
+    {
+     "en": "Cold Blood",
+     "es": "Sangre fría",
+     "verified": true
+    }
+   ],
+   "what": "Eviscerar normal; con Mayús activa antes Sangre fría para garantizar un crítico.",
+   "how": "Pulsa con Mayús a 5 puntos de combo para un remate de ráfaga (jefe o JcJ).",
+   "tip": "Sangre fría es talento de Asesinato; sin él, la Mayús no hace nada. Sangre fría no activa el tiempo global."
+  }
+ ]
+}

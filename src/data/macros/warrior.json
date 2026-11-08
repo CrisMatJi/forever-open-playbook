@@ -1,0 +1,334 @@
+{
+ "class": "warrior",
+ "notes": [
+  "Las actitudes en los condicionales usan números: stance:1 = Actitud de batalla, stance:2 = Actitud defensiva, stance:3 = Actitud rabiosa. Esto no cambia en el cliente esES.",
+  "En el cliente esES Charge se llama Embestir y Taunt se llama Irritar. Si un nombre marcado verified:false falla, haz Mayús+clic sobre la facultad del libro de hechizos con el editor de macros abierto.",
+  "El condicional [equipped:Shields] usa el tipo de objeto localizado: en esES es [equipped:Escudos]. Si no detecta tu escudo, pasa el ratón por el escudo y copia el tipo que muestra su descripción.",
+  "Maestría táctica es básica en Forever (nivel 14) y conserva 10 de ira al cambiar de actitud (hasta 25 con Improved Tactical Mastery). Por eso el baile de actitudes compensa más que en Classic.",
+  "Las macros de baile de actitudes necesitan dos pulsaciones: la primera cambia de actitud y la segunda lanza la facultad. No se puede hacer en una sola pulsación sin addons.",
+  "Ataque de la victoria (nivel 20) es nuevo: se activa 20 s tras matar a un enemigo que da experiencia u honor y cura un 10 % de tu salud máxima. Es la mejor herramienta de leveo.",
+  "Golpe heroico se ejecuta en el siguiente golpe y no usa el tiempo global, por eso puede ir junto a otra facultad en la misma macro.",
+  "Embestir solo se usa fuera de combate y en Actitud de batalla (o en defensiva con el talento Vanguardia)."
+ ],
+ "sources": [
+  "https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/",
+  "https://www.warcrafttavern.com/forever/news/wow-forever-pre-launch-class-changes-bug-fixes/",
+  "https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/",
+  "https://kami-labs.fr/en/macros-wow-forever/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/warrior/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/warrior/arms/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/warrior/protection/",
+  "https://kami-labs.fr/en/wow-forever/guerrier-wow-forever-sorts-et-talents-modifies/",
+  "https://news.blizzard.com/es-es/article/24301514",
+  "https://eu.forums.blizzard.com/es/wow/t/80290/1",
+  "https://wow.gg/es/guides/wow-forever-fury-warrior-beta",
+  "https://seemeta.com/es/wow-forever/talent-calculator/warrior"
+ ],
+ "macros": [
+  {
+   "id": "embestir-interceptar",
+   "title": "Embestir / Interceptar",
+   "category": "Posturas",
+   "level": 4,
+   "macro_en": "#showtooltip\n/cast [nocombat,stance:1] Charge; [combat,stance:3] Intercept; [nocombat] Battle Stance; Berserker Stance",
+   "macro_es": "#showtooltip\n/cast [nocombat,stance:1] Embestir; [combat,stance:3] Interceptar; [nocombat] Actitud de batalla; Actitud rabiosa",
+   "spells": [
+    {
+     "en": "Charge",
+     "es": "Embestir",
+     "verified": true
+    },
+    {
+     "en": "Intercept",
+     "es": "Interceptar",
+     "verified": true
+    },
+    {
+     "en": "Battle Stance",
+     "es": "Actitud de batalla",
+     "verified": true
+    },
+    {
+     "en": "Berserker Stance",
+     "es": "Actitud rabiosa",
+     "verified": true
+    }
+   ],
+   "what": "Fuera de combate usa Embestir (o cambia a Actitud de batalla). En combate usa Interceptar (o cambia a Actitud rabiosa).",
+   "how": "Tu tecla para acercarte. Si no estás en la actitud correcta, la primera pulsación cambia de actitud y la segunda lanza la carga.",
+   "tip": "Interceptar y Actitud rabiosa llegan al nivel 30; antes, en combate solo cambia de actitud."
+  },
+  {
+   "id": "golpe-leveo",
+   "title": "Golpe heroico de leveo",
+   "category": "Leveo",
+   "level": 1,
+   "macro_en": "#showtooltip\n/targetenemy [noharm][dead]\n/startattack\n/cast [mod:shift] Rend; Heroic Strike",
+   "macro_es": "#showtooltip\n/targetenemy [noharm][dead]\n/startattack\n/cast [mod:shift] Desgarrar; Golpe heroico",
+   "spells": [
+    {
+     "en": "Rend",
+     "es": "Desgarrar",
+     "verified": true
+    },
+    {
+     "en": "Heroic Strike",
+     "es": "Golpe heroico",
+     "verified": true
+    }
+   ],
+   "what": "Selecciona un enemigo si no tienes uno vivo, inicia el ataque automático y pone en cola Golpe heroico; con Mayús lanza Desgarrar.",
+   "how": "Spam en leveo cuando tengas ira de sobra. Mayús al empezar el combate para Desgarrar (en Forever escala con poder de ataque).",
+   "tip": "Desgarrar se aprende al nivel 4. No hagas spam de Golpe heroico si te falta ira para Abrumar o Ejecutar."
+  },
+  {
+   "id": "ataque-victoria",
+   "title": "Ataque de la victoria",
+   "category": "Leveo",
+   "level": 20,
+   "macro_en": "#showtooltip Victory Rush\n/targetenemy [noharm][dead]\n/startattack\n/cast Victory Rush",
+   "macro_es": "#showtooltip Ataque de la victoria\n/targetenemy [noharm][dead]\n/startattack\n/cast Ataque de la victoria",
+   "spells": [
+    {
+     "en": "Victory Rush",
+     "es": "Ataque de la victoria",
+     "verified": true
+    }
+   ],
+   "what": "Selecciona el siguiente enemigo y lanza Ataque de la victoria para curarte un 10 % tras cada muerte.",
+   "how": "Pulsa justo después de matar a un enemigo, ya sobre el siguiente: te curas y empiezas a pegar sin tiempo muerto.",
+   "tip": "Solo se activa durante 20 s tras matar a un enemigo que da experiencia u honor."
+  },
+  {
+   "id": "abrumar",
+   "title": "Abrumar con cambio de actitud",
+   "category": "Posturas",
+   "level": 12,
+   "macro_en": "#showtooltip Overpower\n/startattack\n/cast [stance:1] Overpower; Battle Stance",
+   "macro_es": "#showtooltip Abrumar\n/startattack\n/cast [stance:1] Abrumar; Actitud de batalla",
+   "spells": [
+    {
+     "en": "Overpower",
+     "es": "Abrumar",
+     "verified": true
+    },
+    {
+     "en": "Battle Stance",
+     "es": "Actitud de batalla",
+     "verified": true
+    }
+   ],
+   "what": "Lanza Abrumar si estás en Actitud de batalla; si no, cambia a ella.",
+   "how": "Pulsa cuando el objetivo esquive (o con el talento Fragor de la sangre sobre Desgarrar). Desde otra actitud pulsa dos veces.",
+   "tip": "Maestría táctica conserva 10 de ira al cambiar de actitud."
+  },
+  {
+   "id": "interrumpir",
+   "title": "Interrupción inteligente",
+   "category": "PvP",
+   "level": 12,
+   "macro_en": "#showtooltip\n/stopcasting\n/cast [equipped:Shields,stance:1/2] Shield Bash; [stance:3,mod:shift,@focus,harm,nodead][stance:3] Pummel; Berserker Stance",
+   "macro_es": "#showtooltip\n/stopcasting\n/cast [equipped:Escudos,stance:1/2] Azote de escudo; [stance:3,mod:shift,@focus,harm,nodead][stance:3] Zurrar; Actitud rabiosa",
+   "spells": [
+    {
+     "en": "Shield Bash",
+     "es": "Azote de escudo",
+     "verified": true
+    },
+    {
+     "en": "Pummel",
+     "es": "Zurrar",
+     "verified": true
+    },
+    {
+     "en": "Berserker Stance",
+     "es": "Actitud rabiosa",
+     "verified": true
+    }
+   ],
+   "what": "Con escudo en Batalla o Defensiva usa Azote de escudo; en Actitud rabiosa usa Zurrar (al foco con Mayús); en otro caso cambia a Actitud rabiosa.",
+   "how": "Tecla única de interrupción. En la versión esES el condicional es [equipped:Escudos].",
+   "tip": "Zurrar se aprende al nivel 38. /stopcasting corta tu propio Embate si estabas lanzándolo."
+  },
+  {
+   "id": "ejecutar",
+   "title": "Ejecutar",
+   "category": "Combate",
+   "level": 24,
+   "macro_en": "#showtooltip Execute\n/startattack\n/cast [stance:1/3] Execute; Berserker Stance",
+   "macro_es": "#showtooltip Ejecutar\n/startattack\n/cast [stance:1/3] Ejecutar; Actitud rabiosa",
+   "spells": [
+    {
+     "en": "Execute",
+     "es": "Ejecutar",
+     "verified": true
+    },
+    {
+     "en": "Berserker Stance",
+     "es": "Actitud rabiosa",
+     "verified": true
+    }
+   ],
+   "what": "Lanza Ejecutar en Batalla o Rabiosa; desde Defensiva cambia a Actitud rabiosa.",
+   "how": "Spam cuando el objetivo esté por debajo del 20 % de salud.",
+   "tip": "Nombre esES no confirmado por dos fuentes: si falla, Mayús+clic desde el libro."
+  },
+  {
+   "id": "seccionar-mouseover",
+   "title": "Seccionar con mouseover",
+   "category": "PvP",
+   "level": 8,
+   "macro_en": "#showtooltip Hamstring\n/startattack\n/cast [stance:1/3,@mouseover,harm,nodead][stance:1/3] Hamstring; Battle Stance",
+   "macro_es": "#showtooltip Seccionar\n/startattack\n/cast [stance:1/3,@mouseover,harm,nodead][stance:1/3] Seccionar; Actitud de batalla",
+   "spells": [
+    {
+     "en": "Hamstring",
+     "es": "Seccionar",
+     "verified": true
+    },
+    {
+     "en": "Battle Stance",
+     "es": "Actitud de batalla",
+     "verified": true
+    }
+   ],
+   "what": "Ralentiza con Seccionar al enemigo bajo el ratón o a tu objetivo; desde Defensiva cambia a Actitud de batalla.",
+   "how": "En JcJ mantén Seccionar en quien huye; en leveo, en enemigos que huyen al quedar con poca vida.",
+   "tip": "Seccionar es cuerpo a cuerpo."
+  },
+  {
+   "id": "irritar-mouseover",
+   "title": "Irritar con mouseover",
+   "category": "Posturas",
+   "level": 10,
+   "macro_en": "#showtooltip Taunt\n/cast [stance:2,@mouseover,harm,nodead][stance:2] Taunt; Defensive Stance",
+   "macro_es": "#showtooltip Irritar\n/cast [stance:2,@mouseover,harm,nodead][stance:2] Irritar; Actitud defensiva",
+   "spells": [
+    {
+     "en": "Taunt",
+     "es": "Irritar",
+     "verified": true
+    },
+    {
+     "en": "Defensive Stance",
+     "es": "Actitud defensiva",
+     "verified": true
+    }
+   ],
+   "what": "Provoca con Irritar al enemigo bajo el ratón o a tu objetivo; si no estás en Defensiva, cambia a ella.",
+   "how": "Para tanquear: recupera a los enemigos que atacan al sanador sin cambiar de objetivo.",
+   "tip": "Irritar no activa el tiempo global en Classic."
+  },
+  {
+   "id": "hender-golpe-heroico",
+   "title": "Hender + Golpe heroico",
+   "category": "Combate",
+   "level": 10,
+   "macro_en": "#showtooltip Sunder Armor\n/startattack\n/cast [mod:shift] Heroic Strike\n/cast Sunder Armor",
+   "macro_es": "#showtooltip Hender armadura\n/startattack\n/cast [mod:shift] Golpe heroico\n/cast Hender armadura",
+   "spells": [
+    {
+     "en": "Sunder Armor",
+     "es": "Hender armadura",
+     "verified": true
+    },
+    {
+     "en": "Heroic Strike",
+     "es": "Golpe heroico",
+     "verified": true
+    }
+   ],
+   "what": "Lanza Hender armadura; con Mayús además pone en cola Golpe heroico para gastar ira sobrante.",
+   "how": "Spam para amenaza o para reducir armadura. Mantén Mayús cuando te sobre ira.",
+   "tip": "Golpe heroico va en el siguiente golpe y no usa tiempo global, así que sigue siendo una sola acción con GCD por pulsación."
+  },
+  {
+   "id": "grito-sanguinario",
+   "title": "Sanguinario + Grito de guerra",
+   "category": "Utilidad",
+   "level": 10,
+   "macro_en": "#showtooltip Battle Shout\n/cast Bloodrage\n/cast Battle Shout",
+   "macro_es": "#showtooltip Grito de guerra\n/cast Sanguinario\n/cast Grito de guerra",
+   "spells": [
+    {
+     "en": "Battle Shout",
+     "es": "Grito de guerra",
+     "verified": true
+    },
+    {
+     "en": "Bloodrage",
+     "es": "Sanguinario",
+     "verified": true
+    }
+   ],
+   "what": "Usa Sanguinario (ira gratis, sin tiempo global) y lanza Grito de guerra en la misma pulsación.",
+   "how": "Pulsa justo antes de un pull para empezar con el grito puesto e ira.",
+   "tip": "Sanguinario cuesta algo de salud y te pone en combate (ya no podrás usar Embestir)."
+  },
+  {
+   "id": "ira-rabiosa-abalorio",
+   "title": "Ira rabiosa / abalorio JcJ",
+   "category": "PvP",
+   "level": 30,
+   "macro_en": "#showtooltip\n/use [mod:shift] 14\n/cast [stance:3] Berserker Rage; Berserker Stance",
+   "macro_es": "#showtooltip\n/use [mod:shift] 14\n/cast [stance:3] Ira rabiosa; Actitud rabiosa",
+   "spells": [
+    {
+     "en": "Berserker Rage",
+     "es": "Ira rabiosa",
+     "verified": true
+    },
+    {
+     "en": "Berserker Stance",
+     "es": "Actitud rabiosa",
+     "verified": true
+    }
+   ],
+   "what": "Ira rabiosa (rompe e inmuniza al miedo) en Actitud rabiosa; con Mayús usa además el abalorio JcJ de la ranura 14.",
+   "how": "Pulsa antes de un miedo previsto o en cuanto te quiten el control. Mayús si estás aturdido o el miedo ya entró.",
+   "tip": "Pon el abalorio JcJ en la ranura inferior (14)."
+  },
+  {
+   "id": "desactivar-foco",
+   "title": "Desactivar (Desarmar)",
+   "category": "PvP",
+   "level": 18,
+   "macro_en": "#showtooltip Disarm\n/cast [stance:2,mod:shift,@focus,harm,nodead][stance:2] Disarm; Defensive Stance",
+   "macro_es": "#showtooltip Desactivar\n/cast [stance:2,mod:shift,@focus,harm,nodead][stance:2] Desactivar; Actitud defensiva",
+   "spells": [
+    {
+     "en": "Disarm",
+     "es": "Desactivar",
+     "verified": true
+    },
+    {
+     "en": "Defensive Stance",
+     "es": "Actitud defensiva",
+     "verified": true
+    }
+   ],
+   "what": "Desarma a tu objetivo o al foco con Mayús; si no estás en Defensiva, cambia a ella.",
+   "how": "Contra pícaros, guerreros y paladines con armas grandes; también en jefes de mazmorra que se pueden desarmar.",
+   "tip": "En esES la facultad se llama 'Desactivar'."
+  },
+  {
+   "id": "grito-intimidador",
+   "title": "Grito intimidador limpio",
+   "category": "PvP",
+   "level": 22,
+   "macro_en": "#showtooltip Intimidating Shout\n/stopattack\n/cast Intimidating Shout",
+   "macro_es": "#showtooltip Grito intimidador\n/stopattack\n/cast Grito intimidador",
+   "spells": [
+    {
+     "en": "Intimidating Shout",
+     "es": "Grito intimidador",
+     "verified": true
+    }
+   ],
+   "what": "Detiene el ataque automático y lanza Grito intimidador para que tu siguiente golpe no rompa el miedo.",
+   "how": "Para sobrevivir a varios enemigos o cortar a un sanador en JcJ. Reinicia el ataque después.",
+   "tip": "Nombre esES no confirmado por dos fuentes."
+  }
+ ]
+}

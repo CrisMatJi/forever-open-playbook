@@ -1,373 +1,373 @@
 {
-  "class": "druid",
-  "notes": [
-    "En el cliente esES los comandos y condicionales se escriben en inglés; solo se traducen los nombres de hechizos, formas y objetos (ej. /cast !Forma felina).",
-    "Índices de forma si aprendes las formas en el orden normal: 1 Oso (u Oso nefasto), 2 Acuática, 3 Felina, 4 Viaje, 5 Lechúcico lunar. Si tu orden es distinto, ajusta [form:N].",
-    "En Forever no existen Furia del tigre ni Rabia (Berserk): el 'powershift' clásico se sustituye por el talento Poder cambiante (40 de energía al instante por un coste alto de maná, 8 s de reutilización).",
-    "Fuego feérico es básico y se puede lanzar en forma de oso o felina sin coste (6 s de reutilización). Carga feral funciona también en forma felina (cada 30 s).",
-    "Las pociones y casi todos los consumibles se usan sin salir de la forma, así que no hace falta /cancelform para beber pociones.",
-    "Arreglo rápido exige un Rejuvenecimiento o Recrecimiento tuyo en el objetivo, pero ya no lo consume.",
-    "Una pulsación = una acción con GCD. /cancelform no activa el tiempo global, por eso se puede combinar con un hechizo."
-  ],
-  "sources": [
-    "https://rankedboost.com/world-of-warcraft/forever/macros/",
-    "https://kami-labs.fr/en/macros-wow-forever/",
-    "https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/",
-    "https://rankedboost.com/world-of-warcraft/forever/macros/druid/",
-    "https://rankedboost.com/world-of-warcraft/forever/macros/druid/feral-combat/",
-    "https://rankedboost.com/world-of-warcraft/forever/macros/druid/restoration/",
-    "https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/",
-    "https://www.warcrafttavern.com/forever/guides/druid/",
-    "https://www.warcrafttavern.com/forever/news/powershifting-is-back-sort-of-hunter-druid-deep-dive-for-wow-forever/",
-    "https://www.method.gg/wow-forever/wow-forever-druid-leveling-guide-and-talents",
-    "https://news.blizzard.com/es-es/article/24301515",
-    "https://seemeta.com/es/wow-forever/talent-calculator/druid",
-    "https://wow.gg/es/guides/wow-forever-feral-druid-beta",
-    "https://wow.gg/es/guides/wow-forever-balance-druid-beta",
-    "https://wow.gg/es/guides/wow-forever-restoration-druid-beta"
-  ],
-  "macros": [
+ "class": "druid",
+ "notes": [
+  "En el cliente esES los comandos y condicionales se escriben en inglés; solo se traducen los nombres de hechizos, formas y objetos (ej. /cast !Forma felina).",
+  "Índices de forma si aprendes las formas en el orden normal: 1 Oso (u Oso nefasto), 2 Acuática, 3 Felina, 4 Viaje, 5 Lechúcico lunar. Si tu orden es distinto, ajusta [form:N].",
+  "En Forever no existen Furia del tigre ni Rabia (Berserk): el 'powershift' clásico se sustituye por el talento Poder cambiante (40 de energía al instante por un coste alto de maná, 8 s de reutilización).",
+  "Fuego feérico es básico y se puede lanzar en forma de oso o felina sin coste (6 s de reutilización). Carga feral funciona también en forma felina (cada 30 s).",
+  "Las pociones y casi todos los consumibles se usan sin salir de la forma, así que no hace falta /cancelform para beber pociones.",
+  "Arreglo rápido exige un Rejuvenecimiento o Recrecimiento tuyo en el objetivo, pero ya no lo consume.",
+  "Una pulsación = una acción con GCD. /cancelform no activa el tiempo global, por eso se puede combinar con un hechizo."
+ ],
+ "sources": [
+  "https://rankedboost.com/world-of-warcraft/forever/macros/",
+  "https://kami-labs.fr/en/macros-wow-forever/",
+  "https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/druid/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/druid/feral-combat/",
+  "https://rankedboost.com/world-of-warcraft/forever/macros/druid/restoration/",
+  "https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/",
+  "https://www.warcrafttavern.com/forever/guides/druid/",
+  "https://www.warcrafttavern.com/forever/news/powershifting-is-back-sort-of-hunter-druid-deep-dive-for-wow-forever/",
+  "https://www.method.gg/wow-forever/wow-forever-druid-leveling-guide-and-talents",
+  "https://news.blizzard.com/es-es/article/24301515",
+  "https://seemeta.com/es/wow-forever/talent-calculator/druid",
+  "https://wow.gg/es/guides/wow-forever-feral-druid-beta",
+  "https://wow.gg/es/guides/wow-forever-balance-druid-beta",
+  "https://wow.gg/es/guides/wow-forever-restoration-druid-beta"
+ ],
+ "macros": [
+  {
+   "id": "colera-fuegolunar",
+   "title": "Cólera / Fuegolunar",
+   "category": "Leveo",
+   "level": 4,
+   "macro_en": "#showtooltip\n/cast [mod:shift,@mouseover,harm,nodead][mod:shift] Moonfire; [@mouseover,harm,nodead][] Wrath",
+   "macro_es": "#showtooltip\n/cast [mod:shift,@mouseover,harm,nodead][mod:shift] Fuegolunar; [@mouseover,harm,nodead][] Cólera",
+   "spells": [
     {
-      "id": "colera-fuegolunar",
-      "title": "Cólera / Fuegolunar",
-      "category": "Leveo",
-      "level": 4,
-      "macro_en": "#showtooltip\n/cast [mod:shift,@mouseover,harm,nodead][mod:shift] Moonfire; [@mouseover,harm,nodead][] Wrath",
-      "macro_es": "#showtooltip\n/cast [mod:shift,@mouseover,harm,nodead][mod:shift] Fuegolunar; [@mouseover,harm,nodead][] Cólera",
-      "spells": [
-        {
-          "en": "Moonfire",
-          "es": "Fuegolunar",
-          "verified": true
-        },
-        {
-          "en": "Wrath",
-          "es": "Cólera",
-          "verified": true
-        }
-      ],
-      "what": "Lanza Cólera al mouseover o al objetivo; con Shift, Fuegolunar (para repartir el DoT o rematar en movimiento).",
-      "how": "Botón principal del 1 al 10 y relleno de Equilibrio. Shift+tecla mientras te mueves.",
-      "tip": "Con el talento Eclipse, cada Cólera acelera los siguientes Fuego estelar."
+     "en": "Moonfire",
+     "es": "Fuegolunar",
+     "verified": true
     },
     {
-      "id": "oso-inteligente",
-      "title": "Oso: forma + Machaque/Flagelo",
-      "category": "Formas",
-      "level": 10,
-      "macro_en": "#showtooltip\n/startattack\n/cast [noform:1] Bear Form; [mod:shift] Swipe; Maul",
-      "macro_es": "#showtooltip\n/startattack\n/cast [noform:1] Forma de oso; [mod:shift] Flagelo; Machaque",
-      "spells": [
-        {
-          "en": "Bear Form",
-          "es": "Forma de oso",
-          "verified": true
-        },
-        {
-          "en": "Swipe",
-          "es": "Flagelo",
-          "verified": true
-        },
-        {
-          "en": "Maul",
-          "es": "Machaque",
-          "verified": true
-        }
-      ],
-      "what": "Si no estás en oso, entra en Forma de oso; ya en forma, encola Machaque en el siguiente golpe, o Flagelo con Shift para varios enemigos. Siempre activa el autoataque.",
-      "how": "Tecla principal de oso (del 10 al 20 al subir de nivel, o tanque). Pulsa repetidamente.",
-      "tip": "Cuando aprendas Forma de oso nefasto (talento, nivel 40) cambia el nombre en la macro. Flagelo llega al 16."
-    },
-    {
-      "id": "apertura-felina",
-      "title": "Acechar y apertura",
-      "category": "Formas",
-      "level": 20,
-      "macro_en": "#showtooltip\n/cast [noform:3] !Cat Form; [nostealth,nocombat] Prowl; [mod:shift] Pounce; Ravage",
-      "macro_es": "#showtooltip\n/cast [noform:3] !Forma felina; [nostealth,nocombat] Acechar; [mod:shift] Lanzarse; Devastar",
-      "spells": [
-        {
-          "en": "Cat Form",
-          "es": "Forma felina",
-          "verified": true
-        },
-        {
-          "en": "Prowl",
-          "es": "Acechar",
-          "verified": true
-        },
-        {
-          "en": "Pounce",
-          "es": "Lanzarse",
-          "verified": true
-        },
-        {
-          "en": "Ravage",
-          "es": "Devastar",
-          "verified": true
-        }
-      ],
-      "what": "Paso a paso: entra en Forma felina, luego Acechar, y desde sigilo abre con Devastar (o Lanzarse con Shift para aturdir).",
-      "how": "Pulsa 2-3 veces al acercarte a un enemigo. Colócate detrás antes de la última pulsación.",
-      "tip": "Devastar llega al 32 y Lanzarse al 36; hasta entonces sustituye Devastar por Triturar."
-    },
-    {
-      "id": "generador-felino",
-      "title": "Triturar / Zarpa / Poder cambiante",
-      "category": "Combate",
-      "level": 20,
-      "macro_en": "#showtooltip\n/startattack\n/cast [mod:ctrl] Shifting Power; [mod:alt] Faerie Fire; [mod:shift] Claw; Shred",
-      "macro_es": "#showtooltip\n/startattack\n/cast [mod:ctrl] Poder cambiante; [mod:alt] Fuego feérico; [mod:shift] Zarpa; Triturar",
-      "spells": [
-        {
-          "en": "Shifting Power",
-          "es": "Poder cambiante",
-          "verified": true
-        },
-        {
-          "en": "Faerie Fire",
-          "es": "Fuego feérico",
-          "verified": true
-        },
-        {
-          "en": "Claw",
-          "es": "Zarpa",
-          "verified": true
-        },
-        {
-          "en": "Shred",
-          "es": "Triturar",
-          "verified": true
-        }
-      ],
-      "what": "Generador de combos: Triturar (desde la espalda), Shift Zarpa (de frente), Alt Fuego feérico sin salir de felino, Ctrl Poder cambiante para recuperar 40 de energía.",
-      "how": "Tecla 1 en felino. Ctrl+1 cuando te quedes sin energía y tengas maná: es el sustituto del antiguo powershift.",
-      "tip": "Poder cambiante es talento de Combate feral (requiere Disciplina depredadora); sin él, Ctrl no hace nada."
-    },
-    {
-      "id": "remate-felino",
-      "title": "Destripar / Mordedura feroz",
-      "category": "Combate",
-      "level": 20,
-      "macro_en": "#showtooltip\n/startattack\n/cast [mod:shift] Ferocious Bite; Rip",
-      "macro_es": "#showtooltip\n/startattack\n/cast [mod:shift] Mordedura feroz; Destripar",
-      "spells": [
-        {
-          "en": "Ferocious Bite",
-          "es": "Mordedura feroz",
-          "verified": true
-        },
-        {
-          "en": "Rip",
-          "es": "Destripar",
-          "verified": true
-        }
-      ],
-      "what": "Finalizador: Destripar sobre objetivos que vivirán lo suficiente; Shift para Mordedura feroz cuando van a morir.",
-      "how": "Tecla 2 en felino, con 4-5 puntos de combo.",
-      "tip": "En Forever Mordedura feroz tiene un nuevo rango 1 en el nivel 24 y ya no convierte la energía sobrante."
-    },
-    {
-      "id": "cambio-felino-raices",
-      "title": "Cambio de forma (quitar raíces)",
-      "category": "PvP",
-      "level": 20,
-      "macro_en": "#showtooltip Cat Form\n/use [mod:shift] 13\n/cancelform [form]\n/cast Cat Form",
-      "macro_es": "#showtooltip Forma felina\n/use [mod:shift] 13\n/cancelform [form]\n/cast Forma felina",
-      "spells": [
-        {
-          "en": "Cat Form",
-          "es": "Forma felina",
-          "verified": true
-        }
-      ],
-      "what": "Sale de la forma actual y vuelve a entrar en Forma felina en una sola pulsación, eliminando raíces y ralentizaciones. Con Shift usa además el abalorio superior (insignia PvP).",
-      "how": "Tecla de escape en PvP o contra mobs que enraízan. Shift+tecla si estás aturdido o con un control que la forma no quita.",
-      "tip": "En Forever cambiar de forma ya no regala energía: para eso está Poder cambiante. Cuesta maná y activa el tiempo global."
-    },
-    {
-      "id": "bramido-taunt",
-      "title": "Bramido / Clamor desafiante",
-      "category": "Combate",
-      "level": 10,
-      "macro_en": "#showtooltip\n/cast [mod:ctrl] Challenging Roar; [@mouseover,harm,nodead][] Growl",
-      "macro_es": "#showtooltip\n/cast [mod:ctrl] Clamor desafiante; [@mouseover,harm,nodead][] Bramido",
-      "spells": [
-        {
-          "en": "Challenging Roar",
-          "es": "Clamor desafiante",
-          "verified": true
-        },
-        {
-          "en": "Growl",
-          "es": "Bramido",
-          "verified": true
-        }
-      ],
-      "what": "Provoca al enemigo bajo el ratón (o a tu objetivo) con Bramido; con Ctrl, Clamor desafiante provoca a todos los cercanos.",
-      "how": "Tecla de tanque. Pasa el ratón por el mob suelto y pulsa sin perder tu objetivo.",
-      "tip": "Clamor desafiante llega al 28 y tiene reutilización larga: guárdalo para emergencias."
-    },
-    {
-      "id": "carga-azote",
-      "title": "Carga feral / Azote",
-      "category": "PvP",
-      "level": 20,
-      "macro_en": "#showtooltip\n/cast [form:1,mod:shift] Bash; [@mouseover,harm,nodead][] Feral Charge",
-      "macro_es": "#showtooltip\n/cast [form:1,mod:shift] Azote; [@mouseover,harm,nodead][] Carga feral",
-      "spells": [
-        {
-          "en": "Bash",
-          "es": "Azote",
-          "verified": true
-        },
-        {
-          "en": "Feral Charge",
-          "es": "Carga feral",
-          "verified": true
-        }
-      ],
-      "what": "Carga feral contra el mouseover o el objetivo (en oso o en felino); en oso con Shift, Azote para aturdir.",
-      "how": "Pulsa a más de 8 m para acercarte; Shift+tecla en cuerpo a cuerpo para interrumpir/aturdir.",
-      "tip": "Carga feral es talento; en felino tiene 30 s de reutilización y no interrumpe ni inmoviliza."
-    },
-    {
-      "id": "curar-desde-forma",
-      "title": "Curarse desde cualquier forma",
-      "category": "Curación",
-      "level": 12,
-      "macro_en": "#showtooltip\n/cancelform [form]\n/cast [mod:shift,@mouseover,help,nodead][mod:shift,@player] Rejuvenation; [@mouseover,help,nodead][help,nodead][@player] Regrowth",
-      "macro_es": "#showtooltip\n/cancelform [form]\n/cast [mod:shift,@mouseover,help,nodead][mod:shift,@player] Rejuvenecimiento; [@mouseover,help,nodead][help,nodead][@player] Recrecimiento",
-      "spells": [
-        {
-          "en": "Rejuvenation",
-          "es": "Rejuvenecimiento",
-          "verified": true
-        },
-        {
-          "en": "Regrowth",
-          "es": "Recrecimiento",
-          "verified": true
-        }
-      ],
-      "what": "Sale de oso/felino/viaje y lanza Recrecimiento (o Rejuvenecimiento con Shift) en el mouseover, el aliado objetivo o en ti, en una sola pulsación.",
-      "how": "Tecla de autocuración para feral y de apoyo en grupo. Tras curar vuelve a la forma con su tecla.",
-      "tip": "También te saca de Lechúcico lunar, que no permite sanar."
-    },
-    {
-      "id": "rejuv-arreglo",
-      "title": "Rejuvenecimiento / Arreglo rápido",
-      "category": "Curación",
-      "level": 4,
-      "macro_en": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl,@player] Swiftmend; [mod:shift] Wild Growth; [@mouseover,help,nodead][help,nodead][@player] Rejuvenation",
-      "macro_es": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl,@player] Arreglo rápido; [mod:shift] Crecimiento salvaje; [@mouseover,help,nodead][help,nodead][@player] Rejuvenecimiento",
-      "spells": [
-        {
-          "en": "Swiftmend",
-          "es": "Arreglo rápido",
-          "verified": true
-        },
-        {
-          "en": "Wild Growth",
-          "es": "Crecimiento salvaje",
-          "verified": true
-        },
-        {
-          "en": "Rejuvenation",
-          "es": "Rejuvenecimiento",
-          "verified": true
-        }
-      ],
-      "what": "Rejuvenecimiento por mouseover; Ctrl Arreglo rápido sobre ese mismo aliado; Shift Crecimiento salvaje para todo el grupo.",
-      "how": "Tecla principal de Restauración sobre los marcos de grupo.",
-      "tip": "Arreglo rápido (talento de 16) necesita tu Rejuvenecimiento o Recrecimiento en el objetivo y no lo consume. Crecimiento salvaje es el talento de 31."
-    },
-    {
-      "id": "enervar-mouseover",
-      "title": "Enervar por mouseover",
-      "category": "Utilidad",
-      "level": 40,
-      "macro_en": "#showtooltip Innervate\n/cancelform [form]\n/cast [@mouseover,help,nodead][help,nodead][@player] Innervate",
-      "macro_es": "#showtooltip Enervar\n/cancelform [form]\n/cast [@mouseover,help,nodead][help,nodead][@player] Enervar",
-      "spells": [
-        {
-          "en": "Innervate",
-          "es": "Enervar",
-          "verified": true
-        }
-      ],
-      "what": "Sale de la forma y lanza Enervar sobre el aliado bajo el ratón, tu objetivo o ti mismo.",
-      "how": "Barra de utilidad. Pasa el ratón por el sanador sin maná y pulsa.",
-      "tip": "Cada pulsación te saca de la forma aunque Enervar esté en reutilización: no la pongas en la barra de tanque."
-    },
-    {
-      "id": "renacer-revivir",
-      "title": "Renacer / Revivir",
-      "category": "Utilidad",
-      "level": 12,
-      "macro_en": "#showtooltip\n/cancelform [@mouseover,help,dead][help,dead]\n/cast [combat,@mouseover,help,dead][combat,help,dead] Rebirth; [@mouseover,help,dead][help,dead] Revive",
-      "macro_es": "#showtooltip\n/cancelform [@mouseover,help,dead][help,dead]\n/cast [combat,@mouseover,help,dead][combat,help,dead] Renacer; [@mouseover,help,dead][help,dead] Revivir",
-      "spells": [
-        {
-          "en": "Rebirth",
-          "es": "Renacer",
-          "verified": true
-        },
-        {
-          "en": "Revive",
-          "es": "Revivir",
-          "verified": true
-        }
-      ],
-      "what": "Resucita al aliado muerto bajo el ratón o tu objetivo: en combate con Renacer y fuera de combate con Revivir. Solo sale de la forma si hay un muerto que resucitar.",
-      "how": "Barra de utilidad; útil en mazmorras.",
-      "tip": "Renacer llega al 20, consume reactivo y tiene 30 min de reutilización. Revivir es nuevo en Forever (nivel 12)."
-    },
-    {
-      "id": "forma-viaje",
-      "title": "Forma de viaje / acuática / felina",
-      "category": "Formas",
-      "level": 16,
-      "macro_en": "#showtooltip\n/dismount [mounted]\n/cast [swimming] Aquatic Form; [outdoors] Travel Form; Cat Form",
-      "macro_es": "#showtooltip\n/dismount [mounted]\n/cast [swimming] Forma acuática; [outdoors] Forma de viaje; Forma felina",
-      "spells": [
-        {
-          "en": "Aquatic Form",
-          "es": "Forma acuática",
-          "verified": true
-        },
-        {
-          "en": "Travel Form",
-          "es": "Forma de viaje",
-          "verified": true
-        },
-        {
-          "en": "Cat Form",
-          "es": "Forma felina",
-          "verified": true
-        }
-      ],
-      "what": "Forma acuática en el agua, Forma de viaje al aire libre y Forma felina en interiores. Pulsar de nuevo te devuelve a forma normal.",
-      "how": "Tecla de movimiento (ej. Z). Cambiar de forma también elimina ralentizaciones.",
-      "tip": "Forma de viaje llega al 30; hasta entonces sale Forma felina (20) al aire libre."
-    },
-    {
-      "id": "raices-foco",
-      "title": "Enredaderas con foco",
-      "category": "PvP",
-      "level": 8,
-      "macro_en": "#showtooltip Entangling Roots\n/cancelform [form:1/2/3/4]\n/cast [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Entangling Roots",
-      "macro_es": "#showtooltip Enredaderas\n/cancelform [form:1/2/3/4]\n/cast [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Enredaderas",
-      "spells": [
-        {
-          "en": "Entangling Roots",
-          "es": "Enredaderas",
-          "verified": true
-        }
-      ],
-      "what": "Sale de oso/felino/viaje y enraíza al mouseover o al objetivo; con Shift, a tu foco sin cambiar de objetivo.",
-      "how": "Tecla de control. Pon un /focus sobre el enemigo cuerpo a cuerpo y Shift+tecla para enraizarlo mientras atacas a otro.",
-      "tip": "No te saca de Lechúcico lunar (forma 5). En Forever Enredaderas se puede lanzar en interiores."
+     "en": "Wrath",
+     "es": "Cólera",
+     "verified": true
     }
-  ]
+   ],
+   "what": "Lanza Cólera al mouseover o al objetivo; con Shift, Fuegolunar (para repartir el DoT o rematar en movimiento).",
+   "how": "Botón principal del 1 al 10 y relleno de Equilibrio. Shift+tecla mientras te mueves.",
+   "tip": "Con el talento Eclipse, cada Cólera acelera los siguientes Fuego estelar."
+  },
+  {
+   "id": "oso-inteligente",
+   "title": "Oso: forma + Machaque/Flagelo",
+   "category": "Formas",
+   "level": 10,
+   "macro_en": "#showtooltip\n/startattack\n/cast [noform:1] Bear Form; [mod:shift] Swipe; Maul",
+   "macro_es": "#showtooltip\n/startattack\n/cast [noform:1] Forma de oso; [mod:shift] Flagelo; Machaque",
+   "spells": [
+    {
+     "en": "Bear Form",
+     "es": "Forma de oso",
+     "verified": true
+    },
+    {
+     "en": "Swipe",
+     "es": "Flagelo",
+     "verified": true
+    },
+    {
+     "en": "Maul",
+     "es": "Machaque",
+     "verified": true
+    }
+   ],
+   "what": "Si no estás en oso, entra en Forma de oso; ya en forma, encola Machaque en el siguiente golpe, o Flagelo con Shift para varios enemigos. Siempre activa el autoataque.",
+   "how": "Tecla principal de oso (del 10 al 20 al subir de nivel, o tanque). Pulsa repetidamente.",
+   "tip": "Cuando aprendas Forma de oso nefasto (talento, nivel 40) cambia el nombre en la macro. Flagelo llega al 16."
+  },
+  {
+   "id": "apertura-felina",
+   "title": "Acechar y apertura",
+   "category": "Formas",
+   "level": 20,
+   "macro_en": "#showtooltip\n/cast [noform:3] !Cat Form; [nostealth,nocombat] Prowl; [mod:shift] Pounce; Ravage",
+   "macro_es": "#showtooltip\n/cast [noform:3] !Forma felina; [nostealth,nocombat] Acechar; [mod:shift] Lanzarse; Devastar",
+   "spells": [
+    {
+     "en": "Cat Form",
+     "es": "Forma felina",
+     "verified": true
+    },
+    {
+     "en": "Prowl",
+     "es": "Acechar",
+     "verified": true
+    },
+    {
+     "en": "Pounce",
+     "es": "Lanzarse",
+     "verified": true
+    },
+    {
+     "en": "Ravage",
+     "es": "Devastar",
+     "verified": true
+    }
+   ],
+   "what": "Paso a paso: entra en Forma felina, luego Acechar, y desde sigilo abre con Devastar (o Lanzarse con Shift para aturdir).",
+   "how": "Pulsa 2-3 veces al acercarte a un enemigo. Colócate detrás antes de la última pulsación.",
+   "tip": "Devastar llega al 32 y Lanzarse al 36; hasta entonces sustituye Devastar por Triturar."
+  },
+  {
+   "id": "generador-felino",
+   "title": "Triturar / Zarpa / Poder cambiante",
+   "category": "Combate",
+   "level": 20,
+   "macro_en": "#showtooltip\n/startattack\n/cast [mod:ctrl] Shifting Power; [mod:alt] Faerie Fire; [mod:shift] Claw; Shred",
+   "macro_es": "#showtooltip\n/startattack\n/cast [mod:ctrl] Poder cambiante; [mod:alt] Fuego feérico; [mod:shift] Zarpa; Triturar",
+   "spells": [
+    {
+     "en": "Shifting Power",
+     "es": "Poder cambiante",
+     "verified": true
+    },
+    {
+     "en": "Faerie Fire",
+     "es": "Fuego feérico",
+     "verified": true
+    },
+    {
+     "en": "Claw",
+     "es": "Zarpa",
+     "verified": true
+    },
+    {
+     "en": "Shred",
+     "es": "Triturar",
+     "verified": true
+    }
+   ],
+   "what": "Generador de combos: Triturar (desde la espalda), Shift Zarpa (de frente), Alt Fuego feérico sin salir de felino, Ctrl Poder cambiante para recuperar 40 de energía.",
+   "how": "Tecla 1 en felino. Ctrl+1 cuando te quedes sin energía y tengas maná: es el sustituto del antiguo powershift.",
+   "tip": "Poder cambiante es talento de Combate feral (requiere Disciplina depredadora); sin él, Ctrl no hace nada."
+  },
+  {
+   "id": "remate-felino",
+   "title": "Destripar / Mordedura feroz",
+   "category": "Combate",
+   "level": 20,
+   "macro_en": "#showtooltip\n/startattack\n/cast [mod:shift] Ferocious Bite; Rip",
+   "macro_es": "#showtooltip\n/startattack\n/cast [mod:shift] Mordedura feroz; Destripar",
+   "spells": [
+    {
+     "en": "Ferocious Bite",
+     "es": "Mordedura feroz",
+     "verified": true
+    },
+    {
+     "en": "Rip",
+     "es": "Destripar",
+     "verified": true
+    }
+   ],
+   "what": "Finalizador: Destripar sobre objetivos que vivirán lo suficiente; Shift para Mordedura feroz cuando van a morir.",
+   "how": "Tecla 2 en felino, con 4-5 puntos de combo.",
+   "tip": "En Forever Mordedura feroz tiene un nuevo rango 1 en el nivel 24 y ya no convierte la energía sobrante."
+  },
+  {
+   "id": "cambio-felino-raices",
+   "title": "Cambio de forma (quitar raíces)",
+   "category": "PvP",
+   "level": 20,
+   "macro_en": "#showtooltip Cat Form\n/use [mod:shift] 13\n/cancelform [form]\n/cast Cat Form",
+   "macro_es": "#showtooltip Forma felina\n/use [mod:shift] 13\n/cancelform [form]\n/cast Forma felina",
+   "spells": [
+    {
+     "en": "Cat Form",
+     "es": "Forma felina",
+     "verified": true
+    }
+   ],
+   "what": "Sale de la forma actual y vuelve a entrar en Forma felina en una sola pulsación, eliminando raíces y ralentizaciones. Con Shift usa además el abalorio superior (insignia PvP).",
+   "how": "Tecla de escape en PvP o contra mobs que enraízan. Shift+tecla si estás aturdido o con un control que la forma no quita.",
+   "tip": "En Forever cambiar de forma ya no regala energía: para eso está Poder cambiante. Cuesta maná y activa el tiempo global."
+  },
+  {
+   "id": "bramido-taunt",
+   "title": "Bramido / Clamor desafiante",
+   "category": "Combate",
+   "level": 10,
+   "macro_en": "#showtooltip\n/cast [mod:ctrl] Challenging Roar; [@mouseover,harm,nodead][] Growl",
+   "macro_es": "#showtooltip\n/cast [mod:ctrl] Clamor desafiante; [@mouseover,harm,nodead][] Bramido",
+   "spells": [
+    {
+     "en": "Challenging Roar",
+     "es": "Clamor desafiante",
+     "verified": true
+    },
+    {
+     "en": "Growl",
+     "es": "Bramido",
+     "verified": true
+    }
+   ],
+   "what": "Provoca al enemigo bajo el ratón (o a tu objetivo) con Bramido; con Ctrl, Clamor desafiante provoca a todos los cercanos.",
+   "how": "Tecla de tanque. Pasa el ratón por el mob suelto y pulsa sin perder tu objetivo.",
+   "tip": "Clamor desafiante llega al 28 y tiene reutilización larga: guárdalo para emergencias."
+  },
+  {
+   "id": "carga-azote",
+   "title": "Carga feral / Azote",
+   "category": "PvP",
+   "level": 20,
+   "macro_en": "#showtooltip\n/cast [form:1,mod:shift] Bash; [@mouseover,harm,nodead][] Feral Charge",
+   "macro_es": "#showtooltip\n/cast [form:1,mod:shift] Azote; [@mouseover,harm,nodead][] Carga feral",
+   "spells": [
+    {
+     "en": "Bash",
+     "es": "Azote",
+     "verified": true
+    },
+    {
+     "en": "Feral Charge",
+     "es": "Carga feral",
+     "verified": true
+    }
+   ],
+   "what": "Carga feral contra el mouseover o el objetivo (en oso o en felino); en oso con Shift, Azote para aturdir.",
+   "how": "Pulsa a más de 8 m para acercarte; Shift+tecla en cuerpo a cuerpo para interrumpir/aturdir.",
+   "tip": "Carga feral es talento; en felino tiene 30 s de reutilización y no interrumpe ni inmoviliza."
+  },
+  {
+   "id": "curar-desde-forma",
+   "title": "Curarse desde cualquier forma",
+   "category": "Curación",
+   "level": 12,
+   "macro_en": "#showtooltip\n/cancelform [form]\n/cast [mod:shift,@mouseover,help,nodead][mod:shift,@player] Rejuvenation; [@mouseover,help,nodead][help,nodead][@player] Regrowth",
+   "macro_es": "#showtooltip\n/cancelform [form]\n/cast [mod:shift,@mouseover,help,nodead][mod:shift,@player] Rejuvenecimiento; [@mouseover,help,nodead][help,nodead][@player] Recrecimiento",
+   "spells": [
+    {
+     "en": "Rejuvenation",
+     "es": "Rejuvenecimiento",
+     "verified": true
+    },
+    {
+     "en": "Regrowth",
+     "es": "Recrecimiento",
+     "verified": true
+    }
+   ],
+   "what": "Sale de oso/felino/viaje y lanza Recrecimiento (o Rejuvenecimiento con Shift) en el mouseover, el aliado objetivo o en ti, en una sola pulsación.",
+   "how": "Tecla de autocuración para feral y de apoyo en grupo. Tras curar vuelve a la forma con su tecla.",
+   "tip": "También te saca de Lechúcico lunar, que no permite sanar."
+  },
+  {
+   "id": "rejuv-arreglo",
+   "title": "Rejuvenecimiento / Arreglo rápido",
+   "category": "Curación",
+   "level": 4,
+   "macro_en": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl,@player] Swiftmend; [mod:shift] Wild Growth; [@mouseover,help,nodead][help,nodead][@player] Rejuvenation",
+   "macro_es": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl,@player] Arreglo rápido; [mod:shift] Crecimiento salvaje; [@mouseover,help,nodead][help,nodead][@player] Rejuvenecimiento",
+   "spells": [
+    {
+     "en": "Swiftmend",
+     "es": "Arreglo rápido",
+     "verified": true
+    },
+    {
+     "en": "Wild Growth",
+     "es": "Crecimiento salvaje",
+     "verified": true
+    },
+    {
+     "en": "Rejuvenation",
+     "es": "Rejuvenecimiento",
+     "verified": true
+    }
+   ],
+   "what": "Rejuvenecimiento por mouseover; Ctrl Arreglo rápido sobre ese mismo aliado; Shift Crecimiento salvaje para todo el grupo.",
+   "how": "Tecla principal de Restauración sobre los marcos de grupo.",
+   "tip": "Arreglo rápido (talento de 16) necesita tu Rejuvenecimiento o Recrecimiento en el objetivo y no lo consume. Crecimiento salvaje es el talento de 31."
+  },
+  {
+   "id": "enervar-mouseover",
+   "title": "Enervar por mouseover",
+   "category": "Utilidad",
+   "level": 40,
+   "macro_en": "#showtooltip Innervate\n/cancelform [form]\n/cast [@mouseover,help,nodead][help,nodead][@player] Innervate",
+   "macro_es": "#showtooltip Enervar\n/cancelform [form]\n/cast [@mouseover,help,nodead][help,nodead][@player] Enervar",
+   "spells": [
+    {
+     "en": "Innervate",
+     "es": "Enervar",
+     "verified": true
+    }
+   ],
+   "what": "Sale de la forma y lanza Enervar sobre el aliado bajo el ratón, tu objetivo o ti mismo.",
+   "how": "Barra de utilidad. Pasa el ratón por el sanador sin maná y pulsa.",
+   "tip": "Cada pulsación te saca de la forma aunque Enervar esté en reutilización: no la pongas en la barra de tanque."
+  },
+  {
+   "id": "renacer-revivir",
+   "title": "Renacer / Revivir",
+   "category": "Utilidad",
+   "level": 12,
+   "macro_en": "#showtooltip\n/cancelform [@mouseover,help,dead][help,dead]\n/cast [combat,@mouseover,help,dead][combat,help,dead] Rebirth; [@mouseover,help,dead][help,dead] Revive",
+   "macro_es": "#showtooltip\n/cancelform [@mouseover,help,dead][help,dead]\n/cast [combat,@mouseover,help,dead][combat,help,dead] Renacer; [@mouseover,help,dead][help,dead] Revivir",
+   "spells": [
+    {
+     "en": "Rebirth",
+     "es": "Renacer",
+     "verified": true
+    },
+    {
+     "en": "Revive",
+     "es": "Revivir",
+     "verified": true
+    }
+   ],
+   "what": "Resucita al aliado muerto bajo el ratón o tu objetivo: en combate con Renacer y fuera de combate con Revivir. Solo sale de la forma si hay un muerto que resucitar.",
+   "how": "Barra de utilidad; útil en mazmorras.",
+   "tip": "Renacer llega al 20, consume reactivo y tiene 30 min de reutilización. Revivir es nuevo en Forever (nivel 12)."
+  },
+  {
+   "id": "forma-viaje",
+   "title": "Forma de viaje / acuática / felina",
+   "category": "Formas",
+   "level": 16,
+   "macro_en": "#showtooltip\n/dismount [mounted]\n/cast [swimming] Aquatic Form; [outdoors] Travel Form; Cat Form",
+   "macro_es": "#showtooltip\n/dismount [mounted]\n/cast [swimming] Forma acuática; [outdoors] Forma de viaje; Forma felina",
+   "spells": [
+    {
+     "en": "Aquatic Form",
+     "es": "Forma acuática",
+     "verified": true
+    },
+    {
+     "en": "Travel Form",
+     "es": "Forma de viaje",
+     "verified": true
+    },
+    {
+     "en": "Cat Form",
+     "es": "Forma felina",
+     "verified": true
+    }
+   ],
+   "what": "Forma acuática en el agua, Forma de viaje al aire libre y Forma felina en interiores. Pulsar de nuevo te devuelve a forma normal.",
+   "how": "Tecla de movimiento (ej. Z). Cambiar de forma también elimina ralentizaciones.",
+   "tip": "Forma de viaje llega al 30; hasta entonces sale Forma felina (20) al aire libre."
+  },
+  {
+   "id": "raices-foco",
+   "title": "Enredaderas con foco",
+   "category": "PvP",
+   "level": 8,
+   "macro_en": "#showtooltip Entangling Roots\n/cancelform [form:1/2/3/4]\n/cast [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Entangling Roots",
+   "macro_es": "#showtooltip Enredaderas\n/cancelform [form:1/2/3/4]\n/cast [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Enredaderas",
+   "spells": [
+    {
+     "en": "Entangling Roots",
+     "es": "Enredaderas",
+     "verified": true
+    }
+   ],
+   "what": "Sale de oso/felino/viaje y enraíza al mouseover o al objetivo; con Shift, a tu foco sin cambiar de objetivo.",
+   "how": "Tecla de control. Pon un /focus sobre el enemigo cuerpo a cuerpo y Shift+tecla para enraizarlo mientras atacas a otro.",
+   "tip": "No te saca de Lechúcico lunar (forma 5). En Forever Enredaderas se puede lanzar en interiores."
+  }
+ ]
 }
