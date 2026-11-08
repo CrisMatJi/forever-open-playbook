@@ -1,0 +1,388 @@
+{
+  "class": "warlock",
+  "notes": [
+    "En el cliente esES los comandos y condicionales van en inglés; solo se traducen nombres de hechizos y objetos.",
+    "En Forever Agonía y Fatalidad son Terrores (Banes), no maldiciones: puedes tener un Terror y una Maldición tuya a la vez en el mismo objetivo, pero solo un Terror.",
+    "Maldición de las Sombras desapareció; Maldición de los Elementos cubre todas las escuelas mágicas. Maldición de Temeridad ya no aumenta el daño recibido.",
+    "Arruinar (Wrack) es el talento de 31 puntos de Aflicción: canalizado de 6 s que aumenta un 10 % el daño de tus otros efectos de Sombras.",
+    "El botón 'Quieto' de la mascota se sustituyó por 'Mover a', así que estas macros usan /petfollow y /petattack, no /petstay.",
+    "Las macros de mascota usan /cast con la habilidad del demonio (Bloqueo de hechizo, Seducción): no activan tu tiempo global."
+  ],
+  "sources": [
+    "https://rankedboost.com/world-of-warcraft/forever/macros/",
+    "https://kami-labs.fr/en/macros-wow-forever/",
+    "https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/",
+    "https://rankedboost.com/world-of-warcraft/forever/macros/warlock/",
+    "https://rankedboost.com/world-of-warcraft/forever/macros/warlock/affliction/",
+    "https://www.warcrafttavern.com/forever/guides/warlock/",
+    "https://www.method.gg/wow-forever/wow-forever-warlock-leveling-guide-and-talents",
+    "https://warcraft.wiki.gg/wiki/Wrack",
+    "https://news.blizzard.com/es-es/article/24310968",
+    "https://seemeta.com/es/wow-forever/talent-calculator/warlock",
+    "https://wow.gg/es/guides/wow-forever-affliction-warlock-beta",
+    "https://wow.gg/es/guides/wow-forever-demonology-warlock-beta",
+    "https://wow.gg/es/guides/wow-forever-destruction-warlock-beta"
+  ],
+  "macros": [
+    {
+      "id": "descarga-mascota",
+      "title": "Descarga + ataque de mascota",
+      "category": "Mascota",
+      "level": 1,
+      "macro_en": "#showtooltip Shadow Bolt\n/petfollow [mod:ctrl]\n/stopmacro [mod:ctrl]\n/petattack [harm,nodead]\n/cast [harm,nodead] Shadow Bolt",
+      "macro_es": "#showtooltip Descarga de las Sombras\n/petfollow [mod:ctrl]\n/stopmacro [mod:ctrl]\n/petattack [harm,nodead]\n/cast [harm,nodead] Descarga de las Sombras",
+      "spells": [
+        {
+          "en": "Shadow Bolt",
+          "es": "Descarga de las Sombras",
+          "verified": true
+        }
+      ],
+      "what": "Manda a tu demonio atacar y lanza Descarga de las Sombras sobre tu objetivo. Con Ctrl, el demonio vuelve contigo y no se lanza nada.",
+      "how": "Tecla 1 al subir de nivel. Ctrl+1 si la mascota se va a un grupo que no quieres tirar."
+    },
+    {
+      "id": "dots-mouseover",
+      "title": "Corrupción / Inmolar",
+      "category": "Combate",
+      "level": 4,
+      "macro_en": "#showtooltip\n/cast [mod:shift,@mouseover,harm,nodead][mod:shift] Immolate; [@mouseover,harm,nodead][] Corruption",
+      "macro_es": "#showtooltip\n/cast [mod:shift,@mouseover,harm,nodead][mod:shift] Inmolar; [@mouseover,harm,nodead][] Corrupción",
+      "spells": [
+        {
+          "en": "Immolate",
+          "es": "Inmolar",
+          "verified": true
+        },
+        {
+          "en": "Corruption",
+          "es": "Corrupción",
+          "verified": true
+        }
+      ],
+      "what": "Aplica Corrupción al mouseover o al objetivo; con Shift, Inmolar.",
+      "how": "Pasa el ratón por cada mob del grupo y pulsa para repartir DoTs sin cambiar de objetivo."
+    },
+    {
+      "id": "terrores",
+      "title": "Terror de agonía / fatalidad",
+      "category": "Combate",
+      "level": 8,
+      "macro_en": "#showtooltip\n/cast [mod:ctrl] Amplify Curse\n/cast [mod:shift,@mouseover,harm,nodead][mod:shift] Bane of Doom; [@mouseover,harm,nodead][] Bane of Agony",
+      "macro_es": "#showtooltip\n/cast [mod:ctrl] Amplificar maldición\n/cast [mod:shift,@mouseover,harm,nodead][mod:shift] Terror de fatalidad; [@mouseover,harm,nodead][] Terror de agonía",
+      "spells": [
+        {
+          "en": "Amplify Curse",
+          "es": "Amplificar maldición",
+          "verified": false
+        },
+        {
+          "en": "Bane of Doom",
+          "es": "Terror de fatalidad",
+          "verified": true
+        },
+        {
+          "en": "Bane of Agony",
+          "es": "Terror de agonía",
+          "verified": true
+        }
+      ],
+      "what": "Terror de agonía por mouseover u objetivo; Shift para Terror de fatalidad en enemigos que vivan más de 1 minuto. Ctrl activa antes Amplificar maldición (fuera del GCD) para potenciar el Terror de agonía.",
+      "how": "Tecla 2. Ctrl+2 en jefes o en PvP cuando Amplificar esté listo.",
+      "tip": "Terror de fatalidad llega a nivel alto (60 en Classic). Amplificar maldición es talento de Aflicción; su nombre esES no está verificado."
+    },
+    {
+      "id": "maldiciones",
+      "title": "Maldiciones",
+      "category": "Combate",
+      "level": 4,
+      "macro_en": "#showtooltip\n/cast [mod:alt] Curse of Recklessness; [mod:ctrl] Curse of the Elements; [mod:shift] Curse of Tongues; [@mouseover,harm,nodead][] Curse of Weakness",
+      "macro_es": "#showtooltip\n/cast [mod:alt] Maldición de Temeridad; [mod:ctrl] Maldición de los Elementos; [mod:shift] Maldición de la lengua; [@mouseover,harm,nodead][] Maldición de debilidad",
+      "spells": [
+        {
+          "en": "Curse of Recklessness",
+          "es": "Maldición de Temeridad",
+          "verified": true
+        },
+        {
+          "en": "Curse of the Elements",
+          "es": "Maldición de los Elementos",
+          "verified": true
+        },
+        {
+          "en": "Curse of Tongues",
+          "es": "Maldición de la lengua",
+          "verified": true
+        },
+        {
+          "en": "Curse of Weakness",
+          "es": "Maldición de debilidad",
+          "verified": true
+        }
+      ],
+      "what": "Una tecla para todas las maldiciones: Debilidad (mouseover u objetivo), Shift Lengua, Ctrl Elementos, Alt Temeridad.",
+      "how": "Tecla 3. En solitario contra melé usa Debilidad; en banda la maldición que te asigne el líder; en PvP Lengua contra lanzadores.",
+      "tip": "Solo puedes tener una Maldición tuya por objetivo (además del Terror)."
+    },
+    {
+      "id": "arruinar-drenar",
+      "title": "Arruinar / Drenar vida",
+      "category": "Combate",
+      "level": 40,
+      "macro_en": "#showtooltip\n/petattack [harm,nodead]\n/cast [mod:shift] Drain Life; Wrack",
+      "macro_es": "#showtooltip\n/petattack [harm,nodead]\n/cast [mod:shift] Drenar vida; Arruinar",
+      "spells": [
+        {
+          "en": "Drain Life",
+          "es": "Drenar vida",
+          "verified": true
+        },
+        {
+          "en": "Wrack",
+          "es": "Arruinar",
+          "verified": true
+        }
+      ],
+      "what": "Canaliza Arruinar (relleno de Aflicción que potencia tus DoTs de Sombras) y envía a la mascota; Shift canaliza Drenar vida si necesitas salud.",
+      "how": "Tecla 4 en Aflicción, tras aplicar Corrupción, Succionar vida y un Terror.",
+      "tip": "Arruinar es el talento de 31 puntos; hasta el 40 usa solo Drenar vida (nivel 14)."
+    },
+    {
+      "id": "drenar-alma-quemadura",
+      "title": "Drenar alma / Quemadura",
+      "category": "Leveo",
+      "level": 10,
+      "macro_en": "#showtooltip\n/cast [mod:shift] Shadowburn; Drain Soul",
+      "macro_es": "#showtooltip\n/cast [mod:shift] Quemadura de las Sombras; Drenar alma",
+      "spells": [
+        {
+          "en": "Shadowburn",
+          "es": "Quemadura de las Sombras",
+          "verified": true
+        },
+        {
+          "en": "Drain Soul",
+          "es": "Drenar alma",
+          "verified": true
+        }
+      ],
+      "what": "Remata con Drenar alma para conseguir fragmentos de alma; con Shift, Quemadura de las Sombras para un golpe instantáneo final.",
+      "how": "Pulsa cuando el enemigo esté por debajo del 25 %. Usa Quemadura justo antes de que muera para recuperar el fragmento.",
+      "tip": "En Forever Drenar alma da fragmentos con menos probabilidad si el objetivo no muere."
+    },
+    {
+      "id": "miedo-desterrar",
+      "title": "Miedo / Desterrar con foco",
+      "category": "PvP",
+      "level": 8,
+      "macro_en": "#showtooltip\n/petfollow\n/cast [mod:ctrl,@mouseover,harm,nodead][mod:ctrl] Banish; [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Fear",
+      "macro_es": "#showtooltip\n/petfollow\n/cast [mod:ctrl,@mouseover,harm,nodead][mod:ctrl] Desterrar; [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Miedo",
+      "spells": [
+        {
+          "en": "Banish",
+          "es": "Desterrar",
+          "verified": true
+        },
+        {
+          "en": "Fear",
+          "es": "Miedo",
+          "verified": true
+        }
+      ],
+      "what": "Retira a tu demonio (para que no rompa el control) y lanza Miedo sobre el mouseover/objetivo, o sobre tu foco con Shift. Con Ctrl, Desterrar.",
+      "how": "Tecla de control. Pon /focus al segundo enemigo y usa Shift+tecla para mantenerlo con Miedo.",
+      "tip": "Desterrar (nivel 28) solo funciona en demonios y elementales."
+    },
+    {
+      "id": "espiral-aullido",
+      "title": "Espiral mortal / Aullido + abalorio",
+      "category": "PvP",
+      "level": 40,
+      "macro_en": "#showtooltip\n/stopcasting\n/use [mod:alt] 13\n/cast [mod:shift] Howl of Terror; [@mouseover,harm,nodead][] Death Coil",
+      "macro_es": "#showtooltip\n/stopcasting\n/use [mod:alt] 13\n/cast [mod:shift] Aullido de terror; [@mouseover,harm,nodead][] Espiral mortal",
+      "spells": [
+        {
+          "en": "Howl of Terror",
+          "es": "Aullido de terror",
+          "verified": true
+        },
+        {
+          "en": "Death Coil",
+          "es": "Espiral mortal",
+          "verified": true
+        }
+      ],
+      "what": "Corta tu lanzamiento y lanza Espiral mortal (miedo + curación); Shift para Aullido de terror en área. Con Alt usa además el abalorio superior (insignia PvP) en la misma pulsación.",
+      "how": "Tecla de pánico. Alt+tecla si estás bajo un control que la insignia quita.",
+      "tip": "Aullido de terror llega al 40 y Espiral mortal al 42."
+    },
+    {
+      "id": "bloqueo-hechizo",
+      "title": "Bloqueo de hechizo (manáfago)",
+      "category": "Mascota",
+      "level": 30,
+      "macro_en": "#showtooltip Spell Lock\n/cast [mod:ctrl,@player] Devour Magic; [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Spell Lock",
+      "macro_es": "#showtooltip Bloqueo de hechizo\n/cast [mod:ctrl,@player] Devorar magia; [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Bloqueo de hechizo",
+      "spells": [
+        {
+          "en": "Devour Magic",
+          "es": "Devorar magia",
+          "verified": true
+        },
+        {
+          "en": "Spell Lock",
+          "es": "Bloqueo de hechizo",
+          "verified": true
+        }
+      ],
+      "what": "Ordena al manáfago interrumpir con Bloqueo de hechizo al mouseover/objetivo, o al foco con Shift. Con Ctrl, Devorar magia sobre ti para quitarte un efecto mágico.",
+      "how": "Tecla de interrupción en PvP y mazmorras con el manáfago invocado.",
+      "tip": "No consume tu tiempo global. El manáfago necesita estar a rango del objetivo."
+    },
+    {
+      "id": "seduccion-foco",
+      "title": "Seducción con foco",
+      "category": "Mascota",
+      "level": 20,
+      "macro_en": "#showtooltip Seduction\n/cast [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Seduction",
+      "macro_es": "#showtooltip Seducción\n/cast [mod:shift,@focus,harm,nodead][@mouseover,harm,nodead][] Seducción",
+      "spells": [
+        {
+          "en": "Seduction",
+          "es": "Seducción",
+          "verified": false
+        }
+      ],
+      "what": "Ordena a la súcubo/íncubo seducir al mouseover u objetivo; con Shift, a tu foco.",
+      "how": "Control principal en PvP: /focus al sanador enemigo y Shift+tecla.",
+      "tip": "Nombre esES de Seducción sin verificar en fuente de Forever."
+    },
+    {
+      "id": "invocar-demonio",
+      "title": "Invocar demonio (Dominación vil)",
+      "category": "Mascota",
+      "level": 10,
+      "macro_en": "#showtooltip\n/cast Fel Domination\n/cast [mod:alt] Summon Succubus; [mod:ctrl] Summon Felhunter; [mod:shift] Summon Voidwalker; Summon Imp",
+      "macro_es": "#showtooltip\n/cast Dominación vil\n/cast [mod:alt] Invocar a súcubo; [mod:ctrl] Invocar a manáfago; [mod:shift] Invocar a abisario; Invocar a diablillo",
+      "spells": [
+        {
+          "en": "Fel Domination",
+          "es": "Dominación vil",
+          "verified": false
+        },
+        {
+          "en": "Summon Succubus",
+          "es": "Invocar a súcubo",
+          "verified": true
+        },
+        {
+          "en": "Summon Felhunter",
+          "es": "Invocar a manáfago",
+          "verified": true
+        },
+        {
+          "en": "Summon Voidwalker",
+          "es": "Invocar a abisario",
+          "verified": true
+        },
+        {
+          "en": "Summon Imp",
+          "es": "Invocar a diablillo",
+          "verified": true
+        }
+      ],
+      "what": "Activa Dominación vil (si la tienes) para invocar al instante, y luego invoca: diablillo sin modificador, Shift abisario, Ctrl manáfago, Alt súcubo.",
+      "how": "Una sola tecla para todas las mascotas en la barra de utilidad. Útil en PvP cuando te matan al demonio.",
+      "tip": "Dominación vil es talento de Demonología (nombre esES sin verificar); sin él, la primera línea falla en silencio y la invocación sigue con su tiempo normal. Abisario (10), súcubo (20), manáfago (30) se consiguen con misiones."
+    },
+    {
+      "id": "transfusion-cauce",
+      "title": "Transfusión de vida / Cauce de salud",
+      "category": "Utilidad",
+      "level": 6,
+      "macro_en": "#showtooltip\n/cast [mod:shift] Health Funnel; Life Tap",
+      "macro_es": "#showtooltip\n/cast [mod:shift] Cauce de salud; Transfusión de vida",
+      "spells": [
+        {
+          "en": "Health Funnel",
+          "es": "Cauce de salud",
+          "verified": true
+        },
+        {
+          "en": "Life Tap",
+          "es": "Transfusión de vida",
+          "verified": true
+        }
+      ],
+      "what": "Transfusión de vida para convertir salud en maná; con Shift, Cauce de salud para curar a tu demonio.",
+      "how": "Tecla de mantenimiento entre combates; come después.",
+      "tip": "En Forever Transfusión de vida escala con el espíritu."
+    },
+    {
+      "id": "piedra-salud",
+      "title": "Piedra de salud (cualquier rango)",
+      "category": "Utilidad",
+      "level": 10,
+      "macro_en": "#showtooltip\n/use Major Healthstone\n/use Greater Healthstone\n/use Healthstone\n/use Lesser Healthstone\n/use Minor Healthstone",
+      "macro_es": "#showtooltip\n/use Piedra de salud sublime\n/use Piedra de salud superior\n/use Piedra de salud\n/use Piedra de salud inferior\n/use Piedra de salud menor",
+      "spells": [
+        {
+          "en": "Major Healthstone",
+          "es": "Piedra de salud sublime",
+          "verified": false
+        },
+        {
+          "en": "Greater Healthstone",
+          "es": "Piedra de salud superior",
+          "verified": false
+        },
+        {
+          "en": "Healthstone",
+          "es": "Piedra de salud",
+          "verified": false
+        },
+        {
+          "en": "Lesser Healthstone",
+          "es": "Piedra de salud inferior",
+          "verified": false
+        },
+        {
+          "en": "Minor Healthstone",
+          "es": "Piedra de salud menor",
+          "verified": false
+        }
+      ],
+      "what": "Usa la piedra de salud que tengas, empezando por la de mayor rango.",
+      "how": "Tecla de emergencia junto a la de pociones.",
+      "tip": "Nombres de objetos esES sin verificar para Forever: compruébalos pasando el ratón por la piedra en tu bolsa. Si el nombre de una no existe, esa línea simplemente falla."
+    },
+    {
+      "id": "caos-incinerar",
+      "title": "Terror de caos / Incinerar",
+      "category": "Combate",
+      "level": 40,
+      "macro_en": "#showtooltip\n/cast [mod:ctrl,@focus,harm,nodead][mod:ctrl,@mouseover,harm,nodead] Bane of Havoc; [mod:shift] Conflagrate; Incinerate",
+      "macro_es": "#showtooltip\n/cast [mod:ctrl,@focus,harm,nodead][mod:ctrl,@mouseover,harm,nodead] Terror de caos; [mod:shift] Conflagrar; Incinerar",
+      "spells": [
+        {
+          "en": "Bane of Havoc",
+          "es": "Terror de caos",
+          "verified": true
+        },
+        {
+          "en": "Conflagrate",
+          "es": "Conflagrar",
+          "verified": true
+        },
+        {
+          "en": "Incinerate",
+          "es": "Incinerar",
+          "verified": true
+        }
+      ],
+      "what": "Destrucción: Incinerar como relleno (más daño con Inmolar), Shift Conflagrar, y Ctrl Terror de caos sobre el foco o mouseover para copiar parte de tu daño a ese segundo objetivo.",
+      "how": "Tecla 1 de Destrucción. Con dos enemigos juntos: /focus al secundario y Ctrl+tecla.",
+      "tip": "Incinerar es el talento de 31 puntos y Terror de caos uno de Destrucción; hasta entonces usa Descarga de las Sombras."
+    }
+  ]
+}

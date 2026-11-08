@@ -1,0 +1,370 @@
+{
+  "class": "shaman",
+  "notes": [
+    "En el cliente esES los comandos (/cast, /use, /stopcasting...) y los condicionales ([@mouseover], [mod:shift]...) se escriben en inglés; solo cambian los nombres de hechizos y objetos. Para un rango concreto se usa '(Rango 1)'.",
+    "En Forever el chamán NO tiene Ansia de sangre, Maleficio, Escudo de tierra ni Ráfaga de lava (Lava Burst se eliminó el 2 de noviembre y la sustituye el talento pasivo Llamada del trueno).",
+    "Nova de Fuego ya no es un tótem: es un hechizo que explota alrededor de tu tótem de Fuego activo, así que necesitas un tótem de Fuego puesto.",
+    "Arma vorágine solo afecta a Descarga de relámpagos: con 5 cargas es instantánea y gratis. Golpe de tormenta tiene 6 s de reutilización tras el parche del 2 de noviembre.",
+    "Los tótems se desbloquean por misión: Tierra (4), Fuego (10), Agua (20), Aire (30). Las Llamadas (de los elementos/ancestros/espíritus) ponen hasta 4 tótems en 3 s.",
+    "Proyección totémica se renombró a Llamada totémica (30 s de reutilización): teletransporta tus tótems a tu posición.",
+    "Una pulsación = una acción con tiempo global. Solo se combinan en la misma pulsación cosas fuera del GCD (abalorio /use 13, Presteza de la naturaleza, /startattack)."
+  ],
+  "sources": [
+    "https://rankedboost.com/world-of-warcraft/forever/macros/",
+    "https://kami-labs.fr/en/macros-wow-forever/",
+    "https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/",
+    "https://rankedboost.com/world-of-warcraft/forever/macros/shaman/",
+    "https://rankedboost.com/world-of-warcraft/forever/macros/shaman/enhancement/",
+    "https://rankedboost.com/world-of-warcraft/forever/macros/shaman/elemental/",
+    "https://rankedboost.com/world-of-warcraft/forever/macros/shaman/restoration/",
+    "https://www.warcrafttavern.com/forever/guides/shaman/",
+    "https://news.blizzard.com/es-es/article/24302097",
+    "https://seemeta.com/es/wow-forever/talent-calculator/shaman",
+    "https://wow.gg/es/guides/wow-forever-enhancement-shaman-beta",
+    "https://wow.gg/es/guides/wow-forever-restoration-shaman-beta",
+    "https://wow.gg/es/guides/wow-forever-elemental-shaman-beta"
+  ],
+  "macros": [
+    {
+      "id": "corte-choque-tierra",
+      "title": "Corte con Choque de tierra",
+      "category": "PvP",
+      "level": 4,
+      "macro_en": "#showtooltip Earth Shock\n/stopcasting\n/cast [mod:ctrl,@focus,harm,nodead][@mouseover,harm,nodead][harm,nodead] Earth Shock(Rank 1)",
+      "macro_es": "#showtooltip Choque de tierra\n/stopcasting\n/cast [mod:ctrl,@focus,harm,nodead][@mouseover,harm,nodead][harm,nodead] Choque de tierra(Rango 1)",
+      "spells": [
+        {
+          "en": "Earth Shock",
+          "es": "Choque de tierra",
+          "verified": true
+        }
+      ],
+      "what": "Cancela tu lanzamiento y lanza Choque de tierra de rango 1 (interrumpe y bloquea la escuela igual que el rango máximo, pero cuesta mucho menos maná) sobre el enemigo bajo el ratón o tu objetivo; con Ctrl, sobre tu foco.",
+      "how": "Tecla de interrupción cómoda (ej. E o botón lateral del ratón). Pulsa sola para el objetivo/mouseover; Ctrl+tecla para cortar al sanador o mago que tengas como /focus.",
+      "tip": "Si no tienes foco, Ctrl cae al mouseover u objetivo. Para daño usa Choque de tierra normal en otra tecla."
+    },
+    {
+      "id": "choque-llamas-leveo",
+      "title": "Choque de llamas + autoataque",
+      "category": "Leveo",
+      "level": 10,
+      "macro_en": "#showtooltip\n/startattack [harm,nodead]\n/cast [mod:shift,@mouseover,harm,nodead][mod:shift] Frost Shock; [@mouseover,harm,nodead][] Flame Shock",
+      "macro_es": "#showtooltip\n/startattack [harm,nodead]\n/cast [mod:shift,@mouseover,harm,nodead][mod:shift] Choque de Escarcha; [@mouseover,harm,nodead][] Choque de llamas",
+      "spells": [
+        {
+          "en": "Frost Shock",
+          "es": "Choque de Escarcha",
+          "verified": true
+        },
+        {
+          "en": "Flame Shock",
+          "es": "Choque de llamas",
+          "verified": true
+        }
+      ],
+      "what": "Activa el autoataque y aplica Choque de llamas al enemigo bajo el ratón o a tu objetivo; con Shift lanza Choque de Escarcha para frenar a un enemigo que huye.",
+      "how": "Ponlo en la barra principal junto a tu ataque. Úsalo como apertura al subir de nivel y para repartir el DoT con mouseover en grupos de mobs.",
+      "tip": "Choque de Escarcha llega al nivel 20; antes de eso Shift no hace nada útil."
+    },
+    {
+      "id": "golpe-tormenta-ira",
+      "title": "Golpe de tormenta / Ira del clarividente",
+      "category": "Combate",
+      "level": 25,
+      "macro_en": "#showtooltip [mod:ctrl] Rage of the Farseer; Stormstrike\n/startattack\n/cast [mod:ctrl] Rage of the Farseer; Stormstrike",
+      "macro_es": "#showtooltip [mod:ctrl] Ira del clarividente; Golpe de tormenta\n/startattack\n/cast [mod:ctrl] Ira del clarividente; Golpe de tormenta",
+      "spells": [
+        {
+          "en": "Rage of the Farseer",
+          "es": "Ira del clarividente",
+          "verified": true
+        },
+        {
+          "en": "Stormstrike",
+          "es": "Golpe de tormenta",
+          "verified": true
+        }
+      ],
+      "what": "Botón principal de Mejora: arranca el autoataque y lanza Golpe de tormenta; con Ctrl activa Ira del clarividente (+30 % de velocidad de ataque, tu 'ansia de sangre' personal).",
+      "how": "Tecla 1 o 2 de tu rotación. Pulsa cada vez que Golpe de tormenta esté listo (6 s). Ctrl+tecla al inicio de un combate largo o de un jefe.",
+      "tip": "Golpe de tormenta es talento de 16 puntos e Ira del clarividente el de 31 puntos (nivel 40)."
+    },
+    {
+      "id": "descarga-voragine",
+      "title": "Descarga / Cadena de relámpagos",
+      "category": "Combate",
+      "level": 1,
+      "macro_en": "#showtooltip\n/cast [mod:shift,@mouseover,harm,nodead][mod:shift] Chain Lightning; [@mouseover,harm,nodead][] Lightning Bolt",
+      "macro_es": "#showtooltip\n/cast [mod:shift,@mouseover,harm,nodead][mod:shift] Cadena de relámpagos; [@mouseover,harm,nodead][] Descarga de relámpagos",
+      "spells": [
+        {
+          "en": "Chain Lightning",
+          "es": "Cadena de relámpagos",
+          "verified": true
+        },
+        {
+          "en": "Lightning Bolt",
+          "es": "Descarga de relámpagos",
+          "verified": true
+        }
+      ],
+      "what": "Lanza Descarga de relámpagos al mouseover o al objetivo; con Shift, Cadena de relámpagos para grupos.",
+      "how": "En Mejora púlsala cuando tengas 5 cargas de Arma vorágine (instantánea y gratis) y, mejor aún, justo después de Golpe de tormenta. En Elemental es tu relleno.",
+      "tip": "Arma vorágine no afecta a Cadena de relámpagos en Forever. Cadena de relámpagos llega al nivel 32."
+    },
+    {
+      "id": "nova-fuego-totems",
+      "title": "Nova de Fuego / tótems de Fuego",
+      "category": "Tótems",
+      "level": 12,
+      "macro_en": "#showtooltip\n/cast [mod:ctrl] Magma Totem; [mod:shift] Searing Totem; Fire Nova",
+      "macro_es": "#showtooltip\n/cast [mod:ctrl] Tótem de magma; [mod:shift] Tótem abrasador; Nova de Fuego",
+      "spells": [
+        {
+          "en": "Magma Totem",
+          "es": "Tótem de magma",
+          "verified": true
+        },
+        {
+          "en": "Searing Totem",
+          "es": "Tótem abrasador",
+          "verified": true
+        },
+        {
+          "en": "Fire Nova",
+          "es": "Nova de Fuego",
+          "verified": true
+        }
+      ],
+      "what": "Sin modificador hace estallar Nova de Fuego alrededor de tu tótem de Fuego; Shift planta Tótem abrasador (un objetivo) y Ctrl Tótem de magma (área).",
+      "how": "Tecla de AoE. Al subir de nivel: Shift para poner el tótem al empezar, luego pulsa sola para Nova de Fuego. Con varios mobs, Ctrl para Magma y repite Nova.",
+      "tip": "Nova de Fuego necesita un tótem de Fuego activo cerca de los enemigos; Alcance elemental aumenta su radio. Tótem de magma llega al nivel 26."
+    },
+    {
+      "id": "llamadas-totemicas",
+      "title": "Juegos de tótems (Llamadas)",
+      "category": "Tótems",
+      "level": 20,
+      "macro_en": "#showtooltip\n/cast [mod:alt] Totemic Recall; [mod:ctrl] Call of the Spirits; [mod:shift] Call of the Ancestors; Call of the Elements",
+      "macro_es": "#showtooltip\n/cast [mod:alt] Regreso totémico; [mod:ctrl] Llamada de los espíritus; [mod:shift] Llamada de los ancestros; Llamada de los elementos",
+      "spells": [
+        {
+          "en": "Totemic Recall",
+          "es": "Regreso totémico",
+          "verified": true
+        },
+        {
+          "en": "Call of the Spirits",
+          "es": "Llamada de los espíritus",
+          "verified": true
+        },
+        {
+          "en": "Call of the Ancestors",
+          "es": "Llamada de los ancestros",
+          "verified": true
+        },
+        {
+          "en": "Call of the Elements",
+          "es": "Llamada de los elementos",
+          "verified": true
+        }
+      ],
+      "what": "Planta tu juego de 4 tótems preconfigurado: sin modificador Llamada de los elementos, Shift Llamada de los ancestros, Ctrl Llamada de los espíritus. Alt usa Regreso totémico para recoger los tótems y recuperar parte del maná.",
+      "how": "Configura cada Llamada en la barra de tótems (p. ej. leveo, grupo, PvP). Pon la macro en una tecla cercana (ej. T). Alt+T al terminar el combate antes de moverte.",
+      "tip": "Las Llamadas se desbloquean a los niveles 20, 30 y 40 y tardan 3 s en lanzarse."
+    },
+    {
+      "id": "derribador-tremor",
+      "title": "Tótem derribador / de tremor",
+      "category": "PvP",
+      "level": 30,
+      "macro_en": "#showtooltip\n/stopcasting\n/cast [mod:shift] Tremor Totem; Grounding Totem",
+      "macro_es": "#showtooltip\n/stopcasting\n/cast [mod:shift] Tótem de tremor; Tótem derribador",
+      "spells": [
+        {
+          "en": "Tremor Totem",
+          "es": "Tótem de tremor",
+          "verified": true
+        },
+        {
+          "en": "Grounding Totem",
+          "es": "Tótem derribador",
+          "verified": true
+        }
+      ],
+      "what": "Corta tu lanzamiento y planta Tótem derribador para absorber el siguiente hechizo enemigo; con Shift, Tótem de tremor contra miedo, encantamiento y sueño.",
+      "how": "Tecla de reacción en PvP. Pulsa cuando veas a un mago/brujo empezar un hechizo de control; Shift+tecla justo antes de un Miedo o Aullido.",
+      "tip": "Tótem derribador requiere tótem de Aire (nivel 30); Tótem de tremor está disponible desde el 18."
+    },
+    {
+      "id": "nexo-llamada-totemica",
+      "title": "Nexo Terrestre / Llamada totémica",
+      "category": "Tótems",
+      "level": 6,
+      "macro_en": "#showtooltip\n/stopcasting\n/cast [mod:shift] Totemic Call; Earthbind Totem",
+      "macro_es": "#showtooltip\n/stopcasting\n/cast [mod:shift] Llamada totémica; Tótem Nexo Terrestre",
+      "spells": [
+        {
+          "en": "Totemic Call",
+          "es": "Llamada totémica",
+          "verified": true
+        },
+        {
+          "en": "Earthbind Totem",
+          "es": "Tótem Nexo Terrestre",
+          "verified": true
+        }
+      ],
+      "what": "Planta Tótem Nexo Terrestre (ralentiza y, con el talento Vinculado a la tierra, enraíza) cortando tu cast; con Shift, Llamada totémica teletransporta tus tótems a tu posición.",
+      "how": "Úsalo cuando un mob o jugador te persiga. Shift+tecla cuando te hayas movido y tus tótems se queden atrás, en lugar de volver a plantarlos.",
+      "tip": "Llamada totémica (antes Proyección totémica) tiene 30 s de reutilización."
+    },
+    {
+      "id": "purgar-curar",
+      "title": "Purgar / Curar veneno-enfermedad",
+      "category": "Utilidad",
+      "level": 12,
+      "macro_en": "#showtooltip\n/cast [@mouseover,harm,nodead][harm,nodead] Purge; [mod:shift,@mouseover,help,nodead][mod:shift,help,nodead][mod:shift,@player] Cure Disease; [@mouseover,help,nodead][help,nodead][@player] Cure Poison",
+      "macro_es": "#showtooltip\n/cast [@mouseover,harm,nodead][harm,nodead] Purgar; [mod:shift,@mouseover,help,nodead][mod:shift,help,nodead][mod:shift,@player] Curar enfermedad; [@mouseover,help,nodead][help,nodead][@player] Curar veneno",
+      "spells": [
+        {
+          "en": "Purge",
+          "es": "Purgar",
+          "verified": true
+        },
+        {
+          "en": "Cure Disease",
+          "es": "Curar enfermedad",
+          "verified": true
+        },
+        {
+          "en": "Cure Poison",
+          "es": "Curar veneno",
+          "verified": true
+        }
+      ],
+      "what": "Un solo botón de disipación: sobre un enemigo (mouseover u objetivo) lanza Purgar; sobre un aliado o sobre ti lanza Curar veneno, o Curar enfermedad con Shift.",
+      "how": "Ponlo en una tecla cómoda y pasa el ratón por los marcos de grupo para limpiar sin cambiar de objetivo.",
+      "tip": "Curar veneno llega al 16 y Curar enfermedad al 22."
+    },
+    {
+      "id": "presteza-onda",
+      "title": "Sanación instantánea de emergencia",
+      "category": "Curación",
+      "level": 30,
+      "macro_en": "#showtooltip Healing Wave\n/cast Nature's Swiftness\n/cast [@mouseover,help,nodead][help,nodead][@player] Healing Wave",
+      "macro_es": "#showtooltip Onda de curación\n/cast Presteza de la naturaleza\n/cast [@mouseover,help,nodead][help,nodead][@player] Onda de curación",
+      "spells": [
+        {
+          "en": "Nature's Swiftness",
+          "es": "Presteza de la naturaleza",
+          "verified": false
+        },
+        {
+          "en": "Healing Wave",
+          "es": "Onda de curación",
+          "verified": true
+        }
+      ],
+      "what": "Activa Presteza de la naturaleza (fuera del GCD) y lanza una Onda de curación instantánea sobre el mouseover, el aliado objetivo o ti mismo. Si Presteza está en reutilización, lanza una Onda normal.",
+      "how": "Tecla de pánico (ej. Shift+Q). En PvP úsala cuando te bajen del 40 %.",
+      "tip": "Requiere el talento Presteza de la naturaleza de Restauración; comprueba que lo tienes en tu árbol de Forever. Nombre esES sin verificar en fuente de Forever."
+    },
+    {
+      "id": "curacion-mouseover",
+      "title": "Curación por mouseover",
+      "category": "Curación",
+      "level": 20,
+      "macro_en": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl] Riptide; [mod:shift,@mouseover,help,nodead][mod:shift,@player] Chain Heal; [@mouseover,help,nodead][help,nodead][@player] Lesser Healing Wave",
+      "macro_es": "#showtooltip\n/cast [mod:ctrl,@mouseover,help,nodead][mod:ctrl] Mareas vivas; [mod:shift,@mouseover,help,nodead][mod:shift,@player] Curación en cadena; [@mouseover,help,nodead][help,nodead][@player] Onda inferior de curación",
+      "spells": [
+        {
+          "en": "Riptide",
+          "es": "Mareas vivas",
+          "verified": true
+        },
+        {
+          "en": "Chain Heal",
+          "es": "Curación en cadena",
+          "verified": true
+        },
+        {
+          "en": "Lesser Healing Wave",
+          "es": "Onda inferior de curación",
+          "verified": true
+        }
+      ],
+      "what": "Cura a quien tengas bajo el ratón (o a tu objetivo/ti): sin modificador Onda inferior de curación, Shift Curación en cadena y Ctrl Mareas vivas.",
+      "how": "Una tecla de sanación para los marcos de grupo. Ctrl primero sobre el tanque (Mareas vivas mejora la Curación en cadena sobre ese objetivo un 25 %), luego Shift.",
+      "tip": "Curación en cadena llega al 40; Mareas vivas es el talento de 31 puntos (HoT sin sanación inicial, 12 s de reutilización tras el 2 de noviembre)."
+    },
+    {
+      "id": "abalorio-lobo",
+      "title": "Abalorio + Lobo fantasmal",
+      "category": "PvP",
+      "level": 20,
+      "macro_en": "#showtooltip Ghost Wolf\n/use 13\n/cast [nostance] Ghost Wolf",
+      "macro_es": "#showtooltip Lobo fantasmal\n/use 13\n/cast [nostance] Lobo fantasmal",
+      "spells": [
+        {
+          "en": "Ghost Wolf",
+          "es": "Lobo fantasmal",
+          "verified": true
+        }
+      ],
+      "what": "Usa el abalorio superior (ranura 13, p. ej. la insignia PvP para quitarte un control) y te transforma en Lobo fantasmal para escapar.",
+      "how": "Tecla de escape en PvP. Pon el abalorio PvP en la ranura superior. Pulsa cuando te enraícen o ralenticen.",
+      "tip": "Con Lobo fantasmal mejorado a rango 2 la forma es instantánea. Pulsarla ya transformado no te saca de la forma ([nostance])."
+    },
+    {
+      "id": "imbuir-arma",
+      "title": "Imbuir arma",
+      "category": "Utilidad",
+      "level": 1,
+      "macro_en": "#showtooltip\n/cast [mod:ctrl] Frostbrand Weapon; [mod:shift] Flametongue Weapon; Rockbiter Weapon",
+      "macro_es": "#showtooltip\n/cast [mod:ctrl] Arma Estigma de Escarcha; [mod:shift] Arma lengua de Fuego; Arma comerrocas",
+      "spells": [
+        {
+          "en": "Frostbrand Weapon",
+          "es": "Arma Estigma de Escarcha",
+          "verified": true
+        },
+        {
+          "en": "Flametongue Weapon",
+          "es": "Arma lengua de Fuego",
+          "verified": true
+        },
+        {
+          "en": "Rockbiter Weapon",
+          "es": "Arma comerrocas",
+          "verified": true
+        }
+      ],
+      "what": "Aplica la imbuición a tu arma: sin modificador Arma comerrocas, Shift Arma lengua de Fuego, Ctrl Arma Estigma de Escarcha.",
+      "how": "Ponla en una barra secundaria; en Forever las imbuiciones duran 60 minutos, así que solo la pulsarás de vez en cuando.",
+      "tip": "Lengua de Fuego llega al 10 y Estigma de Escarcha al 20."
+    },
+    {
+      "id": "resucitar-escudo",
+      "title": "Resucitar / Escudo de relámpagos",
+      "category": "Utilidad",
+      "level": 12,
+      "macro_en": "#showtooltip\n/cast [@mouseover,help,dead][help,dead] Ancestral Spirit; Lightning Shield",
+      "macro_es": "#showtooltip\n/cast [@mouseover,help,dead][help,dead] Espíritu ancestral; Escudo de relámpagos",
+      "spells": [
+        {
+          "en": "Ancestral Spirit",
+          "es": "Espíritu ancestral",
+          "verified": true
+        },
+        {
+          "en": "Lightning Shield",
+          "es": "Escudo de relámpagos",
+          "verified": true
+        }
+      ],
+      "what": "Si hay un aliado muerto bajo el ratón o como objetivo, lanza Espíritu ancestral; si no, renueva Escudo de relámpagos.",
+      "how": "Tecla de mantenimiento fuera de combate: tras cada pelea renueva el escudo y resucita sin cambiar de botón."
+    }
+  ]
+}
