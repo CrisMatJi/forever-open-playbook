@@ -1,0 +1,264 @@
+{
+  "class": "mage",
+  "notes": [
+    "En el cliente esES /cast exige el nombre exacto en español: abre la macro, pulsa Mayús y haz clic en el hechizo del libro para insertarlo sin erratas.",
+    "Lanza de hielo es un talento de Escarcha (11 puntos) y comparte 8 s de reutilización con Explosión de Fuego desde el parche del 2 de noviembre: no las pongas como si fueran dos remates independientes.",
+    "Frost Blast ya no se entrena en Forever (no confundir con Descarga de Escarcha, que sigue siendo tu hechizo principal). Andanada de misiles (Missile Barrage) se consume al empezar a canalizar Misiles Arcanos: no cortes la canalización.",
+    "Bloque de hielo es talento de Escarcha (16 puntos) y Cold Snap pasa a 10 min de reutilización.",
+    "Usa Ctrl como modificador: Alt es la tecla de autolanzamiento por defecto y Mayús+1-6 cambia de barra salvo que borres esos atajos.",
+    "Al aprender un rango nuevo no se actualiza la barra, pero una macro sin '(Rango X)' siempre usa el rango más alto."
+  ],
+  "sources": [
+    "https://rankedboost.com/world-of-warcraft/forever/macros/",
+    "https://kami-labs.fr/en/wow-forever/patch-notes-2-novembre-notes-de-lancement/",
+    "https://kami-labs.fr/en/wow-forever/macros-wow-forever-9-classes/",
+    "https://rankedboost.com/world-of-warcraft/forever/macros/mage/",
+    "https://seemeta.com/es/wow-forever/talent-calculator/mage",
+    "https://news.blizzard.com/en-us/article/24302097/",
+    "https://www.method.gg/wow-forever/wow-forever-mage-leveling-guide-and-talents",
+    "https://kami-labs.fr/en/wow-forever/mage-wow-forever-changements-28-octobre/"
+  ],
+  "macros": [
+    {
+      "id": "mago-polimorfia-foco",
+      "title": "Polimorfia al foco",
+      "category": "PvP",
+      "level": 8,
+      "macro_en": "#showtooltip Polymorph\n/focus [mod:ctrl]\n/stopmacro [mod:ctrl]\n/cast [@focus,harm,nodead][@mouseover,harm,nodead][harm,nodead] Polymorph",
+      "macro_es": "#showtooltip Polimorfia\n/focus [mod:ctrl]\n/stopmacro [mod:ctrl]\n/cast [@focus,harm,nodead][@mouseover,harm,nodead][harm,nodead] Polimorfia",
+      "spells": [
+        {
+          "en": "Polymorph",
+          "es": "Polimorfia",
+          "verified": true
+        }
+      ],
+      "what": "Oveja al foco; si no hay foco, al enemigo bajo el ratón o a tu objetivo. Con Ctrl solo fija tu objetivo actual como foco.",
+      "how": "Ctrl+tecla sobre el segundo enemigo para marcarlo como foco; después pulsa sin Ctrl para mantenerlo en oveja mientras sigues pegando al principal.",
+      "tip": "El daño rompe la Polimorfia; vigila tus DoT y los de tu grupo."
+    },
+    {
+      "id": "mago-contrahechizo-foco",
+      "title": "Contrahechizo (foco con Ctrl)",
+      "category": "PvP",
+      "level": 24,
+      "macro_en": "#showtooltip Counterspell\n/stopcasting\n/cast [mod:ctrl,@focus,harm,nodead][@mouseover,harm,nodead][harm,nodead] Counterspell",
+      "macro_es": "#showtooltip Contrahechizo\n/stopcasting\n/cast [mod:ctrl,@focus,harm,nodead][@mouseover,harm,nodead][harm,nodead] Contrahechizo",
+      "spells": [
+        {
+          "en": "Counterspell",
+          "es": "Contrahechizo",
+          "verified": true
+        }
+      ],
+      "what": "Cancela tu lanzamiento y corta el del enemigo: con Ctrl al foco, si no al enemigo bajo el ratón o a tu objetivo.",
+      "how": "Pulsa en cuanto veas la barra de lanzamiento enemiga; no hace falta esperar a terminar tu Descarga de Escarcha.",
+      "tip": "Contrahechizo mejorado (1 punto) ahora silencia siempre, con menor duración."
+    },
+    {
+      "id": "mago-nova-traslacion",
+      "title": "Nova / Traslación",
+      "category": "PvP",
+      "level": 20,
+      "macro_en": "#showtooltip\n/stopcasting\n/cast [mod:ctrl] Blink; Frost Nova",
+      "macro_es": "#showtooltip\n/stopcasting\n/cast [mod:ctrl] Traslación; Nova de Escarcha",
+      "spells": [
+        {
+          "en": "Frost Nova",
+          "es": "Nova de Escarcha",
+          "verified": true
+        },
+        {
+          "en": "Blink",
+          "es": "Traslación",
+          "verified": true
+        }
+      ],
+      "what": "Congela a los enemigos cercanos con Nova de Escarcha; con Ctrl lanza Traslación para escapar de aturdimientos y raíces.",
+      "how": "Nova primero, Ctrl+tecla después para alejarte del objetivo congelado. Úsala igual al subir de nivel para hacer kiting.",
+      "tip": "Antes del nivel 20 solo funcionará la parte de Nova (nivel 10)."
+    },
+    {
+      "id": "mago-traslacion-abalorio",
+      "title": "Abalorio + Traslación",
+      "category": "PvP",
+      "level": 20,
+      "macro_en": "#showtooltip Blink\n/use [mod:ctrl] 13\n/cast Blink",
+      "macro_es": "#showtooltip Traslación\n/use [mod:ctrl] 13\n/cast Traslación",
+      "spells": [
+        {
+          "en": "Blink",
+          "es": "Traslación",
+          "verified": true
+        }
+      ],
+      "what": "Traslación normal; con Ctrl usa además el abalorio superior (ranura 13), por ejemplo un abalorio JcJ que rompe control, y te teletransporta en la misma pulsación.",
+      "how": "Pon el abalorio JcJ arriba en el personaje. Ctrl+tecla cuando te aturdan o te encadenen.",
+      "tip": "Si tu abalorio está en la ranura inferior, cambia 13 por 14."
+    },
+    {
+      "id": "mago-remate-fuego",
+      "title": "Explosión de Fuego (remate)",
+      "category": "Combate",
+      "level": 6,
+      "macro_en": "#showtooltip Fire Blast\n/stopcasting\n/cast [@target,harm,nodead] Fire Blast",
+      "macro_es": "#showtooltip Explosión de Fuego\n/stopcasting\n/cast [@target,harm,nodead] Explosión de Fuego",
+      "spells": [
+        {
+          "en": "Fire Blast",
+          "es": "Explosión de Fuego",
+          "verified": true
+        }
+      ],
+      "what": "Corta tu lanzamiento y remata al instante con Explosión de Fuego.",
+      "how": "Úsala cuando al enemigo le quede poca vida o huya; ahorra el último lanzamiento.",
+      "tip": "Comparte 8 s de reutilización con Lanza de hielo en Forever."
+    },
+    {
+      "id": "mago-lanza-o-explosion",
+      "title": "Lanza de hielo / Explosión de Fuego",
+      "category": "Combate",
+      "level": 20,
+      "macro_en": "#showtooltip\n/stopcasting\n/cast [mod:ctrl,harm,nodead] Fire Blast; [harm,nodead] Ice Lance",
+      "macro_es": "#showtooltip\n/stopcasting\n/cast [mod:ctrl,harm,nodead] Explosión de Fuego; [harm,nodead] Lanza de hielo",
+      "spells": [
+        {
+          "en": "Fire Blast",
+          "es": "Explosión de Fuego",
+          "verified": true
+        },
+        {
+          "en": "Ice Lance",
+          "es": "Lanza de hielo",
+          "verified": true
+        }
+      ],
+      "what": "Un solo botón para el remate instantáneo compartido: Lanza de hielo (x3 de daño sobre objetivos congelados) o, con Ctrl, Explosión de Fuego.",
+      "how": "Tras Nova de Escarcha o un proc de Fingers of Frost pulsa sin Ctrl; contra objetivos no congelados usa Ctrl.",
+      "tip": "Lanza de hielo es talento (11 puntos en Escarcha). Ambas comparten 8 s de reutilización, así que no gastas dos botones."
+    },
+    {
+      "id": "mago-misiles-sin-cortar",
+      "title": "Misiles Arcanos sin cortar",
+      "category": "Leveo",
+      "level": 8,
+      "macro_en": "#showtooltip Arcane Missiles\n/cast [nochanneling:Arcane Missiles,@target,harm,nodead] Arcane Missiles",
+      "macro_es": "#showtooltip Misiles Arcanos\n/cast [nochanneling:Misiles Arcanos,@target,harm,nodead] Misiles Arcanos",
+      "spells": [
+        {
+          "en": "Arcane Missiles",
+          "es": "Misiles Arcanos",
+          "verified": true
+        }
+      ],
+      "what": "Lanza Misiles Arcanos, pero ignora las pulsaciones mientras ya canalizas, así no cortas la canalización por pulsar de más.",
+      "how": "Pulsa sin miedo cuando salte Andanada de misiles o Claridad mental.",
+      "tip": "Andanada de misiles se consume al empezar a canalizar: cortar la canalización la desperdicia."
+    },
+    {
+      "id": "mago-varita",
+      "title": "Varita (auto-objetivo)",
+      "category": "Leveo",
+      "level": 5,
+      "macro_en": "#showtooltip Shoot\n/targetenemy [noharm][dead]\n/cast !Shoot",
+      "macro_es": "#showtooltip Disparar\n/targetenemy [noharm][dead]\n/cast !Disparar",
+      "spells": [
+        {
+          "en": "Shoot",
+          "es": "Disparar",
+          "verified": false
+        }
+      ],
+      "what": "Dispara la varita; si no tienes enemigo vivo seleccionado, busca el más cercano. El '!' evita que una segunda pulsación pare el disparo.",
+      "how": "Remata con varita para ahorrar maná y entrar en regeneración de espíritu (regla de los 5 s).",
+      "tip": "Necesitas una varita equipada. Comprueba con Mayús+clic el nombre exacto del hechizo de varita en tu libro."
+    },
+    {
+      "id": "mago-conjurar",
+      "title": "Conjurar agua / comida",
+      "category": "Utilidad",
+      "level": 6,
+      "macro_en": "#showtooltip\n/cast [mod:ctrl] Conjure Food; Conjure Water",
+      "macro_es": "#showtooltip\n/cast [mod:ctrl] Conjurar comida; Conjurar agua",
+      "spells": [
+        {
+          "en": "Conjure Water",
+          "es": "Conjurar agua",
+          "verified": true
+        },
+        {
+          "en": "Conjure Food",
+          "es": "Conjurar comida",
+          "verified": true
+        }
+      ],
+      "what": "Conjura agua; con Ctrl conjura comida. Siempre usa el rango más alto que conozcas.",
+      "how": "Conjura entre combates y reparte al grupo con el comercio.",
+      "tip": "Para la gema de maná (nivel 28) usa Conjurar ágata de maná y sus rangos superiores en otra macro."
+    },
+    {
+      "id": "mago-comer-beber",
+      "title": "Comer y beber a la vez",
+      "category": "Leveo",
+      "level": 1,
+      "macro_en": "#showtooltip\n/use [nocombat] 0 1\n/use [nocombat] 0 2",
+      "macro_es": "#showtooltip\n/use [nocombat] 0 1\n/use [nocombat] 0 2",
+      "spells": [],
+      "what": "Usa los objetos de las ranuras 1 y 2 de la mochila (bolsa 0): pon ahí el agua y la comida para comer y beber con un solo botón, sin depender del nombre del objeto.",
+      "how": "Deja el agua conjurada en la primera casilla de la mochila y la comida en la segunda.",
+      "tip": "Si mueves objetos en la mochila la macro usará lo que haya en esas casillas."
+    },
+    {
+      "id": "mago-deshacer-maldicion",
+      "title": "Deshacer maldición (ratón)",
+      "category": "Utilidad",
+      "level": 18,
+      "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Remove Lesser Curse",
+      "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Deshacer maldición inferior",
+      "spells": [
+        {
+          "en": "Remove Lesser Curse",
+          "es": "Deshacer maldición inferior",
+          "verified": true
+        }
+      ],
+      "what": "Quita una maldición al aliado bajo el ratón, a tu objetivo amistoso o a ti mismo.",
+      "how": "Pasa el ratón por el marco del compañero maldito y pulsa, sin cambiar de objetivo."
+    },
+    {
+      "id": "mago-intelecto",
+      "title": "Intelecto Arcano (ratón)",
+      "category": "Utilidad",
+      "level": 1,
+      "macro_en": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Arcane Intellect",
+      "macro_es": "#showtooltip\n/cast [@mouseover,help,nodead][help,nodead][@player] Intelecto Arcano",
+      "spells": [
+        {
+          "en": "Arcane Intellect",
+          "es": "Intelecto Arcano",
+          "verified": true
+        }
+      ],
+      "what": "Pone Intelecto Arcano al aliado bajo el ratón, al objetivo amistoso o a ti.",
+      "how": "Repasa los marcos del grupo con el ratón y pulsa en cada uno."
+    },
+    {
+      "id": "mago-bloque-hielo",
+      "title": "Bloque de hielo (Ctrl cancela)",
+      "category": "PvP",
+      "level": 25,
+      "macro_en": "#showtooltip Ice Block\n/stopcasting\n/cancelaura [mod:ctrl] Ice Block\n/cast [nomod:ctrl] Ice Block",
+      "macro_es": "#showtooltip Bloque de hielo\n/stopcasting\n/cancelaura [mod:ctrl] Bloque de hielo\n/cast [nomod:ctrl] Bloque de hielo",
+      "spells": [
+        {
+          "en": "Ice Block",
+          "es": "Bloque de hielo",
+          "verified": false
+        }
+      ],
+      "what": "Entra en Bloque de hielo cancelando lo que estés lanzando; con Ctrl lo quita antes de tiempo.",
+      "how": "Úsalo para cortar daño letal o quitar efectos; Ctrl+tecla cuando el peligro haya pasado para volver a lanzar.",
+      "tip": "Es talento de Escarcha (16 puntos). Nombre esES sin confirmar: compruébalo con Mayús+clic."
+    }
+  ]
+}
