@@ -779,6 +779,43 @@
    "Con Demonología, no lances Searing Pain antes de que Demonic Brand esté marcado o quitarás el aggro al demonio.",
    "Perk de Legado 'Talented': empiezas a recibir talentos hasta 5 niveles antes; sigue el mismo orden.",
    "Sastrería + Encantamiento: ropa de Sombras y varitas propias."
+  ],
+  "stat_order": [
+   "Poder con hechizos",
+   "Golpe",
+   "Intelecto",
+   "Espíritu",
+   "Aguante"
+  ],
+  "weapon_list": [
+   {
+    "type": "Varita",
+    "hand": "Distancia",
+    "note": "Siempre equipada: remata y ahorra maná.",
+    "icon": "inv_wand_01",
+    "best": true
+   },
+   {
+    "type": "Bastón",
+    "hand": "2M",
+    "note": "Con poder con hechizos. Instructor: Ventormenta.",
+    "icon": "inv_staff_08",
+    "best": true
+   },
+   {
+    "type": "Daga + sostener",
+    "hand": "1M",
+    "note": "La sabe de base; combínala con un orbe.",
+    "icon": "inv_weapon_shortblade_05",
+    "best": false
+   },
+   {
+    "type": "Espada a una mano + sostener",
+    "hand": "1M",
+    "note": "Instructor: Ventormenta.",
+    "icon": "inv_sword_04",
+    "best": false
+   }
   ]
  },
  "races": [

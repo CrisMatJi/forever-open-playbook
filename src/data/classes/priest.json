@@ -729,6 +729,42 @@
    "Lleva agua de tu nivel y pociones de maná antes de entrar en mazmorras.",
    "Sanación conjunta (Binding Heal) ya no cuesta talento: entrénala al 25. Si sanas mazmorras como Disciplina, Holy Binding (Sagrado, fila 4) añade autocuración a Sanación relámpago.",
    "2 nov: la vida de los mobs de nivel alto sube; con Spirit Tap y Dark Inspiration sigues casi sin beber, pero cuenta con un Explosión mental más por mob."
+  ],
+  "stat_order": [
+   "Poder con hechizos",
+   "Intelecto",
+   "Espíritu",
+   "Aguante"
+  ],
+  "weapon_list": [
+   {
+    "type": "Varita",
+    "hand": "Distancia",
+    "note": "Tu principal fuente de daño al subir: cámbiala a menudo.",
+    "icon": "inv_wand_01",
+    "best": true
+   },
+   {
+    "type": "Bastón",
+    "hand": "2M",
+    "note": "Con poder con hechizos. Instructor de armas.",
+    "icon": "inv_staff_08",
+    "best": true
+   },
+   {
+    "type": "Maza a una mano + sostener",
+    "hand": "1M",
+    "note": "La sabe de base.",
+    "icon": "inv_mace_01",
+    "best": false
+   },
+   {
+    "type": "Daga + sostener",
+    "hand": "1M",
+    "note": "Instructor de armas.",
+    "icon": "inv_weapon_shortblade_05",
+    "best": false
+   }
   ]
  },
  "races": [

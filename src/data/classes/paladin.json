@@ -740,6 +740,43 @@
    "2 nov: Two-Handed Weapon Specialization ahora sube también el daño Sagrado y reduce tu amenaza hasta un 20% con arma a dos manos: si tanqueas, cámbiate a una mano y escudo.",
    "2 nov: Templar's Bulwark es ahora un efecto mágico que se puede disipar (importante en JcJ).",
    "2 nov: aprender hechizos ya no los coloca solos en las barras de acción; revisa el libro al entrenar."
+  ],
+  "stat_order": [
+   "DPS del arma",
+   "Fuerza",
+   "Aguante",
+   "Poder con hechizos",
+   "Intelecto"
+  ],
+  "weapon_list": [
+   {
+    "type": "Maza a dos manos",
+    "hand": "2M",
+    "note": "Lenta: mejora Golpe Sagrado y los sellos.",
+    "icon": "inv_mace_04",
+    "best": true
+   },
+   {
+    "type": "Espada a dos manos",
+    "hand": "2M",
+    "note": "Igual de buena que la maza.",
+    "icon": "inv_sword_06",
+    "best": true
+   },
+   {
+    "type": "Hacha a dos manos",
+    "hand": "2M",
+    "note": "Instructor: Forjaz.",
+    "icon": "inv_axe_09",
+    "best": false
+   },
+   {
+    "type": "Arma de asta",
+    "hand": "2M",
+    "note": "Desde el 20. Instructor: Ventormenta.",
+    "icon": "inv_spear_06",
+    "best": false
+   }
   ]
  },
  "races": [

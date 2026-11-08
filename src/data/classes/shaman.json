@@ -756,6 +756,43 @@
    "Earth Shock vuelve al daño de Classic el 2 nov (antes estaba recortado): vuelve a ser buen remate, sobre todo tras Stormstrike.",
    "Si tienes el perk de Legado 'Talented', los talentos se desbloquean hasta 5 niveles antes (empiezas a puntuar antes); el orden es el mismo.",
    "Cocina: hay comida que da +5% de experiencia por muerte durante 15 min; Peletería+Desuello es buena combinación para subir."
+  ],
+  "stat_order": [
+   "DPS del arma",
+   "Intelecto = Fuerza",
+   "Agilidad",
+   "Aguante",
+   "Espíritu"
+  ],
+  "weapon_list": [
+   {
+    "type": "Maza a dos manos",
+    "hand": "2M",
+    "note": "Lenta (3,3-3,8 s). Instructor: Forjaz.",
+    "icon": "inv_mace_04",
+    "best": true
+   },
+   {
+    "type": "Hacha a dos manos",
+    "hand": "2M",
+    "note": "Igual de buena que la maza. Instructor: Forjaz.",
+    "icon": "inv_axe_09",
+    "best": true
+   },
+   {
+    "type": "Bastón",
+    "hand": "2M",
+    "note": "Se sabe de base; sirve hasta encontrar algo mejor.",
+    "icon": "inv_staff_08",
+    "best": false
+   },
+   {
+    "type": "Maza a una mano + escudo",
+    "hand": "1M",
+    "note": "Solo si vas justo de vida. No hay doble empuñadura.",
+    "icon": "inv_shield_04",
+    "best": false
+   }
   ]
  },
  "races": [

@@ -731,6 +731,43 @@
    "Lleva agua y munición del nivel adecuado; el alcance mínimo sigue siendo 8 m.",
    "Pathfinding está en la fila 3 de Dominio de bestias (confirmado en las notas del 2 nov): si quieres más velocidad con Guepardo, cógelo después de Bestial Wrath o cámbialo por Endurance Training.",
    "2 nov: las raíces por proc (Entrapment, Improved Wing Clip, Counterattack) tienen rendimientos decrecientes: no encadenes varias sobre el mismo objetivo."
+  ],
+  "stat_order": [
+   "Agilidad",
+   "Poder de ataque",
+   "Crítico",
+   "Intelecto",
+   "Aguante"
+  ],
+  "weapon_list": [
+   {
+    "type": "Arco",
+    "hand": "Distancia",
+    "note": "El de más DPS; lento (2,8-3,0 s) para Disparo de puntería.",
+    "icon": "inv_weapon_bow_02",
+    "best": true
+   },
+   {
+    "type": "Ballesta",
+    "hand": "Distancia",
+    "note": "Igual de válida. Instructor: Ventormenta/Forjaz.",
+    "icon": "inv_weapon_crossbow_01",
+    "best": true
+   },
+   {
+    "type": "Arma de fuego",
+    "hand": "Distancia",
+    "note": "Instructor: Forjaz.",
+    "icon": "inv_weapon_rifle_01",
+    "best": false
+   },
+   {
+    "type": "Arma de asta / bastón",
+    "hand": "2M",
+    "note": "Cuerpo a cuerpo con Agilidad como bolsa de stats.",
+    "icon": "inv_spear_06",
+    "best": false
+   }
   ]
  },
  "races": [

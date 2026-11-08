@@ -782,6 +782,43 @@
    "Los venenos tienen un 50-55% más de cargas y ahora pueden ser críticos.",
    "Con Legado (Talented) los talentos se desbloquean hasta 5 niveles antes.",
    "No uses sigilo en cada mob salvo con build de Emboscada: ralentiza la subida."
+  ],
+  "stat_order": [
+   "Agilidad",
+   "Poder de ataque",
+   "Crítico",
+   "Fuerza",
+   "Aguante"
+  ],
+  "weapon_list": [
+   {
+    "type": "Espada a una mano",
+    "hand": "1M",
+    "note": "Principal lenta (2,6-2,8 s) para Combate.",
+    "icon": "inv_sword_04",
+    "best": true
+   },
+   {
+    "type": "Hacha a una mano",
+    "hand": "1M",
+    "note": "Igual que la espada en Combate. Instructor: Forjaz.",
+    "icon": "inv_axe_01",
+    "best": true
+   },
+   {
+    "type": "Daga",
+    "hand": "1M",
+    "note": "Para Sutileza (Puñalada, Emboscada) y la mano izquierda rápida.",
+    "icon": "inv_weapon_shortblade_05",
+    "best": false
+   },
+   {
+    "type": "Arma de puño",
+    "hand": "1M",
+    "note": "Buena secundaria. Instructor: Darnassus/Forjaz.",
+    "icon": "inv_gauntlets_04",
+    "best": false
+   }
   ]
  },
  "races": [

@@ -745,6 +745,43 @@
    "2 nov: Lanza de hielo y Explosión de Fuego comparten reutilización (8 s): con Escarcha, Explosión de Fuego solo para rematar si no hay congelado.",
    "2 nov: Frost Warding ya no refleja hechizos; ahora puede anular por completo el daño de un hechizo sin gastar Frost Ward y aumenta lo que absorben Barrera de hielo y Frost Ward.",
    "2 nov: aprender hechizos ya no los coloca solos en las barras de acción; revisa el libro al entrenar."
+  ],
+  "stat_order": [
+   "Poder con hechizos",
+   "Intelecto",
+   "Crítico",
+   "Espíritu",
+   "Aguante"
+  ],
+  "weapon_list": [
+   {
+    "type": "Varita",
+    "hand": "Distancia",
+    "note": "Desde el 5; también sube con el poder con hechizos.",
+    "icon": "inv_wand_01",
+    "best": true
+   },
+   {
+    "type": "Bastón",
+    "hand": "2M",
+    "note": "La opción más cómoda con poder con hechizos.",
+    "icon": "inv_staff_08",
+    "best": true
+   },
+   {
+    "type": "Daga + sostener",
+    "hand": "1M",
+    "note": "La sabe de base.",
+    "icon": "inv_weapon_shortblade_05",
+    "best": false
+   },
+   {
+    "type": "Espada a una mano + sostener",
+    "hand": "1M",
+    "note": "Instructor: Ventormenta.",
+    "icon": "inv_sword_04",
+    "best": false
+   }
   ]
  },
  "races": [

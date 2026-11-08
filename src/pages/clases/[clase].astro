@@ -43,11 +43,23 @@ const rkey = (r) => r.split(" (")[0].replace("Skyborne - High Order", "Skyborne"
         </div>
       </div>
     </div>
-    {L.why && <p class="lede">{L.why}</p>}
-    <div class="gearlist" style="margin-top:14px">
-      {L.stats && <div><b>Estadísticas</b>{L.stats}</div>}
-      {L.weapons && <div><b>Armas</b>{L.weapons}</div>}
-    </div>
+    {L.stat_order?.length > 0 && (
+      <div class="statrow" style="margin-top:16px">
+        <div class="eyebrow">Estadísticas, de más a menos importante</div>
+        <ol class="statflow">{L.stat_order.map((st, i) => <>{i > 0 && <li class="sep" aria-hidden="true">›</li>}<li><span class="num">{i + 1}</span>{st}</li></>)}</ol>
+      </div>
+    )}
+    {L.weapon_list?.length > 0 && (
+      <div style="margin-top:16px">
+        <div class="eyebrow">Armas</div>
+        <div class="wgrid">{L.weapon_list.map((w) => (
+          <div class={`wcard ${w.best ? "best" : ""}`}>
+            <Icon name={w.icon} size={40} label={w.type} big />
+            <div><b>{w.type}</b> <span class="vtag">{w.hand}</span>{w.best && <span class="vtag q-leg">Recomendada</span>}<p class="note">{w.note}</p></div>
+          </div>
+        ))}</div>
+      </div>
+    )}
   </section>
 
   {d.races?.length > 0 && (

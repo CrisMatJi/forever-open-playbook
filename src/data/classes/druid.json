@@ -773,6 +773,43 @@
    "2 nov: los druidas ferales reciben un gran aumento (Triturar 200%, Garra 140%, Devastar 435%, sangrados y Mordedura feroz +~25%), pero los enemigos de nivel alto tienen más vida: no esperes matar mucho más rápido en los niveles altos.",
    "2 nov: la amenaza de Forma de oso/oso temible sube del 50% al 115% (compensa la eliminación de Bendición de salvación): el oso es mucho más cómodo de tanquear en mazmorras.",
    "2 nov: aprender hechizos nuevos ya no los coloca automáticamente en las barras de acción; revisa el libro de hechizos al entrenar."
+  ],
+  "stat_order": [
+   "DPS del arma",
+   "Agilidad = Fuerza",
+   "Aguante",
+   "Intelecto",
+   "Espíritu"
+  ],
+  "weapon_list": [
+   {
+    "type": "Bastón",
+    "hand": "2M",
+    "note": "Las habilidades ferales escalan con el daño del arma.",
+    "icon": "inv_staff_08",
+    "best": true
+   },
+   {
+    "type": "Maza a dos manos",
+    "hand": "2M",
+    "note": "Instructor: Forjaz.",
+    "icon": "inv_mace_04",
+    "best": true
+   },
+   {
+    "type": "Arma de asta",
+    "hand": "2M",
+    "note": "Nueva para Druida desde el 20. Instructor: Ventormenta.",
+    "icon": "inv_spear_06",
+    "best": false
+   },
+   {
+    "type": "Daga / arma de puño + sostener",
+    "hand": "1M",
+    "note": "Solo si no tienes una buena de dos manos.",
+    "icon": "inv_weapon_shortblade_05",
+    "best": false
+   }
   ]
  },
  "races": [

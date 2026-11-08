@@ -779,6 +779,43 @@
    "Si gastas puntos de Legado en Talented, los talentos se desbloquean hasta 5 niveles antes (26 puntos a nivel 30).",
    "La tabla de ataque de Forever castiga más a los guerreros contra mobs de nivel superior: pelea contra mobs de tu nivel o inferiores.",
    "2 nov: la vida de los mobs de nivel alto sube; tira packs de 2-3 solo con Revancha y Atronar disponibles."
+  ],
+  "stat_order": [
+   "DPS del arma",
+   "Fuerza",
+   "Aguante",
+   "Agilidad",
+   "Armadura"
+  ],
+  "weapon_list": [
+   {
+    "type": "Arma a una mano + escudo",
+    "hand": "1M",
+    "note": "Protección: espada, hacha o maza rápida-media y el escudo con más armadura.",
+    "icon": "inv_shield_04",
+    "best": true
+   },
+   {
+    "type": "Hacha a dos manos",
+    "hand": "2M",
+    "note": "Armas: lenta (3,3-3,8 s) para Golpe mortal.",
+    "icon": "inv_axe_09",
+    "best": true
+   },
+   {
+    "type": "Espada a dos manos",
+    "hand": "2M",
+    "note": "Armas. Instructor: Ventormenta.",
+    "icon": "inv_sword_06",
+    "best": false
+   },
+   {
+    "type": "Arma de asta",
+    "hand": "2M",
+    "note": "Armas, desde el 20. Instructor: Ventormenta.",
+    "icon": "inv_spear_06",
+    "best": false
+   }
   ]
  },
  "races": [
