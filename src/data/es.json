@@ -1,1 +1,1039 @@
-{"dungeons":{},"items":{},"quests":{},"npcs":{},"bosses":{},"zones":{}}
+{
+ "dungeons": {
+  "The Hall of Thanes": "El Salón de los Feudales",
+  "Ragefire Chasm": "Sima Ígnea",
+  "Ruins of Lordaeron": "Ruinas de Lordaeron",
+  "The Deadmines": "Las Minas de la Muerte",
+  "Wailing Caverns": "Cuevas de los Lamentos",
+  "Shadowfang Keep": "Castillo de Colmillo Oscuro",
+  "Blackfathom Deeps": "Cavernas de Brazanegra",
+  "The Stockade": "Las Mazmorras",
+  "Excavation Site: Wetlands": "Excavación: Los Humedales",
+  "City of Dalaran": "Ciudad de Dalaran",
+  "Razorfen Kraul": "Horado Rajacieno",
+  "Gnomeregan": "Gnomeregan",
+  "Scarlet Monastery - Graveyard": "Monasterio Escarlata - Cementerio",
+  "Scarlet Monastery - Library": "Monasterio Escarlata - Biblioteca",
+  "Scarlet Monastery - Armory": "Monasterio Escarlata - Armería",
+  "Scarlet Monastery - Cathedral": "Monasterio Escarlata - Catedral",
+  "The Drowned City": "La Ciudad Sumergida",
+  "Razorfen Downs": "Zahúrda Rojocieno",
+  "Krol'dok Stronghold": "Bastión Krol'dok",
+  "Uldaman": "Uldaman",
+  "Zul'Farrak": "Zul'Farrak",
+  "Maraudon": "Maraudon",
+  "Alcaz Prison": "Prisión de Alcaz",
+  "The Temple of Atal'Hakkar": "El Templo de Atal'Hakkar",
+  "Blackrock Depths": "Profundidades de Roca Negra",
+  "Dire Maul - East": "La Masacre - Este",
+  "Lower Blackrock Spire": "Cumbre de Roca Negra Inferior",
+  "Blackmaw Hold": "Bastión Faucenegra",
+  "Dire Maul - West": "La Masacre - Oeste",
+  "Dire Maul - North": "La Masacre - Norte",
+  "Scholomance": "Scholomance",
+  "Stratholme - Main Gate (Living)": "Stratholme - Puerta principal",
+  "Stratholme - Service Gate (Undead)": "Stratholme - Puerta de servicio",
+  "Shaper's Terrace": "Bancal del Creador",
+  "Upper Blackrock Spire": "Cumbre de Roca Negra Superior"
+ },
+ "items": {
+  "279894": "Trabuco calibrado",
+  "279895": "Gran martillo de Forjaz",
+  "279896": "Llamarada profunda",
+  "279897": "Cinturón polvoriento",
+  "280095": "Brazales de recorrecriptas",
+  "279898": "Escrito enano",
+  "280096": "Guantes de ladrón de tumbas",
+  "279899": "Capa de las catacumbas",
+  "279900": "Calzas tumbaprofunda",
+  "270256": "Hacha creciente de Durgen",
+  "270228": "Báculo de corazón de gólem",
+  "270261": "Togas del señor feudal caído en desgracia",
+  "270231": "Mandiletes de puño de fuego",
+  "271097": "Mantón de espíritu espectral",
+  "279864": "Cuchilla monstruosa",
+  "279865": "Embozo de tumba",
+  "279867": "Sello del barón asesinado",
+  "279868": "Leotardos de cumplimiento del deber",
+  "279869": "Armadura del recuerdo",
+  "280567": "Saco de gemas pequeño",
+  "279870": "Guardapelo deslustrado",
+  "271218": "Cimitarra sangrevil",
+  "271215": "Bastón de aguja fría",
+  "271212": "Cubrepecho ensangrentado",
+  "271213": "Espejo de Rath'mael",
+  "6087": "Albarca de Páramos de Poniente",
+  "2041": "Túnica de Páramos de Poniente",
+  "2042": "Bastón de Páramos de Poniente",
+  "7606": "Guanteletes polares",
+  "7607": "Varita de dientes de sable",
+  "270015": "Bandas de Bravo",
+  "270016": "Leotardos de soñador",
+  "2074": "Hoja corta sólida",
+  "2089": "Daga para tallar",
+  "6094": "Hacha atravesadora",
+  "270005": "Martillo monástico",
+  "1893": "Revancha de minero",
+  "270012": "Guantes de trabajo de minero",
+  "270013": "Botas de trabajo de minero",
+  "5191": "Púa cruel",
+  "5201": "Bastón de piedra de ascuas",
+  "10399": "Armadura ennegrecida Defias",
+  "872": "Rebanarrocas",
+  "5193": "Manteo de la Hermandad",
+  "273298": "Catalejo de Mirín",
+  "918": "Talega de pellejo desviado",
+  "6480": "Leotardos desviados escurridizos",
+  "6476": "Patrón: cinturón de escamas desviadas",
+  "8071": "Palo de fritura",
+  "6481": "Guanteletes de Damire",
+  "10657": "Manto Talbar",
+  "10658": "Galochas del Lodazal",
+  "6631": "Raíz viva",
+  "6627": "Peto de escama mutante",
+  "6473": "Armadura del Colmillo",
+  "6469": "Golpe venenoso",
+  "6220": "Fragmento de meteorito",
+  "6641": "Hoja inquietante",
+  "6318": "Bastón de Ley de Odo",
+  "273643": "Dije de aterrahuargen",
+  "6340": "Pellejo de Fenrus",
+  "6743": "Anillo de sustentación",
+  "7001": "Cetro de lápida",
+  "7002": "Rodela ártica",
+  "270031": "Leotardos de ritual oscuro",
+  "270032": "Guardabrazos de cultor",
+  "6998": "Botas Nimbus",
+  "7000": "Faja de duramen",
+  "270025": "Guanteletes bañados en plata",
+  "7003": "Broches de escarabajos",
+  "7004": "Manteo de prelación",
+  "270021": "Guardabrazos de pellejo de venado",
+  "1155": "Vara del Insomne",
+  "6909": "Golpe de la hidra",
+  "11121": "Talwar Aguaoscura",
+  "6904": "Mordisco de Serra'kis",
+  "3400": "Espada larga Lucine",
+  "1317": "Bastón de raíz endurecido",
+  "270027": "Ursine Hammer",
+  "2033": "Botas de embajador",
+  "2906": "Leotardos de malla Villa Oscura",
+  "270029": "Town Clerk's Mittens",
+  "3562": "Cinturón de Confirmación",
+  "1264": "Azota cabezas",
+  "270036": "Magistrate's Pantaloons",
+  "273827": "Cobrador de deudas",
+  "273829": "Ballesta de mano oculta",
+  "273819": "Cercenahuesos",
+  "273805": "Arnés de Roca Negra",
+  "271667": "Destructor Maderaférrea",
+  "271670": "Rizo de vida",
+  "271664": "Empuñadura de carpinus",
+  "271716": "Forro de la Liga de Expedicionarios",
+  "271767": "Bastón de sanador",
+  "271766": "Martillo arrojadizo",
+  "271769": "Faja de Daewyn",
+  "271768": "Songblade Stabilizer",
+  "280766": "Poción de velocidad y Cartera de pociones",
+  "273029": "Golemsight Long Gun",
+  "273030": "Ring of Power Regulation",
+  "273028": "Reliquary Mantle",
+  "273026": "Garb of Florid Feathers",
+  "279839": "Spellguard Pauldrons",
+  "279840": "Renewing Footpads",
+  "279841": "Defender of Dalaran (recompensa)",
+  "251962": "Violet Sash",
+  "279849": "Runebound Gloves",
+  "279835": "Vine Pruner's Cloak",
+  "279836": "Thorn Protecting Girdle",
+  "279837": "Fallen Guard's Pendant",
+  "279838": "Arcane Infused Rod",
+  "273040": "Spine of the Devourer",
+  "273044": "Violet Sorcerer's Robes",
+  "273043": "Wand of Mana Concentration",
+  "273046": "Guardian's Dualblade",
+  "273049": "Archmagister's Faceted Pendant",
+  "6748": "Anillo de mono",
+  "6749": "Sortija de tigre",
+  "6750": "Aro de serpiente",
+  "274078": "Boar Signet",
+  "6751": "Chal de luto",
+  "6752": "Botas de lancero",
+  "270047": "Sentinel's Boots",
+  "4197": "Protectores de berilio",
+  "6742": "Faja Puño de piedra",
+  "6725": "Rodela de mármol",
+  "274084": "Quilboar Blaster (recompensa de misión)",
+  "6755": "Un pequeño contenedor de gemas",
+  "274158": "Espinazo de profeta de la muerte",
+  "274159": "Mandiletes espinamalditos",
+  "6687": "Crea cadáveres",
+  "6694": "Corazón de Agamaggan",
+  "9608": "Herramienta de desarme de Shoni",
+  "9609": "Mitones llamativos",
+  "270045": "Guantes de operario",
+  "9623": "Togas civinad (recompensa)",
+  "9624": "Peto de corredor",
+  "9625": "Leotardos duales reforzados",
+  "9535": "Brazales soldados con fuego",
+  "9536": "Manto alas de hada",
+  "270042": "Brazales de técnico",
+  "9605": "Manteo de mecánico",
+  "9604": "Martillo de mecánico",
+  "9492": "Reactivador de jigaflujo electromagnético",
+  "9449": "Manual de Muchedumbre de Puñetazos",
+  "9459": "Brazo izquierdo de Termochufe",
+  "9452": "Hidrocaña",
+  "7683": "Nudillos de latón sangrientos",
+  "274290": "Rodela de caminadolor",
+  "7746": "Mención de honor de la Liga de Expedicionarios",
+  "276898": "Bálsamos y salvación",
+  "276899": "Dedal anudillado",
+  "6829": "Espada de Serenidad",
+  "6830": "Mascahuesos",
+  "6831": "Amenaza negra",
+  "11262": "Orbe de Lorica",
+  "7713": "Vara ilusionaria",
+  "7714": "Hoja hipnótica",
+  "274292": "Houndmaster Boomerang",
+  "7717": "Devastador",
+  "7719": "Yelmo de rabioso enfurecido",
+  "10823": "Espada del vencedor",
+  "10824": "Talismán Resplandor de Ámbar",
+  "10710": "Anillo garra de dragón",
+  "10761": "Daga rabiafría",
+  "10762": "Togas del Exánime",
+  "10775": "Caparazón de Tuten'kash",
+  "7720": "Sombrero de Melenablanca",
+  "7723": "Poderío de Mograine",
+  "3928": "Poción de curación excelente",
+  "6149": "Poción de maná superior",
+  "9587": "Saco de pelambre descongelada",
+  "6723": "Medalla de Coraje",
+  "7673": "Collar de mejoría de Talvash",
+  "270059": "Restorer's Fine Gloves",
+  "270060": "Excavator Gauntlets",
+  "4980": "Guantes de prospector",
+  "270074": "Doomcaller's Pants",
+  "270075": "Fists of Impending Doom",
+  "4746": "Toga de cuentacondenas",
+  "9522": "Círculo de Piedras cargado",
+  "10358": "Brazales de Duracin",
+  "10359": "Botas perpetuas",
+  "270055": "Charged Leather Bracers",
+  "9626": "Carga de enano",
+  "9627": "Norte y guía de la Liga de Expedicionarios",
+  "9419": "Martillo de Fuego de Galgann",
+  "9412": "Lanzafuego de Galgann",
+  "11118": "Piedra arcádica",
+  "11122": "Zanahoria pinchada en un palo",
+  "9533": "Anillo de fraternidad masona",
+  "9534": "Celada de hermandad de ingeniero",
+  "9527": "Vara de tramoyista de hechizos",
+  "9531": "Espaldares de pizarra",
+  "9477": "El gorila del jefe",
+  "9379": "Sang'thraze el Deflector",
+  "9467": "Colmillo de Gahz'rilla",
+  "9473": "Piel gafada",
+  "17705": "Zumbaespada",
+  "17743": "Vara de resurgimiento",
+  "17753": "Objetivo del vigilante de Verdantis",
+  "17768": "Aro de Semillaleña",
+  "17778": "Faja arbusto",
+  "17770": "Guanteletes ramazarza",
+  "17775": "Togas de sagacidad",
+  "17776": "Yelmo Sprightring",
+  "17777": "Cadena incansable",
+  "17779": "Espaldares de mole de piedra",
+  "17774": "Marca del Elegido",
+  "17191": "Cetro de Celebras",
+  "17772": "Colgante de fragmento oscuro de Entusiasta",
+  "17773": "Colgante de fragmento de sombras prodigioso",
+  "267137": "Moldura Krol'Dok",
+  "1490": "Talismán guardián",
+  "10749": "Yelmo de guardia vengador (recompensa)",
+  "10750": "Daga dirk Potencia de vida (recompensa)",
+  "10751": "Aro Ráfaga de gemas (recompensa)",
+  "11123": "Leotardos de zancalluvia",
+  "11124": "Yelmo de Exilio",
+  "10773": "Urna Hakkari",
+  "12061": "Hoja de Juicio (recompensa)",
+  "12062": "Hoja apta para la lucha",
+  "12065": "Amuleto de los elementos",
+  "12548": "Testamento de Magni",
+  "12543": "Piedracanto de Forjaz",
+  "12113": "Manteo nacido del sol",
+  "12114": "Guantes Ocaso",
+  "12112": "Brazales de demonio de cripta",
+  "12115": "Garra Stalwart",
+  "11964": "Cayada Golpeveloz",
+  "12000": "Cuchilla de miembro",
+  "11865": "Botas rencor (recompensa)",
+  "11963": "Bufas de penitencia",
+  "12049": "Armadura de acero seccionador",
+  "11000": "Llave Sombratiniebla",
+  "11684": "Ferromazo",
+  "11815": "Mano de Justicia",
+  "18411": "Botas de soltura",
+  "18410": "Espada de esprínter",
+  "18491": "Hilador de conocimiento",
+  "18310": "Machete endemoniado",
+  "18317": "Talismán de tempestad",
+  "13958": "Grilletes Vermiothalak",
+  "13959": "Limitador de circunferencia de Omokk",
+  "13961": "Bozal de Halycon",
+  "13962": "Playa de Vosh'gajin",
+  "13963": "Mandiletes de maña de Voone",
+  "15824": "Togas de Astoria",
+  "15825": "Chaleco de calador",
+  "15827": "Peto de Luna de jade",
+  "12344": "Lacre de Ascensión",
+  "15867": "Talismán prismático",
+  "16670": "Botas de elementos",
+  "13183": "Escupeveneno",
+  "13218": "Colmillo de la Araña de cristal",
+  "18420": "Aplastahuesos",
+  "18421": "Yelmo provinciano",
+  "18424": "Botas de juncia",
+  "18396": "Tallador de mentes",
+  "18348": "Quel'Serrar (cadena de misión)",
+  "18366": "Manoplas de Gordok (uno de los 4 guanteletes Gordok)",
+  "18258": "Taje ogro de Gordok",
+  "18526": "Corona del Rey ogro",
+  "18500": "Anillo élfico deslustrado",
+  "16734": "Botas de valor",
+  "16731": "Yelmo de Valor",
+  "16693": "Corona de devoto",
+  "13937": "Cargo de rector",
+  "13315": "Testamento de Esperanza",
+  "13216": "Corona del Penitente",
+  "13217": "Sortija del Penitente",
+  "13209": "Lacre del Alba",
+  "19812": "Runa del Alba",
+  "13348": "Pelo de demonio",
+  "18717": "Martillo del Gran cruzado",
+  "13246": "Vengador Argenta",
+  "13243": "Defensor Argenta",
+  "13249": "Cruzado Argenta",
+  "22137": "Cartera de Ysida",
+  "16737": "Guanteletes de Valor",
+  "13335": "Riendas de Hemocargador",
+  "16666": "Jubón de Elementos",
+  "16730": "Peto de Valor",
+  "16729": "Bufas Forjaluz"
+ },
+ "quests": {
+  "96393": "Incursión en la Antigua Forjaz",
+  "96394": "Los muertos sin descanso",
+  "96403": "Reliquias importantes",
+  "96395": "Un agravio antiguo",
+  "98423": "El tratado de entendimiento",
+  "95250": "Criaturas abominables",
+  "95195": "La insignia ensangrentada",
+  "95189": "El blasón de Lordaeron",
+  "92415": "Recuerda el amor que te tengo",
+  "166": "La hermandad de los Defias",
+  "2040": "Asalto subterráneo",
+  "214": "Pañuelos rojos de seda",
+  "92753": "Destrucción en las Minas de la Muerte",
+  "92819": "Destrucción en las Minas de la Muerte",
+  "168": "La recolección de Tarjetas del Sindicato Minero",
+  "167": "Oh hermano. . .",
+  "373": "La carta sin enviar",
+  "391": "El motín de las Mazmorras",
+  "1486": "Pellejo de los descarriados",
+  "1487": "Erradicación de descarriados",
+  "1491": "Las bebidas astutas",
+  "959": "¡A por la botella!",
+  "6981": "El fragmento brillante",
+  "3369": "En las pesadillas",
+  "1654": "La prueba de rectitud",
+  "1740": "El orbe de Soran'ruk",
+  "971": "El conocimiento de las profundidades",
+  "1200": "La vileza de Brazanegra",
+  "1199": "Cascada del Crepúsculo",
+  "1275": "Investigaciones acerca de la corrupción",
+  "387": "Detener el motín",
+  "388": "El color de la sangre",
+  "386": "Lo que sucece alrededor…",
+  "377": "Crimen y castigo",
+  "378": "La furia mora en las profundidades",
+  "95646": "Horrores en las Tierras Altas",
+  "95810": "Transporte de reliquia perdida",
+  "98824": "Prisma prehistórico",
+  "95795": "Muerte en el pantano",
+  "95772": "En busca de Filosón",
+  "95647": "Perdido en la espesura",
+  "95809": "Tejido en el corazón",
+  "98815": "Pellejos de las Tierras Altas",
+  "92458": "El corazón de la perturbación",
+  "92489": "Poder sobrecogedor",
+  "92456": "Una muestra verde",
+  "92457": "Arcana famélica",
+  "1144": "Willix el Importador",
+  "1142": "Decaída mortal",
+  "1101": "La bruja del Horado",
+  "1221": "Los tubérculos hojazul",
+  "2928": "Gyrodrillmatic Excavationators",
+  "2929": "La gran traición",
+  "2904": "Un buen lío",
+  "2922": "¡Salva el cerebro de Techrobot!",
+  "2926": "Gnogaine",
+  "2962": "Necesitamos más material verdoso",
+  "2924": "Esencias artificiales",
+  "2930": "Rescatar los datos",
+  "Old Ironforge Incursion (96393)": "Incursión en la Antigua Forjaz",
+  "The Restless Dead (96394)": "Los muertos sin descanso",
+  "Important Heirlooms (96403)": "Reliquias importantes",
+  "An Ancient Grudge (96395)": "Un agravio antiguo",
+  "The Treaty of Understanding (98423)": "El tratado de entendimiento",
+  "Abominable Creatures (95250)": "Criaturas abominables",
+  "Bloodied Insignia (95195)": "La insignia ensangrentada",
+  "Crest of Lordaeron (95189)": "El blasón de Lordaeron",
+  "Remember That I Love You (92415)": "Recuerda el amor que te tengo",
+  "The Defias Brotherhood (166)": "La hermandad de los Defias",
+  "Underground Assault (2040)": "Asalto subterráneo",
+  "Red Silk Bandanas (214)": "Pañuelos rojos de seda",
+  "Destruction in Deadmines (92753 → 92819)": "Destrucción en las Minas de la Muerte",
+  "Collecting Memories (168) / Oh Brother... (167)": "La recolección de Tarjetas del Sindicato Minero / Oh hermano. . .",
+  "The Unsent Letter (373) → The Stockade Riots (391)": "La carta sin enviar → El motín de las Mazmorras",
+  "Deviate Hides (1486)": "Pellejo de los descarriados",
+  "Deviate Eradication (1487)": "Erradicación de descarriados",
+  "Smart Drinks (1491)": "Las bebidas astutas",
+  "Trouble at the Docks (959)": "¡A por la botella!",
+  "The Glowing Shard (6981) → In Nightmares (3369)": "El fragmento brillante → En las pesadillas",
+  "The Test of Righteousness (1654)": "La prueba de rectitud",
+  "The Orb of Soran'ruk (1740)": "El orbe de Soran'ruk",
+  "Knowledge in the Deeps (971)": "El conocimiento de las profundidades",
+  "Blackfathom Villainy (1200)": "La vileza de Brazanegra",
+  "Twilight Falls (1199)": "Cascada del Crepúsculo",
+  "Researching the Corruption (1275)": "Investigaciones acerca de la corrupción",
+  "The Stockade Riots (391)": "El motín de las Mazmorras",
+  "Quell The Uprising (387)": "Detener el motín",
+  "The Color of Blood (388)": "El color de la sangre",
+  "What Comes Around... (386)": "Lo que sucece alrededor…",
+  "Crime and Punishment (377)": "Crimen y castigo",
+  "The Fury Runs Deep (378)": "La furia mora en las profundidades",
+  "Horrors in the Highland (95646)": "Horrores en las Tierras Altas",
+  "Lost Relic Carry (95810) → Prehistoric Prism (98824)": "Transporte de reliquia perdida → Prisma prehistórico",
+  "Fallen in the Fen (95795)": "Muerte en el pantano",
+  "Songblade Search (95772)": "En busca de Filosón",
+  "Lost in the Thicket Things (95647) → Heartwoven (95809)": "Perdido en la espesura → Tejido en el corazón",
+  "Highland Hides (98815)": "Pellejos de las Tierras Altas",
+  "Heart of Disruption (92458)": "El corazón de la perturbación",
+  "Power Overwhelming (92489)": "Poder sobrecogedor",
+  "A Green Sample (92456)": "Una muestra verde",
+  "Starving Arcane (92457)": "Arcana famélica",
+  "Willix the Importer (1144)": "Willix el Importador",
+  "Mortality Wanes (1142)": "Decaída mortal",
+  "The Crone of the Kraul (1101)": "La bruja del Horado",
+  "Blueleaf Tubers (1221)": "Los tubérculos hojazul",
+  "Gyrodrillmatic Excavationators (2928)": "Gyrodrillmatic Excavationators",
+  "The Grand Betrayal (2929)": "La gran traición",
+  "A Fine Mess (2904)": "Un buen lío",
+  "Save Techbot's Brain! (2922)": "¡Salva el cerebro de Techrobot!",
+  "Gnogaine (2926) / The Only Cure is More Green Glow (2962)": "Gnogaine / Necesitamos más material verdoso",
+  "Essential Artificials (2924) / Data Rescue (2930)": "Esencias artificiales / Rescatar los datos",
+  "1050": "Mitología de los Titanes",
+  "96800": "Fuera de plazo",
+  "1053": "En el nombre de la Luz",
+  "96774": "Ancient Gurubashi Idol",
+  "3636": "Trae la Luz",
+  "3525": "Extinguir el ídolo",
+  "6626": "Un anfitrión del mal",
+  "2279": "Los discos de platino",
+  "2439": "Los discos de platino",
+  "1139": "Las tablillas perdidas de Voluntad",
+  "2198": "El collar hecho añicos",
+  "2199": "Esa información tiene un precio",
+  "2201": "Encuentra las gemas",
+  "2204": "Restaurar el collar",
+  "2361": "Restaurar el collar",
+  "704": "El sino de Agmond",
+  "709": "La solución a la maldición",
+  "2418": "Las piedras de energía",
+  "2240": "La cámara oculta",
+  "2770": "Gahz'rilla",
+  "2768": "Cetro Divinomático",
+  "2846": "Tiara de la Profundidad",
+  "2991": "Medallón de Nekrum",
+  "3527": "La profecía de Mosh'aru",
+  "2865": "Caparazones de escarabajo",
+  "3042": "Temple trol",
+  "7065": "Corrupción de la tierra y de la semilla",
+  "7041": "La corrupción de Lenguavil",
+  "7028": "Los males de Maraudón",
+  "7067": "Las instrucciones del Paria",
+  "7046": "El Cetro de Celebras",
+  "7070": "Fragmentos Oscuros",
+  "1475": "En El Templo de Atal'Hakkar",
+  "3528": "El dios Hakkar",
+  "1446": "El profeta Jammal'an",
+  "3447": "En las profundidades (3446) / El secreto del círculo (3447)",
+  "4322": "La fuga de la prisión",
+  "4363": "La sorpresa de la princesa",
+  "4263": "¡Incendius!",
+  "4126": "Hurley Negrálito",
+  "4136": "Ribbly Llavenrosca",
+  "3802": "El legado de los Hierro Negro",
+  "7441": "Pusillín y el ancestro Azj'Tordin",
+  "7488": "La Membrana de Lethtendris",
+  "5081": "La misión de Maxwell",
+  "4701": "Acaba con el origen de la amenaza",
+  "4742/4743": "El Sello de Ascensión",
+  "4867": "Urok Doomhowl",
+  "7462": "Locura interior (7461) / El tesoro de los Shen'dralar (7462)",
+  "1318": "Asunto Gordok sin finiquitar",
+  "5518": "El traje de orgo Gordok",
+  "5282": "Espíritus inquietos",
+  "5243": "Las casas de lo sagrado",
+  "5213": "El agente activo",
+  "5265": "Por encima y más allá (5263) → El Bastión Argenta (5265)",
+  "8945": "La súplica de un muerto",
+  "5102": "Muerte al general Drakkisath",
+  "6502": "Amuleto Pirodraco"
+ },
+ "npcs": {
+  "Earthseer Farsen": {
+   "es": "Videnterra Farsen",
+   "id": 264936
+  },
+  "Afadra Dunwall": {
+   "es": "Afadra Murocre",
+   "id": 264943
+  },
+  "Thom Filch": {
+   "es": "Thom Filch",
+   "id": 265003
+  },
+  "Ghostly Attendant": {
+   "es": "Auxiliar fantasmal",
+   "id": 265002
+  },
+  "Treaty of Understanding (tablilla)": {
+   "es": "Tratado de entendimiento (tablilla)",
+   "id": 281030
+  },
+  "Captain Truman": {
+   "es": "Capitán Truman",
+   "id": 265701
+  },
+  "Bloodied Insignia (objeto)": {
+   "es": "Insignia ensangrentada (objeto)",
+   "id": 268540
+  },
+  "Crest of Lordaeron (objeto)": {
+   "es": "Blasón de Lordaeron (objeto)",
+   "id": 268579
+  },
+  "Blood-Stained Letter (objeto)": {
+   "es": "Carta manchada de sangre (objeto)",
+   "id": 251522
+  },
+  "Gryan Stoutmantle": {
+   "es": "Gryan Mantorrecio",
+   "id": 234
+  },
+  "Shoni the Shilent": {
+   "es": "Shoni el Shilenshioso",
+   "id": 6579
+  },
+  "Scout Riell": {
+   "es": "Explorador Riell",
+   "id": 820
+  },
+  "Alba Fairmoon": {
+   "es": "Alba Lunajusta",
+   "id": 253092
+  },
+  "Wilder Thistlenettle": {
+   "es": "Wilder Cardortiga",
+   "id": 656
+  },
+  "An Unsent Letter (objeto)": {
+   "es": "Una carta sin enviar (objeto)",
+   "id": 2874
+  },
+  "Nalpak": {
+   "es": "Nalpak",
+   "id": 5767
+  },
+  "Ebru": {
+   "es": "Ebru",
+   "id": 5768
+  },
+  "Mebok Mizzyrix": {
+   "es": "Mebok Mizzyrix",
+   "id": 3446
+  },
+  "Crane Operator Bigglefuzz": {
+   "es": "Operador de grúa Pelardo",
+   "id": 3665
+  },
+  "Glowing Shard (objeto)": {
+   "es": "Fragmento resplandeciente (objeto)",
+   "id": 10441
+  },
+  "Jordan Stilwell": {
+   "es": "Jordan Fontana",
+   "id": 6181
+  },
+  "Doan Karhan": {
+   "es": "Doan Karhan",
+   "id": 6247
+  },
+  "Gerrig Bonegrip": {
+   "es": "Gerrig Agarrahueso",
+   "id": 2786
+  },
+  "Argent Guard Thaelrid": {
+   "es": "Guardia Argenta Thaelrid",
+   "id": 4787
+  },
+  "Argent Guard Manados": {
+   "es": "Guardia Argenta Manados",
+   "id": 4784
+  },
+  "Gershala Nightwhisper": {
+   "es": "Gershala Noctusurro",
+   "id": 8997
+  },
+  "Warden Thelwater": {
+   "es": "Alcaide Thelagua",
+   "id": 1719
+  },
+  "Nikova Raskol": {
+   "es": "Nikova Raskol",
+   "id": 1721
+  },
+  "Guard Berton": {
+   "es": "Guardia Berton",
+   "id": 859
+  },
+  "Councilman Millstipe": {
+   "es": "Consejero Tallolino",
+   "id": 270
+  },
+  "Motley Garmason": {
+   "es": "Motley Garmason",
+   "id": 1074
+  },
+  "Rethiel the Greenwarden": {
+   "es": "Rethiel el Guardaverde",
+   "id": 1244
+  },
+  "Titan Relic (objeto)": {
+   "es": "Reliquia titánica (objeto)",
+   "id": 270865
+  },
+  "Cuerpo de Daewyn": {
+   "es": "Cuerpo de Daewyn",
+   "id": null
+  },
+  "Dorin Songblade": {
+   "es": "Dorin Filosón",
+   "id": 956
+  },
+  "Caitlin Grassman": {
+   "es": "Caitlin Grassman",
+   "id": 1480
+  },
+  "James Halloran": {
+   "es": "James Halloran",
+   "id": 2094
+  },
+  "Image of Archmage Modera": {
+   "es": "Image of Archmage Modera",
+   "id": 269127
+  },
+  "High Sorcerer Andromath": {
+   "es": "Sumo Hechicero Andromath",
+   "id": 5694
+  },
+  "Shylamiir": {
+   "es": "Shylamiir",
+   "id": 5502
+  },
+  "Willix the Importer": {
+   "es": "Willix el Importador",
+   "id": 4508
+  },
+  "Heralath Fallowbrook": {
+   "es": "Heralath Arroyobarbecho",
+   "id": 4510
+  },
+  "Falfindel Waywarder": {
+   "es": "Díscolo Falfildel",
+   "id": 4048
+  },
+  "High Tinker Mekkatorque": {
+   "es": "Alto Mecachifle Mekkatorque",
+   "id": 7937
+  },
+  "Kernobee": {
+   "es": "Kernobee",
+   "id": 7850
+  },
+  "Tinkmaster Overspark": {
+   "es": "Maestro manitas Sobrechispa",
+   "id": 7944
+  },
+  "Ozzie Togglevolt": {
+   "es": "Oci Voltiflop",
+   "id": 1268
+  },
+  "Klockmort Spannerspan": {
+   "es": "Klockmort Palmalicate",
+   "id": 6169
+  },
+  "Librarian Mae Paledust": {
+   "es": "Bibliotecaria Mae Palipolvo",
+   "id": 3979
+  },
+  "Magus Olvek": {
+   "es": "Magus Olvek",
+   "id": 264265
+  },
+  "Raleigh the Devout": {
+   "es": "Raleigh el Devoto",
+   "id": 3980
+  },
+  "Mazu'kon": {
+   "es": "Mazu'kon",
+   "id": 264074
+  },
+  "Archbishop Benedictus": {
+   "es": "Arzobispo Benedictus",
+   "id": 1284
+  },
+  "Belnistrasz": {
+   "es": "Belnistrasz",
+   "id": 8516
+  },
+  "Myriam Moonsinger": {
+   "es": "Myriam Lunacanta",
+   "id": 12866
+  },
+  "The Discs of Norgannon (objeto)": {
+   "es": "Los Discos de Norgannon",
+   "id": 131474
+  },
+  "Advisor Belgrum": {
+   "es": "Consejero Belgrum",
+   "id": 2918
+  },
+  "Talvash del Kissel": {
+   "es": "Talvash del Kissel",
+   "id": 6826
+  },
+  "Prospector Ironband": {
+   "es": "Prospector Vetaferro",
+   "id": 1344
+  },
+  "Theldurin the Lost": {
+   "es": "Theldurin el Perdido",
+   "id": 2785
+  },
+  "Rigglefuzz": {
+   "es": "Aparejez",
+   "id": 2817
+  },
+  "Baelog": {
+   "es": "Baelog",
+   "id": 6906
+  },
+  "Wizzle Brassbolts": {
+   "es": "Wizzle Pernolatón",
+   "id": 4453
+  },
+  "Chief Engineer Bilgewhizzle": {
+   "es": "Ingeniero Jefe Silvaina",
+   "id": 7407
+  },
+  "Tabetha": {
+   "es": "Tabetha",
+   "id": 6546
+  },
+  "Thadius Grimshade": {
+   "es": "Thadius Sombramacabra",
+   "id": 8022
+  },
+  "Yeh'kinya": {
+   "es": "Yeh'kinya",
+   "id": 8579
+  },
+  "Tran'rek": {
+   "es": "Tran'rek",
+   "id": 7876
+  },
+  "Keeper Marandis": {
+   "es": "Vigilante Marandis",
+   "id": 13698
+  },
+  "Talendria": {
+   "es": "Talendria",
+   "id": 11715
+  },
+  "Willow": {
+   "es": "Willow",
+   "id": 13656
+  },
+  "Centaur Pariah": {
+   "es": "Paria Centauro",
+   "id": 13717
+  },
+  "Celebras the Redeemed": {
+   "es": "Celebras el Redimido",
+   "id": 13716
+  },
+  "Archmage Tervosh": {
+   "es": "Archimago Tervosh",
+   "id": 4967
+  },
+  "Brohann Caskbelly": {
+   "es": "Brohann Barriliga",
+   "id": 5384
+  },
+  "Atal'ai Exile": {
+   "es": "Exiliado Atal'ai",
+   "id": 5598
+  },
+  "Marvon Rivetseeker": {
+   "es": "Marvon Buscarroblones",
+   "id": 7771
+  },
+  "Marshal Windsor": {
+   "es": "Alguacil Windsor",
+   "id": 9023
+  },
+  "Princess Moira Bronzebeard": {
+   "es": "Princesa Moira Barbabronce",
+   "id": 8929
+  },
+  "Jalinda Sprig": {
+   "es": "Jalinda Sprig",
+   "id": 9561
+  },
+  "Ragnar Thunderbrew": {
+   "es": "Ragnar Cebatruenos",
+   "id": 1267
+  },
+  "Yuka Screwspigot": {
+   "es": "Yuka Llavenrosca",
+   "id": 9544
+  },
+  "Franclorn Forgewright": {
+   "es": "Franclorn Forjador",
+   "id": 8888
+  },
+  "Azj'Tordin": {
+   "es": "Azj'Tordin",
+   "id": 14355
+  },
+  "Latronicus Moonspear": {
+   "es": "Latronicus Lanzaluna",
+   "id": 7877
+  },
+  "Marshal Maxwell": {
+   "es": "Alguacil Maxwell",
+   "id": 9560
+  },
+  "Helendis Riverhorn": {
+   "es": "Helendis Rivacuerno",
+   "id": 9562
+  },
+  "Vaelan": {
+   "es": "Vaelan",
+   "id": 10296
+  },
+  "Warosh": {
+   "es": "Warosh",
+   "id": 10799
+  },
+  "Shen'dralar Ancient": {
+   "es": "Anciano Shen'dralar",
+   "id": 14358
+  },
+  "Captain Kromcrush": {
+   "es": "Capitán Kromcrush",
+   "id": 14325
+  },
+  "Knot Thimblejack": {
+   "es": "Knot Llavededo",
+   "id": 14338
+  },
+  "Egan": {
+   "es": "Egan",
+   "id": 11140
+  },
+  "Leonid Barthalomew the Revered": {
+   "es": "Leonid Barthalomew el Venerado",
+   "id": 11036
+  },
+  "Betina Bigglezink": {
+   "es": "Betina Bigglezink",
+   "id": 11035
+  },
+  "Duke Nicholas Zverenhoff": {
+   "es": "Duque Nicolas Zverenhoff",
+   "id": 11039
+  },
+  "Anthion Harmon": {
+   "es": "Anthion Harmon",
+   "id": 16016
+  },
+  "Haleh": {
+   "es": "Haleh",
+   "id": 10929
+  }
+ },
+ "bosses": {
+  "Aggem Thorncurse": "Aggem Malaespina",
+  "Aku'mai": "Aku'mai",
+  "Arcanic Enigma": "Enigma Arcano",
+  "Archmage Arugal": "Archimago Arugal",
+  "Bazil Thredd": "Bazil Thredd",
+  "Captain Greenskin": "Capitán Verdepel",
+  "Charlga Razorflank": "Charlga Filonavaja",
+  "Commander Springvale": "Comandante Vallefont",
+  "Cookie": "El Chef",
+  "Crowd Pummeler 9-60": "Gopleamasa 9-60",
+  "Deathsworn Captain (raro)": "Capitán Juramorte (raro)",
+  "Dextren Ward": "Dextren Tutor",
+  "Durgen Dirgehammer": "Durgen Martillo Funesto",
+  "Edwin VanCleef": "Edwin VanCleef",
+  "Faldrim Anvilmar": "Faldrim Yunquemar",
+  "Fenrus the Devourer": "Fenrus el Devorador",
+  "Lady Sarevess": "Lady Sarevess",
+  "Lord Pythas": "Lord Pythas",
+  "Lord Serpentis": "Lord Serpentis",
+  "Magmatus": "Magmatus",
+  "Mana Devourer": "Devorador de maná",
+  "Mekgineer Thermaplugg": "Mekigeniero Termochufe",
+  "Misión Heart of Disruption": "Misión El corazón de la perturbación",
+  "Misión The Crone of the Kraul": "Misión La bruja del Horado",
+  "Misión The Grand Betrayal": "Misión La gran traición",
+  "Mutanus the Devourer": "Mutanus el Devorador",
+  "Odo the Blindwatcher": "Odo el Cegato",
+  "Old Serra'kis": "Viejo Serra'kis",
+  "Overlord Ramtusk": "Señor Supremo Colmicarnero",
+  "Plunder": "Pillaje",
+  "Rath'mael": "Rath'mael",
+  "Relic Guardian": "Guardián de reliquias",
+  "Rhahk'Zor": "Rhahk'Zor",
+  "Shade of the Archmage": "Sombra del archimago",
+  "Shadetooth": "Sombradiente",
+  "Targorr the Dread": "Targor el Pavoroso",
+  "Twilight Lord Kelris": "Señor Crepuscular Kelris",
+  "Unstable Sentinel": "Centinela inestable",
+  "Verdan the Everliving": "Verdan el Eterno",
+  "Viktor the Vile": "Viktor el Abyecto",
+  "Viscous Fallout": "Radiactivo viscoso",
+  "Amnennar the Coldbringer": "Amnennar el Gélido",
+  "Antu'sul": "Antu'sul",
+  "Arcanist Doan": "Arcanista Doan",
+  "Archaedas": "Archaedas",
+  "Chief Ukorz Sandscalp": "Jefe Ukorz Cabellarena",
+  "Gahz'rilla": "Gahz'rilla",
+  "Galgann Firehammer": "Galgann Flamartillo",
+  "Herod": "Herod",
+  "High Inquisitor Whitemane": "Alta Inquisidora Melenablanca",
+  "Houndmaster Loksey": "Domador de jaurías Loksey",
+  "Interrogator Vishas": "Interrogador Vishas",
+  "Misión Bring the Light": "Misión Trae la Luz",
+  "Misión Corruption of Earth and Seed": "Misión Corrupción de la tierra y de la semilla",
+  "Misión Corruption of Earth and Seed (Princesa Theradras)": "Misión Corrupción de la tierra y de la semilla (Princesa Theradras)",
+  "Misión Gahz'rilla": "Misión Gahz'rilla",
+  "Misión In the Name of the Light": "Misión En el nombre de la Luz",
+  "Misión Solution to Doom": "Misión La solución a la maldición",
+  "Misión de Celebras": "Misión de Celebras",
+  "Scarlet Commander Mograine": "Comandante Escarlata Mograine",
+  "Shadowpriest Sezz'ziz": "Sacerdote oscuro Sezz'ziz",
+  "Tuten'kash": "Tuten'kash",
+  "Alzzin the Wildshaper": "Alzzin el Formaferal",
+  "Balnazzar": "Balnazzar",
+  "Baron Rivendare": "Barón Osahendido",
+  "Cofre de Tributo": "Tributo a Gordok",
+  "Crystal Fang (raro)": "Colmillor de cristal (raro)",
+  "Darkmaster Gandling": "Maestro oscuro Gandling",
+  "Emperor Dagran Thaurissan": "Emperador Dagran Thaurissan",
+  "General Drakkisath": "General Drakkisath",
+  "Highlord Omokk": "Alto Señor Omokk",
+  "Hydrospawn": "Hidromilecio",
+  "King Gordok": "Rey Gordok",
+  "Kirtonos the Herald": "Kirtonos el Heraldo",
+  "Misión Jail Break!": "Misión La fuga de la prisión",
+  "Misión Ribbly Screwspigot": "Misión Ribbly Llavenrosca",
+  "Misión The Forging of Quel'Serrar": "Misión Forjar Quel'Serrar",
+  "Misión The God Hakkar": "Misión El dios Hakkar",
+  "Mother Smolderweb": "Madre Telabrasada",
+  "Prince Tortheldrin": "Príncipe Tortheldrin",
+  "Ramstein the Gorger": "Ramstein el Empachador",
+  "The Beast": "La Bestia"
+ },
+ "zones": {
+  "Ashenvale": "Vallefresno",
+  "Bosque de Argénteos": "Bosque de Argénteos",
+  "Claros de Tirisfal, sobre Entrañas": "Claros de Tirisfal, sobre Entrañas",
+  "Darkshore": "Costa Oscura",
+  "Darnassus": "Darnassus",
+  "Dun Morogh": "Dun Morogh",
+  "Dun Morogh (noroeste, aprox. 24,40)": "Dun Morogh (noroeste, aprox. 24,40)",
+  "Duskwood": "Bosque del Ocaso",
+  "Feralas": "Feralas",
+  "Forjaz (Dun Morogh), Viejo Forjaz bajo la Gran Sede (aprox. 43,51)": "Forjaz (Dun Morogh), Viejo Forjaz bajo la Gran Sede (aprox. 43,51)",
+  "Ironforge": "Forjaz",
+  "Los Baldíos (sur), junto a Las Mil Agujas": "Los Baldíos (sur), junto a Las Mil Agujas",
+  "Los Baldíos, Oasis Olvidado": "Los Baldíos, Oasis Olvidado",
+  "Los Humedales, encima de la Excavación de Whelgar (cerca de Dun Algaz y Thelgen Rock)": "Los Humedales, encima de la Excavación de Whelgar (cerca de Dun Algaz y Thelgen Rock)",
+  "Montañas de Alterac (entrada por las cloacas, al noroeste de la ciudad)": "Montañas de Alterac (entrada por las cloacas, al noroeste de la ciudad)",
+  "Orgrimmar": "Orgrimmar",
+  "Páramos de Poniente, Arroyoluna": "Páramos de Poniente, Arroyoluna",
+  "Redridge Mountains": "Montañas Crestagrana",
+  "Silverpine Forest": "Bosque de Argénteos",
+  "Stormwind City": "Ciudad de Ventormenta",
+  "The Barrens": "Los Baldíos",
+  "Tirisfal Glades": "Claros de Tirisfal",
+  "Vallefresno, Playa de Zoram (norte)": "Vallefresno, Playa de Zoram (norte)",
+  "Ventormenta, Barrio de los Magos": "Ventormenta, Barrio de los Magos",
+  "Westfall": "Páramos de Poniente",
+  "Wetlands": "Los Humedales",
+  "Alterac Mountains": "Montañas de Alterac",
+  "Badlands": "Tierras Inhóspitas",
+  "Blasted Lands": "Las Tierras Devastadas",
+  "Clarofluvial (Riverglades, zona nueva de 36-44 al este de los Reinos del Este, junto a Tierras Inhóspitas, Las Estepas Ardientes y Crestagrana), aprox. 48.6, 26.3": "Clarofluvial (zona nueva de 36-44 al este de los Reinos del Este, junto a Tierras Inhóspitas, Las Estepas Ardientes y Crestagrana), aprox. 48.6, 26.3",
+  "Claros de Tirisfal": "Claros de Tirisfal",
+  "Claros de Tirisfal (noreste)": "Claros de Tirisfal (noreste)",
+  "Desolace": "Desolace",
+  "Desolace (suroeste)": "Desolace (suroeste)",
+  "Dustwallow Marsh": "Marjal Revolcafango",
+  "Hillsbrad Foothills": "Laderas de Trabalomas",
+  "Isla de Alcaz, noreste del Marjal Revolcafango": "Isla de Alcaz, noreste del Marjal Revolcafango",
+  "Loch Modan": "Loch Modan",
+  "Los Baldíos (sur), frontera con Las Mil Agujas": "Los Baldíos (sur), frontera con Las Mil Agujas",
+  "Mar de la Vega de Tuercespina. Según warcrafttavern, frente a la costa al oeste de Grom'gol; según foreverchanges, en la Isla de Gillijim (suroeste), con portal en la cueva Sunken Hollow.": "Mar de la Vega de Tuercespina. Según warcrafttavern, frente a la costa al oeste de Grom'gol; según foreverchanges, en la Isla de Gillijim (suroeste), con portal en la cueva Sunken Hollow.",
+  "Riverglades": "Clarofluvial",
+  "Stranglethorn Vale": "Vega de Tuercespina",
+  "Tanaris": "Tanaris",
+  "Tanaris (noroeste)": "Tanaris (noroeste)",
+  "Thousand Needles": "Las Mil Agujas",
+  "Tierras Inhóspitas (norte)": "Tierras Inhóspitas (norte)",
+  "Azshara": "Azshara",
+  "Azshara norte, tras la Puerta de los Furbolgs": "Azshara norte, tras la Puerta de los Furbolgs",
+  "Burning Steppes": "Las Estepas Ardientes",
+  "Cráter de Un'Goro, colinas del norte": "Cráter de Un'Goro, colinas del norte",
+  "Eastern Plaguelands": "Tierras de la Peste del Este",
+  "Feralas (centro)": "Feralas (centro)",
+  "Montaña Roca Negra": "Montaña Roca Negra",
+  "Montaña Roca Negra (entre La Garganta de Fuego y Las Estepas Ardientes)": "Montaña Roca Negra (entre La Garganta de Fuego y Las Estepas Ardientes)",
+  "Pantano de las Penas": "Pantano de las Penas",
+  "Searing Gorge": "La Garganta de Fuego",
+  "Swamp of Sorrows": "Pantano de las Penas",
+  "The Hinterlands": "Tierras del Interior",
+  "Tierras de la Peste del Este (norte)": "Tierras de la Peste del Este (norte)",
+  "Tierras de la Peste del Oeste, Caer Darrow": "Tierras de la Peste del Oeste, Caer Darrow",
+  "Un'Goro Crater": "Cráter de Un'Goro",
+  "Western Plaguelands": "Tierras de la Peste del Oeste",
+  "Winterspring": "Cuna del Invierno"
+ }
+}

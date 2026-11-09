@@ -172,7 +172,7 @@
     "y": 47.4,
     "inside": false,
     "note": "Colina del Centinela (Páramos de Poniente), en la torre.",
-    "prereq": "Las 6 partes previas de la cadena The Defias Brotherhood (65, 132, 135, 141, 142, 155)"
+    "prereq": "Las 6 partes previas de la cadena La hermandad de los Defias (65, 132, 135, 141, 142, 155)"
    },
    {
     "quest": "Underground Assault (2040)",
@@ -211,7 +211,7 @@
     "y": null,
     "inside": false,
     "note": "Posada de Colina del Centinela (sin coordenadas exactas en las fuentes). Final de la cadena Toxic Soil; kami-labs indica que el último paso empieza con el objeto Extra-Destructive Explosives.",
-    "prereq": "Cadena de Alba Fairmoon: Testing the Wells → Murloc Gills → The State of the Mines → Moonbrook Espionage → A Dynamite Plan / Explosive Consultation"
+    "prereq": "Cadena de Alba Lunajusta: Testing the Wells → Murloc Gills → The State of the Mines → Moonbrook Espionage → A Dynamite Plan / Explosive Consultation"
    },
    {
     "quest": "Collecting Memories (168) / Oh Brother... (167)",
@@ -236,7 +236,7 @@
     "x": 42.5,
     "y": 71.5,
     "inside": true,
-    "note": "Lo suelta Edwin VanCleef dentro de la mazmorra. Se entrega a Baros Alexston (Plaza de la Catedral, Ventormenta), que te manda con Warden Thelwater. Coordenadas = entrada.",
+    "note": "Lo suelta Edwin VanCleef dentro de la mazmorra. Se entrega a Baros Alexston (Plaza de la Catedral, Ventormenta), que te manda con Alcaide Thelagua. Coordenadas = entrada.",
     "prereq": null
    }
   ]
@@ -339,7 +339,7 @@
     "y": 37.0,
     "inside": false,
     "note": "Solo paladines. A las puertas de Forjaz (Dun Morogh).",
-    "prereq": "Cadena del Tome of Valor (Catedral de Ventormenta) y The Test of Righteousness (1653)"
+    "prereq": "Cadena del Tome of Valor (Catedral de Ventormenta) y La prueba de rectitud (1653)"
    },
    {
     "quest": "The Orb of Soran'ruk (1740)",
@@ -543,7 +543,7 @@
     "x": 38.0,
     "y": 51.0,
     "inside": true,
-    "note": "Lo suelta el Relic Guardian dentro. Se entrega al Prospector Whelgar (Los Humedales 38.8, 52.3), que da Prehistoric Prism para High Explorer Magellas (Salón de los Exploradores, Forjaz 69.4, 19.1). Coordenadas = entrada.",
+    "note": "Lo suelta el Guardián de reliquias dentro. Se entrega al Prospector Whelgar (Los Humedales 38.8, 52.3), que da Prehistoric Prism para High Explorer Magellas (Salón de los Exploradores, Forjaz 69.4, 19.1). Coordenadas = entrada.",
     "prereq": null
    },
    {
@@ -556,7 +556,7 @@
     "x": 38.0,
     "y": 51.0,
     "inside": true,
-    "note": "Cuerpo de un enano en una tienda de la zona de orcos Faucedraco, pasado Shadetooth. Coordenadas = entrada.",
+    "note": "Cuerpo de un enano en una tienda de la zona de orcos Faucedraco, pasado Sombradiente. Coordenadas = entrada.",
     "prereq": null
    },
    {
@@ -697,7 +697,7 @@
     "x": 42.2,
     "y": 89.8,
     "inside": true,
-    "note": "Tirado en el suelo cerca de Charlga Razorflank. Se entrega a Treshala Fallowbrook (Darnassus). Coordenadas = entrada.",
+    "note": "Tirado en el suelo cerca de Charlga Filonavaja. Se entrega a Treshala Fallowbrook (Darnassus). Coordenadas = entrada.",
     "prereq": null
    },
    {
@@ -788,7 +788,7 @@
     "y": 50.6,
     "inside": false,
     "note": "Ciudad Manitas (Forjaz).",
-    "prereq": "Opcional: Tinkmaster Overspark, de Brother Sarno (Catedral de Ventormenta)"
+    "prereq": "Opcional: Maestro manitas Sobrechispa, de Brother Sarno (Catedral de Ventormenta)"
    },
    {
     "quest": "Gnogaine (2926) / The Only Cure is More Green Glow (2962)",
@@ -862,7 +862,7 @@
     "x": null,
     "y": null,
     "inside": false,
-    "note": "En Dalaran (Silver Enclave según warcrafttavern), Montañas de Alterac. Wowhead Forever no da coordenadas todavía. El libro (The Lost Magic of the Runemasters) está en una mesa de la sala de Arcanist Doan.",
+    "note": "En Dalaran (Silver Enclave según warcrafttavern), Montañas de Alterac. Wowhead Forever no da coordenadas todavía. El libro (The Lost Magic of the Runemasters) está en una mesa de la sala de Arcanista Doan.",
     "prereq": null
    },
    {
@@ -923,7 +923,7 @@
    "zone_id": 400,
    "x": 47.8,
    "y": 23.9,
-   "note": "Las coordenadas del portal (kami-labs) están en el mapa de Las Mil Agujas. La boca de la zona está en el borde sur de Los Baldíos, donde espera Myriam Moonsinger (Los Baldíos 49.0, 94.8). Ruta de Alianza: barco a Theramore y luego hacia el sur por Los Baldíos."
+   "note": "Las coordenadas del portal (kami-labs) están en el mapa de Las Mil Agujas. La boca de la zona está en el borde sur de Los Baldíos, donde espera Myriam Lunacanta (Los Baldíos 49.0, 94.8). Ruta de Alianza: barco a Theramore y luego hacia el sur por Los Baldíos."
   },
   "quests": [
    {
@@ -936,7 +936,7 @@
     "x": 39.4,
     "y": 27.4,
     "inside": false,
-    "note": "En la Catedral de la Luz de Ventormenta. El objetivo es matar a Amnennar the Coldbringer.",
+    "note": "En la Catedral de la Luz de Ventormenta. El objetivo es matar a Amnennar el Gélido.",
     "prereq": null
    },
    {
@@ -1141,7 +1141,7 @@
     "y": 77.0,
     "inside": false,
     "note": "En la Pista de Carreras de las Salinas Brillantes, al sureste de Las Mil Agujas. Hace falta el Mallet of Zul'Farrak para invocar a Gahz'rilla.",
-    "prereq": "The Brassbolts Brothers (Klockmort Spannerspan, Ciudad Manitas de Forjaz), que es la introducción de la Alianza"
+    "prereq": "The Brassbolts Brothers (Klockmort Palmalicate, Ciudad Manitas de Forjaz), que es la introducción de la Alianza"
    },
    {
     "quest": "Divino-matic Rod (2768)",
@@ -1180,7 +1180,7 @@
     "y": 19.4,
     "inside": false,
     "note": "En la torre de la Fortaleza de Nethergarde, al norte de Las Tierras Devastadas.",
-    "prereq": "Witherbark Cages → The Altar of Zul → Thadius Grimshade (cadena que empieza con Gryphon Master Talonaxe, Pico Nidal, Tierras del Interior)"
+    "prereq": "Witherbark Cages → The Altar of Zul → Thadius Sombramacabra (cadena que empieza con Gryphon Master Talonaxe, Pico Nidal, Tierras del Interior)"
    },
    {
     "quest": "The Prophecy of Mosh'aru (3527)",
@@ -1345,7 +1345,7 @@
     "y": 22.4,
     "inside": false,
     "note": "En Puerto Bonvapor, en la costa noreste de Tanaris. Vuela a Gadgetzan y ve al este.",
-    "prereq": "Cadena de Screecher Spirits → The Prophecy of Mosh'aru → The Ancient Egg (Yeh'kinya); necesitas el Egg of Hakkar"
+    "prereq": "Cadena de Screecher Spirits → La profecía de Mosh'aru → The Ancient Egg (Yeh'kinya); necesitas el Egg of Hakkar"
    },
    {
     "quest": "Jammal'an the Prophet (1446)",
@@ -1396,7 +1396,7 @@
     "y": 72.5,
     "inside": true,
     "note": "Dentro de la mazmorra, en su celda de la prisión. Necesitas la Prison Cell Key de High Interrogator Gerstahn. Coordenadas = entrada.",
-    "prereq": "A Shred of Hope (cadena de Marshal Windsor, que empieza con Dragonkin Menace de Helendis Riverhorn en Vigilia de Morgan)"
+    "prereq": "A Shred of Hope (cadena de Alguacil Windsor, que empieza con Dragonkin Menace de Helendis Rivacuerno en Vigilia de Morgan)"
    },
    {
     "quest": "The Princess's Surprise (4363)",
@@ -1435,7 +1435,7 @@
     "y": 52.4,
     "inside": false,
     "note": "En Kharanos (Dun Morogh), junto a la posada, cerca de Forjaz.",
-    "prereq": "Ragnar Thunderbrew, de Enohar Thunderbrew en las Tierras Devastadas (63.6, 20.6)"
+    "prereq": "Ragnar Cebatruenos, de Enohar Thunderbrew en las Tierras Devastadas (63.6, 20.6)"
    },
    {
     "quest": "Ribbly Screwspigot (4136)",
@@ -1448,7 +1448,7 @@
     "y": 21.9,
     "inside": false,
     "note": "En la Cresta de la Llama (norte de Las Estepas Ardientes), puesto neutral goblin.",
-    "prereq": "Yuka Screwspigot, de Yorba Screwspigot en Tanaris (67.0, 24.0), según wowhandbook"
+    "prereq": "Yuka Llavenrosca, de Yorba Screwspigot en Tanaris (67.0, 24.0), según wowhandbook"
    },
    {
     "quest": "Dark Iron Legacy (3802)",
@@ -1536,7 +1536,7 @@
     "x": 85.5,
     "y": 68.9,
     "inside": false,
-    "note": "En Vigilia de Morgan, junto a Marshal Maxwell.",
+    "note": "En Vigilia de Morgan, junto a Alguacil Maxwell.",
     "prereq": null
    },
    {
@@ -1686,7 +1686,7 @@
     "y": 33.7,
     "inside": false,
     "note": "En una cabaña de Terrordale, en el oeste de la zona (wowhandbook; mmonster da 11.3, 26.5 con el mapa de Forever).",
-    "prereq": "The Restless Souls (5281), de Caretaker Alen en la Capilla de la Esperanza de la Luz (79.5, 63.9)"
+    "prereq": "Espíritus inquietos (5281), de Caretaker Alen en la Capilla de la Esperanza de la Luz (79.5, 63.9)"
    },
    {
     "quest": "Houses of the Holy (5243)",
@@ -1799,7 +1799,7 @@
     "y": 51.2,
     "inside": false,
     "note": "En lo alto de Mazthoril, Cuna del Invierno (se llega por la cueva y un portal de runa). Vuela a Everlook.",
-    "prereq": "The Dragon's Eye, del Alto Señor Bolvar Fordragon: final de la larga cadena de Marshal Windsor (empieza con Dragonkin Menace de Helendis Riverhorn)"
+    "prereq": "The Dragon's Eye, del Alto Señor Bolvar Fordragon: final de la larga cadena de Alguacil Windsor (empieza con Dragonkin Menace de Helendis Rivacuerno)"
    }
   ]
  }

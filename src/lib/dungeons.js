@@ -4,7 +4,7 @@ export const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, 
 
 // Nombres con los que aparecen las mazmorras en los textos (español e inglés) -> nombre en dungeons.json
 const ALIAS = {
-  "The Hall of Thanes": ["Hall of Thanes", "Sala de los Thanes", "Salón de los Thanes"],
+  "The Hall of Thanes": ["Hall of Thanes", "Salón de los Feudales"],
   "Ragefire Chasm": ["Ragefire Chasm", "Sima ígnea"],
   "Ruins of Lordaeron": ["Ruins of Lordaeron", "Ruinas de Lordaeron"],
   "The Deadmines": ["Deadmines", "Minas de la Muerte"],
@@ -12,13 +12,13 @@ const ALIAS = {
   "Shadowfang Keep": ["Shadowfang Keep", "Castillo de Colmillo Oscuro"],
   "Blackfathom Deeps": ["Blackfathom Deeps", "Cavernas de Brazanegra", "Brazanegra"],
   "The Stockade": ["Stockade", "Mazmorras de Ventormenta", "Las Mazmorras"],
-  "Excavation Site: Wetlands": ["Excavation Site", "Excavación de los Humedales"],
+  "Excavation Site: Wetlands": ["Excavation Site", "Excavación: Los Humedales", "Excavación de los Humedales"],
   "City of Dalaran": ["City of Dalaran", "Ciudad de Dalaran"],
   "Razorfen Kraul": ["Razorfen Kraul", "Horado Rajacieno"],
   "Gnomeregan": ["Gnomeregan"],
   "Scarlet Monastery - Graveyard": ["Scarlet Monastery", "Monasterio Escarlata"],
   "The Drowned City": ["Drowned City", "Ciudad Sumergida"],
-  "Razorfen Downs": ["Razorfen Downs", "Zahúrda Rajacieno"],
+  "Razorfen Downs": ["Razorfen Downs", "Zahúrda Rojocieno", "Zahúrda Rajacieno"],
   "Krol'dok Stronghold": ["Krol'dok"],
   "Uldaman": ["Uldaman"],
   "Zul'Farrak": ["Zul'Farrak"],
@@ -29,10 +29,10 @@ const ALIAS = {
   "Lower Blackrock Spire": ["Lower Blackrock Spire", "Cumbre de Roca Negra", "LBRS"],
   "Upper Blackrock Spire": ["Upper Blackrock Spire", "UBRS"],
   "Dire Maul - East": ["Dire Maul", "La Masacre"],
-  "Blackmaw Hold": ["Blackmaw"],
+  "Blackmaw Hold": ["Blackmaw", "Bastión Faucenegra"],
   "Scholomance": ["Scholomance"],
   "Stratholme - Main Gate (Living)": ["Stratholme"],
-  "Shaper's Terrace": ["Shaper's Terrace"],
+  "Shaper's Terrace": ["Shaper's Terrace", "Bancal del Creador"],
 };
 const NAMES = new Set(D.dungeons.map((d) => d.name));
 const PAIRS = Object.entries(ALIAS).filter(([n]) => NAMES.has(n)).flatMap(([n, list]) => list.map((a) => [a, n]))
