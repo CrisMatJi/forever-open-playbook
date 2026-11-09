@@ -3,7 +3,7 @@ import Base from "../layouts/Base.astro";
 import Icon from "../components/Icon.astro";
 import D from "../data/dungeons.json";
 import G from "../data/general.json";
-const wh = (i) => `https://www.wowhead.com/forever/item=${i}`;
+const wh = (i) => `https://www.wowhead.com/forever/es/item=${i}`;
 const pk = (p = "") => { const t = p.toLowerCase(); return t.startsWith("must") ? "must" : t.startsWith("good") ? "good" : "skip"; };
 const PRI = (p) => ({ must: "q-leg", good: "q-rare", skip: "" })[pk(p)];
 const priLabel = (p) => ({ must: "Imprescindible", good: "Buena", skip: "Opcional" })[pk(p)];
@@ -12,13 +12,14 @@ const short = (l = "") => (l.match(/\d+\s*-\s*\d+/) || [l])[0].replace(/\s/g, ""
 const minLvl = (l = "") => +(l.match(/\d+/) || [99])[0];
 const LIST = [...D.dungeons].sort((a, b) => minLvl(a.levels) - minLvl(b.levels));
 import { slug } from "../lib/dungeons.js";
+import { esDungeon, esZone, esItem, esBoss, esNpc, esQuest } from "../lib/es.js";
 // Convierte "Nombre (12345)" en enlaces de Wowhead con icono y ficha al pasar el ratón
 const escH = (t) => t.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-const itemLink = (id, label) => `<a class="ritem" href="https://www.wowhead.com/forever/item=${id}" target="_blank" rel="noopener" data-wowhead="item=${id}&domain=forever">${label}</a>`;
+const itemLink = (id, label) => `<a class="ritem" href="https://www.wowhead.com/forever/es/item=${id}" target="_blank" rel="noopener">${label}</a>`;
 function rewardHtml(text = "") {
   return escH(text).replace(/([A-Z][^,;():]*?)\s*\((\d{3,6}(?:\/\d{3,6})*)([^)]*)\)/g, (m, name, ids, rest) => {
     const list = ids.split("/");
-    const main = itemLink(list[0], name.trim());
+    const main = itemLink(list[0], escH(esItem(list[0], name.trim())));
     const extra = list.slice(1).map((id, i) => " " + itemLink(id, `(${i + 2})`)).join("");
     return main + extra + (rest.replace(/^;\s*/, "").trim() ? ` <span class="note">(${rest.replace(/^;\s*/, "").trim()})</span>` : "");
   });
@@ -32,13 +33,13 @@ function mapsFor(d) {
   const zones = new Map(), qinfo = {};
   const add = (zid, zone, pt) => { const k = zid ?? zone; if (!zones.has(k)) zones.set(k, { zoneId: zid, zone, points: [] }); zones.get(k).points.push(pt); };
   const e = m.entrance;
-  if (e && e.x != null && e.y != null) add(e.zone_id, e.zone_es || e.zone, { n: "E", x: e.x, y: e.y, label: "Entrada de la mazmorra", kind: "entrance" });
+  if (e && e.x != null && e.y != null) add(e.zone_id, e.zone_es || esZone(e.zone), { n: "E", x: e.x, y: e.y, label: "Entrada de la mazmorra", kind: "entrance" });
   let i = 0;
   for (const q of m.quests || []) {
     const info = { ...q };
     if (!q.inside && q.x != null && q.y != null) {
       info.n = String(++i);
-      add(q.zone_id, q.zone_es || q.zone, { n: info.n, x: q.x, y: q.y, label: `${q.npc || "?"} · ${q.quest}`, kind: "quest" });
+      add(q.zone_id, q.zone_es || esZone(q.zone), { n: info.n, x: q.x, y: q.y, label: `${esNpc(q.npc) || "?"} · ${esQuest(q.quest)}`, kind: "quest" });
     }
     qinfo[q.quest] = info;
   }
@@ -59,15 +60,15 @@ const xp = G.dungeons?.xp_changes || [];
     <div class="tablewrap"><table class="wide">
       <thead><tr><th>Nivel</th><th>Mazmorra</th><th>Dónde</th><th>Prioridad</th></tr></thead>
       <tbody>{LIST.map((d) => (
-        <tr><td class="num"><span class="lvlband">{short(d.levels)}</span></td><td><a href={`#${slug(d.name)}`}><b>{d.name}</b></a>{d.name_es && <div class="note">{d.name_es}</div>}{d.new_or_changed && <div class="note" style="color:var(--q-unc)">Novedad</div>}</td><td class="note">{d.zone}</td><td><span class={`vtag ${PRI(d.priority)}`}>{priLabel(d.priority)}</span></td></tr>
+        <tr><td class="num"><span class="lvlband">{short(d.levels)}</span></td><td><a href={`#${slug(d.name)}`}><b>{esDungeon(d.name)}</b></a>{d.new_or_changed && <div class="note" style="color:var(--q-unc)">Novedad</div>}</td><td class="note">{d.zone}</td><td><span class={`vtag ${PRI(d.priority)}`}>{priLabel(d.priority)}</span></td></tr>
       ))}</tbody>
     </table></div>
   </section>
 
   {LIST.map((d) => (
     <section class="box" id={slug(d.name)}>
-      <div class="titlerow"><h2>{d.name}</h2><span class="lvlband num">{short(d.levels)}</span></div>
-      <p class="note">{[d.name_es, d.zone].filter(Boolean).join(" · ")}</p>
+      <div class="titlerow"><h2>{esDungeon(d.name)}</h2><span class="lvlband num">{short(d.levels)}</span></div>
+      <p class="note">{esZone(d.zone)}</p>
       <p class="note">Nivel: {d.levels}{d.classic_levels ? ` · Classic: ${d.classic_levels}` : ""}</p>
       {d.priority && <p class={pk(d.priority) === "skip" ? "warnline" : "goodline"} style="margin-top:8px"><b>{priLabel(d.priority)}:</b> {priText(d.priority)}</p>}
       {d.new_or_changed && <p style="margin-top:8px"><b>En Forever:</b> {d.new_or_changed}</p>}
@@ -78,8 +79,8 @@ const xp = G.dungeons?.xp_changes || [];
           <thead><tr><th>#</th><th>Misión</th><th>Nv</th><th>A quién hablar y dónde</th><th>Recompensa</th></tr></thead>
           <tbody>{d.quests.map((q) => { const k = Object.keys(qinfo).find((n) => q.name.startsWith(n) || n.startsWith(q.name.replace(/ \(\d+\)$/, ""))); const x = k ? qinfo[k] : null; return (
             <tr><td style="white-space:nowrap">{x?.n ? <span class="pin-s">{x.n}</span> : x?.inside ? <span class="vtag">dentro</span> : ""}</td>
-            <td><b>{q.name.replace(/ \(\d+\)$/, "")}</b>{q.worth && <div class="note">{q.worth}</div>}</td><td class="num">{q.level}</td>
-            <td>{x?.npc ? <>{x.npc_id ? <a href={`https://www.wowhead.com/forever/npc=${x.npc_id}`} target="_blank" rel="noopener"><b>{x.npc}</b></a> : <b>{x.npc}</b>}<span class="qnpc">{x.zone_es || x.zone}{x.x != null && !x.inside ? ` (${x.x}, ${x.y})` : ""}</span></> : <span class="note">{q.giver}</span>}
+            <td><a href={`https://www.wowhead.com/forever/es/quest=${(/\((\d+)\)\s*$/.exec(q.name) || [])[1]}`} target="_blank" rel="noopener" data-wh-icon-added="true"><b>{esQuest(q.name)}</b></a>{q.worth && <div class="note">{q.worth}</div>}</td><td class="num">{q.level}</td>
+            <td>{x?.npc ? <>{x.npc_id ? <a href={`https://www.wowhead.com/forever/es/npc=${x.npc_id}`} target="_blank" rel="noopener"><b>{esNpc(x.npc)}</b></a> : <b>{esNpc(x.npc)}</b>}<span class="qnpc">{x.zone_es || esZone(x.zone)}{x.x != null && !x.inside ? ` (${x.x}, ${x.y})` : ""}</span></> : <span class="note">{q.giver}</span>}
               {x?.note && <span class="qnpc note">{x.note}</span>}{x?.prereq && <span class="qnpc note">Antes: {x.prereq}</span>}</td>
             <td set:html={rewardHtml(q.reward)} /></tr>); })}</tbody>
         </table></div>
@@ -89,10 +90,10 @@ const xp = G.dungeons?.xp_changes || [];
       {d.drops?.length > 0 && (
         <div class="gear-grid" style="margin-top:12px">
           {d.drops.map((g) => {
-            const inner = (<>{g.icon && <Icon name={g.icon} size={36} label={g.name} big class="q-rare" />}<span><span class="gear-slot">{g.slot}{g.boss ? ` · ${g.boss}` : ""}</span><b>{g.name}</b></span></>);
+            const inner = (<>{g.icon && <Icon name={g.icon} size={36} label={esItem(g.id, g.name)} big class="q-rare" />}<span><span class="gear-slot">{g.slot}{g.boss ? ` · ${esBoss(g.boss)}` : ""}</span><b>{esItem(g.id, g.name)}</b></span></>);
             return (
               <article class="gear-card">
-                {g.id ? <a class="gear-main" href={wh(g.id)} target="_blank" rel="noopener" data-wowhead={`item=${g.id}&domain=forever`} data-wh-icon-added={g.icon ? "true" : undefined}>{inner}</a> : <div class="gear-main">{inner}</div>}
+                {g.id ? <a class="gear-main" href={wh(g.id)} target="_blank" rel="noopener" data-wh-icon-added={g.icon ? "true" : undefined}>{inner}</a> : <div class="gear-main">{inner}</div>}
                 {g.for && <p class="gear-how">{g.for}</p>}
               </article>
             );

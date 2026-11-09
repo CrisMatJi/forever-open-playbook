@@ -18,7 +18,7 @@ const cap = d.level_cap || 60;
 const main = expand(L.order);
 const alt = L.alt?.order ? expand(L.alt.order) : null;
 const total = Math.max(0, cap - 9);
-const wh = (i) => `https://www.wowhead.com/forever/item=${i}`;
+const wh = (i) => `https://www.wowhead.com/forever/es/item=${i}`;
 const verdictClass = { best: "q-leg", good: "q-rare", ok: "q-unc" };
 const verdictTxt = { best: "La mejor", good: "Buena", ok: "Vale" };
 const lvlOf = (i) => i + 10;
@@ -144,7 +144,7 @@ const rkey = (r) => r.split(" (")[0].replace("Skyborne - High Order", "Skyborne"
           </>);
           return (
             <article class="gear-card">
-              {g.id ? <a class="gear-main" href={wh(g.id)} target="_blank" rel="noopener" data-wowhead={`item=${g.id}&domain=forever`} data-wh-icon-added={g.icon ? "true" : undefined}>{inner}</a> : <div class="gear-main">{inner}</div>}
+              {g.id ? <a class="gear-main" href={wh(g.id)} target="_blank" rel="noopener" data-wh-icon-added={g.icon ? "true" : undefined}>{inner}</a> : <div class="gear-main">{inner}</div>}
               <p class="gear-how"><b>{g.source}</b>{g.why ? ` · ${g.why}` : ""}</p>
             </article>
           );
