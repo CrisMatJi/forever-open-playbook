@@ -21,7 +21,7 @@
   "https://talentsforever.com/ (número de build)",
   "ForeverHispano: buscado, pero no apareció en los resultados. No se ha usado."
  ],
- "cap_note": "El tope es nivel 60 desde el lanzamiento, así que desde la Alianza puedes llegar a las 35 mazmorras de la lista (26 de Classic y 9 nuevas). La beta solo llegó a nivel 30: de las mazmorras nuevas de nivel alto (Drowned City, Bastión Krol'dok, Prisión de Alcaz, Bastión Faucenegra y Bancal del Creador) aún no se conocen jefes ni botín, y el botín de Classic por encima de nivel 45 puede cambiar. El buscador de grupo no teletransporta: hay que viajar o usar las piedras de invocación.",
+ "cap_note": "El tope es nivel 60 desde el lanzamiento, así que desde la Alianza puedes llegar a las 35 mazmorras de la lista (26 de Classic y 9 nuevas). La beta solo llegó a nivel 30: de las mazmorras nuevas de nivel alto (Ciudad Sumergida, Bastión Krol'dok, Prisión de Alcaz, Bastión Faucenegra y Bancal del Creador) aún no se conocen jefes ni botín, y el botín de Classic por encima de nivel 45 puede cambiar. El buscador de grupo no teletransporta: hay que viajar o usar las piedras de invocación.",
  "dungeons": [
   {
    "name": "The Hall of Thanes",
@@ -51,7 +51,7 @@
      "level": 15,
      "giver": "Thom Filch, Forjaz",
      "reward": "Dwarven Tome (279898) o Tomb Robber's Gloves (280096); 2.950 PX",
-     "worth": "Sí. Hay que recoger 8 Dwarven Heirloom por la mazmorra."
+     "worth": "Sí. Hay que recoger 8 Reliquias enanas por la mazmorra."
     },
     {
      "name": "An Ancient Grudge (96395)",
@@ -63,7 +63,7 @@
     {
      "name": "The Treaty of Understanding (98423)",
      "level": 16,
-     "giver": "Objeto tras la puerta de la cámara final; se entrega al rey Magni Bronzebeard en Forjaz",
+     "giver": "Objeto tras la puerta de la cámara final; se entrega al rey Magni Barbabronce en Forjaz",
      "reward": "2.550 PX (sin objeto)",
      "worth": "Sí, es PX gratis y la entrega está en la misma ciudad."
     }
@@ -116,8 +116,8 @@
     }
    ],
    "tips": [
-    "Recorrido lineal: Faldrim Yunquemar (fantasma, Mind Blast y maldición; patrulla entre no-muertos, así que tíralo solo) → Magmatus (mata primero al Dark Iron Summoner mientras el tanque aleja al elemental) → Pillaje (Knock Away: tanquéalo de espaldas a una pared para que no te lance a otro grupo) → Durgen (miedo de 8 s y Rend; mata antes a los Looters y deja los gólems para el final).",
-    "Los Dark Iron Summoners lanzan Bolas de fuego muy fuertes e invocan elementales: interrúmpelos o tíralos con línea de visión. Los Engineers tiran bombas al objetivo con más amenaza; sal del área.",
+    "Recorrido lineal: Faldrim Yunquemar (fantasma, Explosión mental y maldición; patrulla entre no-muertos, así que tíralo solo) → Magmatus (mata primero al Invocador Hierro Negro mientras el tanque aleja al elemental) → Pillaje (Mamporro: tanquéalo de espaldas a una pared para que no te lance a otro grupo) → Durgen (miedo de 8 s y Desgarrar; mata antes a los Saqueadores Hierro Negro y deja los gólems para el final).",
+    "Los Invocadores Hierro Negro lanzan Bolas de fuego muy fuertes e invocan elementales: interrúmpelos o tíralos con línea de visión. Los Ingenieros Hierro Negro tiran bombas al objetivo con más amenaza; sal del área.",
     "Duración: unos 20-25 min (estimación). Las 5 misiones de Alianza dan unas 13.300 PX en total."
    ],
    "priority": "must: es la primera mazmorra de la Alianza, está en la capital, tiene 5 misiones y botín azul nuevo. Ideal entre los niveles 14 y 17."
@@ -129,7 +129,7 @@
    "classic_levels": null,
    "zone": "Claros de Tirisfal, sobre Entrañas",
    "alliance_access": "Está en territorio Horda. Ruta de method.gg: barco de Ventormenta a Auberdine, luego Auberdine–Puerto de Menethil, quedándote en ese barco hasta Costasur (ruta nueva de Forever). De ahí, a pie por el Bosque de Argénteos hasta Tirisfal (esta parte no la detalla la fuente). Hay riesgo de guardias en zona PvP. Lo mejor es que un brujo os invoque a la piedra de encuentro.",
-   "new_or_changed": "Mazmorra NUEVA. Los Renegados recuperan la ciudad. 6 jefes: Witherfang, The Baron, Viktor el Abyecto, The Abandoned, Bjork y Rath'mael.",
+   "new_or_changed": "Mazmorra NUEVA. Los Renegados recuperan la ciudad. 6 jefes: Colmimarchito, El barón, Viktor el Abyecto, El Abandonado, Bjork y Rath'mael.",
    "quests": [
     {
      "name": "Abominable Creatures (95250)",
@@ -155,7 +155,7 @@
     {
      "name": "Remember That I Love You (92415)",
      "level": 22,
-     "giver": "Objeto Blood-Stained Letter; se entrega a Orphan Matron Nightingale en Ventormenta",
+     "giver": "Objeto Carta manchada de sangre; se entrega a la Supervisora de huérfanos Ruiseñor en Ventormenta",
      "reward": "Tarnished Locket (279870); 6.200 PX",
      "worth": "Sí."
     }
@@ -212,7 +212,7 @@
    "classic_levels": "17-26 (Group Finder de Classic Era); 18-23 en la vanilla original",
    "zone": "Páramos de Poniente, Arroyoluna",
    "alliance_access": "Vuela a la Colina del Centinela (Páramos de Poniente) y baja al sur hasta Arroyoluna. La entrada está en la casa/cueva junto a la herrería. Piedra de encuentro en la entrada. Los elfos de la noche cogen el barco de Auberdine a Ventormenta.",
-   "new_or_changed": "Botín renovado: hay objetos nuevos como Ogre Loincloth, Dull Sawblade, Goblin Hammer, First Mate Band (284715) y Catalejo de Mirín (273298), y los bichos normales sueltan piezas nuevas. Hay una misión nueva, 'Destruction in Deadmines' (92753). Varias recompensas de misión tienen opciones nuevas (IDs 270xxx).",
+   "new_or_changed": "Botín renovado: hay objetos nuevos como Taparrabos de ogro, Dull Sawblade, Goblin Hammer, Sortija de contramaestre (284715) y Catalejo de Mirín (273298), y los bichos normales sueltan piezas nuevas. Hay una misión nueva, 'Destrucción en las Minas de la Muerte' (92753). Varias recompensas de misión tienen opciones nuevas (IDs 270xxx).",
    "quests": [
     {
      "name": "The Defias Brotherhood (166)",
@@ -314,9 +314,9 @@
     }
    ],
    "tips": [
-    "Orden: Rhahk'Zor → (Miner Johnson, raro) → Sneed y su Trituradora → Gilnid → Mr. Smite → Capitán Verdepel → VanCleef. El Chef, en el barco, se suele dejar para el final.",
-    "Peligros: los Defias Evokers lanzan Flamestrike (interrumpe o sal del área). Mr. Smite aturde al grupo al 66% y al 33%, así que mata antes a los dos Blackguards. Si aturdes a VanCleef cuando baja del 50%, no invoca adds.",
-    "A El Chef, aléjalo del barco e interrumpe El Chef's Cooking, que lo cura.",
+    "Orden: Rhahk'Zor → (Minero Johnson, raro) → Sneed y su Trituradora → Gilnid → Sr. Golpin → Capitán Verdepel → VanCleef. El Chef, en el barco, se suele dejar para el final.",
+    "Peligros: los Evocadores Defias lanzan Fogonazo (interrumpe o sal del área). El Sr. Golpin aturde al grupo al 66% y al 33%, así que mata antes a los dos Guardanegros Defias. Si aturdes a VanCleef cuando baja del 50%, no invoca adds.",
+    "A El Chef, aléjalo del barco e interrumpe Cocina de Chefita, que lo cura.",
     "Duración: 20-30 min (method.gg)."
    ],
    "priority": "must: es la mazmorra icónica de la Alianza, tiene 6-7 misiones y muy buen botín para su nivel."
@@ -328,7 +328,7 @@
    "classic_levels": "17-24",
    "zone": "Los Baldíos, Oasis Olvidado",
    "alliance_access": "Lejos. Opción 1: barco de Puerto de Menethil a Theramore y de ahí andando hacia Trinquete. Opción 2: Bahía del Botín y el barco a Trinquete. Luego al oeste por los Baldíos (zona Horda, cuidado con los guardias). La piedra de encuentro está en la loma de encima de la cueva.",
-   "new_or_changed": "Botín parcialmente nuevo: Snake Eye Kaleidoscope (273088), Cloak of Hermitic Bliss (273084), Slither Cord (273089) y Skum's Bucket (273137). Algunas recompensas nuevas en misiones de Horda. Fix del beta: las Serpentbloom Snakes desaparecen a los pocos minutos.",
+   "new_or_changed": "Botín parcialmente nuevo: Caleidoscopio de ojo de serpiente (273088), Capa de dicha ermitaña (273084), Cordón de serpenteo (273089) y Cubo de Skum (273137). Algunas recompensas nuevas en misiones de Horda. Corrección del beta: las Serpientes reptilia desaparecen a los pocos minutos.",
    "quests": [
     {
      "name": "Deviate Hides (1486)",
@@ -347,7 +347,7 @@
     {
      "name": "Smart Drinks (1491)",
      "level": 18,
-     "giver": "Mebok Mizzyrix, Trinquete (tras Raptor Horns)",
+     "giver": "Mebok Mizzyrix, Trinquete (tras Los cuernos de raptor)",
      "reward": "PX 2.650",
      "worth": "Solo si ya estás en Trinquete."
     },
@@ -361,7 +361,7 @@
     {
      "name": "The Glowing Shard (6981) → In Nightmares (3369)",
      "level": 26,
-     "giver": "Fragmento que suelta Mutanus; se termina con Mathrengyl Bearwalker en Darnassus",
+     "giver": "Fragmento que suelta Mutanus; se termina con Mathrengyl Garroso en Darnassus",
      "reward": "Talbar Mantle (10657) o Quagmire Galoshes (10658); 5.150 PX",
      "worth": "Sí."
     }
@@ -405,8 +405,8 @@
     }
    ],
    "tips": [
-    "No es lineal: Lady Anacondra → Kresh → Lord Cobrahn → (Deviate Faerie Dragon, raro) → Lord Pythas → Skum → Lord Serpentis → Verdan → escolta de Disciple of Naralex hasta Mutanus.",
-    "Interrumpe el Druid's Slumber de los Druidas del Colmillo (duermen al sanador). Verdan pega muy fuerte al tanque.",
+    "No es lineal: Lady Anacondra → Kresh → Lord Cobrahn → (Dragón férico descarriado, raro) → Lord Pythas → Skum → Lord Serpentis → Verdan → escolta del Discípulo de Naralex hasta Mutanus.",
+    "Interrumpe la Somnolencia del druida de los Druidas del Colmillo (duermen al sanador). Verdan pega muy fuerte al tanque.",
     "Para la escolta final, limpia antes la mazmorra. Duración: 30-40 min."
    ],
    "priority": "good: el botín es bueno, pero para la Alianza el viaje es caro y no hay misiones exclusivas. Vale si te pilla por Theramore o un brujo os invoca."
@@ -418,12 +418,12 @@
    "classic_levels": "22-30",
    "zone": "Bosque de Argénteos",
    "alliance_access": "Lejos y en territorio Horda. Hay una ruta nueva de barco: el barco de Auberdine para en Costasur (method.gg). Desde Costasur, al norte por las Laderas de Trabalomas hasta el Bosque de Argénteos. Alternativa clásica: Puerto de Menethil → Laderas → Bosque de Argénteos. Mejor con invocación de brujo.",
-   "new_or_changed": "Botín parcialmente nuevo: Sorcerer Collar, Cell-Keeper's Claws, Blade of Silverlaine, Dije de aterrahuargen (273643), Blindwatcher's Sight, Half-Eaten Boots y Worgpelt Leggings. El Black Tome que hay en la sala de Arugal sirve para desbloquear el jefe secreto de Dalaran.",
+   "new_or_changed": "Botín parcialmente nuevo: Collera de hechicero, Garras de guardián de la celda, Blade of Silverlaine, Dije de aterrahuargen (273643), Blindwatcher's Sight, Half-Eaten Boots y Worgpelt Leggings. El Black Tome que hay en la sala de Arugal sirve para desbloquear el jefe secreto de Dalaran.",
    "quests": [
     {
      "name": "The Test of Righteousness (1654)",
      "level": 20,
-     "giver": "Tome of Valor, Catedral de Ventormenta → Jordan Stillwell (Forjaz)",
+     "giver": "Libro del valor, Catedral de Ventormenta → Jordan Fontana (Forjaz)",
      "reward": "Verigan's Fist (cadena del martillo del paladín)",
      "worth": "Solo paladines: imprescindible."
     },
@@ -483,9 +483,9 @@
     }
    ],
    "tips": [
-    "Orden: Rethilgore → Razorclaw → Baron Silverlaine (Veil of Shadow: -75% de sanación recibida) → Comandante Vallefont → Odo → (Deathsworn Captain) → Fenrus → Wolf Master Nandos → Arugal.",
-    "Mata primero a los Lupine Horrors (invocan más bichos). Interrumpe a los Wailing Guardsmen (silencian). Contra Arugal, rompe la línea de visión durante Void Bolt.",
-    "No te vayas sin coger el Black Tome de la mesa de Arugal: con él consigues el Tome of Dalaran (para Lyn the Ignored, en Dalaran). Duración: 20-30 min."
+    "Orden: Rethilgore → Zarpador el Carnicero → Barón Filargenta (Velo de Sombras: -75% de sanación recibida) → Comandante Vallefont → Odo → (Capitán Juramorte) → Fenrus → Maestro de lobos Nandos → Arugal.",
+    "Mata primero a los Horrores Lupinos (invocan más bichos). Interrumpe a los Custodios de los Lamentos (silencian). Contra Arugal, rompe la línea de visión durante Descarga abisal.",
+    "No te vayas sin coger el Black Tome de la mesa de Arugal: con él consigues el Escrito de Dalaran (para Lyn el Ignorado, en Dalaran). Duración: 20-30 min."
    ],
    "priority": "skip/good: la Alianza no tiene misiones salvo la de clase del paladín (y la de brujo). Solo merece la pena si buscas un arma concreta o el Black Tome para Dalaran."
   },
@@ -496,7 +496,7 @@
    "classic_levels": "24-32",
    "zone": "Vallefresno, Playa de Zoram (norte)",
    "alliance_access": "Fácil: Forever añade un barco directo del Puerto de Ventormenta a Auberdine. Desde Auberdine (Costa Oscura) baja al sur hasta la Playa de Zoram. También puedes volar a Astranaar y caminar al oeste. La entrada se nada parcialmente.",
-   "new_or_changed": "Botín parcialmente nuevo: Spiked Shell Band (273839), Cursed Murloc Eye (273840) y Twilight Lord Girdle (273846). Las recompensas de misión tienen opciones nuevas (270021-270032).",
+   "new_or_changed": "Botín parcialmente nuevo: Sortija de caparazón con pinchos (273839), Ojo de múrloc maldito (273840) y Faja de Señor Crepuscular (273846). Las recompensas de misión tienen opciones nuevas (270021-270032).",
    "quests": [
     {
      "name": "Knowledge in the Deeps (971)",
@@ -508,7 +508,7 @@
     {
      "name": "Blackfathom Villainy (1200)",
      "level": 27,
-     "giver": "Guardia Argenta Thaelrid, dentro (tras In Search of Thaelrid, de Dawnwatcher Shaedlass en Darnassus)",
+     "giver": "Guardia Argenta Thaelrid, dentro (tras Buscando a Thaelrid, de Shaedlass Guardalbas en Darnassus)",
      "reward": "Gravestone Scepter (7001), Arctic Buckler (7002), Dark Ritual Leggings (270031) o Cultist's Armguards (270032); 7.850 PX",
      "worth": "Sí, la mejor de la mazmorra."
     },
@@ -567,7 +567,7 @@
    ],
    "tips": [
     "Orden: Ghamoo-ra → Lady Sarevess → Gelihast → (Lorgus Jett) → Viejo Serra'kis (bajo el agua: mátalo antes de ahogarte) → Señor Crepuscular Kelris → Aku'mai.",
-    "Mata primero a los Twilight Shadowmages (Dominar mente) e interrumpe el Mana Burn de los Hellcallers. Con Kelris, rompe la línea de visión junto a la pared de la entrada.",
+    "Mata primero a los Magos oscuros Crepusculares (Dominar mente) e interrumpe el Quemar maná de los Clamainfiernos Malarraíz. Con Kelris, rompe la línea de visión junto a la pared de la entrada.",
     "Enciende los 4 braseros de Aku'mai de uno en uno. Duración: 25-35 min."
    ],
    "priority": "must: el acceso es fácil con el barco nuevo, tiene 4 misiones con mucha PX (más de 22.000) y buenas armas."
@@ -579,12 +579,12 @@
    "classic_levels": "24-32",
    "zone": "Ventormenta, Barrio de los Magos",
    "alliance_access": "Dentro de Ventormenta. Solo Alianza.",
-   "new_or_changed": "En Forever casi todo el botín de jefes es nuevo (IDs 2738xx): Cobrador de deudas, Ballesta de mano oculta, Cercenahuesos, Arnés de Roca Negra, Hamhock's Cleaver, etc. El raro Bruegal Ironknuckle conserva su botín clásico.",
+   "new_or_changed": "En Forever casi todo el botín de jefes es nuevo (IDs 2738xx): Cobrador de deudas, Ballesta de mano oculta, Cercenahuesos, Arnés de Roca Negra, Hamhock's Cleaver, etc. El raro Bruegal Nudoferro conserva su botín clásico.",
    "quests": [
     {
      "name": "The Stockade Riots (391)",
      "level": 29,
-     "giver": "Alcaide Thelagua, Las Mazmorras (requiere The Unsent Letter de VanCleef)",
+     "giver": "Alcaide Thelagua, Las Mazmorras (requiere La carta sin enviar de VanCleef)",
      "reward": "25 pp; 4.950 PX",
      "worth": "Sí."
     },
@@ -619,7 +619,7 @@
     {
      "name": "The Fury Runs Deep (378)",
      "level": 27,
-     "giver": "Motley Garmason, Dun Modr (Los Humedales; requiere The Dark Iron War)",
+     "giver": "Motley Garmason, Dun Modr (Los Humedales; requiere La guerra contra los Hierro Negro)",
      "reward": "Belt of Vindication (3562), Headbasher (1264) o Magistrate's Pantaloons (270036)",
      "worth": "Sí, si ya hiciste la cadena de Dun Modr."
     }
@@ -663,7 +663,7 @@
     }
    ],
    "tips": [
-    "Es un solo pasillo con celdas: Targorr (aparece en distintas celdas) → Dextren Tutor (miedo de área; tíralo donde no te mande a otras celdas) → Kam Deepfury → Hamhock (cadena de relámpagos y Ansia de sangre) → Bazil Thredd (bomba de humo que aturde a todo el grupo). El raro Bruegal suele estar en el pasillo izquierdo.",
+    "Es un solo pasillo con celdas: Targorr (aparece en distintas celdas) → Dextren Tutor (miedo de área; tíralo donde no te mande a otras celdas) → Kam Furiahonda → Hamhock (cadena de relámpagos y Ansia de sangre) → Bazil Thredd (bomba de humo que aturde a todo el grupo). El raro Bruegal suele estar en el pasillo izquierdo.",
     "Se completa rápido: 15-25 min. Es perfecta para hacerla 1-2 veces y entregar 5-6 misiones (más de 24.000 PX en el beta)."
    ],
    "priority": "must: está en Ventormenta, es rápida y tiene 6 misiones y botín nuevo."
@@ -694,7 +694,7 @@
     {
      "name": "The Crone of the Kraul (1101)",
      "level": 34,
-     "giver": "Díscolo Falfildel, Feralas (tras Lonebrow's Journal)",
+     "giver": "Díscolo Falfildel, Feralas (tras El diario de Henrig Soliceja)",
      "reward": "Berylline Pads (4197), Stonefist Girdle (6742) o Marbled Buckler (6725) + Quilboar Blaster (274084)",
      "worth": "Solo si ya vas a Feralas."
     },
@@ -754,8 +754,8 @@
     }
    ],
    "tips": [
-    "Jefes: Roogug (nuevo) / Aggem Malaespina → Death Speaker Jargba → Señor Supremo Colmicarnero → Agathelos the Raging → Charlga Filonavaja. Raros: Blind Hunter y Earthcaller Halmgar.",
-    "Los Quilboar geomancers y los totems hacen mucho daño: mata los totems primero. Agathelos pega fuerte y hace Rampage, así que aleja a los cuerpo a cuerpo con poca vida.",
+    "Jefes: Roogug (nuevo) / Aggem Malaespina → Médium Jargba → Señor Supremo Colmicarnero → Agathelos el Furioso → Charlga Filonavaja. Raros: Cazador ciego y Clamor de Tierra Halmgar.",
+    "Los geomantes jabaespines y los tótems hacen mucho daño: mata los tótems primero. Agathelos pega fuerte y hace Arrasada, así que aleja a los cuerpo a cuerpo con poca vida.",
     "Duración aproximada: 30-40 min (estimación)."
    ],
    "priority": "good: botín nuevo interesante (Espinazo de profeta de la muerte). El viaje es largo para la Alianza; combínalo con misiones de Theramore o Feralas."
@@ -766,7 +766,7 @@
    "levels": "29-38 (foreverchanges/warcrafttavern); kami-labs da entrada a 25",
    "classic_levels": "29-38",
    "zone": "Dun Morogh (noroeste, aprox. 24,40)",
-   "alliance_access": "Desde Forjaz, al oeste por Dun Morogh hasta el ascensor exterior. Piedra de encuentro en la superficie. La Workshop Key (6893), que suelta Electrocutioner 6000, abre la puerta trasera.",
+   "alliance_access": "Desde Forjaz, al oeste por Dun Morogh hasta el ascensor exterior. Piedra de encuentro en la superficie. La Llave de taller (6893), que suelta Electrocutor 6000, abre la puerta trasera.",
    "new_or_changed": "Botín y recompensas actualizados (algunas opciones nuevas: Brazales de técnico 270042, Guantes de operario 270045). Según warcrafttavern, el resto apenas cambia.",
    "quests": [
     {
@@ -807,7 +807,7 @@
     {
      "name": "Essential Artificials (2924) / Data Rescue (2930)",
      "level": 30,
-     "giver": "Klockmort Palmalicate / Master Mechanic Castpipe, Forjaz",
+     "giver": "Klockmort Palmalicate / Maestro mecánico Funditubo, Forjaz",
      "reward": "Data Rescue: Repairman's Cape (9605) o Mechanic's Pipehammer (9604)",
      "worth": "Sí."
     }
@@ -860,8 +860,8 @@
     }
    ],
    "tips": [
-    "Jefes: Grubbis (evento de Blastmaster Emi Shortfuse con oleadas de troggs) → Radiactivo viscoso → Electrocutioner 6000 (separaos por la cadena de relámpagos; suelta la Workshop Key) → Gopleamasa 9-60 (de espaldas al grupo) → (Dark Iron Ambassador, raro) → Mekigeniero Termochufe.",
-    "Contra Thermaplugg: tanquea en el centro, que un DPS a distancia pulse los botones de las columnas para frenar las bombas, y vuelve a provocar tras cada Knock Away.",
+    "Jefes: Grubbis (evento de Maestro Destructor Emi Plomocorto con oleadas de troggs) → Radiactivo viscoso → Electrocutor 6000 (separaos por la cadena de relámpagos; suelta la Llave de taller) → Gopleamasa 9-60 (de espaldas al grupo) → (Embajador Hierro Negro, raro) → Mekigeniero Termochufe.",
+    "Contra Termochufe: tanquea en el centro, que un DPS a distancia pulse los botones de las columnas para frenar las bombas, y vuelve a provocar tras cada Mamporro.",
     "Ojo con caerse en los pasillos de varios niveles. Es larga: 45-60 min (estimación)."
    ],
    "priority": "good: muchas misiones de Alianza (6+), pero larga y algo pesada. Hazla de una vez con grupo hacia el nivel 32."
@@ -873,7 +873,7 @@
    "classic_levels": null,
    "zone": "Los Humedales, encima de la Excavación de Whelgar (cerca de Dun Algaz y Thelgen Rock)",
    "alliance_access": "Muy fácil: desde el Puerto de Menethil o Thelsamar (Loch Modan). La entrada está al pie de la montaña cerca de Dun Algaz, marcada por la piedra de encuentro.",
-   "new_or_changed": "Mazmorra NUEVA, en exterior. Tiene constructos titánicos, raptores, crocoliscos y orcos Faucedraco. 4 jefes: Saltspine, Sombradiente, Highland Horror (solo para la misión de Alianza, sin botín) y Guardián de reliquias (nivel 31). Fix del 8 oct: si la pierdes, vuelves a recibir la Titan Relic para la continuación.",
+   "new_or_changed": "Mazmorra NUEVA, en exterior. Tiene constructos titánicos, raptores, crocoliscos y orcos Faucedraco. 4 jefes: Espinasal, Sombradiente, Horror de las Tierras Altas (solo para la misión de Alianza, sin botín) y Guardián de reliquias (nivel 31). Corrección del 8 oct: si la pierdes, vuelves a recibir la Reliquia titánica para la continuación.",
    "quests": [
     {
      "name": "Horrors in the Highland (95646)",
@@ -885,7 +885,7 @@
     {
      "name": "Lost Relic Carry (95810) → Prehistoric Prism (98824)",
      "level": 31,
-     "giver": "Titan Relic (del Guardián de reliquias) → High Explorer Magellas, Forjaz",
+     "giver": "Reliquia titánica (del Guardián de reliquias) → Alto Expedicionario Magellas, Forjaz",
      "reward": "Explorer's League Dustcover (271716), Healer's Staff (271767) o Heavehammer (271766); 1.250 + 6.150 PX",
      "worth": "Sí."
     },
@@ -906,14 +906,14 @@
     {
      "name": "Lost in the Thicket Things (95647) → Heartwoven (95809)",
      "level": 31,
-     "giver": "Caitlin Grassman, Puerto de Menethil (breadcrumb: Seeking Caitlin, de Llana en Astranaar)",
+     "giver": "Caitlin Grassman, Puerto de Menethil (misión previa: En busca de Caitlin, de Llana en Astranaar)",
      "reward": "Pociones (Greater Healing 1710 o Mana 3827) + Swiftness Potion y Satchel of Potions (280766); 4.900 + 6.150 PX",
      "worth": "Sí, por la PX."
     },
     {
      "name": "Highland Hides (98815)",
      "level": 28,
-     "giver": "James Halloran, Puerto de Menethil (tras Young Crocolisk Skins)",
+     "giver": "James Halloran, Puerto de Menethil (tras Piel de crocolisco joven)",
      "reward": "12 pp; 1.150 PX",
      "worth": "Opcional."
     }
@@ -957,9 +957,9 @@
     }
    ],
    "tips": [
-    "Saltspine patrulla la orilla del lago y con Dust Storm le baja la amenaza al tanque. Sombradiente patrulla con 2 Thicket Hunters y tiene un miedo (Terrifying Roar) que te puede mandar a grupos ocultos en la hierba alta: lleva Tótem de tremor o Custodia de miedo, o limpia antes la hierba.",
-    "Guardián de reliquias (nivel 31) se activa en el panel titánico. Hace un golpe frontal (Arcing Smash), un pisotón y un Knock Away que baja la amenaza. Se le puede aturdir y ralentizar.",
-    "Mata uno a uno a los Young Riptooth (Fatal Bite). Contra los Dragonmaw Warders, Bendición de libertad quita la red. Duración: 20-35 min. Las misiones de Alianza suman unas 39.300 PX."
+    "Espinasal patrulla la orilla del lago y con Tormenta de polvo le baja la amenaza al tanque. Sombradiente patrulla con 2 Cazadores de los matorrales y tiene un miedo (Clamor aterrorizador) que te puede mandar a grupos ocultos en la hierba alta: lleva Tótem de tremor o Custodia de miedo, o limpia antes la hierba.",
+    "Guardián de reliquias (nivel 31) se activa en el panel titánico. Hace un golpe frontal (Machaque arqueado), un pisotón y un Mamporro que baja la amenaza. Se le puede aturdir y ralentizar.",
+    "Mata uno a uno a los Young Riptooth (Mordida fatal). Contra los Guardianes Faucedraco, Bendición de libertad quita la red. Duración: 20-35 min. Las misiones de Alianza suman unas 39.300 PX."
    ],
    "priority": "must: es nueva, está en ruta para la Alianza (Humedales) y es la mazmorra con más PX de su tramo. Hazla entre los niveles 26 y 31."
   },
@@ -969,8 +969,8 @@
    "levels": "28-33 (Blizzard/foreverchanges); method.gg pone 28-35. Las misiones se cogen desde nivel 24.",
    "classic_levels": null,
    "zone": "Montañas de Alterac (entrada por las cloacas, al noroeste de la ciudad)",
-   "alliance_access": "Requiere la Dalaran Sewer Key (277507). Basta con que la lleve un miembro del grupo. Alianza: An Alarming Request (92432), de Emissary Jacques en el Ayuntamiento de Costasur → Archmage Modera → El corazón de la perturbación (92458), que da la llave. Para llegar a Costasur: barco de Menethil (nueva parada) o a pie desde Los Humedales/Arathi. Después, Friend of the Kirin Tor (92459) con Archmage Celindra (reputación y tabardo del Kirin Tor, solo Alianza).",
-   "new_or_changed": "Mazmorra NUEVA, abierta en el beta el 8 oct. 8 jefes, uno secreto (Lyn the Ignored), con varios caminos y casi todo daño arcano. El Black Tome de Castillo de Colmillo Oscuro, usado en el ayuntamiento de Molino Ámbar, crea el Tome of Dalaran que desbloquea a Lyn.",
+   "alliance_access": "Requiere la Llave de las cloacas de Dalaran (277507). Basta con que la lleve un miembro del grupo. Alianza: An Alarming Request (92432), de Emissary Jacques en el Ayuntamiento de Costasur → Archmage Modera → El corazón de la perturbación (92458), que da la llave. Para llegar a Costasur: barco de Menethil (nueva parada) o a pie desde Los Humedales/Arathi. Después, Friend of the Kirin Tor (92459) con Archmage Celindra (reputación y tabardo del Kirin Tor, solo Alianza).",
+   "new_or_changed": "Mazmorra NUEVA, abierta en el beta el 8 oct. 8 jefes, uno secreto (Lyn el Ignorado), con varios caminos y casi todo daño arcano. El Black Tome de Castillo de Colmillo Oscuro, usado en el ayuntamiento de Molino Ámbar, crea el Escrito de Dalaran que desbloquea a Lyn.",
    "quests": [
     {
      "name": "Heart of Disruption (92458)",
@@ -991,7 +991,7 @@
      "level": 33,
      "giver": "Shylamiir, El Parque (Ventormenta)",
      "reward": "Vine Pruner's Cloak (279835) o Thorn Protecting Girdle (279836); 9.400 PX",
-     "worth": "Sí (Fel Infused Blossom)."
+     "worth": "Sí (Flor imbuida de vileza)."
     },
     {
      "name": "Starving Arcane (92457)",
@@ -1058,8 +1058,8 @@
     }
    ],
    "tips": [
-    "Orden: Atrexis the Grave Knight → (Lyn the Ignored, secreto, con el Tome of Dalaran) → Arcane Anomaly → Enigma Arcano → Centinela inestable → Fel Ancient (habla con Grindle Firespark para quitar las barreras) → Devorador de maná → Sombra del archimago (habla con Archmage Modera).",
-    "Casi todo el daño es arcano, así que el tanque bloquea poco. Hay mucho Mana Burn: lleva interrupciones y agua. Tira a los Fallen Mages con línea de visión. Los Phantasms reflejan hechizos (Reflection Field). Los Seeking Remnants detectan sigilo.",
+    "Orden: Atrexis el Caballero de la Tumba → (Lyn el Ignorado, secreto, con el Escrito de Dalaran) → Anomalía Arcana → Enigma Arcano → Centinela inestable → Anciano vil (habla con Grindle Firespark para quitar las barreras) → Devorador de maná → Sombra del archimago (habla con Archmage Modera).",
+    "Casi todo el daño es arcano, así que el tanque bloquea poco. Hay mucho Quemar maná: lleva interrupciones y agua. Tira a los Fallen Mages con línea de visión. Los Phantasms reflejan hechizos (Escudo de refracción). Los Remanentes buscadores detectan sigilo.",
     "Limpia la sala antes de tirar a Devorador de maná: todo lo que quede vivo se une al combate. Duración: 30-40 min. Las 4 misiones de Alianza dan 37.600 PX."
    ],
    "priority": "must: es la mejor mazmorra de 28-33 para la Alianza (PX, botín y reputación Kirin Tor). Haz antes Castillo de Colmillo Oscuro si quieres a Lyn."
@@ -1094,7 +1094,7 @@
     }
    ],
    "tips": [
-    "Jefes: Interrogador Vishas, Bloodmage Thalnos y los raros Azshir the Sleepless, Fallen Champion e Ironspine.",
+    "Jefes: Interrogador Vishas, Mago sangriento Thalnos y los raros Azshir el Insomne, Campeón caído y Dorsacerado.",
     "Muy corta (15-20 min). Va bien para PX rápida de matar bichos ahora que la PX en mazmorras ha subido un 20%. La Alianza no tiene misiones en esta ala."
    ],
    "priority": "skip/good: no hay misiones de Alianza y el viaje es largo. Solo de paso si el grupo hace el Monasterio entero."
@@ -1105,7 +1105,7 @@
    "levels": "33-41 (foreverchanges, rango de Classic sin confirmar)",
    "classic_levels": "33-41",
    "zone": "Claros de Tirisfal",
-   "alliance_access": "Igual que el Cementerio. Al matar a Arcanista Doan se obtiene The Scarlet Key (7146) de su cofre, que abre la Armería y la Catedral.",
+   "alliance_access": "Igual que el Cementerio. Al matar a Arcanista Doan se obtiene La llave Escarlata (7146) de su cofre, que abre la Armería y la Catedral.",
    "new_or_changed": "Nuevo: Houndmaster Boomerang (274292) de Domador de jaurías Loksey. Misión nueva de Alianza: 'Fuera de plazo' (96800), de Magus Olvek en Alterac.",
    "quests": [
     {
@@ -1160,8 +1160,8 @@
     }
    ],
    "tips": [
-    "Pasillos largos con muchos lanzadores escarlata: interrumpe las curas. Arcanista Doan hace Detonación arcana y Polimorfia: aléjate de él cuando lance Arcane Bubble.",
-    "Duración: 25-35 min. Imprescindible para conseguir la Scarlet Key."
+    "Pasillos largos con muchos lanzadores escarlata: interrumpe las curas. Arcanista Doan hace Detonación arcana y Polimorfia: aléjate de él cuando lance Burbuja Arcana.",
+    "Duración: 25-35 min. Imprescindible para conseguir la Llave Escarlata."
    ],
    "priority": "good: las armas de Doan son muy buenas para lanzadores, hay una misión nueva de Alianza y da la llave del resto del Monasterio."
   },
@@ -1171,8 +1171,8 @@
    "levels": "36-44 (foreverchanges, rango de Classic sin confirmar)",
    "classic_levels": "36-44",
    "zone": "Claros de Tirisfal",
-   "alliance_access": "Requiere The Scarlet Key (Biblioteca) o un pícaro con Ganzúa.",
-   "new_or_changed": "Datos de Classic. Devastador mantiene su proc de Bladestorm.",
+   "alliance_access": "Requiere La llave Escarlata (Biblioteca) o un pícaro con Ganzúa.",
+   "new_or_changed": "Datos de Classic. Devastador mantiene su proc de Filotormenta.",
    "quests": [],
    "drops": [
     {
@@ -1195,7 +1195,7 @@
     }
    ],
    "tips": [
-    "Ala corta: limpia hasta Herod. Contra su Whirlwind, que los cuerpo a cuerpo se alejen. Al morir salen oleadas de Scarlet Trainees: haz área.",
+    "Ala corta: limpia hasta Herod. Contra su Huracán, que los cuerpo a cuerpo se alejen. Al morir salen oleadas de Practicantes Escarlata: haz área.",
     "Duración: 20 min. Es muy buena para PX de bichos en el nivel 38-40."
    ],
    "priority": "good: Devastador y el casco son objetivos clásicos para guerreros y paladines de nivel 37-42."
@@ -1206,7 +1206,7 @@
    "levels": "38-46 (foreverchanges, rango de Classic sin confirmar)",
    "classic_levels": "38-46",
    "zone": "Claros de Tirisfal",
-   "alliance_access": "Requiere The Scarlet Key. La misión En el nombre de la Luz (Raleigh, Costasur) se completa aquí.",
+   "alliance_access": "Requiere La llave Escarlata. La misión En el nombre de la Luz (Raleigh, Costasur) se completa aquí.",
    "new_or_changed": "Poderío de Mograine (7723) cambia en Forever: ahora es una maza de lanzador con +16 Int (según el tooltip de Wowhead Forever). El resto de datos son de Classic.",
    "quests": [
     {
@@ -1247,7 +1247,7 @@
     }
    ],
    "tips": [
-    "High Inquisitor Fairbanks (nivel 40, a la entrada) → Mograine → Whitemane, que lo resucita. Interrumpe la Resurrección y el Sueño de Whitemane.",
+    "Alto Inquisidor Ribalimpia (nivel 40, a la entrada) → Mograine → Melenablanca, que lo resucita. Interrumpe la Resurrección y el Sueño de Melenablanca.",
     "Contra Mograine: Bendición de libertad o Despertar contra su aturdimiento. Duración: 25-30 min."
    ],
    "priority": "good: la misión de Raleigh da un arma/orbe azul y hay buen botín de cabeza y arma para el nivel 40."
@@ -1322,7 +1322,7 @@
     }
    ],
    "tips": [
-    "Evento de Belnistrasz: defended el gong durante 3 oleadas. Luego vienen Tuten'kash (araña), Mordresh Fire Eye, Glutton, Plaguemaw y Amnennar el Gélido (Frost Nova; invoca Frozen Spectres al 50%).",
+    "Evento de Belnistrasz: defended el gong durante 3 oleadas. Luego vienen Tuten'kash (araña), Mordresh Ojo de Fuego, Glotón, Fauzpeste el Putrefacto y Amnennar el Gélido (Nova de Escarcha; invoca Espectros de escarcha al 50%).",
     "Muchos no-muertos: el exorcismo del paladín y Ahuyentar no-muertos ayudan. Duración: 35-45 min."
    ],
    "priority": "good: Trae la Luz y el botín de Amnennar están bien, pero el viaje es largo. Si eres de las Tierras del Este, Uldaman es mejor alternativa."
@@ -1334,12 +1334,12 @@
    "classic_levels": "41-51 (Classic Era); 35-45 en la vanilla original",
    "zone": "Tierras Inhóspitas (norte)",
    "alliance_access": "Vuela a Thelsamar (Loch Modan) y ve al sur por Tierras Inhóspitas hasta la excavación (la entrada principal está en la excavación de Hammertoe). La entrada trasera va por las cuevas del norte. La piedra de encuentro está fuera.",
-   "new_or_changed": "Hay botín nuevo en Obsidian Sentinel (IDs 274425-274485 y 251400, sin nombres en la fuente) y recompensas de misión nuevas: Doomcaller's Pants (270074), Fists of Impending Doom (270075), Restorer's Fine Gloves (270059), Excavator Gauntlets (270060) y Charged Leather Bracers (270055).",
+   "new_or_changed": "Hay botín nuevo en el Centinela Obsidiano (IDs 274425-274485 y 251400, sin nombres en la fuente) y recompensas de misión nuevas: Doomcaller's Pants (270074), Fists of Impending Doom (270075), Restorer's Fine Gloves (270059), Excavator Gauntlets (270060) y Charged Leather Bracers (270055).",
    "quests": [
     {
      "name": "The Platinum Discs (2279 → 2439)",
      "level": 47,
-     "giver": "Discs of Norgannon, dentro → Dinita Stonemantle, Forjaz",
+     "giver": "Los Discos de Norgannon, dentro → Dinita Mantopétreo, Forjaz",
      "reward": "Superior Healing Potion (3928) o Greater Mana Potion (6149) + Thawpelt Sack (9587)",
      "worth": "Sí (bolsa)."
     },
@@ -1425,7 +1425,7 @@
     }
    ],
    "tips": [
-    "Jefes: Baelog, Eric y Olaf (los vikingos) → Revelosh → Ironaya → Obsidian Sentinel → Ancient Stone Keeper → Galgann Flamartillo → Grimlok → Archaedas (despierta oleadas de enanos y guardianes; aguanta al tanque y haz área).",
+    "Jefes: Baelog, Eric y Olaf (los vikingos) → Revelosh → Hierraya → Centinela Obsidiano → Vigilante pétreo anciano → Galgann Flamartillo → Grimlok → Archaedas (despierta oleadas de enanos y guardianes; aguanta al tanque y haz área).",
     "Hay muchas misiones de Alianza (10+, casi todas de Forjaz y Loch Modan): llévalas todas antes de entrar. Duración: 60-90 min completa, o divídela en dos pasadas."
    ],
    "priority": "must: es la mazmorra de Alianza por excelencia en 40-47, con montones de misiones de Forjaz y Loch Modan."
@@ -1477,7 +1477,7 @@
     {
      "name": "Scarab Shells (2865) / Troll Temper (3042)",
      "level": 45,
-     "giver": "Tran'rek / Trenton Lighthammer, Gadgetzan",
+     "giver": "Tran'rek / Trenton Mazaligera, Gadgetzan",
      "reward": "PX",
      "worth": "Sí, se hacen solas."
     }
@@ -1530,8 +1530,8 @@
     }
    ],
    "tips": [
-    "Evento de la pirámide: libera a los prisioneros (Sergeant Bly y compañía) y aguantad las oleadas de trolls en las escaleras. Que los lanzadores se coloquen arriba para hacer área.",
-    "Gahz'rilla se invoca con el Mallet of Zul'Farrak, que se consigue en las Tierras del Interior. Sin él no hay zanahoria.",
+    "Evento de la pirámide: libera a los prisioneros (Sargento Bly y compañía) y aguantad las oleadas de trolls en las escaleras. Que los lanzadores se coloquen arriba para hacer área.",
+    "Gahz'rilla se invoca con la Marra de Zul'Farrak, que se consigue en las Tierras del Interior. Sin él no hay zanahoria.",
     "Duración: 50-70 min."
    ],
    "priority": "must: la Zanahoria pinchada en un palo y muchas misiones de Tanaris. Además lleva a la cadena del Templo Sumergido."
@@ -1542,7 +1542,7 @@
    "levels": "46-55 (foreverchanges/method.gg, rango de Classic sin confirmar). Kami-labs da entrada a 42.",
    "classic_levels": "46-55",
    "zone": "Desolace (suroeste)",
-   "alliance_access": "Vuela a Punta de Nijel (Desolace) y ve al suroeste hasta el Valle de los Lanzas. La entrada al interior (Orange/Purple) va por la cueva. El Cetro de Celebras abre un portal directo a las Cascadas del Canto de la Tierra.",
+   "alliance_access": "Vuela a Punta de Nijel (Desolace) y ve al suroeste hasta el Valle de los Lanzas. La entrada al interior (Naranja/Púrpura) va por la cueva. El Cetro de Celebras abre un portal directo a las Cascadas del Canto de la Tierra.",
    "new_or_changed": "Datos de Classic (sin objetos nuevos confirmados).",
    "quests": [
     {
@@ -1627,8 +1627,8 @@
     }
    ],
    "tips": [
-    "Tres alas: Púrpura (Noxxion, Razorlash), Naranja (Lord Vyletongue) e Interior (Celebras, Landslide, Tinkerer Gizlock, Rotgrip, Princesa Theradras).",
-    "Theradras: Knock Away y Dust Field. Tanquéala con la espalda a una pared. Landslide invoca adds.",
+    "Tres alas: Púrpura (Noxxion, Lativaja), Naranja (Lord Lenguavil) e Interior (Celebras, Derrumblo, Manitas Gizlock, Escamapodrida, Princesa Theradras).",
+    "Theradras: Mamporro y Campo de polvo. Tanquéala con la espalda a una pared. Derrumblo invoca adds.",
     "Muy larga: 60-90 min la versión interior completa. Divídela por alas."
    ],
    "priority": "must: la recompensa de Corrupción de la tierra y de la semilla es de las mejores del leveling y la mazmorra tiene muchas misiones de Desolace."
@@ -1701,8 +1701,8 @@
     }
    ],
    "tips": [
-    "Hay que matar a los 6 trolls del balcón para abrir el paso a Jammal'an. El evento de Avatar of Hakkar requiere el Egg of Hakkar (cadena de Marvon).",
-    "Los dragones verdes (Dreamscythe, Weaver, Hazzas, Morphaz) lanzan aliento y sueño: tanquéalos de lado. Shade of Eranikus es el jefe final.",
+    "Hay que matar a los 6 trolls del balcón para abrir el paso a Jammal'an. El evento del Avatar de Hakkar requiere el Huevo de Hakkar (cadena de Marvon).",
+    "Los dragones verdes (Guadañasueños, Sastrón, Hazzas, Morphaz) lanzan aliento y sueño: tanquéalos de lado. Sombra de Eranikus es el jefe final.",
     "Duración: 60-90 min. Es laberíntica, así que lleva a alguien que la conozca."
    ],
    "priority": "good: los cascos de la misión El dios Hakkar valen mucho, pero la mazmorra es larga. Profundidades de Roca Negra da más por hora en 52-56."
@@ -1713,7 +1713,7 @@
    "levels": "52-60 (foreverchanges/method.gg). Kami-labs da entrada a 48.",
    "classic_levels": "52-60",
    "zone": "Montaña Roca Negra (entre La Garganta de Fuego y Las Estepas Ardientes)",
-   "alliance_access": "Vuela a Vigilia de Morgan (Las Estepas Ardientes) y entra a la montaña por el norte. También desde Thorium Point (La Garganta de Fuego) si tienes el vuelo. La piedra de encuentro está dentro de la montaña. La Llave Sombratiniebla (11000), de la misión El legado de los Hierro Negro (3802), abre atajos.",
+   "alliance_access": "Vuela a Vigilia de Morgan (Las Estepas Ardientes) y entra a la montaña por el norte. También desde Puesto del Torio (La Garganta de Fuego) si tienes el vuelo. La piedra de encuentro está dentro de la montaña. La Llave Sombratiniebla (11000), de la misión El legado de los Hierro Negro (3802), abre atajos.",
    "new_or_changed": "Datos de Classic (sin cambios confirmados en el beta).",
    "quests": [
     {
@@ -1726,7 +1726,7 @@
     {
      "name": "The Princess's Surprise (4363)",
      "level": 59,
-     "giver": "Princesa Moira Barbabronce, dentro (tras The Fate of the Kingdom, del rey Magni)",
+     "giver": "Princesa Moira Barbabronce, dentro (tras El destino del reino, del rey Magni)",
      "reward": "Magni's Will (12548) o Songstone of Ironforge (12543)",
      "worth": "Sí, anillos BiS de pre-banda."
     },
@@ -1798,8 +1798,8 @@
     }
    ],
    "tips": [
-    "Es enorme (25 jefes). Lo mejor es hacerla por tramos: 1) Prisión, Lord Roccor, Gerstahn y el Anillo de la Ley; 2) Bar (Rocknot, Phalanx, Plugger) y Fineous; 3) Golem Lord, Angerforge, los Siete, Magmus y el Emperador.",
-    "No pegues a Moira en la sala del Emperador si vas a hacer la misión de Alianza (La sorpresa de la princesa): mata solo a Thaurissan. Cuidado con no-agrear a los patrulleros del Bar.",
+    "Es enorme (25 jefes). Lo mejor es hacerla por tramos: 1) Prisión, Lord Roccor, Gerstahn y el Anillo de la Ley; 2) Bar (Sinrroca, Phalanx, Plugger) y Finoso; 3) Señor Gólem Argelmach, Forjira, los Siete, Magmus y el Emperador.",
+    "No pegues a Moira en la sala del Emperador si vas a hacer la misión de Alianza (La sorpresa de la princesa): mata solo a Thaurissan. Cuidado con no atraer a los patrulleros del Bar.",
     "Según el tramo, 45-120 min. Es la mazmorra que más da entre los niveles 52 y 58."
    ],
    "priority": "must: es el corazón del leveling 52-58, con muchas misiones de Alianza y recompensas pre-banda."
@@ -1872,7 +1872,7 @@
     }
    ],
    "tips": [
-    "Jefes: Alto Señor Omokk, Shadow Hunter Vosh'gajin, War Master Voone, Madre Telabrasada, Urok Doomhowl, Quartermaster Zigris, Halycon, Gizrul y Overlord Wyrmthalak.",
+    "Jefes: Alto Señor Omokk, Cazador de las Sombras Vosh'gajin, Maestro de guerra Voone, Madre Telabrasada, Urok Aullapocalipsis, Intendente Zigris, Halycon, Gizrul el esclavista y Señor Supremo Vermiothalak.",
     "Grupos grandes de orcos: lleva control de masas (Ovejita, Destierro, Trampa congelante). Voone y Omokk pegan fuerte. Duración: 60-75 min."
    ],
    "priority": "good: muy buena PX en el 57-60 con La misión de Maxwell. Empieza a farmear el D1."
@@ -1931,7 +1931,7 @@
     }
    ],
    "tips": [
-    "Pyroguard Emberseer (rompe las 7 jaulas), Solakar (evento de huevos), Rend y Gyth (oleadas), La Bestia (miedo y pisotón: tanquéalo contra la pared) y General Drakkisath (con dos Chromatic Elite Guards).",
+    "Piroguardián brasadivino (rompe las 7 jaulas), Solakar Corona de Fuego (evento de huevos), Desgarro Puño Negro y Gyth (oleadas), La Bestia (miedo y pisotón: tanquéalo contra la pared) y General Drakkisath (con dos Guardias de élite cromáticos).",
     "Contenido de nivel 60, no de leveling. Duración: 90+ min."
    ],
    "priority": "skip para subir de nivel. Es contenido de 60 para el equipo pre-banda."
@@ -1942,7 +1942,7 @@
    "levels": "54-60 (foreverchanges/method.gg); warcrafttavern pone 58-60",
    "classic_levels": "54-60",
    "zone": "Feralas (centro)",
-   "alliance_access": "Vuela a Bastión Plumaluna (Feralas, isla de la costa) y ve hacia el centro. La entrada del Este está en el lado este de la ciudad en ruinas, y la piedra de encuentro en el patio. Pusillin suelta la Crescent Key, que abre el Norte y el Oeste. Ojo: Shen'dralas es una zona nueva en Kalimdor y la reputación Shen'dralar podría estar relacionada (sin confirmar).",
+   "alliance_access": "Vuela a Bastión Plumaluna (Feralas, isla de la costa) y ve hacia el centro. La entrada del Este está en el lado este de la ciudad en ruinas, y la piedra de encuentro en el patio. Pusillín suelta la Llave creciente, que abre el Norte y el Oeste. Ojo: Shen'dralas es una zona nueva en Kalimdor y la reputación Shen'dralar podría estar relacionada (sin confirmar).",
    "new_or_changed": "Datos de Classic (sin confirmar en Forever).",
    "quests": [
     {
@@ -1981,7 +1981,7 @@
     }
    ],
    "tips": [
-    "Persigue a Pusillin por todo el ala hasta que pelee (suelta la Crescent Key). Luego vienen Zevrim Thornhoof, Hidromilecio, Lethtendris y Alzzin el Formaferal (cambia de forma y lanza Vuelta de tuerca).",
+    "Persigue a Pusillín por todo el ala hasta que pelee (suelta la Llave creciente). Luego vienen Zevrim Pezuñahendida, Hidromilecio, Lethtendris y Alzzin el Formaferal (cambia de forma y lanza Vuelta de tuerca).",
     "Va bien a partir de 56. Duración: 30-40 min."
    ],
    "priority": "good: corta, con 2 misiones de Alianza y la llave del resto de La Masacre. Encaja en el 56-60."
@@ -1992,7 +1992,7 @@
    "levels": "56-60 (foreverchanges/method.gg)",
    "classic_levels": "56-60",
    "zone": "Feralas",
-   "alliance_access": "Requiere la Crescent Key (de Pusillin, en el Este) o un pícaro con Ganzúa.",
+   "alliance_access": "Requiere la Llave creciente (de Pusillín, en el Este) o un pícaro con Ganzúa.",
    "new_or_changed": "Datos de Classic. Contiene a los Shen'dralar (Athenaeum y Libram). La relación con la nueva zona Shen'dralas está sin confirmar.",
    "quests": [
     {
@@ -2042,7 +2042,7 @@
    "levels": "56-60 (foreverchanges/method.gg)",
    "classic_levels": "56-60",
    "zone": "Feralas",
-   "alliance_access": "Requiere la Crescent Key.",
+   "alliance_access": "Requiere la Llave creciente.",
    "new_or_changed": "Datos de Classic.",
    "quests": [
     {
@@ -2081,7 +2081,7 @@
     }
    ],
    "tips": [
-    "'Tribute run': si no matas a los guardias (Mol'dar, Fengus, Slip'kik) ni a Kromcrush, antes de Rey Gordok, recibes el cofre de tributo y buffs de mundo.",
+    "Ruta del tributo: si no matas a los guardias (Mol'dar, Fengus, Slip'kik) ni a Kromcrush, antes de Rey Gordok, recibes el cofre de tributo y buffs de mundo.",
     "Duración: 30-45 min."
    ],
    "priority": "skip para subir de nivel. Contenido de 60 (farmeo del tributo)."
@@ -2092,7 +2092,7 @@
    "levels": "58-60 (foreverchanges/method.gg). El mínimo de entrada en Forever está sin confirmar.",
    "classic_levels": "58-60",
    "zone": "Tierras de la Peste del Oeste, Caer Darrow",
-   "alliance_access": "Vuela al Campamento del Orvallo (Tierras de la Peste del Oeste) y baja al lago de Caer Darrow. En Classic hace falta la Skeleton Key (cadena del Campamento del Orvallo). foreverchanges no la menciona: sin confirmar en Forever.",
+   "alliance_access": "Vuela al Campamento del Orvallo (Tierras de la Peste del Oeste) y baja al lago de Caer Darrow. En Classic hace falta la Llave esqueleto (cadena del Campamento del Orvallo). foreverchanges no la menciona: sin confirmar en Forever.",
    "new_or_changed": "Piezas D1 con estadísticas de Forever verificadas: Botas de valor (16734), de Kirtonos; Yelmo de Valor (16731) y Corona de devoto (16693), de Gandling.",
    "quests": [],
    "drops": [
@@ -2134,7 +2134,7 @@
     }
    ],
    "tips": [
-    "15 jefes. La ruta típica: Kirtonos (con el Blood of Innocents), Jandice Barov (busca la imagen real), Rattlegore, Ras Frostwhisper, las 6 salas del sótano y Gandling.",
+    "15 jefes. La ruta típica: Kirtonos (con la Sangre de los inocentes), Jandice Barov (busca la imagen real), Traquesangre, Ras Levescarcha, las 6 salas del sótano y Gandling.",
     "Contenido de 60. Duración: 60-90 min."
    ],
    "priority": "skip para subir de nivel. Contenido de 60 (D1)."
@@ -2191,7 +2191,7 @@
     }
    ],
    "tips": [
-    "Ruta: Timmy the Cruel en la plaza → Malor the Zealous → Cannon Master Willey → Archivist Galford (quema la biblioteca) → Balnazzar (Grand Crusader Dathrohan).",
+    "Ruta: Timmy el Cruel en la plaza → Malor el Entusiasta → Cañonero Jefe Willey → Archivista Galford (quema la biblioteca) → Balnazzar (Gran Cruzado Dathrohan).",
     "Contenido de 60. Duración: 60 min."
    ],
    "priority": "skip para subir de nivel. Contenido de 60."
@@ -2202,7 +2202,7 @@
    "levels": "58-60 (foreverchanges/method.gg)",
    "classic_levels": "58-60",
    "zone": "Tierras de la Peste del Este (norte)",
-   "alliance_access": "La puerta de servicio está al este de la ciudad. La Key to the City (12382), que suelta Magistrate Barthilas, abre la puerta principal.",
+   "alliance_access": "La puerta de servicio está al este de la ciudad. La Llave de la ciudad (12382), que suelta el Magistrado Barthilas, abre la puerta principal.",
    "new_or_changed": "Guanteletes de Valor (16737, de Ramstein) tiene estadísticas nuevas en Forever (verificado). Es de suponer que vuelve la montura Riendas de Hemocargador de Rivendare (sin confirmar en Forever).",
    "quests": [
     {
@@ -2241,8 +2241,8 @@
     }
    ],
    "tips": [
-    "Ruta: Magistrate Barthilas → Baroness Anastari, Nerub'enkan y Maleki (abren los zigurats) → Ramstein → Black Guard Swordsmith → Barón Osahendido.",
-    "Contenido de 60. Duración: 45-60 min (el run de 45 min de Ysida es opcional)."
+    "Ruta: Magistrado Barthilas → Baronesa Anastari, Nerub'enkan y Maleki el Pálido (abren los zigurats) → Ramstein → Armero Guardia Negra → Barón Osahendido.",
+    "Contenido de 60. Duración: 45-60 min (la carrera de 45 min por Ysida es opcional)."
    ],
    "priority": "skip para subir de nivel. Contenido de 60."
   },
@@ -2252,7 +2252,7 @@
    "levels": "35-40 (Blizzard)",
    "classic_levels": null,
    "zone": "Mar de la Vega de Tuercespina. Según warcrafttavern, frente a la costa al oeste de Grom'gol; según foreverchanges, en la Isla de Gillijim (suroeste), con portal en la cueva Sunken Hollow.",
-   "alliance_access": "Sin confirmar. Se entra buceando o por el portal de Sunken Hollow, que no funcionaba en el beta, y no hay barco ni vuelo conocidos. Previsión: bajar desde la Bahía del Botín o Rebel Camp e ir a nado hacia el oeste.",
+   "alliance_access": "Sin confirmar. Se entra buceando o por el portal de Sunken Hollow, que no funcionaba en el beta, y no hay barco ni vuelo conocidos. Previsión: bajar desde la Bahía del Botín o Campamento Rebelde e ir a nado hacia el oeste.",
    "new_or_changed": "Mazmorra NUEVA, al aire libre, con un temporal que va a más. Trolls, naga y un barco pirata hundido: la ciudad troll de I'lalai. Nombres provisionales de jefes en el datamining: Zul'Alai, Var'Taka, Captain Dreadrise, Deathless Marrow, Gill y Min'loth the Serpent (sin confirmar). No estuvo disponible en el beta.",
    "quests": [
     {
@@ -2275,8 +2275,8 @@
    "levels": "40-45 (Blizzard/foreverchanges); warcrafttavern y kami-labs llegan a citar 40-55",
    "classic_levels": null,
    "zone": "Clarofluvial (zona nueva de 36-44 al este de los Reinos del Este, junto a Tierras Inhóspitas, Las Estepas Ardientes y Crestagrana), aprox. 48.6, 26.3",
-   "alliance_access": "Vuelo de la Alianza a Farholde Keep (Clarofluvial) y subida a la colina de la fortaleza, cerca de Bolder'ok.",
-   "new_or_changed": "Mazmorra NUEVA: fortaleza ogra del Martillo Crepuscular con talleres y un puente con oleadas (si te caes, sobrevives y tienes que volver a subir). Blizzard mostró 5 jefes sin nombre. Hay un conjunto Krol'dok Battlegear de 5 piezas, oculto. Objetos: Krol'dok Compound Key (267089), Krol'dok Ogre Key (271721) y Krol'dok Moulding (267137, inicia una misión).",
+   "alliance_access": "Vuelo de la Alianza a Bastión Farholde (Clarofluvial) y subida a la colina de la fortaleza, cerca de Bolder'ok.",
+   "new_or_changed": "Mazmorra NUEVA: fortaleza ogra del Martillo Crepuscular con talleres y un puente con oleadas (si te caes, sobrevives y tienes que volver a subir). Blizzard mostró 5 jefes sin nombre. Hay un conjunto Krol'dok Battlegear de 5 piezas, oculto. Objetos: Llave del complejo Krol'Dok (267089), Llave de ogro Krol'Dok (271721) y Moldura Krol'Dok (267137, inicia una misión).",
    "quests": [
     {
      "name": "Misión que empieza con Krol'dok Moulding (267137)",
@@ -2313,8 +2313,8 @@
    "levels": "55-60 (Blizzard)",
    "classic_levels": null,
    "zone": "Azshara norte, tras la Puerta de los Furbolgs",
-   "alliance_access": "Vuelo de la Alianza a Talrendis Point (Azshara) y al norte hasta la puerta (sin confirmar).",
-   "new_or_changed": "Mazmorra NUEVA: ciudad furbolg con varias rutas y jefes y una corrupción que se extiende por sus bosquecillos. Sus túneles llevan hacia la banda Barrow Deeps. Objetos vistos: Blackmaw Pouch (273050; se entrega a los Blackmaw de Ursolan) y Blackmaw Ritual Totem (276893, de misión).",
+   "alliance_access": "Vuelo de la Alianza a Punta Talrendis (Azshara) y al norte hasta la puerta (sin confirmar).",
+   "new_or_changed": "Mazmorra NUEVA: ciudad furbolg con varias rutas y jefes y una corrupción que se extiende por sus bosquecillos. Sus túneles llevan hacia la banda Barrow Deeps. Objetos vistos: Faltriquera de los Faucenegra (273050; se entrega a los Faucenegra de Ursolan) y Tótem de ritual Faucenegra (276893, de misión).",
    "quests": [],
    "drops": [],
    "tips": [
