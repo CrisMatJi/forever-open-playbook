@@ -1,4 +1,5 @@
 import D from "../data/dungeons.json";
+import ES from "../data/es.json";
 
 export const slug = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
@@ -11,7 +12,7 @@ const ALIAS = {
   "Wailing Caverns": ["Wailing Caverns", "Cuevas de los Lamentos", "Cavernas de los Lamentos"],
   "Shadowfang Keep": ["Shadowfang Keep", "Castillo de Colmillo Oscuro"],
   "Blackfathom Deeps": ["Blackfathom Deeps", "Cavernas de Brazanegra", "Brazanegra"],
-  "The Stockade": ["Stockade", "Mazmorras de Ventormenta", "Las Mazmorras"],
+  "The Stockade": ["The Stockade", "Mazmorras de Ventormenta", "Las Mazmorras"],
   "Excavation Site: Wetlands": ["Excavation Site", "Excavación: Los Humedales", "Excavación de los Humedales"],
   "City of Dalaran": ["City of Dalaran", "Ciudad de Dalaran"],
   "Razorfen Kraul": ["Razorfen Kraul", "Horado Rajacieno"],
@@ -35,6 +36,11 @@ const ALIAS = {
   "Shaper's Terrace": ["Shaper's Terrace", "Bancal del Creador"],
 };
 const NAMES = new Set(D.dungeons.map((d) => d.name));
+// Añade los nombres oficiales en español (y su forma sin "Monasterio Escarlata - " etc.)
+for (const n of NAMES) {
+  const es = ES.dungeons?.[n];
+  if (es) { ALIAS[n] = [...(ALIAS[n] || []), es]; }
+}
 const PAIRS = Object.entries(ALIAS).filter(([n]) => NAMES.has(n)).flatMap(([n, list]) => list.map((a) => [a, n]))
   .sort((a, b) => b[0].length - a[0].length);
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
