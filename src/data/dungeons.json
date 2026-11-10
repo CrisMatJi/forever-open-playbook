@@ -33,7 +33,7 @@
   {
    "name": "The Hall of Thanes",
    "name_es": "Salón de los Feudales",
-   "levels": "13-18 (Blizzard); method.gg pone 13-20; las misiones se pueden coger desde nivel 9",
+   "levels": "13-20 (buscador del juego según warcrafttavern; también method.gg). Blizzard anunció 13-18; las misiones se pueden coger desde nivel 9",
    "classic_levels": null,
    "zone": "Forjaz (Dun Morogh), Viejo Forjaz bajo la Gran Sede (aprox. 43,51)",
    "alliance_access": "La más cómoda para la Alianza: la entrada está dentro de Forjaz, subiendo por la Gran Sede, la sala del rey Magni. Los enanos y gnomos la tienen al lado. Los humanos pueden ir en el Tranvía Subterráneo desde Ventormenta. Los elfos de la noche: barco de Darnassus/Auberdine a Ventormenta y luego el Tranvía.",
@@ -132,7 +132,7 @@
   {
    "name": "Ruins of Lordaeron",
    "name_es": "Ruinas de Lordaeron",
-   "levels": "15-20 (requiere nivel 15 desde el 3 nov)",
+   "levels": "15-22 (buscador del juego según warcrafttavern; también method.gg). Blizzard anunció 15-20; requiere nivel 15 desde el 3 nov",
    "classic_levels": null,
    "zone": "Claros de Tirisfal, sobre Entrañas",
    "alliance_access": "Está en territorio Horda. Ruta de method.gg: barco de Ventormenta a Auberdine, luego Auberdine–Puerto de Menethil, quedándote en ese barco hasta Costasur (ruta nueva de Forever). De ahí, a pie por el Bosque de Argénteos hasta Tirisfal (esta parte no la detalla la fuente). Hay riesgo de guardias en zona PvP. Lo mejor es que un brujo os invoque a la piedra de encuentro.",
@@ -215,7 +215,7 @@
   {
    "name": "The Deadmines",
    "name_es": "Las Minas de la Muerte",
-   "levels": "17-26 (Forever, method.gg/icy-veins/foreverchanges); warcrafttavern pone 15-22",
+   "levels": "17-26 (buscador del juego según warcrafttavern; también method.gg/icy-veins/foreverchanges)",
    "classic_levels": "17-26 (Group Finder de Classic Era); 18-23 en la vanilla original",
    "zone": "Páramos de Poniente, Arroyoluna",
    "alliance_access": "Vuela a la Colina del Centinela (Páramos de Poniente) y baja al sur hasta Arroyoluna. La entrada está en la casa/cueva junto a la herrería. Piedra de encuentro en la entrada. Los elfos de la noche cogen el barco de Auberdine a Ventormenta.",
@@ -331,7 +331,7 @@
   {
    "name": "Wailing Caverns",
    "name_es": "Cuevas de los Lamentos",
-   "levels": "17-24 (foreverchanges); method.gg pone 15-24",
+   "levels": "15-24 (buscador del juego según warcrafttavern; también method.gg); foreverchanges pone 17-24",
    "classic_levels": "17-24",
    "zone": "Los Baldíos, Oasis Olvidado",
    "alliance_access": "Lejos. Opción 1: barco de Puerto de Menethil a Theramore y de ahí andando hacia Trinquete. Opción 2: Bahía del Botín y el barco a Trinquete. Luego al oeste por los Baldíos (zona Horda, cuidado con los guardias). La piedra de encuentro está en la loma de encima de la cueva.",
@@ -421,7 +421,7 @@
   {
    "name": "Shadowfang Keep",
    "name_es": "Castillo de Colmillo Oscuro",
-   "levels": "22-30 (foreverchanges); method.gg pone 20-30",
+   "levels": "20-30 (buscador del juego según warcrafttavern; también method.gg); foreverchanges pone 22-30",
    "classic_levels": "22-30",
    "zone": "Bosque de Argénteos",
    "alliance_access": "Lejos y en territorio Horda. Hay una ruta nueva de barco: el barco de Auberdine para en Costasur (method.gg). Desde Costasur, al norte por las Laderas de Trabalomas hasta el Bosque de Argénteos. Alternativa clásica: Puerto de Menethil → Laderas → Bosque de Argénteos. Mejor con invocación de brujo.",
@@ -582,7 +582,7 @@
   {
    "name": "The Stockade",
    "name_es": "Las Mazmorras",
-   "levels": "24-32 (foreverchanges/method.gg); kami-labs pone entrada a 23",
+   "levels": "24-32 (foreverchanges/method.gg); warcrafttavern, que dice copiar el buscador del juego, pone 25-29; kami-labs pone entrada a 23",
    "classic_levels": "24-32",
    "zone": "Ventormenta, Barrio de los Magos",
    "alliance_access": "Dentro de Ventormenta. Solo Alianza.",
@@ -876,7 +876,7 @@
   {
    "name": "Excavation Site: Wetlands",
    "name_es": "Excavación: Los Humedales",
-   "levels": "26-31 (notas oficiales del 1 oct y foreverchanges); Blizzard anunció 24-29 al principio y method.gg pone 26-33. Las misiones se cogen desde nivel 24.",
+   "levels": "26-33 (buscador del juego según warcrafttavern; también method.gg). Las notas oficiales del 1 oct y foreverchanges ponían 26-31, y Blizzard anunció 24-29 al principio. Las misiones se cogen desde nivel 24.",
    "classic_levels": null,
    "zone": "Los Humedales, encima de la Excavación de Whelgar (cerca de Dun Algaz y Thelgen Rock)",
    "alliance_access": "Muy fácil: desde el Puerto de Menethil o Thelsamar (Loch Modan). La entrada está al pie de la montaña cerca de Dun Algaz, marcada por la piedra de encuentro.",
@@ -973,7 +973,7 @@
   {
    "name": "City of Dalaran",
    "name_es": "Ciudad de Dalaran",
-   "levels": "28-33 (Blizzard/foreverchanges); method.gg pone 28-35. Las misiones se cogen desde nivel 24.",
+   "levels": "28-35 (buscador del juego según warcrafttavern; también method.gg). Blizzard y foreverchanges ponían 28-33. Las misiones se cogen desde nivel 24.",
    "classic_levels": null,
    "zone": "Montañas de Alterac (entrada por las cloacas, al noroeste de la ciudad)",
    "alliance_access": "Requiere la Llave de las cloacas de Dalaran (277507). Basta con que la lleve un miembro del grupo. Alianza: An Alarming Request (92432), de Emissary Jacques en el Ayuntamiento de Costasur → Archmage Modera → El corazón de la perturbación (92458), que da la llave. Para llegar a Costasur: barco de Menethil (nueva parada) o a pie desde Los Humedales/Arathi. Después, Friend of the Kirin Tor (92459) con Archmage Celindra (reputación y tabardo del Kirin Tor, solo Alianza).",
@@ -1079,7 +1079,15 @@
    "zone": "Claros de Tirisfal (noreste)",
    "alliance_access": "En territorio Horda. Ruta: Costasur → Bosque de Argénteos → Tirisfal, bordeando Entrañas. También se llega bordeando el Lago Lordamere desde Alterac/Dalaran. La invocación es muy recomendable. Piedra de encuentro en el patio del monasterio.",
    "new_or_changed": "Botín parcialmente nuevo: Rodela de caminadolor (274290) de Interrogador Vishas y cascos de cuero craftables nuevos (252xxx) como botín de jefes. El resto sigue siendo de Classic.",
-   "quests": [],
+   "quests": [
+    {
+     "name": "The Eye of Bhossca (78676)",
+     "level": 35,
+     "giver": "Carta de C por correo (llega en una capital); se entrega en el cofre Dead Drop junto a la Aldea Piroleña (Bosque de Argénteos)",
+     "reward": "Ruby-Adorned Blade (277246) + 75 pp",
+     "worth": "Solo pícaros (Alianza y Horda), en solitario y desde nivel 25. Es la segunda parte de la cadena de arma de pícaro de Forever (empieza con The Horn of Xelthos, 78261, en Colmillo Oscuro). En el Cementerio robas la llave a un Scarlet Scryer, te sientas en dos bancos y abres el cofre del mausoleo norte; el Ojo está en un relicario de la Biblioteca. La espada es azul de nivel 36."
+    }
+   ],
    "drops": [
     {
      "name": "Bloody Brass Knuckles",
@@ -1102,9 +1110,10 @@
    ],
    "tips": [
     "Jefes: Interrogador Vishas, Mago sangriento Thalnos y los raros Azshir el Insomne, Campeón caído y Dorsacerado.",
-    "Muy corta (15-20 min). Va bien para PX rápida de matar bichos ahora que la PX en mazmorras ha subido un 20%. La Alianza no tiene misiones en esta ala."
+    "Muy corta (15-20 min). Va bien para PX rápida de matar bichos ahora que la PX en mazmorras ha subido un 20%.",
+    "La Alianza no tiene misiones normales en esta ala: Vorrel's Revenge y Hearts of Zeal son de la Horda (warcrafttavern). Solo la misión de clase de pícaro The Eye of Bhossca tiene pasos aquí."
    ],
-   "priority": "skip/good: no hay misiones de Alianza y el viaje es largo. Solo de paso si el grupo hace el Monasterio entero."
+   "priority": "skip/good: para la Alianza solo hay la misión de clase de pícaro y el viaje es largo. Solo de paso si el grupo hace el Monasterio entero."
   },
   {
    "name": "Scarlet Monastery - Library",
@@ -1203,7 +1212,8 @@
    ],
    "tips": [
     "Ala corta: limpia hasta Herod. Contra su Huracán, que los cuerpo a cuerpo se alejen. Al morir salen oleadas de Practicantes Escarlata: haz área.",
-    "Duración: 20 min. Es muy buena para PX de bichos en el nivel 38-40."
+    "Duración: 20 min. Es muy buena para PX de bichos en el nivel 38-40.",
+    "No hay misiones de Alianza que empiecen o se entreguen en la Armería, tampoco de clase (warcrafttavern y conquestcapped). Lo único: matar a Herod cuenta para In the Name of the Light (1053), que está en la Biblioteca y se termina en la Catedral."
    ],
    "priority": "good: Devastador y el casco son objetivos clásicos para guerreros y paladines de nivel 37-42."
   },
@@ -1814,7 +1824,7 @@
   {
    "name": "Lower Blackrock Spire",
    "name_es": "Cumbre de Roca Negra Inferior",
-   "levels": "55-60 (foreverchanges/method.gg); warcrafttavern pone 57-60",
+   "levels": "55-60 (foreverchanges/method.gg/warcrafttavern)",
    "classic_levels": "55-60",
    "zone": "Montaña Roca Negra",
    "alliance_access": "Igual que Profundidades de Roca Negra: Vigilia de Morgan y entrada por la cumbre. La Lacre de Ascensión (cadena de Vaelan) da acceso a la Superior.",
@@ -1946,7 +1956,7 @@
   {
    "name": "Dire Maul - East",
    "name_es": "La Masacre: Este",
-   "levels": "54-60 (foreverchanges/method.gg); warcrafttavern pone 58-60",
+   "levels": "54-60 (foreverchanges/method.gg/warcrafttavern)",
    "classic_levels": "54-60",
    "zone": "Feralas (centro)",
    "alliance_access": "Vuela a Bastión Plumaluna (Feralas, isla de la costa) y ve hacia el centro. La entrada del Este está en el lado este de la ciudad en ruinas, y la piedra de encuentro en el patio. Pusillín suelta la Llave creciente, que abre el Norte y el Oeste. Ojo: Shen'dralas es una zona nueva en Kalimdor y la reputación Shen'dralar podría estar relacionada (sin confirmar).",
@@ -2101,7 +2111,64 @@
    "zone": "Tierras de la Peste del Oeste, Caer Darrow",
    "alliance_access": "Vuela al Campamento del Orvallo (Tierras de la Peste del Oeste) y baja al lago de Caer Darrow. En Classic hace falta la Llave esqueleto (cadena del Campamento del Orvallo). foreverchanges no la menciona: sin confirmar en Forever.",
    "new_or_changed": "Piezas D1 con estadísticas de Forever verificadas: Botas de valor (16734), de Kirtonos; Yelmo de Valor (16731) y Corona de devoto (16693), de Gandling.",
-   "quests": [],
+   "quests": [
+    {
+     "name": "Plagued Hatchlings (5529)",
+     "level": 58,
+     "giver": "Betina Bigglezink, Capilla de la Esperanza de la Luz (Tierras de la Peste del Este)",
+     "reward": "90 pp; 6.200 PX (+100 reputación con El Alba Argenta)",
+     "worth": "Sí, si vas a Scholomance: las 20 Crías infestadas están en el Gran Osario y se matan de paso. Al completarla, las crías empiezan a soltar la Escama sana de dragón."
+    },
+    {
+     "name": "Healthy Dragon Scale (5582)",
+     "level": 58,
+     "giver": "Escama sana de dragón (objeto que sueltan las Crías infestadas tras completar Plagued Hatchlings); se entrega a Betina Bigglezink",
+     "reward": "Sin objetos (+150 reputación con El Alba Argenta; PX sin confirmar)",
+     "worth": "Sí si te cae: es repetible y no cuesta nada. No la busques a propósito."
+    },
+    {
+     "name": "Doctor Theolen Krastinov, the Butcher (5382)",
+     "level": 60,
+     "giver": "Eva Sarkhoff, Castel Darrow (Tierras de la Peste del Oeste), al pie de Scholomance",
+     "reward": "Sin objetos; 6.600 PX",
+     "worth": "Sí: abre la cadena que acaba en Kirtonos. Mata a Krastinov y quema los restos de Eva y Lucien Sarkhoff en la misma sala."
+    },
+    {
+     "name": "Krastinov's Bag of Horrors (5515)",
+     "level": 60,
+     "giver": "Eva Sarkhoff, Castel Darrow",
+     "reward": "Sin objetos; 6.600 PX",
+     "worth": "Sí: la bolsa la suelta Jandice Barov. Es el paso previo a Kirtonos."
+    },
+    {
+     "name": "Kirtonos the Herald (5384)",
+     "level": 60,
+     "giver": "Eva Sarkhoff, Castel Darrow (te da la Sangre de los inocentes)",
+     "reward": "Penelope's Rose (15805) o Mirah's Song (15806), más Spectral Essence (13544); 8.300 PX",
+     "worth": "Sí. Rosa de Penelope (mano izquierda de sanador) y Canción de Mirah (espada 1M de Fue/Agi) son azules de nivel 61. La Esencia espectral hace falta para ver al Magistrado Marduke; en Forever su uso además restaura 878-988 de salud."
+    },
+    {
+     "name": "The Lich, Ras Frostwhisper (5466)",
+     "level": 60,
+     "giver": "Magistrado Marduke, Castel Darrow (solo se ve con la Esencia espectral equipada)",
+     "reward": "Warblade of Caer Darrow (13982), Crown of Caer Darrow (13986) o Darrowspike (13984), más Darrowshire Strongguard (14002); 9.950 PX",
+     "worth": "Sí si haces Stratholme: la cadena previa pasa por Stromgarde, la Capilla de la Esperanza de la Luz y Barón Osahendido. Usa el Soulbound Keepsake para volverlo humano y mátalo así; si lo matas en forma de lich no podrás completarla."
+    },
+    {
+     "name": "Barov Family Fortune (5343)",
+     "level": 60,
+     "giver": "Weldon Barov, Campamento del Orvallo (Tierras de la Peste del Oeste)",
+     "reward": "1 po 80 pp; 6.600 PX",
+     "worth": "Sí: las 4 escrituras (Rémol, Castel Darrow, Costasur y Molino Tarren) están dentro y se recogen al limpiar. Sigue con The Last Barov (5344), que da Barov Peasant Caller (14023) pero exige matar a Alexi Barov en El Baluarte (territorio Horda)."
+    },
+    {
+     "name": "Dawn's Gambit (4771)",
+     "level": 60,
+     "giver": "Betina Bigglezink, Capilla de la Esperanza de la Luz (Tierras de la Peste del Este)",
+     "reward": "Windreaper (15853) o Dancing Sliver (15854) + 2 po 70 pp; 9.950 PX (+1.000 reputación con El Alba Argenta)",
+     "worth": "Solo si ya llevas la cadena de Tinkee Steamboil (empieza en Las Estepas Ardientes y pasa por Cumbre de Roca Negra Superior). Coloca el Gambito del Alba en la Sala de Observación y mata a Vectus. Las armas son IDs de Classic; aún no salen en Wowhead Forever."
+    }
+   ],
    "drops": [
     {
      "name": "Boots of Valor",
@@ -2142,7 +2209,8 @@
    ],
    "tips": [
     "15 jefes. La ruta típica: Kirtonos (con la Sangre de los inocentes), Jandice Barov (busca la imagen real), Traquesangre, Ras Levescarcha, las 6 salas del sótano y Gandling.",
-    "Contenido de 60. Duración: 60-90 min."
+    "Contenido de 60. Duración: 60-90 min.",
+    "Orden de misiones: coge en Castel Darrow las de Eva Sarkhoff (Krastinov → bolsa de Jandice Barov → Kirtonos) y en la misma pasada recoge las escrituras de Barov y mata 20 Crías infestadas. Necesitas la Llave esqueleto (13704, cadena del Campamento del Orvallo) o un pícaro con Ganzúa 280."
    ],
    "priority": "skip para subir de nivel. Contenido de 60 (D1)."
   },
@@ -2751,7 +2819,7 @@
   {
    "name": "Ragefire Chasm",
    "name_es": "Sima Ígnea",
-   "levels": "13-19",
+   "levels": "13-18 (buscador del juego según warcrafttavern; también method.gg y gamer-guides)",
    "classic_levels": "13-18",
    "zone": "Orgrimmar",
    "alliance_access": "La entrada está dentro de Orgrimmar. Para un Alianza es inviable en la práctica.",

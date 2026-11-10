@@ -327,7 +327,18 @@
   "276893": "Tótem de ritual Faucenegra",
   "267089": "Llave del complejo Krol'Dok",
   "249697": "Garras del gran oso",
-  "249696": "Colmillos del Inquebrantable"
+  "249696": "Colmillos del Inquebrantable",
+  "13544": "Esencia espectral",
+  "15805": "Rosa de Penelope",
+  "15806": "Canción de Mirah",
+  "14002": "Guarda fuerte de Villa Darrow",
+  "13982": "Espada de guerra de Castel Darrow",
+  "13986": "Corona de Castel Darrow",
+  "13984": "Pico Darrow",
+  "15853": "Segadora de viento",
+  "15854": "Plata de danza",
+  "14023": "Llamador de campesino Barov",
+  "277246": "Hoja adornada con rubíes"
  },
  "quests": {
   "96393": "Incursión en la Antigua Forjaz",
@@ -506,7 +517,16 @@
   "95791": "El capitán Videntesal",
   "94984": "El escrito del Crepúsculo",
   "94983": "Recuerdos Crepusculares",
-  "96771": "La venganza del Altonato"
+  "96771": "La venganza del Altonato",
+  "5529": "Crías infestadas",
+  "5582": "Escama sana de dragón",
+  "5382": "Doctor Theolen Krastinov, el Carnicero",
+  "5515": "Bolsa de los horrores de Krastinov",
+  "5384": "Kirtonos el Heraldo",
+  "5466": "El Lich, Ras Levescarcha",
+  "5343": "La fortuna de la familia Barov",
+  "4771": "Gambito del Alba",
+  "78676": "El ojo de Bhossca"
  },
  "npcs": {
   "Earthseer Farsen": {
@@ -928,6 +948,18 @@
   "Ogtinc": {
    "es": "Ogtinc",
    "id": 8405
+  },
+  "Eva Sarkhoff": {
+   "es": "Eva Sarkhoff",
+   "id": 11216
+  },
+  "Magistrate Marduke": {
+   "es": "Magistrado Marduke",
+   "id": 11286
+  },
+  "Weldon Barov": {
+   "es": "Weldon Barov",
+   "id": 11023
   }
  },
  "bosses": {

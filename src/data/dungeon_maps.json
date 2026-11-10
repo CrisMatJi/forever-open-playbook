@@ -203,7 +203,7 @@
    {
     "quest": "Destruction in Deadmines (92753 → 92819)",
     "npc": "Alba Fairmoon",
-    "npc_id": null,
+    "npc_id": 253092,
     "zone": "Westfall",
     "zone_es": "Páramos de Poniente",
     "zone_id": 40,
@@ -254,27 +254,27 @@
    {
     "quest": "Deviate Hides (1486)",
     "npc": "Nalpak",
-    "npc_id": null,
+    "npc_id": 5767,
     "zone": "The Barrens",
     "zone_es": "Los Baldíos",
     "zone_id": 17,
-    "x": null,
-    "y": null,
+    "x": 46.0,
+    "y": 36.3,
     "inside": false,
-    "note": "Cueva oculta encima de la entrada: sube la colina junto a la piedra de encuentro, cruza por encima de la caverna y salta a un pequeño saliente (sin coordenadas en las fuentes).",
+    "note": "Cueva oculta encima de la entrada: sube la colina junto a la piedra de encuentro, cruza por encima de la caverna y salta a un pequeño saliente. Coordenadas aproximadas: son las de la entrada (warcrafttavern), porque la cueva está justo encima; ninguna fuente da las exactas.",
     "prereq": null
    },
    {
     "quest": "Deviate Eradication (1487)",
     "npc": "Ebru",
-    "npc_id": null,
+    "npc_id": 5768,
     "zone": "The Barrens",
     "zone_es": "Los Baldíos",
     "zone_id": 17,
-    "x": null,
-    "y": null,
+    "x": 46.0,
+    "y": 36.3,
     "inside": false,
-    "note": "En la misma cueva oculta que Nalpak, encima de la entrada (sin coordenadas en las fuentes).",
+    "note": "En la misma cueva oculta que Nalpak, encima de la entrada. Coordenadas aproximadas: son las de la entrada (warcrafttavern); ninguna fuente da las exactas.",
     "prereq": null
    },
    {
@@ -827,7 +827,21 @@
    "y": 30.3,
    "note": "Portal del Monasterio Escarlata en el extremo noreste de Tirisfal, subiendo por el camino al este de Rémol. Las cuatro alas comparten patio (de izquierda a derecha: Cementerio, Catedral, Armería, Biblioteca). Coordenadas de kami-labs."
   },
-  "quests": []
+  "quests": [
+   {
+    "quest": "The Eye of Bhossca (78676)",
+    "npc": "Dead Drop de C (cofre)",
+    "npc_id": null,
+    "zone": "Silverpine Forest",
+    "zone_es": "Bosque de Argénteos",
+    "zone_id": 130,
+    "x": 47.1,
+    "y": 71.1,
+    "inside": false,
+    "note": "Cofre en una cabaña junto a la Aldea Piroleña (conquestcapped). No hay PNJ: C manda la carta por correo y solo llega en una capital. El disfraz (Scarlet Initiate's Uniform) está en una taquilla de los establos detrás del Monasterio (Claros de Tirisfal 81.1, 32.1); hace falta Ganzúa.",
+    "prereq": "The Horn of Xelthos (78261), primera parte de la cadena de arma de pícaro; nivel 25"
+   }
+  ]
  },
  "Scarlet Monastery - Library": {
   "entrance": {
@@ -1834,7 +1848,112 @@
    "y": 72.7,
    "note": "En lo alto de la isla de Caer Darrow, tras una verja cerrada (Skeleton Key en Classic). Vuela al Campamento del Orvallo (42.9, 85.0) y ve al este hasta el lago."
   },
-  "quests": []
+  "quests": [
+   {
+    "quest": "Plagued Hatchlings (5529)",
+    "npc": "Betina Bigglezink",
+    "npc_id": 11035,
+    "zone": "Eastern Plaguelands",
+    "zone_es": "Tierras de la Peste del Este",
+    "zone_id": 139,
+    "x": 81.4,
+    "y": 59.6,
+    "inside": false,
+    "note": "En la Capilla de la Esperanza de la Luz (zockify; conquestcapped da 71.7, 49.9 con el mapa de Forever). Las crías están en el Gran Osario de Scholomance.",
+    "prereq": null
+   },
+   {
+    "quest": "Healthy Dragon Scale (5582)",
+    "npc": "Healthy Dragon Scale (objeto)",
+    "npc_id": null,
+    "zone": "Western Plaguelands",
+    "zone_es": "Tierras de la Peste del Oeste",
+    "zone_id": 28,
+    "x": 69.0,
+    "y": 72.7,
+    "inside": true,
+    "note": "La sueltan las Crías infestadas dentro de Scholomance. Se entrega a Betina Bigglezink en la Capilla de la Esperanza de la Luz (81.4, 59.6). Coordenadas = entrada.",
+    "prereq": "Plagued Hatchlings (5529)"
+   },
+   {
+    "quest": "Doctor Theolen Krastinov, the Butcher (5382)",
+    "npc": "Eva Sarkhoff",
+    "npc_id": 11216,
+    "zone": "Western Plaguelands",
+    "zone_es": "Tierras de la Peste del Oeste",
+    "zone_id": 28,
+    "x": 70.2,
+    "y": 73.7,
+    "inside": false,
+    "note": "En Castel Darrow, al pie de Scholomance (conquestcapped; zockify da 70.2, 73.8).",
+    "prereq": null
+   },
+   {
+    "quest": "Krastinov's Bag of Horrors (5515)",
+    "npc": "Eva Sarkhoff",
+    "npc_id": 11216,
+    "zone": "Western Plaguelands",
+    "zone_es": "Tierras de la Peste del Oeste",
+    "zone_id": 28,
+    "x": 70.2,
+    "y": 73.7,
+    "inside": false,
+    "note": "En Castel Darrow, al pie de Scholomance (conquestcapped; zockify da 70.2, 73.8).",
+    "prereq": "Doctor Theolen Krastinov, the Butcher (5382)"
+   },
+   {
+    "quest": "Kirtonos the Herald (5384)",
+    "npc": "Eva Sarkhoff",
+    "npc_id": 11216,
+    "zone": "Western Plaguelands",
+    "zone_es": "Tierras de la Peste del Oeste",
+    "zone_id": 28,
+    "x": 70.2,
+    "y": 73.7,
+    "inside": false,
+    "note": "En Castel Darrow, al pie de Scholomance (conquestcapped; zockify da 70.2, 73.8). Pon la Sangre de los inocentes en el brasero del balcón norte de la Cámara de Invocación para que aparezca Kirtonos.",
+    "prereq": "Krastinov's Bag of Horrors (5515)"
+   },
+   {
+    "quest": "The Lich, Ras Frostwhisper (5466)",
+    "npc": "Magistrate Marduke",
+    "npc_id": 11286,
+    "zone": "Western Plaguelands",
+    "zone_es": "Tierras de la Peste del Oeste",
+    "zone_id": 28,
+    "x": 70.6,
+    "y": 74.1,
+    "inside": false,
+    "note": "En Castel Darrow (conquestcapped; zockify da 70.6, 74.0). Solo se ve con la Esencia espectral equipada.",
+    "prereq": "Soulbound Keepsake (5465); cadena: The Human, Ras Frostwhisper (5461) → The Dying, Ras Frostwhisper (5462) → Menethil's Gift (5463, 5464) → Soulbound Keepsake, tras Kirtonos the Herald"
+   },
+   {
+    "quest": "Barov Family Fortune (5343)",
+    "npc": "Weldon Barov",
+    "npc_id": 11023,
+    "zone": "Western Plaguelands",
+    "zone_es": "Tierras de la Peste del Oeste",
+    "zone_id": 28,
+    "x": 43.6,
+    "y": 83.6,
+    "inside": false,
+    "note": "Campamento del Orvallo (zockify y warcraft.wiki.gg).",
+    "prereq": null
+   },
+   {
+    "quest": "Dawn's Gambit (4771)",
+    "npc": "Betina Bigglezink",
+    "npc_id": 11035,
+    "zone": "Eastern Plaguelands",
+    "zone_es": "Tierras de la Peste del Este",
+    "zone_id": 139,
+    "x": 81.4,
+    "y": 59.6,
+    "inside": false,
+    "note": "En la Capilla de la Esperanza de la Luz (zockify; conquestcapped da 71.7, 49.9 con el mapa de Forever). Vectus está en la Sala de Observación de Scholomance.",
+    "prereq": "Betina Bigglezink (5531); cadena de Tinkee Steamboil (Las Estepas Ardientes): Egg Freezing (4734) → Egg Collection (4735) → Leonid Barthalomew (5522)"
+   }
+  ]
  },
  "Stratholme - Main Gate (Living)": {
   "entrance": {
