@@ -884,13 +884,17 @@
   }
  ],
  "dungeons": [
-  "Hall of Thanes (13-18, Forjaz, nueva): primera mazmorra de la Alianza; recompensas de lanzador.",
-  "Las Minas de la Muerte (15-22) y Ruins of Lordaeron (15-20, nueva).",
-  "Cavernas de Brazanegra (22-28) por la Cetro de lápida.",
-  "Excavation Site (24-29, nueva) y City of Dalaran (28-33, nueva, Ponderous Orb).",
-  "Gnomeregan (29-38) por Togas civinad; Monasterio Escarlata (30-46) en cadena.",
-  "The Drowned City (35-40, nueva), Uldaman, Zul'Farrak, Krol'Dok Stronghold (40-45, nueva), Maraudon, Alcaz Island Prison (48-53, nueva), Templo de Atal'Hakkar, BRD, Blackmaw Hold (55-60, nueva).",
-  "El sacerdote siempre encuentra grupo como sanador: aprovecha para subir en mazmorras con build de Disciplina/Sombras (con Abrazo vampírico)."
+  "El Salón de los Feudales (13-18): primera mazmorra de la Alianza. Togas del señor feudal caído en desgracia y Báculo de corazón de gólem; de misión, Llamarada profunda (varita) o Escrito enano.",
+  "Las Minas de la Muerte (17-26): Bastón de piedra de ascuas y Varita de dientes de sable (misión Asalto subterráneo).",
+  "Cuevas de los Lamentos (17-24): Raíz viva (+45 sanación); viaje largo para la Alianza.",
+  "Castillo de Colmillo Oscuro (22-30): Bastón de Ley de Odo (+52 sanación) y Dije de aterrahuargen; sin misiones de Alianza.",
+  "Cavernas de Brazanegra (24-32): Cetro de lápida (misión La vileza de Brazanegra) y Vara del Insomne.",
+  "Excavación: Los Humedales (26-31): Bastón de sanador (misión Prisma prehistórico: +67 sanación y 5 maná/5 s) y Ring of Power Regulation.",
+  "Ciudad de Dalaran (28-33): Violet Sorcerer's Robes, Spine of the Devourer y Wand of Mana Concentration; de misión, Violet Sash.",
+  "Gnomeregan (29-38): Togas civinad (misión La gran traición) e Hidrocaña.",
+  "Monasterio Escarlata - Biblioteca (33-41) y Catedral (38-46): Vara ilusionaria, Hoja hipnótica y Sombrero de Melenablanca.",
+  "Uldaman (41-51): Martillo de Fuego de Galgann (maza 1M, +54 poder con hechizos); en Maraudon (46-55), Vara de resurgimiento (+112 sanación).",
+  "La Ciudad Sumergida (35-40), Bastión Krol'dok (40-45), Prisión de Alcaz (48-53), Bastión Faucenegra (55-60) y Bancal del Creador (58-60): nuevas, botín sin confirmar. Como sanador siempre encuentras grupo: sube con Sombras (Abrazo vampírico) y cura sin respec."
  ],
  "changes": [
   "2 nov: la sanación de Abrazo vampírico ya no puede ser crítica.",

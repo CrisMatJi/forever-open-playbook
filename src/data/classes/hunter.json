@@ -903,12 +903,16 @@
   }
  ],
  "dungeons": [
-  "Hall of Thanes (Salón de los Feudales, 13-18): nueva, solo misiones Alianza; la misión da Trabuco calibrado.",
-  "Excavation Site: Los Humedales (24-29): nueva, Golemsight Long Gun y cuero de agilidad.",
-  "City of Dalaran (28-33): nueva, ballesta Gravespike Repeater, arma de asta y mallas para 40.",
-  "Blackfathom Deeps (24-32) y Razorfen Kraul (29-38): armas a distancia de leveo citadas por Warcraft Tavern.",
-  "Wailing Caverns/Ruins of Lordaeron tienen buen botín pero suponen un viaje largo para Alianza (Skyborne puede usar el portal a Dalaran).",
-  "Nuevas de nivel alto: The Drowned City (35-40), Krol'dok Stronghold (40-45), Alcaz Prison (48-53), Blackmaw Hold (55-60), Shaper's Terrace (58-60)."
+  "El Salón de los Feudales (13-18): solo misiones de Alianza; Incursión en la Antigua Forjaz da el Trabuco calibrado y Magmatus suelta Mandiletes de puño de fuego (cuero Agi).",
+  "Las Minas de la Muerte (17-26): Manteo de la Hermandad y Armadura ennegrecida Defias.",
+  "Cuevas de los Lamentos (17-24): Golpe venenoso (arco) y Armadura del Colmillo; viaje largo para la Alianza.",
+  "Ruinas de Lordaeron (15-20): Cubrepecho ensangrentado y Leotardos de cumplimiento del deber (misión); lejos para la Alianza.",
+  "Las Mazmorras (24-32): Ballesta de mano oculta (+12 PA a distancia) y Cercenahuesos.",
+  "Excavación: Los Humedales (26-31): Golemsight Long Gun, Garb of Florid Feathers (cuero Agi/Int) y Forro de la Liga de Expedicionarios (misión). Las mallas (Reliquary Mantle) no las llevas hasta el 40.",
+  "Ciudad de Dalaran (28-33): Archmagister's Faceted Pendant (Int y PA) y Runebound Gloves (misión Poder sobrecogedor).",
+  "Horado Rajacieno (29-38): Quilboar Blaster (misión La bruja del Horado) y Mandiletes espinamalditos.",
+  "Uldaman (41-51): Lanzafuego de Galgann; en Zul'Farrak, El gorila del jefe, y en Maraudon, Objetivo del vigilante de Verdantis.",
+  "La Ciudad Sumergida (35-40), Bastión Krol'dok (40-45), Prisión de Alcaz (48-53), Bastión Faucenegra (55-60) y Bancal del Creador (58-60): nuevas de nivel alto; botín sin confirmar."
  ],
  "changes": [
   "2 nov: Aspecto del halcón da 20/35/50/70/90/110 de poder de ataque a distancia en los rangos 1-6 (revierte el recorte del 28 oct a 15/22/30/38/47/55).",

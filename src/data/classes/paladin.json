@@ -876,12 +876,18 @@
   }
  ],
  "dungeons": [
-  "Hall of Thanes (13-18, Forjaz, nueva) y Las Minas de la Muerte (15-22): armas de dos manos tempranas.",
-  "Ruins of Lordaeron (15-20, nueva), Cavernas de Brazanegra (22-28), Las Mazmorras (25-29, Ventormenta).",
-  "Excavation Site (24-29, nueva, Humedales) y City of Dalaran (28-33, nueva).",
-  "Gnomeregan (29-38), Horado Rajacieno (29-38) y Monasterio Escarlata (30-46): como tanque Protección con Sello de furia + Consagración subes muy rápido en grupo (Furia recta: +33% de amenaza y +90% del daño Sagrado desde el 2 nov; no tanquees con arma a dos manos y Two-Handed Weapon Specialization, que reduce la amenaza).",
-  "The Drowned City (35-40, nueva), Uldaman, Zul'Farrak, Krol'Dok Stronghold (40-45, nueva), Maraudon, Alcaz Island Prison (48-53, nueva), Templo de Atal'Hakkar, BRD, Blackmaw Hold (55-60, nueva), Shaper's Terrace (58-60, nueva).",
-  "El paladín puede tanquear, curar o pegar: con doble especialización al 40 conviene tener Reprensión + Protección o Sagrado para encontrar grupo rápido."
+  "El Salón de los Feudales (13-18): Hacha creciente de Durgen; de misión, Gran martillo de Forjaz (maza 2M lenta) y Brazales de recorrecriptas (malla).",
+  "Las Minas de la Muerte (17-26): Rebanarrocas (hacha 2M, Fue) y Púa cruel.",
+  "Ruinas de Lordaeron (15-20): Cimitarra sangrevil, Espejo de Rath'mael (escudo) y Armadura del recuerdo (malla, misión La insignia ensangrentada); lejos para la Alianza.",
+  "Cuevas de los Lamentos (17-24): Peto de escama mutante (malla, +10 Fue).",
+  "Cavernas de Brazanegra (24-32): Golpe de la hidra (espada 2M).",
+  "Las Mazmorras (24-32): en Ventormenta; Cercenahuesos (arma de asta) y Cobrador de deudas si vas de Sagrado.",
+  "Excavación: Los Humedales (26-31): Reliquary Mantle (malla); de misión, Martillo arrojadizo (maza 2M, +32 PA) o Empuñadura de carpinus (Fue y poder con hechizos).",
+  "Ciudad de Dalaran (28-33): Defender of Dalaran (maza 2M Fue/Int) o Spellguard Pauldrons de misión, Guardian's Dualblade y Archmagister's Faceted Pendant.",
+  "Gnomeregan (29-38) y Horado Rajacieno (29-38): Manual de Muchedumbre de Puñetazos, Brazo izquierdo de Termochufe, Crea cadáveres y Corazón de Agamaggan (escudo con sanación).",
+  "Monasterio Escarlata - Armería (36-44) y Catedral (38-46): Devastador, Yelmo de rabioso enfurecido y Poderío de Mograine. Como Protección, Sello de furia + Consagración + Furia recta (+33% de amenaza y +90% al daño Sagrado desde el 2 nov); no tanquees con arma 2M (Two-Handed Weapon Specialization reduce la amenaza).",
+  "Zahúrda Rojocieno (37-46): Caparazón de Tuten'kash (placas) y Espada del vencedor (misión Trae la Luz).",
+  "La Ciudad Sumergida (35-40), Bastión Krol'dok (40-45), Prisión de Alcaz (48-53), Bastión Faucenegra (55-60) y Bancal del Creador (58-60): nuevas, botín sin confirmar. Con doble especialización al 40, lleva Reprensión + Protección o Sagrado para encontrar grupo rápido."
  ],
  "changes": [
   "Nuevo Golpe Sagrado (Holy Strike) al 6: ataque instantáneo Sagrado, botón central de daño.",

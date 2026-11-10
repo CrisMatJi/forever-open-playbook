@@ -911,13 +911,16 @@
   }
  ],
  "dungeons": [
-  "Hall of Thanes (13-18, Forjaz, nueva): la primera mazmorra cercana para la Alianza; da varitas y bastones de misión.",
-  "Las Minas de la Muerte (15-22) y Ruins of Lordaeron (15-20, nueva, Claros de Tirisfal): Bastón de aguja fría de Rath'mael.",
-  "Cavernas de Brazanegra (22-28): Cetro de lápida (varita de misión) y Vara del Insomne.",
-  "Excavation Site (24-29, Humedales, nueva) y City of Dalaran (28-33, Montañas de Alterac, nueva): piezas de tela de mago con temática Kirin Tor.",
-  "Gnomeregan (29-38): misiones de Alianza y Hidrocaña; Monasterio Escarlata (30-46) para encadenar hasta los 40.",
-  "The Drowned City (35-40, Vega de Tuercespina, nueva), Krol'Dok Stronghold (40-45, Clarofluvial, nueva), Alcaz Island Prison (48-53, nueva) y después Templo de Atal'Hakkar, Profundidades de Roca Negra, Blackmaw Hold (55-60, nueva) y Shaper's Terrace (58-60, nueva).",
-  "Como mago aportas AoE en pulls grandes (Ventisca/Cono de frío) y Polimorfia: sube rápido en grupo."
+  "El Salón de los Feudales (13-18): la primera mazmorra cercana para la Alianza (Forjaz). Togas del señor feudal caído en desgracia y Báculo de corazón de gólem; la misión Incursión en la Antigua Forjaz da Llamarada profunda (varita).",
+  "Las Minas de la Muerte (17-26): Bastón de piedra de ascuas y Varita de dientes de sable (misión Asalto subterráneo).",
+  "Ruinas de Lordaeron (15-20): Bastón de aguja fría (+32 daño de Escarcha) si vas de Escarcha; queda lejos (Claros de Tirisfal).",
+  "Cavernas de Brazanegra (24-32): Cetro de lápida (varita de misión) y Vara del Insomne.",
+  "Las Mazmorras (24-32): Cobrador de deudas (espada 1M, +34 poder con hechizos).",
+  "Excavación: Los Humedales (26-31): Ring of Power Regulation; de misión, Faja de Daewyn o Rizo de vida.",
+  "Ciudad de Dalaran (28-33): Violet Sorcerer's Robes, Spine of the Devourer y Wand of Mana Concentration; de misión, Violet Sash o Arcane Infused Rod (+11 Arcano).",
+  "Gnomeregan (29-38): misiones de Alianza, Hidrocaña, Reactivador de jigaflujo electromagnético y Togas civinad. Tu AoE (Ventisca/Cono de frío) y Polimorfia hacen que subas rápido en grupo.",
+  "Monasterio Escarlata - Biblioteca (33-41): Vara ilusionaria y Hoja hipnótica; sigue con la Catedral (Sombrero de Melenablanca) y Zahúrda Rojocieno (Togas del Exánime).",
+  "La Ciudad Sumergida (35-40), Bastión Krol'dok (40-45), Prisión de Alcaz (48-53), Bastión Faucenegra (55-60) y Bancal del Creador (58-60): nuevas de Forever, botín aún sin confirmar; entre medias, El Templo de Atal'Hakkar (Aro Ráfaga de gemas) y Profundidades de Roca Negra."
  ],
  "changes": [
   "Frost Blast se añadió al 24 el 15 oct, pero desde el 28 oct ya no se entrena.",

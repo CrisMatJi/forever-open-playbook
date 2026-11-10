@@ -899,11 +899,17 @@
   }
  ],
  "dungeons": [
-  "Cavernas de Brazanegra (20-28): misión La vileza de Brazanegra (Cetro de lápida) y fragmentos para el Orbe de Soran'ruk.",
-  "Castillo de Colmillo Oscuro (20-26): Robes of Arugal y el otro fragmento de Soran'ruk (viaje largo para la Alianza).",
-  "Cuevas de los Lamentos (17-24): Raíz viva.",
-  "Monasterio Escarlata (30-42) y Scholomance (58-60, patrón de Robe of the Void).",
-  "En grupo eres útil por Healthstones, Ritual of Summoning (única forma de invocar en Forever) y Curse of the Elements que ahora potencia todo el daño mágico."
+  "El Salón de los Feudales (13-18): Togas del señor feudal caído en desgracia (+8 poder con hechizos) y Báculo de corazón de gólem; de misión, Llamarada profunda (varita) o Escrito enano.",
+  "Las Minas de la Muerte (17-26): Bastón de piedra de ascuas y Varita de dientes de sable (misión Asalto subterráneo).",
+  "Castillo de Colmillo Oscuro (22-30): misión de clase El orbe de Soran'ruk (los fragmentos salen en Brazanegra) y Dije de aterrahuargen; viaje largo para la Alianza.",
+  "Cavernas de Brazanegra (24-32): Cetro de lápida (misión La vileza de Brazanegra), Vara del Insomne y fragmentos para Soran'ruk.",
+  "Las Mazmorras (24-32): Cobrador de deudas (espada 1M, +34 poder con hechizos); dentro de Ventormenta.",
+  "Excavación: Los Humedales (26-31): Ring of Power Regulation; de misión, Faja de Daewyn o Rizo de vida.",
+  "Ciudad de Dalaran (28-33): Spine of the Devourer, Violet Sorcerer's Robes y Wand of Mana Concentration; de misión, Violet Sash o Arcane Infused Rod.",
+  "Gnomeregan (29-38): Hidrocaña, Reactivador de jigaflujo electromagnético y Togas civinad (misión La gran traición).",
+  "Monasterio Escarlata - Biblioteca (33-41): Vara ilusionaria y Hoja hipnótica de Doan; en la Catedral, Sombrero de Melenablanca.",
+  "Zahúrda Rojocieno (37-46): Togas del Exánime (+Escarcha/Sombras).",
+  "Profundidades de Roca Negra (52-60): Botas rencor (misión Ribbly Llavenrosca). En grupo aportas Piedras de salud, Ritual de invocación (única forma de invocar en Forever) y Maldición de los Elementos, que ahora potencia todo el daño mágico."
  ],
  "changes": [
   "Curse of Agony pasa a Bane of Agony: Banes y Maldiciones son categorías separadas (puedes tener una de cada en el objetivo).",

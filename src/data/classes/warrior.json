@@ -957,13 +957,18 @@
   }
  ],
  "dungeons": [
-  "Hall of Thanes (Salón de los Feudales, 13-18, Forjaz): mazmorra nueva solo con misiones para Alianza; hacha y mallas.",
-  "The Deadmines (17-26): Smite's Mighty Hammer y Púa cruel.",
-  "Excavation Site: Los Humedales (Excavación de Whelgar, 24-29/26-33): nueva, cerca de Puerto de Menethil; mallas y arma de fuego.",
-  "City of Dalaran (28-33, Alterac): nueva; 8 jefes, Guardian's Dualblade y escudo; atunamiento Alianza con An Alarming Request en Costa Sur.",
-  "Scarlet Monastery (30-46): Devastador y piezas de Herod si el botín clásico se mantiene.",
-  "Nuevas de nivel alto: The Drowned City (35-40), Krol'dok Stronghold (40-45), Alcaz Prison (48-53), Blackmaw Hold (55-60), Shaper's Terrace (58-60); botín aún sin verificar.",
-  "Ruins of Lordaeron (15-22) tiene buen botín de guerrero pero está en Tirisfal: para Alianza solo merece la pena en grupo o si eres Skyborne (portal Ventormenta-Dalaran)."
+  "El Salón de los Feudales (13-18): en Forjaz, solo misiones de Alianza. Hacha creciente de Durgen; de misión, Gran martillo de Forjaz y Brazales de recorrecriptas (malla).",
+  "Las Minas de la Muerte (17-26): Púa cruel y Rebanarrocas.",
+  "Ruinas de Lordaeron (15-20): Cimitarra sangrevil, Espejo de Rath'mael y, de misión, Cuchilla monstruosa o Armadura del recuerdo; está en Tirisfal, solo merece la pena en grupo.",
+  "Cuevas de los Lamentos (17-24): Peto de escama mutante (malla, +10 Fue).",
+  "Cavernas de Brazanegra (24-32): Golpe de la hidra y Talwar Aguaoscura.",
+  "Las Mazmorras (24-32): Cercenahuesos (arma de asta) y Ballesta de mano oculta.",
+  "Excavación: Los Humedales (26-31): cerca de Puerto de Menethil. Reliquary Mantle (malla), Golemsight Long Gun y, de misión, Martillo arrojadizo (maza 2M, +32 PA).",
+  "Ciudad de Dalaran (28-33): Guardian's Dualblade y, de misión, Defender of Dalaran o Spellguard Pauldrons; se entra con la llave de la Archimaga Modera.",
+  "Gnomeregan (29-38) y Horado Rajacieno (29-38): Manual de Muchedumbre de Puñetazos, Brazo izquierdo de Termochufe y Crea cadáveres.",
+  "Monasterio Escarlata - Armería (36-44): Devastador y Yelmo de rabioso enfurecido de Herod.",
+  "Zahúrda Rojocieno (37-46): Caparazón de Tuten'kash y Espada del vencedor (misión Trae la Luz).",
+  "La Ciudad Sumergida (35-40), Bastión Krol'dok (40-45), Prisión de Alcaz (48-53), Bastión Faucenegra (55-60) y Bancal del Creador (58-60): nuevas de nivel alto; botín aún sin verificar."
  ],
  "changes": [
   "2 nov: Actitud defensiva +80% de amenaza (antes 30%); Defiance 7/13/20% (antes 5/10/15%).",

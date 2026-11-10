@@ -960,12 +960,18 @@
   }
  ],
  "dungeons": [
-  "Hall of Thanes (Salón de los Feudales, 13-18): nueva, solo misiones para Alianza, daga y cuero.",
-  "The Deadmines (17-26): Púa cruel de VanCleef, confirmada por Method en Forever.",
-  "Excavation Site: Los Humedales (24-29): nueva, cuero de agilidad; misiones en Puerto de Menethil y Villa del Lago.",
-  "City of Dalaran (28-33): nueva, 8 jefes con mucho cuero y la daga del jefe secreto.",
-  "Shadowfang Keep y Scarlet Monastery siguen siendo clásicos en la ruta (botín de Forever sin confirmar).",
-  "Nuevas de nivel alto: The Drowned City (35-40), Krol'dok Stronghold (40-45), Alcaz Prison (48-53), Blackmaw Hold (55-60), Shaper's Terrace (58-60)."
+  "El Salón de los Feudales (13-18): solo misiones de Alianza. Mandiletes de puño de fuego (cuero Agi) y Mantón de espíritu espectral; de misión, Calzas tumbaprofunda o Capa de las catacumbas.",
+  "Las Minas de la Muerte (17-26): Púa cruel de VanCleef, Armadura ennegrecida Defias y Manteo de la Hermandad.",
+  "Ruinas de Lordaeron (15-20): Cubrepecho ensangrentado y Leotardos de cumplimiento del deber (misión); lejos para la Alianza.",
+  "Castillo de Colmillo Oscuro (22-30): Fragmento de meteorito (daga) y Pellejo de Fenrus; sin misiones de Alianza.",
+  "Cavernas de Brazanegra (24-32): Mordisco de Serra'kis y Talwar Aguaoscura.",
+  "Las Mazmorras (24-32): Arnés de Roca Negra y Ballesta de mano oculta.",
+  "Excavación: Los Humedales (26-31): Golemsight Long Gun (+6 Agi) y Forro de la Liga de Expedicionarios (capa Agi, misión); misiones en Puerto de Menethil.",
+  "Ciudad de Dalaran (28-33): Runebound Gloves (cuero, +12 PA, misión Poder sobrecogedor).",
+  "Horado Rajacieno (29-38): Mandiletes espinamalditos (cuero, +18 PA).",
+  "Monasterio Escarlata - Cementerio (30-38): Nudillos de latón sangrientos; en la Biblioteca, Houndmaster Boomerang.",
+  "Zahúrda Rojocieno (37-46): Daga rabiafría y Espada del vencedor (misión); en Zul'Farrak, Colmillo de Gahz'rilla y Sang'thraze el Deflector.",
+  "La Ciudad Sumergida (35-40), Bastión Krol'dok (40-45), Prisión de Alcaz (48-53), Bastión Faucenegra (55-60) y Bancal del Creador (58-60): nuevas de nivel alto; botín sin confirmar."
  ],
  "changes": [
   "Nuevos talentos: Mutilate y Venom (Asesinato), Puncturing Wounds y Flawless Execution (Combate), Dirty Tricks, Improved Distract, Quietus, Cutthroat y Thousand Cuts (Sutileza) (Quietus, Cutthroat, Thousand Cuts e Improved Distract se eliminaron el 2 nov).",

@@ -901,15 +901,17 @@
   }
  ],
  "dungeons": [
-  "Cuevas de los Lamentos (17-24): set Abrazo de la Víbora (Embrace of the Viper), prácticamente obligatorio para feral (y Raíz viva para Equilibrio). Viaje largo para Alianza: ve en grupo.",
-  "Las Minas de la Muerte (17-26): Smite's Mighty Hammer y Armadura ennegrecida Defias.",
-  "Cavernas de Brazanegra (24-32): muy rentable para la Alianza. Barco directo del Puerto de Ventormenta a Auberdine y bajas a la Playa de Zoram; 4 misiones con más de 22.000 PX (la mejor, la de Kelris). Como Druida, mira el cinturón o las piernas de cuero de las recompensas y, si tanqueas, ojo a las zonas de agua: el oso no nada bien con muchos bichos detrás.",
-  "Excavación: Los Humedales (26-31): de las mejores para ti. La misión Prisma prehistórico da el Martillo arrojadizo (maza a dos manos, 27,7 DPS y +32 de poder de ataque), y el último jefe puede soltar Garb of Florid Feathers (pechera de cuero, +9 Agi y +15 Int). Seis misiones de unos 6.000 PX cada una.",
-  "Ciudad de Dalaran (28-33): justo después; cuatro misiones de 9.400 PX cada una. Se entra con la llave de la misión de Costasur.",
-  "Las Mazmorras de Ventormenta (24-32): muy rentable. Está dentro de Ventormenta, se hace en unos 20-30 minutos y lleva 5-6 misiones que suman unos 25.000 PX (Detener el motín, El color de la sangre, Lo que sucece alrededor…, Crimen y castigo, El motín de las Mazmorras). Para ti: Arnés de Roca Negra (pecho de cuero con defensa y poder de ataque, ideal para oso) de Targorr, y Ursine Hammer o Bastón de raíz endurecido como recompensa de Lo que sucece alrededor…",
-  "Gnomeregan (29-38): Manual de Muchedumbre de Puñetazos, posiblemente la mejor arma feral de subida.",
-  "Monasterio Escarlata y Maraudon (30-50): puedes tanquear como oso (amenaza +115% desde el 2 nov; coge Primal Bite) o hacer daño como gato; muy demandado por versatilidad.",
-  "Como híbrido puedes cambiar de rol (oso tanque/gato/curas) sin respec gracias a la build feral con Natural Instinct."
+  "El Salón de los Feudales (13-18): en Forjaz. Mandiletes de puño de fuego (cuero Agi) para gato y Báculo de corazón de gólem para Equilibrio/Restauración; de misión, Calzas tumbaprofunda (cuero Agi/Esp).",
+  "Las Minas de la Muerte (17-26): Armadura ennegrecida Defias y Manteo de la Hermandad para feral; Bastón de piedra de ascuas si vas de lanzador.",
+  "Cuevas de los Lamentos (17-24): Armadura del Colmillo para feral y Raíz viva para Restauración. Viaje largo para la Alianza: ve en grupo.",
+  "Cavernas de Brazanegra (24-32): muy rentable para la Alianza (barco de Ventormenta a Auberdine y bajas a la Playa de Zoram; 4 misiones, la mejor la de Kelris). Vara del Insomne para Equilibrio/Restauración; si tanqueas, ojo a las zonas de agua.",
+  "Las Mazmorras (24-32): dentro de Ventormenta, 20-30 minutos y 5-6 misiones (unos 25.000 PX). Arnés de Roca Negra (cuero con defensa y PA, ideal para oso) de Targor, Cercenahuesos (arma de asta) y Ursine Hammer o Bastón de raíz endurecido de Lo que sucece alrededor…",
+  "Excavación: Los Humedales (26-31): de las mejores para ti. Prisma prehistórico da el Martillo arrojadizo (maza 2M, 27,7 DPS y +32 PA) y el último jefe puede soltar Garb of Florid Feathers (cuero, +9 Agi y +15 Int). Seis misiones de unos 6.000 PX.",
+  "Ciudad de Dalaran (28-33): cuatro misiones de 9.400 PX; Defender of Dalaran (maza 2M lenta, Fue/Int) para feral o Renewing Footpads para Restauración, y Spine of the Devourer para lanzador. Se entra con la llave de la Archimaga Modera (misiones desde Ventormenta y Costasur).",
+  "Gnomeregan (29-38): Manual de Muchedumbre de Puñetazos, posiblemente la mejor arma feral de subida; Hidrocaña para lanzador.",
+  "Horado Rajacieno (29-38): Mandiletes espinamalditos (cuero, +18 PA) para gato/oso y Espinazo de profeta de la muerte para lanzador.",
+  "Monasterio Escarlata - Armería (36-44): puedes tanquear como oso (la amenaza de oso sube al 115% desde el 2 nov; Primal Bite llega al 40) o pegar como gato, y cambiar de rol sin respec con la build feral de Natural Instinct.",
+  "Zul'Farrak (44-54): El gorila del jefe (bastón lento de 43,5 DPS) para feral; Maraudon (46-55): Vara de resurgimiento (+112 sanación) si curas."
  ],
  "changes": [
   "Nature's Grasp (10), Omen of Clarity (20) y Faerie Fire pasan a ser habilidades base; Faerie Fire (Feral) desaparece como talento.",

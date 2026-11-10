@@ -870,11 +870,16 @@
   }
  ],
  "dungeons": [
-  "Las Minas de la Muerte (17-26): Smite's Mighty Hammer y Armadura ennegrecida Defias; mazmorra 'de casa' para la Alianza.",
-  "Cuevas de los Lamentos (17-24): set Embrace of the Viper (cuero Agi/Fue) — largo viaje para la Alianza, merece la pena con grupo.",
-  "Gnomeregan (29-38): Manual de Muchedumbre de Puñetazos, posiblemente la mejor arma de subida de Mejora; además cerca de Forjaz.",
-  "Monasterio Escarlata (Armería/Catedral, 32-42): armas 2M (Devastador, Poderío de Mograine — stats de Forever sin confirmar).",
-  "Como Restauración eres muy buscado de sanador; la Alt de talentos te prepara para curar todas las mazmorras."
+  "El Salón de los Feudales (13-18): está en Forjaz, tu ciudad. Hacha creciente de Durgen (Fue) para Mejora y Báculo de corazón de gólem para Elemental/Restauración; la misión Incursión en la Antigua Forjaz da el Gran martillo de Forjaz (maza 2M lenta).",
+  "Las Minas de la Muerte (17-26): Rebanarrocas (hacha 2M, Fue) y Armadura ennegrecida Defias; mazmorra 'de casa' para la Alianza.",
+  "Cuevas de los Lamentos (17-24): Armadura del Colmillo (cuero) y Raíz viva para Restauración; largo viaje para la Alianza, merece la pena con grupo.",
+  "Cavernas de Brazanegra (24-32): barco directo y 4 misiones; Vara del Insomne para Elemental/Restauración.",
+  "Excavación: Los Humedales (26-31): Garb of Florid Feathers (cuero Agi/Int, ideal para Mejora con Mental Quickness); de misión, Empuñadura de carpinus (hacha 1M, Fue y +26 poder con hechizos), Martillo arrojadizo (maza 2M, +32 PA) o Destructor Maderaférrea (+19 Naturaleza).",
+  "Ciudad de Dalaran (28-33): Defender of Dalaran (maza 2M Fue/Int) o Spellguard Pauldrons (malla, para el 40) de misión, Guardian's Dualblade y Archmagister's Faceted Pendant (Int y PA).",
+  "Gnomeregan (29-38): Manual de Muchedumbre de Puñetazos y Brazo izquierdo de Termochufe (hacha 2M Fue/Int), las mejores armas de subida de Mejora; además está cerca de Forjaz.",
+  "Monasterio Escarlata - Armería (36-44) y Catedral (38-46): Devastador, Yelmo de rabioso enfurecido (malla, desde el 40) y Poderío de Mograine (+16 Int en Forever).",
+  "Uldaman (41-51): Martillo de Fuego de Galgann (maza 1M, +54 poder con hechizos) y Doomcaller's Pants (cuero Fue/Int, misión La solución a la maldición).",
+  "Maraudon (46-55): Vara de resurgimiento (+112 sanación) de Corrupción de la tierra y de la semilla. Como Restauración eres muy buscado: la Alt de talentos te prepara para curar todas las mazmorras."
  ],
  "changes": [
   "Nuevo para la Alianza: el chamán solo está disponible como Enano (o Skyborne en Horda).",
