@@ -5,7 +5,18 @@ import TalentTree from "../../components/TalentTree.astro";
 import { CLASS_ICON, CLASS_COLOR, MISC_ICON, url } from "../../lib/wow.js";
 import { CLASSES, ORDER, NAME, SLUG, ID_BY_SLUG, TINTS, RACE_ICON, RACE_ES } from "../../lib/classes.js";
 import { expand, getClass } from "../../lib/talents.js";
-import { linkDungeons } from "../../lib/dungeons.js";
+import { linkDungeons, slug as dslug } from "../../lib/dungeons.js";
+import DJ from "../../data/dungeons.json";
+import { esDungeon, esItem } from "../../lib/es.js";
+// Todas las mazmorras recomendadas con el botín que interesa a esta clase
+const KW = { druid: ["druida"], shaman: ["chamán", "chaman"], warlock: ["brujo"], mage: ["mago"], priest: ["sacerdote"], paladin: ["paladín", "paladin"], warrior: ["guerrero"], rogue: ["pícaro", "picaro"], hunter: ["cazador"] };
+const GEN = { druid: ["sanador", "cualquiera", "todos"], shaman: ["sanador", "cualquiera", "todos"], priest: ["sanador", "lanzador", "cualquiera", "todos"], paladin: ["sanador", "cualquiera", "todos"], mage: ["lanzador", "cualquiera", "todos"], warlock: ["lanzador", "cualquiera", "todos"], warrior: ["cualquiera", "todos"], rogue: ["cualquiera", "todos"], hunter: ["cualquiera", "todos"] };
+const pk = (p = "") => { const t = p.toLowerCase(); return t.startsWith("must") ? "must" : t.startsWith("good") ? "good" : "skip"; };
+const minL = (l = "") => +(l.match(/\d+/) || [99])[0];
+const shortL = (l = "") => (l.match(/\d+\s*-\s*\d+/) || [l])[0].replace(/\s/g, "");
+const droute = (id) => { const forMe = (t = "") => { const x = t.toLowerCase(); return [...KW[id], ...GEN[id]].some((k) => x.includes(k)); };
+return DJ.dungeons.filter((x) => pk(x.priority) !== "skip").sort((a, b) => minL(a.levels) - minL(b.levels))
+  .map((x) => ({ x, loot: (x.drops || []).filter((g) => g.id && forMe(g.for)) })); };
 
 export function getStaticPaths() {
   return ORDER.map((id) => ({ params: { clase: SLUG[id] } }));
@@ -22,6 +33,7 @@ const wh = (i) => `https://www.wowhead.com/forever/es/item=${i}`;
 const verdictClass = { best: "q-leg", good: "q-rare", ok: "q-unc" };
 const verdictTxt = { best: "La mejor", good: "Buena", ok: "Vale" };
 const lvlOf = (i) => i + 10;
+const DROUTE = droute(id);
 const rkey = (r) => r.split(" (")[0].replace("Skyborne - High Order", "Skyborne");
 ---
 <Base title={`${NAME[id]}: guía de leveo`} active="clases" description={`Guía de leveo de ${NAME[id]} en WoW Forever para la Alianza: raza, talentos por nivel, equipo, misiones de clase y mazmorras.`}>
@@ -153,9 +165,24 @@ const rkey = (r) => r.split(" (")[0].replace("Skyborne - High Order", "Skyborne"
     </section>
   )}
 
+  <section class="box" id="mazmorras">
+    <div class="titlerow"><h2>Mazmorras recomendadas</h2><span class="note">Todas las que merecen la pena, por nivel, con el botín de jefes para tu clase</span></div>
+    <div class="tablewrap" style="margin-top:12px"><table class="wide">
+      <thead><tr><th>Nivel</th><th>Mazmorra</th><th>Prioridad</th><th>Botín para ti</th></tr></thead>
+      <tbody>{DROUTE.map(({ x, loot }) => (
+        <tr>
+          <td class="num"><span class="lvlband">{shortL(x.levels)}</span></td>
+          <td><a class="dlink" href={url(`mazmorras#${dslug(x.name)}`)}><b>{esDungeon(x.name)}</b></a></td>
+          <td><span class={`vtag ${pk(x.priority) === "must" ? "q-leg" : "q-rare"}`}>{pk(x.priority) === "must" ? "Imprescindible" : "Buena"}</span></td>
+          <td>{loot.length ? loot.map((g, i) => <>{i > 0 && " · "}<a class="ritem" href={wh(g.id)} target="_blank" rel="noopener">{esItem(g.id, g.name)}</a></>) : <span class="note">Misiones y experiencia (mira las recompensas en su ficha)</span>}</td>
+        </tr>
+      ))}</tbody>
+    </table></div>
+  </section>
+
   <div class="split">
     {d.dungeons?.length > 0 && (
-      <section class="box"><h2>Mazmorras para tu clase</h2><ul class="bul" style="margin-top:10px">{d.dungeons.map((x) => <li set:html={linkDungeons(x, url(""))} />)}</ul><p class="note" style="margin-top:10px">Pulsa el nombre de una mazmorra para ver sus misiones, a quién hablar y dónde está en el mapa.</p></section>
+      <section class="box"><h2>Consejos de mazmorras</h2><ul class="bul" style="margin-top:10px">{d.dungeons.map((x) => <li set:html={linkDungeons(x, url(""))} />)}</ul><p class="note" style="margin-top:10px">Pulsa el nombre de una mazmorra para ver sus misiones, a quién hablar y dónde está en el mapa.</p></section>
     )}
     {d.changes?.length > 0 && (
       <section class="box"><h2>Qué cambia en Forever</h2><ul class="bul" style="margin-top:10px">{d.changes.map((x) => <li>{x}</li>)}</ul></section>
