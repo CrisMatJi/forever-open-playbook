@@ -19,7 +19,14 @@
   "https://kami-labs.fr/en/wow-forever/fin-de-la-beta-wow-forever/",
   "https://seemeta.com/es/wow-forever/zones (nombres en español de las mazmorras nuevas)",
   "https://talentsforever.com/ (número de build)",
-  "ForeverHispano: buscado, pero no apareció en los resultados. No se ha usado."
+  "ForeverHispano: buscado, pero no apareció en los resultados. No se ha usado.",
+  "https://conquestcapped.com/guides/wow-forever/wow-forever-the-drowned-city-guide/ (7 nov; jefes, botín, misiones e IDs tras el lanzamiento)",
+  "https://conquestcapped.com/guides/wow-forever/wow-forever-kroldok-stronghold-guide/ (8 nov)",
+  "https://conquestcapped.com/guides/wow-forever/wow-forever-alcaz-prison-guide/ (8 nov)",
+  "https://conquestcapped.com/guides/wow-forever/wow-forever-blackmaw-hold-guide/ (8 nov)",
+  "https://conquestcapped.com/guides/wow-forever/wow-forever-shapers-terrace-guide/ (5 nov, todavía con datos previos al lanzamiento)",
+  "https://www.warcrafttavern.com/forever/guides/ (páginas de The Drowned City, Krol'dok, Alcaz, Blackmaw Hold y Shaper's Terrace; coordenadas de entrada)",
+  "https://nether.wowhead.com/forever/tooltip/{item,quest,npc}/<ID>?dataEnv=27&locale=6 (estadísticas, iconos, % de botín y nombres esES de las 5 mazmorras nuevas, consultado el 2026-11-10)"
  ],
  "cap_note": "El tope es nivel 60 desde el lanzamiento, así que desde la Alianza puedes llegar a las 35 mazmorras de la lista (26 de Classic y 9 nuevas). La beta solo llegó a nivel 30: de las mazmorras nuevas de nivel alto (Ciudad Sumergida, Bastión Krol'dok, Prisión de Alcaz, Bastión Faucenegra y Bancal del Creador) aún no se conocen jefes ni botín, y el botín de Classic por encima de nivel 45 puede cambiar. El buscador de grupo no teletransporta: hay que viajar o usar las piedras de invocación.",
  "dungeons": [
@@ -2249,76 +2256,479 @@
   {
    "name": "The Drowned City",
    "name_es": "La Ciudad Sumergida",
-   "levels": "35-40 (Blizzard)",
+   "levels": "35-40 (Blizzard/Wowhead/conquestcapped); warcrafttavern pone 35-42. Las misiones se cogen desde nivel 30 o 34 y son de nivel 37-40.",
    "classic_levels": null,
    "zone": "Mar de la Vega de Tuercespina. Según warcrafttavern, frente a la costa al oeste de Grom'gol; según foreverchanges, en la Isla de Gillijim (suroeste), con portal en la cueva Sunken Hollow.",
-   "alliance_access": "Sin confirmar. Se entra buceando o por el portal de Sunken Hollow, que no funcionaba en el beta, y no hay barco ni vuelo conocidos. Previsión: bajar desde la Bahía del Botín o Campamento Rebelde e ir a nado hacia el oeste.",
-   "new_or_changed": "Mazmorra NUEVA, al aire libre, con un temporal que va a más. Trolls, naga y un barco pirata hundido: la ciudad troll de I'lalai. Nombres provisionales de jefes en el datamining: Zul'Alai, Var'Taka, Captain Dreadrise, Deathless Marrow, Gill y Min'loth the Serpent (sin confirmar). No estuvo disponible en el beta.",
+   "alliance_access": "Vuelo a Bahía del Botín y a nado hacia el noroeste, más allá del Arrecife Vil, hasta Sunken Hollow, cerca de la isla de los elementales de agua. La entrada es una cueva submarina (aprox. 21.4, 27.8) y la marca una gran tablilla de piedra en el fondo (aprox. 21.6, 27.3). Una vez dentro, la mazmorra está en tierra firme. Es contestada: el mismo portal para las dos facciones.",
+   "new_or_changed": "Mazmorra NUEVA y abierta desde el lanzamiento (4 nov): la ciudad troll de I'lalai, con naga, piratas Videntesal y un temporal que va a más. 6 encuentros, con Zul'Alai, Var'Taka, el capitán Alzapavor, Deathless Marrow y el Primeval Elemental, Gill y Min'loth the Serpent. 18 azules de nivel de objeto 39-42 (probabilidades de botín de Wowhead entre el 24 % y el 40 %). El tiburón Zin'aka no es un jefe (algunas guías previas al lanzamiento lo listaban). Los nombres de los objetos aún no están traducidos al español en Wowhead.",
    "quests": [
     {
-     "name": "Ancient Gurubashi Idol (96774)",
+     "name": "An Acquaintance in Southshore (95786)",
      "level": 40,
-     "giver": "Mazu'kon, Mulgore (HORDA)",
-     "reward": "8.800 PX",
-     "worth": "No aplica a la Alianza. No se conocen misiones de Alianza (sin confirmar)."
+     "giver": "Sin confirmar: conquestcapped cree que es el hermano Nimetz, en el Campamento Rebelde (Tuercespina)",
+     "reward": "Savage Coast Report Bundle (270340), objeto de misión; 3.150 PX",
+     "worth": "Sí: lleva hasta el maestro cultural Dibbs, que da dos misiones de la mazmorra."
+    },
+    {
+     "name": "Take Two With Water (95787)",
+     "level": 40,
+     "giver": "Maestro cultural Dibbs, Costasur (Laderas de Trabalomas)",
+     "reward": "1 o 50 pl; 8.450 PX. Continúa con Findings for the Explorer's League (95799), que se entrega al historiador Karnik (Forjaz): Ancient Voodoo Pouch (279880) o Intrepid Explorer's Chainmail (279881); 2.350 PX",
+     "worth": "Sí: calca las 4 tablillas de I'lalai dentro, y la continuación da un azul."
+    },
+    {
+     "name": "Magics of the Drowned City (95788)",
+     "level": 40,
+     "giver": "Maestro cultural Dibbs, Costasur (Laderas de Trabalomas)",
+     "reward": "Sin objeto; 8.450 PX. Continúa con The Web of Magic (95798), que se entrega a Abra Cadabra (Dalaran): Rune-Etched Epaulets (279879) o Apprentice Sorcerer's Slacks (279878); 2.350 PX",
+     "worth": "Sí: 5 I'lalai Fetish de los trols de dentro, y la continuación da un azul."
+    },
+    {
+     "name": "Ancient Gurubashi Secrets (97130)",
+     "level": 40,
+     "giver": "Archimago Timear, Dalaran (fuera del Bastión Violeta, según jugadores); nivel mínimo 34",
+     "reward": "50 pl; 10.450 PX",
+     "worth": "Sí: el Ancient Gurubashi Idol cae del Primeval Elemental."
+    },
+    {
+     "name": "Shady Saltseers (95789)",
+     "level": 40,
+     "giver": "Krazek, Bahía del Botín (ambas facciones); nivel mínimo 34",
+     "reward": "Rusted Troll War Belt (279882) o Saltseer's Helm (279930); 1 o; 10.450 PX",
+     "worth": "Sí: 10 Voodoo-Infused Artifact de los piratas Videntesal."
+    },
+    {
+     "name": "The Saltseer Captain (95791)",
+     "level": 40,
+     "giver": "Sin confirmar (conquestcapped supone que en Bahía del Botín; ambas facciones); nivel mínimo 34",
+     "reward": "Mutinous Cuffs (279883) o South Seas Shroud (279884); 10.450 PX",
+     "worth": "Sí: matar al capitán Alzapavor y a 3 Saltseer Coroners."
     }
    ],
-   "drops": [],
+   "drops": [
+    {
+     "name": "Berserker Shackles",
+     "id": 274600,
+     "icon": "inv_bracer_15",
+     "slot": "Muñeca, malla (+7 Fue, +6 Def)",
+     "boss": "Zul'Alai",
+     "for": "Guerrero, paladín (tanque)",
+     "verified": true
+    },
+    {
+     "name": "Bloodslash Axe",
+     "id": 274598,
+     "icon": "inv_axe_13",
+     "slot": "Hacha 1M (+5 Fue, +5 Agu)",
+     "boss": "Zul'Alai",
+     "for": "Guerrero, paladín, chamán, cazador",
+     "verified": true
+    },
+    {
+     "name": "Brinebelly Leggings",
+     "id": 274602,
+     "icon": "inv_pants_leather_11",
+     "slot": "Piernas, cuero (+15 Agi, +11 Agu)",
+     "boss": "Var'Taka",
+     "for": "Pícaro, druida, cazador",
+     "verified": true
+    },
+    {
+     "name": "Harpoon of Command",
+     "id": 274601,
+     "icon": "inv_spear_04",
+     "slot": "Arma de asta 2M (+15 Agu)",
+     "boss": "Var'Taka",
+     "for": "Guerrero, paladín, cazador",
+     "verified": true
+    },
+    {
+     "name": "Frosty Blunderbuss",
+     "id": 274604,
+     "icon": "inv_weapon_rifle_03",
+     "slot": "Arma de fuego (+10 PA)",
+     "boss": "Captain Dreadrise",
+     "for": "Cazador, guerrero, pícaro",
+     "verified": true
+    },
+    {
+     "name": "Briny Sash",
+     "id": 274605,
+     "icon": "inv_belt_07",
+     "slot": "Cintura, tela (+9 Int)",
+     "boss": "Captain Dreadrise",
+     "for": "Mago, sacerdote, brujo",
+     "verified": true
+    },
+    {
+     "name": "Dreadfrost Saber",
+     "id": 274603,
+     "icon": "inv_weapon_shortblade_79",
+     "slot": "Espada 1M, mano principal (+8 Agu)",
+     "boss": "Captain Dreadrise",
+     "for": "Guerrero, pícaro, paladín",
+     "verified": true
+    },
+    {
+     "name": "Bloodspine Staff",
+     "id": 274606,
+     "icon": "inv_wand_06",
+     "slot": "Bastón 2M (+11 Int, +12 Esp)",
+     "boss": "Deathless Marrow",
+     "for": "Sacerdote, druida, chamán, mago, brujo",
+     "verified": true
+    },
+    {
+     "name": "Waterlogged Burial Shroud",
+     "id": 274612,
+     "icon": "inv_misc_cape_15",
+     "slot": "Espalda (+12 PA, +0,5 % crít.)",
+     "boss": "Primeval Elemental",
+     "for": "Pícaro, guerrero, cazador",
+     "verified": true
+    },
+    {
+     "name": "Ritual-Binder's Gloves",
+     "id": 274610,
+     "icon": "inv_gauntlets_15",
+     "slot": "Manos, cuero (+13 Agi)",
+     "boss": "Min'loth the Serpent",
+     "for": "Pícaro, druida, cazador",
+     "verified": true
+    },
+    {
+     "name": "Maw of Min'loth",
+     "id": 274608,
+     "icon": "inv_waepon_bow_zulgrub_d_01",
+     "slot": "Escudo (+8 Agu)",
+     "boss": "Min'loth the Serpent",
+     "for": "Guerrero, paladín, chamán",
+     "verified": true
+    }
+   ],
    "tips": [
-    "Sin datos de recorrido: no se ha podido probar en el beta (tope 30). Mira Wowhead o Icy Veins después del lanzamiento."
+    "Orden según conquestcapped: Zul'Alai → Var'Taka → capitán Alzapavor (Captain Dreadrise) → Deathless Marrow + Primeval Elemental (encuentro compartido en una tumba inundada) → Gill (sin confirmar) → Min'loth the Serpent (jefe final). Tras la cueva hay una gran zona central con un estanque y alas a cada lado con más jefes.",
+    "Zul'Alai se enfurece al bajar de vida y pega en área a todo el grupo: guardad defensivos para el final. A Var'Taka lo curan dos Brinescale Priestesses: matadlas o controladlas primero.",
+    "Evita al tiburón Zin'aka: no es un jefe. Antes de Min'loth se levanta una tormenta. Coge las misiones de Dibbs, Krazek y Timear antes de entrar, porque casi todo se hace en una pasada."
    ],
    "priority": "good (sin confirmar): es nueva y encaja en el hueco 35-40 junto a la Vega. Decide cuando haya datos reales en el lanzamiento."
   },
   {
    "name": "Krol'dok Stronghold",
-   "name_es": "Bastión de Krol'dok",
-   "levels": "40-45 (Blizzard/foreverchanges); warcrafttavern y kami-labs llegan a citar 40-55",
+   "name_es": "Bastión Krol'dok",
+   "levels": "40-45 (Blizzard/Wowhead/conquestcapped); warcrafttavern pone 40-47 y Blizzard llegó a mostrar 40-55 antes de corregirlo. Las misiones se cogen desde nivel 37-40.",
    "classic_levels": null,
    "zone": "Clarofluvial (zona nueva de 36-44 al este de los Reinos del Este, junto a Tierras Inhóspitas, Las Estepas Ardientes y Crestagrana), aprox. 48.6, 26.3",
-   "alliance_access": "Vuelo de la Alianza a Bastión Farholde (Clarofluvial) y subida a la colina de la fortaleza, cerca de Bolder'ok.",
-   "new_or_changed": "Mazmorra NUEVA: fortaleza ogra del Martillo Crepuscular con talleres y un puente con oleadas (si te caes, sobrevives y tienes que volver a subir). Blizzard mostró 5 jefes sin nombre. Hay un conjunto Krol'dok Battlegear de 5 piezas, oculto. Objetos: Llave del complejo Krol'Dok (267089), Llave de ogro Krol'Dok (271721) y Moldura Krol'Dok (267137, inicia una misión).",
+   "alliance_access": "Vuelo a Bastión Farholde (maestro de vuelo en 60.6, 81.6, Clarofluvial) y a caballo hacia el norte. Las grandes puertas de la fortaleza (aprox. 43.5, 39.5) están cerradas: el portal está en una cueva al oeste (aprox. 37.5, 37.2), con la piedra de encuentro de camino (aprox. 39, 39). A Clarofluvial se llega desde Tierras Inhóspitas o desde Montañas Crestagrana. Es contestada.",
+   "new_or_changed": "Mazmorra NUEVA: fortaleza ogra del Martillo Crepuscular, con una subida entre chozas y un gran puente de madera. 6 jefes (los datos del juego listan 5; Jefazo Toof se añadió aparte). 17 azules conocidos de nivel de objeto 44-47 y el conjunto de placas Krol'dok Battlegear (5 piezas; solo se ha confirmado el pecho, de Nar'gurk). La Krol'dok Moulding (267137) cae dentro e inicia la cadena de la Krol'dok Compound Key (267089), que no se gasta y cuyo uso aún no se conoce. Mugg suelta la Krol'dok Ogre Key (271721), que según un grupo abre un atajo. Hotfix del 6 nov sobre compartir objetos de misión.",
    "quests": [
     {
-     "name": "Misión que empieza con Krol'dok Moulding (267137)",
+     "name": "Eye of Mugg (94982)",
+     "level": 45,
+     "giver": "Comandante Demar Brant, Bastión Farholde (Clarofluvial 66.5, 80.9)",
+     "reward": "Rock on Stick (279852), Bigger Rock on Bigger Stick (279480) o Stick No Rock (279853); 1 o 30 pl; 11.500 PX; 150 de reputación con la Hermandad de la Caballería",
+     "worth": "Sí: es el jefe final y da un arma azul."
+    },
+    {
+     "name": "Tome of Twilight (94984)",
+     "level": 44,
+     "giver": "Ashe Amberhall, Bastión Farholde (66.6, 81.0), después de A Small Favor (94907)",
+     "reward": "Twilight Initiate's Belt (279854) o Torn Cultist Cloak (279855); 11.050 PX; 150 de reputación",
+     "worth": "Sí, si has hecho la cadena previa de Amberhall (se mata a Nar'gurk)."
+    },
+    {
+     "name": "Twilight Mementos (94983)",
+     "level": 42,
+     "giver": "Probablemente el sargento Riftan (Clarofluvial 30.5, 48.9), después de Bring Me His Head (94890) (sin confirmar)",
+     "reward": "Sin objeto; 10.200 PX; 150 de reputación",
+     "worth": "Sí: 8 Twilight Bangles de los cultores de dentro."
+    },
+    {
+     "name": "Vengeance of the Highborne (96771)",
+     "level": 45,
+     "giver": "Ranath Nightstride, posada de Dalaran (Montañas de Alterac 17.8, 66.0)",
+     "reward": "65 pl; 11.500 PX; 250 de reputación con el Kirin Tor",
+     "worth": "Sí, si pasas por Dalaran: hay que matar a Zalfan Moonshadow (llevad quien quite maldiciones)."
+    },
+    {
+     "name": "Krol'dok Moulding (94980) → Key Ingredients (94981)",
      "level": null,
-     "giver": "Objeto que se encuentra dentro (sin confirmar)",
-     "reward": "Sin confirmar",
-     "worth": "Sin confirmar."
+     "giver": "La inicia la Krol'dok Moulding (267137), botín de grupo dentro; se lleva a Alphonse Dumas, Bastión Farholde (64.4, 82.0)",
+     "reward": "Krol'dok Compound Key (267089); 3.300 PX y 55 pl en cada paso",
+     "worth": "Opcional: el herrero pide 4 Thick Leather y 12 Iron Bar, y no se sabe qué abre la llave (sin confirmar)."
     }
    ],
-   "drops": [],
+   "drops": [
+    {
+     "name": "Resistance Breaker Spaulder",
+     "id": 274996,
+     "icon": "inv_shoulder_07",
+     "slot": "Hombro, malla (+10 Agi, +15 Agu)",
+     "boss": "Slavecrusher Grox",
+     "for": "Cazador, chamán, guerrero, paladín",
+     "verified": true
+    },
+    {
+     "name": "Chain of Binding",
+     "id": 274997,
+     "icon": "inv_belt_25",
+     "slot": "Cintura, malla (+15 Agu, +12 hechizos y sanación)",
+     "boss": "Slavecrusher Grox",
+     "for": "Chamán, paladín (sanador)",
+     "verified": true
+    },
+    {
+     "name": "Shadowlight Athame",
+     "id": 274998,
+     "icon": "inv_weapon_shortblade_20",
+     "slot": "Daga, mano principal (+9 Agu, +5 Int)",
+     "boss": "Twilight Commander Zarmok",
+     "for": "Mago, brujo, sacerdote",
+     "verified": true
+    },
+    {
+     "name": "Bloodied Gutslicer",
+     "id": 275001,
+     "icon": "inv_sword_13",
+     "slot": "Espada 2M (+14 Agi, +17 Agu)",
+     "boss": "War Handler Ashka",
+     "for": "Guerrero, paladín, cazador",
+     "verified": true
+    },
+    {
+     "name": "Chain of the Corruptor",
+     "id": 275004,
+     "icon": "inv_jewelry_necklace_19",
+     "slot": "Cuello (+4 Agi, +12 Agu)",
+     "boss": "Nar'gurk",
+     "for": "Guerrero, paladín, pícaro, cazador",
+     "verified": true
+    },
+    {
+     "name": "Krol'dok Warplate Chest",
+     "id": 275005,
+     "icon": "inv_chest_plate01",
+     "slot": "Pecho, placas (+10 Fue, +10 Agu; conjunto Krol'dok Battlegear)",
+     "boss": "Nar'gurk",
+     "for": "Guerrero, paladín",
+     "verified": true
+    },
+    {
+     "name": "Toofbreaker",
+     "id": 286430,
+     "icon": "inv_mace_13",
+     "slot": "Maza 1M (+7 Fue, +5 Agu)",
+     "boss": "Bossman Toof",
+     "for": "Guerrero, paladín, chamán",
+     "verified": true
+    },
+    {
+     "name": "Emblem of Slamming",
+     "id": 275009,
+     "icon": "inv_misc_coin_10",
+     "slot": "Abalorio (+14 PA)",
+     "boss": "Overlord Mugg",
+     "for": "Guerrero, pícaro, cazador",
+     "verified": true
+    },
+    {
+     "name": "Mugg's Jabber",
+     "id": 275007,
+     "icon": "inv_weapon_hand_02",
+     "slot": "Arma de puño 1M (+5 Agi, +6 Agu)",
+     "boss": "Overlord Mugg",
+     "for": "Pícaro, chamán, guerrero, druida",
+     "verified": true
+    }
+   ],
    "tips": [
-    "Sin datos de recorrido (no estuvo en el beta)."
+    "Orden según conquestcapped: Slavecrusher Grox → Twilight Commander Zarmok → War Handler Ashka (con dos lobos; los primeros grupos no la encontraron, sin confirmar) → Nar'gurk → puente → Jefazo Toof (Bossman Toof) → Overlord Mugg (jefe final).",
+    "Grox tiene una patrulla larga antes. Zarmok aplica un sangrado fuerte y al morir abre la gran puerta. Nar'gurk controla mentalmente a un jugador.",
+    "Mugg salta por la sala. Matad primero sus esbirros, porque reducen la sanación que recibe el tanque. En el puente hay oleadas, y si te caes sobrevives pero tienes que volver a subir."
    ],
    "priority": "good (sin confirmar): está en ruta si subes por Clarofluvial entre el 40 y el 44."
   },
   {
    "name": "Alcaz Prison",
    "name_es": "Prisión de Alcaz",
-   "levels": "48-53 (Blizzard)",
+   "levels": "48-53 (Blizzard/Wowhead/conquestcapped); warcrafttavern pone 48-55. Las misiones se cogen desde nivel 46 o 48.",
    "classic_levels": null,
    "zone": "Isla de Alcaz, noreste del Marjal Revolcafango",
-   "alliance_access": "Desde Theramore (Marjal Revolcafango), la isla de Alcaz queda al este y se llega a nado. No hay detalles de entrada (sin confirmar).",
-   "new_or_changed": "Mazmorra NUEVA: los Defias tenían nobles retenidos para pedir rescate (se rumorea que entre ellos estuvo Varian Wrynn) y ahora luchan contra los naga. Kami-labs la llama 'Defias Prison'. Sin jefes, botín ni misiones conocidos.",
-   "quests": [],
-   "drops": [],
+   "alliance_access": "Vuelo a Theramore (67.5, 51.2), a caballo hasta la costa noreste del Marjal Revolcafango y a nado hasta la isla de Alcaz. Desde el muelle, sube por el camino de la colina de la izquierda hasta la vieja torre: el portal está en el sótano (aprox. 75.3, 14.1). Es contestada; la cadena de la Horda empieza fuera, con el sargento Ulka (70.4, 19.0).",
+   "new_or_changed": "Mazmorra NUEVA: la prisión Defias de la isla de Alcaz, invadida por naga Strashaz. El jefe final, Blazeroar, es un dragón disfrazado de la prisionera Zarla Ober. 5 jefes; la puerta del piso inferior se abre con el Overseer's Keyring (263992), que suelta Overseer Wrex. 16 azules conocidos (9 vistos) para nivel 47-50, incluido el conjunto de cuero Defias Enforcer's Garb (set 2136). Para la Alianza solo se conoce una misión; la Horda tiene una cadena de seis.",
+   "quests": [
+    {
+     "name": "The Dragon's Journal (96772)",
+     "level": 53,
+     "giver": "Probablemente el archimago Lan'dalock, Dalaran (Montañas de Alterac 15.5, 73.7) (sin confirmar); nivel mínimo 46",
+     "reward": "80 pl; 14.400 PX; 300 de reputación con el Kirin Tor y 150 con Ventormenta",
+     "worth": "Sí: el Zarla's Journal (276890) lo suelta Blazeroar, el jefe final. Es la única misión de Alianza conocida."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Grips of Control",
+     "id": 276733,
+     "icon": "inv_gauntlets_26",
+     "slot": "Manos, placas (+12 Agu, +12 Int)",
+     "boss": "Overseer Wrex",
+     "for": "Paladín (sanador)",
+     "verified": true
+    },
+    {
+     "name": "Wrex's Pinky Ring",
+     "id": 276734,
+     "icon": "inv_jewelry_ring_64",
+     "slot": "Anillo (+11 Agi, +9 Agu)",
+     "boss": "Overseer Wrex",
+     "for": "Pícaro, cazador, druida feral, guerrero",
+     "verified": true
+    },
+    {
+     "name": "Girdle of Extracted Answers",
+     "id": 276742,
+     "icon": "inv_belt_12",
+     "slot": "Cintura, placas (+12 Fue, +15 Agu)",
+     "boss": "The Questioner",
+     "for": "Guerrero, paladín",
+     "verified": true
+    },
+    {
+     "name": "Defias Enforcer's Shoulderpads",
+     "id": 276741,
+     "icon": "inv_shoulder_08",
+     "slot": "Hombro, cuero (+13 Agu, +28 PA, +0,5 % crít.; conjunto Defias Enforcer's Garb)",
+     "boss": "The Questioner",
+     "for": "Pícaro, druida feral",
+     "verified": true
+    },
+    {
+     "name": "Fingerbreaker Stamp",
+     "id": 276743,
+     "icon": "inv_misc_armorkit_02",
+     "slot": "Abalorio (+6 Def; uso: +38 Fue mientras sangras)",
+     "boss": "The Questioner",
+     "for": "Guerrero, paladín (tanque)",
+     "verified": true
+    },
+    {
+     "name": "Tidesong Wand",
+     "id": 276735,
+     "icon": "inv_wand_01",
+     "slot": "Varita (escarcha, 51 DPS)",
+     "boss": "Tidemistress Ca'zass",
+     "for": "Mago, brujo, sacerdote",
+     "verified": true
+    },
+    {
+     "name": "Seascale Bracers",
+     "id": 276736,
+     "icon": "inv_bracer_07",
+     "slot": "Muñeca, malla (+8 Agu, +3 penetración de hechizos)",
+     "boss": "Tidemistress Ca'zass",
+     "for": "Chamán, cazador",
+     "verified": true
+    },
+    {
+     "name": "Cutthroat Chestguard",
+     "id": 276739,
+     "icon": "inv_chest_plate12",
+     "slot": "Pecho, malla (+20 Agu, +1 % golpe, +32 PA)",
+     "boss": "Katerina the Cleaner",
+     "for": "Cazador, chamán, guerrero",
+     "verified": true
+    }
+   ],
    "tips": [
-    "Sin datos. Por la temática Defias y Varian, es probable que tenga misiones de Ventormenta/Theramore para la Alianza (sin confirmar)."
+    "Orden según conquestcapped: Overseer Wrex → The Questioner (el propio juego lo pone 4.º, así que el orden está sin confirmar) → Tidemistress Ca'zass → Katerina the Cleaner → Blazeroar (final).",
+    "Wrex se trae a toda la sala (6-8 carceleros y cazarrecompensas): llevadlo al pasillo. Suelta la llave del piso inferior. Las naga de Ca'zass lanzan Polimorfia: matad o interrumpid a los adds primero. Ella lanza Ventisca.",
+    "Katerina hace mucho daño de fuego a todo el grupo. No liberéis a los prisioneros encadenados durante el combate, porque en un grupo provocó un wipe. Blazeroar se hace pasar por la prisionera Zarla Ober; a un grupo no le funcionaban los hechizos de fuego contra él (sin confirmar).",
+    "En la Prisión de Alcaz los botines están confirmados en Wowhead, pero de qué jefe cae cada uno sale de los primeros grupos (conquestcapped), salvo las hombreras de The Questioner, que Wowhead confirma."
    ],
    "priority": "good (sin confirmar): queda cerca de Theramore, base de la Alianza, en el tramo 48-53."
   },
   {
    "name": "Blackmaw Hold",
-   "name_es": "Bastión Fauceoscura",
-   "levels": "55-60 (Blizzard)",
+   "name_es": "Bastión Faucenegra",
+   "levels": "55-60 (Blizzard/Wowhead/conquestcapped). Las misiones se cogen desde nivel 45 o 52.",
    "classic_levels": null,
    "zone": "Azshara norte, tras la Puerta de los Furbolgs",
-   "alliance_access": "Vuelo de la Alianza a Punta Talrendis (Azshara) y al norte hasta la puerta (sin confirmar).",
-   "new_or_changed": "Mazmorra NUEVA: ciudad furbolg con varias rutas y jefes y una corrupción que se extiende por sus bosquecillos. Sus túneles llevan hacia la banda Barrow Deeps. Objetos vistos: Faltriquera de los Faucenegra (273050; se entrega a los Faucenegra de Ursolan) y Tótem de ritual Faucenegra (276893, de misión).",
-   "quests": [],
-   "drops": [],
+   "alliance_access": "Vuelo a Punta Talrendis (suroeste de Azshara) y a caballo hacia el norte. El túnel furbolg empieza en el norte de Azshara (aprox. 38.4, 32.6, al noreste de Valormok, junto a una piedra de encuentro; warcrafttavern da 38.7, 33.4). El portal está al fondo del túnel, ya en el mapa de Cuna del Invierno (warcrafttavern: 66.6, 84.4). Es contestada.",
+   "new_or_changed": "Mazmorra NUEVA: ciudad de los furbolgs Faucenegra, corrompida por demonios, no lineal y del tamaño de Profundidades de Roca Negra. 7 encuentros listados más un raro (Moontouched Wanderer). Sus túneles llevan a la banda Barrow Deeps (abre el 9 dic). El Elder Shaman Bloodmane suelta siempre el Relicario de Tyr (286415), un objeto de misión épico solo para paladines. Botín: solo 5 azules vistos hasta ahora.",
+   "quests": [
+    {
+     "name": "Beneath Nordrassil (92345) → Get to the Roots of It (92344)",
+     "level": 55,
+     "giver": "Beneath Nordrassil: sin confirmar (sur de Azshara). Get to the Roots of It: Mathrengyl Bearwalker, Enclave Cenarion (Darnassus 35.4, 8.4); nivel mínimo 45",
+     "reward": "Sin objeto; 560 + 11.300 PX; 150 de reputación con Darnassus",
+     "worth": "Sí: 10 Nordrassil Root Caps dentro (botín de grupo)."
+    },
+    {
+     "name": "Blackmaw Magic (97173)",
+     "level": 59,
+     "giver": "Sin confirmar: probablemente un mago de Dalaran; nivel mínimo 52",
+     "reward": "90 pl; 12.800 PX; 300 de reputación con el Kirin Tor y 150 con Darnassus",
+     "worth": "Sí: el Blackmaw Ritual Totem lo suelta el Elder Shaman Bloodmane."
+    },
+    {
+     "name": "Claws That Rend, Tusks that Gore (92069)",
+     "level": 58,
+     "giver": "Probablemente Ogtinc, Azshara (42.4, 42.6) (sin confirmar; sí es quien la recibe); nivel mínimo 45",
+     "reward": "Great Bear Claw (260213), Staff of Wild Beasts (260214) o Wild Malleus (260215); 12.400 PX; 150 de reputación con Timbermaw Hold",
+     "worth": "Sí: Claws of the Great Bear (Withermaw) y Tusks of the Unbroken (Bonesnout), al 100 %."
+    }
+   ],
+   "drops": [
+    {
+     "name": "Withering Grips",
+     "id": 280064,
+     "icon": "inv_gauntlets_04",
+     "slot": "Manos, cuero (+14 Agu, +12 Int)",
+     "boss": "Withermaw",
+     "for": "Druida",
+     "verified": true
+    },
+    {
+     "name": "Impish Chain Hood",
+     "id": 280058,
+     "icon": "inv_helmet_17",
+     "slot": "Cabeza, malla (+19 Agu, +16 Esp)",
+     "boss": "Impaan the Imprisoner",
+     "for": "Cazador, chamán",
+     "verified": true
+    },
+    {
+     "name": "Lucky Shovelnose Tuft",
+     "id": 280060,
+     "icon": "ability_hunter_pet_boar",
+     "slot": "Abalorio (+11 Fue, +11 Esp; uso: +5 % esquivar)",
+     "boss": "Bonesnout the Unbroken",
+     "for": "Guerrero, paladín (tanque)",
+     "verified": true
+    },
+    {
+     "name": "Claymore of Two Moons",
+     "id": 280080,
+     "icon": "inv_sword_44",
+     "slot": "Espada 2M (+17 Agu; efecto arcano o +40 Fue)",
+     "boss": "Moontouched Wanderer (raro)",
+     "for": "Guerrero, paladín, cazador",
+     "verified": true
+    },
+    {
+     "name": "Satyr's Touch",
+     "id": 287036,
+     "icon": "inv_wand_07",
+     "slot": "Varita (58,4 DPS, +0,5 % golpe)",
+     "boss": "Legashi Slayer (bicho normal)",
+     "for": "Mago, brujo, sacerdote",
+     "verified": true
+    }
+   ],
    "tips": [
-    "Sin datos de recorrido."
+    "Orden de encuentros según conquestcapped: Withermaw → Impaan the Imprisoner → Elder Shaman Bloodmane → Bonesnout the Unbroken → Varrox Bleakhoof → Blackmaw Behemoth → Unbound Spirit (posible jefe final, sin confirmar). El raro Moontouched Wanderer no siempre aparece.",
+    "Bloodmane va con lanzadores de hechizos: llevad interrupciones. A Bonesnout lo potencian los Legashi Ritualists: matadlos primero. Withermaw es probablemente el oso podrido que deja lava (sin confirmar).",
+    "No hay datos de habilidades de Blackmaw Behemoth ni de Unbound Spirit. Es grande y no lineal, así que reservad tiempo."
    ],
    "priority": "good (sin confirmar): alternativa nueva a Profundidades de Roca Negra y la Cumbre Inferior en el 55-60, y antesala de Barrow Deeps."
   },
@@ -2328,12 +2738,13 @@
    "levels": "58-60 (Blizzard)",
    "classic_levels": null,
    "zone": "Cráter de Un'Goro, colinas del norte",
-   "alliance_access": "Vuelo al Refugio de la Marshal (Un'Goro) y subida a las colinas del norte (sin confirmar).",
-   "new_or_changed": "Mazmorra NUEVA: instalación titánica con dinosaurios, pozos de alquitrán y consolas que se activan con cristales de energía. Sin jefes, botín ni misiones conocidos.",
+   "alliance_access": "Vuelo al Refugio de la Marshal (Un'Goro; ambas facciones) y subida a la colina que hay justo encima, donde hay una piedra de encuentro. warcrafttavern da la entrada en 48.1, 6.1 (sin confirmar tras el lanzamiento).",
+   "new_or_changed": "Mazmorra NUEVA: instalación titánica con dinosaurios y consolas que se activan con cristales de poder (Red 11186, Blue 11184, Green 11185 y Yellow 11188) recogidos por Un'Goro. Las estadísticas de muerte listan 4 jefes: Bolt, Cinder, Snowtalon y Nanaya (este último, probablemente el final). Hay un objeto de misión nuevo, el Kit de cartografía de la Liga de Expedicionarios (271770), que sirve para dibujar un lugar en el mapa del Bancal del Creador, pero no se sabe de qué misión es. A 10 nov no hay botín, misiones ni mecánicas publicados.",
    "quests": [],
    "drops": [],
    "tips": [
-    "Sin datos de recorrido."
+    "Sin datos de recorrido tras el lanzamiento. Jefes conocidos (por las estadísticas, sin orden): Bolt, Cinder, Snowtalon y Nanaya.",
+    "Lleva cristales de poder de Un'Goro para las consolas (no se sabe cuántos ni de qué color). La cadena de J.D. Collie (Crystals of Power, 4284) es antigua y Blizzard no la ha ligado a la mazmorra."
    ],
    "priority": "skip para subir de nivel (58-60, casi contenido de 60). Mírala ya en 60."
   },

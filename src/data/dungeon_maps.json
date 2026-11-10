@@ -886,21 +886,86 @@
    "zone_es": "Vega de Tuercespina",
    "zone_id": 33,
    "x": 21.4,
-   "y": 27.9,
-   "note": "Entrada submarina frente a la costa oeste de Tuercespina: nada más allá del Arrecife Vil hasta Sunken Hollow, junto a la isla de los elementales de agua; verás una cueva con una gran tablilla al lado. Coordenadas aproximadas de warcrafttavern (previas al lanzamiento); Wowhead aún la da como sin confirmar. Vuelo de Alianza más cercano: Bahía del Botín o Villa Oscura."
+   "y": 27.8,
+   "note": "Entrada submarina en Sunken Hollow, al oeste del Arrecife Vil, junto a la isla de los elementales de agua. Una gran tablilla de piedra en el fondo marca el sitio (aprox. 21.6, 27.3). Coordenadas de conquestcapped (warcrafttavern da 21.4, 27.9). Vuelo de Alianza más cercano: Bahía del Botín."
   },
   "quests": [
    {
-    "quest": "Ancient Gurubashi Idol (96774)",
-    "npc": "Mazu'kon",
-    "npc_id": 264074,
-    "zone": null,
-    "zone_es": null,
-    "zone_id": null,
+    "quest": "An Acquaintance in Southshore (95786)",
+    "npc": null,
+    "npc_id": null,
+    "zone": "Stranglethorn Vale",
+    "zone_es": "Vega de Tuercespina",
+    "zone_id": 33,
     "x": null,
     "y": null,
     "inside": false,
-    "note": "Misión de HORDA (da reputación con Trols Lanza Negra y el Anillo de la Tierra): no aplica a la Alianza. Wowhead no confirma ni el que la da ni su ubicación. Como misiones de Alianza se han visto Magics of the Drowned City (95788) y Take Two With Water, todavía sin datos de quién las da.",
+    "note": "Misión de entrada que lleva al maestro cultural Dibbs en Costasur. conquestcapped cree que la da el hermano Nimetz, en el Campamento Rebelde (sin confirmar). Sin coordenadas en las fuentes.",
+    "prereq": null
+   },
+   {
+    "quest": "Take Two With Water (95787)",
+    "npc": "Loremaster Dibbs",
+    "npc_id": 2277,
+    "zone": "Hillsbrad Foothills",
+    "zone_es": "Laderas de Trabalomas",
+    "zone_id": 267,
+    "x": null,
+    "y": null,
+    "inside": false,
+    "note": "En Costasur (Laderas de Trabalomas). Las fuentes no dan coordenadas. Se calcan 4 tablillas de I'lalai dentro. La continuación, Findings for the Explorer's League (95799), se entrega al historiador Karnik en Forjaz.",
+    "prereq": "An Acquaintance in Southshore (95786) (probable)"
+   },
+   {
+    "quest": "Magics of the Drowned City (95788)",
+    "npc": "Loremaster Dibbs",
+    "npc_id": 2277,
+    "zone": "Hillsbrad Foothills",
+    "zone_es": "Laderas de Trabalomas",
+    "zone_id": 267,
+    "x": null,
+    "y": null,
+    "inside": false,
+    "note": "En Costasur (Laderas de Trabalomas). Las fuentes no dan coordenadas. La continuación, The Web of Magic (95798), se entrega a Abra Cadabra en Dalaran.",
+    "prereq": "An Acquaintance in Southshore (95786) (probable)"
+   },
+   {
+    "quest": "Ancient Gurubashi Secrets (97130)",
+    "npc": "Archmage Timear",
+    "npc_id": 31439,
+    "zone": "Alterac Mountains",
+    "zone_es": "Montañas de Alterac",
+    "zone_id": 36,
+    "x": null,
+    "y": null,
+    "inside": false,
+    "note": "Dalaran, fuera del Bastión Violeta según jugadores (conquestcapped). Las fuentes no dan coordenadas. Nivel mínimo 34.",
+    "prereq": null
+   },
+   {
+    "quest": "Shady Saltseers (95789)",
+    "npc": "Krazek",
+    "npc_id": 773,
+    "zone": "Stranglethorn Vale",
+    "zone_es": "Vega de Tuercespina",
+    "zone_id": 33,
+    "x": null,
+    "y": null,
+    "inside": false,
+    "note": "Bahía del Botín, para ambas facciones. Las fuentes no dan coordenadas. Nivel mínimo 34.",
+    "prereq": null
+   },
+   {
+    "quest": "The Saltseer Captain (95791)",
+    "npc": null,
+    "npc_id": null,
+    "zone": "Stranglethorn Vale",
+    "zone_es": "Vega de Tuercespina",
+    "zone_id": 33,
+    "x": null,
+    "y": null,
+    "inside": false,
+    "note": "No se sabe quién la da: conquestcapped supone que está en Bahía del Botín. Es para ambas facciones y el nivel mínimo es 34.",
     "prereq": null
    }
   ]
@@ -998,21 +1063,73 @@
    "zone_es": "Clarofluvial",
    "zone_id": 16591,
    "x": 37.5,
-   "y": 37.5,
-   "note": "En las colinas al noreste de Twilight's Shroud, en el norte de Clarofluvial. Se entra por una cueva al oeste de las grandes puertas de la fortaleza. Vuelo de Alianza: Farholde Keep (Gretchen Mayberry, 60.6, 81.6). Se llega a la zona por el norte de Montañas Crestagrana o por el sur de Tierras Inhóspitas. Coordenadas de la guía de Wowhead y de warcrafttavern."
+   "y": 37.2,
+   "note": "Cueva al oeste de las grandes puertas de la fortaleza (cerradas, aprox. 43.5, 39.5), en las colinas del norte de Clarofluvial, sobre Sunnyglade. La piedra de encuentro está de camino (aprox. 39, 39). Vuelo de Alianza: Bastión Farholde (60.6, 81.6). Coordenadas de conquestcapped (warcrafttavern da 37.5, 37.5)."
   },
   "quests": [
    {
-    "quest": "Misión que empieza con Krol'dok Moulding (267137)",
-    "npc": null,
+    "quest": "Eye of Mugg (94982)",
+    "npc": "Commander Demar Brant",
+    "npc_id": 257558,
+    "zone": "Riverglades",
+    "zone_es": "Clarofluvial",
+    "zone_id": 16591,
+    "x": 66.5,
+    "y": 80.9,
+    "inside": false,
+    "note": "Bastión Farholde. Se mata a Overlord Mugg, el jefe final.",
+    "prereq": null
+   },
+   {
+    "quest": "Tome of Twilight (94984)",
+    "npc": "Ashe Amberhall",
+    "npc_id": 257591,
+    "zone": "Riverglades",
+    "zone_es": "Clarofluvial",
+    "zone_id": 16591,
+    "x": 66.6,
+    "y": 81.0,
+    "inside": false,
+    "note": "Bastión Farholde. Se mata a Nar'gurk y se recoge el Tome of Twilight.",
+    "prereq": "A Small Favor (94907), de la cadena de Amberhall: Scraps of Knowledge (94879) → Curious Trinkets (94881) → A Small Favor"
+   },
+   {
+    "quest": "Twilight Mementos (94983)",
+    "npc": "Sergeant Riftan",
+    "npc_id": 258023,
+    "zone": "Riverglades",
+    "zone_es": "Clarofluvial",
+    "zone_id": 16591,
+    "x": 30.5,
+    "y": 48.9,
+    "inside": false,
+    "note": "Quién la da es probable, no confirmado (conquestcapped). Se piden 8 Twilight Bangles. Al parecer se desbloquea al entregar Kilgar's Head.",
+    "prereq": "Bring Me His Head (94890) (sin confirmar)"
+   },
+   {
+    "quest": "Vengeance of the Highborne (96771)",
+    "npc": "Ranath Nightstride",
+    "npc_id": 268425,
+    "zone": "Alterac Mountains",
+    "zone_es": "Montañas de Alterac",
+    "zone_id": 36,
+    "x": 17.8,
+    "y": 66.0,
+    "inside": false,
+    "note": "Posada de Dalaran (mapa de Montañas de Alterac). Se mata a Zalfan Moonshadow dentro; llevad quien quite maldiciones.",
+    "prereq": null
+   },
+   {
+    "quest": "Krol'dok Moulding (94980) → Key Ingredients (94981)",
+    "npc": "Alphonse Dumas",
     "npc_id": null,
     "zone": "Riverglades",
     "zone_es": "Clarofluvial",
     "zone_id": 16591,
-    "x": null,
-    "y": null,
+    "x": 64.4,
+    "y": 82.0,
     "inside": true,
-    "note": "La inicia un objeto, no un PNJ (Krol'dok Moulding, según datamining). Dónde se consigue y la misión en sí están sin confirmar. Coordenadas de la entrada: ver 'entrance'.",
+    "note": "La inicia la Krol'dok Moulding (267137), botín de grupo dentro; se entrega a Alphonse Dumas en Bastión Farholde. El herrero pide 4 Thick Leather y 12 Iron Bar a cambio de la Krol'dok Compound Key; su uso está sin confirmar.",
     "prereq": null
    }
   ]
@@ -1305,11 +1422,25 @@
    "zone": "Dustwallow Marsh",
    "zone_es": "Marjal Revolcafango",
    "zone_id": 15,
-   "x": 75,
-   "y": 15,
-   "note": "Isla de Alcaz, al noreste del Marjal Revolcafango. El portal está en el sótano de un gran edificio de la isla: desde el muelle, sube por el camino de la colina a la izquierda. Coordenadas aproximadas de warcrafttavern (previas al lanzamiento). Desde Theramore se llega a nado hacia el norte y el este."
+   "x": 75.3,
+   "y": 14.1,
+   "note": "Isla de Alcaz, frente a la costa noreste del Marjal Revolcafango. El portal está en el sótano de la vieja torre: desde el muelle, sube por el camino de la colina de la izquierda. Coordenadas de conquestcapped (warcrafttavern da 75, 15). Desde Theramore (vuelo en 67.5, 51.2) se va a caballo a la costa noreste y a nado a la isla."
   },
-  "quests": []
+  "quests": [
+   {
+    "quest": "The Dragon's Journal (96772)",
+    "npc": "Archmage Lan'dalock",
+    "npc_id": 20735,
+    "zone": "Alterac Mountains",
+    "zone_es": "Montañas de Alterac",
+    "zone_id": 36,
+    "x": 15.5,
+    "y": 73.7,
+    "inside": false,
+    "note": "Dalaran. Quién la da es probable, no confirmado (conquestcapped). El Zarla's Journal lo suelta Blazeroar. Nivel mínimo 46.",
+    "prereq": null
+   }
+  ]
  },
  "The Temple of Atal'Hakkar": {
   "entrance": {
@@ -1572,11 +1703,51 @@
    "zone": "Azshara",
    "zone_es": "Azshara",
    "zone_id": 16,
-   "x": null,
-   "y": null,
-   "note": "Mazmorra nueva tras una puerta sellada en Azshara. Ninguna fuente publica aún coordenadas de la entrada."
+   "x": 38.4,
+   "y": 32.6,
+   "note": "Boca del túnel furbolg en el norte de Azshara, al noreste de Valormok, junto a una piedra de encuentro (conquestcapped; warcrafttavern da 38.7, 33.4). Se sigue el túnel hacia el norte-noroeste durante un minuto. El portal está al fondo, en el mapa de Cuna del Invierno: conquestcapped da 35.0, 23.4 y warcrafttavern 66.6, 84.4; no coinciden. Vuelo de Alianza: Punta Talrendis."
   },
-  "quests": []
+  "quests": [
+   {
+    "quest": "Beneath Nordrassil (92345) → Get to the Roots of It (92344)",
+    "npc": "Mathrengyl Bearwalker",
+    "npc_id": 4217,
+    "zone": "Darnassus",
+    "zone_es": "Darnassus",
+    "zone_id": 1657,
+    "x": 35.4,
+    "y": 8.4,
+    "inside": false,
+    "note": "Enclave Cenarion (Darnassus). Las coordenadas son de quien da Get to the Roots of It; Beneath Nordrassil se coge en el sur de Azshara y no se sabe de quién. Se piden 10 Nordrassil Root Caps de dentro.",
+    "prereq": null
+   },
+   {
+    "quest": "Blackmaw Magic (97173)",
+    "npc": null,
+    "npc_id": null,
+    "zone": "Alterac Mountains",
+    "zone_es": "Montañas de Alterac",
+    "zone_id": 36,
+    "x": null,
+    "y": null,
+    "inside": false,
+    "note": "No se sabe quién la da; probablemente un mago de Dalaran (conquestcapped). El Blackmaw Ritual Totem lo suelta el Elder Shaman Bloodmane. Nivel mínimo 52.",
+    "prereq": null
+   },
+   {
+    "quest": "Claws That Rend, Tusks that Gore (92069)",
+    "npc": "Ogtinc",
+    "npc_id": 8405,
+    "zone": "Azshara",
+    "zone_es": "Azshara",
+    "zone_id": 16,
+    "x": 42.4,
+    "y": 42.6,
+    "inside": false,
+    "note": "Ogtinc es quien la recibe. Que también la dé es probable, no confirmado. Se piden Claws of the Great Bear (Withermaw) y Tusks of the Unbroken (Bonesnout).",
+    "prereq": null
+   }
+  ]
  },
  "Dire Maul - West": {
   "entrance": {
@@ -1759,9 +1930,9 @@
    "zone": "Un'Goro Crater",
    "zone_es": "Cráter de Un'Goro",
    "zone_id": 490,
-   "x": null,
-   "y": null,
-   "note": "Mazmorra nueva en las colinas del norte de Un'Goro, en la ladera sobre el Refugio de la Marshal. Ninguna fuente publica aún coordenadas."
+   "x": 48.1,
+   "y": 6.1,
+   "note": "En la colina justo encima del Refugio de la Marshal, con una piedra de encuentro cerca. Coordenadas de warcrafttavern, previas al lanzamiento y sin confirmar. Vuelo: Refugio de la Marshal (ambas facciones)."
   },
   "quests": []
  },

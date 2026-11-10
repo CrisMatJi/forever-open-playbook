@@ -320,7 +320,14 @@
   "13335": "Riendas de Hemocargador",
   "16666": "Jubón de Elementos",
   "16730": "Peto de Valor",
-  "16729": "Bufas Forjaluz"
+  "16729": "Bufas Forjaluz",
+  "286415": "Relicario de Tyr",
+  "271770": "Kit de cartografía de la Liga de Expedicionarios",
+  "276890": "Diario de Zarla",
+  "276893": "Tótem de ritual Faucenegra",
+  "267089": "Llave del complejo Krol'Dok",
+  "249697": "Garras del gran oso",
+  "249696": "Colmillos del Inquebrantable"
  },
  "quests": {
   "96393": "Incursión en la Antigua Forjaz",
@@ -491,7 +498,15 @@
   "5265": "Por encima y más allá (5263) → El Bastión Argenta (5265)",
   "8945": "La súplica de un muerto",
   "5102": "Muerte al general Drakkisath",
-  "6502": "Amuleto Pirodraco"
+  "6502": "Amuleto Pirodraco",
+  "95787": "Segunda prueba con el agua",
+  "95788": "La magia de la Ciudad Sumergida",
+  "97130": "Antiguos secretos Gurubashi",
+  "95789": "Videntesal sospechosos",
+  "95791": "El capitán Videntesal",
+  "94984": "El escrito del Crepúsculo",
+  "94983": "Recuerdos Crepusculares",
+  "96771": "La venganza del Altonato"
  },
  "npcs": {
   "Earthseer Farsen": {
@@ -885,6 +900,34 @@
   "Haleh": {
    "es": "Haleh",
    "id": 10929
+  },
+  "Loremaster Dibbs": {
+   "es": "Maestro cultural Dibbs",
+   "id": 2277
+  },
+  "Krazek": {
+   "es": "Krazek",
+   "id": 773
+  },
+  "Archmage Timear": {
+   "es": "Archimago Tiemporeja",
+   "id": 31439
+  },
+  "Ranath Nightstride": {
+   "es": "Ranath Zancanoche",
+   "id": 268425
+  },
+  "Archmage Lan'dalock": {
+   "es": "Archimago Lan'dalock",
+   "id": 20735
+  },
+  "Mathrengyl Bearwalker": {
+   "es": "Mathrengyl Garroso",
+   "id": 4217
+  },
+  "Ogtinc": {
+   "es": "Ogtinc",
+   "id": 8405
   }
  },
  "bosses": {
@@ -969,7 +1012,14 @@
   "Mother Smolderweb": "Madre Telabrasada",
   "Prince Tortheldrin": "Príncipe Tortheldrin",
   "Ramstein the Gorger": "Ramstein el Empachador",
-  "The Beast": "La Bestia"
+  "The Beast": "La Bestia",
+  "Zul'Alai": "Zul'Alai",
+  "Captain Dreadrise": "Capitán Alzapavor",
+  "Slavecrusher Grox": "Machacaesclavos Grox",
+  "Twilight Commander Zarmok": "Comandante Crepuscular Zarmok",
+  "War Handler Ashka": "Cuidadora de guerra Ashka",
+  "Bossman Toof": "Jefazo Toof",
+  "Overlord Mugg": "Señor supremo Mugg"
  },
  "zones": {
   "Ashenvale": "Vallefresno",
