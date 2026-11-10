@@ -972,5 +972,17 @@
    "shaman": "Muévete fuera del rango de Earthbind; Purge le quita tus HoTs, cura solo con él controlado (provisional).",
    "paladin": "Duelo largo; guarda la ráfaga para tras su burbuja y evita sus aturdimientos con Carrerilla (provisional)."
   }
+ },
+ "recommend": {
+  "pve": {
+   "spec": "Feral",
+   "race": "Elfo de la noche",
+   "why": "Feral sube más rápido gracias a las mejoras del 2 nov (Triturar 200%, Garra 140%) y en mazmorras puedes tanquear en oso o hacer daño en gato. Elfo de la noche: Luz de Elune (+10% de crítico) y no necesita pack; el Skyborne solo aporta un 2% de celeridad tras el ajuste de raciales."
+  },
+  "pvp": {
+   "spec": "Restauración (Feral en mundo)",
+   "race": "Elfo de la noche",
+   "why": "Sin Berserk el gato pierde la inmunidad al miedo, y contra Sacerdotes y Brujos sufre. En BG la Restauración aguanta muchísimo, cura en movimiento y es el mejor portador de bandera. Para PvP de mundo, Feral con Acechar. Elfo de la noche por Fusión de las sombras y la ráfaga de Luz de Elune."
+  }
  }
 }

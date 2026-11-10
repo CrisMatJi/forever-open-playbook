@@ -1020,5 +1020,17 @@
    "shaman": "Destruye tótems o ignóralos según el caso; Golpe mortal contra sus curas y Zurrar en Ola de sanación.",
    "paladin": "Combate largo: Golpe mortal es clave; guarda Desarmar para su burst y presiona el maná."
   }
+ },
+ "recommend": {
+  "pve": {
+   "spec": "Protección (Armas como alternativa)",
+   "race": "Enano",
+   "why": "Protección sube muy seguro con escudo y es el tanque que buscan los grupos (Actitud defensiva con más amenaza desde el 2 nov). Enano por Artisan's Precision (+1% de golpe) y Forma de piedra."
+  },
+  "pvp": {
+   "spec": "Armas",
+   "race": "Humano",
+   "why": "Golpe mortal reduce las curas del rival y el arma lenta a dos manos pega mucho. Humano por Voluntad de sobrevivir: un Guerrero aturdido o controlado no hace nada."
+  }
  }
 }

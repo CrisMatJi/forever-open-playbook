@@ -948,5 +948,17 @@
    "shaman": "Te purga bendiciones; su burst de Choque de tierra es peligroso: Escudo divino a tiempo. (provisional)",
    "paladin": "Espejo largo de maná; gana quien gestione mejor Escudo divino e Imposición de manos y aproveche la ventana de Martillo de justicia. (provisional)"
   }
+ },
+ "recommend": {
+  "pve": {
+   "spec": "Reprensión (Protección para tanquear)",
+   "race": "Enano",
+   "why": "Reprensión sube cómodo con arma lenta a dos manos y apenas para a beber; en mazmorras, Protección tanquea muy bien con la amenaza nueva. Enano por Artisan's Precision (+1% de golpe) y Forma de piedra."
+  },
+  "pvp": {
+   "spec": "Reprensión",
+   "race": "Humano",
+   "why": "Mucho daño con arma lenta a dos manos y Vengeance (hasta 5 acumulaciones), y te mantienes vivo con curas y Bendición de libertad. Humano por Voluntad de sobrevivir contra aturdimientos."
+  }
  }
 }

@@ -964,5 +964,17 @@
    "shaman": "Tremor Totem anula tus Miedos: destrúyelo con el demonio. Spell Lock a sus curas y Curse of Tongues (provisional).",
    "paladin": "Duelo largo: Curse of Tongues, Spell Lock a Holy Light y Devour Magic de bendiciones; Death Coil al burbujear no sirve, espera (provisional)."
   }
+ },
+ "recommend": {
+  "pve": {
+   "spec": "Aflicción",
+   "race": "Gnomo",
+   "why": "La forma más cómoda de subir: DoTs, Drenar vida y el demonio tanqueando; Wrack sube a 86 de daño por segundo a nivel 60. Gnomo por Eureka! (+10% de daño) y +5% de maná."
+  },
+  "pvp": {
+   "spec": "Aflicción",
+   "race": "Humano",
+   "why": "Miedo, Death Coil y DoTs que no puedes quitarte de encima. Humano por Voluntad de sobrevivir: rompe los aturdimientos de Pícaros y Guerreros, tu peor rival."
+  }
  }
 }

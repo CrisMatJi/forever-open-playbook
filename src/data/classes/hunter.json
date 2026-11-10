@@ -967,5 +967,17 @@
    "shaman": "Mascota para interrumpir y Picadura de víbora; aléjate de su Tótem de Temblor.",
    "paladin": "Kitea siempre, Picadura de víbora para vaciar maná y Disparo tranquilizante; combate largo (provisional)."
   }
+ },
+ "recommend": {
+  "pve": {
+   "spec": "Bestias",
+   "race": "Enano",
+   "why": "Bestias es la subida más segura: la mascota tanquea y pega fuerte. Enano por Artisan's Precision (+1% de golpe) y Forma de piedra."
+  },
+  "pvp": {
+   "spec": "Supervivencia",
+   "race": "Elfo de la noche",
+   "why": "Trampas (todas con 30 s compartidos), Contraataque y raíces para mantener la distancia, con Disparo de puntería reforzado. Elfo de la noche por Fusión de las sombras para esperar escondido y emboscar."
+  }
  }
 }

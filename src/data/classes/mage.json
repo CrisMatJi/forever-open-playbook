@@ -982,5 +982,17 @@
    "shaman": "Purga quita Barrera de hielo y Choque de tierra interrumpe; juega a distancia y gasta su maná. (provisional)",
    "paladin": "Kitea: el paladín tiene poca movilidad (Pursuit of Justice/Bendición de libertad); no gastes burst durante Escudo divino. Martillo de justicia y Arrepentimiento son sus controles. (provisional)"
   }
+ },
+ "recommend": {
+  "pve": {
+   "spec": "Escarcha",
+   "race": "Gnomo",
+   "why": "Escarcha es la más segura para subir: controla, congela y mata en grupo con Ice Lance (+300% contra congelados). Gnomo por Eureka! y +5% de maná."
+  },
+  "pvp": {
+   "spec": "Escarcha",
+   "race": "Humano",
+   "why": "Raíces, ralentizaciones, Bloqueo de hielo y Ice Lance para rematar a los congelados. Humano por Voluntad de sobrevivir: el Mago muere si le aturden encima."
+  }
  }
 }

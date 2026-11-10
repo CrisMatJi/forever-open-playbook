@@ -1022,5 +1022,17 @@
    "shaman": "Golpe bajo + Patada a Ola de sanación; mata o evita el tótem de Tierra/Temblor.",
    "paladin": "Pelea larga: Veneno hiriente, Ceguera en su Escudo divino y desgaste de maná; muy difícil (provisional)."
   }
+ },
+ "recommend": {
+  "pve": {
+   "spec": "Combate",
+   "race": "Enano",
+   "why": "Combate sube y hace daño constante sin depender del sigilo. Enano por Artisan's Precision (+1% de golpe) y Forma de piedra contra sangrados y venenos."
+  },
+  "pvp": {
+   "spec": "Sutileza",
+   "race": "Humano",
+   "why": "Control y aperturas: doble Sap con Quick Getaway, Boot Knife y Death Mark. Humano por Voluntad de sobrevivir y Percepción para ver a otros Pícaros."
+  }
  }
 }

@@ -55,6 +55,17 @@ const rkey = (r) => r.split(" (")[0].replace("Skyborne - High Order", "Skyborne"
         </div>
       </div>
     </div>
+    {d.recommend && (
+      <div class="recgrid" style="margin-top:16px">
+        {[["pve", "PvE", "Subir de nivel y mazmorras"], ["pvp", "PvP", "Campos de batalla y mundo abierto"]].map(([k, t, sub]) => d.recommend[k] && (
+          <article class={`reccard rec-${k}`}>
+            <div class="rechead"><span class="vtag">{t}</span><span class="note">{sub}</span></div>
+            <div class="recpick"><Icon name={RACE_ICON[d.recommend[k].race.replace("Elfo de la noche", "Night Elf").replace("Humano", "Human").replace("Enano", "Dwarf").replace("Gnomo", "Gnome")] || RACE_ICON[d.recommend[k].race]} size={36} label={d.recommend[k].race} big /><div><b>{d.recommend[k].spec}</b><span>{d.recommend[k].race}</span></div></div>
+            <p>{d.recommend[k].why}</p>
+          </article>
+        ))}
+      </div>
+    )}
     {L.stat_order?.length > 0 && (
       <div class="statrow" style="margin-top:16px">
         <div class="eyebrow">Estadísticas, de más a menos importante</div>

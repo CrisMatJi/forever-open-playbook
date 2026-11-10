@@ -931,5 +931,17 @@
    "shaman": "Espejo: Grounding vs Grounding, gana quien corte mejor la cura de Maelstrom y gestione Purge (provisional).",
    "paladin": "Purge de bendiciones/escudos y presión con Stormstrike; guarda Earth Shock para su cura larga (provisional)."
   }
+ },
+ "recommend": {
+  "pve": {
+   "spec": "Mejora",
+   "race": "Enano",
+   "why": "La rama que más sube con las notas del 2 nov: Stormstrike al 150%, Maelstrom Weapon salta el doble y el Intelecto da poder de ataque. Enano es la única raza de Alianza, y Artisan's Precision (+1% de golpe) viene muy bien."
+  },
+  "pvp": {
+   "spec": "Mejora",
+   "race": "Enano",
+   "why": "Mucha ráfaga con Stormstrike y choques, Choque de tierra para interrumpir y tótems (Nexo terrestre, Temblor, Derribador) para controlar. Forma de piedra del Enano anula venenos y sangrados: tu mejor defensa contra Pícaros y Guerreros."
+  }
  }
 }

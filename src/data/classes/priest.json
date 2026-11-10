@@ -949,5 +949,17 @@
    "shaman": "Purga sus escudos y Resguardo contra el miedo antes de su tótem; cuidado con Choque de tierra. (provisional)",
    "paladin": "Su Escudo divino y curas alargan el duelo: Quemadura de maná y disipar sus bendiciones; evita su Martillo de justicia en tus cooldowns. (provisional)"
   }
+ },
+ "recommend": {
+  "pve": {
+   "spec": "Sombras (Sagrado en mazmorras)",
+   "race": "Humano",
+   "why": "Sombras sube rápido y sin parar a beber; para mazmorras, Sagrado o Disciplina. Humano por Divine Grace, una cura instantánea de emergencia exclusiva de su raza."
+  },
+  "pvp": {
+   "spec": "Disciplina",
+   "race": "Enano",
+   "why": "Escudos, Palabra de poder y dispeles mantienen vivo al grupo en BG. Enano por Forma de piedra, Desperate Prayer y Chastise (raíz de 2 s) para escapar de cuerpo a cuerpo."
+  }
  }
 }

@@ -290,3 +290,14 @@ code{overflow-wrap:anywhere}
 .wcard b{font-size:16px}
 .wcard .vtag{margin-left:4px}
 .wcard p{margin:4px 0 0}
+/* Recomendación PvE / PvP */
+.recgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:12px}
+.reccard{border:1px solid var(--edge);border-radius:8px;background:var(--panel-2);padding:14px;display:grid;gap:10px;align-content:start;min-width:0}
+.reccard.rec-pve{border-top:3px solid #4aa3ff}
+.reccard.rec-pvp{border-top:3px solid #ff4d4d}
+.rec-pve .vtag{color:#4aa3ff}.rec-pvp .vtag{color:#ff6a6a}
+.rechead{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.recpick{display:flex;gap:12px;align-items:center}
+.recpick b{display:block;font-family:var(--display);font-size:20px;color:var(--cc,var(--gold))}
+.recpick span{color:var(--muted)}
+.reccard p{margin:0}
