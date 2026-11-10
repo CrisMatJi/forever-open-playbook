@@ -833,7 +833,7 @@
    "name": "Gloves of the Fang",
    "id": 10413,
    "source": "Cuevas de los Lamentos (2.4%)",
-   "why": "+6 Agi +4 Fue; set Embrace of the Viper."
+   "why": "+6 Agi +4 Fue; set Abrazo de la Víbora (Embrace of the Viper)."
   },
   {
    "levels": "17-25",
@@ -901,11 +901,11 @@
   }
  ],
  "dungeons": [
-  "Cuevas de los Lamentos (17-24): set Embrace of the Viper, prácticamente obligatorio para feral (y Living Root para Equilibrio). Viaje largo para Alianza: ve en grupo.",
-  "Las Minas de la Muerte (17-26): Smite's Mighty Hammer y Blackened Defias Armor.",
+  "Cuevas de los Lamentos (17-24): set Abrazo de la Víbora (Embrace of the Viper), prácticamente obligatorio para feral (y Raíz viva para Equilibrio). Viaje largo para Alianza: ve en grupo.",
+  "Las Minas de la Muerte (17-26): Smite's Mighty Hammer y Armadura ennegrecida Defias.",
   "Cavernas de Brazanegra (24-32): muy rentable para la Alianza. Barco directo del Puerto de Ventormenta a Auberdine y bajas a la Playa de Zoram; 4 misiones con más de 22.000 PX (la mejor, la de Kelris). Como Druida, mira el cinturón o las piernas de cuero de las recompensas y, si tanqueas, ojo a las zonas de agua: el oso no nada bien con muchos bichos detrás.",
-  "Las Mazmorras de Ventormenta (24-32): muy rentable. Está dentro de Ventormenta, se hace en unos 20-30 minutos y lleva 5-6 misiones que suman unos 25.000 PX (Quell The Uprising, The Color of Blood, What Comes Around..., Crime and Punishment, The Stockade Riots). Para ti: Blackrock Harness (pecho de cuero con defensa y poder de ataque, ideal para oso) de Targorr, y Ursine Hammer o Hardened Root Staff como recompensa de What Comes Around...",
-  "Gnomeregan (29-38): Manual Crowd Pummeler, posiblemente la mejor arma feral de subida.",
+  "Las Mazmorras de Ventormenta (24-32): muy rentable. Está dentro de Ventormenta, se hace en unos 20-30 minutos y lleva 5-6 misiones que suman unos 25.000 PX (Detener el motín, El color de la sangre, Lo que sucece alrededor…, Crimen y castigo, El motín de las Mazmorras). Para ti: Arnés de Roca Negra (pecho de cuero con defensa y poder de ataque, ideal para oso) de Targorr, y Ursine Hammer o Bastón de raíz endurecido como recompensa de Lo que sucece alrededor…",
+  "Gnomeregan (29-38): Manual de Muchedumbre de Puñetazos, posiblemente la mejor arma feral de subida.",
   "Monasterio Escarlata y Maraudon (30-50): puedes tanquear como oso (amenaza +115% desde el 2 nov; coge Primal Bite) o hacer daño como gato; muy demandado por versatilidad.",
   "Como híbrido puedes cambiar de rol (oso tanque/gato/curas) sin respec gracias a la build feral con Natural Instinct."
  ],
