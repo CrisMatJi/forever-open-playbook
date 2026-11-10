@@ -84,7 +84,7 @@
      "icon": "inv_staff_18",
      "slot": "Bastón 2M (+18 daño/sanación con hechizos)",
      "boss": "Plunder",
-     "for": "Mago, brujo, sacerdote, druida",
+     "for": "Mago, brujo, sacerdote, druida, chamán",
      "verified": true
     },
     {
@@ -102,7 +102,7 @@
      "icon": "inv_gauntlets_25",
      "slot": "Manos, cuero (+5 Agi, +5 Esp)",
      "boss": "Magmatus",
-     "for": "Pícaro, druida feral",
+     "for": "Pícaro, druida feral, cazador, chamán (mejora)",
      "verified": true
     },
     {
@@ -111,7 +111,7 @@
      "icon": "inv_misc_cape_12",
      "slot": "Espalda (+3 Agi, +4 Esp)",
      "boss": "Faldrim Anvilmar",
-     "for": "Cualquiera (capa temprana)",
+     "for": "Cualquiera (capa temprana); sobre todo pícaro, cazador, druida feral y chamán",
      "verified": true
     }
    ],
@@ -185,7 +185,7 @@
      "icon": "inv_misc_bandage_14",
      "slot": "Pecho, cuero (+7 Agi, +9 Esp)",
      "boss": "Viktor the Vile",
-     "for": "Pícaro, druida",
+     "for": "Pícaro, druida, cazador, chamán",
      "verified": true
     },
     {
@@ -273,7 +273,7 @@
      "icon": "inv_staff_13",
      "slot": "Bastón 2M (+24 daño/sanación)",
      "boss": "Captain Greenskin",
-     "for": "Mago, brujo, sacerdote, druida",
+     "for": "Mago, brujo, sacerdote, druida, chamán",
      "verified": true
     },
     {
@@ -282,7 +282,7 @@
      "icon": "inv_chest_leather_08",
      "slot": "Pecho, cuero (conjunto Defias)",
      "boss": "Edwin VanCleef",
-     "for": "Pícaro, druida",
+     "for": "Pícaro, druida, cazador, chamán",
      "verified": true
     },
     {
@@ -291,7 +291,7 @@
      "icon": "inv_throwingaxe_01",
      "slot": "Hacha 2M (+7 Fue)",
      "boss": "Rhahk'Zor",
-     "for": "Guerrero, paladín",
+     "for": "Guerrero, paladín, chamán",
      "verified": true
     },
     {
@@ -300,7 +300,7 @@
      "icon": "inv_misc_cape_08",
      "slot": "Espalda (+5 Agi)",
      "boss": "Edwin VanCleef",
-     "for": "Pícaro, cazador, druida",
+     "for": "Pícaro, cazador, druida, chamán, guerrero",
      "verified": true
     },
     {
@@ -382,7 +382,7 @@
      "icon": "inv_chest_plate08",
      "slot": "Pecho, malla (+10 Fue)",
      "boss": "Mutanus the Devourer",
-     "for": "Guerrero, paladín, cazador, chamán",
+     "for": "Guerrero, paladín",
      "verified": true
     },
     {
@@ -391,7 +391,7 @@
      "icon": "inv_shirt_16",
      "slot": "Pecho, cuero (conjunto del Colmillo)",
      "boss": "Lord Pythas",
-     "for": "Druida, pícaro",
+     "for": "Druida, pícaro, cazador, chamán",
      "verified": true
     },
     {
@@ -469,7 +469,7 @@
      "icon": "inv_jewelry_talisman_06",
      "slot": "Abalorio (2 maná/5 s; aturde huargos)",
      "boss": "Commander Springvale",
-     "for": "Lanzadores",
+     "for": "Mago, brujo, sacerdote, druida, chamán, paladín sacro",
      "verified": true
     },
     {
@@ -478,7 +478,7 @@
      "icon": "inv_misc_pelt_wolf_02",
      "slot": "Espalda",
      "boss": "Fenrus the Devourer",
-     "for": "Físicos",
+     "for": "Pícaro, cazador, guerrero, paladín, druida feral, chamán (mejora)",
      "verified": true
     }
    ],
@@ -534,7 +534,7 @@
      "icon": "inv_staff_06",
      "slot": "Bastón 2M (+32 daño/sanación)",
      "boss": "Twilight Lord Kelris",
-     "for": "Mago, brujo, sacerdote",
+     "for": "Mago, brujo, sacerdote, druida, chamán",
      "verified": true
     },
     {
@@ -631,7 +631,7 @@
      "icon": "inv_sword_24",
      "slot": "Espada mano principal (+34 daño/sanación)",
      "boss": "Bazil Thredd",
-     "for": "Paladín sacro, chamán, lanzadores",
+     "for": "Paladín sacro, mago, brujo",
      "verified": true
     },
     {
@@ -649,7 +649,7 @@
      "icon": "inv_spear_05",
      "slot": "Arma de asta 2M",
      "boss": "Dextren Ward",
-     "for": "Guerrero, paladín, cazador",
+     "for": "Guerrero, paladín, cazador, druida feral",
      "verified": true
     },
     {
@@ -658,7 +658,7 @@
      "icon": "inv_chest_leather_04",
      "slot": "Pecho, cuero (+4 Def, +14 PA)",
      "boss": "Targorr the Dread",
-     "for": "Druida feral (tanque), pícaro",
+     "for": "Druida feral (tanque), pícaro, chamán (mejora)",
      "verified": true
     }
    ],
@@ -713,7 +713,7 @@
      "icon": "inv_staff_17",
      "slot": "Bastón 2M (+34 daño/sanación)",
      "boss": "Aggem Thorncurse",
-     "for": "Lanzadores",
+     "for": "Mago, brujo, sacerdote, druida, chamán",
      "verified": true
     },
     {
@@ -722,7 +722,7 @@
      "icon": "inv_gauntlets_05",
      "slot": "Manos, cuero (+18 PA)",
      "boss": "Aggem Thorncurse",
-     "for": "Pícaro, druida feral",
+     "for": "Pícaro, druida feral, cazador, chamán (mejora)",
      "verified": true
     },
     {
@@ -731,7 +731,7 @@
      "icon": "inv_weapon_halbard_01",
      "slot": "Hacha 2M (+15 Fue)",
      "boss": "Overlord Ramtusk",
-     "for": "Guerrero, paladín",
+     "for": "Guerrero, paladín, chamán",
      "verified": true
     },
     {
@@ -749,7 +749,7 @@
      "icon": "inv_weapon_rifle_05",
      "slot": "Arma de fuego",
      "boss": "Misión The Crone of the Kraul",
-     "for": "Cazador / ranura a distancia",
+     "for": "Cazador, guerrero, pícaro",
      "verified": true
     }
    ],
@@ -828,7 +828,7 @@
      "icon": "inv_mace_14",
      "slot": "Maza 2M (+16 Fue)",
      "boss": "Crowd Pummeler 9-60",
-     "for": "Guerrero, paladín, druida feral",
+     "for": "Guerrero, paladín, druida feral, chamán",
      "verified": true
     },
     {
@@ -837,7 +837,7 @@
      "icon": "inv_axe_03",
      "slot": "Hacha 2M",
      "boss": "Mekgineer Thermaplugg",
-     "for": "Guerrero, paladín",
+     "for": "Guerrero, paladín, chamán",
      "verified": true
     },
     {
@@ -846,7 +846,7 @@
      "icon": "inv_staff_15",
      "slot": "Bastón 2M (+36 daño/sanación)",
      "boss": "Viscous Fallout",
-     "for": "Lanzadores",
+     "for": "Mago, brujo, sacerdote, druida, chamán",
      "verified": true
     },
     {
@@ -934,7 +934,7 @@
      "icon": "inv_jewelry_ring_28",
      "slot": "Anillo (3 maná/5 s, +6 daño/sanación)",
      "boss": "Relic Guardian",
-     "for": "Sanadores y lanzadores",
+     "for": "Sacerdote, druida, chamán, paladín sacro, mago, brujo",
      "verified": true
     },
     {
@@ -943,7 +943,7 @@
      "icon": "inv_shoulder_27",
      "slot": "Hombros, malla (+12 Agu, +0,4% golpe)",
      "boss": "Relic Guardian",
-     "for": "Cazador, chamán, guerrero",
+     "for": "Guerrero, paladín",
      "verified": true
     },
     {
@@ -952,7 +952,7 @@
      "icon": "inv_misc_bandage_14",
      "slot": "Pecho, cuero (+9 Agi, +15 Int)",
      "boss": "Shadetooth",
-     "for": "Druida, chamán (aunque es de cuero)",
+     "for": "Druida, chamán, cazador",
      "verified": true
     }
    ],
@@ -1008,7 +1008,7 @@
      "icon": "inv_staff_07",
      "slot": "Bastón 2M (+36 daño/sanación)",
      "boss": "Mana Devourer",
-     "for": "Mago, brujo, sacerdote, druida",
+     "for": "Mago, brujo, sacerdote, druida, chamán",
      "verified": true
     },
     {
@@ -1035,7 +1035,7 @@
      "icon": "inv_throwingaxe_05",
      "slot": "Hacha 2M (27,9 DPS, proc de armadura)",
      "boss": "Unstable Sentinel",
-     "for": "Guerrero, paladín",
+     "for": "Guerrero, paladín, chamán",
      "verified": true
     },
     {
@@ -1053,7 +1053,7 @@
      "icon": "inv_hammer_04",
      "slot": "Maza 2M",
      "boss": "Misión Heart of Disruption",
-     "for": "Paladín",
+     "for": "Paladín, guerrero, chamán, druida feral",
      "verified": true
     }
    ],
@@ -1137,7 +1137,7 @@
      "icon": "inv_wand_04",
      "slot": "Bastón 2M (+44 daño/sanación, +1% crít.)",
      "boss": "Arcanist Doan",
-     "for": "Mago, brujo, sacerdote",
+     "for": "Mago, brujo, sacerdote, druida, chamán",
      "verified": true
     },
     {
@@ -1146,7 +1146,7 @@
      "icon": "inv_weapon_shortblade_07",
      "slot": "Daga mano principal (+44 daño/sanación)",
      "boss": "Arcanist Doan",
-     "for": "Mago, brujo, sacerdote",
+     "for": "Mago, brujo, sacerdote, druida, chamán",
      "verified": true
     },
     {
@@ -1181,7 +1181,7 @@
      "icon": "inv_weapon_halberd_05",
      "slot": "Hacha 2M (proc Bladestorm)",
      "boss": "Herod",
-     "for": "Guerrero, paladín",
+     "for": "Guerrero, paladín, chamán",
      "verified": true
     },
     {
@@ -1393,7 +1393,7 @@
      "icon": "inv_hammer_17",
      "slot": "Maza mano principal (+54 daño/sanación)",
      "boss": "Galgann Firehammer",
-     "for": "Lanzadores, chamán",
+     "for": "Sacerdote, chamán, druida, paladín sacro",
      "verified": true
     },
     {
@@ -1411,7 +1411,7 @@
      "icon": "inv_stone_15",
      "slot": "Anillo (+50 armadura)",
      "boss": "Archaedas",
-     "for": "Tanques",
+     "for": "Tanques: guerrero, paladín, druida (oso)",
      "verified": true
     },
     {
@@ -1489,7 +1489,7 @@
      "icon": "inv_staff_goldfeathered_01",
      "slot": "Bastón 2M (proc de aturdimiento)",
      "boss": "Chief Ukorz Sandscalp",
-     "for": "Druida feral, cazador",
+     "for": "Druida feral, cazador, guerrero",
      "verified": true
     },
     {
@@ -1498,7 +1498,7 @@
      "icon": "inv_sword_45",
      "slot": "Espada 1M",
      "boss": "Antu'sul",
-     "for": "Guerrero, pícaro",
+     "for": "Guerrero, pícaro, paladín",
      "verified": true
     },
     {
@@ -1775,7 +1775,7 @@
      "icon": "inv_boots_02",
      "slot": "Pies, tela",
      "boss": "Misión Ribbly Screwspigot",
-     "for": "Lanzadores",
+     "for": "Mago, brujo, sacerdote",
      "verified": true
     },
     {
@@ -1784,7 +1784,7 @@
      "icon": null,
      "slot": "Maza 1M",
      "boss": "Emperor Dagran Thaurissan",
-     "for": "Guerrero, paladín (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "for": "Guerrero, paladín, chamán (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
      "verified": false
     },
     {
@@ -1793,7 +1793,7 @@
      "icon": null,
      "slot": "Abalorio",
      "boss": "Emperor Dagran Thaurissan",
-     "for": "Físicos (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "for": "Guerrero, pícaro, cazador, paladín, chamán (mejora), druida feral (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
      "verified": false
     }
    ],
@@ -1858,7 +1858,7 @@
      "icon": null,
      "slot": "Maza 1M",
      "boss": "Mother Smolderweb",
-     "for": "Guerrero, pícaro (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "for": "Guerrero, pícaro, paladín, chamán (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
      "verified": false
     },
     {
@@ -1976,7 +1976,7 @@
      "icon": null,
      "slot": "Cuello",
      "boss": "Hydrospawn",
-     "for": "Lanzadores (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "for": "Mago, brujo, sacerdote, druida, chamán (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
      "verified": false
     }
    ],
@@ -2067,7 +2067,7 @@
      "icon": null,
      "slot": "Cabeza",
      "boss": "King Gordok",
-     "for": "Lanzadores (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "for": "Mago, brujo, sacerdote (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
      "verified": false
     },
     {
@@ -2076,7 +2076,7 @@
      "icon": null,
      "slot": "Anillo",
      "boss": "Cofre de Tributo",
-     "for": "Físicos (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "for": "Pícaro, cazador, guerrero, druida feral (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
      "verified": false
     }
    ],
@@ -2129,7 +2129,7 @@
      "icon": null,
      "slot": "Bastón 2M",
      "boss": "Darkmaster Gandling",
-     "for": "Lanzadores (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
+     "for": "Mago, brujo, sacerdote, druida, chamán (ID de Classic; no aparece en Wowhead Forever, sin confirmar)",
      "verified": false
     }
    ],
