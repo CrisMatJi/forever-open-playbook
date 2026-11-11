@@ -983,5 +983,35 @@
    "race": "Elfo de la noche",
    "why": "Trampas (todas con 30 s compartidos), Contraataque y raíces para mantener la distancia, con Disparo de puntería reforzado. Elfo de la noche por Fusión de las sombras para esperar escondido y emboscar."
   }
+ },
+ "professions": {
+  "leveling": {
+   "pair": [
+    "Desuello",
+    "Peletería"
+   ],
+   "why": "Desuellas todo lo que matas y te haces el cuero (y la malla desde el 40) con Agilidad."
+  },
+  "pvp": {
+   "pair": [
+    "Ingeniería",
+    "Minería"
+   ],
+   "why": "Miras para el arma a distancia, munición mejor y granadas y red para cuando te alcanzan."
+  },
+  "endgame": {
+   "pair": [
+    "Peletería",
+    "Herrería"
+   ],
+   "why": "Devilsaur Gauntlets y Leggings, Hide of the Wild (Peletería tribal) y la Legionite Glaive de Herrería."
+  },
+  "crafts": [
+   "Miras y munición (Ingeniería)",
+   "Piezas Devilsaur (Peletería tribal)",
+   "Bolsas de munición y carcajes (Peletería)"
+  ],
+  "secondary": "Primeros auxilios (en Forever hace las pociones de sanación, vendas y curas de sangrado), Cocina (Bien alimentado da +5% de experiencia y es obligatoria para acampar) y Pesca.",
+  "gold_note": "Si vas justo de oro para la montura del 40, cambia la de fabricación por Herboristería o Minería y recupera la otra más tarde."
  }
 }

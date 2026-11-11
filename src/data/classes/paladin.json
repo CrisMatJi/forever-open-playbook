@@ -961,5 +961,35 @@
    "race": "Humano",
    "why": "Mucho daño con arma lenta a dos manos y Vengeance (hasta 5 acumulaciones), y te mantienes vivo con curas y Bendición de libertad. Humano por Voluntad de sobrevivir contra aturdimientos."
   }
+ },
+ "professions": {
+  "leveling": {
+   "pair": [
+    "Minería",
+    "Herrería"
+   ],
+   "why": "Te haces tus armas de dos manos y piedras de afilar. Herrería en Forever tiene 197 recetas nuevas."
+  },
+  "pvp": {
+   "pair": [
+    "Ingeniería",
+    "Minería"
+   ],
+   "why": "Granadas y red para pegarte al rival, que es lo que le falta al Paladín."
+  },
+  "endgame": {
+   "pair": [
+    "Herrería",
+    "Minería"
+   ],
+   "why": "Represión: Legionite Glaive (ligada) y Libram of Invocation (Encantamiento). Protección: piezas de tanque de Herrería."
+  },
+  "crafts": [
+   "Piedras de afilar para el arma",
+   "Legionite Glaive (Herrería, receta de reputación)",
+   "Libram of Invocation (Encantamiento)"
+  ],
+  "secondary": "Primeros auxilios (en Forever hace las pociones de sanación, vendas y curas de sangrado), Cocina (Bien alimentado da +5% de experiencia y es obligatoria para acampar) y Pesca.",
+  "gold_note": "Si vas justo de oro para la montura del 40, cambia la de fabricación por Herboristería o Minería y recupera la otra más tarde."
  }
 }

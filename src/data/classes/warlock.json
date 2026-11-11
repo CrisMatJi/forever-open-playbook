@@ -983,5 +983,35 @@
    "race": "Humano",
    "why": "Miedo, Death Coil y DoTs que no puedes quitarte de encima. Humano por Voluntad de sobrevivir: rompe los aturdimientos de Pícaros y Guerreros, tu peor rival."
   }
+ },
+ "professions": {
+  "leveling": {
+   "pair": [
+    "Sastrería",
+    "Encantamiento"
+   ],
+   "why": "La tela cae sola al matar humanoides, así que no necesitas recolectar. Sastrería te da piezas ligadas con poder con hechizos desde el 10 y bolsas; Encantamiento, varitas y aceites de mago."
+  },
+  "pvp": {
+   "pair": [
+    "Ingeniería",
+    "Sastrería"
+   ],
+   "why": "Ingeniería por las granadas y la red, que te dan un control más contra los cuerpo a cuerpo. Mantén Sastrería por el equipo."
+  },
+  "endgame": {
+   "pair": [
+    "Sastrería",
+    "Encantamiento"
+   ],
+   "why": "Robe of the Void (ligada al sastre) y el encantamiento de collar de poder con hechizos."
+  },
+  "crafts": [
+   "Varita Lesser Magic Wand (Encantamiento) desde el nivel 5",
+   "Minor/Lesser Wizard Oil en el arma",
+   "Robe of the Void (Sastrería, fin de juego)"
+  ],
+  "secondary": "Primeros auxilios (en Forever hace las pociones de sanación, vendas y curas de sangrado), Cocina (Bien alimentado da +5% de experiencia y es obligatoria para acampar) y Pesca.",
+  "gold_note": "Si vas justo de oro para la montura del 40, cambia la de fabricación por Herboristería o Minería y recupera la otra más tarde."
  }
 }

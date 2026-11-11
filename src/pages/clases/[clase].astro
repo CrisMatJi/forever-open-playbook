@@ -176,6 +176,25 @@ const rkey = (r) => r.split(" (")[0].replace("Skyborne - High Order", "Skyborne"
     </section>
   )}
 
+  {d.professions && (
+    <section class="box" id="profesiones">
+      <div class="titlerow"><h2>Profesiones</h2><a class="chip" href={url("leveo#profesiones")}>Cambios de profesiones en Forever</a></div>
+      <div class="profgrid" style="margin-top:12px">
+        {[["leveling", "Para subir", "prof-lvl"], ["pvp", "Para PvP", "prof-pvp"], ["endgame", "Nivel 60 PvE", "prof-end"]].map(([k, t, cls]) => d.professions[k] && (
+          <article class={`profcard ${cls}`}>
+            <span class="vtag">{t}</span>
+            <div class="profpair">{d.professions[k].pair.map((p, i) => <>{i > 0 && <span class="sep">+</span>}<b>{p}</b></>)}</div>
+            <p>{d.professions[k].why}</p>
+          </article>
+        ))}
+      </div>
+      <div class="split" style="margin-top:14px">
+        {d.professions.crafts?.length > 0 && <div><div class="eyebrow">Lo que te fabricas</div><ul class="bul">{d.professions.crafts.map((x) => <li>{x}</li>)}</ul></div>}
+        <div><div class="eyebrow">Secundarias (súbelas siempre)</div><p>{d.professions.secondary}</p>{d.professions.gold_note && <p class="note" style="margin-top:8px">{d.professions.gold_note}</p>}</div>
+      </div>
+    </section>
+  )}
+
   <section class="box" id="mazmorras">
     <div class="titlerow"><h2>Mazmorras recomendadas</h2><span class="note">Todas las que merecen la pena, por nivel, con el botín de jefes para tu clase</span></div>
     <div class="tablewrap" style="margin-top:12px"><table class="wide">

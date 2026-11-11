@@ -963,5 +963,35 @@
    "race": "Enano",
    "why": "Escudos, Palabra de poder y dispeles mantienen vivo al grupo en BG. Enano por Forma de piedra, Desperate Prayer y Chastise (raíz de 2 s) para escapar de cuerpo a cuerpo."
   }
+ },
+ "professions": {
+  "leveling": {
+   "pair": [
+    "Sastrería",
+    "Encantamiento"
+   ],
+   "why": "Sin recolección: la tela cae sola. Equipo de tela con poder con hechizos, bolsas y varitas propias."
+  },
+  "pvp": {
+   "pair": [
+    "Ingeniería",
+    "Sastrería"
+   ],
+   "why": "Granadas y red para quitarte cuerpo a cuerpo de encima. Mantén Sastrería por el equipo."
+  },
+  "endgame": {
+   "pair": [
+    "Sastrería",
+    "Encantamiento"
+   ],
+   "why": "Sombras lleva sus 5 piezas fabricadas de Sastrería; Sagrado y Disciplina, 2 (Mooncloth Gloves y Boots) más la Brilliant Wand de Encantamiento."
+  },
+  "crafts": [
+   "Netherpearl Cuffs (Sastrería, Sombras)",
+   "Brilliant Wand (Encantamiento, sanadores)",
+   "Encantamiento de collar de sanación o poder con hechizos"
+  ],
+  "secondary": "Primeros auxilios (en Forever hace las pociones de sanación, vendas y curas de sangrado), Cocina (Bien alimentado da +5% de experiencia y es obligatoria para acampar) y Pesca.",
+  "gold_note": "Si vas justo de oro para la montura del 40, cambia la de fabricación por Herboristería o Minería y recupera la otra más tarde."
  }
 }

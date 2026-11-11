@@ -986,5 +986,35 @@
    "race": "Elfo de la noche",
    "why": "Sin Berserk el gato pierde la inmunidad al miedo, y contra Sacerdotes y Brujos sufre. En BG la Restauración aguanta muchísimo, cura en movimiento y es el mejor portador de bandera. Para PvP de mundo, Feral con Acechar. Elfo de la noche por Fusión de las sombras y la ráfaga de Luz de Elune."
   }
+ },
+ "professions": {
+  "leveling": {
+   "pair": [
+    "Desuello",
+    "Peletería"
+   ],
+   "why": "Desuellas todo lo que matas en Feral y te haces tu propio equipo de cuero. La Tienda de campaña de Peletería da un bono de descanso al acampar."
+  },
+  "pvp": {
+   "pair": [
+    "Ingeniería",
+    "Minería"
+   ],
+   "why": "La mejor para PvP según todas las guías: granadas para aturdir, Red gnómica (Gnomish Net-o-Matic Projector, 210) para enraizar, Capa de campo de emergencia (225) y, ya a 285-300, granadas de torio y SAF-T Teleport. Minería te da el material. Alternativa sin ingeniería: Alquimia para pociones y elixires."
+  },
+  "endgame": {
+   "pair": [
+    "Peletería",
+    "Desuello"
+   ],
+   "why": "Feral (gato y oso) lleva todas sus piezas fabricadas de Peletería. Restauración prefiere Sastrería."
+  },
+  "crafts": [
+   "Tienda de campaña (Peletería): descanso extra al acampar",
+   "Equipo de cuero con Agilidad y Fuerza a medida que subes",
+   "Pociones de sanación propias con Primeros auxilios + hierbas"
+  ],
+  "secondary": "Primeros auxilios (en Forever hace las pociones de sanación, vendas y curas de sangrado), Cocina (Bien alimentado da +5% de experiencia y es obligatoria para acampar) y Pesca.",
+  "gold_note": "Si vas justo de oro para la montura del 40, cambia la de fabricación por Herboristería o Minería y recupera la otra más tarde."
  }
 }

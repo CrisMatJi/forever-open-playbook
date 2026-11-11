@@ -1033,5 +1033,35 @@
    "race": "Humano",
    "why": "Golpe mortal reduce las curas del rival y el arma lenta a dos manos pega mucho. Humano por Voluntad de sobrevivir: un Guerrero aturdido o controlado no hace nada."
   }
+ },
+ "professions": {
+  "leveling": {
+   "pair": [
+    "Minería",
+    "Herrería"
+   ],
+   "why": "Te haces armas de dos manos, placas y piedras de afilar."
+  },
+  "pvp": {
+   "pair": [
+    "Ingeniería",
+    "Minería"
+   ],
+   "why": "La mejor para PvP según todas las guías: granadas para aturdir, Red gnómica (Gnomish Net-o-Matic Projector, 210) para enraizar, Capa de campo de emergencia (225) y, ya a 285-300, granadas de torio y SAF-T Teleport. Minería te da el material."
+  },
+  "endgame": {
+   "pair": [
+    "Herrería",
+    "Minería"
+   ],
+   "why": "Tanque: Sentinel's Gloves (ligados). Furia: Persuader (Maestro forjador de martillos) y piezas de Armero."
+  },
+  "crafts": [
+   "Piedras de afilar y contrapesos",
+   "Persuader (Herrería, se puede comerciar)",
+   "Sentinel's Gloves (Herrería, tanques)"
+  ],
+  "secondary": "Primeros auxilios (en Forever hace las pociones de sanación, vendas y curas de sangrado), Cocina (Bien alimentado da +5% de experiencia y es obligatoria para acampar) y Pesca.",
+  "gold_note": "Si vas justo de oro para la montura del 40, cambia la de fabricación por Herboristería o Minería y recupera la otra más tarde."
  }
 }

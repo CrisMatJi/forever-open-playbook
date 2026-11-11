@@ -301,3 +301,12 @@ code{overflow-wrap:anywhere}
 .recpick b{display:block;font-family:var(--display);font-size:20px;color:var(--cc,var(--gold))}
 .recpick span{color:var(--muted)}
 .reccard p{margin:0}
+.profgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.profcard{border:1px solid var(--edge);border-radius:8px;background:var(--panel-2);padding:14px;display:grid;gap:8px;align-content:start;min-width:0}
+.profcard p{margin:0}
+.prof-lvl{border-top:3px solid #3fbf5f}.prof-lvl .vtag{color:#3fbf5f}
+.prof-pvp{border-top:3px solid #ff4d4d}.prof-pvp .vtag{color:#ff6a6a}
+.prof-end{border-top:3px solid #4aa3ff}.prof-end .vtag{color:#4aa3ff}
+.profpair{display:flex;flex-wrap:wrap;gap:6px;align-items:baseline}
+.profpair b{font-family:var(--display);font-size:19px;color:var(--cc,var(--gold))}
+.profpair .sep{color:var(--muted)}

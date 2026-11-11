@@ -952,5 +952,35 @@
    "race": "Enano",
    "why": "Mucha ráfaga con Stormstrike y choques, Choque de tierra para interrumpir y tótems (Nexo terrestre, Temblor, Derribador) para controlar. Forma de piedra del Enano anula venenos y sangrados: tu mejor defensa contra Pícaros y Guerreros."
   }
+ },
+ "professions": {
+  "leveling": {
+   "pair": [
+    "Desuello",
+    "Peletería"
+   ],
+   "why": "Llevas cuero hasta el 40 y la Peletería te hace casi todo tu equipo: el Chamán es la clase con más piezas fabricadas (22, 15 de cuero)."
+  },
+  "pvp": {
+   "pair": [
+    "Ingeniería",
+    "Minería"
+   ],
+   "why": "La mejor para PvP según todas las guías: granadas para aturdir, Red gnómica (Gnomish Net-o-Matic Projector, 210) para enraizar, Capa de campo de emergencia (225) y, ya a 285-300, granadas de torio y SAF-T Teleport. Minería te da el material."
+  },
+  "endgame": {
+   "pair": [
+    "Peletería",
+    "Encantamiento"
+   ],
+   "why": "Mejora lleva piezas de malla de Peletería (Skirmisher's Mail Bracers, ligadas) y el Totem of Thunder de Encantamiento, además del encantamiento de collar de Fuerza."
+  },
+  "crafts": [
+   "Totem of Thunder (Encantamiento): reliquia de Chamán",
+   "Encantamiento de collar: Fuerza (Mejora), poder con hechizos (Elemental) o sanación (Restauración), con habilidad 210",
+   "Bracers de malla de Peletería (Skirmisher's Mail Bracers)"
+  ],
+  "secondary": "Primeros auxilios (en Forever hace las pociones de sanación, vendas y curas de sangrado), Cocina (Bien alimentado da +5% de experiencia y es obligatoria para acampar) y Pesca.",
+  "gold_note": "Si vas justo de oro para la montura del 40, cambia la de fabricación por Herboristería o Minería y recupera la otra más tarde."
  }
 }

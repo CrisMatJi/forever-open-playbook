@@ -1034,5 +1034,35 @@
    "race": "Humano",
    "why": "Control y aperturas: doble Sap con Quick Getaway, Boot Knife y Death Mark. Humano por Voluntad de sobrevivir y Percepción para ver a otros Pícaros."
   }
+ },
+ "professions": {
+  "leveling": {
+   "pair": [
+    "Desuello",
+    "Peletería"
+   ],
+   "why": "Desuellas lo que matas y te haces el equipo de cuero con Agilidad."
+  },
+  "pvp": {
+   "pair": [
+    "Ingeniería",
+    "Minería"
+   ],
+   "why": "La mejor para PvP según todas las guías: granadas para aturdir, Red gnómica (Gnomish Net-o-Matic Projector, 210) para enraizar, Capa de campo de emergencia (225) y, ya a 285-300, granadas de torio y SAF-T Teleport. Minería te da el material."
+  },
+  "endgame": {
+   "pair": [
+    "Peletería",
+    "Herrería"
+   ],
+   "why": "Peletería tribal para las piezas de cuero y una o dos armas de Herrería."
+  },
+  "crafts": [
+   "Piezas de cuero con Agilidad (Peletería)",
+   "Armas de Herrería para la mano izquierda",
+   "Granadas de Ingeniería si vas a PvP"
+  ],
+  "secondary": "Primeros auxilios (en Forever hace las pociones de sanación, vendas y curas de sangrado), Cocina (Bien alimentado da +5% de experiencia y es obligatoria para acampar) y Pesca.",
+  "gold_note": "Si vas justo de oro para la montura del 40, cambia la de fabricación por Herboristería o Minería y recupera la otra más tarde."
  }
 }

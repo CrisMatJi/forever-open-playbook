@@ -994,5 +994,35 @@
    "race": "Humano",
    "why": "Raíces, ralentizaciones, Bloqueo de hielo y Ice Lance para rematar a los congelados. Humano por Voluntad de sobrevivir: el Mago muere si le aturden encima."
   }
+ },
+ "professions": {
+  "leveling": {
+   "pair": [
+    "Sastrería",
+    "Encantamiento"
+   ],
+   "why": "Sin recolección: la tela cae sola. Piezas ligadas con poder con hechizos desde el 10, varitas y aceites."
+  },
+  "pvp": {
+   "pair": [
+    "Ingeniería",
+    "Sastrería"
+   ],
+   "why": "Granadas y red para controlar lo que ya no puedes congelar. Mantén Sastrería por el equipo."
+  },
+  "endgame": {
+   "pair": [
+    "Sastrería",
+    "Encantamiento"
+   ],
+   "why": "Sastrería da 4 de las 5 piezas fabricadas (Robe of the Archmage, Belt of the Archmage) y Encantamiento el collar de poder con hechizos."
+  },
+  "crafts": [
+   "Varitas de Encantamiento",
+   "Robe of the Archmage (Sastrería, ligada)",
+   "Encantamiento de collar de poder con hechizos (210)"
+  ],
+  "secondary": "Primeros auxilios (en Forever hace las pociones de sanación, vendas y curas de sangrado), Cocina (Bien alimentado da +5% de experiencia y es obligatoria para acampar) y Pesca.",
+  "gold_note": "Si vas justo de oro para la montura del 40, cambia la de fabricación por Herboristería o Minería y recupera la otra más tarde."
  }
 }
