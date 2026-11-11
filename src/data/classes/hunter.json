@@ -139,7 +139,7 @@
     "name": "Summon Hawk",
     "max": 1,
     "pre": null,
-    "eff": "80 mana, 35 yd, 6 s (shared with Arcane Shot): hawk dive 32 + 5% RAP, lasts 18 s, max 2",
+    "eff": "11% of base mana (10 Nov), 35 yd, 6 s (shared with Arcane Shot): hawk dive 32 + 5% RAP, ~80% more hawk melee damage (10 Nov), lasts 18 s, max 2",
     "icon": "ability_hunter_animalhandler"
    },
    {
@@ -538,7 +538,7 @@
  "level_cap": 60,
  "leveling": {
   "spec": "Dominio de bestias (mascota + halcones)",
-  "why": "Recomendada por Warcraft Tavern, Method y la ruta inicial de ForeverHispano: la mascota tanquea y hace gran parte del daño mientras disparas, con poco tiempo muerto. Summon Hawk a 25, Intimidation a 30 y Bestial Wrath a 40 (31/20/0). Pathfinding está en la fila 3 y compite con Unleashed Fury, así que los 2 puntos de la fila 2 van a Endurance Training. 2 nov: Aspecto del halcón vuelve a 20/35/50/70/90/110 y Disparo de puntería, Disparo arcano y Picadura de serpiente suben mucho, así que los 20 puntos de Puntería rinden más. Trueshot Aura vuelve a valer 1 punto (+20 de poder de ataque a distancia y rangos entrenables hasta +100); Mortal Shots queda en 4/5 (ajuste propio). Puntería gana mucho con el 2 nov (Barrage 15%, Sniper Shot +100%), pero ninguna guía actualizada la recomienda aún para subir (sin confirmar).",
+  "why": "Recomendada por Warcraft Tavern, Method y la ruta inicial de ForeverHispano: la mascota tanquea y hace gran parte del daño mientras disparas, con poco tiempo muerto. Summon Hawk a 25, Intimidation a 30 y Bestial Wrath a 40 (31/20/0). Pathfinding está en la fila 3 y compite con Unleashed Fury, así que los 2 puntos de la fila 2 van a Endurance Training. 2 nov: Aspecto del halcón vuelve a 20/35/50/70/90/110 y Disparo de puntería, Disparo arcano y Picadura de serpiente suben mucho, así que los 20 puntos de Puntería rinden más. Trueshot Aura vuelve a valer 1 punto (+20 de poder de ataque a distancia y rangos entrenables hasta +100); Mortal Shots queda en 4/5 (ajuste propio). Puntería gana mucho con el 2 nov (Barrage 15%, Sniper Shot +100%), pero ninguna guía actualizada la recomienda aún para subir (sin confirmar). 10 nov: Invocar halcón hace ~80% más daño cuerpo a cuerpo pero cuesta un 11% del maná base; la mascota baja a 115% de vida (un error le daba 150%).",
   "order": [
    "Deadly Aspects*5",
    "Focused Fire*2",
@@ -598,7 +598,7 @@
    [
     6,
     "Arcane Shot (Disparo arcano), Hunter's Mark (Marca del cazador)",
-    "La Marca ahora da ~30% más daño sola (el talento se eliminó). 2 nov: Disparo arcano +~30% de daño base y coeficiente de poder de ataque 0,15 (antes 0,1); la Marca ya no se apila usando rangos distintos."
+    "La Marca ahora da ~30% más daño sola (el talento se eliminó). 2 nov: Disparo arcano +~30% de daño base y coeficiente de poder de ataque 0,15 (antes 0,1); la Marca ya no se apila usando rangos distintos. 10 nov: cuesta un 11% del maná base en todos los rangos, así que los rangos bajos ya no ahorran maná."
    ],
    [
     8,
@@ -643,7 +643,7 @@
    [
     25,
     "Summon Hawk (Invocar halcón), Trueshot Aura (Aura de disparo certero), Counterattack",
-    "Talentos de 16 puntos; hasta 2 halcones activos. 2 nov: Trueshot Aura da +20 de poder de ataque a distancia en el rango de talento y 35/50/75/100 en los rangos entrenables."
+    "Talentos de 16 puntos; hasta 2 halcones activos. 2 nov: Trueshot Aura da +20 de poder de ataque a distancia en el rango de talento y 35/50/75/100 en los rangos entrenables. 10 nov: el halcón hace ~80% más daño cuerpo a cuerpo y cuesta un 11% del maná base."
    ],
    [
     26,
@@ -695,7 +695,7 @@
    "Aspecto del halcón y Marca del cazador; envía a la mascota y deja que haga unos golpes para fijar amenaza.",
    "Disparo automático + Picadura de serpiente en mobs que duren.",
    "Desde 25: mantén 2 halcones (Invocar halcón comparte CD de 6 s con Disparo arcano; reinvoca lo más tarde posible porque duran 18 s).",
-   "Disparo de puntería y Multidisparo en cooldown (comparten 6 s); Disparo arcano solo cuando los halcones tengan más de 6 s.",
+   "Disparo de puntería y Multidisparo en cooldown (comparten 6 s); Disparo arcano solo cuando los halcones tengan más de 6 s (10 nov: cuesta un 11% del maná base en cualquier rango).",
    "Si la mascota pierde la amenaza: Cortar alas, Disparo conmocionador o Trampa de Escarcha y vuelve a distancia.",
    "Encadena mobs con Picadura de serpiente y trampas de fuego; Fingir muerte como salida de emergencia; reserva maná para ello.",
    "Desde 40: Cólera de las bestias con la mascota viva y pegando."
@@ -730,7 +730,8 @@
    "La comida cocinada da bonus de experiencia y los buffs de campamento afectan también a la mascota.",
    "Lleva agua y munición del nivel adecuado; el alcance mínimo sigue siendo 8 m.",
    "Pathfinding está en la fila 3 de Dominio de bestias (confirmado en las notas del 2 nov): si quieres más velocidad con Guepardo, cógelo después de Bestial Wrath o cámbialo por Endurance Training.",
-   "2 nov: las raíces por proc (Entrapment, Improved Wing Clip, Counterattack) tienen rendimientos decrecientes: no encadenes varias sobre el mismo objetivo."
+   "2 nov: las raíces por proc (Entrapment, Improved Wing Clip, Counterattack) tienen rendimientos decrecientes: no encadenes varias sobre el mismo objetivo.",
+   "10 nov: la mascota tiene un 115% de su vida normal (un error le daba 150%): vigílala más en pulls dobles. Aguante superior (Great Stamina) de la mascota da ahora +30 a +400 de vida según rango en vez de +3 a +40 de Aguante."
   ],
   "stat_order": [
    "Agilidad",
@@ -934,7 +935,10 @@
   "Trampas utilizables en combate y una de cada tipo (Fuego/Escarcha) activa a la vez; desde el 2 nov comparten un cooldown de 30 s.",
   "Salva sin reutilización, Fuego rápido acelera también el cuerpo a cuerpo, Aspecto de la bestia da poder de ataque cuerpo a cuerpo, Picadura de escórpido reduce un 2% el golpe.",
   "Mascotas: escalan con tu equipo, todas con Mordisco/Garra y Carrera/Picado; zorro nuevo; osos con Vapulear.",
-  "El Humano puede ser cazador; el Gnomo no; Skyborne sí."
+  "El Humano puede ser cazador; el Gnomo no; Skyborne sí.",
+  "10 nov: Invocar halcón (Summon Hawk) hace ~80% más daño cuerpo a cuerpo, pero cuesta un 11% del maná base.",
+  "10 nov: Disparo arcano cuesta un 11% del maná base en todos los rangos (los rangos bajos ya no son más baratos).",
+  "10 nov: las mascotas tienen un 115% de su vida normal (un error les daba 150%); Great Stamina da +30 a +400 de vida a la mascota (era +3 a +40 de Aguante)."
  ],
  "pvp": {
   "strengths": [

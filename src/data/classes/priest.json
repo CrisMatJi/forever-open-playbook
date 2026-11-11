@@ -267,7 +267,7 @@
     "name": "Holy Nova",
     "max": 1,
     "pre": null,
-    "eff": "Holy damage to enemies and healing to party within 10 yd",
+    "eff": "Holy damage to enemies and healing to party within 10 yd; unlearned when the talent is removed (10 Nov)",
     "icon": "spell_holy_holynova"
    },
    {
@@ -653,7 +653,7 @@
    [
     20,
     "Flash Heal (Sanación relámpago), Holy Fire (Fuego Sagrado), Devouring Plague (Peste devoradora), Fear Ward (Resguardo contra el miedo), Mind Flay (talento), Holy Nova; racial nivel 20 (Feedback / Chastise / Elune's Grace / Contingency Plan)",
-    "Fear Ward y Devouring Plague son ahora para todos los sacerdotes; Peste devoradora 24 s de reutilización."
+    "Fear Ward y Devouring Plague son ahora para todos los sacerdotes; Peste devoradora 24 s de reutilización. 10 nov: Fear Ward se puede lanzar en Forma de las Sombras."
    ],
    [
     24,
@@ -916,7 +916,9 @@
   "Smite y Holy Fire pegan ~la mitad desde el nivel 30; las sanaciones de rango alto empiezan algo más bajas.",
   "Prayer of Healing cura al grupo del objetivo elegido; Renew de varios sacerdotes se acumula; Fade quita mucha más amenaza.",
   "Raciales de sacerdote rehechos; gnomo puede ser sacerdote.",
-  "Eliminados: Lightwell, Force of Will, Unbreakable Will, Improved Fortitude, Divine Spirit (talento), Shadow Affinity, Improved Fade, Improved Vampiric Embrace, Improved Prayer of Healing."
+  "Eliminados: Lightwell, Force of Will, Unbreakable Will, Improved Fortitude, Divine Spirit (talento), Shadow Affinity, Improved Fade, Improved Vampiric Embrace, Improved Prayer of Healing.",
+  "10 nov: Holy Nova (Nova Sagrada) se olvida al quitar el talento.",
+  "10 nov: Fear Ward (Resguardo contra el miedo) se puede lanzar en Forma de las Sombras (build 70888)."
  ],
  "pvp": {
   "strengths": [

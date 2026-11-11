@@ -162,7 +162,7 @@
     "name": "Sweeping Strikes",
     "max": 1,
     "pre": null,
-    "eff": "30 Rage: next 5 melee attacks hit an extra nearby target",
+    "eff": "30 Rage: next 5 melee attacks hit an extra nearby target; no longer loses charges when there is no second target (10 Nov)",
     "icon": "ability_rogue_slicedice"
    },
    {
@@ -986,7 +986,8 @@
   "Shield Specialization da 5 de ira por bloqueo (antes 1); Thunder Clap ralentiza 20% con 6 s de cooldown.",
   "Desgarrar escala con poder de ataque; nueva habilidad Victory Rush (Ataque victorioso) a nivel 20.",
   "Mortal Strike, Bloodthirst y Shield Slam se aprenden a 40; Whirlwind a 36; Berserker Rage a 30.",
-  "Raciales rediseñadas: Humano Ruthless (+1% de crítico; era +2% antes del ajuste de lanzamiento), Enano Artisan's Precision, Elfo de la noche Elune's Light, Gnomo Eureka!; nueva raza Skyborne."
+  "Raciales rediseñadas: Humano Ruthless (+1% de crítico; era +2% antes del ajuste de lanzamiento), Enano Artisan's Precision, Elfo de la noche Elune's Light, Gnomo Eureka!; nueva raza Skyborne.",
+  "10 nov: Golpes de barrido (Sweeping Strikes) ya no gasta cargas cuando no alcanza a un segundo objetivo."
  ],
  "pvp": {
   "strengths": [

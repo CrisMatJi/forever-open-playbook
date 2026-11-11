@@ -877,7 +877,9 @@
   "Auto Shot y las varitas ahora necesitan 0,5 s quieto. Tenlo en cuenta al kitear (atacar mientras te alejas) o al usar varita.",
   "Usa el Cooldown Manager del juego en vez de un addon de tiempos de reutilización. Addons con datos propios de Forever: Forever Guide (CurseForge, /fguide) y los addons de ForeverChanges y ForeverHispano.",
   "Rutas de vuelo: consigue cada punto de vuelo por el que pases. Las rutas largas necesitan también las paradas intermedias. En las ciudades, pregunta a un guardia cómo llegar.",
-  "Activa los beneficios de campamento que complementen a tu clase (p. ej. Lodestone, poder de ataque, para cuerpo a cuerpo) solo cuando ningún beneficio de clase cubra esa estadística, porque no se acumulan."
+  "Activa los beneficios de campamento que complementen a tu clase (p. ej. Lodestone, poder de ataque, para cuerpo a cuerpo) solo cuando ningún beneficio de clase cubra esa estadística, porque no se acumulan.",
+  "Hotfix del 10 nov: la mayoría de misiones de nivel 48 o más también dan oro; el depósito mínimo de subasta baja a 1 cobre; el correo entre tus personajes tarda ahora 60 minutos (antes llegaba en unos 2), así que pasa el material a tus alters con antelación; los trols Rompelanzas (Spearbreaker) ya no dan experiencia.",
+  "Objetos (10 nov): Ira de la Tormenta (Rage of the Storm) da +16 Fuerza en vez de +12 Intelecto y pega 102-154 a velocidad 3,60 (antes 91-137 a 3,20; mismo DPS 35,6). Earthen Silk Slippers dan +17 de sanación en vez de +18 de poder con hechizos."
  ],
  "community_sites": [
   {

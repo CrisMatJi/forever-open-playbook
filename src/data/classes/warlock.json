@@ -1,6 +1,6 @@
 {
  "id": "warlock",
- "build_checked": "1.60.1 (notas oficiales de Blizzard \"Updated November 2\", 2026; árboles de talentsforever del 30 Oct, sin cambios de estructura el 2 Nov)",
+ "build_checked": "1.60.1 (notas oficiales de Blizzard \"Updated November 2\", 2026; árboles de talentsforever del 30 Oct, sin cambios de estructura el 2 Nov); hotfix del 10 Nov aplicado",
  "sources": [
   "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/9",
   "https://talentsforever.com/warlock/changes",
@@ -179,7 +179,7 @@
     "name": "Soul Siphon",
     "max": 3,
     "pre": null,
-    "eff": "Drain damage +4% per rank per other Affliction effect on the target (max +36% at 3/3)",
+    "eff": "Drain damage +4% per rank for each of your Corruption, Siphon Life and Bane of Agony on the target (only these count since 10 Nov; max +36% at 3/3)",
     "icon": "spell_shadow_lifedrain02"
    },
    {
@@ -199,7 +199,7 @@
     "name": "Wrack",
     "max": 1,
     "pre": "Siphon Life",
-    "eff": "Teaches Wrack: channeled Shadow damage (86/s at level 60 after 2 Nov, was 36; coefficient doubled); your other Shadow DoTs on the target +10% for 6 s",
+    "eff": "Teaches Wrack: channeled Shadow damage (60/s at level 60 after 10 Nov, was 86); while channeling, your Corruption, Siphon Life and Bane of Agony on the target tick 100% faster (no longer +10% Shadow DoT damage taken)",
     "icon": "ability_deathknight_hemorrhagicfever"
    },
    {
@@ -519,7 +519,7 @@
     "name": "Bane of Havoc",
     "max": 1,
     "pre": null,
-    "eff": "Teaches Bane of Havoc: 15% of your damage to other targets also hits the cursed target (5 min)",
+    "eff": "Teaches Bane of Havoc: 15% of your damage to other targets also hits the cursed target (5 min); triggers the 1.5 s GCD (10 Nov)",
     "icon": "ability_warlock_baneofhavoc"
    },
    {
@@ -554,11 +554,11 @@
    }
   ]
  },
- "talents_note": "Árboles completos verificados contra el export JSON de talentsforever (build 70425 + hotfixes). Cambios vs datos locales (70170): Malediction desaparece y su hueco (fila 2, col 1) lo ocupa Grim Reach; Improved Drains, Soul Harvest y el resto mantienen posición. Hotfix 22 Oct: Fel Concentration e Intensity pasan al 70% a 3/3. Amplify Curse: hotfix 16 Oct deja Curse of Exhaustion en +20% (Weakness/Agony +50%). Hay valores contradictorios dentro de talentsforever (Decimation 45% vs 90%, Shadow Mastery 1% vs 2% por rango, Conflagrate/Incinerate daño); se indican en 'eff'. Iconos del export. Revisado con el export del 30 Oct (hotfixes 30 Oct, builds 70685/70707): estructura sin cambios; Improved Drains cubre Drain Mana en vez de Wrack. Revisado con las notas oficiales del 2 Nov: sin cambios de posición; Wrack duplica su coeficiente (86 de daño por segundo al 60), Shadow and Flame pasa a 4-20%, Amplify Curse ya afecta a Curse of Exhaustion y Bane of Agony.",
+ "talents_note": "Árboles completos verificados contra el export JSON de talentsforever (build 70425 + hotfixes). Cambios vs datos locales (70170): Malediction desaparece y su hueco (fila 2, col 1) lo ocupa Grim Reach; Improved Drains, Soul Harvest y el resto mantienen posición. Hotfix 22 Oct: Fel Concentration e Intensity pasan al 70% a 3/3. Amplify Curse: hotfix 16 Oct deja Curse of Exhaustion en +20% (Weakness/Agony +50%). Hay valores contradictorios dentro de talentsforever (Decimation 45% vs 90%, Shadow Mastery 1% vs 2% por rango, Conflagrate/Incinerate daño); se indican en 'eff'. Iconos del export. Revisado con el export del 30 Oct (hotfixes 30 Oct, builds 70685/70707): estructura sin cambios; Improved Drains cubre Drain Mana en vez de Wrack. Revisado con las notas oficiales del 2 Nov: sin cambios de posición; Wrack duplica su coeficiente (86 de daño por segundo al 60), Shadow and Flame pasa a 4-20%, Amplify Curse ya afecta a Curse of Exhaustion y Bane of Agony. Hotfix 10 Nov: Wrack ya no aumenta un 10% el daño de Sombras periódico; acelera un 100% Corrupción, Siphon Life y Bane of Agony mientras se canaliza y su daño baja a 60/s; Soul Siphon solo cuenta esos tres; Bane of Havoc activa el GCD.",
  "level_cap": 60,
  "leveling": {
   "spec": "Aflicción (drain tank)",
-  "why": "Aflicción es la rama de subida más completa y segura y sale reforzada del 2 nov: Wrack (talento 40) duplica su coeficiente y pasa de 36 a 86 de daño por segundo al 60, Corrupción instantánea, Bane of Agony (Terror de agonía, ahora escala bien) y Siphon Life matan mientras el demonio tanquea, y desde 30 Drain Life con Fel Concentration/Soul Siphon te permite tanquear tú mismo. Además, los demonios pierden mucha vida (2 de vida por punto de tu Aguante, antes 7.5), lo que perjudica a Demonología y hace más importante que seas tú quien aguante con los drenajes. Warcraft Tavern y Mobalytics la recomendaban antes del parche.",
+  "why": "Aflicción es la rama de subida más completa y segura. Wrack (talento 40) se rehace el 10 nov: mientras lo canalizas, tu Corrupción, Siphon Life y Bane of Agony (Terror de agonía) hacen daño el doble de rápido (su propio daño baja a 60 por segundo al 60). Corrupción instantánea, Bane of Agony y Siphon Life matan mientras el demonio tanquea, y desde 30 Drain Life con Fel Concentration/Soul Siphon te permite tanquear tú mismo. Los demonios perdieron mucha vida el 2 nov (2 por punto de tu Aguante, antes 7.5) y el 10 nov recuperan un ~15% de vida base, así que sigue siendo importante que aguantes tú con los drenajes. Warcraft Tavern y Mobalytics la recomendaban antes del parche.",
   "order": [
    "Improved Corruption*5",
    "Improved Life Tap*2",
@@ -616,7 +616,7 @@
    [
     1,
     "Summon Imp (Invocar diablillo)",
-    "Daño a distancia; Blood Pact para grupo."
+    "Daño a distancia; Blood Pact para grupo. 10 nov: Firebolt (Descarga de fuego) rangos 1-4 pega más."
    ],
    [
     4,
@@ -641,7 +641,7 @@
    [
     10,
     "Summon Voidwalker (Invocar abisario)",
-    "Tanque; misión de clase. 2 nov: los demonios ganan 2 de vida por punto de tu Aguante (antes 7.5), aguanta menos."
+    "Tanque; misión de clase. 2 nov: los demonios ganan 2 de vida por punto de tu Aguante (antes 7.5), aguanta menos. 10 nov: los demonios ganan ~15% de vida base."
    ],
    [
     10,
@@ -691,7 +691,7 @@
    [
     40,
     "Wrack (Arruinar)",
-    "Talento 40 de Aflicción: canalizado (86 de daño/s al 60 tras el 2 nov, antes 36) y +10% a tus DoTs de Sombras."
+    "Talento 40 de Aflicción: canalizado; 10 nov: mientras lo canalizas, tu Corrupción, Siphon Life y Bane of Agony en el objetivo hacen daño un 100% más rápido. Su propio daño baja un 30% (60/s al 60, antes 86) y ya no da +10% a tus DoTs de Sombras."
    ],
    [
     40,
@@ -716,7 +716,8 @@
    "Antes de 30: varita hasta que muera. Desde 30: Drain Life (Drenar vida) como relleno, varita cuando estés lleno de vida o el enemigo casi muerto.",
    "Shadow Bolt instantánea cuando salte Nightfall (Ocaso).",
    "Remata con Drain Soul (Drenar alma) si necesitas fragmentos o para Soul Harvest.",
-   "Life Tap cuando la vida supere al maná; con Wrack (40+, mucho más fuerte desde el 2 nov) canaliza sobre objetivos con todos tus DoTs en vez de usar la varita.",
+   "Life Tap cuando la vida supere al maná.",
+   "Desde 40: con Corrupción, Siphon Life y Bane of Agony puestos, canaliza Wrack (Arruinar): mientras dura, tus DoTs hacen daño el doble de rápido (10 nov). Úsalo en vez de la varita en objetivos que duren y vuelve a Drain Life si necesitas vida.",
    "Pull doble: DoTea el segundo, demonio al primero y Miedo al segundo."
   ],
   "class_quests": [
@@ -771,7 +772,8 @@
   ],
   "tips": [
    "2 nov: Blizzard subió el daño de todas las clases y la vida de los enemigos de nivel alto para compensar.",
-   "2 nov: tu demonio tiene mucha menos vida (2 por punto de Aguante, antes 7.5): vigila al abisario en pulls dobles y no dudes en tanquear tú con Drain Life.",
+   "2 nov: tu demonio tiene mucha menos vida (2 por punto de Aguante, antes 7.5; el 10 nov recupera ~15% de vida base): vigila al abisario en pulls dobles y no dudes en tanquear tú con Drain Life.",
+   "10 nov: Wrack ya no aumenta el daño de Sombras recibido; su valor está en acelerar tus DoTs, así que aplica Corrupción, Siphon Life y Bane of Agony antes de canalizarlo. Soul Siphon solo cuenta esos tres efectos.",
    "Las Banes y las Maldiciones son ahora categorías separadas: Bane of Agony + Curse of the Elements/Weakness a la vez.",
    "Drain Soul siempre da fragmento al matar; desde el 2 nov los fragmentos por tick son mucho más raros, así que remata con Drain Soul rango 1 para farmearlos. Las piedras de encuentro ya no invocan: Ritual of Summoning es la única forma, lleva fragmentos de sobra.",
    "La bolsa de fragmentos puede ir en la ranura de componentes.",
@@ -928,7 +930,11 @@
   "2 nov: la Piedra de hechizo solo aumenta el daño de Sombras (antes también Fuego).",
   "2 nov: Bane of Agony actualiza su daño dinámicamente; Amplify Curse ya afecta a Curse of Exhaustion y Bane of Agony; Improved Drains mejora Drain Mana y no Wrack.",
   "2 nov: Destrucción: Shadow and Flame sube a 4/8/12/16/20% de daño de Fuego o Sombras (antes 2-10%).",
-  "2 nov: Blizzard sube el daño de todas las clases y la vida de los enemigos de nivel alto para compensar."
+  "2 nov: Blizzard sube el daño de todas las clases y la vida de los enemigos de nivel alto para compensar.",
+  "10 nov: Wrack (Arruinar) ya no aumenta un 10% el daño de tus otros DoTs de Sombras; mientras lo canalizas, tu Corrupción, Siphon Life y Bane of Agony en el objetivo hacen daño un 100% más rápido. Su propio daño baja un 30% (60 por segundo al 60, antes 86).",
+  "10 nov: Soul Siphon solo cuenta Corrupción, Siphon Life y Bane of Agony en el objetivo.",
+  "10 nov: Bane of Havoc (Terror de caos) activa el tiempo global de 1,5 s.",
+  "10 nov: diablillo, abisario y súcubo/íncubo tienen ~15% más de vida base; Firebolt del diablillo (rangos 1-4) pega más."
  ],
  "pvp": {
   "strengths": [
@@ -936,14 +942,15 @@
    "Curse of Tongues ahora +50% de tiempo de lanzamiento: devastador contra lanzadores.",
    "Daño sostenido con DoTs y drenajes; Soul Link y Demon Armor dan aguante.",
    "Humano: Will to Survive contra aturdimientos; Gnomo: Escape Artist contra raíces/ralentizaciones.",
-   "2 nov: Wrack mucho más fuerte (86 de daño/s al 60) para Aflicción."
+   "10 nov: Wrack hace que tus Corrupción, Siphon Life y Bane of Agony peguen el doble de rápido mientras lo canalizas: ráfaga de Aflicción si no te lo cortan."
   ],
   "weaknesses": [
    "Sin escapes de movilidad propios; vulnerable a stuns y a interrupciones si castea Shadow Bolt.",
    "Muchas habilidades de canalización (Drains, Wrack) que se pueden cortar.",
    "Bane of Doom no funciona contra jugadores.",
    "Depende de Fragmentos de alma para demonios y Shadowburn/Death Coil.",
-   "2 nov: los demonios tienen mucha menos vida (2 por punto de Aguante) y los fragmentos por tick de Drain Soul son raros."
+   "2 nov: los demonios tienen mucha menos vida (2 por punto de Aguante) y los fragmentos por tick de Drain Soul son raros.",
+   "10 nov: Bane of Havoc activa el GCD y Wrack pierde daño propio (60/s): sin DoTs puestos vale poco."
   ],
   "duel_plan": [
    "Pre-duelo: Demon Armor, Soul Link o sacrificio según rama, manáfago (o súcubo contra cuerpo a cuerpo), Healthstone.",
@@ -969,7 +976,7 @@
   "pve": {
    "spec": "Aflicción",
    "race": "Gnomo",
-   "why": "La forma más cómoda de subir: DoTs, Drenar vida y el demonio tanqueando; Wrack sube a 86 de daño por segundo a nivel 60. Gnomo por Eureka! (+10% de daño) y +5% de maná."
+   "why": "La forma más cómoda de subir: DoTs, Drenar vida y el demonio tanqueando; Wrack hace que tus DoTs peguen el doble de rápido mientras lo canalizas. Gnomo por Eureka! (+10% de daño) y +5% de maná."
   },
   "pvp": {
    "spec": "Aflicción",

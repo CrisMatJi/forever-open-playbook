@@ -4,7 +4,7 @@
   "En el cliente esES los comandos y condicionales van en inglés; solo se traducen nombres de hechizos y objetos.",
   "En Forever Agonía y Fatalidad son Terrores (Banes), no maldiciones: puedes tener un Terror y una Maldición tuya a la vez en el mismo objetivo, pero solo un Terror.",
   "Maldición de las Sombras desapareció; Maldición de los Elementos cubre todas las escuelas mágicas. Maldición de Temeridad ya no aumenta el daño recibido.",
-  "Arruinar (Wrack) es el talento de 31 puntos de Aflicción: canalizado de 6 s que aumenta un 10 % el daño de tus otros efectos de Sombras.",
+  "Arruinar (Wrack) es el talento de 31 puntos de Aflicción: canalizado de 6 s; desde el 10 de noviembre hace que tu Corrupción, Succionar vida y Terror de agonía en el objetivo pegue un 100% más rápido mientras lo canalizas (ya no aumenta un 10 % el daño de Sombras recibido).",
   "El botón 'Quieto' de la mascota se sustituyó por 'Mover a', así que estas macros usan /petfollow y /petattack, no /petstay.",
   "Las macros de mascota usan /cast con la habilidad del demonio (Bloqueo de hechizo, Seducción): no activan tu tiempo global."
  ],
@@ -143,7 +143,7 @@
      "verified": true
     }
    ],
-   "what": "Canaliza Arruinar (relleno de Aflicción que potencia tus DoTs de Sombras) y envía a la mascota; Shift canaliza Drenar vida si necesitas salud.",
+   "what": "Canaliza Arruinar (relleno de Aflicción que hace que tus DoTs peguen el doble de rápido mientras lo canalizas) y envía a la mascota; Shift canaliza Drenar vida si necesitas salud.",
    "how": "Tecla 4 en Aflicción, tras aplicar Corrupción, Succionar vida y un Terror.",
    "tip": "Arruinar es el talento de 31 puntos; hasta el 40 usa solo Drenar vida (nivel 14)."
   },
@@ -382,7 +382,7 @@
    ],
    "what": "Destrucción: Incinerar como relleno (más daño con Inmolar), Shift Conflagrar, y Ctrl Terror de caos sobre el foco o mouseover para copiar parte de tu daño a ese segundo objetivo.",
    "how": "Tecla 1 de Destrucción. Con dos enemigos juntos: /focus al secundario y Ctrl+tecla.",
-   "tip": "Incinerar es el talento de 31 puntos y Terror de caos uno de Destrucción; hasta entonces usa Descarga de las Sombras."
+   "tip": "Incinerar es el talento de 31 puntos y Terror de caos uno de Destrucción; hasta entonces usa Descarga de las Sombras. Desde el 10 de noviembre Terror de caos activa el tiempo global."
   }
  ]
 }

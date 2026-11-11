@@ -4,7 +4,7 @@
   "En el cliente esES los comandos (/cast, /use, /stopcasting...) y los condicionales ([@mouseover], [mod:shift]...) se escriben en inglés; solo cambian los nombres de hechizos y objetos. Para un rango concreto se usa '(Rango 1)'.",
   "En Forever el chamán NO tiene Ansia de sangre, Maleficio, Escudo de tierra ni Ráfaga de lava (Lava Burst se eliminó el 2 de noviembre y la sustituye el talento pasivo Llamada del trueno).",
   "Nova de Fuego ya no es un tótem: es un hechizo que explota alrededor de tu tótem de Fuego activo, así que necesitas un tótem de Fuego puesto.",
-  "Arma vorágine solo afecta a Descarga de relámpagos: con 5 cargas es instantánea y gratis. Golpe de tormenta tiene 6 s de reutilización tras el parche del 2 de noviembre.",
+  "Arma vorágine solo afecta a Descarga de relámpagos: desde el 10 de noviembre cada carga resta un 20% en todos los rangos, así que con 5 cargas es instantánea y gratis. Golpe de tormenta vuelve a 8 s de reutilización tras el hotfix del 10 de noviembre (el 2 de noviembre había bajado a 6 s).",
   "Los tótems se desbloquean por misión: Tierra (4), Fuego (10), Agua (20), Aire (30). Las Llamadas (de los elementos/ancestros/espíritus) ponen hasta 4 tótems en 3 s.",
   "Proyección totémica se renombró a Llamada totémica (30 s de reutilización): teletransporta tus tótems a tu posición.",
   "Una pulsación = una acción con tiempo global. Solo se combinan en la misma pulsación cosas fuera del GCD (abalorio /use 13, Presteza de la naturaleza, /startattack)."
@@ -86,7 +86,7 @@
     }
    ],
    "what": "Botón principal de Mejora: arranca el autoataque y lanza Golpe de tormenta; con Ctrl activa Ira del clarividente (+30 % de velocidad de ataque, tu 'ansia de sangre' personal).",
-   "how": "Tecla 1 o 2 de tu rotación. Pulsa cada vez que Golpe de tormenta esté listo (6 s). Ctrl+tecla al inicio de un combate largo o de un jefe.",
+   "how": "Tecla 1 o 2 de tu rotación. Pulsa cada vez que Golpe de tormenta esté listo (8 s). Ctrl+tecla al inicio de un combate largo o de un jefe.",
    "tip": "Golpe de tormenta es talento de 16 puntos e Ira del clarividente el de 31 puntos (nivel 40)."
   },
   {
@@ -341,7 +341,7 @@
     }
    ],
    "what": "Aplica la imbuición a tu arma: sin modificador Arma comerrocas, Shift Arma lengua de Fuego, Ctrl Arma Estigma de Escarcha.",
-   "how": "Ponla en una barra secundaria; en Forever las imbuiciones duran 60 minutos, así que solo la pulsarás de vez en cuando.",
+   "how": "Ponla en una barra secundaria; en Forever las imbuiciones duran 60 minutos, así que solo la pulsarás de vez en cuando. Desde el 10 de noviembre la imbuición funciona junto con los tótems de arma (Arma Viento Furioso y Tótem Viento Furioso pueden saltar a la vez).",
    "tip": "Lengua de Fuego llega al 10 y Estigma de Escarcha al 20."
   },
   {

@@ -254,7 +254,7 @@
     "name": "Templar's Bulwark",
     "max": 1,
     "pre": null,
-    "eff": "Absorb shield equal to 100% max health for 8 s (Forbearance, 5 min); now a Magic effect that can be dispelled",
+    "eff": "Absorb shield equal to 100% max health for 8 s (Forbearance, 5 min); now a Magic effect that can be dispelled; trackable in the cooldown manager (10 Nov)",
     "icon": "ability_paladin_shieldofthetemplar"
    },
    {
@@ -915,7 +915,8 @@
   "2 nov: Templar's Bulwark es un efecto mágico disipable; Swift Judgement desata al instante tu sello activo sin compartir reutilización con la Sentencia.",
   "2 nov: Furia recta al 10, +33% a toda la amenaza y +90% adicional del daño Sagrado; Sentencia de furia dura 3 s (antes 4); Reckoning corregido (ataques según acumulaciones, no acumula sentado).",
   "2 nov: confirmados oficialmente los cambios de árbol del 30 oct (Oath of Light, Boundless Light, Stoicism, Shieldsworn, Holy Power 10-50% de curación crítica, Light's Vigil solo aliados, rerangos y cambios de fila).",
-  "2 nov (general): Blizzard sube el daño de las clases y la vida de las criaturas de nivel alto; entrenar todas las habilidades del 1 al 60 cuesta unos 206-207 de oro."
+  "2 nov (general): Blizzard sube el daño de las clases y la vida de las criaturas de nivel alto; entrenar todas las habilidades del 1 al 60 cuesta unos 206-207 de oro.",
+  "10 nov: Templar's Bulwark se puede seguir en el gestor de reutilizaciones."
  ],
  "pvp": {
   "strengths": [

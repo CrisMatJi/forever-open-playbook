@@ -1,6 +1,6 @@
 {
  "id": "shaman",
- "build_checked": "1.60.1 (notas oficiales de Blizzard \"Updated November 2\", 2026; árboles de talentsforever del 30 Oct + cambios del 2 Nov aplicados a mano)",
+ "build_checked": "1.60.1 (notas oficiales de Blizzard \"Updated November 2\", 2026; árboles de talentsforever del 30 Oct + cambios del 2 Nov aplicados a mano); hotfix del 10 Nov aplicado",
  "sources": [
   "https://us.forums.blizzard.com/en/wow/t/wow-forever-beta-development-notes-%E2%80%93-updated-november-2/2360696/9",
   "https://talentsforever.com/shaman/changes",
@@ -240,7 +240,7 @@
     "name": "Mental Dexterity",
     "max": 3,
     "pre": null,
-    "eff": "Gain Attack Power equal to 50% of your Intellect per rank (150% at 3/3)",
+    "eff": "Gain Attack Power equal to 33/66/100% of your Intellect (100% at 3/3; was 50/100/150% until 10 Nov)",
     "icon": "spell_nature_mentalquickness"
    },
    {
@@ -310,7 +310,7 @@
     "name": "Stormstrike",
     "max": 1,
     "pre": null,
-    "eff": "Instant strike for 150% normalized weapon damage (6 s cooldown); your next Lightning Bolt, Chain Lightning or Earth Shock within 12 s deals +20%",
+    "eff": "Instant strike for 100% normalized weapon damage, 8 s cooldown (10 Nov; was 150%/6 s); your next Lightning Bolt, Chain Lightning or Earth Shock within 12 s deals +20%",
     "icon": "ability_shaman_stormstrike"
    },
    {
@@ -360,7 +360,7 @@
     "name": "Maelstrom Weapon",
     "max": 5,
     "pre": null,
-    "eff": "Melee hits stack (max 5) reducing your next Lightning Bolt cast time and mana cost; trigger chance doubled on 2 Nov (exact % sin confirmar)",
+    "eff": "Melee hits stack (max 5); each stack cuts your next Lightning Bolt cast time and mana cost by 20% at every rank (10 Nov; was 4-20% by rank). 6/7/8/9/10 procs per minute by rank (was 20), so slow weapons proc more per hit (60% with a 3.6 weapon at 5/5)",
     "icon": "spell_shaman_maelstromweapon"
    },
    {
@@ -535,11 +535,11 @@
    }
   ]
  },
- "talents_note": "Árboles completos verificados contra el export JSON de talentsforever (build 70425 + hotfixes del 22 Oct). Cambios vs datos locales (70170): Elemental reorganizado (Call of Thunder eliminado; Elemental Alacrity sube a fila 2 sin prerrequisito; Lava Burst baja a fila 5 sin prerrequisito; Earthbound a fila 4; Elemental Fury pasa a fila 6 y requiere Lightning Overload; Lightning Overload requiere Elemental Alacrity; 'Improved Fire Nova' renombrado Trial by Fire; nuevo Elemental Mastery en fila 7). Restauración: Totemic Focus a fila 2, Tidal Mastery a fila 4. Mejora sin cambios de posición. Hay discrepancias de valores dentro de talentsforever (p.ej. Flurry 25% vs 10%, Lightning Overload 10% vs 30%); se usan los valores del tooltip del export. Iconos tomados del export (estilo Wowhead). Actualizado con las notas oficiales del 2 Nov 2026: Lava Burst eliminado y sustituido por Call of Thunder (+5% crit a Descarga y Cadena; se mantiene en su hueco de fila 5 con 1 rango, sin confirmar); Elemental Mastery renombrado Lightning Mastery (se mantiene el prerrequisito en el talento de su hueco, sin confirmar; icono nuevo desconocido); Improved Ghost Wolf baja de fila 2 a fila 4 (columna 4 estimada); Lightning Overload 10/20/30%; Mental Dexterity 50/100/150%; Flurry 6-30%; Stormstrike 150% y 6 s; Maelstrom Weapon doble probabilidad; Riptide solo HoT, 12 s.",
+ "talents_note": "Árboles completos verificados contra el export JSON de talentsforever (build 70425 + hotfixes del 22 Oct). Cambios vs datos locales (70170): Elemental reorganizado (Call of Thunder eliminado; Elemental Alacrity sube a fila 2 sin prerrequisito; Lava Burst baja a fila 5 sin prerrequisito; Earthbound a fila 4; Elemental Fury pasa a fila 6 y requiere Lightning Overload; Lightning Overload requiere Elemental Alacrity; 'Improved Fire Nova' renombrado Trial by Fire; nuevo Elemental Mastery en fila 7). Restauración: Totemic Focus a fila 2, Tidal Mastery a fila 4. Mejora sin cambios de posición. Hay discrepancias de valores dentro de talentsforever (p.ej. Flurry 25% vs 10%, Lightning Overload 10% vs 30%); se usan los valores del tooltip del export. Iconos tomados del export (estilo Wowhead). Actualizado con las notas oficiales del 2 Nov 2026: Lava Burst eliminado y sustituido por Call of Thunder (+5% crit a Descarga y Cadena; se mantiene en su hueco de fila 5 con 1 rango, sin confirmar); Elemental Mastery renombrado Lightning Mastery (se mantiene el prerrequisito en el talento de su hueco, sin confirmar; icono nuevo desconocido); Improved Ghost Wolf baja de fila 2 a fila 4 (columna 4 estimada); Lightning Overload 10/20/30%; Mental Dexterity 50/100/150%; Flurry 6-30%; Stormstrike 150% y 6 s; Maelstrom Weapon doble probabilidad; Riptide solo HoT, 12 s. Hotfix 10 Nov: Stormstrike vuelve a 100% del arma y 8 s; Mental Dexterity 33/66/100%; Maelstrom Weapon 20% por carga en todos los rangos y 6/7/8/9/10 activaciones por minuto (antes 20).",
  "level_cap": 60,
  "leveling": {
   "spec": "Mejora (Enhancement)",
-  "why": "Sigue siendo la rama más rápida y segura en mundo abierto y sale muy reforzada el 2 nov: Mental Dexterity da ahora un 150% de tu Intelecto como poder de ataque, Stormstrike pega un 150% del arma cada 6 s (antes 100% cada 8 s), Flurry llega a +30% de velocidad y Maelstrom Weapon salta el doble de a menudo (más Descargas de relámpagos instantáneas para curarte o rematar). Lo malo: Improved Ghost Wolf baja a la fila 4, así que el lobo instantáneo llega hacia el nivel 24 en vez del 12. Antes del parche era la opción más elegida (≈62% en talentsforever) y la de Warcraft Tavern y Method; aún no hay guías revisadas tras el 2 nov.",
+  "why": "Sigue siendo la rama más rápida y segura en mundo abierto. El 2 nov salió muy reforzada y el hotfix del 10 nov la devuelve a un punto intermedio: Stormstrike pega un 100% del arma cada 8 s (como antes del 2 nov), Mental Dexterity da un 100% de tu Intelecto como poder de ataque (antes 150%) y Flurry sigue en +30% de velocidad. A cambio, Maelstrom Weapon reduce un 20% por carga desde el primer rango y salta más por golpe con armas lentas (60% con un arma de 3,6), y Windfury Weapon y Windfury Totem ya funcionan juntos. Lo malo: Improved Ghost Wolf está en la fila 4, así que el lobo instantáneo llega hacia el nivel 24 en vez del 12. Antes del parche era la opción más elegida (≈62% en talentsforever) y la de Warcraft Tavern y Method; aún no hay guías revisadas tras el 10 nov.",
   "order": [
    "Thundering Strikes*5",
    "Mental Dexterity*3",
@@ -582,8 +582,8 @@
    ],
    "why": "Restauración no cambia de estructura el 2 nov; Riptide pasa a ser solo curación en el tiempo (sin cura inicial), 12 s de CD y un ~40% más barato."
   },
-  "stats": "Mientras subes: daño del arma (DPS del arma lo primero) > Intelecto ≈ Fuerza (2 nov: con Mental Dexterity 3/3 cada punto de Intelecto = 1.5 de poder de ataque, más que la Fuerza; con Mental Quickness además da poder con hechizos y maná) > Agilidad > Aguante > Espíritu. En Forever el Golpe y el Crítico afectan a todo, la Pericia sustituye a la habilidad con armas y la Celeridad es estadística secundaria. Method proponía Agilidad > Fuerza > Aguante > Intelecto antes del 2 nov; el orden Intelecto ≈ Fuerza es una deducción de las notas (sin confirmar).",
-  "weapons": "1-29: arma a dos manos lenta (mazas a 2M y hachas se entrenan en Forjaz; mazas a 1M y bastones vienen por defecto) o 1M+escudo si vas justo de vida. Imbuición Rockbiter Weapon (Arma Muerdepiedras) hasta 10 y luego Flametongue Weapon (Arma Lengua de Fuego; Warcraft Tavern prefiere Muerdepiedras antes de 30, a probar). Desde 30: arma a dos manos lenta (3.3-3.8) + Windfury Weapon (Arma Viento Furioso). Las imbuiciones duran 60 min en Forever; ojo: Windfury Weapon en la mano principal anula el beneficio de Windfury Totem. Sin doble empuñadura (no hay talento Dual Wield).",
+  "stats": "Mientras subes: daño del arma (DPS del arma lo primero, y mejor lenta) > Fuerza > Agilidad ≈ Intelecto > Aguante > Espíritu. 10 nov: con Mental Dexterity 3/3 cada punto de Intelecto da ya solo 1 de poder de ataque (antes 1,5), mientras que en Classic la Fuerza del chamán da 2, así que la Fuerza vuelve a ir por delante; el Intelecto sigue aportando maná y, con Mental Quickness, poder con hechizos. En Forever el Golpe y el Crítico afectan a todo, la Pericia sustituye a la habilidad con armas y la Celeridad es estadística secundaria. Method proponía Agilidad > Fuerza > Aguante > Intelecto antes del 2 nov; el orden actual es una deducción de las notas (sin confirmar).",
+  "weapons": "1-29: arma a dos manos lenta (mazas a 2M y hachas se entrenan en Forjaz; mazas a 1M y bastones vienen por defecto) o 1M+escudo si vas justo de vida. Imbuición Rockbiter Weapon (Arma Muerdepiedras) hasta 10 y luego Flametongue Weapon (Arma Lengua de Fuego; Warcraft Tavern prefiere Muerdepiedras antes de 30, a probar). Desde 30: arma a dos manos lenta (3.3-3.8) + Windfury Weapon (Arma Viento Furioso). Las imbuiciones duran 60 min en Forever; desde el 10 nov las imbuiciones y los tótems de arma funcionan juntos (Windfury Weapon y Windfury Totem pueden saltar con tus ataques), y Maelstrom Weapon favorece aún más las armas lentas. Sin doble empuñadura (no hay talento Dual Wield).",
   "abilities": [
    [
     1,
@@ -663,7 +663,7 @@
    [
     25,
     "Stormstrike (Golpe de tormenta)",
-    "Talento; 2 nov: 150% del daño del arma normalizado y 6 s de CD; potencia tu siguiente Descarga/Cadena/Choque de tierra un 20%."
+    "Talento; 10 nov: 100% del daño del arma normalizado y 8 s de CD (el 2 nov había subido a 150% y 6 s); potencia tu siguiente Descarga/Cadena/Choque de tierra un 20%."
    ],
    [
     30,
@@ -688,7 +688,7 @@
    [
     32,
     "Windfury Totem (Tótem Viento Furioso)",
-    "Para grupo; no se acumula con tu propia imbuición en mano principal."
+    "Para grupo; desde el 10 nov funciona junto con tu imbuición: Windfury Weapon y el tótem pueden saltar con tus ataques."
    ],
    [
     40,
@@ -715,8 +715,8 @@
    "Mantén Lightning Shield (Escudo de relámpagos) y la imbuición del arma.",
    "Planta Searing Totem (Tótem abrasador) o, en pulls dobles, tus tótems con Call of the Elements.",
    "Abre con Flame Shock (Choque de llamas) o una Descarga de relámpagos a distancia.",
-   "Cuerpo a cuerpo: Stormstrike (Golpe de tormenta, ahora cada 6 s) cada vez que esté disponible y luego Earth Shock (Choque de tierra, otra vez con daño de Classic) para aprovechar el +20%.",
-   "Con 5 cargas de Maelstrom Weapon (Arma vorágine): Descarga de relámpagos mucho más rápida y barata para rematar (Maelstrom solo afecta a Lightning Bolt, no a curas, según Forever Hispano/Warcraft Tavern). Si vas bajo de vida, Healing Wave normal entre pulls.",
+   "Cuerpo a cuerpo: Stormstrike (Golpe de tormenta, cada 8 s desde el 10 nov) cada vez que esté disponible y luego Earth Shock (Choque de tierra, otra vez con daño de Classic) para aprovechar el +20%.",
+   "Con 5 cargas de Maelstrom Weapon (Arma vorágine; desde el 10 nov cada carga resta un 20% en todos los rangos): Descarga de relámpagos instantánea y gratis para rematar (Maelstrom solo afecta a Lightning Bolt, no a curas, según Forever Hispano/Warcraft Tavern). Si vas bajo de vida, Healing Wave normal entre pulls.",
    "Varios enemigos: agrúpalos junto al tótem de Fuego y usa Fire Nova (Nova de Fuego); Earthbind/Earthbound para controlar.",
    "Entre pulls: Ghost Wolf instantáneo para moverte, Totemic Recall para recuperar maná de tótems; Totemic Call (30 s) para traer los tótems contigo."
   ],
@@ -749,7 +749,9 @@
   "tips": [
    "2 nov: Improved Ghost Wolf baja a la fila 4: hasta tener 15 puntos en Mejora (≈nivel 24, antes con Talented) el lobo tarda en lanzarse.",
    "2 nov: Blizzard subió el daño de todas las clases y la vida de los enemigos de nivel alto para compensar.",
-   "2 nov: el Intelecto pesa más que nunca en Mejora (Mental Dexterity 150%); no descartes piezas de malla/cuero con Intelecto.",
+   "10 nov: el Intelecto pierde peso (Mental Dexterity 33/66/100%: a 3/3 cada punto de Intelecto da 1 de poder de ataque, la mitad que la Fuerza en Classic). Prioriza Fuerza y un arma lenta; el Intelecto queda a la par de la Agilidad, útil por el maná pero ya no por delante de la Fuerza.",
+   "10 nov: Maelstrom Weapon salta 6-10 veces por minuto según rango, no por golpe: con un arma de 3,6 a 5/5 cada golpe tiene un 60% de probabilidad, así que las armas lentas cargan casi igual de rápido que las rápidas y pegan más fuerte.",
+   "10 nov: imbuición y tótem de arma ya se combinan: en grupo, Windfury Weapon y Windfury Totem pueden saltar los dos. Si perdiste un tótem en la caída del 9 nov, deja hueco en las bolsas y reconecta para recuperarlo.",
    "Big Game Hunter (+5% daño a bestias) del enano hace que las zonas llenas de bestias sean ideales.",
    "No hay Bloodlust/Heroism, Earth Shield ni Hex en Forever: tu 'ansia' es Rage of the Farseer y es solo personal.",
    "Los tótems duran 5 min y llegan a 30 m: colócalos una vez por pull grande; Totemic Call los trae contigo y Totemic Recall los recoge.",
@@ -759,8 +761,8 @@
   ],
   "stat_order": [
    "DPS del arma",
-   "Intelecto = Fuerza",
-   "Agilidad",
+   "Fuerza",
+   "Agilidad = Intelecto",
    "Aguante",
    "Espíritu"
   ],
@@ -886,7 +888,7 @@
   "No existen Bloodlust/Heroism, Earth Shield, Hex ni Shamanistic Rage; Rage of the Farseer (talento 40) es un 'ansia' personal de +30% velocidad de ataque.",
   "Tótems: duran 5 min (antes 2) y alcanzan 30 m; nuevos Call of the Elements/Ancestors/Spirits (tres sets de tótems), Totemic Projection (mover tótems; desde el 2 nov Totemic Call) y Totemic Recall (recuperar 25% de maná).",
   "Fire Nova Totem se convierte en Fire Nova, hechizo instantáneo que explota en tu tótem de Fuego.",
-  "Imbuiciones de arma duran 60 min; Windfury Weapon en mano principal anula el efecto de Windfury Totem.",
+  "Imbuiciones de arma duran 60 min; hasta el 10 nov Windfury Weapon en mano principal anulaba el efecto de Windfury Totem (ahora funcionan juntos).",
   "Mejora rediseñada: Mental Dexterity/Mental Quickness (Intelecto → AP/poder con hechizos), Maelstrom Weapon, Stormstrike en fila 4 (8 s CD, ya no debuff de Naturaleza sino +20% al siguiente choque/descarga), sin talentos de escudo ni de armas 2M.",
   "Elemental: Lightning Overload, Elemental Mastery rehecho (ahora Lightning Mastery); Lava Burst fue talento hasta el 2 nov, cuando volvió Call of Thunder; Lightning Bolt pasa a 2.5 s.",
   "Restauración: Water Shield y Riptide como talentos, Mindfulness (regeneración al castear), Healing Way plano +25%.",
@@ -897,20 +899,27 @@
   "2 nov: Mejora: Mental Dexterity 50/100/150% del Intelecto; Stormstrike 150% del arma y 6 s de CD; Flurry 6-30%; Maelstrom Weapon salta el doble; Improved Ghost Wolf baja de fila 2 a fila 4.",
   "2 nov: Restauración: Riptide solo cura en el tiempo, 12 s de CD (antes 6) y ~40% menos de maná.",
   "2 nov: Totemic Projection pasa a Totemic Call: teletransporta tus tótems a tu posición, 30 s de CD.",
-  "2 nov: Blizzard sube el daño de todas las clases y la vida de los enemigos de nivel alto para compensar."
+  "2 nov: Blizzard sube el daño de todas las clases y la vida de los enemigos de nivel alto para compensar.",
+  "10 nov: Mejora: Stormstrike baja a 100% del daño del arma y 8 s de CD (era 150% y 6 s); Mental Dexterity baja a 33/66/100% del Intelecto como poder de ataque (era 50/100/150%).",
+  "10 nov: Maelstrom Weapon reduce un 20% el tiempo de lanzamiento y el maná por carga en todos los rangos (era 4/8/12/16/20%) y se activa 6/7/8/9/10 veces por minuto según rango (era 20 en todos); con armas lentas salta más por golpe (60% con arma de 3,6 a 5/5).",
+  "10 nov: imbuiciones y tótems de arma funcionan juntos: Windfury Weapon y Windfury Totem pueden saltar con tus ataques.",
+  "10 nov: los chamanes que perdieron un tótem en la caída del 9 nov lo recuperan en las bolsas (deja hueco libre y reconecta).",
+  "10 nov: Ira de la Tormenta (Rage of the Storm) da +16 Fuerza en vez de +12 Intelecto y pasa a 102-154 de daño a velocidad 3,60 (era 91-137 a 3,20); mismo DPS (35,6)."
  ],
  "pvp": {
   "strengths": [
-   "Ráfaga con Stormstrike (150% del arma, 6 s desde el 2 nov) + Earth Shock potenciado (daño de Classic otra vez) y Descargas de relámpagos rápidas y baratas con Maelstrom Weapon (salta el doble).",
+   "Ráfaga con Stormstrike (100% del arma cada 8 s desde el 10 nov) + Earth Shock potenciado (daño de Classic otra vez) y Descargas de relámpagos instantáneas con 5 cargas de Maelstrom Weapon (20% por carga en todos los rangos).",
    "Muchas utilidades: Grounding Totem, Tremor Totem (contra miedo), Earthbind/Earthbound (raíz 5 s), Purge, Frost Shock.",
    "Stoneform enano quita venenos/sangrados y reduce daño físico.",
-   "Lobo fantasmal instantáneo con talento para reposicionarte."
+   "Lobo fantasmal instantáneo con talento para reposicionarte.",
+   "10 nov: Windfury Weapon y Windfury Totem se combinan, y las armas lentas activan más Maelstrom Weapon por golpe."
   ],
   "weaknesses": [
    "Sin Bloodlust ni Hex; Rage of the Farseer solo da velocidad de ataque.",
    "Muy dependiente del arma; vulnerable a kiteo y control si no tienes trinket/racial disponible.",
    "Sin escape fiable más allá de Ghost Wolf y Earthbind.",
-   "2 nov: Improved Ghost Wolf queda en fila 4 y Riptide pierde la cura inicial (menos cura de emergencia)."
+   "2 nov: Improved Ghost Wolf queda en fila 4 y Riptide pierde la cura inicial (menos cura de emergencia).",
+   "10 nov: Stormstrike (100%, 8 s) y Mental Dexterity (100% del Intelecto) bajan respecto al 2 nov: menos ráfaga que en la primera semana."
   ],
   "duel_plan": [
    "Pre-bufos: Lightning Shield, Windfury Weapon, tótems adecuados (Tremor contra brujos/sacerdotes, Grounding contra magos).",
@@ -936,7 +945,7 @@
   "pve": {
    "spec": "Mejora",
    "race": "Enano",
-   "why": "La rama que más sube con las notas del 2 nov: Stormstrike al 150%, Maelstrom Weapon salta el doble y el Intelecto da poder de ataque. Enano es la única raza de Alianza, y Artisan's Precision (+1% de golpe) viene muy bien."
+   "why": "Sigue siendo la rama más cómoda para subir: Stormstrike (100% del arma cada 8 s tras el 10 nov), Maelstrom Weapon con Descargas instantáneas y Windfury Weapon + Windfury Totem juntos en grupo. Enano es la única raza de Alianza, y Artisan's Precision (+1% de golpe) viene muy bien."
   },
   "pvp": {
    "spec": "Mejora",

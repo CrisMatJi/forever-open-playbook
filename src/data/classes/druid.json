@@ -512,7 +512,7 @@
     "name": "Nature's Swiftness",
     "max": 1,
     "pre": "Naturalist",
-    "eff": "Next Nature spell is instant; 3 min cooldown",
+    "eff": "Next Nature spell is instant, Wild Growth included (10 Nov); 3 min cooldown",
     "icon": "spell_nature_ravenform"
    },
    {
@@ -552,7 +552,7 @@
     "name": "Wild Growth",
     "max": 1,
     "pre": "Living Spirit",
-    "eff": "Teaches Wild Growth: 3 s cast (was instant; 2.5 s with Naturalist 5/5), heals target and party for 336 over 7 s (r1)",
+    "eff": "Teaches Wild Growth: 3 s cast (was instant; 2.5 s with Naturalist 5/5), heals target and party for 336 over 7 s (r1); instant with Nature's Swiftness (10 Nov)",
     "icon": "ability_druid_flourish"
    }
   ]
@@ -938,7 +938,9 @@
   "2 nov: Restauración: Reflection pasa a la fila 2 y Subtlety a la 3; Bloom sustituye a Gift of the Earthmother; Swiftmend exige que el Rejuvenecimiento/Recrecimiento sea tuyo.",
   "2 nov: Mordedura feroz tiene un nuevo rango 1 al 24; nueva pasiva Poised al 32 (efecto sin confirmar oficialmente); Lacerate recibe dos rangos nuevos.",
   "2 nov: Leader of the Pack y Moonkin Form vuelven a dar crítico de todo tipo y no se acumulan entre sí.",
-  "2 nov (general): Blizzard sube el daño de las clases y la vida de las criaturas de nivel alto; los hechizos aprendidos ya no se añaden solos a las barras; entrenar todas las habilidades del 1 al 60 cuesta unos 206-207 de oro."
+  "2 nov (general): Blizzard sube el daño de las clases y la vida de las criaturas de nivel alto; los hechizos aprendidos ya no se añaden solos a las barras; entrenar todas las habilidades del 1 al 60 cuesta unos 206-207 de oro.",
+  "10 nov: Presteza de la naturaleza (Nature's Swiftness) también funciona con Wild Growth, que pasa a ser instantáneo.",
+  "10 nov: Omen of Clarity vuelve a poder activarse tras cambiar de especialización."
  ],
  "pvp": {
   "strengths": [
