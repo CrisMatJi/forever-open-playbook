@@ -310,3 +310,5 @@ code{overflow-wrap:anywhere}
 .profpair{display:flex;flex-wrap:wrap;gap:6px;align-items:baseline}
 .profpair b{font-family:var(--display);font-size:19px;color:var(--cc,var(--gold))}
 .profpair .sep{color:var(--muted)}
+.ttip{position:fixed;z-index:60;max-width:320px;padding:10px 12px;border:1px solid #6b6b6b;border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.6);pointer-events:none;font-size:14px}
+.ttip[hidden]{display:none}

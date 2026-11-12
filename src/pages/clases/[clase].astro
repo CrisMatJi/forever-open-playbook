@@ -118,7 +118,7 @@ const rkey = (r) => r.split(" (")[0].replace("Skyborne - High Order", "Skyborne"
       {[0, 1, 2].map((ti) => <TalentTree id={id} tree={ti} n={total} tint={TINTS[id][ti]} build={L.order} />)}
     </div>
     <div class="tlegend"><span><i style="border-color:var(--gold)"></i>Al máximo</span><span><i style="border-color:var(--green)"></i>Con puntos</span><span><i style="border-color:#555;opacity:.7"></i>Sin puntos</span><span><i style="border-color:#3a3a3a;opacity:.4"></i>Bloqueado</span><span>Cada fila pide 5 puntos más en ese árbol.</span></div>
-    <div class="tdetail" id="tdetail" aria-live="polite"><span></span><span class="tt-ok">Toca un talento para ver su descripción.</span></div>
+    <div class="tdetail" id="tdetail" aria-live="polite"><span></span><span class="tt-ok">Pasa el ratón o toca un talento para ver qué hace.</span></div>
     <div class="detail" style="margin-top:16px">
       <div><div class="eyebrow">Orden de puntos</div>
         {[["main", main], ["alt", alt]].filter(([, s]) => s).map(([k, s]) => (
@@ -258,19 +258,39 @@ const rkey = (r) => r.split(" (")[0].replace("Skyborne - High Order", "Skyborne"
     }
     function show(name: string) {
       selected = name;
+      $("tdetail").innerHTML = html(name);
+      document.querySelectorAll(".tslot").forEach((b) => b.classList.toggle("sel", (b as HTMLElement).dataset.name === name));
+    }
+    function html(name: string) {
       const t = c.byName[name];
       const r = ranks[t.name] || 0;
       const req1 = t.row > 1 ? `<div class="${per[t.tree] >= 5 * (t.row - 1) ? "tt-ok" : "tt-req"}">Requiere ${5 * (t.row - 1)} puntos en ${c.trees[t.tree]}</div>` : "";
       const req2 = t.pre ? `<div class="${(ranks[t.pre] || 0) >= (c.byName[t.pre]?.max ?? 0) ? "tt-ok" : "tt-req"}">Requiere ${t.pre} al máximo</div>` : "";
       const ic = t.icon ? `<span class="wicon" style="--s:44px"><img src="${iconUrl(t.icon, "large")}" alt="" referrerpolicy="no-referrer" onerror="this.remove()"></span>` : "<span></span>";
-      $("tdetail").innerHTML = `${ic}<div><div class="tt-name">${t.name}</div><div class="tt-rank">Rango ${r}/${t.max}</div>${req1}${req2}<div class="tt-eff">${t.eff || ""}</div></div>`;
-      document.querySelectorAll(".tslot").forEach((b) => b.classList.toggle("sel", (b as HTMLElement).dataset.name === name));
+      return `${ic}<div><div class="tt-name">${t.name}</div><div class="tt-rank">Rango ${r}/${t.max}</div>${req1}${req2}<div class="tt-eff">${t.eff || ""}</div></div>`;
     }
+    // Tooltip flotante al pasar el ratón (en móvil se usa el panel de debajo)
+    const tip = document.createElement("div");
+    tip.className = "tdetail ttip"; tip.hidden = true; tip.setAttribute("role", "tooltip");
+    document.body.appendChild(tip);
+    function place(b: HTMLElement) {
+      const r = b.getBoundingClientRect(), w = tip.offsetWidth, h = tip.offsetHeight, m = 10;
+      let x = r.right + m;
+      if (x + w > innerWidth - m) x = r.left - w - m;
+      x = Math.max(m, Math.min(x, innerWidth - w - m));
+      const y = Math.max(m, Math.min(r.top, innerHeight - h - m));
+      tip.style.left = `${Math.round(x)}px`; tip.style.top = `${Math.round(y)}px`;
+    }
+    const canHover = matchMedia("(hover: hover)").matches;
     document.querySelectorAll<HTMLButtonElement>(".tslot").forEach((b) => {
       b.addEventListener("click", () => show(b.dataset.name!));
-      b.addEventListener("mouseenter", () => show(b.dataset.name!));
       b.addEventListener("focus", () => show(b.dataset.name!));
+      if (canHover) {
+        b.addEventListener("mouseenter", () => { tip.innerHTML = html(b.dataset.name!); tip.hidden = false; place(b); });
+        b.addEventListener("mouseleave", () => { tip.hidden = true; });
+      }
     });
+    addEventListener("scroll", () => { tip.hidden = true; }, { passive: true });
     document.querySelectorAll<HTMLButtonElement>("[data-mode]").forEach((b) => b.addEventListener("click", () => { mode = b.dataset.mode!; paint(); }));
     $("lvl").addEventListener("input", (e) => { lvl = +(e.target as HTMLInputElement).value; paint(); });
     paint();
